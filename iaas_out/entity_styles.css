@@ -1,0 +1,94 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.5rem 2.2rem;}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.5rem 2.2rem;}
+body {font-family: Arial,sans-serif;}
+strong {font-weight: 700;}
+
+th {font-weight: bold;}
+img[alt="Netskope"] {display:block; margin:1.2rem 2.2rem;}
+.container {display: flex; flex-direction: row; padding: 0.5rem 2.2rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.entity_keys {display:inline-block; margin:0 0.7rem 0.7rem 0; padding-right:2.0rem}
+.entity_keys>.entity_category:first-child{margin-top:0;}
+.entity_keys ul {list-style: none;}
+.entity_keys li {cursor: pointer;}
+.entity_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.entity_tables {flex:3 1 0px;display:inline-block;}
+.entity_tables table, .entity_tables th, .entity_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.entity_tables table {table-layout: fixed; width:100%;}
+.entity_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.entity_tables td {padding: 0.2rem;}
+
+/* entity styles */
+.entity_category, .entity_name {display:inline-block;float:none; padding-right:0.2rem;}
+.entity_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.entity_category:before, .entity_category:after {display:inline-block; content:''; width:0.4rem;}
+.entity_key {padding:0.3rem;padding-left: 1.5rem;}
+.entity_key.active {background-color: #ff8300; color:#ffffff;}
+.entity_name {width:100%; text-align: left;}
+.entity_category.Compute:after {display:inline-block; width:5px;}
+.entity_category.Account {color:#000000;}
+.entity_category.Compute {color:#000000;}
+.entity_category.Configuration.Management {color:#000000;}
+.entity_category.Database {color:#000000;}
+.entity_category.Identity {color:#000000;}
+.entity_category.Management {color:#000000;}
+.entity_category.Network {color:#000000;}
+.entity_category.Security {color:#000000;}
+.entity_category.Storage {color:#000000;}
+
+
+.notes_container {padding:0.5rem 2.2rem; display: inline-block;}
+.notes_container p {margin-top:0.5em; margin-bottom:0.7em;}
+.notes_container p:first-child {margin-top:0;}

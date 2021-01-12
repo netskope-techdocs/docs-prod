@@ -1,0 +1,6072 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="entity_styles.css">
+<title>AWS Entities supported in DSL</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>AWS Entities supported in DSL</h1>
+  <div class="notes_container">
+  
+    <!-- AWS notes -->
+<p>The table below describes the AWS services and attributes supported by Netskope. For additional information on the values for these attributes, refer to the <a href="https://docs.aws.amazon.com/" target="_blank">AWS documentation</a>.</p>
+<p><strong>Note:</strong> To view information about your public cloud resources, in the Netskope UI go to <strong>Cloud Infrastructure > Inventory</strong>. For more information, see the <a href="https://support.netskope.com/hc/en-us/articles/360016146354-Inventory" target="_blank">help article</a>.</p>
+  
+  </div>
+  <div class="container">
+    <div class="entity_keys">
+      
+      <h2 class="entity_category Account">Account</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="Account">
+          <span class="entity_name">Account</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Compute">Compute</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="EC2Instance">
+          <span class="entity_name">EC2Instance</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ECSCluster">
+          <span class="entity_name">ECSCluster</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="EKSCluster">
+          <span class="entity_name">EKSCluster</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ElasticSearchDomain">
+          <span class="entity_name">ElasticSearchDomain</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="EMRCluster">
+          <span class="entity_name">EMRCluster</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Image">
+          <span class="entity_name">Image</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Lambda">
+          <span class="entity_name">Lambda</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Snapshots">
+          <span class="entity_name">Snapshots</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Volume">
+          <span class="entity_name">Volume</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Configuration Management">Configuration Management</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="ConfigDeliveryChannel">
+          <span class="entity_name">ConfigDeliveryChannel</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ConfigRecorder">
+          <span class="entity_name">ConfigRecorder</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Database">Database</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="DynamoDBTable">
+          <span class="entity_name">DynamoDBTable</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RDSInstance">
+          <span class="entity_name">RDSInstance</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RedShiftCluster">
+          <span class="entity_name">RedShiftCluster</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Identity">Identity</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="IAMGroup">
+          <span class="entity_name">IAMGroup</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="IAMPasswordPolicy">
+          <span class="entity_name">IAMPasswordPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="IAMPolicy">
+          <span class="entity_name">IAMPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="IAMRole">
+          <span class="entity_name">IAMRole</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="IAMUser">
+          <span class="entity_name">IAMUser</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Management">Management</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="CloudFormation">
+          <span class="entity_name">CloudFormation</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="CloudTrail">
+          <span class="entity_name">CloudTrail</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="CloudWatchLogGroup">
+          <span class="entity_name">CloudWatchLogGroup</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="MetricAlarm">
+          <span class="entity_name">MetricAlarm</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Organization">
+          <span class="entity_name">Organization</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Messaging">Messaging</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="SESIdentity">
+          <span class="entity_name">SESIdentity</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SNSTopic">
+          <span class="entity_name">SNSTopic</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SQSQueue">
+          <span class="entity_name">SQSQueue</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Network">Network</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="ElasticLoadBalancer">
+          <span class="entity_name">ElasticLoadBalancer</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="NetworkACL">
+          <span class="entity_name">NetworkACL</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="NetworkInterface">
+          <span class="entity_name">NetworkInterface</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Route53Domain">
+          <span class="entity_name">Route53Domain</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RouteTable">
+          <span class="entity_name">RouteTable</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SecurityGroup">
+          <span class="entity_name">SecurityGroup</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Subnet">
+          <span class="entity_name">Subnet</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="VPC">
+          <span class="entity_name">VPC</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="VPCFlow">
+          <span class="entity_name">VPCFlow</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Security">Security</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="KMSKey">
+          <span class="entity_name">KMSKey</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Storage">Storage</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="S3Bucket">
+          <span class="entity_name">S3Bucket</span>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="entity_tables">
+      
+        <table class="entity_table" data-entity-name="Subnet">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Subnet Region Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>AWS Account Name</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Subnet</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Status of the Subnet</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability Zone</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with Subnet</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>IPv6CidrBlock</td>
+            <td>list</td>
+            <td>CidrBlock</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Subnet Region ID</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC id</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Subnet creation timestamp</td>
+          </tr>
+          
+          <tr>
+            <td>CidrBlock</td>
+            <td>ip</td>
+            <td>Cidr Block</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>AWS Account ID</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ConfigRecorder">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>boolean</td>
+            <td>Recorder is recording or not</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of Configuration Recorder</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Configuration Recorder resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Configuration Recorder resides</td>
+          </tr>
+          
+          <tr>
+            <td>RecordingGroup</td>
+            <td>sequence</td>
+            <td>Types of resources for which AWS Config records configuration changes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IncludeGlobalResourceTypes</td>
+            <td>boolean</td>
+            <td>All global resources supported by AWS Config</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AllSupported</td>
+            <td>boolean</td>
+            <td>All resources supported by AWS Config</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ResourceTypes</td>
+            <td>list</td>
+            <td>Types of resources being recorded</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Resource type</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Configuration Recorder</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Name of Configuration Recorder</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Configuration Recorder</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CloudTrail">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>LatestNotificationError</td>
+            <td>string</td>
+            <td>SNS error that CloudTrail encountered when attempting to send a notification</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Trail name</td>
+          </tr>
+          
+          <tr>
+            <td>GlobalServiceEvents</td>
+            <td>boolean</td>
+            <td>Whether API calls from AWS global services such as IAM are included</td>
+          </tr>
+          
+          <tr>
+            <td>MultiRegionTrailEnabled</td>
+            <td>boolean</td>
+            <td>Whether the Trail applies to all regions</td>
+          </tr>
+          
+          <tr>
+            <td>S3KeyPrefix</td>
+            <td>string</td>
+            <td>Prefix to the log file stored by the Trail in S3 bucket</td>
+          </tr>
+          
+          <tr>
+            <td>LogFileValidationEnabled</td>
+            <td>boolean</td>
+            <td>Whether Log file validation is enabled for the Trail</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Trail</td>
+          </tr>
+          
+          <tr>
+            <td>S3Bucket</td>
+            <td>Reference to S3Bucket</td>
+            <td>S3 bucket to which CloudTrail delivers the Trail files</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>KMS key to encrypt the Trail logs delivered by CloudTrail</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Trail</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon resource number</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Trail</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>LatestDeliveryError</td>
+            <td>string</td>
+            <td>S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Trail resides</td>
+          </tr>
+          
+          <tr>
+            <td>SNSTopic</td>
+            <td>Reference to SNSTopic</td>
+            <td>SNS topic that the Trail uses to send notifications on log file delivery</td>
+          </tr>
+          
+          <tr>
+            <td>LoggingEnabled</td>
+            <td>boolean</td>
+            <td>Whether the Trail is currently logging API calls</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Trail resides</td>
+          </tr>
+          
+          <tr>
+            <td>LogGroup</td>
+            <td>Reference to CloudWatchLogGroup</td>
+            <td>CloudWatch Log Group to which the Trail logs are delivered</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SQSQueue">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Queue</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags properties</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Region name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Region id</td>
+          </tr>
+          
+          <tr>
+            <td>SQSPolicy</td>
+            <td>list</td>
+            <td>Policies for SQS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>statements of policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Id of statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>Id of the policy</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Name of the Queue</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Account">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Account status</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Account Display Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account Name</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Account Number</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account ID</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SecurityGroup">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>OutboundRules</td>
+            <td>list</td>
+            <td>Outbound rules of the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Protocol</td>
+            <td>string</td>
+            <td>IP protocol name or number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FromPort</td>
+            <td>number</td>
+            <td>Starting port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IPRanges</td>
+            <td>list</td>
+            <td>IPv4 ranges</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>IP</td>
+            <td>ip</td>
+            <td>IPv4 CIDR range</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Description</td>
+            <td>string</td>
+            <td>Description for the security group rule that references this IPv4 address range</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ToPort</td>
+            <td>number</td>
+            <td>Ending port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IPv6Ranges</td>
+            <td>list</td>
+            <td>IPv6 ranges</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>IPv6</td>
+            <td>ip</td>
+            <td>IPv6 (cidr format)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Description</td>
+            <td>string</td>
+            <td>Description for the security group rule that references this IPv6 address range</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Security Group resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which teh Security Group resides</td>
+          </tr>
+          
+          <tr>
+            <td>EC2Instances</td>
+            <td>Reference to EC2Instance</td>
+            <td>EC2 Instances that the Security Group applies to</td>
+          </tr>
+          
+          <tr>
+            <td>InboundRules</td>
+            <td>list</td>
+            <td>Inbound rules of the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Protocol</td>
+            <td>string</td>
+            <td>IP protocol name or number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FromPort</td>
+            <td>number</td>
+            <td>Starting port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IPRanges</td>
+            <td>list</td>
+            <td>IPv4 ranges</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>IP</td>
+            <td>ip</td>
+            <td>IPv4 CIDR range</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Description</td>
+            <td>string</td>
+            <td>Description for the Security Group rule that references this IPv4 address range</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ToPort</td>
+            <td>number</td>
+            <td>Ending port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IPv6Ranges</td>
+            <td>list</td>
+            <td>IPv6 ranges</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>IPv6</td>
+            <td>ip</td>
+            <td>IPv6 (cidr format)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Description</td>
+            <td>string</td>
+            <td>Description for the security group rule that references this IPv6 address range</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkInterfaces</td>
+            <td>Reference to NetworkInterface</td>
+            <td>Network Interfaces that the Security Group applies to</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="EMRCluster">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>TerminationProtected</td>
+            <td>boolean</td>
+            <td>Termination is protected or not</td>
+          </tr>
+          
+          <tr>
+            <td>RunningAmiVersion</td>
+            <td>string</td>
+            <td>Running AMI Version</td>
+          </tr>
+          
+          <tr>
+            <td>LogUri</td>
+            <td>string</td>
+            <td>LogUri</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AutoScalingRole</td>
+            <td>string</td>
+            <td>AutoScaling Role of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>EndDate</td>
+            <td>number</td>
+            <td>Deletion Date</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags of Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>Applications</td>
+            <td>list</td>
+            <td>Applications related to Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Version of application</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Name of application</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Args</td>
+            <td>list</td>
+            <td>Args of application</td>
+          </tr>
+          
+          <tr>
+            <td>CustomAmiId</td>
+            <td>string</td>
+            <td>CustomAmiId</td>
+          </tr>
+          
+          <tr>
+            <td>ScaleDownBehavior</td>
+            <td>string</td>
+            <td>ScaleDownBehavior</td>
+          </tr>
+          
+          <tr>
+            <td>ReadyDate</td>
+            <td>number</td>
+            <td>Ready Date</td>
+          </tr>
+          
+          <tr>
+            <td>EbsRootVolumeSize</td>
+            <td>number</td>
+            <td>EBS Root Volume Size</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Ec2InstanceAttributes</td>
+            <td>sequence</td>
+            <td>EC2 Instance Attributes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Ec2Subnet</td>
+            <td>Reference to Subnet</td>
+            <td>EC2 Subnet ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ServiceAccessSecurityGroup</td>
+            <td>string</td>
+            <td>Service Access Secuity Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EmrManagedMasterSecurityGroup</td>
+            <td>string</td>
+            <td>EMR Managed Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RequestedEc2AvailabilityZones</td>
+            <td>list</td>
+            <td>Requested EC2 Availability Zone</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EmrManagedSlaveSecurityGroup</td>
+            <td>string</td>
+            <td>EMR Managed Slave Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RequestedEc2SubnetIds</td>
+            <td>list</td>
+            <td>Requested Subnet IDs</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AdditionalMasterSecurityGroups</td>
+            <td>list</td>
+            <td>Additional Master Security Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IamInstanceProfile</td>
+            <td>string</td>
+            <td>IAM Instance Profile</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Ec2KeyName</td>
+            <td>string</td>
+            <td>EC2 KeyName</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Ec2AvailabilityZone</td>
+            <td>string</td>
+            <td>EC2 Availability Zone</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AdditionalSlaveSecurityGroups</td>
+            <td>list</td>
+            <td>Additional Slave Security Group</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>ServiceRole</td>
+            <td>string</td>
+            <td>Service Role</td>
+          </tr>
+          
+          <tr>
+            <td>InstanceCollectionType</td>
+            <td>string</td>
+            <td>Instance Collection Type</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityConfiguration</td>
+            <td>string</td>
+            <td>Security Configuration of the cluster</td>
+          </tr>
+          
+          <tr>
+            <td>RepoUpgradeOnBoot</td>
+            <td>string</td>
+            <td>Security or None</td>
+          </tr>
+          
+          <tr>
+            <td>AutoTerminate</td>
+            <td>boolean</td>
+            <td>Auto Terminate is Enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td>Configurations</td>
+            <td>list</td>
+            <td>Configurations of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Classification</td>
+            <td>string</td>
+            <td>Classification of the Configuration</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Properties</td>
+            <td>list</td>
+            <td>Properties of the Configuration</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value of the property</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Name of the property</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>ReleaseLabel</td>
+            <td>string</td>
+            <td>Release Label</td>
+          </tr>
+          
+          <tr>
+            <td>NormalizedInstanceHours</td>
+            <td>number</td>
+            <td>Normalized Instance Hours</td>
+          </tr>
+          
+          <tr>
+            <td>KerberosAttributes</td>
+            <td>sequence</td>
+            <td>Kerberos Attributes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Realm</td>
+            <td>string</td>
+            <td>Realm</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KdcAdminPassword</td>
+            <td>string</td>
+            <td>KdcAdminPassword</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ADDomainJoinUser</td>
+            <td>string</td>
+            <td>ADDomainJoinUser</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ADDomainJoinPassword</td>
+            <td>string</td>
+            <td>ADDomainJoinPassword</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CrossRealmTrustPrincipalPassword</td>
+            <td>string</td>
+            <td>CrossRealmTrustPrincipalPassword</td>
+          </tr>
+          
+          <tr>
+            <td>MasterPublicDnsName</td>
+            <td>string</td>
+            <td>DNS Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>VisibleToAllUsers</td>
+            <td>string</td>
+            <td>Whether Cluster is visible to all users or not</td>
+          </tr>
+          
+          <tr>
+            <td>RequestedAmiVersion</td>
+            <td>string</td>
+            <td>AMI Version</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Cluster resides</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="KMSKey">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Key Name</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Key is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>RotationEnabled</td>
+            <td>boolean</td>
+            <td>Whether automatic key rotation is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Key</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Key ID</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of the Key</td>
+          </tr>
+          
+          <tr>
+            <td>Description</td>
+            <td>string</td>
+            <td>Key description</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Key resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Key resides</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Arn</td>
+            <td>string</td>
+            <td>Amazon resource number(ARN) of the Key</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Key</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ECSCluster">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Statistics</td>
+            <td>list</td>
+            <td>Statistics of the cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Statistics value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Statistics Name</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>ID of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>RegisteredContainerInstancesCount</td>
+            <td>number</td>
+            <td>Registered Container Instance Count</td>
+          </tr>
+          
+          <tr>
+            <td>Failures</td>
+            <td>list</td>
+            <td>Failures related to call</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Reason</td>
+            <td>string</td>
+            <td>Reason of the failure</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Arn</td>
+            <td>string</td>
+            <td>ARN of the failed resource</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags of Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>PendingTasksCount</td>
+            <td>number</td>
+            <td>Pending task count</td>
+          </tr>
+          
+          <tr>
+            <td>RunningTasksCount</td>
+            <td>number</td>
+            <td>Runnung task Count</td>
+          </tr>
+          
+          <tr>
+            <td>ActiveServicesCount</td>
+            <td>number</td>
+            <td>Active Service Count</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>Arn</td>
+            <td>string</td>
+            <td>Arn of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Cluster</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="MetricAlarm">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of the Alarm</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Alarm</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Alarm resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Alarm resides</td>
+          </tr>
+          
+          <tr>
+            <td>AlarmActions</td>
+            <td>list</td>
+            <td>Actions to take on alarm</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SNSTopic</td>
+            <td>Reference to SNSTopic</td>
+            <td>SNS Topic to notify on alarm</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Alarm</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon Resource Number (ARN) of the Alarm</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Alarm</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Route53Domain">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of Domain</td>
+          </tr>
+          
+          <tr>
+            <td>TransferLock</td>
+            <td>boolean</td>
+            <td>Whether the Domain is locked from unauthorized transfer to another party</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Name of Domain</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags properties</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Region name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Region id</td>
+          </tr>
+          
+          <tr>
+            <td>AutoRenew</td>
+            <td>boolean</td>
+            <td>Whether the Domain registration is set to renew automatically</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ElasticSearchDomain">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Domain resides</td>
+          </tr>
+          
+          <tr>
+            <td>Endpoint</td>
+            <td>string</td>
+            <td>EndPoint of domain</td>
+          </tr>
+          
+          <tr>
+            <td>LogPublishingOptions</td>
+            <td>list</td>
+            <td>Log Publish Options of the domain</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Name of the option</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CloudWatchLogsLogGroup</td>
+            <td>Reference to CloudWatchLogGroup</td>
+            <td>CloudWatchLogGroup</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether the option is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>AdvancedOptions</td>
+            <td>list</td>
+            <td>Advanced Options for Domain</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value of the Option</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Name of the Option</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Domain</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>ElasticsearchVersion</td>
+            <td>string</td>
+            <td>Elastic Search Version</td>
+          </tr>
+          
+          <tr>
+            <td>NodeToNodeEncryptionOptions</td>
+            <td>sequence</td>
+            <td>Node to Node Encryption Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Encryption for Nodes is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags of Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>Deleted</td>
+            <td>boolean</td>
+            <td>Whether the domain has been deleted or not</td>
+          </tr>
+          
+          <tr>
+            <td>Processing</td>
+            <td>boolean</td>
+            <td>Whether processing is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td>CognitoOptions</td>
+            <td>sequence</td>
+            <td>Cognito Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IdentityPoolId</td>
+            <td>string</td>
+            <td>Identity Pool Id</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>UserPoolId</td>
+            <td>string</td>
+            <td>UserPool id</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RoleArn</td>
+            <td>string</td>
+            <td>Role ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Cognito is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>AccessPolicies</td>
+            <td>sequence</td>
+            <td>Access Policy of the domain</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy Version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>Statements of the Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resouces affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy Actions</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Domain</td>
+          </tr>
+          
+          <tr>
+            <td>VPCOptions</td>
+            <td>sequence</td>
+            <td>VPC Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnet</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>Security Groups</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AvailabilityZones</td>
+            <td>list</td>
+            <td>Availability Zones</td>
+          </tr>
+          
+          <tr>
+            <td>UpgradeProcessing</td>
+            <td>boolean</td>
+            <td>Whether Upgrade Processing is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Domain</td>
+          </tr>
+          
+          <tr>
+            <td>Created</td>
+            <td>boolean</td>
+            <td>Whether the domain has been created or not</td>
+          </tr>
+          
+          <tr>
+            <td>EBSOptions</td>
+            <td>sequence</td>
+            <td>EBS Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VolumeSize</td>
+            <td>number</td>
+            <td>Size of Volume</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EBSEnabled</td>
+            <td>boolean</td>
+            <td>Whether EBS is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Iops</td>
+            <td>number</td>
+            <td>Iops</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VolumeType</td>
+            <td>string</td>
+            <td>VolumeType</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Domain</td>
+          </tr>
+          
+          <tr>
+            <td>ElasticsearchClusterConfig</td>
+            <td>sequence</td>
+            <td>Config of Elastic Search Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ZoneAwarenessConfig</td>
+            <td>sequence</td>
+            <td>Zone Awareness Config</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AvailabilityZoneCount</td>
+            <td>number</td>
+            <td>Availability Zone Count</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DedicatedMasterEnabled</td>
+            <td>boolean</td>
+            <td>Whether Dedicated Master is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceCount</td>
+            <td>number</td>
+            <td>Instance Count</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ZoneAwarenessEnabled</td>
+            <td>boolean</td>
+            <td>Whether Zone Awareness is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DedicatedMasterType</td>
+            <td>string</td>
+            <td>Dedicated Master Type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceType</td>
+            <td>string</td>
+            <td>Instance Type of Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DedicatedMasterCount</td>
+            <td>number</td>
+            <td>Dedicated Master Count</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Domain resides</td>
+          </tr>
+          
+          <tr>
+            <td>SnapshotOptions</td>
+            <td>sequence</td>
+            <td>Snapshot Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AutomatedSnapshotStartHour</td>
+            <td>number</td>
+            <td>Automated Snapshot Start Hour</td>
+          </tr>
+          
+          <tr>
+            <td>EncryptionAtRestOptions</td>
+            <td>sequence</td>
+            <td>Encryption Options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Encryption is Enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>KMS Key</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>ARN</td>
+            <td>string</td>
+            <td>Arn of the domain</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ConfigDeliveryChannel">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Delivery channel name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the channel</td>
+          </tr>
+          
+          <tr>
+            <td>S3Bucket</td>
+            <td>Reference to S3Bucket</td>
+            <td>S3 Bucket used by the delivery channel</td>
+          </tr>
+          
+          <tr>
+            <td>StreamDelivery</td>
+            <td>sequence</td>
+            <td>Status of delivery of stream notification to SNS Topic</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastSuccess</td>
+            <td>boolean</td>
+            <td>Last status was successful</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Delivery channel name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the channel resides</td>
+          </tr>
+          
+          <tr>
+            <td>SnapshotDelivery</td>
+            <td>sequence</td>
+            <td>Status of delivery of configuration snapshot</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastSuccess</td>
+            <td>boolean</td>
+            <td>Last status was successful</td>
+          </tr>
+          
+          <tr>
+            <td>HistoryDelivery</td>
+            <td>sequence</td>
+            <td>Status of delivery of configuration history</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastSuccess</td>
+            <td>boolean</td>
+            <td>Last status was successful</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the channel resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the channel</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Volume">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Volume ID</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Volume resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Volume</td>
+          </tr>
+          
+          <tr>
+            <td>Snapshot</td>
+            <td>Reference to Snapshots</td>
+            <td>Snapshot of the Volume</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Volume</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Volume Type.</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Volume ID</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of Volume</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability zone for the Volume</td>
+          </tr>
+          
+          <tr>
+            <td>Attachments</td>
+            <td>list</td>
+            <td>Attachments of the Volume</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AttachTime</td>
+            <td>number</td>
+            <td>Attach time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceId</td>
+            <td>string</td>
+            <td>EC2Instance Id</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>State of the Volume</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DeleteOnTermination</td>
+            <td>boolean</td>
+            <td>Whether delete on termination is enabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Device</td>
+            <td>string</td>
+            <td>Device to which Volume is attached</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Image</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>Encrypted</td>
+            <td>boolean</td>
+            <td>Whether the Volume will be encrypted</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Volume resides</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Size</td>
+            <td>number</td>
+            <td>Size of Volume in GBs</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="VPC">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>PeeringConnections</td>
+            <td>list</td>
+            <td>Peering Connections</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>Peer Connections</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets</td>
+          </tr>
+          
+          <tr>
+            <td>FlowLogs</td>
+            <td>Reference to VPCFlow</td>
+            <td>Flow Logs</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>CidrBlock</td>
+            <td>ip</td>
+            <td>CidrBlock</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkACLs</td>
+            <td>Reference to NetworkACL</td>
+            <td>Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>RouteTables</td>
+            <td>Reference to RouteTable</td>
+            <td>Route Tables</td>
+          </tr>
+          
+          <tr>
+            <td>Endpoints</td>
+            <td>list</td>
+            <td>Endpoints</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>vpc id</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>vpc name</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of VPC</td>
+          </tr>
+          
+          <tr>
+            <td>NATGateways</td>
+            <td>list</td>
+            <td>NAT Gateways</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>NAT Gateways</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags properties</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key</td>
+          </tr>
+          
+          <tr>
+            <td>IPv6CidrBlock</td>
+            <td>list</td>
+            <td>CidrBlock</td>
+          </tr>
+          
+          <tr>
+            <td>DHCPOptions</td>
+            <td>string</td>
+            <td>DHCP Options</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Region id</td>
+          </tr>
+          
+          <tr>
+            <td>DnsHostnameEnabled</td>
+            <td>boolean</td>
+            <td>Enables public DNS hostnames in the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>InternetGateways</td>
+            <td>list</td>
+            <td>Internet Gateways</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>Internet Gateways</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>Security Groups</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Region name</td>
+          </tr>
+          
+          <tr>
+            <td>DnsSupportEnabled</td>
+            <td>boolean</td>
+            <td>Enables DNS resolution in the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="IAMGroup">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Group</td>
+          </tr>
+          
+          <tr>
+            <td>GroupPolicy</td>
+            <td>sequence</td>
+            <td>Policies of groups</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InlinePolicies</td>
+            <td>list</td>
+            <td>Inline policies for the role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>PolicyName</td>
+            <td>string</td>
+            <td>Policy Name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>PolicyDocument</td>
+            <td>sequence</td>
+            <td>Policy document</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>statements of policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ManagedPolicies</td>
+            <td>Reference to IAMPolicy</td>
+            <td>Managed policies for the role</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Group</td>
+          </tr>
+          
+          <tr>
+            <td>Path</td>
+            <td>string</td>
+            <td>Path to the Group</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Group</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Group</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="DynamoDBTable">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the table</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Table</td>
+          </tr>
+          
+          <tr>
+            <td>SSEDescription</td>
+            <td>sequence</td>
+            <td>Server Side Encryption description for table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>SSE status</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SSEType</td>
+            <td>string</td>
+            <td>SSE type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>Encryption key</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the table</td>
+          </tr>
+          
+          <tr>
+            <td>PointInTimeRecovery</td>
+            <td>string</td>
+            <td>status of Point in Time Recovery for Table</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Table resides</td>
+          </tr>
+          
+          <tr>
+            <td>BackedUp</td>
+            <td>boolean</td>
+            <td>Is the table backedup</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Table resides</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDateTime</td>
+            <td>number</td>
+            <td>Time of Table creation</td>
+          </tr>
+          
+          <tr>
+            <td>Arn</td>
+            <td>string</td>
+            <td>Arn of the table</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Table</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="VPCFlow">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Flow Log ID</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Flow Log</td>
+          </tr>
+          
+          <tr>
+            <td>TrafficType</td>
+            <td>string</td>
+            <td>Type of traffic captured for the Flow Log</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Flow Log ID</td>
+          </tr>
+          
+          <tr>
+            <td>DeliverLogsErrorMessage</td>
+            <td>string</td>
+            <td>Information about the error that occurred (Rate limited, Access error, Unknown error).</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Status of the Flow Log</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Flow Log resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Flow Log resides</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC on which Flow Log was created</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>DeliverLogsStatus</td>
+            <td>string</td>
+            <td>The status of the logs delivery (SUCCESS | FAILED ).</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Flow Log</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RDSInstance">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets for the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Access</td>
+            <td>string</td>
+            <td>Public or Private</td>
+          </tr>
+          
+          <tr>
+            <td>SubnetGroups</td>
+            <td>sequence</td>
+            <td>DB Subnet Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Subnets</td>
+            <td>list</td>
+            <td>Subnets</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SubnetStatus</td>
+            <td>string</td>
+            <td>Subnet Status</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SubnetIdentifier</td>
+            <td>string</td>
+            <td>Subnet id</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SubnetAvailabilityZone</td>
+            <td>string</td>
+            <td>Subnet Availability Zone</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBSubnetGroupDescription</td>
+            <td>string</td>
+            <td>Subnet Group Description</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SubnetGroupStatus</td>
+            <td>string</td>
+            <td>Subnet Group Status</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBSubnetGroupArn</td>
+            <td>string</td>
+            <td>Subnet Group Arn</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBSubnetGroupName</td>
+            <td>string</td>
+            <td>Subnet Group Name</td>
+          </tr>
+          
+          <tr>
+            <td>MonitoringInterval</td>
+            <td>number</td>
+            <td>The interval in seconds for enhanced monitoring</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Database engine used for the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Identifier of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Status of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability Zone for RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>MultiAZ</td>
+            <td>boolean</td>
+            <td>Whether RDS Instance in available in multiple availability zones</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the RDS Instance resides</td>
+          </tr>
+          
+          <tr>
+            <td>Snapshots</td>
+            <td>list</td>
+            <td>Snapshots of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>PubliclyAccessible</td>
+            <td>boolean</td>
+            <td>Whether the Snapshot is publicly accessible</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Encrypted</td>
+            <td>boolean</td>
+            <td>Whether the Snapshot is encrypted</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBSnapshotIdentifier</td>
+            <td>string</td>
+            <td>Name of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>AutoMinorVersionUpgrade</td>
+            <td>boolean</td>
+            <td>Whether minor engine upgrades are automatically applied to the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>StorageEncrypted</td>
+            <td>boolean</td>
+            <td>Specifies whether the DB instance is encrypted</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>BackupRetentionPeriod</td>
+            <td>number</td>
+            <td>Retention period in days for backup of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the RDS Instance resides</td>
+          </tr>
+          
+          <tr>
+            <td>ComputeClass</td>
+            <td>string</td>
+            <td>Compute and memory capacity of the RDS Instance</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the RDS Instance</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="NetworkACL">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets associated with theh Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefault</td>
+            <td>boolean</td>
+            <td>Whether this is the default Network ACL for the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Network ACL resides</td>
+          </tr>
+          
+          <tr>
+            <td>Rules</td>
+            <td>list</td>
+            <td>Rule Entries in the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RuleNumber</td>
+            <td>number</td>
+            <td>Rule number of the entry</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Protocol</td>
+            <td>string</td>
+            <td>Protocol</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FromPort</td>
+            <td>number</td>
+            <td>Starting port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Egress</td>
+            <td>boolean</td>
+            <td>Whether egress rule</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RuleAction</td>
+            <td>string</td>
+            <td>Action to take. Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ToPort</td>
+            <td>number</td>
+            <td>Ending port number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CidrBlock</td>
+            <td>ip</td>
+            <td>IPV4 network range</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Network ACL</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Network ACL resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Network ACL</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="IAMUser">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the user</td>
+          </tr>
+          
+          <tr>
+            <td>RootUser</td>
+            <td>boolean</td>
+            <td>True if user is root</td>
+          </tr>
+          
+          <tr>
+            <td>AccessKey</td>
+            <td>list</td>
+            <td>User access key settings</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastRotatedTime</td>
+            <td>number</td>
+            <td>Access key last changed time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CreatedByDefault</td>
+            <td>boolean</td>
+            <td>Access key created by default for the User</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastUsedTime</td>
+            <td>number</td>
+            <td>Access key last used time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Active</td>
+            <td>boolean</td>
+            <td>Access key active for the User</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastUsedService</td>
+            <td>string</td>
+            <td>Access key last used service</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CreatedTime</td>
+            <td>number</td>
+            <td>Access key creation time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastUsedRegion</td>
+            <td>string</td>
+            <td>Access key last used region</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the User</td>
+          </tr>
+          
+          <tr>
+            <td>MFADevices</td>
+            <td>sequence</td>
+            <td>Multi-factor authentication(MFA) Devices</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Virtual</td>
+            <td>list</td>
+            <td>Virtual MFA devices</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnabledTime</td>
+            <td>number</td>
+            <td>Time when MFA device was enabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SerialNumber</td>
+            <td>string</td>
+            <td>Serial number</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Physical</td>
+            <td>list</td>
+            <td>Physical MFA devices</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnabledTime</td>
+            <td>number</td>
+            <td>Time when MFA device was enabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SerialNumber</td>
+            <td>string</td>
+            <td>Serial number</td>
+          </tr>
+          
+          <tr>
+            <td>Policies</td>
+            <td>sequence</td>
+            <td>Policies attached to the User</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Managed</td>
+            <td>Reference to IAMPolicy</td>
+            <td>Managed policies attached to the User</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Inline</td>
+            <td>list</td>
+            <td>Inline policies for the User</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Name of the user</td>
+          </tr>
+          
+          <tr>
+            <td>Password</td>
+            <td>sequence</td>
+            <td>User password settings</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastUsedTime</td>
+            <td>number</td>
+            <td>Password last used time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LastChangedTime</td>
+            <td>number</td>
+            <td>Password last changed time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Password enabled for the User</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NextRotationTime</td>
+            <td>number</td>
+            <td>Time when the password needs to be changed next</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the IAMUser</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>MFAActive</td>
+            <td>boolean</td>
+            <td>Whether multi-factor authentication(MFA) device has been enabled for the User</td>
+          </tr>
+          
+          <tr>
+            <td>Groups</td>
+            <td>Reference to IAMGroup</td>
+            <td>Groups the User belongs to</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the User</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="EKSCluster">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Logging</td>
+            <td>sequence</td>
+            <td>Logging info of the cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ClusterLogging</td>
+            <td>list</td>
+            <td>Cluster logging</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Type</td>
+            <td>list</td>
+            <td>Type of logging</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>True or False</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets to which network interfaces of the Instance belong to</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Role</td>
+            <td>Reference to IAMRole</td>
+            <td>IAMRole associated to Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>EndPointPublicAccess</td>
+            <td>boolean</td>
+            <td>End Point Public Access</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Instance Type</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>EndPoint</td>
+            <td>string</td>
+            <td>Endpoint of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>SecurityGroups to which Clusters are assigned to</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC associated with the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>PlatformVersion</td>
+            <td>string</td>
+            <td>Platform version of Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>EndPointPrivateAccess</td>
+            <td>boolean</td>
+            <td>End Point Private Access</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Cluster</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CloudWatchLogGroup">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>MetricFilters</td>
+            <td>list</td>
+            <td>Metric Filters for the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FilterPattern</td>
+            <td>string</td>
+            <td>Filter pattern</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Transformations</td>
+            <td>list</td>
+            <td>Metric transformations to transform ingested log events in to metric data</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MetricValue</td>
+            <td>string</td>
+            <td>Value to publish to the Cloudwatch Metric</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MetricAlarms</td>
+            <td>Reference to MetricAlarm</td>
+            <td>Metric Alarms</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DefaultValue</td>
+            <td>string</td>
+            <td>Value to emit when a filter pattern does not match a log event</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MetricName</td>
+            <td>string</td>
+            <td>Name of the Cloudwatch Metric</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Name of the Metric Filter</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon resource name of the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>StoredBytes</td>
+            <td>number</td>
+            <td>Number of bytes stored in the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Log Group resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Log Group resides</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date of the Log Group</td>
+          </tr>
+          
+          <tr>
+            <td>Retention</td>
+            <td>number</td>
+            <td>Number of days to retain the log events in the Log Group</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="IAMPasswordPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>RequireNumbers</td>
+            <td>boolean</td>
+            <td>Whether numbers are required in IAM user passwords</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Always 'PasswordPolicy'</td>
+          </tr>
+          
+          <tr>
+            <td>RequireUppercaseCharacters</td>
+            <td>boolean</td>
+            <td>Whether Upper case characters are required in IAM user passwords</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Password Policy</td>
+          </tr>
+          
+          <tr>
+            <td>MaxPasswordAge</td>
+            <td>number</td>
+            <td>Number of days an IAM password is valid</td>
+          </tr>
+          
+          <tr>
+            <td>RequireSymbols</td>
+            <td>boolean</td>
+            <td>Whether symbols are required in IAM user passwords</td>
+          </tr>
+          
+          <tr>
+            <td>HardExpiry</td>
+            <td>boolean</td>
+            <td>Whether IAM users are prevented from setting a new password after password expiry</td>
+          </tr>
+          
+          <tr>
+            <td>ExpirePasswords</td>
+            <td>boolean</td>
+            <td>Whether passwords are to expire</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Always 'PasswordPolicy'</td>
+          </tr>
+          
+          <tr>
+            <td>RequireLowercaseCharacters</td>
+            <td>boolean</td>
+            <td>Whether lower case characters are required in IAM user passwords</td>
+          </tr>
+          
+          <tr>
+            <td>Configured</td>
+            <td>boolean</td>
+            <td>Whether Password Policy is configured</td>
+          </tr>
+          
+          <tr>
+            <td>AllowUsersToChangePassword</td>
+            <td>boolean</td>
+            <td>Whether IAM users are allowed to change their own password</td>
+          </tr>
+          
+          <tr>
+            <td>PasswordReusePrevention</td>
+            <td>number</td>
+            <td>Number of previous passwords IAM users are prevented from reusing</td>
+          </tr>
+          
+          <tr>
+            <td>MinimumPasswordLength</td>
+            <td>number</td>
+            <td>Minimum length to require for IAM user passwords</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Password Policy</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="NetworkInterface">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Subnet</td>
+            <td>Reference to Subnet</td>
+            <td>Subnet for the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Type of interface. Possible values are 'interface' and 'natGateway'</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateIpAddress</td>
+            <td>list</td>
+            <td>Private IPv4 addresses of the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability Zone for the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Network Interface resides</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateDnsName</td>
+            <td>list</td>
+            <td>Private DNS</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>Security Groups for the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Network Interface</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Network Interface resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Network Interface</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="S3Bucket">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>EncryptionType</td>
+            <td>string</td>
+            <td>Type of Encryption</td>
+          </tr>
+          
+          <tr>
+            <td>LoggingEnabled</td>
+            <td>boolean</td>
+            <td>Whether access logging is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>Size</td>
+            <td>number</td>
+            <td>Size of the bucket in Bytes.</td>
+          </tr>
+          
+          <tr>
+            <td>ACL</td>
+            <td>list</td>
+            <td>Access control policies for the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Permission</td>
+            <td>string</td>
+            <td>Permission. Possible values are 'FULL_CONTROL', 'WRITE', 'WRITE_ACP', 'READ' and 'READ_ACP'</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Grantee</td>
+            <td>sequence</td>
+            <td>Grantee</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DisplayName</td>
+            <td>string</td>
+            <td>Screen name of the grantee</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EmailAddress</td>
+            <td>string</td>
+            <td>Email address of the grantee</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ID</td>
+            <td>string</td>
+            <td>The canonical user ID of the grantee</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Type</td>
+            <td>string</td>
+            <td>Type of grantee</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>URI</td>
+            <td>string</td>
+            <td>URI of the grantee group</td>
+          </tr>
+          
+          <tr>
+            <td>Access</td>
+            <td>string</td>
+            <td>Public or Private</td>
+          </tr>
+          
+          <tr>
+            <td>BucketAclAccess</td>
+            <td>string</td>
+            <td>BucketAclAccess</td>
+          </tr>
+          
+          <tr>
+            <td>CORS</td>
+            <td>list</td>
+            <td>CORS of the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CORSRules</td>
+            <td>list</td>
+            <td>CORS Rules for Bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AllowedHeaders</td>
+            <td>list</td>
+            <td>Allowed Headers for Rules</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AllowedMethods</td>
+            <td>list</td>
+            <td>Allowed Methods for Rules</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AllowedOrigins</td>
+            <td>list</td>
+            <td>Allowed origins for Rules</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td>BucketPolicy</td>
+            <td>list</td>
+            <td>Bucket Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>statements of policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect. Possible values are 'Allow' and 'Deny'</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Id of statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>Id of the policy</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Bucket name</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Bucket name</td>
+          </tr>
+          
+          <tr>
+            <td>RBACOwner</td>
+            <td>list</td>
+            <td>RBACOwner</td>
+          </tr>
+          
+          <tr>
+            <td>BlockPublicAccess</td>
+            <td>sequence</td>
+            <td>BlockPublicAccess</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>BlockPublicPolicy</td>
+            <td>string</td>
+            <td>BlockPublicPolicy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RestrictPublicBuckets</td>
+            <td>string</td>
+            <td>IgnorePublicAcl</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>BlockPublicAcls</td>
+            <td>string</td>
+            <td>BlockPublicAcls</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IgnorePublicAcls</td>
+            <td>string</td>
+            <td>IgnorePublicAcl</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>BucketVersioning</td>
+            <td>sequence</td>
+            <td>Versioning state of the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Versioning state of the Bucket. Possible value 'Enabled' and 'Suspended'</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MFADelete</td>
+            <td>string</td>
+            <td>Whether MFA required on Bucket deletion</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Bucket resides</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>BucketPolicyAccess</td>
+            <td>string</td>
+            <td>BucketPolicyAccess</td>
+          </tr>
+          
+          <tr>
+            <td>Owner</td>
+            <td>string</td>
+            <td>S3 Resource owner.</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Bucket resides</td>
+          </tr>
+          
+          <tr>
+            <td>DefaultEncryption</td>
+            <td>string</td>
+            <td>Whether Server Side Encrption has been configured for the Bucket</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Bucket</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="IAMPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Time of policy creation</td>
+          </tr>
+          
+          <tr>
+            <td>AttachedEntities</td>
+            <td>sequence</td>
+            <td>List of entities the policy is attached to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Groups</td>
+            <td>Reference to IAMGroup</td>
+            <td>IAM groups the policy is attached to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Users</td>
+            <td>Reference to IAMUser</td>
+            <td>IAM users the policy is attached to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Roles</td>
+            <td>Reference to IAMRole</td>
+            <td>IAM roles the policy is attached to</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Policy</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of acocunt containing the Policy</td>
+          </tr>
+          
+          <tr>
+            <td>Permissions</td>
+            <td>sequence</td>
+            <td>IAM Policy permissions</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statements</td>
+            <td>list</td>
+            <td>Permission statements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect of the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon resource name (ARN) of the Policy</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Policy name</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CloudFormation">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name associated with the Stack</td>
+          </tr>
+          
+          <tr>
+            <td>StackRole</td>
+            <td>Reference to IAMRole</td>
+            <td>Role attached to Stack</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Stack</td>
+          </tr>
+          
+          <tr>
+            <td>StackPolicy</td>
+            <td>sequence</td>
+            <td>Stack Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statements</td>
+            <td>list</td>
+            <td>Statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Policy Effect. Can be 'Allow' or 'Deny'</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Status of the Stack</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Stack</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Stack resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Stack resides</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Unique identifier of the Stack</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Stack</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RedShiftCluster">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets for the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>LoggingEnabled</td>
+            <td>boolean</td>
+            <td>Whether access logging is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Access</td>
+            <td>string</td>
+            <td>Public or Private</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>KMS key used for encryption</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Identifier of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Status of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability Zone of the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AllowVersionUpgrade</td>
+            <td>boolean</td>
+            <td>Whether major version upgrades are automatically applied to the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>Encrypted</td>
+            <td>boolean</td>
+            <td>Whether encryption is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>ComputeClass</td>
+            <td>string</td>
+            <td>Compute Class for nodes in the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AutomatedSnapshotRetentionPeriod</td>
+            <td>number</td>
+            <td>Retention period in days for automated snapshot for the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>ClusterParameterGroups</td>
+            <td>list</td>
+            <td>Parameter Groups associated with the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ClusterParameterGroup</td>
+            <td>list</td>
+            <td>Cluster Parameter Group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ParameterName</td>
+            <td>string</td>
+            <td>Name of the parameter</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ParameterValue</td>
+            <td>string</td>
+            <td>Value of the parameter</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NumWlmConfigs</td>
+            <td>number</td>
+            <td>Number of WLM configs for this cluster parameter group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>Port</td>
+            <td>number</td>
+            <td>port number</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Cluster</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Organization">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>MasterAccountArn</td>
+            <td>string</td>
+            <td>Master Account ARN</td>
+          </tr>
+          
+          <tr>
+            <td>MasterAccountId</td>
+            <td>string</td>
+            <td>Master Account ID</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Organization</td>
+          </tr>
+          
+          <tr>
+            <td>AvailablePolicyTypes</td>
+            <td>list</td>
+            <td>Available Policy Types</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Status of Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Type</td>
+            <td>string</td>
+            <td>Type of Policy</td>
+          </tr>
+          
+          <tr>
+            <td>MasterAccountEmail</td>
+            <td>string</td>
+            <td>Master Account Email</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>FeatureSet</td>
+            <td>string</td>
+            <td>Specifies the functionality that currently is available to the organization. Set to "ALL" if all features are enabled else set to "CONSOLIDATED_BILLING" as only consolidated billing functionality is available.</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>Arn</td>
+            <td>string</td>
+            <td>ARN of the Organization</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Cluster</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Lambda">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the function</td>
+          </tr>
+          
+          <tr>
+            <td>AdminPrivileges</td>
+            <td>boolean</td>
+            <td>Whether the lambda has administrative privileges</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Function</td>
+          </tr>
+          
+          <tr>
+            <td>Environment</td>
+            <td>list</td>
+            <td>Environment variables for this lambda</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ParameterName</td>
+            <td>string</td>
+            <td>Name of the parameter</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ParameterValue</td>
+            <td>string</td>
+            <td>Value of the parameter</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>Key used to encrypt the environment variables</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ARN of the function</td>
+          </tr>
+          
+          <tr>
+            <td>IAMRole</td>
+            <td>Reference to IAMRole</td>
+            <td>Role attached to the function</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Function</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Function</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="IAMRole">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>AssumeRolePolicy</td>
+            <td>sequence</td>
+            <td>Policy that grants entity to assume role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Document Version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>Document Statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Policy effect</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SID</td>
+            <td>string</td>
+            <td>Policy service id (sid)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>string</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>sequence</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Service</td>
+            <td>list</td>
+            <td>Service</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AWS</td>
+            <td>list</td>
+            <td>AWS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Federated</td>
+            <td>list</td>
+            <td>Federated</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Role name</td>
+          </tr>
+          
+          <tr>
+            <td>TrustedIdentities</td>
+            <td>list</td>
+            <td>Trusted Identities of the IAMRole</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>Policies</td>
+            <td>sequence</td>
+            <td>Policies attached to role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>Policy id - role name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Managed</td>
+            <td>Reference to IAMPolicy</td>
+            <td>Managed policies attached to the role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Inline</td>
+            <td>list</td>
+            <td>Inline policies for the role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>PolicyDocument</td>
+            <td>sequence</td>
+            <td>Policy document</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Statements</td>
+            <td>list</td>
+            <td>Permission statements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect of the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Role ID</td>
+          </tr>
+          
+          <tr>
+            <td>Description</td>
+            <td>string</td>
+            <td>Description of the IAMRole</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the IAMRole</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>InstanceProfile</td>
+            <td>list</td>
+            <td>Instance Profile for IAM Role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceCount</td>
+            <td>number</td>
+            <td>Count of EC2 Instances</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceProfileId</td>
+            <td>string</td>
+            <td>Id of profile</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>InstanceProfileName</td>
+            <td>string</td>
+            <td>Name of the profile</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Path</td>
+            <td>string</td>
+            <td>Path of profile</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Arn</td>
+            <td>string</td>
+            <td>Path of profile</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Time of role creation</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="EC2Instance">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>PrivateDNS</td>
+            <td>list</td>
+            <td>Private DNS Names</td>
+          </tr>
+          
+          <tr>
+            <td>Monitoring</td>
+            <td>boolean</td>
+            <td>Whether monitoring enabled for the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Platform</td>
+            <td>string</td>
+            <td>Value is Windows for Windows instances; otherwise blank</td>
+          </tr>
+          
+          <tr>
+            <td>LaunchTime</td>
+            <td>number</td>
+            <td>Time the Instance was launched</td>
+          </tr>
+          
+          <tr>
+            <td>IAMInstanceProfile</td>
+            <td>sequence</td>
+            <td>IAM Instance profile associated with the Instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Roles</td>
+            <td>list</td>
+            <td>Roles</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>Role Arn</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>IAM Instance profile ARN</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Instance Type</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Instance resides</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>SecurityGroups to which network interfaces of the Instance are assigned to</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC in which the Instance is running</td>
+          </tr>
+          
+          <tr>
+            <td>ReservationId</td>
+            <td>string</td>
+            <td>Reservation ID</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkInterfaces</td>
+            <td>Reference to NetworkInterface</td>
+            <td>Network Interfaces of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>PublicIPv4</td>
+            <td>list</td>
+            <td>Public IPv4 address assigned to the network interfaces of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>ID of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets to which network interfaces of the Instance belong to</td>
+          </tr>
+          
+          <tr>
+            <td>PublicDNS</td>
+            <td>list</td>
+            <td>Public DNS Names</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateIPv6</td>
+            <td>list</td>
+            <td>Private IPv6 addresses assigned to the network interfaces of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateIPv4</td>
+            <td>list</td>
+            <td>Private IPv4 addresses assigned to the network interfaces of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>Volumes</td>
+            <td>Reference to Volume</td>
+            <td>Elastic Block Devices attached to the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>Availability zone of the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Instance resides</td>
+          </tr>
+          
+          <tr>
+            <td>Image</td>
+            <td>Reference to Image</td>
+            <td>Image used to launch the Instance</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Instance</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RouteTable">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>ID of the route table</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets for the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td>Routes</td>
+            <td>list</td>
+            <td>Routes in the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DestinationCidrBlock</td>
+            <td>ip</td>
+            <td>IPv4 CIDR block for destination match</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VPCPeeringConnection</td>
+            <td>sequence</td>
+            <td>VPC peering connection for the route entry</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>State of the route entry</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DestinationIPv6CidrBlock</td>
+            <td>ip</td>
+            <td>IPv6 CIDR block for destination match</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags associated with the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Route Table resides</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Route Table</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Route Table resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Route Table</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Image">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the AMI</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the AMI</td>
+          </tr>
+          
+          <tr>
+            <td>Platform</td>
+            <td>string</td>
+            <td>Value is 'Windows' for Windows AMIs; otherwise blank</td>
+          </tr>
+          
+          <tr>
+            <td>UnknownAccountExposure</td>
+            <td>boolean</td>
+            <td>Whether the Image has public launch permissions</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Image Type</td>
+          </tr>
+          
+          <tr>
+            <td>Public</td>
+            <td>boolean</td>
+            <td>Whether the Image has public launch permissions</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of the AMI</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Image</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the AMI exists</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the AMI exists</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the AMI</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the AMI</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Snapshots">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Snapshot Id</td>
+          </tr>
+          
+          <tr>
+            <td>CreationTime</td>
+            <td>number</td>
+            <td>Creation time of Snapshot</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the snapshot</td>
+          </tr>
+          
+          <tr>
+            <td>Access</td>
+            <td>string</td>
+            <td>Value from an Amazon-maintained list</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>KMSKey</td>
+          </tr>
+          
+          <tr>
+            <td>VolumeSize</td>
+            <td>number</td>
+            <td>Size of the Volume</td>
+          </tr>
+          
+          <tr>
+            <td>UnknownAccountExposure</td>
+            <td>boolean</td>
+            <td>Value from an Amazon-maintained list</td>
+          </tr>
+          
+          <tr>
+            <td>Progress</td>
+            <td>string</td>
+            <td>Progress of Snapshot</td>
+          </tr>
+          
+          <tr>
+            <td>OwnerId</td>
+            <td>string</td>
+            <td>AWS Owner Id</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Snapshot Id</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of the Snapshot</td>
+          </tr>
+          
+          <tr>
+            <td>Description</td>
+            <td>string</td>
+            <td>Description of the Snapshot</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags of Snapshots</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value of the Tag</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key of the Tag</td>
+          </tr>
+          
+          <tr>
+            <td>Encrypted</td>
+            <td>boolean</td>
+            <td>Whether the Snapshot is encrypted</td>
+          </tr>
+          
+          <tr>
+            <td>VolumeId</td>
+            <td>string</td>
+            <td>Volume to which the snapshot is attached</td>
+          </tr>
+          
+          <tr>
+            <td>StateMessage</td>
+            <td>string</td>
+            <td>State Mesaage</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the snapshot</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SNSTopic">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Topic display name</td>
+          </tr>
+          
+          <tr>
+            <td>Subscriptions</td>
+            <td>list</td>
+            <td>Requester's subscriptions</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Endpoint</td>
+            <td>string</td>
+            <td>Subscription's endpoint</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Protocol</td>
+            <td>string</td>
+            <td>Subscription's protocol</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Owner</td>
+            <td>string</td>
+            <td>Subscription's owner</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Arn</td>
+            <td>string</td>
+            <td>Amazon resource number</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Region name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Region id</td>
+          </tr>
+          
+          <tr>
+            <td>Owner</td>
+            <td>string</td>
+            <td>AWS account ID of the topic's owner</td>
+          </tr>
+          
+          <tr>
+            <td>Policy</td>
+            <td>sequence</td>
+            <td>Policies for SNS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>statements of policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Id of statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>Id of the policy</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon resource number</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ElasticLoadBalancer">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>Subnets for the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>SslPolicy</td>
+            <td>string</td>
+            <td>Security policy that defines which ciphers and protocols are supported</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>list</td>
+            <td>Availability Zones for the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Type of the Load Balancer. Possible values are 'application' and 'network'</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Amazon Resource Number of the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>State of the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>DeletionProtection</td>
+            <td>boolean</td>
+            <td>Whether deletion protection is enabled for the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Load Balancer resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccessLogsEnabled</td>
+            <td>boolean</td>
+            <td>Whether access log are enabled for the Load balancer</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>Security groups for the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC for the Load Balancer</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Load Balancer resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Load Balancer</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SESIdentity">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Identity Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Region name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Region id</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account name</td>
+          </tr>
+          
+          <tr>
+            <td>Policy</td>
+            <td>list</td>
+            <td>Policy for Identity</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Id of the policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statement</td>
+            <td>list</td>
+            <td>Statements of policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Id of statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for owner or ARN</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy action</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation Date</td>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Identity Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account id</td>
+          </tr>
+          
+        </table>
+      
+    </div>
+  </div>
+  <script>
+  function hideEntityTables() {
+    $('.entity_table').hide()
+    $('.entity_key').removeClass('active')
+  }
+
+  function showEntityTable(name) {
+    // c) show this table
+    $('.entity_table[data-entity-name="'+name+'"]').show()
+  }
+
+  function activateEntity(entity_name) {
+    // a) hide all the tables with the class 'entity_table'
+    hideEntityTables()
+    // b) find the table in '.entity_table' with the same 'entity-name' data attribute
+    showEntityTable(entity_name)
+    $('.entity_key[data-entity-name="'+entity_name+'"]').addClass('active')
+  }
+
+  function initListeners(){
+    // 1. iterate over each Entity list item   
+    $('.entity_key').each(function(i, obj) {
+      var entityKey = $(obj)
+      var entityName = entityKey.data('entity-name')
+      console.log('adding click listener to ' + entityName);
+      // here, entityName might equal something like 'S3Bucket'
+      // 2. add a click listener
+      entityKey.click(function(event){
+        console.log('received click event for ' + entityName)
+        activateEntity(entityName)
+      })
+    })
+  }
+  (function(){
+    hideEntityTables()
+    var firstEntity = $($('.entity_key')[0]).data('entity-name')
+    console.log('activating first entity: ', firstEntity)
+    activateEntity(firstEntity)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

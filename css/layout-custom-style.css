@@ -1,0 +1,248 @@
+
+
+
+
+
+
+
+
+
+
+/* PROVIDES THE LATO FONT STYLE USED THROUGHOUT */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+/* DONT THINK THESE TWO AFFECT ANYTHING, BUT THEY DID IN THE PREVIOUS LAYOUT
+.article h1.title  {
+    display: none;
+}    
+
+ #publication-title {
+    display: none;
+}   */  
+
+/* CONTROLS FONT WEIGHT AND SPACING; H2 IS THE PRIMARY HEADING STYLE IN THE HELP */
+h2, .h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #242424;
+    font-family: inherit;
+    margin-bottom: 20px;
+    margin-top: 0;
+}    
+    
+    h1, h3, h4, h5, h6, .h1, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-family: inherit;
+}
+
+/* CHANGED THIS FROM UPPERCASE TO NONE SO H5 HEADINGS ARE NOT ALL CAPS 
+ALSO ADDED FONT SIZE VALUE BECAUSE SECTION TITLES (h5) WHEN NESTED APPEAR AS NORMAL TEXT 10PT*/
+h5, .h5{
+    text-transform: none;
+    font-size: 13pt;
+}
+
+
+/* ADDED H6 FONT SIZE TO FIX BRIDGEHEAD TITLES APPEARING AS NORMAL SIZE TEXT */
+h6, .h6{
+font-size: 12pt;
+}
+
+
+/* ADDED H7 FONT SIZE TO FIX BRIDGEHEAD TITLES APPEARING AS NORMAL SIZE TEXT WHEN CONREFFED*/
+h7, .h7{
+font-size: 12pt;
+}
+
+
+/* APPLIES CORP TEXT STYLE LATO TO PAGE TEXT AND CONTROLS BODY TEXT FONT SIZE */
+body {
+	background-color: #fff;
+	font-family: 'Lato', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 20px;
+	color: #242424;
+}
+
+
+/* REDUCED THE EXCESSIVE LEFT MARGIN ON MAIN VIEW PAGE BY CHANGING THE LEFT PADDING */
+ .theme1.page-toc main article {
+        padding-left: 5%;
+    }
+
+/* CHANGES THE LEFT MARGIN FOR THE FEEDBACK LINK AT THE BOTTOM OF THE PAGE */
+div.feedback-panel{
+    margin-left: 5%;
+}
+
+/* CONTROLS THE FONT STYLE FOR CODE STRINGS IF WE WANT TO MODIFY IT */
+
+code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#000;white-space:nowrap;background-color:#fff;border-radius:4px}
+
+
+/* CONTROLS THE SPACING IN THE LOGO BLOCK IN THE TOC NAV PANEL */
+.theme1 .site-sidebar .logo{
+    width: 70%;
+    max-width: 180px;
+    padding: 5px 0;
+    padding-top: 5px;
+    display: inline-block   
+} 
+
+ 
+/* CONTROLS SPACING OF TOPIC LINKS IN THE TOC NAV PANEL, HAD TO ADD TOP AND BOTTOM PADDING */
+.nav-site-sidebar .topic-link{
+    position: relative;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* COMMENTED OUT PER PALIGO SUPPORT'S SUGGESTION; THOUGHT IT REMOVED BLANK HOME PAGE LINK IN THE TOC NAV, BUT IT'S NOT THERE EVEN WITH THIS OUT  
+ul.toc.nav.nav-site-sidebar > li:first-of-type {
+  display:none;
+} */
+
+/* CONTROLS SIZE OF TEXT FOR SEE ALSO LINKS */
+.section-toc .topic-link{
+    font-size: 10pt;
+}
+
+
+/* CONTROLS THE TEXT STYLE AND COLOR OF THE NOTE LABELS */
+
+/* CONTROLS THE COLORS OF THE NOTE ICONS */
+.note:before,
+.tip:before,
+.warning:before,
+.caution:before,
+.important:before{
+    content: '\f040';
+    color: #55565a;
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    vertical-align: middle;
+    font-family: FontAwesome;
+}
+
+
+/* CONTROLS THE COLOR OF THE SIDE BORDER AND BACKGROUND COLOR IN THE NOTE BOX */
+.note,
+.tip{
+    display: block;
+    padding: 12px 18px 12px 65px;
+    -moz-background-clip: padding;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #55565a;
+    line-height: 1.4em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    position: relative;
+    background-color: #dfdfdf;
+   
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }  
+    
+  .important,
+  .caution,
+  .warning{
+        display: block;
+        padding: 12px 18px 12px 65px;
+        -moz-background-clip: padding;
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-left-color: #FDFD29;
+        line-height: 1.4em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        position: relative;
+        background-color: #F9F9DE;
+       
+        margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+/* CONTROLS THE COLOR OF THE TOC NAV PANEL */
+
+.bg-primary,.btn-primary,.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus,.site-sidebar  {
+    background-color:#303e47;
+}
+
+/* REMOVED THIS SO BLACK DIDN'T BORDER THE ICONS ON THE PORTAL PAGE 
+,.portal-single-publication */
+
+
+/* CONTROLS THE COLOR OF THE ICONS ON THE INDEX.HTML HOME PAGE */
+.publication-icon {
+    background-color:#1976d2;
+}
+
+/* CONTROLS THE BACKGROUND AND TEXT COLOR FOR THE PREV AND NEXT LINKS IN THE PAGE FOOTER */
+
+.pager li>a,.pager li>span {
+    color:#1976d2;   
+}
+.pager li>a:hover,.pager li>span:hover {
+    background-color:#1976d2;
+}
+
+
+/* CONTROLS THE SIZE AND COLOR OF THE BREADCRUMB TEXT ON THE TOP OF THE PAGE */
+.breadcrumb {
+    font-size: 9pt;
+    color: #1976d2;
+}    
+
+/* CONTROLS THE TEXT SIZE IN THE SEARCH RESULTS SNIPPETS */
+.searchresultsnippet{
+    font-weight: 350;
+    font-size: 10pt;
+    color: #000;
+}
+
+/* CONTROLS THE COLOR OF THE LINK IN SEARCH RESULTS */
+.search-result-url, .search-result-breadcrumbs{
+    color: #1976d2;
+}
+
+/* ADDED THE MARGIN-BOTTOM VALUE TO MAKE SPACE BELOW TABLES AND ABOVE HEADINGS, PARAS, ETC. */
+div.informaltable{
+    margin-bottom: 20px;
+}
+
+/* CONTROLS COLOR OF TABLE BORDERS/RULES */
+.rules-all td,
+.rules-all th{
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+/* CONTROLS THE TABLE ROW SHADING, EVERY OTHER ROW LIKE IT DOES IN THE PDFs AND ZENDESK */
+
+.informaltable table tr:nth-child(even),
+table tr:nth-child(even){
+    background-color: #EDEDED;
+    }
+    
+ /* CONTROLS THE TABLE HEADER SHADING, LOOKS LIKE IT DOES IN THE PDFs AND ZENDESK */   
+.informaltable th, .table th,
+.alternate table th, table th, table th a
+{
+    background-color: #BFBDBD;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    }
+    
+
+
