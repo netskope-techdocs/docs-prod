@@ -166,11 +166,12 @@ function loadContent(href, hash) {
     
     $("aside ul.toc a").parent().removeClass("active").removeClass("opened");
     
+
+    var target = href.split('#')[1];
     $.each($("ul.toc a"), function (i, e) {
         var toclink = this.href.split('#')[1];
-        var r = new RegExp(href.split('#')[1] + '$');
         
-        if (r.test(toclink)) {
+        if (toclink === target) {
             $(this).parent().addClass("active");
             $(this).parents("li").toggleClass("opened");
             

@@ -97,6 +97,10 @@ $(document).ready(function () {
         else if ($(event.target).hasClass('glyphicon') && clickedLink.parents('.nav-site-sidebar').length) {
             event.preventDefault();
         }
+        /* Load entire page on version dropdown */
+        else if (clickedLink.parents('.version-dropdown').length) {
+            /* Bypass ajax loading and load entire page */
+        }
         /*Make external links and home url redirect as usual:*/
         else if (clickedhref.match(/^http.*|\/index\.html|^mailto/)) {
             /*Just let link work as by default*/
