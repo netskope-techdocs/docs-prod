@@ -178,6 +178,13 @@ var toc = [{
 "url": "users.html",
 "text": "Users",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "user-details.html",
+"text": "User Details",
+"class": "topic-link section"
+}]
 },
 {
 "url": "events.html",
@@ -261,9 +268,101 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-platform-api-endpoints.html",
+"url": "rest-api.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "get-alerts-data.html",
+"text": "Get Alerts Data",
+"class": "topic-link section"
+},
+{
+"url": "get-events-data.html",
+"text": "Get Events Data",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-events-and-alerts-response-descriptions.html",
+"text": "REST API Events and Alerts Response Descriptions",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-pagination-best-practices.html",
+"text": "REST API Pagination Best Practices",
+"class": "topic-link section"
+},
+{
+"url": "get-client-data.html",
+"text": "Get Client Data",
+"class": "topic-link section"
+},
+{
+"url": "get-reports-data.html",
+"text": "Get Reports Data",
+"class": "topic-link section"
+},
+{
+"url": "advanced-analytics-rest-apis.html",
+"text": "Advanced Analytics REST APIs",
+"class": "topic-link section"
+},
+{
+"url": "get-a-steering-configuration-list.html",
+"text": "Get a Steering Configuration List",
+"class": "topic-link section"
+},
+{
+"url": "get-steering-configuration-information.html",
+"text": "Get Steering Configuration Information",
+"class": "topic-link section"
+},
+{
+"url": "get-user-configuration-data.html",
+"text": "Get User Configuration Data",
+"class": "topic-link section"
+},
+{
+"url": "get-log-upload-token.html",
+"text": "Get Log Upload Token",
+"class": "topic-link section"
+},
+{
+"url": "manage-user-roles.html",
+"text": "Manage User Roles",
+"class": "topic-link section"
+},
+{
+"url": "manage-quarantine-files.html",
+"text": "Manage Quarantine Files",
+"class": "topic-link section"
+},
+{
+"url": "manage-legal-hold-files.html",
+"text": "Manage Legal Hold Files",
+"class": "topic-link section"
+},
+{
+"url": "update-a-file-hash-list.html",
+"text": "Update a File Hash List",
+"class": "topic-link section"
+},
+{
+"url": "update-a-url-list.html",
+"text": "Update a URL List",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-anomalies.html",
+"text": "Acknowledge Anomalies",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-compromised-credentials.html",
+"text": "Acknowledge Compromised Credentials",
+"class": "topic-link section"
+}]
 }]
 }]
 },
@@ -531,16 +630,102 @@ var toc = [{
 "url": "continuous-security-assessment-for-aws.html",
 "text": "Continuous Security Assessment for AWS",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "cis-benchmarks-for-aws.html",
+"text": "CIS Benchmarks for AWS",
+"class": "topic-link section"
+},
+{
+"url": "payment-card-industry-data-security-standard.html",
+"text": "Payment Card Industry Data Security Standard",
+"class": "topic-link section"
+},
+{
+"url": "aws-best-practices.html",
+"text": "AWS Best Practices",
+"class": "topic-link section"
+},
+{
+"url": "nist-framework.html",
+"text": "NIST Framework",
+"class": "topic-link section"
+}]
 },
 {
 "url": "setting-up-multiple-aws-accounts-using-the-new-ui.html",
 "text": "Setting Up Multiple AWS Accounts using the New UI",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "implementation-guide-to-set-up-aws-accounts-in-netskope.html",
+"text": "Implementation guide to set up AWS accounts in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "add-aws-accounts-to-netskope-using-the-netskope-ui.html",
+"text": "Add AWS accounts to Netskope using the Netskope UI",
+"class": "topic-link section"
+},
+{
+"url": "scanning-s3-buckets-encrypted-with-kms-keys.html",
+"text": "Scanning S3 Buckets encrypted with KMS keys",
+"class": "topic-link section"
+},
+{
+"url": "post-set-up-updates.html",
+"text": "Post set up updates",
+"class": "topic-link section"
+},
+{
+"url": "migrate-existing-aws-accounts-to-the-new-set-up.html",
+"text": "Migrate existing AWS accounts to the new set up",
+"class": "topic-link section"
+},
+{
+"url": "automatically-add-new-accounts-to-netskope.html",
+"text": "Automatically add new accounts to Netskope",
+"class": "topic-link section"
+},
+{
+"url": "update-aws-accounts-in-netskope-from-aws-management-console.html",
+"text": "Update AWS accounts in Netskope from AWS Management Console",
+"class": "topic-link section"
+},
+{
+"url": "delete-aws-accounts-in-netskope-from-aws-management-console.html",
+"text": "Delete AWS accounts in Netskope from AWS Management Console",
+"class": "topic-link section"
+}]
 },
 {
 "url": "setting-up-aws-instances-using-old-ui.html",
 "text": "Setting Up AWS Instances using Old UI",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-aws-for-continuous-security-assessment.html",
+"text": "Configure AWS for Continuous Security Assessment",
+"class": "topic-link section"
+},
+{
+"url": "setting-up-multiple-aws-instances.html",
+"text": "Setting up Multiple AWS Instances",
+"class": "topic-link section"
+},
+{
+"url": "configure-aws-cloudtrail-for-audit-reports.html",
+"text": "Configure AWS CloudTrail for Audit Reports",
+"class": "topic-link section internal internal"
+},
+{
+"url": "configure-aws-s3-for-dlp-scanning-and-threat-protection.html",
+"text": "Configure AWS S3 for DLP Scanning and Threat Protection",
+"class": "topic-link section internal internal"
+}]
 }]
 },
 {
@@ -580,16 +765,72 @@ var toc = [{
 "url": "continuous-security-assessment-for-azure.html",
 "text": "Continuous Security Assessment for Azure",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "cis-benchmarks-for-azure.html",
+"text": "CIS Benchmarks for Azure",
+"class": "topic-link section"
+},
+{
+"url": "payment-card-industry-data-security-standard-138357.html",
+"text": "Payment Card Industry Data Security Standard",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-azure-subscription-for-security-assessment.html",
+"text": "Configure an Azure Subscription for Security Assessment",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-azure-blob-storage-for-dlp-scanning-and-threat-protection.html",
 "text": "Configure Azure Blob Storage for DLP Scanning and Threat Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "register-microsoft-event-grid-in-azure.html",
+"text": "Register Microsoft Event Grid in Azure",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-azure-ad-application-for-dlp-and-threat-protection.html",
+"text": "Configure an Azure AD Application for DLP and Threat Protection",
+"class": "topic-link section"
+},
+{
+"url": "add-the-azure-subscription-in-netskope-api-enabled-protection-163049.html",
+"text": "Add the Azure Subscription in Netskope API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-enabled-protection-policy-163050.html",
+"text": "Create an API-enabled Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "what-triggers-a-scan-and-billing-of-azure-blob-storage-.html",
+"text": "What Triggers a Scan and Billing of Azure Blob Storage?",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-azure-blob-storage-as-a-forensic-destination.html",
 "text": "Configure Azure Blob Storage as a Forensic Destination",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-an-azure-ad-application-for-forensics.html",
+"text": "Configure an Azure AD Application for Forensics",
+"class": "topic-link section"
+},
+{
+"url": "add-the-azure-subscription-in-netskope-api-enabled-protection-188656.html",
+"text": "Add the Azure Subscription in Netskope API-enabled Protection",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -602,16 +843,37 @@ var toc = [{
 "url": "security-assessment-policy.html",
 "text": "Security Assessment Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-assessment-policy.html",
+"text": "Create a Security Assessment Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "security-assessment-profile.html",
 "text": "Security Assessment Profile",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-assessment-profile.html",
+"text": "Create a Security Assessment Profile",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-security-assessment-rule.html",
 "text": "Create a Security Assessment Rule",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "custom-rules-using-domain-specific-language.html",
+"text": "Custom Rules using Domain Specific Language",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -639,6 +901,13 @@ var toc = [{
 "url": "inventory.html",
 "text": "Inventory",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "resource-categories.html",
+"text": "Resource Categories",
+"class": "topic-link section"
+}]
 },
 {
 "url": "cloud-infrastructure-use-cases.html",
@@ -653,7 +922,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "custom-rules-using-domain-specific-language.html",
+"url": "custom-rules-using-domain-specific-language-143208.html",
 "text": "Custom Rules using Domain Specific Language",
 "class": "topic-link section"
 }]
@@ -668,6 +937,98 @@ var toc = [{
 "url": "public-cloud-api-endpoints.html",
 "text": "Public Cloud API Endpoints",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "get-prep-info-to-create-an-aws-role.html",
+"text": "Get Prep Info to Create an AWS Role",
+"class": "topic-link section"
+},
+{
+"url": "create-an-aws-instance.html",
+"text": "Create an AWS Instance",
+"class": "topic-link section"
+},
+{
+"url": "create-a-google-cloud-platform-instance.html",
+"text": "Create a Google Cloud Platform Instance",
+"class": "topic-link section"
+},
+{
+"url": "grant-netskope-to-access-an-iaas-instance.html",
+"text": "Grant Netskope to Access an IaaS Instance",
+"class": "topic-link section"
+},
+{
+"url": "get-instance-info.html",
+"text": "Get Instance Info",
+"class": "topic-link section"
+},
+{
+"url": "update-an-aws-instance.html",
+"text": "Update an AWS Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-an-azure-instance.html",
+"text": "Update an Azure Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-a-gcp-instance.html",
+"text": "Update a GCP Instance",
+"class": "topic-link section"
+},
+{
+"url": "delete-an-iaas-instance.html",
+"text": "Delete an IaaS Instance",
+"class": "topic-link section"
+},
+{
+"url": "manage-multiple-aws-accounts.html",
+"text": "Manage Multiple AWS Accounts",
+"class": "topic-link section"
+},
+{
+"url": "manage-a-bucket-list-for-a-constraint-profile.html",
+"text": "Manage a Bucket List for a Constraint Profile",
+"class": "topic-link section"
+},
+{
+"url": "evaluate-custom-rules.html",
+"text": "Evaluate Custom Rules",
+"class": "topic-link section"
+},
+{
+"url": "import-and-export-csa-custom-rules.html",
+"text": "Import and Export CSA Custom Rules",
+"class": "topic-link section"
+},
+{
+"url": "start-a-csa-scan.html",
+"text": "Start a CSA Scan",
+"class": "topic-link section"
+},
+{
+"url": "get-a-csa-scan-status.html",
+"text": "Get a CSA Scan Status",
+"class": "topic-link section"
+},
+{
+"url": "view-security-assessment-violations.html",
+"text": "View Security Assessment Violations",
+"class": "topic-link section"
+},
+{
+"url": "view-cloud-provider-inventory.html",
+"text": "View Cloud Provider Inventory",
+"class": "topic-link section"
+},
+{
+"url": "view-a-bucket-list.html",
+"text": "View a Bucket List",
+"class": "topic-link section"
+}]
 }]
 }]
 },
@@ -693,6 +1054,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "api-migration.html",
+"text": "API Migration",
+"class": "topic-link section"
+},
+{
 "url": "api-enabled-protection-for-box.html",
 "text": "API-enabled Protection for Box",
 "class": "topic-link section reused-publication reused-publication"
@@ -702,21 +1068,109 @@ var toc = [{
 "url": "api-enabled-protection-overview.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117725.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-box.html",
 "text": "Configure the API Connector for Box",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
 },
 {
-"url": "create-an-api-enabled-protection-policy.html",
+"url": "configure-box-for-api-enabled-protection.html",
+"text": "Configure Box for API-enabled Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-an-api-enabled-protection-policy-118921.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117425.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117426.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-117427.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "activity.html",
+"text": "Activity",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117429.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117430.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117431.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117432.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-120827.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+},
+{
+"url": "external-users-page.html",
+"text": "External Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-box.html",
@@ -739,21 +1193,114 @@ var toc = [{
 "url": "api-enabled-protection-overview-120292.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117830.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117842.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-cisco-webex-teams.html",
 "text": "Configure the API Connector for Cisco Webex Teams",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117834.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-cisco-webex-teams-for-api-enabled-protection.html",
+"text": "Configure Cisco Webex Teams for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118922.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-120284.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117837.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "spaces.html",
+"text": "Spaces",
+"class": "topic-link section"
+},
+{
+"url": "content-117839.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117840.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117841.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117843.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117844.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120512.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "cisco-webex-summary-page.html",
+"text": "Cisco Webex Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "cisco-webex-messages-with-violations-page.html",
+"text": "Cisco Webex Messages with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "cisco-webex-users-page.html",
+"text": "Cisco Webex Users Page",
+"class": "topic-link section"
+},
+{
+"url": "cisco-webex-teams-page.html",
+"text": "Cisco Webex Teams Page",
+"class": "topic-link section"
+},
+{
+"url": "cisco-webex-spaces-page.html",
+"text": "Cisco Webex Spaces Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-user-behavior-in-cisco-webex-teams.html",
@@ -771,21 +1318,104 @@ var toc = [{
 "url": "api-enabled-protection-overview-120293.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117877.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117887.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-dropbox.html",
 "text": "Configure the API Connector for Dropbox",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117879.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-dropbox-for-api-enabled-protection.html",
+"text": "Configure Dropbox for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118923.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117882.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117883.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-117884.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117885.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117886.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117888.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117889.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-117890.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120513.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page-117892.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page-117893.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+},
+{
+"url": "external-users-page-117894.html",
+"text": "External Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-dropbox.html",
@@ -808,21 +1438,99 @@ var toc = [{
 "url": "api-enabled-protection-overview-120294.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-118028.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-118038.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-egnyte.html",
 "text": "Configure the API Connector for Egnyte",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-118030.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-egnyte-for-api-enabled-protection.html",
+"text": "Configure Egnyte for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118924.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-118033.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-118034.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-118035.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-118036.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-118037.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-118039.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-118040.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-118041.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120514.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page-118043.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page-118044.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-deactivated-user-behavior-in-egnyte.html",
@@ -845,21 +1553,94 @@ var toc = [{
 "url": "api-enabled-protection-overview-120295.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-119530.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-119531.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-api-connectors-for-github.html",
 "text": "Configure API Connectors for GitHub",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-119536.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-github-for-api-enabled-protection.html",
+"text": "Configure GitHub for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-163059.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-119539.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-119540.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "activity-119541.html",
+"text": "Activity",
+"class": "topic-link section"
+},
+{
+"url": "action-119542.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-119543.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-119544.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120515.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "github-summary-page.html",
+"text": "GitHub Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "github-repositories-page.html",
+"text": "GitHub Repositories Page",
+"class": "topic-link section"
+},
+{
+"url": "github-users-page.html",
+"text": "GitHub Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "removed-blocked-user-behavior-in-github.html",
@@ -882,21 +1663,104 @@ var toc = [{
 "url": "api-enabled-protection-overview-120296.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-118122.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-118925.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-gmail.html",
 "text": "Configure the API Connector for Gmail",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-118124.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-gmail-for-api-enabled-protection.html",
+"text": "Configure Gmail for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118926.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-118127.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-118128.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "email-options.html",
+"text": "Email Options",
+"class": "topic-link section"
+},
+{
+"url": "dlp-118130.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-118131.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-118132.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-118133.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120516.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "gmail-summary-page.html",
+"text": "Gmail Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "gmail-users-page.html",
+"text": "Gmail Users Page",
+"class": "topic-link section"
+},
+{
+"url": "gmail-external-recipients-page.html",
+"text": "Gmail External Recipients Page",
+"class": "topic-link section"
+},
+{
+"url": "gmail-emails-with-violations-page.html",
+"text": "Gmail Emails with Violations Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-gmail.html",
@@ -914,21 +1778,119 @@ var toc = [{
 "url": "api-enabled-protection-overview-120297.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117899.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117909.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-google-drive.html",
 "text": "Configure the API Connector for Google Drive",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117901.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-google-drive-for-api-enabled-protection.html",
+"text": "Configure Google Drive for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118927.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117904.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117905.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-117906.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "connected-apps-plugins.html",
+"text": "Connected Apps\/Plugins",
+"class": "topic-link section"
+},
+{
+"url": "dlp-120387.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117908.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117910.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117911.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-117912.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120517.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page-117914.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page-117915.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+},
+{
+"url": "external-users-page-117916.html",
+"text": "External Users Page",
+"class": "topic-link section"
+},
+{
+"url": "google-teams-page.html",
+"text": "Google Teams Page",
+"class": "topic-link section"
+},
+{
+"url": "google-ecosystem-page.html",
+"text": "Google Ecosystem Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-google-drive.html",
@@ -951,21 +1913,109 @@ var toc = [{
 "url": "api-enabled-protection-overview-120300.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117726.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117798.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-microsoft-office-365-onedrive-for-api-enabled-protection.html",
 "text": "Configure Microsoft Office 365 OneDrive for API-enabled Protection",
 "class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection.html",
+"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "configure-microsoft-office-365-onedrivesharepoint-sites-for-api-enabled-protection.html",
+"text": "Configure Microsoft Office 365 OneDriveSharePoint Sites for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "additional-reading.html",
+"text": "Additional Reading",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118931.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117713.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117714.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-117715.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117716.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117717.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117718.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117719.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-120830.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120519.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrivesharepoint-files-and-users-page.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrivesharepoint-files-page.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrivesharepoint-users-page.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-microsoft-office-365-onedrivesharepoint.html",
@@ -988,21 +2038,104 @@ var toc = [{
 "url": "api-enabled-protection-overview-120301.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117973.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117985.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-microsoft-office-365-outlook-for-api-enabled-protection.html",
 "text": "Configure Microsoft Office 365 Outlook for API-enabled Protection",
 "class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-office-365-outlook-for-api-enabled-protection-159921.html",
+"text": "Configure Microsoft Office 365 Outlook for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "additional-reading-159922.html",
+"text": "Additional Reading",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118932.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117980.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117981.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "email-options-117982.html",
+"text": "Email Options",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117983.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117984.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117986.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117987.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120520.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "outlook-summary-page.html",
+"text": "Outlook Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "outlook-users-page.html",
+"text": "Outlook Users Page",
+"class": "topic-link section"
+},
+{
+"url": "outlook-external-recipients-page.html",
+"text": "Outlook External Recipients Page",
+"class": "topic-link section"
+},
+{
+"url": "outlook-emails-with-violations-page.html",
+"text": "Outlook Emails with Violations Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-microsoft-office-365-outlook.html",
@@ -1020,21 +2153,109 @@ var toc = [{
 "url": "api-enabled-protection-overview-120302.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-118075.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-118085.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-microsoft-office-365-sharepoint-for-api-enabled-protection.html",
 "text": "Configure Microsoft Office 365 SharePoint for API-enabled Protection",
 "class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection-189817.html",
+"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "configure-microsoft-office-365-onedrivesharepoint-sites-for-api-enabled-protection-159913.html",
+"text": "Configure Microsoft Office 365 OneDriveSharePoint Sites for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "additional-reading-159914.html",
+"text": "Additional Reading",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118933.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-118080.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-118081.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-118082.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-118083.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-118084.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-118086.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-118087.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-118088.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120521.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrivesharepoint-files-and-users-page-207487.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrivesharepoint-files-page-207488.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrivesharepoint-users-page-207489.html",
+"text": "Microsoft Office 365 OneDriveSharePoint Users Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-microsoft-office-365-onedrivesharepoint-218463.html",
@@ -1057,11 +2278,45 @@ var toc = [{
 "url": "api-enabled-protection-overview-179436.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-179438.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-179439.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-microsoft-office-365-teams-for-api-enabled-protection.html",
 "text": "Configure Microsoft Office 365 Teams for API-enabled Protection",
 "class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection-232870.html",
+"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "configure-microsoft-office-365-teams-for-api-enabled-protection-178419.html",
+"text": "Configure Microsoft Office 365 Teams for API-enabled Protection",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account-192474.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+},
+{
+"url": "azure-web-app-permissions-for-microsoft-office-365-teams.html",
+"text": "Azure Web App Permissions for Microsoft Office 365 Teams",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-microsoft-office-365-teams-policy.html",
@@ -1077,6 +2332,23 @@ var toc = [{
 "url": "microsoft-office-365-teams-dashboard.html",
 "text": "Microsoft Office 365 Teams Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-teams-messages-with-violations-page.html",
+"text": "Microsoft Office 365 Teams Messages with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-teams-users-page.html",
+"text": "Microsoft Office 365 Teams Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-teams-page.html",
+"text": "Microsoft Office 365 Teams Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-suspended-user-behavior-in-microsoft-office-365-teams.html",
@@ -1099,11 +2371,35 @@ var toc = [{
 "url": "api-enabled-protection-overview-120303.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117855.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117865.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-salesforce.html",
 "text": "Configure the API Connector for Salesforce",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117857.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-salesforce-for-api-enabled-protection.html",
+"text": "Configure Salesforce for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "security-compliance-report-for-salesforce.html",
@@ -1114,11 +2410,70 @@ var toc = [{
 "url": "create-an-api-enabled-protection-policy-118934.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117860.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117861.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-117862.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117863.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117864.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117866.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117867.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-117868.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120522.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page-117870.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page-117871.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+},
+{
+"url": "salesforce-key-management.html",
+"text": "Salesforce Key Management",
+"class": "topic-link section"
+}]
 },
 {
 "url": "inactive-freeze-user-behavior-in-salesforce.html",
@@ -1129,6 +2484,18 @@ var toc = [{
 "url": "salesforce-audit-events.html",
 "text": "Salesforce Audit Events",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "how-to-view--netskope-audit-log-permissions---read-and-create--in-salesforce-profiles.html",
+"text": "How to View “Netskope Audit Log Permissions – Read and Create” in Salesforce Profiles",
+"class": "topic-link section"
+},
+{
+"url": "how-to-assign--netskope-audit-log-permissions---read-and-create--to-salesforce-profiles.html",
+"text": "How to Assign “Netskope Audit Log Permissions - Read and Create” to Salesforce Profiles",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1141,21 +2508,94 @@ var toc = [{
 "url": "api-enabled-protection-overview-120304.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117922.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117931.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-servicenow.html",
 "text": "Configure the API Connector for ServiceNow",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117924.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-servicenow-for-api-enabled-protection.html",
+"text": "Configure ServiceNow for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118935.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117927.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "content-144151.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117929.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117930.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117932.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117933.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-117934.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120523.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "servicenow-summary-page.html",
+"text": "ServiceNow Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "servicenow-objects-with-violations-page.html",
+"text": "ServiceNow Objects with Violations Page",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1168,21 +2608,109 @@ var toc = [{
 "url": "api-enabled-protection-overview-120305.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-118099.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-118110.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-slack-for-enterprise.html",
 "text": "Configure the API Connector for Slack for Enterprise",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-118101.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-slack-enterprise-for-api-enabled-protection.html",
+"text": "Configure Slack Enterprise for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118936.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-118104.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-118105.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "channels.html",
+"text": "Channels",
+"class": "topic-link section"
+},
+{
+"url": "content-118107.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-118108.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-118109.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-118111.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-118112.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120524.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "slack-files-page.html",
+"text": "Slack Files Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-messages-with-violations-page.html",
+"text": "Slack Messages with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-users-page.html",
+"text": "Slack Users Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-channels-page.html",
+"text": "Slack Channels Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-user-behavior-in-slack-enterprise.html",
@@ -1205,21 +2733,109 @@ var toc = [{
 "url": "api-enabled-protection-overview-120306.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117794.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117818.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-slack-for-team.html",
 "text": "Configure the API Connector for Slack for Team",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117810.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-slack-for-team-for-api-enabled-protection.html",
+"text": "Configure Slack for Team for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118937.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117813.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "channels-117814.html",
+"text": "Channels",
+"class": "topic-link section"
+},
+{
+"url": "content-117815.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117816.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117817.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117819.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117820.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120525.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "slack-files-page-117823.html",
+"text": "Slack Files Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-messages-with-violations-page-120309.html",
+"text": "Slack Messages with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-users-page-117826.html",
+"text": "Slack Users Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-channels-page-117825.html",
+"text": "Slack Channels Page",
+"class": "topic-link section"
+},
+{
+"url": "slack-connected-apps-page.html",
+"text": "Slack Connected Apps Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deleted-user-behavior-in-slack-teams.html",
@@ -1237,21 +2853,114 @@ var toc = [{
 "url": "api-enabled-protection-overview-120307.html",
 "text": "API-enabled Protection Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-use-cases-117942.html",
+"text": "API-enabled Protection Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "api-enabled-protection-policy-actions-per-cloud-app-117953.html",
+"text": "API-enabled Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-the-api-connector-for-workplace-by-facebook.html",
 "text": "Configure the API Connector for Workplace by Facebook",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "api-enabled-protection-api-connectors-117944.html",
+"text": "API-enabled Protection API Connectors",
+"class": "topic-link section"
+},
+{
+"url": "configure-workplace-by-facebook-for-api-enabled-protection.html",
+"text": "Configure Workplace by Facebook for API-enabled Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-an-api-enabled-protection-policy-118938.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application-117947.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-117948.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "groups-work-chat.html",
+"text": "Groups\/Work Chat",
+"class": "topic-link section"
+},
+{
+"url": "content-117950.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-117951.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-117952.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-117954.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-117955.html",
+"text": "Set Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-the-api-enabled-protection-dashboard-120526.html",
 "text": "View the API-enabled Protection Dashboard",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "workplace-by-facebook-summary-page.html",
+"text": "Workplace by Facebook Summary Page",
+"class": "topic-link section"
+},
+{
+"url": "workplace-by-facebook-posts-with-violations-page.html",
+"text": "Workplace by Facebook Posts with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "workplace-by-facebook-messages-with-violations-page.html",
+"text": "Workplace by Facebook Messages with Violations Page",
+"class": "topic-link section"
+},
+{
+"url": "workplace-by-facebook-users-page.html",
+"text": "Workplace by Facebook Users Page",
+"class": "topic-link section"
+},
+{
+"url": "workplace-by-facebook-groups-page.html",
+"text": "Workplace by Facebook Groups Page",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deactivated-user-behavior-in-workplace-by-facebook.html",
@@ -1340,11 +3049,35 @@ var toc = [{
 "url": "file-level-encryption.html",
 "text": "File-Level Encryption",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-encryption-for-real-time-protection-detection.html",
+"text": "Configure Encryption for Real-time Protection Detection",
+"class": "topic-link section"
+},
+{
+"url": "configure-encryption-for-api-enabled-protection-detection.html",
+"text": "Configure Encryption for API-enabled Protection Detection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "kmip.html",
 "text": "KMIP",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "install-a-virtual-appliance.html",
+"text": "Install a Virtual Appliance",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-kmip-forwarder.html",
+"text": "Configure the KMIP Forwarder",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1374,6 +3107,18 @@ var toc = [{
 "url": "custom-category.html",
 "text": "Custom Category",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "url-lists.html",
+"text": "URL Lists",
+"class": "topic-link section"
+},
+{
+"url": "url-lookup.html",
+"text": "URL Lookup",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1528,11 +3273,35 @@ var toc = [{
 "url": "endpoint-detection-and-response.html",
 "text": "Endpoint Detection and Response",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-carbon-black.html",
+"text": "Configure Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "configure-crowdstrike.html",
+"text": "Configure CrowdStrike",
+"class": "topic-link section"
+}]
 },
 {
 "url": "advanced-threat-protection.html",
 "text": "Advanced Threat Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "advanced-heuristic-analysis.html",
+"text": "Advanced Heuristic Analysis",
+"class": "topic-link section"
+},
+{
+"url": "cloud-sandbox-analysis.html",
+"text": "Cloud Sandbox Analysis",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1709,6 +3478,23 @@ var toc = [{
 "url": "dataplane-on-premises-appliance.html",
 "text": "Dataplane On-Premises Appliance",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-interface.html",
+"text": "Configure the Interface",
+"class": "topic-link section"
+},
+{
+"url": "configure-explicit-proxy-mode.html",
+"text": "Configure Explicit Proxy Mode",
+"class": "topic-link section"
+},
+{
+"url": "configure-certificates.html",
+"text": "Configure Certificates",
+"class": "topic-link section"
+}]
 },
 {
 "url": "default-steering-configuration.html",
@@ -1792,6 +3578,13 @@ var toc = [{
 "url": "configure-aws-for-the-publisher.html",
 "text": "Configure AWS for the Publisher",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "factor-firewall-rules.html",
+"text": "Factor Firewall Rules",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-azure-for-the-publisher.html",
@@ -2090,7 +3883,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-interface.html",
+"url": "configure-the-interface-112431.html",
 "text": "Configure the Interface",
 "class": "topic-link section"
 },
@@ -2162,6 +3955,13 @@ var toc = [{
 "url": "netskope-reverse-proxy-with-okta-overview.html",
 "text": "Netskope Reverse Proxy with Okta Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "disable-the-re-sign-saml-assertion.html",
+"text": "Disable the Re-Sign SAML Assertion",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-saas-application-instance-in-the-netskope-ui.html",
@@ -2428,7 +4228,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "appendix.html",
+"url": "appendix-223747.html",
 "text": "Appendix",
 "class": "topic-link section"
 }]
@@ -2556,6 +4356,13 @@ var toc = [{
 "url": "netskope-reverse-proxy-with-okta-overview-118265.html",
 "text": "Netskope Reverse Proxy with Okta Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "disable-the-re-sign-saml-assertion-118269.html",
+"text": "Disable the Re-Sign SAML Assertion",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-saas-application-instance-in-the-netskope-ui-118865.html",
@@ -2802,11 +4609,40 @@ var toc = [{
 "url": "configure-mobileiron-cloud-for-ios-vpn.html",
 "text": "Configure MobileIron Cloud for iOS VPN",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-certificates-in-mobileiron-cloud.html",
+"text": "Create Certificates in MobileIron Cloud",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-on-demand-vpn.html",
+"text": "Configure an On-Demand VPN",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-per-app-vpn.html",
+"text": "Configure a Per-App VPN",
+"class": "topic-link section"
+},
+{
+"url": "ios-vpn-fail-open-164907.html",
+"text": "iOS VPN Fail Open",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-mobileiron-cloud-for-android.html",
 "text": "Configure MobileIron Cloud for Android",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "device-classification-for-android-116095.html",
+"text": "Device Classification for Android",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2819,11 +4655,40 @@ var toc = [{
 "url": "configure-mobileiron-core-for-ios-vpn.html",
 "text": "Configure MobileIron Core for iOS VPN",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "upload-and-enroll-certificates.html",
+"text": "Upload and Enroll Certificates",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-on-demand-vpn-profile.html",
+"text": "Configure the On-Demand VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-per-app-vpn-profile.html",
+"text": "Configure the Per-App VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "ios-vpn-fail-open-164908.html",
+"text": "iOS VPN Fail Open",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-mobileiron-core-for-android.html",
 "text": "Configure MobileIron Core for Android",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "device-classification-for-android-116096.html",
+"text": "Device Classification for Android",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2836,11 +4701,75 @@ var toc = [{
 "url": "configure-airwatch-for-ios-vpn.html",
 "text": "Configure AirWatch for iOS VPN",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-certificate-authority-using-scep.html",
+"text": "Create a Certificate Authority using SCEP",
+"class": "topic-link section"
+},
+{
+"url": "create-a-certificate-template.html",
+"text": "Create a Certificate Template",
+"class": "topic-link section"
+},
+{
+"url": "upload-certificates-to-netskope.html",
+"text": "Upload Certificates to Netskope",
+"class": "topic-link section"
+},
+{
+"url": "download-netskope-certificates.html",
+"text": "Download Netskope Certificates",
+"class": "topic-link section"
+},
+{
+"url": "create-an-ios-on-demand-vpn-profile.html",
+"text": "Create an iOS On-Demand VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "create-an-ios-per-app-vpn-profile.html",
+"text": "Create an iOS Per-App VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "configure-managed-apps-for-per-app-vpn.html",
+"text": "Configure Managed Apps for Per-App VPN",
+"class": "topic-link section"
+},
+{
+"url": "ios-vpn-fail-open-164909.html",
+"text": "iOS VPN Fail Open",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-airwatch-for-android.html",
 "text": "Configure AirWatch for Android",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-netskope-app-using-the-airwatch-sdk.html",
+"text": "Configure the Netskope App using the AirWatch SDK",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-app-as-an-internal-app.html",
+"text": "Configure the Netskope App as an Internal App",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-app-with-airwatch-for-android-for-work-managed-configurations.html",
+"text": "Configure the Netskope App with AirWatch for Android for Work Managed Configurations",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-android-116094.html",
+"text": "Device Classification for Android",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-airwatch-for-macos.html",
@@ -2858,11 +4787,35 @@ var toc = [{
 "url": "create-certificate-profiles-for-intune.html",
 "text": "Create Certificate Profiles for Intune",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-an-on-demand-vpn-profile.html",
+"text": "Create an On-Demand VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "create-a-per-app-vpn-profile.html",
+"text": "Create a Per-App VPN Profile",
+"class": "topic-link section"
+},
+{
+"url": "ios-vpn-fail-open-164910.html",
+"text": "iOS VPN Fail Open",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-intune-for-android.html",
 "text": "Configure Intune for Android",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "device-classification-for-android-116097.html",
+"text": "Device Classification for Android",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -3092,7 +5045,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-certificates.html",
+"url": "configure-certificates-115995.html",
 "text": "Configure Certificates",
 "class": "topic-link section"
 },
@@ -3324,7 +5277,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "install-a-virtual-appliance.html",
+"url": "install-a-virtual-appliance-144836.html",
 "text": "Install a Virtual Appliance",
 "class": "topic-link section"
 },
