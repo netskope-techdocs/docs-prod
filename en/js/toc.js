@@ -332,6 +332,28 @@ var toc = [{
 "url": "manage-user-roles.html",
 "text": "Manage User Roles",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-user-role.html",
+"text": "Create a User Role",
+"class": "topic-link section"
+},
+{
+"url": "update-a-user-role.html",
+"text": "Update a User Role",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-user-role.html",
+"text": "Delete a User Role",
+"class": "topic-link section"
+},
+{
+"url": "list-user-roles.html",
+"text": "List User Roles",
+"class": "topic-link section"
+}]
 },
 {
 "url": "manage-quarantine-files.html",
@@ -668,6 +690,18 @@ var toc = [{
 "url": "add-aws-accounts-to-netskope-using-the-netskope-ui.html",
 "text": "Add AWS accounts to Netskope using the Netskope UI",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "step-1-2--accounts---services.html",
+"text": "Step 1\/2: Accounts &amp; Services",
+"class": "topic-link section"
+},
+{
+"url": "step-2-2--permissions.html",
+"text": "Step 2\/2: Permissions",
+"class": "topic-link section"
+}]
 },
 {
 "url": "scanning-s3-buckets-encrypted-with-kms-keys.html",
@@ -715,6 +749,33 @@ var toc = [{
 "url": "setting-up-multiple-aws-instances.html",
 "text": "Setting up Multiple AWS Instances",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "terminology.html",
+"text": "Terminology",
+"class": "topic-link section"
+},
+{
+"url": "prerequisites.html",
+"text": "Prerequisites",
+"class": "topic-link section"
+},
+{
+"url": "steps-to-run-the-script.html",
+"text": "Steps to Run the Script",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting.html",
+"text": "Troubleshooting",
+"class": "topic-link section"
+},
+{
+"url": "appendix.html",
+"text": "Appendix",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-aws-cloudtrail-for-audit-reports.html",
@@ -725,6 +786,47 @@ var toc = [{
 "url": "configure-aws-s3-for-dlp-scanning-and-threat-protection.html",
 "text": "Configure AWS S3 for DLP Scanning and Threat Protection",
 "class": "topic-link section internal internal"
+,
+"children": [
+{
+"url": "create-an-api-enabled-protection-policy.html",
+"text": "Create an API-enabled Protection Policy",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "cloud-infrastructure.html",
+"text": "Cloud Infrastructure",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "overview.html",
+"text": "Overview",
+"class": "topic-link section"
+},
+{
+"url": "compliance.html",
+"text": "Compliance",
+"class": "topic-link section"
+},
+{
+"url": "inventory.html",
+"text": "Inventory",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "resource-categories.html",
+"text": "Resource Categories",
+"class": "topic-link section"
+}]
+},
+{
+"url": "cloud-infrastructure-use-cases.html",
+"text": "Cloud Infrastructure Use Cases",
+"class": "topic-link section"
 }]
 }]
 },
@@ -743,6 +845,35 @@ var toc = [{
 "url": "configure-google-cloud-platform-for-continuous-security-assessment.html",
 "text": "Configure Google Cloud Platform for Continuous Security Assessment",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "cloud-infrastructure-144062.html",
+"text": "Cloud Infrastructure",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "overview-221909.html",
+"text": "Overview",
+"class": "topic-link section"
+},
+{
+"url": "compliance-144063.html",
+"text": "Compliance",
+"class": "topic-link section"
+},
+{
+"url": "inventory-144064.html",
+"text": "Inventory",
+"class": "topic-link section"
+},
+{
+"url": "cloud-infrastructure-use-cases-144066.html",
+"text": "Cloud Infrastructure Use Cases",
+"class": "topic-link section"
+}]
+}]
 },
 {
 "url": "migrate-existing-google-cloud-platform-instances.html",
@@ -781,6 +912,45 @@ var toc = [{
 "url": "configure-an-azure-subscription-for-security-assessment.html",
 "text": "Configure an Azure Subscription for Security Assessment",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-an-azure-ad-application-for-csa.html",
+"text": "Configure an Azure AD Application for CSA",
+"class": "topic-link section"
+},
+{
+"url": "add-the-azure-subscription-in-netskope-api-enabled-protection.html",
+"text": "Add the Azure Subscription in Netskope API-enabled Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "cloud-infrastructure-144057.html",
+"text": "Cloud Infrastructure",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "overview-221910.html",
+"text": "Overview",
+"class": "topic-link section"
+},
+{
+"url": "compliance-144058.html",
+"text": "Compliance",
+"class": "topic-link section"
+},
+{
+"url": "inventory-144059.html",
+"text": "Inventory",
+"class": "topic-link section"
+},
+{
+"url": "cloud-infrastructure-use-cases-144061.html",
+"text": "Cloud Infrastructure Use Cases",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -808,6 +978,48 @@ var toc = [{
 "url": "create-an-api-enabled-protection-policy-163050.html",
 "text": "Create an API-enabled Protection Policy",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "application.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "resource.html",
+"text": "Resource",
+"class": "topic-link section"
+},
+{
+"url": "content.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-163054.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
 },
 {
 "url": "what-triggers-a-scan-and-billing-of-azure-blob-storage-.html",
@@ -877,7 +1089,7 @@ var toc = [{
 }]
 },
 {
-"url": "cloud-infrastructure.html",
+"url": "cloud-infrastructure-141713.html",
 "text": "Cloud Infrastructure",
 "class": "topic-link section reused-publication reused-publication"
 ,
@@ -888,29 +1100,34 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "overview.html",
+"url": "cloud-infrastructure-221908.html",
+"text": "Cloud Infrastructure",
+"class": "topic-link section"
+},
+{
+"url": "overview-163009.html",
 "text": "Overview",
 "class": "topic-link section"
 },
 {
-"url": "compliance.html",
+"url": "compliance-141715.html",
 "text": "Compliance",
 "class": "topic-link section"
 },
 {
-"url": "inventory.html",
+"url": "inventory-141716.html",
 "text": "Inventory",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "resource-categories.html",
+"url": "resource-categories-141917.html",
 "text": "Resource Categories",
 "class": "topic-link section"
 }]
 },
 {
-"url": "cloud-infrastructure-use-cases.html",
+"url": "cloud-infrastructure-use-cases-143137.html",
 "text": "Cloud Infrastructure Use Cases",
 "class": "topic-link section"
 }]
@@ -1039,6 +1256,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "api-migration.html",
+"text": "API Migration",
+"class": "topic-link section"
+},
+{
 "url": "api-enabled-protection-use-cases.html",
 "text": "API-enabled Protection Use Cases",
 "class": "topic-link section"
@@ -1051,11 +1273,6 @@ var toc = [{
 {
 "url": "api-enabled-protection-features.html",
 "text": "API-enabled Protection Features",
-"class": "topic-link section"
-},
-{
-"url": "api-migration.html",
-"text": "API Migration",
 "class": "topic-link section"
 },
 {
@@ -1096,6 +1313,23 @@ var toc = [{
 "url": "configure-box-for-api-enabled-protection.html",
 "text": "Configure Box for API-enabled Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "authorize-netskope-introspection-app-on-box-enterprise.html",
+"text": "Authorize Netskope Introspection App on Box Enterprise",
+"class": "topic-link section internal internal"
+},
+{
+"url": "enable-box-event-stream.html",
+"text": "Enable Box Event Stream",
+"class": "topic-link section"
+},
+{
+"url": "configure-box-instance-in-netskope-ui.html",
+"text": "Configure Box Instance in Netskope UI",
+"class": "topic-link section internal internal"
+}]
 }]
 },
 {
@@ -1148,6 +1382,23 @@ var toc = [{
 "url": "retroactive-scan-120827.html",
 "text": "Retroactive Scan",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+},
+{
+"url": "on-demand-for-box.html",
+"text": "On-demand for Box",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1393,6 +1644,18 @@ var toc = [{
 "url": "retroactive-scan-117890.html",
 "text": "Retroactive Scan",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps-120828.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing-120829.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1938,14 +2201,83 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-onedrivesharepoint-sites-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 OneDriveSharePoint Sites for API-enabled Protection",
+"url": "configure-microsoft-office-365-onedrive-for-api-enabled-protection-159895.html",
+"text": "Configure Microsoft Office 365 OneDrive for API-enabled Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "remove-the-netskope-introspection-v1-app.html",
+"text": "Remove the Netskope Introspection v1 App",
+"class": "topic-link section"
+},
+{
+"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account.html",
+"text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-to-access-your-office-365-onedrive-app.html",
+"text": "Configure Netskope to Access your Office 365 OneDrive App",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+}]
 },
 {
 "url": "additional-reading.html",
 "text": "Additional Reading",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "grant-failure-on-newly-created-app-instance.html",
+"text": "Grant Failure on Newly Created App Instance",
+"class": "topic-link section"
+},
+{
+"url": "manual-installation-of-the-netskope-introspection-v2-app-for-microsoft-office-365-onedrive-instance.html",
+"text": "Manual Installation of the Netskope Introspection v2 App for Microsoft Office 365 OneDrive Instance",
+"class": "topic-link section"
+},
+{
+"url": "azure-web-app-permissions-for-microsoft-office-365-onedrive.html",
+"text": "Azure Web App Permissions for Microsoft Office 365 OneDrive",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-multi-geo-support.html",
+"text": "Microsoft Office 365 Multi-Geo Support",
+"class": "topic-link section"
+},
+{
+"url": "support-microsoft-azure-rms-encryption.html",
+"text": "Support Microsoft Azure RMS Encryption",
+"class": "topic-link section"
+},
+{
+"url": "external-sharing-limitation-on-microsoft-office-365-onedrive.html",
+"text": "External Sharing Limitation on Microsoft Office 365 OneDrive",
+"class": "topic-link section"
+},
+{
+"url": "internal-domain-limitations.html",
+"text": "Internal Domain Limitations",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-graph-api-migration.html",
+"text": "Microsoft Office 365 OneDrive Graph API Migration",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions.html",
+"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1993,6 +2325,18 @@ var toc = [{
 "url": "retroactive-scan-120830.html",
 "text": "Retroactive Scan",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps-117806.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing-117807.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2002,29 +2346,29 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrivesharepoint-files-and-users-page.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Files and Users Page",
+"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"text": "Microsoft Office 365 OneDrive Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrivesharepoint-files-page.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Files Page",
+"url": "microsoft-office-365-onedrive-files-page.html",
+"text": "Microsoft Office 365 OneDrive Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrivesharepoint-users-page.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Users Page",
+"url": "microsoft-office-365-onedrive-users-page.html",
+"text": "Microsoft Office 365 OneDrive Users Page",
 "class": "topic-link section"
 }]
 },
 {
-"url": "deleted-suspended-user-behavior-in-microsoft-office-365-onedrivesharepoint.html",
-"text": "Deleted\/Suspended User Behavior in Microsoft Office 365 OneDriveSharePoint",
+"url": "deleted-suspended-user-behavior-in-microsoft-office-365-onedrive.html",
+"text": "Deleted\/Suspended User Behavior in Microsoft Office 365 OneDrive",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-businesssharepoint-sites-audit-events.html",
-"text": "Microsoft Office 365 OneDrive for BusinessSharePoint Sites Audit Events",
+"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -2061,11 +2405,30 @@ var toc = [{
 "url": "configure-microsoft-office-365-outlook-for-api-enabled-protection-159921.html",
 "text": "Configure Microsoft Office 365 Outlook for API-enabled Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "azure-web-app-permissions-for-microsoft-office-365-outlook.html",
+"text": "Azure Web App Permissions for Microsoft Office 365 Outlook",
+"class": "topic-link section"
+}]
 },
 {
 "url": "additional-reading-159922.html",
 "text": "Additional Reading",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "internal-domain-limitations-159924.html",
+"text": "Internal Domain Limitations",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions-159925.html",
+"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2178,14 +2541,73 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-onedrivesharepoint-sites-for-api-enabled-protection-159913.html",
-"text": "Configure Microsoft Office 365 OneDriveSharePoint Sites for API-enabled Protection",
+"url": "configure-microsoft-office-365-sharepoint-sites-for-api-enabled-protection.html",
+"text": "Configure Microsoft Office 365 SharePoint Sites for API-enabled Protection",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "remove-the-netskope-introspection-v1-app-188975.html",
+"text": "Remove the Netskope Introspection v1 App",
+"class": "topic-link section"
+},
+{
+"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-188917.html",
+"text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-to-access-your-office-365-sharepoint-sites-app.html",
+"text": "Configure Netskope to Access your Office 365 SharePoint Sites App",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account-192121.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+}]
 },
 {
 "url": "additional-reading-159914.html",
 "text": "Additional Reading",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "grant-failure-on-newly-created-app-instance-223625.html",
+"text": "Grant Failure on Newly Created App Instance",
+"class": "topic-link section"
+},
+{
+"url": "manual-installation-of-the-netskope-introspection-v2-app-for-microsoft-office-365-sharepoint-instance.html",
+"text": "Manual Installation of the Netskope Introspection v2 App for Microsoft Office 365 SharePoint Instance",
+"class": "topic-link section"
+},
+{
+"url": "azure-web-app-permissions-for-microsoft-office-365-sharepoint.html",
+"text": "Azure Web App Permissions for Microsoft Office 365 SharePoint",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-multi-geo-support-163715.html",
+"text": "Microsoft Office 365 Multi-Geo Support",
+"class": "topic-link section"
+},
+{
+"url": "internal-domain-limitations-159916.html",
+"text": "Internal Domain Limitations",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-sharepoint-graph-api-migration.html",
+"text": "Microsoft Office 365 SharePoint Graph API Migration",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions-159918.html",
+"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2242,29 +2664,29 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrivesharepoint-files-and-users-page-207487.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Files and Users Page",
+"url": "microsoft-office-365-sharepoint-files-and-users-page.html",
+"text": "Microsoft Office 365 SharePoint Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrivesharepoint-files-page-207488.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Files Page",
+"url": "microsoft-office-365-sharepoint-files-page.html",
+"text": "Microsoft Office 365 SharePoint Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrivesharepoint-users-page-207489.html",
-"text": "Microsoft Office 365 OneDriveSharePoint Users Page",
+"url": "microsoft-office-365-sharepoint-users-page.html",
+"text": "Microsoft Office 365 SharePoint Users Page",
 "class": "topic-link section"
 }]
 },
 {
-"url": "deleted-suspended-user-behavior-in-microsoft-office-365-onedrivesharepoint-218463.html",
-"text": "Deleted\/Suspended User Behavior in Microsoft Office 365 OneDriveSharePoint",
+"url": "deleted-suspended-user-behavior-in-microsoft-office-365-sharepoint.html",
+"text": "Deleted\/Suspended User Behavior in Microsoft Office 365 SharePoint",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-businesssharepoint-sites-audit-events-192031.html",
-"text": "Microsoft Office 365 OneDrive for BusinessSharePoint Sites Audit Events",
+"url": "microsoft-office-365-sharepoint-sites-audit-events.html",
+"text": "Microsoft Office 365 SharePoint Sites Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -3375,6 +3797,38 @@ var toc = [{
 }]
 },
 {
+"url": "forensics.html",
+"text": "Forensics",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "about-forensics.html",
+"text": "About Forensics",
+"class": "topic-link section"
+},
+{
+"url": "configure-forensics.html",
+"text": "Configure Forensics",
+"class": "topic-link section"
+},
+{
+"url": "configure-api-enabled-protection-for-forensics.html",
+"text": "Configure API-enabled Protection for Forensics",
+"class": "topic-link section"
+},
+{
+"url": "create-a-forensic-profile.html",
+"text": "Create a Forensic Profile",
+"class": "topic-link section"
+},
+{
+"url": "enable-a-forensic-profile.html",
+"text": "Enable a Forensic Profile",
+"class": "topic-link section"
+}]
+},
+{
 "url": "risk-insights.html",
 "text": "Risk Insights",
 "class": "topic-link section reused-publication reused-publication"
@@ -3444,8 +3898,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "using-netskope-secure-web-gateway.html",
-"text": "Using Netskope Secure Web Gateway",
+"url": "about-netskope-secure-web-gateway.html",
+"text": "About Netskope Secure Web Gateway",
 "class": "topic-link section"
 },
 {
@@ -3559,8 +4013,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "using-netskope-private-access.html",
-"text": "Using Netskope Private Access",
+"url": "about-netskope-private-access.html",
+"text": "About Netskope Private Access",
 "class": "topic-link section"
 },
 {
@@ -4266,7 +4720,7 @@ var toc = [{
 },
 {
 "url": "define-the-route-map.html",
-"text": "Define the Route-Map",
+"text": "Define the Route Map",
 "class": "topic-link section"
 },
 {
@@ -4591,6 +5045,23 @@ var toc = [{
 "text": "Azure and ADFS Troubleshooting",
 "class": "topic-link section"
 }]
+}]
+},
+{
+"url": "security.html",
+"text": "Security",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "integrate-netskope-apis-with-exabeam-incident-responder.html",
+"text": "Integrate Netskope APIs with Exabeam Incident Responder",
+"class": "topic-link section"
+},
+{
+"url": "integrate-the-netskope-plugin-with-sailpoint-identityiq.html",
+"text": "Integrate the Netskope Plugin with SailPoint IdentityIQ",
+"class": "topic-link section"
 }]
 },
 {
