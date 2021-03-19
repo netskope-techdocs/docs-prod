@@ -4065,7 +4065,7 @@ var toc = [{
 "children": [
 {
 "url": "log-uploads.html",
-"text": "Discover Risk Insights",
+"text": "Risk Insights",
 "class": "topic-link section"
 },
 {
@@ -4153,6 +4153,16 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "explicit-proxy.html",
+"text": "Explicit Proxy",
+"class": "topic-link section"
+},
+{
+"url": "proxy-chaining.html",
+"text": "Proxy Chaining",
+"class": "topic-link section"
+},
+{
 "url": "secure-forwarder.html",
 "text": "Secure Forwarder",
 "class": "topic-link section"
@@ -4164,14 +4174,26 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-interface.html",
-"text": "Configure the Interface",
+"url": "configure-the-interface-for-dataplane-on-premises.html",
+"text": "Configure the Interface for Dataplane On-Premises",
 "class": "topic-link section"
 },
 {
-"url": "configure-explicit-proxy-mode.html",
-"text": "Configure Explicit Proxy Mode",
+"url": "steer-traffic-through-the-appliance.html",
+"text": "Steer Traffic through the Appliance",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-appliance-in-dns-mode.html",
+"text": "Configure the appliance in DNS mode",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-appliance-in-explicit-proxy-mode.html",
+"text": "Configure the Appliance in Explicit Proxy mode",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-certificates.html",
@@ -4496,7 +4518,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "explicit-proxy.html",
+"url": "explicit-proxy-217835.html",
 "text": "Explicit Proxy",
 "class": "topic-link section"
 },
@@ -4506,7 +4528,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "proxy-chaining.html",
+"url": "proxy-chaining-236707.html",
 "text": "Proxy Chaining",
 "class": "topic-link section"
 },
@@ -4571,7 +4593,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-interface-112431.html",
+"url": "configure-the-interface.html",
 "text": "Configure the Interface",
 "class": "topic-link section"
 },
@@ -5740,7 +5762,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-interface-for-dataplane-on-premises.html",
+"url": "configure-the-interface-for-dataplane-on-premises-115990.html",
 "text": "Configure the Interface for Dataplane On-Premises",
 "class": "topic-link section"
 },
@@ -5750,17 +5772,17 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "steer-traffic-through-the-appliance.html",
+"url": "steer-traffic-through-the-appliance-115992.html",
 "text": "Steer Traffic through the Appliance",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-dns-mode.html",
+"url": "configure-the-appliance-in-dns-mode-115993.html",
 "text": "Configure the appliance in DNS mode",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-explicit-proxy-mode.html",
+"url": "configure-the-appliance-in-explicit-proxy-mode-115994.html",
 "text": "Configure the Appliance in Explicit Proxy mode",
 "class": "topic-link section"
 },
