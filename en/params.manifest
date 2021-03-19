@@ -4,14 +4,14 @@
   <param name="html5.content.theme" select="2"/>
   <param name="use.algolia.search" select="0"/>
   <param name="use.algolia.free.docsearch" select="0"/>
-  <param name="publication.id" select="en-UUID-18414734-a6ca-7eb9-87c8-d12530d22aeb"/>
+  <param name="publication.id" select="en-UUID-f3b913fb-4619-d401-94e2-5d157b77c5b4"/>
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="0"/>
   <param name="use.multilingual.default.search" select="0"/>
   <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/6025b52aa794a.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/5f8501395fbab.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-141812/5c0075526d3af.jpg"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-604877fdd93a85.78716193/226796-Netskope_Help-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-60541736af4339.38966002/119056-Netskope_Secure_Web_Gateway:_User_Guide-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright" select=" &#xA9; 2021 Netskope "/>
@@ -61,7 +61,7 @@
   <param name="versions.file" select=""/>
   <param name="fuse.threshold" select="0.3"/>
   <param name="use.print.icon" select="1"/>
-  <param name="portal.publication.title" select="Netskope Help"/>
+  <param name="portal.publication.title" select=" Netskope Secure Web Gateway"/>
   <param name="collapsible.toc" select="0"/>
   <param name="focus.on.current.toc.section" select="1"/>
   <param name="use.resource.version.suffix" select="0"/>
@@ -89,9 +89,9 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-604877fdd93a85.78716193/226796-Netskope_Help-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-60541736af4339.38966002/119056-Netskope_Secure_Web_Gateway:_User_Guide-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-604877fdd93a85.78716193/226796-Netskope_Help-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-60541736af4339.38966002/119056-Netskope_Secure_Web_Gateway:_User_Guide-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-604877fdd93a85.78716193/226796-Netskope_Help-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-60541736af4339.38966002/119056-Netskope_Secure_Web_Gateway:_User_Guide-html5/out/css/image/logo-dark.png"/>
 </params>
