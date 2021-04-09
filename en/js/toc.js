@@ -4954,6 +4954,58 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "integrate-netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html",
+"text": "Integrate Netskope Forward Proxy over IPSec\/GRE with Azure AD SAML Auth",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "integrate-netskope-ipsec-gre-with-azure-ad-saml-auth.html",
+"text": "Integrate Netskope IPSec\/GRE with Azure AD SAML Auth",
+"class": "topic-link section"
+},
+{
+"url": "get-netskope-saml-settings.html",
+"text": "Get Netskope SAML Settings",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-enterprise-application-in-microsoft-azure-active-directory-for-saml-auth.html",
+"text": "Configure an Enterprise Application in Microsoft Azure Active Directory for SAML Auth",
+"class": "topic-link section"
+},
+{
+"url": "add-an-azure-ad-account-in-netskope-saml---forward-proxy.html",
+"text": "Add an Azure AD Account in Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "enable-authentication-and-configure-sso-domain-bypass-settings.html",
+"text": "Enable Authentication and configure SSO Domain Bypass settings",
+"class": "topic-link section"
+},
+{
+"url": "test-sso-via-the-ipsec-or-gre-tunnel.html",
+"text": "Test SSO via the IPSec or GRE Tunnel",
+"class": "topic-link section"
+},
+{
+"url": "check-skopeit-events.html",
+"text": "Check SkopeIT events",
+"class": "topic-link section"
+},
+{
+"url": "bypass-saml-forward-proxy-authentication-methods.html",
+"text": "Bypass SAML Forward Proxy Authentication Methods",
+"class": "topic-link section"
+},
+{
+"url": "tips-and-faqs.html",
+"text": "Tips and FAQs",
+"class": "topic-link section"
+}]
+},
+{
 "url": "integrate-netskope-gre-with-cisco-ios.html",
 "text": "Integrate Netskope GRE with Cisco IOS",
 "class": "topic-link section reused-publication reused-publication"
@@ -5062,6 +5114,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "integrate-saml-reverse-proxy-for-google-workspace-with-aws-single-sign-on.html",
+"text": "Integrate SAML Reverse Proxy for Google Workspace with AWS Single Sign-On",
+"class": "topic-link section"
+},
+{
 "url": "integrate-netskope-reverse-proxy-with-okta.html",
 "text": "Integrate Netskope Reverse Proxy with Okta",
 "class": "topic-link section reused-publication reused-publication"
@@ -5091,6 +5148,28 @@ var toc = [{
 }]
 },
 {
+"url": "integrate-netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
+"text": "Integrate Netskope Explicit Proxy for Chromebooks with Google SAML Forward Proxy",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-explicit-proxy-with-chromebooks-and-google-saml-forward-proxy.html",
+"text": "Netskope Explicit Proxy with Chromebooks and Google SAML Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-saml-forward-proxy-for-google.html",
+"text": "Configure SAML Forward Proxy for Google",
+"class": "topic-link section"
+},
+{
+"url": "configure-explicit-proxy-for-managed-chromebook-devices.html",
+"text": "Configure Explicit Proxy for Managed Chromebook Devices",
+"class": "topic-link section"
+}]
+},
+{
 "url": "integrate-netskope-saml-forward-proxy-with-adfs.html",
 "text": "Integrate Netskope SAML Forward Proxy with ADFS",
 "class": "topic-link section reused-publication reused-publication"
@@ -5109,6 +5188,189 @@ var toc = [{
 {
 "url": "test-the-configuration.html",
 "text": "Test the Configuration",
+"class": "topic-link section"
+}]
+},
+{
+"url": "forward-to-proxy-integration.html",
+"text": "Forward to Proxy Integration",
+"class": "topic-link section"
+},
+{
+"url": "configure-forcepoint-for-proxy-chaining.html",
+"text": "Configure Forcepoint for Proxy Chaining",
+"class": "topic-link section"
+},
+{
+"url": "configure-blue-coat-for-proxy-chaining.html",
+"text": "Configure Blue Coat for Proxy Chaining",
+"class": "topic-link section"
+}]
+},
+{
+"url": "provisioning-and-authentication.html",
+"text": "Provisioning and Authentication",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "integrate-netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
+"text": "Integrate Netskope Client IdP Mode with Okta SCIM and SAML Auth",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth-overview.html",
+"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth Overview",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-oauth-token-for-okta-scim-integration.html",
+"text": "Configure Netskope OAuth Token for Okta SCIM Integration",
+"class": "topic-link section"
+},
+{
+"url": "configure-okta-scim-integration-to-onboard-users-to-netskope.html",
+"text": "Configure Okta SCIM Integration to Onboard Users to Netskope",
+"class": "topic-link section"
+},
+{
+"url": "get-netskope-saml-settings-228899.html",
+"text": "Get Netskope SAML settings",
+"class": "topic-link section"
+},
+{
+"url": "configure-okta-idp-for-netskope-saml---forward-proxy.html",
+"text": "Configure Okta IdP for Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "add-an-okta-idp-account-in-netskope-saml---forward-proxy.html",
+"text": "Add an Okta IdP Account in Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "enable-authentication-and-configure-domain-bypass-settings.html",
+"text": "Enable Authentication and Configure Domain Bypass Settings",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows.html",
+"text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac.html",
+"text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
+"class": "topic-link section"
+},
+{
+"url": "test-website-access-and-check-skopeit-events.html",
+"text": "Test Website Access and Check SkopeIT Events",
+"class": "topic-link section"
+},
+{
+"url": "okta-scim-and-saml-auth-troubleshooting.html",
+"text": "Okta SCIM and SAML Auth Troubleshooting",
+"class": "topic-link section"
+}]
+},
+{
+"url": "integrate-netskope-client-idp-mode-with-azure-scim-and-azure-ad-or-adfs-saml-auth.html",
+"text": "Integrate Netskope Client IdP Mode with Azure SCIM and Azure AD or ADFS SAML Auth",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth-overview.html",
+"text": "Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth Overview",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-oauth-token-for-azure-scim-integration.html",
+"text": "Configure Netskope OAuth Token for Azure SCIM Integration",
+"class": "topic-link section"
+},
+{
+"url": "configure-azure-scim-integration-to-onboard-users-to-netskope.html",
+"text": "Configure Azure SCIM Integration to Onboard Users to Netskope",
+"class": "topic-link section"
+},
+{
+"url": "get-netskope-saml-settings-232222.html",
+"text": "Get Netskope SAML settings",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-enterprise-application-in-microsoft-azure-active-directory-for-saml-auth-292538.html",
+"text": "Configure an Enterprise Application in Microsoft Azure Active Directory for SAML Auth",
+"class": "topic-link section"
+},
+{
+"url": "add-an-azure-ad-account-in-netskope-saml---forward-proxy-292840.html",
+"text": "Add an Azure AD Account in Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-adfs-idp-for-netskope-saml---forward-proxy.html",
+"text": "Configure ADFS IdP for Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "add-an-adfs-idp-account-in-netskope-saml---forward-proxy.html",
+"text": "Add an ADFS IdP Account in Netskope SAML – Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "enable-authentication-and-configure-domain-bypass-settings-232225.html",
+"text": "Enable Authentication and Configure Domain Bypass Settings",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows-232226.html",
+"text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac-232865.html",
+"text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
+"class": "topic-link section"
+},
+{
+"url": "test-website-access-and-check-skopeit-events-232227.html",
+"text": "Test Website Access and Check SkopeIT Events",
+"class": "topic-link section"
+},
+{
+"url": "azure-and-adfs-troubleshooting.html",
+"text": "Azure and ADFS Troubleshooting",
+"class": "topic-link section"
+}]
+},
+{
+"url": "integrate-netskope-client-idp-mode-with-google-saml-auth.html",
+"text": "Integrate Netskope Client IdP Mode with Google SAML Auth",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-client-idp-mode-with-google-saml-auth.html",
+"text": "Netskope Client IdP Mode with Google SAML Auth",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-saml-settings.html",
+"text": "Get the Netskope SAML Settings",
+"class": "topic-link section"
+},
+{
+"url": "configure-google-idp-for-netskope-saml-forward-proxy.html",
+"text": "Configure Google IdP for Netskope SAML Forward Proxy",
+"class": "topic-link section"
+},
+{
+"url": "install-and-test-the-client.html",
+"text": "Install and Test the Client",
 "class": "topic-link section"
 }]
 },
@@ -5162,148 +5424,49 @@ var toc = [{
 }]
 },
 {
-"url": "forward-to-proxy-integration.html",
-"text": "Forward to Proxy Integration",
+"url": "user-and-user-groups-provisioning-with-okta.html",
+"text": "User and User Groups Provisioning with Okta",
 "class": "topic-link section"
 },
 {
-"url": "configure-forcepoint-for-proxy-chaining.html",
-"text": "Configure Forcepoint for Proxy Chaining",
+"url": "user-provisioning-with-azure-ad.html",
+"text": "User Provisioning with Azure AD",
 "class": "topic-link section"
 },
 {
-"url": "configure-blue-coat-for-proxy-chaining.html",
-"text": "Configure Blue Coat for Proxy Chaining",
-"class": "topic-link section"
-}]
-},
-{
-"url": "provisioning-and-authentication.html",
-"text": "Provisioning and Authentication",
+"url": "user-provisioning-with-secure-ldap-and-jumpcloud.html",
+"text": "User Provisioning with Secure LDAP and JumpCloud",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "integrate-netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
-"text": "Integrate Netskope Client IdP Mode with Okta SCIM and SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth-overview.html",
-"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth Overview",
+"url": "prerequisites-224343.html",
+"text": "Prerequisites",
 "class": "topic-link section"
 },
 {
-"url": "configure-netskope-oauth-token-for-okta-scim-integration.html",
-"text": "Configure Netskope OAuth Token for Okta SCIM Integration",
+"url": "create-ldap-binding-user-in-jumpcloud.html",
+"text": "Create LDAP Binding User in JumpCloud",
 "class": "topic-link section"
 },
 {
-"url": "configure-okta-scim-integration-to-onboard-users-to-netskope.html",
-"text": "Configure Okta SCIM Integration to Onboard Users to Netskope",
+"url": "download-the-jumpcloud-certificate.html",
+"text": "Download the JumpCloud Certificate",
 "class": "topic-link section"
 },
 {
-"url": "get-netskope-saml-settings.html",
-"text": "Get Netskope SAML settings",
+"url": "import-jumpcloud-ldap-server-certificate-into-windows.html",
+"text": "Import JumpCloud LDAP Server Certificate into Windows",
 "class": "topic-link section"
 },
 {
-"url": "configure-okta-idp-for-netskope-saml---forward-proxy.html",
-"text": "Configure Okta IdP for Netskope SAML – Forward Proxy",
+"url": "install-the-netskope-directory-importer.html",
+"text": "Install the Netskope Directory Importer",
 "class": "topic-link section"
 },
 {
-"url": "add-an-okta-idp-account-in-netskope-saml---forward-proxy.html",
-"text": "Add an Okta IdP Account in Netskope SAML – Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "enable-authentication-and-configure-domain-bypass-settings.html",
-"text": "Enable Authentication and Configure Domain Bypass Settings",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
-"class": "topic-link section"
-},
-{
-"url": "test-website-access-and-check-skopeit-events.html",
-"text": "Test Website Access and Check SkopeIT Events",
-"class": "topic-link section"
-},
-{
-"url": "okta-scim-and-saml-auth-troubleshooting.html",
-"text": "Okta SCIM and SAML Auth Troubleshooting",
-"class": "topic-link section"
-}]
-},
-{
-"url": "integrate-netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth.html",
-"text": "Integrate Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth-overview.html",
-"text": "Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth Overview",
-"class": "topic-link section"
-},
-{
-"url": "configure-netskope-oauth-token-for-azure-scim-integration.html",
-"text": "Configure Netskope OAuth Token for Azure SCIM Integration",
-"class": "topic-link section"
-},
-{
-"url": "configure-azure-scim-integration-to-onboard-users-to-netskope.html",
-"text": "Configure Azure SCIM Integration to Onboard Users to Netskope",
-"class": "topic-link section"
-},
-{
-"url": "get-netskope-saml-settings-232222.html",
-"text": "Get Netskope SAML settings",
-"class": "topic-link section"
-},
-{
-"url": "configure-adfs-idp-for-netskope-saml---forward-proxy.html",
-"text": "Configure ADFS IdP for Netskope SAML – Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "add-an-adfs-idp-account-in-netskope-saml---forward-proxy.html",
-"text": "Add an ADFS IdP Account in Netskope SAML – Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "enable-authentication-and-configure-domain-bypass-settings-232225.html",
-"text": "Enable Authentication and Configure Domain Bypass Settings",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows-232226.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac-232865.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
-"class": "topic-link section"
-},
-{
-"url": "test-website-access-and-check-skopeit-events-232227.html",
-"text": "Test Website Access and Check SkopeIT Events",
-"class": "topic-link section"
-},
-{
-"url": "azure-and-adfs-troubleshooting.html",
-"text": "Azure and ADFS Troubleshooting",
+"url": "configure-netskope-directory-importer.html",
+"text": "Configure Netskope Directory Importer",
 "class": "topic-link section"
 }]
 }]
@@ -6441,8 +6604,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-83-0-0.html",
-"text": "Netskope Release Notes Version 83.0.0",
+"url": "netskope-release-notes-version-84-0-0.html",
+"text": "Netskope Release Notes Version 84.0.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
