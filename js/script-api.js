@@ -9,13 +9,13 @@ jQuery(document).ready(function($){
      * @type {object}
      */
     var $toc = $('#toc-container .affix');
-    
+
     /*ASN: Support for API style even if you just have one programming language, in which case the language switcher becomes superfluous:*/
     if ($("#nav-code-selection li").length < 2){
         $("#nav-code-selection").addClass('nav-code-selection-hidden');
         $(".entry-code .code").removeClass('code');
     }
-    
+
     /*ASN: Also, if no code switcher is desired, because the code samples are mixed languages, but should appear always:*/
     if ($("#nav-code-selection").hasClass('nav-code-selection-hidden')){
         $(".entry-code .code").removeClass('code');
@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
     var recalulateTocContainer = function(){
         var width = $toc_container.width();
         $toc.css('width', width);
-        $toc_container.removeAttr('style'); 
+        $toc_container.removeAttr('style');
     };
 
     /**
@@ -102,17 +102,18 @@ jQuery(document).ready(function($){
 /*Needs to be explicit to not match regular code elements*/
         $( ".code[data-code-view]" ).hide();
         /*$( "*[data-code-view='" + $this.data( "code" ) + "']" ).fadeIn(50);*/
-        
-        /*ASN: Match any language in the data-code-view attribute that matches 
-        either start of string or semicolon followed by language name and then semicolon or end of string. 
+
+        /*ASN: Match any language in the data-code-view attribute that matches
+        either start of string or semicolon followed by language name and then semicolon or end of string.
         This makes it more complex than before, but supports multiple filter values on an element. */
         var regex = new RegExp("(^|;)" + language + "(;|$)", "g");
-        
+
         $('*[data-code-view]')
         .filter(function() {
             return $(this).attr('data-code-view').match(regex);
         })
         .fadeIn(50);
+        $(window).trigger('scroll');
 
         return e.preventDefault();
     });
