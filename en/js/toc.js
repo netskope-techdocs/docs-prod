@@ -1304,8 +1304,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-a-bucket-list-for-a-constraint-profile.html",
-"text": "Manage a Bucket List for a Constraint Profile",
+"url": "manage-bucket-lists-for-a-constraint-profile.html",
+"text": "Manage Bucket Lists for a Constraint Profile",
 "class": "topic-link section"
 },
 {
@@ -4297,8 +4297,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-a-publisher-in-gcp.html",
-"text": "Configure a Publisher in GCP",
+"url": "configure-a-publisher-in-centosos.html",
+"text": "Configure a Publisher in CentosOS",
 "class": "topic-link section"
 },
 {
@@ -4309,6 +4309,11 @@ var toc = [{
 {
 "url": "configure-a-publisher-in-vmware-esxi.html",
 "text": "Configure a Publisher in VMWare ESXi",
+"class": "topic-link section"
+},
+{
+"url": "enable-snmp-on-a-publisher.html",
+"text": "Enable SNMP on a Publisher",
 "class": "topic-link section"
 }]
 },
@@ -5426,6 +5431,11 @@ var toc = [{
 {
 "url": "user-and-user-groups-provisioning-with-okta.html",
 "text": "User and User Groups Provisioning with Okta",
+"class": "topic-link section"
+},
+{
+"url": "user-and-user-group-provisioning-with-onelogin.html",
+"text": "User and User Group Provisioning with OneLogin",
 "class": "topic-link section"
 },
 {
@@ -6604,8 +6614,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-84-0-0.html",
-"text": "Netskope Release Notes Version 84.0.0",
+"url": "netskope-release-notes-version-85-0-0.html",
+"text": "Netskope Release Notes Version 85.0.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
