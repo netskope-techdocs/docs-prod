@@ -304,8 +304,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "advanced-analytics-rest-apis.html",
-"text": "Advanced Analytics REST APIs",
+"url": "get-advanced-analytics-data.html",
+"text": "Get Advanced Analytics Data",
 "class": "topic-link section"
 },
 {
@@ -4264,6 +4264,12 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-user-guide.html",
+"text": "Netskope Private Access User Guide",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
 "url": "about-netskope-private-access.html",
 "text": "About Netskope Private Access",
 "class": "topic-link section"
@@ -4395,6 +4401,61 @@ var toc = [{
 "url": "private-access-faqs.html",
 "text": "Private Access FAQs",
 "class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-troubleshooting-guide.html",
+"text": "Netskope Private Access Troubleshooting Guide",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "troubleshooting-netskope-private-access.html",
+"text": "Troubleshooting Netskope Private Access",
+"class": "topic-link section"
+},
+{
+"url": "the-npa-troubleshooter-tool.html",
+"text": "The NPA Troubleshooter Tool",
+"class": "topic-link section"
+},
+{
+"url": "general-troubleshooting-methods.html",
+"text": "General Troubleshooting Methods",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-tcping-and-psping.html",
+"text": "Troubleshooting Performance and Connectivity using TCPing and PsPing",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
+"text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
+"class": "topic-link section"
+}]
+},
+{
+"url": "private-access-publisher-security-and-hardening.html",
+"text": "Private Access Publisher Security and Hardening",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "private-access-publisher-security-and-hardening-291561.html",
+"text": "Private Access Publisher Security and Hardening",
+"class": "topic-link section"
+},
+{
+"url": "selinux---firewalld.html",
+"text": "SELinux &amp; FirewallD",
+"class": "topic-link section"
+},
+{
+"url": "tunneling-info.html",
+"text": "Tunneling Info",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -6630,13 +6691,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "known-issues.html",
+"text": "Known Issues",
+"class": "topic-link section"
+},
+{
 "url": "fixed-issues.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 },
 {
-"url": "known-issues.html",
-"text": "Known Issues",
+"url": "appendix--fixed-issue-124698.html",
+"text": "Appendix: Fixed Issue 124698",
 "class": "topic-link section"
 }]
 },
