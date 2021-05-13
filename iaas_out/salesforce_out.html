@@ -1,0 +1,585 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="entity_styles.css">
+<title>Salesforce Entities supported in DSL</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Salesforce Entities supported in DSL</h1>
+  <div class="notes_container">
+  
+    <!-- AWS notes -->
+<p>The table below describes the Salesforce services and attributes supported by Netskope. </p>
+  
+  </div>
+  <div class="container">
+    <div class="entity_keys">
+      
+      <h2 class="entity_category Identity">Identity</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="PasswordPolicies">
+          <span class="entity_name">PasswordPolicies</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Security">Security</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="Certificate">
+          <span class="entity_name">Certificate</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="CorsAllowlistOrigin">
+          <span class="entity_name">CorsAllowlistOrigin</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="FileUploadAndDownloadSecuritySettings">
+          <span class="entity_name">FileUploadAndDownloadSecuritySettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="NetworkAccessIpRange">
+          <span class="entity_name">NetworkAccessIpRange</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RealTimeEventSettings">
+          <span class="entity_name">RealTimeEventSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RemoteSiteSettings">
+          <span class="entity_name">RemoteSiteSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SecuritySettings">
+          <span class="entity_name">SecuritySettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SessionSettings">
+          <span class="entity_name">SessionSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SharingSettings">
+          <span class="entity_name">SharingSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SingleSignOnSettings">
+          <span class="entity_name">SingleSignOnSettings</span>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="entity_tables">
+      
+        <table class="entity_table" data-entity-name="Certificate">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>fullName</td>
+            <td>string</td>
+            <td>Unique identifier for the certificate</td>
+          </tr>
+          
+          <tr>
+            <td>expirationDate</td>
+            <td>string</td>
+            <td>The date the certificate expires and is no longer usable.</td>
+          </tr>
+          
+          <tr>
+            <td>keySize</td>
+            <td>number</td>
+            <td>The size of the key in bits.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CorsAllowlistOrigin">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>urlPattern</td>
+            <td>string</td>
+            <td>A URL pattern for the origin. The origin URL pattern must include the HTTPS protocol and a domain name, and may include a port. The wildcard character (*) is supported and must be in front of a second-level domain name. For example, https://*.example.com adds all subdomains of example.com to the allowlist. The origin URL pattern can be an IP address. However, an IP address and a domain that resolve to the same address are not the same origin and must be added to the CORS allowlist as separate entries.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="FileUploadAndDownloadSecuritySettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>dispositions</td>
+            <td>sequence</td>
+            <td>Represents the metadata used to manage file type behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>behavior</td>
+            <td>string</td>
+            <td>File download behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>filetype</td>
+            <td>string</td>
+            <td>The file type that this disposition applies to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>securityRiskFiletype</td>
+            <td>boolean</td>
+            <td>Indicates file types that cannot have behavior set to EXECUTE, due to security risks.</td>
+          </tr>
+          
+          <tr>
+            <td>noHtmlUploadAsAttachment</td>
+            <td>boolean</td>
+            <td>Indicates whether to allow HTML uploads as attachments or document records.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="NetworkAccessIpRange">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>start</td>
+            <td>ip</td>
+            <td>The IP address that defines the low end of a range of trusted addresses.</td>
+          </tr>
+          
+          <tr>
+            <td>end</td>
+            <td>ip</td>
+            <td>The IP address that defines the high end of a range of trusted addresses.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="PasswordPolicies">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>complexity</td>
+            <td>string</td>
+            <td>The types of characters that must be used in a user's password. Valid values are NoRestriction, AlphaNumeric, SpecialCharacters, UpperLowerCaseNumeric, UpperLowerCaseNumericSpecialCharacters, Any3UpperLowerCaseNumericSpecialCharacters</td>
+          </tr>
+          
+          <tr>
+            <td>expiration</td>
+            <td>string</td>
+            <td>The length of time until a user password expires and must be changed. Valid values are Never, ThirtyDays, SixtyDays, NinetyDays, SixMonths, OneYear</td>
+          </tr>
+          
+          <tr>
+            <td>historyRestriction</td>
+            <td>number</td>
+            <td>The number of previous passwords saved for users so that they must always reset a new, unique password. Valid values are 0 through 24 passwords remembered. The maximum value of 24 applies to API version 31.0 and later. In earlier versions, the maximum value is 16.</td>
+          </tr>
+          
+          <tr>
+            <td>lockoutInterval</td>
+            <td>string</td>
+            <td>The duration of the login lockout. Valid values are FifteenMinutes (this value is the default value), ThirtyMinutes, SixtyMinutes, Forever (must be reset by admin)</td>
+          </tr>
+          
+          <tr>
+            <td>maxLoginAttempts</td>
+            <td>string</td>
+            <td>The number of login failures allowed for a user before the user is locked out. Valid values are NoLimit, ThreeAttempts, FiveAttempts, TenAttempts. This value is the default value.</td>
+          </tr>
+          
+          <tr>
+            <td>minimumPasswordLength</td>
+            <td>number</td>
+            <td>The minimum number of characters required for a password. The number can contain from 5 to 50 characters (default is 8). Available in API version 35.0 and later. Before API version 35.0, specify minimum password length with the enumeration minPasswordLength, with valid values FiveCharacters, EightCharacters (default), TenCharacters, TwelveCharacters (API version 31.0 and later), and FifteenCharacters (API version 34.0 and later).</td>
+          </tr>
+          
+          <tr>
+            <td>minimumPasswordLifetime</td>
+            <td>boolean</td>
+            <td>If enabled (true), passwords can't be changed more than one time during a 24-hour period.</td>
+          </tr>
+          
+          <tr>
+            <td>obscureSecretAnswer</td>
+            <td>boolean</td>
+            <td>If enabled (true), hide answers to security questions as the user types.</td>
+          </tr>
+          
+          <tr>
+            <td>questionRestriction</td>
+            <td>string</td>
+            <td>The restriction on whether the answer to the password hint question can contain the password itself. Valid values are None, DoesNotContainPassword</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RealTimeEventSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>RealTimeEvents</td>
+            <td>list</td>
+            <td>A list of Real-Time Event entities</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>entityName</td>
+            <td>string</td>
+            <td>The name of the storage or streaming entity to be modified. For example, ApiEvent or ApiEventStream.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isEnabled</td>
+            <td>boolean</td>
+            <td>Indicates whether to enable storage or streaming capability.</td>
+          </tr>
+          
+          <tr>
+            <td>StreamingApiConcurrentClients</td>
+            <td>sequence</td>
+            <td>The number of Concurrent CometD clients (subscribers) across all channels and for all event types</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>max</td>
+            <td>number</td>
+            <td>The maximum number of Concurrent CometD clients (subscribers) across all channels and for all event types</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>remaining</td>
+            <td>number</td>
+            <td>The remaining number of Concurrent CometD clients (subscribers) across all channels and for all event types that can subscribe</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RemoteSiteSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>description</td>
+            <td>string</td>
+            <td>The description explaining what this remote site setting is used for.</td>
+          </tr>
+          
+          <tr>
+            <td>disableProtocolSecurity</td>
+            <td>boolean</td>
+            <td>Indicates whether code within Salesforce can access the remote site regardless of whether the user's connection is over HTTP or HTTPS (true) or not (false). When true, code within Salesforce can pass data from an HTTPS session to an HTTP session, and vice versa.</td>
+          </tr>
+          
+          <tr>
+            <td>fullName</td>
+            <td>string</td>
+            <td>The name can only contain characters, letters, and the underscore (_) character, must start with a letter, and cannot end with an underscore or contain two consecutive underscore characters.</td>
+          </tr>
+          
+          <tr>
+            <td>isActive</td>
+            <td>boolean</td>
+            <td>Indicates if the remote site setting is active (true) or not (false).</td>
+          </tr>
+          
+          <tr>
+            <td>url</td>
+            <td>string</td>
+            <td>The URL for the remote site.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SecuritySettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>enableAdminLoginAsAnyUser</td>
+            <td>boolean</td>
+            <td>If true, the "Administrator Can Log in as Any User" field is enabled</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SessionSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>canConfirmEmailChangeInLightningCommunities</td>
+            <td>boolean</td>
+            <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect.</td>
+          </tr>
+          
+          <tr>
+            <td>disableTimeoutWarning</td>
+            <td>boolean</td>
+            <td>Indicates whether the session timeout warning popup is disabled (true) or enabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableCSPOnEmail</td>
+            <td>boolean</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td>enableCSRFOnGet</td>
+            <td>boolean</td>
+            <td>Indicates whether Cross-Site Request Forgery (CSRF) protection on GET requests on non-setup pages is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableCSRFOnPost</td>
+            <td>boolean</td>
+            <td>Indicates whether Cross-Site Request Forgery (CSRF) protection on POST requests on non-setup pages is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableCacheAndAutocomplete</td>
+            <td>boolean</td>
+            <td>Indicates whether the user's browser is allowed to store usernames and auto-fill the User Name field on the login page (true) or not (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableClickjackNonsetupSFDC</td>
+            <td>boolean</td>
+            <td>Indicates whether clickjack protection for non-setup Salesforce pages is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableClickjackNonsetupUser</td>
+            <td>boolean</td>
+            <td>Indicates whether clickjack protection for customer Visualforce pages with standard headers turned on is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableClickjackNonsetupUserHeaderless</td>
+            <td>boolean</td>
+            <td>Indicates whether clickjack protection for customer Visualforce pages with standard headers turned off is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableClickjackSetup</td>
+            <td>boolean</td>
+            <td>Indicates whether clickjack protection for setup pages is enabled (true) or disabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enableContentSniffingProtection</td>
+            <td>boolean</td>
+            <td>Indicates if the browser is prevented from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content. This field is available in API version 39.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableLightningLogin</td>
+            <td>boolean</td>
+            <td>If enabled (true), users can use Lightning Login (Salesforce Authenticator) to log in instead of a password. Available in API Version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableSMSIdentity</td>
+            <td>boolean</td>
+            <td>If enabled (true), the default, users can receive a one-time password in a text message (SMS) to verify their identity. Users must verify their mobile phone number before they can receive SMS messages.</td>
+          </tr>
+          
+          <tr>
+            <td>enableUpgradeInsecureRequests</td>
+            <td>boolean</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+          </tr>
+          
+          <tr>
+            <td>enableXssProtection</td>
+            <td>boolean</td>
+            <td>Indicates if protection against reflected cross-site scripting attacks is enabled. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content. This field is available in API version 39.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>FileUploadAndDownloadSecurityRules</td>
+            <td>list</td>
+            <td>A list of rules representing the security settings for uploading and downloading files.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>dispositions</td>
+            <td>string</td>
+            <td>Represents the metadata used to manage file type behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>noHtmlUploadAsAttachment</td>
+            <td>boolean</td>
+            <td>Indicates whether to allow HTML uploads as attachments or document records.</td>
+          </tr>
+          
+          <tr>
+            <td>forceLogoutOnSessionTimeout</td>
+            <td>boolean</td>
+            <td>If enabled (true), the default, when sessions time out for inactive users, current sessions become invalid. The browser refreshes and returns to the login page. To access the organization, the user must log in again.</td>
+          </tr>
+          
+          <tr>
+            <td>forceRelogin</td>
+            <td>boolean</td>
+            <td>If true, an admin who is logged in as another user must log in again to their original session, after logging out as the secondary user. If false, the admin isn't required to log in again.</td>
+          </tr>
+          
+          <tr>
+            <td>hstsOnForcecomSites</td>
+            <td>boolean</td>
+            <td>Indicates whether Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS. Available in API version 41.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>identityConfirmationOnEmailChange</td>
+            <td>boolean</td>
+            <td>Indicates if a user's identity is confirmed when changing their email address, instead of requiring a re-login. This field is available in API version 42.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>identityConfirmationOnTwoFactorRegistrationEnabled</td>
+            <td>boolean</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login. (Multi-factor authentication was formerly called two-factor authentication.) This field is available in API version 40.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>redirectionWarning</td>
+            <td>boolean</td>
+            <td>Indicates whether users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain. Available in API version 42.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>referrerPolicy</td>
+            <td>boolean</td>
+            <td>Indicates whether the referer header hides sensitive information that could be present in the full URL. If true, then the referer header displays only salesforce.com. If false, then the header displays the entire URL. For a Visualforce user, if referrerPolicy is set to true, then the referer header displays only force.com. If false, then the header displays the entire URL. Available in API version 42.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>requireHttps</td>
+            <td>boolean</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+          </tr>
+          
+          <tr>
+            <td>sessionTimeout</td>
+            <td>string</td>
+            <td>The length of time after which users without activity are prompted to log out or continue working. Valid values are FifteenMinutes, ThirtyMinutes, SixtyMinutes, TwoHours, FourHours, EightHours, TwelveHours</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SharingSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>enableSecureGuestAccess</td>
+            <td>boolean</td>
+            <td>When true, guest users have organization-wide defaults set to Private. To share records with them, guest user sharing rules must be used.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SingleSignOnSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>isLoginWithSalesforceCredentialsDisabled</td>
+            <td>boolean</td>
+            <td>If true, users are redirected to third-party identity providers for authentication.</td>
+          </tr>
+          
+        </table>
+      
+    </div>
+  </div>
+  <script>
+  function hideEntityTables() {
+    $('.entity_table').hide()
+    $('.entity_key').removeClass('active')
+  }
+
+  function showEntityTable(name) {
+    // c) show this table
+    $('.entity_table[data-entity-name="'+name+'"]').show()
+  }
+
+  function activateEntity(entity_name) {
+    // a) hide all the tables with the class 'entity_table'
+    hideEntityTables()
+    // b) find the table in '.entity_table' with the same 'entity-name' data attribute
+    showEntityTable(entity_name)
+    $('.entity_key[data-entity-name="'+entity_name+'"]').addClass('active')
+  }
+
+  function initListeners(){
+    // 1. iterate over each Entity list item   
+    $('.entity_key').each(function(i, obj) {
+      var entityKey = $(obj)
+      var entityName = entityKey.data('entity-name')
+      console.log('adding click listener to ' + entityName);
+      // here, entityName might equal something like 'S3Bucket'
+      // 2. add a click listener
+      entityKey.click(function(event){
+        console.log('received click event for ' + entityName)
+        activateEntity(entityName)
+      })
+    })
+  }
+  (function(){
+    hideEntityTables()
+    var firstEntity = $($('.entity_key')[0]).data('entity-name')
+    console.log('activating first entity: ', firstEntity)
+    activateEntity(firstEntity)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="entity_styles.css">
+<title>GitHub Entities supported in DSL</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>GitHub Entities supported in DSL</h1>
+  <div class="notes_container">
+  
+    <!-- AWS notes -->
+<p>The table below describes the GitHub services and attributes supported by Netskope.</p>
+  
+  </div>
+  <div class="container">
+    <div class="entity_keys">
+      
+      <h2 class="entity_category Source Code">Source Code</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="Organization">
+          <span class="entity_name">Organization</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Repository">
+          <span class="entity_name">Repository</span>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="entity_tables">
+      
+        <table class="entity_table" data-entity-name="Organization">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>Organization name</td>
+          </tr>
+          
+          <tr>
+            <td>public_gists_count</td>
+            <td>number</td>
+            <td>Number of Public Gists for an organization</td>
+          </tr>
+          
+          <tr>
+            <td>two_factor_requirement_enabled</td>
+            <td>boolean</td>
+            <td>Whether the organization requires 2FA for all users</td>
+          </tr>
+          
+          <tr>
+            <td>has_inactive_admin_users</td>
+            <td>boolean</td>
+            <td>Whether the organization has inactive admin users</td>
+          </tr>
+          
+          <tr>
+            <td>has_inactive_users</td>
+            <td>boolean</td>
+            <td>Whether the organization has inactive users</td>
+          </tr>
+          
+          <tr>
+            <td>has_2fa_disable_users</td>
+            <td>boolean</td>
+            <td>Whether the organization has users with 2FA disabled</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Repository">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>Repository name</td>
+          </tr>
+          
+          <tr>
+            <td>full_name</td>
+            <td>string</td>
+            <td>Repository full name</td>
+          </tr>
+          
+          <tr>
+            <td>created_at</td>
+            <td>number</td>
+            <td>Repository's creation time in Unix Timestamp format</td>
+          </tr>
+          
+          <tr>
+            <td>pushed_at</td>
+            <td>number</td>
+            <td>The last time a commit was pushed to a repository, in Unix Timestamp format</td>
+          </tr>
+          
+          <tr>
+            <td>private</td>
+            <td>boolean</td>
+            <td>Whether a repository is private or not</td>
+          </tr>
+          
+          <tr>
+            <td>branch_protection_enabled_for_all_branches</td>
+            <td>boolean</td>
+            <td>Whether branch protection is enabled for all branches</td>
+          </tr>
+          
+          <tr>
+            <td>branch_protection_rule_bypass_admin_user</td>
+            <td>boolean</td>
+            <td>Whether any branch protection rule bypasses an admin user</td>
+          </tr>
+          
+          <tr>
+            <td>secret_scanning_enabled</td>
+            <td>boolean</td>
+            <td>Whether secret scanning is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>vulnerability_alerts_enabled</td>
+            <td>boolean</td>
+            <td>Whether vulnerability alerts are enabled</td>
+          </tr>
+          
+          <tr>
+            <td>default_branch</td>
+            <td>entity</td>
+            <td>The Repository's default branch</td>
+          </tr>
+          
+          <tr>
+            <td>fork_count</td>
+            <td>number</td>
+            <td>The number of forks of this repository</td>
+          </tr>
+          
+        </table>
+      
+    </div>
+  </div>
+  <script>
+  function hideEntityTables() {
+    $('.entity_table').hide()
+    $('.entity_key').removeClass('active')
+  }
+
+  function showEntityTable(name) {
+    // c) show this table
+    $('.entity_table[data-entity-name="'+name+'"]').show()
+  }
+
+  function activateEntity(entity_name) {
+    // a) hide all the tables with the class 'entity_table'
+    hideEntityTables()
+    // b) find the table in '.entity_table' with the same 'entity-name' data attribute
+    showEntityTable(entity_name)
+    $('.entity_key[data-entity-name="'+entity_name+'"]').addClass('active')
+  }
+
+  function initListeners(){
+    // 1. iterate over each Entity list item   
+    $('.entity_key').each(function(i, obj) {
+      var entityKey = $(obj)
+      var entityName = entityKey.data('entity-name')
+      console.log('adding click listener to ' + entityName);
+      // here, entityName might equal something like 'S3Bucket'
+      // 2. add a click listener
+      entityKey.click(function(event){
+        console.log('received click event for ' + entityName)
+        activateEntity(entityName)
+      })
+    })
+  }
+  (function(){
+    hideEntityTables()
+    var firstEntity = $($('.entity_key')[0]).data('entity-name')
+    console.log('activating first entity: ', firstEntity)
+    activateEntity(firstEntity)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

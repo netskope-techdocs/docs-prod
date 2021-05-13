@@ -1,0 +1,1098 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="entity_styles.css">
+<title>Office 365 Entities supported in DSL</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Office 365 Entities supported in DSL</h1>
+  <div class="notes_container">
+  
+    <!-- AWS notes -->
+<p>The table below describes the Office 365 services and attributes supported by Netskope. </p>
+  
+  </div>
+  <div class="container">
+    <div class="entity_keys">
+      
+      <h2 class="entity_category O365 Resource Category">O365 Resource Category</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="AcceptedDomain">
+          <span class="entity_name">AcceptedDomain</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="DeviceCompliancePolicy">
+          <span class="entity_name">DeviceCompliancePolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="DeviceConfiguration">
+          <span class="entity_name">DeviceConfiguration</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="DkimSigningConfig">
+          <span class="entity_name">DkimSigningConfig</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="HostedOutboundSpamFilterPolicy">
+          <span class="entity_name">HostedOutboundSpamFilterPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="MalwareFilterPolicy">
+          <span class="entity_name">MalwareFilterPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="O365Domain">
+          <span class="entity_name">O365Domain</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="O365Tenant">
+          <span class="entity_name">O365Tenant</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="OrganizationConfig">
+          <span class="entity_name">OrganizationConfig</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="OwaMailboxPolicy">
+          <span class="entity_name">OwaMailboxPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RemoteDomainConfiguration">
+          <span class="entity_name">RemoteDomainConfiguration</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RoleAssignmentPolicy">
+          <span class="entity_name">RoleAssignmentPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SecureScore">
+          <span class="entity_name">SecureScore</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SharepointTenant">
+          <span class="entity_name">SharepointTenant</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SharingPolicy">
+          <span class="entity_name">SharingPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="TransportRule">
+          <span class="entity_name">TransportRule</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Security">Security</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="AdminAuditLogConfig">
+          <span class="entity_name">AdminAuditLogConfig</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="AntiPhishPolicy">
+          <span class="entity_name">AntiPhishPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ConditionalAccessPolicy">
+          <span class="entity_name">ConditionalAccessPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="CsOAuthConfiguration">
+          <span class="entity_name">CsOAuthConfiguration</span>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="entity_tables">
+      
+        <table class="entity_table" data-entity-name="AdminAuditLogConfig">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>AdminAuditLogEnabled</td>
+            <td>boolean</td>
+            <td>Indicate whether the audit log is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>UnifiedAuditLogIngestionEnabled</td>
+            <td>boolean</td>
+            <td>Indicate whether the audit log search is turned on.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AntiPhishPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the AntiPhish policy, e.g. "Office365 AntiPhish Default".</td>
+          </tr>
+          
+          <tr>
+            <td>EnableSpoofIntelligence</td>
+            <td>boolean</td>
+            <td>"True" if "Spoof Intelligence" is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableUnauthenticatedSender</td>
+            <td>boolean</td>
+            <td>"True" if Unauthenticated Sender Identification is enabled. (https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-worldwide#unauthenticated-sender)</td>
+          </tr>
+          
+          <tr>
+            <td>EnableViaTag</td>
+            <td>boolean</td>
+            <td>If "True", the "Via Tag" will be applied to certain email messages. See https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-anti-phishing-policies?view=o365-worldwide#unauthenticated-sender for more details.</td>
+          </tr>
+          
+          <tr>
+            <td>AuthenticationFailAction</td>
+            <td>string</td>
+            <td>When an incoming email message's sender fails authentication, this setting describes the possible default actions that will take place.  Possible values are "MoveToJmf" (Moves the email to the junk folder), "Quarantine" (Moves the email to quarantine).</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SharingPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>isDefault</td>
+            <td>boolean</td>
+            <td>True if this is the default sharing policy.</td>
+          </tr>
+          
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>Name of the sharing policy.</td>
+          </tr>
+          
+          <tr>
+            <td>sharingEnabled</td>
+            <td>boolean</td>
+            <td>The "enabled" setting from the PowerShell command.  If "False", no calendar sharing is allowed with users outside of the O365 organization.</td>
+          </tr>
+          
+          <tr>
+            <td>domains</td>
+            <td>list</td>
+            <td>List of domains and what kind of calendar details can be shared with them.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>domain</td>
+            <td>string</td>
+            <td>Possible values are "*" (represents users outside of the o365 organization who have an o365 account), "Anonymous" (represents users outside of the o365 organization who do not have an o365 account).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>sharingAllowedDetails</td>
+            <td>string</td>
+            <td>Possible values are "CalendarSharingFreeBusySimple" (share free/busy hours only), "CalendarSharingFreeBusyDetail" (share free/busy hours, subject, and location), "CalendarSharingFreeBusyReviewer" (share free/busy hours, subject, location, and the body of the message or calendar item), "ContactsSharing" (share contacts only).</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ConditionalAccessPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Specifies the identifier of a conditionalAccessPolicy object.</td>
+          </tr>
+          
+          <tr>
+            <td>state</td>
+            <td>boolean</td>
+            <td>Specifies the state of the conditionalAccessPolicy object. Possible values are "enabled", "disabled", "enabledForReportingButNotEnforced".</td>
+          </tr>
+          
+          <tr>
+            <td>conditions</td>
+            <td>sequence</td>
+            <td>Specifies the rules that must be met for the policy to apply.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>clientAppTypes</td>
+            <td>list</td>
+            <td>Client application types included in the policy. Possible values are "all", "browser", "mobileAppsAndDesktopClients", "exchangeActiveSync", "easSupported", "other".</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>users</td>
+            <td>sequence</td>
+            <td>Users, groups, and roles included in and excluded from the policy.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>includeUsers</td>
+            <td>list</td>
+            <td>A list of user IDs in the scope of the policy (unless the user ID explicitly excluded, i.e. the user ID is in the "excludeUsers" list), or one of "None",  "All", or "GuestsOrExternalUsers", .</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>excludeUsers</td>
+            <td>list</td>
+            <td>A list of user IDs excluded from the scope of the policy and/or "GuestsOrExternalUsers".</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>includeGroups</td>
+            <td>list</td>
+            <td>A list of group IDs in the scope of the policy (unless the group ID is explicitly excluded, i.e. the group ID is in the "excludeGroups" list), or "All".</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>excludeGroups</td>
+            <td>list</td>
+            <td>Group IDs excluded from scope of policy.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>includeRoles</td>
+            <td>list</td>
+            <td>A list of role IDs in scope of policy (unless explicitly excluded, i.e. the role ID is in the "excludeRoles" list), or "All".</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>excludeRoles</td>
+            <td>list</td>
+            <td>Role IDs excluded from scope of policy.</td>
+          </tr>
+          
+          <tr>
+            <td>grantControls</td>
+            <td>sequence</td>
+            <td>Specifies the grant controls that must be fulfilled to pass the policy.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>builtInControls</td>
+            <td>list</td>
+            <td>List of values of built-in controls required by the policy. Possible values are "block", "mfa", "compliantDevice", "domainJoinedDevice", "approvedApplication", "compliantApplication", "passwordChange".</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CsOAuthConfiguration">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>ClientAdalAuthOverride</td>
+            <td>boolean</td>
+            <td>Enable or disable ADAL (Modern Authentication) for Skype for Business Online in your tenant. Valid values are "NoOverride" (use global OAuth configuration), "Allowed" (enables OAuth for the tenant), "Disallowed" (disables OAuth for the tenant).</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="DeviceCompliancePolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The ID of the compliance policy.</td>
+          </tr>
+          
+          <tr>
+            <td>odatatype</td>
+            <td>string</td>
+            <td>The OData type of the entity, e.g. "#microsoft.graph.iosCompliancePolicy".</td>
+          </tr>
+          
+          <tr>
+            <td>securityBlockJailbrokenDevices</td>
+            <td>boolean</td>
+            <td>If true, block jailbroken or rooted devices.</td>
+          </tr>
+          
+          <tr>
+            <td>managedEmailProfileRequired</td>
+            <td>boolean</td>
+            <td>If true, the owner of the device will only be able to use a managed email account.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="DeviceConfiguration">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The ID of the compliance policy.</td>
+          </tr>
+          
+          <tr>
+            <td>odatatype</td>
+            <td>string</td>
+            <td>To distinguish between different platforms (Android, iOS).</td>
+          </tr>
+          
+          <tr>
+            <td>passwordPreviousPasswordBlockCount</td>
+            <td>number</td>
+            <td>Prevent reuse of previous passwords.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodePreviousPasscodeBlockCount</td>
+            <td>number</td>
+            <td>For iOS to prevent reuse of previous passwords.</td>
+          </tr>
+          
+          <tr>
+            <td>passwordExpirationDays</td>
+            <td>number</td>
+            <td>Password expiration in days. "null" if no expiration.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeExpirationDays</td>
+            <td>number</td>
+            <td>Passcode expiration in days. "null" if no expiration. (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordMinimumLength</td>
+            <td>number</td>
+            <td>Minimum length of the password.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeMinimumLength</td>
+            <td>number</td>
+            <td>Minimum length of the password. (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordRequiredType</td>
+            <td>string</td>
+            <td>The password type (e.g. alphanumeric).</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeRequiredType</td>
+            <td>string</td>
+            <td>The password type (e.g. alphanumeric). (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordBlockSimple</td>
+            <td>boolean</td>
+            <td>Block simple passwords.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeBlockSimple</td>
+            <td>boolean</td>
+            <td>Block simple passwords. (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordRequired</td>
+            <td>boolean</td>
+            <td>Require the use of a password.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeRequired</td>
+            <td>boolean</td>
+            <td>Require the use of a password. (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>storageRequireDeviceEncryption</td>
+            <td>boolean</td>
+            <td>Indicates whether or not to require device encryption.</td>
+          </tr>
+          
+          <tr>
+            <td>passwordSigninFailureCountBeforeWipe</td>
+            <td>number</td>
+            <td>Number of failed authentication attempts before a device is wiped. (iOS)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordSigninFailureCountBeforeFactoryReset</td>
+            <td>number</td>
+            <td>Number of failed authentication attempts before a device is wiped. (Windows 8)</td>
+          </tr>
+          
+          <tr>
+            <td>passwordMinutesOfInactivityBeforeScreenTimeout</td>
+            <td>number</td>
+            <td>Minutes of inactivity before the screen times out.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeMinutesOfInactivityBeforeScreenTimeout</td>
+            <td>number</td>
+            <td>Minutes of inactivity before the screen times out.</td>
+          </tr>
+          
+          <tr>
+            <td>passwordRequireWhenResumeFromIdleState</td>
+            <td>boolean</td>
+            <td>Require the user to provide a password when the device is resumed from idle status.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="DkimSigningConfig">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>domain</td>
+            <td>string</td>
+            <td>A domain under the current O365 tenant.</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>"True" if DKIM signing is enabled for this tenant, "False" otherwise.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AcceptedDomain">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for this domain. (e.g. "dev-o365.yourcompany.com" or "yourcompany.onmicrosoft.com")</td>
+          </tr>
+          
+          <tr>
+            <td>spfRecordPublished</td>
+            <td>boolean</td>
+            <td>To get this value, use `nslookup -type=txt domain.com` and ensure that a value exists that contains `include:spf.protection.outlook.com.` Set this to "true" if the record is valid and existing.</td>
+          </tr>
+          
+          <tr>
+            <td>DMARCRecordPublished</td>
+            <td>boolean</td>
+            <td>To get this value, use `nslookup -type=txt _dmarc.<domain>` and Ensure that a policy exists that starts with `v=DMARC1;`. Set this to "true" if the record is valid and existing.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RoleAssignmentPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>Name of the policy.</td>
+          </tr>
+          
+          <tr>
+            <td>Description</td>
+            <td>string</td>
+            <td>Description of the role assignment policy.</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefault</td>
+            <td>boolean</td>
+            <td>True if this is the default role assignment policy.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>True if this is a valid role assignment policy.</td>
+          </tr>
+          
+          <tr>
+            <td>AssignedRoles</td>
+            <td>Reference to string</td>
+            <td>List of roles assigned to this policy.  Some sample values are "My Custom Apps", "My Marketplace Apps", "My ReadWriteMailbox Apps".</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="HostedOutboundSpamFilterPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>BccSuspiciousOutboundMail</td>
+            <td>boolean</td>
+            <td>Send copies of suspicious messages to specific people.</td>
+          </tr>
+          
+          <tr>
+            <td>NotifyOutboundSpam</td>
+            <td>boolean</td>
+            <td>Notify specific people if senders are blocked.</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>Whether this policy is enabled or not.</td>
+          </tr>
+          
+          <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>Unique Identifier for the policy.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="O365Domain">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for this domain. (e.g. "dev-o365.yourcompany.com" or "yourcompany.onmicrosoft.com")</td>
+          </tr>
+          
+          <tr>
+            <td>supportedServices</td>
+            <td>list</td>
+            <td>List of supported services for this domain (e.g. "Intune")</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="O365Tenant">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>unreviewedRiskEventsExist</td>
+            <td>boolean</td>
+            <td>If true, then there are new risk events that need to be reviewed at https://portal.azure.com/#blade/Microsoft_AAD_IAM/SecurityMenuBlade/RiskDetections.</td>
+          </tr>
+          
+          <tr>
+            <td>globalAdminUserCount</td>
+            <td>number</td>
+            <td>The total number of global admin users.</td>
+          </tr>
+          
+          <tr>
+            <td>AnyMailTransportRuleRedirectMessageToExternalDomain</td>
+            <td>boolean</td>
+            <td>True if any of the mail transport rules is set up to redirect to any external domains.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="OrganizationConfig">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>OAuth2ClientProfileEnabled</td>
+            <td>boolean</td>
+            <td>Whether OAuth 2.0 is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>mailTipsAllTipsEnabled</td>
+            <td>boolean</td>
+            <td>True if mail tips are enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>mailTipsExternalRecipientsTipsEnabled</td>
+            <td>boolean</td>
+            <td>True if external recipient mail tips are enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>mailTipsGroupMetricsEnabled</td>
+            <td>boolean</td>
+            <td>True if mail tips group metrics are enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>mailTipsLargeAudienceThreshold</td>
+            <td>number</td>
+            <td>This setting defines a "large audience" in your tenant.  If an email is about to be sent to a large audience, a mail tip will be shown to alert the user.</td>
+          </tr>
+          
+          <tr>
+            <td>userMailboxAuditEnabled</td>
+            <td>boolean</td>
+            <td>If true, mailbox auditing is enabled for all user mailboxes.</td>
+          </tr>
+          
+          <tr>
+            <td>nonUserMailboxAuditEnabled</td>
+            <td>boolean</td>
+            <td>If true, all non-user mailboxes have audit enabled. Otherwise, at least 1 non-user mailbox has auditing disabled. You can get this information from PowerShell using the command `Get-Mailbox -Filter 'AuditEnabled -eq $false -and RecipientTypeDetails -ne "UserMailbox" -and RecipientTypeDetails -ne "SharedMailbox"' -ResultSize 1 | Select-Object Id, Name, AuditEnabled`</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="OwaMailboxPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>linkedInEnabled</td>
+            <td>boolean</td>
+            <td>If False, LinkedIn contact synchronization is disabled.</td>
+          </tr>
+          
+          <tr>
+            <td>facebookEnabled</td>
+            <td>boolean</td>
+            <td>If False, Facebook contact synchronization is disabled.</td>
+          </tr>
+          
+          <tr>
+            <td>additionalStorageProvidersAvailable</td>
+            <td>boolean</td>
+            <td>If False, additional storage providers (such as Box, DropBox, etc.) in Outlook on the Web will be restricted.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="TransportRule">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the Mail Transport Rule.</td>
+          </tr>
+          
+          <tr>
+            <td>redirectMessageTo</td>
+            <td>string</td>
+            <td>An email address that this MailTransportRule will auto-forward emails to.</td>
+          </tr>
+          
+          <tr>
+            <td>SetScl</td>
+            <td>number</td>
+            <td>Spam Confidence Level. -1 = Bypass spam filters. 0-4 = perform normal spam filtering. 5-6 = mark as spam. 7-9 = mark as high confidence spam. See https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide for more info.</td>
+          </tr>
+          
+          <tr>
+            <td>SenderDomainIs</td>
+            <td>string</td>
+            <td>The sender domain that is being checked in this Mail Transport Rule.</td>
+          </tr>
+          
+          <tr>
+            <td>Priority</td>
+            <td>number</td>
+            <td>The priority level of the Transport Rule that determines the order of rule processing. 0 is the highest priority.</td>
+          </tr>
+          
+          <tr>
+            <td>sentToScope</td>
+            <td>string</td>
+            <td>The "sent to scope" condition being checked in this Transport Rule. Possible values are "InOrganization", "NotInOrganization", "ExternalPartner" and "ExternalNonPartner". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more details.</td>
+          </tr>
+          
+          <tr>
+            <td>fromScope</td>
+            <td>string</td>
+            <td>The "from scope" condition being checked in this Transport Rule. Possible values are "InOrganization" "NotInOrganization". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more details.</td>
+          </tr>
+          
+          <tr>
+            <td>messageTypeMatches</td>
+            <td>string</td>
+            <td>Specifies a condition that looks for messages of a specified type.  Possible values are "OOF", "AutoForward", "Encrypted", "Calendaring", "PermissionControlled", Voicemail", "Signed", "ApprovalRequest", and "ReadReceipt". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more information.</td>
+          </tr>
+          
+          <tr>
+            <td>rejectMessageEnhancedStatusCode</td>
+            <td>string</td>
+            <td>Specifies the enhanced status code that's used when the rule rejects messages. See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more information.</td>
+          </tr>
+          
+          <tr>
+            <td>rejectMessageReasonText</td>
+            <td>string</td>
+            <td>Specifies the explanation text that's used when a TransportRule rejects a message.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="MalwareFilterPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the MalwareFilterPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the MalwareFilterPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>EnableFileFilter</td>
+            <td>boolean</td>
+            <td>The Common Attachment Types Filter lets a user block known and custom malicious file types from being attached to emails.  This setting is set to "True" if the "Common Attachment Types" filter is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableInternalSenderAdminNotifications</td>
+            <td>boolean</td>
+            <td>If true, an admin will receive an email notification if an internal user is detected sending malware.</td>
+          </tr>
+          
+          <tr>
+            <td>InternalSenderAdminAddress</td>
+            <td>string</td>
+            <td>The email address of the admin who will receive notifications when an internal user is detected sending malware.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RemoteDomainConfiguration">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the Remote Domain Configuration. The default Remote Domain Configuration on an O365 account has name "Default", and domain "*".</td>
+          </tr>
+          
+          <tr>
+            <td>DomainName</td>
+            <td>string</td>
+            <td>The remote domain that is being configured. "*" represents any remote domain. The default Remote Domain setting in an O365 account has the name "Default" and domain "*".</td>
+          </tr>
+          
+          <tr>
+            <td>AutoForwardEnabled</td>
+            <td>boolean</td>
+            <td>If False, AutoForwarding of email to this remote domain will not be allowed.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SecureScore">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Combination of azureTenantId_createdDateTime.</td>
+          </tr>
+          
+          <tr>
+            <td>azureTenantId</td>
+            <td>string</td>
+            <td>GUID string for tenant ID.</td>
+          </tr>
+          
+          <tr>
+            <td>createdDateTime</td>
+            <td>string</td>
+            <td>The date when the entity is created.</td>
+          </tr>
+          
+          <tr>
+            <td>maxScore</td>
+            <td>number</td>
+            <td>Tenant maximum possible score on specified date.</td>
+          </tr>
+          
+          <tr>
+            <td>currentScore</td>
+            <td>number</td>
+            <td>Tenant current attained score on specified date.</td>
+          </tr>
+          
+          <tr>
+            <td>controlScores</td>
+            <td>list</td>
+            <td>Contains tenant scores for a set of controls.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>controlName</td>
+            <td>string</td>
+            <td>Unique name for the control.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>controlCategory</td>
+            <td>string</td>
+            <td>Control action category (Identity, Data, Device, Apps, Infrastructure).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>score</td>
+            <td>number</td>
+            <td>Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>description</td>
+            <td>string</td>
+            <td>Description of the control.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isEnforced</td>
+            <td>boolean</td>
+            <td>Whether this control score is enforced or not.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IsApplicable</td>
+            <td>boolean</td>
+            <td>Whether this control score is applicable or not.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>implementationStatus</td>
+            <td>string</td>
+            <td>Description of current status, e.g. "You currently have 4 global admins".</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>lastSynced</td>
+            <td>string</td>
+            <td>The datetime when last synced in ISO 8601 format.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>scoreInPercentage</td>
+            <td>number</td>
+            <td>The current score as a percentage.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>total</td>
+            <td>number</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>count</td>
+            <td>number</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>on</td>
+            <td>boolean</td>
+            <td>Indicate whether the policy is turned on.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>reviewed</td>
+            <td>number</td>
+            <td>Unix timestamp.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SharepointTenant">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>legacyAuthProtocolsEnabled</td>
+            <td>boolean</td>
+            <td>If False, basic authentication and other legacy authentication mechanisms are not allowed for this SharePoint tenant.</td>
+          </tr>
+          
+          <tr>
+            <td>disallowInfectedFileDownload</td>
+            <td>boolean</td>
+            <td>If True, files that ATP has detected as infected will not be allowed to be downloaded via SharePoint.</td>
+          </tr>
+          
+          <tr>
+            <td>preventExternalUsersFromResharing</td>
+            <td>boolean</td>
+            <td>If True, external users will not be able to share files and folders unless they were the original owner of the resource.</td>
+          </tr>
+          
+          <tr>
+            <td>sharingDomainRestrictionMode</td>
+            <td>number</td>
+            <td>The sharing domain restriction being used. 0 = None, 1 = "AllowList", 2 = "BlockList". See https://docs.microsoft.com/en-us/dotnet/api/microsoft.sharepoint.client.sharing.sharingdomainrestrictionmode?view=sharepoint-csom</td>
+          </tr>
+          
+          <tr>
+            <td>sharingAllowedDomainList</td>
+            <td>Reference to string</td>
+            <td>List of domains that resources are allowed to be shared with, if "sharingDomainRestrictionMode" = 1 (AllowList)</td>
+          </tr>
+          
+          <tr>
+            <td>sharingBlockedDomainList</td>
+            <td>Reference to string</td>
+            <td>List of domains that resources will not be allowed to be shared with, if "sharingDomainRestrictionMode" = 2 (BlockList)</td>
+          </tr>
+          
+          <tr>
+            <td>isUnmanagedSyncClientForTenantRestricted</td>
+            <td>boolean</td>
+            <td>If True, file syncing for OneDrive / SharePoint will only be allowed on PCs joined to specific domains.  (See property "allowedDomainListForSyncClient")</td>
+          </tr>
+          
+          <tr>
+            <td>allowedDomainListForSyncClient</td>
+            <td>Reference to string</td>
+            <td>The list of allowed domains if "isUnManagedSyncClientForTenantRestricted" is set to True.</td>
+          </tr>
+          
+          <tr>
+            <td>blockMacSync</td>
+            <td>boolean</td>
+            <td>If True, MacOS devices cannot sync files from OneDrive / SharePoint.</td>
+          </tr>
+          
+          <tr>
+            <td>requireAnonymousLinksExpireInDays</td>
+            <td>number</td>
+            <td>The number of days before an anonymous sharing link for a file expires. A value of -1 indicates no expiry.</td>
+          </tr>
+          
+        </table>
+      
+    </div>
+  </div>
+  <script>
+  function hideEntityTables() {
+    $('.entity_table').hide()
+    $('.entity_key').removeClass('active')
+  }
+
+  function showEntityTable(name) {
+    // c) show this table
+    $('.entity_table[data-entity-name="'+name+'"]').show()
+  }
+
+  function activateEntity(entity_name) {
+    // a) hide all the tables with the class 'entity_table'
+    hideEntityTables()
+    // b) find the table in '.entity_table' with the same 'entity-name' data attribute
+    showEntityTable(entity_name)
+    $('.entity_key[data-entity-name="'+entity_name+'"]').addClass('active')
+  }
+
+  function initListeners(){
+    // 1. iterate over each Entity list item   
+    $('.entity_key').each(function(i, obj) {
+      var entityKey = $(obj)
+      var entityName = entityKey.data('entity-name')
+      console.log('adding click listener to ' + entityName);
+      // here, entityName might equal something like 'S3Bucket'
+      // 2. add a click listener
+      entityKey.click(function(event){
+        console.log('received click event for ' + entityName)
+        activateEntity(entityName)
+      })
+    })
+  }
+  (function(){
+    hideEntityTables()
+    var firstEntity = $($('.entity_key')[0]).data('entity-name')
+    console.log('activating first entity: ', firstEntity)
+    activateEntity(firstEntity)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
+-->
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.2rem}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.2rem}
+body {font-family: Arial,sans-serif;}
+
+table.rule_table {font-size: 90%}
+td.code {font-family: monospace}
+th {font-weight: bold; cursor: pointer; }
+input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
+.headerSortDown:after,
+.headerSortUp:after{
+    content: ' ';
+    position: relative;
+    left: 10px;
+    border: 7px solid transparent;
+}
+.headerSortDown:after{
+    top: 10px;
+    border-top-color: silver;
+}
+.headerSortUp:after{
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+    padding-left: 20px;
+}
+
+img[alt="Netskope"] {display:block; margin:1.2rem;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys>.rule_category:first-child{margin-top:0;}
+.rule_keys ul {list-style: none;}
+.rule_keys li {cursor: pointer;}
+.rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.rule_keys {position: fixed; top:135}
+img {position: fixed; top: 0}
+h1 {position: fixed; top: 75}
+
+.rule_tables {flex:3 1 0px;display:inline-block;}
+.rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.rule_tables table {table-layout: fixed; width:100%;}
+.rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
+
+/* rule styles */
+.rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
+.rule_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.rule_category:before, .rule_category:after {display:inline-block; content:''; width:0.4rem;}
+.rule_key {padding:0.3rem;padding-left: 1.5rem;}
+.rule_key.active {background-color: #ff8300; color:#ffffff;}
+.rule_name {width:100%; text-align: left;}
+</style>
+
+<title>Salesforce Predefined Rules</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Salesforce Predefined Rules</h1>
+  <div class="container">
+    <div class="rule_keys">
+        <ul>
+            
+            <li class="rule_key" data-profile-name="BPR">
+              <span class="rule_name">Salesforce Best Practices</span>
+            </li>
+            
+            <!--
+            <li class="rule_key" data-profile-name="ALL">
+              <span class="rule_name">All Rules</span>
+            </li>
+            -->
+        </ul>
+        <br><br>
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
+    </div>
+    <div class="rule_tables">
+      
+        <table id="table" class="rule_table" data-profile-name="BPR">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="1">
+            <!-- <td>1</td> -->
+            <td>Enable admin login as any user</td>
+            <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SecuritySettings should have enableAdminLoginAsAnyUser eq true </td>
+          </tr>
+          
+          <tr num="2">
+            <!-- <td>2</td> -->
+            <td>Certificate key size is greater than 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
+            <td>Disable caching and autocomplete on login page</td>
+            <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
+          </tr>
+          
+          <tr num="6">
+            <!-- <td>6</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="7">
+            <!-- <td>7</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="8">
+            <!-- <td>8</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="9">
+            <!-- <td>9</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="10">
+            <!-- <td>10</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="11">
+            <!-- <td>11</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="12">
+            <!-- <td>12</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true</td>
+          </tr>
+          
+          <tr num="13">
+            <!-- <td>13</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="14">
+            <!-- <td>14</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="15">
+            <!-- <td>15</td> -->
+            <td>No expired certificates</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="16">
+            <!-- <td>16</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have FileUploadAndDownloadSecuritySettings len() gt 0 </td>
+          </tr>
+          
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>Force logout on session timeout</td>
+            <td>Log users out after the session timeout period has elapsed.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="18">
+            <!-- <td>18</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="22">
+            <!-- <td>22</td> -->
+            <td>Password lockout interval</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval in ("FifteenMinutes", "ThirtyMinutes") </td>
+          </tr>
+          
+          <tr num="23">
+            <!-- <td>23</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="24">
+            <!-- <td>24</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Password hint question should not contain the password.</td>
+            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
+          </tr>
+          
+          <tr num="26">
+            <!-- <td>26</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="27">
+            <!-- <td>27</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="28">
+            <!-- <td>28</td> -->
+            <td>Warn users when they are redirected outside of Salesforce</td>
+            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have redirectionWarning eq true</td>
+          </tr>
+          
+          <tr num="29">
+            <!-- <td>29</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="30">
+            <!-- <td>30</td> -->
+            <td>Require email confirmations for email address changes</td>
+            <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have canConfirmEmailChangeInLightningCommunities eq true</td>
+          </tr>
+          
+          <tr num="31">
+            <!-- <td>31</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="32">
+            <!-- <td>32</td> -->
+            <td>Require HTTPS for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="33">
+            <!-- <td>33</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="34">
+            <!-- <td>34</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="36">
+            <!-- <td>36</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="37">
+            <!-- <td>37</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+      &nbsp;
+      <br><br>
+      <br><br>
+      <br><br>
+      &nbsp;
+    </div>
+  </div>
+  <script>
+
+  // Sort
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+      this.asc = !this.asc;
+      const table = th.closest('table');
+      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+          .forEach(tr => table.appendChild(tr) );
+      $('th').removeClass('headerSortDown').removeClass('headerSortUp')
+      if (this.asc) {
+        $(th).addClass('headerSortUp')
+      } else {
+        $(th).addClass('headerSortDown')
+      }
+  })));
+
+  // Search
+  var $rows = $('table.rule_table tr[num]');
+  $('#search').keyup(debounce(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+      reg = RegExp(val, 'i'),
+      text;
+
+    $rows.show().filter(function() {
+      text = $(this).text().replace(/\s+/g, ' ');
+      return !reg.test(text);
+    }).hide();
+  }, 300));
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  // Nav Menu Show/Hide
+  function hideRuleTables() {
+    $('.rule_table').hide()
+    $('.rule_key').removeClass('active')
+  }
+
+  function showRuleTable(name) {
+    // c) show this table
+    if (name == 'ALL') { 
+        $('.rule_table').show()
+    } else {
+        $('.rule_table[data-profile-name="'+name+'"]').show()
+    }
+  }
+
+  function activateRule(profile_name) {
+    // a) hide all the tables with the class 'rule_table'
+    hideRuleTables()
+    // b) find the table in '.rule_table' with the same 'profile-name' data attribute
+    showRuleTable(profile_name)
+    if (name == "ALL") { 
+        $('.rule_key').addClass('active')
+    } else {
+        $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
+    }
+  }
+
+  function initListeners(){
+    // 1. iterate over each Rule list item   
+    $('.rule_key').each(function(i, obj) {
+      var ruleKey = $(obj)
+      var ruleName = ruleKey.data('profile-name')
+      console.log('adding click listener to ' + ruleName);
+      // 2. add a click listener
+      ruleKey.click(function(event){
+        console.log('received click event for ' + ruleName)
+        activateRule(ruleName)
+      })
+    })
+  }
+  (function(){
+    hideRuleTables()
+    var firstRule = $($('.rule_key')[0]).data('profile-name')
+    console.log('activating first rule: ', firstRule)
+    activateRule(firstRule)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

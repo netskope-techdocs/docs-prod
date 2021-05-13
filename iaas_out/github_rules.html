@@ -1,0 +1,405 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
+-->
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.2rem}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.2rem}
+body {font-family: Arial,sans-serif;}
+
+table.rule_table {font-size: 90%}
+td.code {font-family: monospace}
+th {font-weight: bold; cursor: pointer; }
+input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
+.headerSortDown:after,
+.headerSortUp:after{
+    content: ' ';
+    position: relative;
+    left: 10px;
+    border: 7px solid transparent;
+}
+.headerSortDown:after{
+    top: 10px;
+    border-top-color: silver;
+}
+.headerSortUp:after{
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+    padding-left: 20px;
+}
+
+img[alt="Netskope"] {display:block; margin:1.2rem;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys>.rule_category:first-child{margin-top:0;}
+.rule_keys ul {list-style: none;}
+.rule_keys li {cursor: pointer;}
+.rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.rule_keys {position: fixed; top:135}
+img {position: fixed; top: 0}
+h1 {position: fixed; top: 75}
+
+.rule_tables {flex:3 1 0px;display:inline-block;}
+.rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.rule_tables table {table-layout: fixed; width:100%;}
+.rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
+
+/* rule styles */
+.rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
+.rule_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.rule_category:before, .rule_category:after {display:inline-block; content:''; width:0.4rem;}
+.rule_key {padding:0.3rem;padding-left: 1.5rem;}
+.rule_key.active {background-color: #ff8300; color:#ffffff;}
+.rule_name {width:100%; text-align: left;}
+</style>
+
+<title>GitHub Predefined Rules</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>GitHub Predefined Rules</h1>
+  <div class="container">
+    <div class="rule_keys">
+        <ul>
+            
+            <li class="rule_key" data-profile-name="BPR">
+              <span class="rule_name">Github Best Practices v1.0.0</span>
+            </li>
+            
+            <!--
+            <li class="rule_key" data-profile-name="ALL">
+              <span class="rule_name">All Rules</span>
+            </li>
+            -->
+        </ul>
+        <br><br>
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
+    </div>
+    <div class="rule_tables">
+      
+        <table id="table" class="rule_table" data-profile-name="BPR">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="1">
+            <!-- <td>1</td> -->
+            <td>2FA disabled for user</td>
+            <td>Organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="2">
+            <!-- <td>2</td> -->
+            <td>2FA not enforced for organization</td>
+            <td>Organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>Repository's branch protection rules bypass an admin user</td>
+            <td>Repository's branch protection rules should not bypass an admin user.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Code snippet in public domain</td>
+            <td>Organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
+            <td>Default branch is prone to deletion</td>
+            <td>Default branch of a repository should not allow deletions.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="6">
+            <!-- <td>6</td> -->
+            <td>Force-push on default branch is permitted</td>
+            <td>Force-push shouldn't be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="7">
+            <!-- <td>7</td> -->
+            <td>Inactive Administrator in an Organization</td>
+            <td>There shouldn't be any inactive administrator in an organization.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="8">
+            <!-- <td>8</td> -->
+            <td>Inactive Repository</td>
+            <td>Inactive Repository for over 30 days.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should not have pushed_at isEarlierThan (-30, "days")</td>
+          </tr>
+          
+          <tr num="9">
+            <!-- <td>9</td> -->
+            <td>Inactive User in an Organization</td>
+            <td>There shouldn't be any inactive user in an organization.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="10">
+            <!-- <td>10</td> -->
+            <td>New repository</td>
+            <td>Any new repository created within 1 day.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have created_at isEarlierThan (-1, "days")</td>
+          </tr>
+          
+          <tr num="11">
+            <!-- <td>11</td> -->
+            <td>Private Repository has any forks</td>
+            <td>Private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="12">
+            <!-- <td>12</td> -->
+            <td>Repository set to public</td>
+            <td>Repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+      &nbsp;
+      <br><br>
+      <br><br>
+      <br><br>
+      &nbsp;
+    </div>
+  </div>
+  <script>
+
+  // Sort
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+      this.asc = !this.asc;
+      const table = th.closest('table');
+      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+          .forEach(tr => table.appendChild(tr) );
+      $('th').removeClass('headerSortDown').removeClass('headerSortUp')
+      if (this.asc) {
+        $(th).addClass('headerSortUp')
+      } else {
+        $(th).addClass('headerSortDown')
+      }
+  })));
+
+  // Search
+  var $rows = $('table.rule_table tr[num]');
+  $('#search').keyup(debounce(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+      reg = RegExp(val, 'i'),
+      text;
+
+    $rows.show().filter(function() {
+      text = $(this).text().replace(/\s+/g, ' ');
+      return !reg.test(text);
+    }).hide();
+  }, 300));
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  // Nav Menu Show/Hide
+  function hideRuleTables() {
+    $('.rule_table').hide()
+    $('.rule_key').removeClass('active')
+  }
+
+  function showRuleTable(name) {
+    // c) show this table
+    if (name == 'ALL') { 
+        $('.rule_table').show()
+    } else {
+        $('.rule_table[data-profile-name="'+name+'"]').show()
+    }
+  }
+
+  function activateRule(profile_name) {
+    // a) hide all the tables with the class 'rule_table'
+    hideRuleTables()
+    // b) find the table in '.rule_table' with the same 'profile-name' data attribute
+    showRuleTable(profile_name)
+    if (name == "ALL") { 
+        $('.rule_key').addClass('active')
+    } else {
+        $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
+    }
+  }
+
+  function initListeners(){
+    // 1. iterate over each Rule list item   
+    $('.rule_key').each(function(i, obj) {
+      var ruleKey = $(obj)
+      var ruleName = ruleKey.data('profile-name')
+      console.log('adding click listener to ' + ruleName);
+      // 2. add a click listener
+      ruleKey.click(function(event){
+        console.log('received click event for ' + ruleName)
+        activateRule(ruleName)
+      })
+    })
+  }
+  (function(){
+    hideRuleTables()
+    var firstRule = $($('.rule_key')[0]).data('profile-name')
+    console.log('activating first rule: ', firstRule)
+    activateRule(firstRule)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

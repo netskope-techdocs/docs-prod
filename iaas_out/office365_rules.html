@@ -1,0 +1,717 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
+-->
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.2rem}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.2rem}
+body {font-family: Arial,sans-serif;}
+
+table.rule_table {font-size: 90%}
+td.code {font-family: monospace}
+th {font-weight: bold; cursor: pointer; }
+input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
+.headerSortDown:after,
+.headerSortUp:after{
+    content: ' ';
+    position: relative;
+    left: 10px;
+    border: 7px solid transparent;
+}
+.headerSortDown:after{
+    top: 10px;
+    border-top-color: silver;
+}
+.headerSortUp:after{
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+    padding-left: 20px;
+}
+
+img[alt="Netskope"] {display:block; margin:1.2rem;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys>.rule_category:first-child{margin-top:0;}
+.rule_keys ul {list-style: none;}
+.rule_keys li {cursor: pointer;}
+.rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.rule_keys {position: fixed; top:135}
+img {position: fixed; top: 0}
+h1 {position: fixed; top: 75}
+
+.rule_tables {flex:3 1 0px;display:inline-block;}
+.rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.rule_tables table {table-layout: fixed; width:100%;}
+.rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
+
+/* rule styles */
+.rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
+.rule_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.rule_category:before, .rule_category:after {display:inline-block; content:''; width:0.4rem;}
+.rule_key {padding:0.3rem;padding-left: 1.5rem;}
+.rule_key.active {background-color: #ff8300; color:#ffffff;}
+.rule_name {width:100%; text-align: left;}
+</style>
+
+<title>Office 365 Predefined Rules</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Office 365 Predefined Rules</h1>
+  <div class="container">
+    <div class="rule_keys">
+        <ul>
+            
+            <li class="rule_key" data-profile-name="CIS">
+              <span class="rule_name">CIS Microsoft 365 Foundations Benchmark v1.2.0</span>
+            </li>
+            
+            <!--
+            <li class="rule_key" data-profile-name="ALL">
+              <span class="rule_name">All Rules</span>
+            </li>
+            -->
+        </ul>
+        <br><br>
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
+    </div>
+    <div class="rule_tables">
+      
+        <table id="table" class="rule_table" data-profile-name="CIS">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="1">
+            <!-- <td>1</td> -->
+            <td>Ensure at least one anti-phishing policy exists</td>
+            <td>Ensure that at least one anti-phishing policy exists.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one AntiPhishPolicies with [ Name eq "Office365 Antiphish Default" ] </td>
+          </tr>
+          
+          <tr num="2">
+            <!-- <td>2</td> -->
+            <td>Ensure the Azure AD 'Risky sign-ins' report is reviewed at least weekly</td>
+            <td>This report contains records of accounts that have had activity that could indicate they are compromised, such as accounts that have successfully signed in after multiple failures, which is an indication that the accounts have cracked passwords, account that have signed in to your tenancy from a client IP address that has been recognized by Microsoft as an anonymous proxy IP address (such as a TOR network), and successful signins from users where two signins appeared to originate from different regions and the time between signins makes it impossible for the user to have traveled between those regions</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365Tenant should have unreviewedRiskEventsExist eq false </td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>Enable Azure AD Identity Protection sign-in risk policies</td>
+            <td>Azure Active Directory Identity Protection sign-in risk detects risks in real-time and offline. A risky sign-in is an indicator for a sign-in attempt that might not have been performed by the legitimate owner of a user account.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [controlName eq "UserRiskPolicy" and isEnforced eq true] ] </td>
+          </tr>
+          
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Enable Azure AD Identity Protection user risk policies</td>
+            <td>Azure Active Directory Identity Protection user risk policies detect the probability that a user account has been compromised.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "UserRiskPolicy" and isEnforced eq true ] ] </td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
+            <td>Enable Conditional Access policies to block legacy authentication (Automated)</td>
+            <td>Enable Conditional Access policies to block legacy authentication (Automated)</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have any conditionalAccessPolicies with [ conditions.users.includeUsers has ("all") and conditions.users.excludeUsers len() >= 1 and conditions.clientAppTypes has ("exchangeActiveSync") and conditions.clientAppTypes has ("other") and grantControls.builtInControls has ("block") and grantControls.builtInControls len() = 1] </td>
+          </tr>
+          
+          <tr num="6">
+            <!-- <td>6</td> -->
+            <td>Ensure DKIM is enabled for all Exchange Online Domains</td>
+            <td>DKIM lets you add a digital signature to outbound email messages in the message header. This signature is used to verify that the messages are really coming from you and not coming from someone spoofing your domain</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every DkimSigningConfig with [ Enabled eq true ] </td>
+          </tr>
+          
+          <tr num="7">
+            <!-- <td>7</td> -->
+            <td>Ensure DLP policies are enabled</td>
+            <td>Ensure DLP policies are enabled</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "DLPEnabled" and score > 0 ] ] </td>
+          </tr>
+          
+          <tr num="8">
+            <!-- <td>8</td> -->
+            <td>Ensure DMARC Records for all Exchange Online domains are published</td>
+            <td>Domain-based Message Authentication, Reporting, and Conformance (DMARC) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders and ensure that destination email systems trust messages sent from your domain. When you use DMARC, the receiving server performs a check against the From address.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every AcceptedDomains with [ DMARCRecordPublished eq true ] </td>
+          </tr>
+          
+          <tr num="9">
+            <!-- <td>9</td> -->
+            <td>Ensure audit log search is enabled</td>
+            <td>Enabling Microsoft 365 audit log search helps Office 365 back office teams to investigate activities for regular security operational or forensic purposes.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every AdminAuditLogConfig with [ AdminAuditLogEnabled eq true and UnifiedAuditLogIngestionEnabled eq true ] </td>
+          </tr>
+          
+          <tr num="10">
+            <!-- <td>10</td> -->
+            <td>Ensure the Common Attachment Types Filter is enabled</td>
+            <td>Ensure the Common Attachment Types Filter is enabled.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every MalwareFilterPolicies with [ EnableFileFilter eq true ] </td>
+          </tr>
+          
+          <tr num="11">
+            <!-- <td>11</td> -->
+            <td>Ensure mailbox auditing for all users is enabled</td>
+            <td>By turning on mailbox auditing, Microsoft 365 back office teams can track logons to a mailbox as well as what actions are taken while the user is logged on. After you turn on mailbox audit logging for a mailbox, you can search the audit log for mailbox activity. Additionally, when mailbox audit logging is turned on, some actions performed by administrators, delegates, and owners are logged by default.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every OrganizationConfig with [ userMailboxAuditEnabled eq true and nonUserMailboxAuditEnabled eq true ]</td>
+          </tr>
+          
+          <tr num="12">
+            <!-- <td>12</td> -->
+            <td>Ensure Exchange Online outbound spam filter policy is properly configured</td>
+            <td>Ensure the Exchange Online outbound spam filter policy is properly configured.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every HostedOutboundSpamFilterPolicies with [ NotifyOutboundSpam eq true and BccSuspiciousOutboundMail eq true and Identity eq "Default" and Enabled eq true] </td>
+          </tr>
+          
+          <tr num="13">
+            <!-- <td>13</td> -->
+            <td>Ensure expiration time for external sharing links is set</td>
+            <td>You should restrict the length of time that anonymous access links are valid.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SharepointTenant with [ requireAnonymousLinksExpireInDays > 0 ] </td>
+          </tr>
+          
+          <tr num="14">
+            <!-- <td>14</td> -->
+            <td>Ensure mail forwarding rules are reviewed at least weekly</td>
+            <td>While there are lots of legitimate uses of mail forwarding rules, they are also a popular data exfiltration tactic for attackers. You should review them regularly to ensure your users' email is not being exfiltrated.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "MailForwardingRules" and reviewed isLaterThan(-7, "days") ] ] </td>
+          </tr>
+          
+          <tr num="15">
+            <!-- <td>15</td> -->
+            <td>Ensure mail transport rules do not forward email to external domains</td>
+            <td>Ensure mail transport rules do not forward email to external domains.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365Tenant should not have AnyMailTransportRuleRedirectMessageToExternalDomain eq True </td>
+          </tr>
+          
+          <tr num="16">
+            <!-- <td>16</td> -->
+            <td>Ensure mail transport rules do not whitelist specific domains</td>
+            <td>Ensure mail transport rules do not whitelist specific domains.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should not have any TransportRules with [setScl = -1 and SenderDomainIs len() > 0] </td>
+          </tr>
+          
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>Ensure the Malware Detections report is reviewed at least weekly</td>
+            <td>You should review the Malware Detections report at least weekly. This report shows specific instances of Microsoft blocking a malware attachment from reaching your users.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "MalwareDetections" and reviewed isLaterThan(-7, "days") ] ] </td>
+          </tr>
+          
+          <tr num="18">
+            <!-- <td>18</td> -->
+            <td>Ensure multifactor authentication is enabled for all users in administrative roles</td>
+            <td>Ensure multifactor authentication is enabled for all users in administrative roles</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have any ConditionalAccessPolicies with [ conditions.users.includeRoles in ("Billing admin", "Conditional Access admin", "Exchange admin", "Global admin", "Helpdesk admin", "Security admin", "Sharepoint admin", "User admin") and conditions.clientAppTypes has ("all") and grantControls.builtInControls has ("mfa") ] </td>
+          </tr>
+          
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Ensure multifactor authentication is enabled for all users in all roles (Manual)</td>
+            <td>Ensure multifactor authentication is enabled for all users in all roles (Manual)</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have any conditionalAccessPolicies with [ conditions.users has ("all") and conditions.clientAppTypes has ("all") and grantControls.builtInControls has ("mfa") ] </td>
+          </tr>
+          
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Ensure Microsoft 365 Cloud App Security is enabled</td>
+            <td>When audit log search in the Microsoft 365 Security & Compliance Center is enabled, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might be using a third-party security information and event management (SIEM) application to access your auditing data. In that case, a global admin can turn off audit log search in Microsoft 365.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ controlScores with [ controlName eq "CloudApplicationSecurityEnabled" and on eq true ] ] </td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
+            <td>Ensure that mobile devices require a complex password to prevent brute force attacks</td>
+            <td>You should require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passwordMinimumLength eq 6 and passcodeBlockSimple eq true ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordMinimumLength eq 6 and passwordBlockSimple eq true ] </td>
+          </tr>
+          
+          <tr num="22">
+            <!-- <td>22</td> -->
+            <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
+            <td>You should require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows81GeneralConfiguration" and passwordRequiredType eq "alphanumeric" ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordRequiredType eq "alphanumeric"] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration" and passwordRequiredType eq "alphanumeric"] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodeRequiredType eq "alphanumeric"] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and passwordRequiredType eq "alphanumeric"]</td>
+          </tr>
+          
+          <tr num="23">
+            <!-- <td>23</td> -->
+            <td>Ensure that mobile device encryption is enabled to prevent unauthorized access to mobile data</td>
+            <td>You should require your users to use encryption on their mobile devices.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and storageRequireDeviceEncryption eq true] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows81GeneralConfiguration" and storageRequireDeviceEncryption eq true]</td>
+          </tr>
+          
+          <tr num="24">
+            <!-- <td>24</td> -->
+            <td>Ensure that users cannot connect from devices that are jail broken or rooted</td>
+            <td>You should not allow your users to use to connect with mobile devices that have been jail broken or rooted.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceCompliancePolicies with [ odatatype eq "#microsoft.graph.iosCompliancePolicy" and securityBlockJailbrokenDevices eq true ] and atleast one DeviceCompliancePolicies with [ odatatype eq "#microsoft.graph.androidCompliancePolicy" and securityBlockJailbrokenDevices eq true ] </td>
+          </tr>
+          
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Ensure that settings are enabled to lock devices after a period of inactivity to prevent unauthorized access.</td>
+            <td>You should require your users to configure their mobile devices to lock on inactivity.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and passwordMinutesOfInactivityBeforeScreenTimeout eq 5 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration" and passwordMinutesOfInactivityBeforeScreenTimeout eq 5 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordMinutesOfInactivityBeforeScreenTimeout eq 5 and passwordRequireWhenResumeFromIdleState eq true ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows81GeneralConfiguration" and passwordMinutesOfInactivityBeforeScreenTimeout eq 5 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodeMinutesOfInactivityBeforeScreenTimeout eq 5 ] </td>
+          </tr>
+          
+          <tr num="26">
+            <!-- <td>26</td> -->
+            <td>Ensure mobile device management polices are set to require advanced security configurations to protect from basic internet attacks</td>
+            <td>You should configure your mobile device management policies to require advanced security configurations. If you do not require this, users will be able to connect from devices that are vulnerable to basic internet attacks, leading to potential breaches of accounts and data</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one O365Domain with [ supportedServices has("Intune") ]</td>
+          </tr>
+          
+          <tr num="27">
+            <!-- <td>27</td> -->
+            <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
+            <td>You should require your users to use a complex password to unlock their mobile devices.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodeBlockSimple eq true] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordBlockSimple eq true]</td>
+          </tr>
+          
+          <tr num="28">
+            <!-- <td>28</td> -->
+            <td>Ensure that mobile devices are set to never expire passwords</td>
+            <td>Ensure that user passwords on mobile devices never expire.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and passwordExpirationDays eq -1 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passwordExpirationDays eq -1 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration" and passwordExpirationDays eq -1 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordExpirationDays eq -1 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodeExpirationDays eq -1 ] </td>
+          </tr>
+          
+          <tr num="29">
+            <!-- <td>29</td> -->
+            <td>Ensure mobile devices require the use of a password</td>
+            <td>You should require your users to use a password to unlock their mobile devices.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and passwordRequired eq true ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodeRequired eq true ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordRequired eq true] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows10GeneralConfiguration" and passwordRequired eq true] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.windows81GeneralConfiguration" and passwordRequired eq true]</td>
+          </tr>
+          
+          <tr num="30">
+            <!-- <td>30</td> -->
+            <td>Ensure that mobile device password reuse is prohibited</td>
+            <td>You should not allow your users to reuse the same password on their mobile devices.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.androidGeneralDeviceConfiguration" and passwordPreviousPasswordBlockCount eq 5 ] and atleast one DeviceConfigurations with [ odatatype eq "#microsoft.graph.iosGeneralDeviceConfiguration" and passcodePreviousPasscodeBlockCount eq 5 ]</td>
+          </tr>
+          
+          <tr num="31">
+            <!-- <td>31</td> -->
+            <td>Ensure modern authentication for Exchange Online is enabled (Automated)</td>
+            <td>Ensure modern authentication for Exchange Online is enabled (Automated)</td>
+            <td>
+            
+              Exchange<br>
+            
+            </td>
+            <td class="code">O365 should have every OrganizationConfig with [ OAuth2ClientProfileEnabled eq true ] </td>
+          </tr>
+          
+          <tr num="32">
+            <!-- <td>32</td> -->
+            <td>Notify the administrator when internal users send malware</td>
+            <td>Set a malware filter policy that notifies an administrator when malware is detected in message from an internal user.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every MalwareFilterPolicies with [ EnableInternalSenderAdminNotifications eq true ] </td>
+          </tr>
+          
+          <tr num="33">
+            <!-- <td>33</td> -->
+            <td>Ensure that password hash sync is enabled for resiliency and leaked credential detection (Manual)</td>
+            <td>Ensure that password hash sync is enabled for resiliency and leaked credential detection (Manual)</td>
+            <td>
+            
+              Microsoft 365 security<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "PasswordHashSync" and on eq true ] ] </td>
+          </tr>
+          
+          <tr num="34">
+            <!-- <td>34</td> -->
+            <td>Ensure that Office 365 passwords are not set to expire</td>
+            <td>Ensure that Office 365 passwords are not set to expire</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "PWAgePolicyNew" and isEnforced eq true and isApplicable eq true ] ] </td>
+          </tr>
+          
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Ensure Guest Users are reviewed at least biweekly</td>
+            <td>Guest users can be set up for those users not in your tenant to still be granted access to resources. It is important to maintain visibility for what guest users are established in the tenant.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "ExternalSharingContactsReview" and reviewed isLaterThan(-14, "days") ] ] </td>
+          </tr>
+          
+          <tr num="36">
+            <!-- <td>36</td> -->
+            <td>Ensure self-service password reset is enabled (Automated)</td>
+            <td>Ensure self-service password reset is enabled (Automated)</td>
+            <td>
+            
+              Microsoft 365 security<br>
+            
+            </td>
+            <td class="code">O365 should have every SecureScores with [ atleast one controlScores with [ controlName eq "SelfServicePasswordReset" and isEnforced eq true ] ] </td>
+          </tr>
+          
+          <tr num="37">
+            <!-- <td>37</td> -->
+            <td>Ensure SPF records are published for all Exchange domains</td>
+            <td>Ensure that Sender Policy Framework (SPF) records are published for all Exchange domains. Using SPF helps to validate outbound email sent from your custom domain by determining whether or not a sender is permitted to send on behalf of a domain.</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365 should have every AcceptedDomains with [ spfRecordPublished eq true ] </td>
+          </tr>
+          
+          <tr num="38">
+            <!-- <td>38</td> -->
+            <td>Ensure that between two and four global admins are designated (Automated)</td>
+            <td>Ensure that between two and four global admins are designated (Automated)</td>
+            <td>
+            
+              Azure Active Directory<br>
+            
+            </td>
+            <td class="code">O365Tenant should have globalAdminUserCount >= 2 and globalAdminUserCount <= 4 </td>
+          </tr>
+          
+        </table>
+      
+      &nbsp;
+      <br><br>
+      <br><br>
+      <br><br>
+      &nbsp;
+    </div>
+  </div>
+  <script>
+
+  // Sort
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+      this.asc = !this.asc;
+      const table = th.closest('table');
+      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+          .forEach(tr => table.appendChild(tr) );
+      $('th').removeClass('headerSortDown').removeClass('headerSortUp')
+      if (this.asc) {
+        $(th).addClass('headerSortUp')
+      } else {
+        $(th).addClass('headerSortDown')
+      }
+  })));
+
+  // Search
+  var $rows = $('table.rule_table tr[num]');
+  $('#search').keyup(debounce(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+      reg = RegExp(val, 'i'),
+      text;
+
+    $rows.show().filter(function() {
+      text = $(this).text().replace(/\s+/g, ' ');
+      return !reg.test(text);
+    }).hide();
+  }, 300));
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  // Nav Menu Show/Hide
+  function hideRuleTables() {
+    $('.rule_table').hide()
+    $('.rule_key').removeClass('active')
+  }
+
+  function showRuleTable(name) {
+    // c) show this table
+    if (name == 'ALL') { 
+        $('.rule_table').show()
+    } else {
+        $('.rule_table[data-profile-name="'+name+'"]').show()
+    }
+  }
+
+  function activateRule(profile_name) {
+    // a) hide all the tables with the class 'rule_table'
+    hideRuleTables()
+    // b) find the table in '.rule_table' with the same 'profile-name' data attribute
+    showRuleTable(profile_name)
+    if (name == "ALL") { 
+        $('.rule_key').addClass('active')
+    } else {
+        $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
+    }
+  }
+
+  function initListeners(){
+    // 1. iterate over each Rule list item   
+    $('.rule_key').each(function(i, obj) {
+      var ruleKey = $(obj)
+      var ruleName = ruleKey.data('profile-name')
+      console.log('adding click listener to ' + ruleName);
+      // 2. add a click listener
+      ruleKey.click(function(event){
+        console.log('received click event for ' + ruleName)
+        activateRule(ruleName)
+      })
+    })
+  }
+  (function(){
+    hideRuleTables()
+    var firstRule = $($('.rule_key')[0]).data('profile-name')
+    console.log('activating first rule: ', firstRule)
+    activateRule(firstRule)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>
