@@ -31,4 +31,4 @@ function setWelcomeText(){
         element.text(welcomeTextDict[key])
     }
 }
-var welcomeTextDict = { "en" : "Product Documentation Library"};
+var welcomeTextDict = { "en" : "Knowledge Portal"};
