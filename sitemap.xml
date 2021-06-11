@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/malware.html</loc>
-    <lastmod>2021-06-09</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/malicious-sites.html</loc>
@@ -626,7 +626,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview.html</loc>
-    <lastmod>2021-05-19</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance.html</loc>
@@ -678,7 +678,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-221909.html</loc>
-    <lastmod>2021-05-19</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-144063.html</loc>
@@ -750,7 +750,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-221910.html</loc>
-    <lastmod>2021-05-19</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-144058.html</loc>
@@ -878,7 +878,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-163009.html</loc>
-    <lastmod>2021-05-19</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-141715.html</loc>
@@ -977,6 +977,46 @@
     <lastmod>2020-10-30</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/manage-storage-scan-policies.html</loc>
+    <lastmod>2021-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-a-storage-scan-policy.html</loc>
+    <lastmod>2021-03-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/enable-or-disable-a-storage-scan-policy.html</loc>
+    <lastmod>2021-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/apply-changes-to-storage-scan-policies.html</loc>
+    <lastmod>2021-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-storage-scan-policy-details.html</loc>
+    <lastmod>2021-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/list-storage-scan-policies.html</loc>
+    <lastmod>2021-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/clone-a-storage-scan-policy.html</loc>
+    <lastmod>2021-01-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/update-a-storage-scan-policy.html</loc>
+    <lastmod>2021-03-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/delete-a-storage-scan-policy.html</loc>
+    <lastmod>2021-02-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/revert-a-storage-scan-policy-change.html</loc>
+    <lastmod>2021-01-20</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/create-a-retro-scan-job.html</loc>
     <lastmod>2021-02-25</lastmod>
   </url>
@@ -1014,7 +1054,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-github-instance-for-security-posture.html</loc>
-    <lastmod>2021-05-27</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-for-microsoft-365.html</loc>
@@ -1022,7 +1062,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-365-instance-for-security-posture.html</loc>
-    <lastmod>2021-05-27</lastmod>
+    <lastmod>2021-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-for-salesforce.html</loc>
@@ -1030,7 +1070,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-salesforce-instance-for-security-posture.html</loc>
-    <lastmod>2021-05-27</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-policy-wizard.html</loc>
@@ -1502,7 +1542,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-github-for-api-data-protection.html</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-163059.html</loc>
@@ -1778,7 +1818,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-to-access-your-office-365-onedrive-app.html</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2021-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account.html</loc>
@@ -2657,6 +2697,10 @@
     <lastmod>2021-06-05</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/real-time-protection-for-public-cloud-207274.html</loc>
+    <lastmod>2021-06-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/supported-aws-entities-for-real-time-protection.html</loc>
     <lastmod>2021-05-20</lastmod>
   </url>
@@ -2802,7 +2846,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention.html</loc>
-    <lastmod>2021-02-10</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention-104893.html</loc>
@@ -2897,6 +2941,10 @@
     <lastmod>2021-02-12</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/supported-file-categories-and-file-types-307049.html</loc>
+    <lastmod>2021-05-04</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
     <lastmod>2021-02-10</lastmod>
   </url>
@@ -2954,7 +3002,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/malware-86191.html</loc>
-    <lastmod>2021-06-09</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/malicious-sites-86192.html</loc>
@@ -3226,7 +3274,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-private-access.html</loc>
-    <lastmod>2021-05-12</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-client-for-netskope-private-access.html</loc>
@@ -3954,7 +4002,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/saml-proxy.html</loc>
-    <lastmod>2021-04-07</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrate-saml-reverse-proxy-for-google-workspace-with-aws-single-sign-on.html</loc>
@@ -3979,6 +4027,10 @@
   <url>
     <loc>https://docs.netskope.com/en/configure-the-okta-acs-url-override-118270.html</loc>
     <lastmod>2019-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/integrate-saml-reverse-proxy-for-google-chromebook.html</loc>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrate-netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html</loc>
@@ -5061,12 +5113,12 @@
     <lastmod>2021-01-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-release-notes-version-85-0-0.html</loc>
-    <lastmod>2021-06-02</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-release-notes-version-86-0-0.html</loc>
+    <lastmod>2021-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements.html</loc>
-    <lastmod>2021-06-08</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-resource-types-supported-in-continuous-security-assessment.html</loc>
@@ -5078,11 +5130,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues.html</loc>
-    <lastmod>2021-06-07</lastmod>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/appendix--fixed-issue-124698.html</loc>
-    <lastmod>2021-05-06</lastmod>
+    <loc>https://docs.netskope.com/en/new-product-available---netskope-saas-security-posture-management.html</loc>
+    <lastmod>2021-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-product-available---advanced-analytics-ux-upgrade.html</loc>
+    <lastmod>2021-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-77-4-0.html</loc>
