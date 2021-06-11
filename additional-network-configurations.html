@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			var versionsfile = '';
+
+
+			var indexDict = new Array();
+			var store = {};
+			var portalLanguage = 'en';
+			var enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				
+			
+			var useanchorlinks = false;
+			
+				useanchorlinks = true;
+				
+				var clicktocopy = 'Click to copy link';
+				var linkcopied =  'Copied!';</script><title>Additional Network Configurations</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link><link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/rwd-table.min.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="access-the-management-plane-appliance-ui.html" title="Access the Management Plane Appliance UI"></link><link rel="next" href="additional-network-configurations.html#idm45846300741056" title="Configure the Management Interface"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">var containerid = 'GTM-W56WJ8S';
+
+						(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+						})(window,document,'script','dataLayer',containerid);
+					</script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script></head><body class="theme1 fixed-toolbar colored-top page-toc current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div id="navbar" class="navbar-collapse collapse"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside class="site-sidebar"><div class="site-sidebar-header"><button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><form class="site-sidebar-search" autocomplete="off"><input type="text" class="form-control search-field" placeholder="Search" id="aa-search-input"></input></form><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><h1 class="publication-title">Netskope Help</h1><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print print-icon"><a onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"><span class="print-text">print</span></i></a></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"> <a href="index-en.html">Netskope Help</a></li><li class="breadcrumb-link"><a href="appliances.html">Appliances</a></li><li class="breadcrumb-link"><a href="on-premises-appliance.html">On-Premises Appliance</a></li><li class="breadcrumb-link"><a href="configure-the-management-appliance.html">Configure the Management Appliance</a></li><li class="breadcrumb-node">Additional Network Configurations</li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="access-the-management-plane-appliance-ui.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="additional-network-configurations.html#idm45846300741056">Next</a></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-8d468b11-3499-9e44-9f2b-2f1ca054e976" data-permalink="additional-network-configurations.html" data-topic-level="1" data-relative-prefix="" data-time-modified="August 6, 2020" data-publication-date="" id="UUID-002c06a9-150b-dea1-e967-81cc16301bd4"><div class="titlepage"><div><div class="title"><h5 class="title">Additional Network Configurations</h5></div></div></div><p>The default network configuration described previously is for a single interface deployment, where all production and management traffic flow over a single 10GbE interface (single-arm mode). However, you can segregate the management traffic from production traffic by configuring a management interface.</p><p>You can use the dedicated management interface as a secondary path for accessing the system over SSH and other ancillary services. You can also create a redundant inbound interface by bonding the management appliance to the inbound logical interface, or create an outbound interface.</p><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm45846300741056"><div class="titlepage"><div><div class="title"><h6 class="title">Configure the Management Interface</h6></div></div></div><p>To configure the management interface:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Access the appliance console using ssh. Log in with the credentials <code class="literal">nsadmin/nsappliance</code>.</p></li><li class="listitem"><p>To go into configuration mode, enter <code class="literal">configure</code>:</p><pre class="programlisting">configure
+Entering configuration mode
+</pre></li><li class="listitem"><p>Set the management interface on the appliance by entering these commands:</p><pre class="programlisting">set interface inbound ip <code class="varname">&lt;IP address&gt;</code>
+set interface inbound gw <code class="varname">&lt;gateway address&gt;</code>
+set interface inbound netmask <code class="varname">&lt;subnet mask&gt;</code></pre><div dir="ltr" class="note"><h3 class="title">Note</h3><p>Make sure the management interface is on a separate subnet than the data-bearing interface. The nsshell does not enforce this requirement and unexpected results may occur if both interfaces are on the same subnet .</p></div></li><li class="listitem"><p>To review your entries, enter <code class="literal">show interface</code>.</p></li><li class="listitem"><p>Enter <code class="literal">save</code> and wait for the prompt to return.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the config mode.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the management plane console.</p></li></ol></div><div dir="ltr" class="important"><h3 class="title">Important</h3><p>Make sure the management interface is on a separate subnet than the data-bearing interface. The nsshell does not enforce this requirement and unexpected results may occur if both interfaces are on the same subnet.</p></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm45846300738352"><div class="titlepage"><div><div class="title"><h6 class="title">Configure Inbound Interface Bonding</h6></div></div></div><p>You can configure physical redundancy for the inbound interface by designating the physical management port as a secondary port for the inbound logical interface.</p><p>To configure inbound interface bonding:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Access the appliance using ssh.</p></li><li class="listitem"><p>Log in to the appliance using the <code class="literal">nsadmin/nsappliance</code> credentials.</p></li><li class="listitem"><p>Enter <code class="literal">configure</code> to enter the nsshell configure mode.</p></li><li class="listitem"><p>Enter <code class="literal">set interface inbound enable-bonding true</code></p></li><li class="listitem"><p>Enter <code class="literal">show interface</code> to check your work.</p></li><li class="listitem"><p>Enter <code class="literal">save</code> to activate your changes.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the configure mode.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the nsshell and exit the appliance console.</p></li></ol></div></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-002c06a9-150b-dea1-e967-81cc16301bd4_section-idm231933395246628"><div class="titlepage"><div><div class="title"><h6 class="title">Configure Network Destinations per Interface</h6></div></div></div><p>You can route DNS, SNMP, and RADIUS traffic destined for a specific server IP or network to the inbound or management plane of an appliance.</p><p>To configure network destinations per interface:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Access the appliance using ssh.</p></li><li class="listitem"><p>Log in to the appliance using the <code class="literal">nsadmin/nsappliance</code> credentials.</p></li><li class="listitem"><p>Enter <code class="literal">configure</code> to enter the nsshell configure mode.</p></li><li class="listitem"><p>Enter <code class="literal">add interface management destination-networks</code>.</p></li><li class="listitem"><p>Enter <code class="literal">set interface management destination-networks 0 network <span class="emphasis"><em>IP address</em></span></code>.</p></li><li class="listitem"><p>Enter <code class="literal">show interface management</code>, which should return:</p><pre class="programlisting">{
+  "gw": "<span class="emphasis"><em>&lt;gateway&gt;</em></span>",
+  "ip": "<span class="emphasis"><em>&lt;IP address&gt;</em></span>",
+  "netmask": "<span class="emphasis"><em>&lt;subnet&gt;</em></span>",
+  "destination-networks": [
+    {
+      "network": "<span class="emphasis"><em>&lt;management IP address&gt;</em></span>"
+    }
+  ]
+}</pre></li><li class="listitem"><p>Enter <code class="literal">save</code> to activate your changes.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the configure mode.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the nsshell and exit the appliance console.</p></li></ol></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm45846300721504"><div class="titlepage"><div><div class="title"><h6 class="title">Configure an Outbound Interface</h6></div></div></div><p>You can configure an appliance so that all connections to external servers initiated by services running are shown on one interface.</p><p>To configure an outbound interface:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Access the appliance console using ssh.</p></li><li class="listitem"><p>Log in to the appliance using the <code class="literal">nsadmin/nsappliance</code> credentials.</p></li><li class="listitem"><p>Enter <code class="literal">configure</code> to enter the nsshell configure mode.</p></li><li class="listitem"><p>Enter these commands:</p><pre class="programlisting">set interface outbound ip <span class="emphasis"><em>&lt;IP address&gt;</em></span>
+set interface outbound gw <span class="emphasis"><em>&lt;Gateway IP&gt;</em></span>
+set interface outbound netmask <span class="emphasis"><em>&lt;Netmask&gt;</em></span></pre></li><li class="listitem"><p>Enter <code class="literal">save</code> to activate your changes.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the configure mode.</p></li><li class="listitem"><p>Enter <code class="literal">exit</code> to leave the nsshell and exit the appliance console.</p></li></ol></div></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-002c06a9-150b-dea1-e967-81cc16301bd4_section-5c82c754d5d8b-idm44855511303840"><div class="titlepage"><div><div class="title"><h6 class="title">View the status of the interfaces</h6></div></div></div><p>You can view the status of the network interfaces by running the following command in operation mode.</p><pre class="programlisting">snmpwalk -v 2c -c appliancecom &lt;<span class="emphasis"><em>appliance-IP</em></span>&gt;</pre><p>The IF-MIB provides details about all the interfaces. In the output, the network interfaces eth0, eth4, and eth5 are connected to the appliance interfaces mp, inbound, and outbound. The appliance interface mp connects to eth0, inbound connects to eth5, and outbound connects to eth4.</p><section dir="ltr" class="section accordion accordion" data-origin-id="" data-publication-date="" id="UUID-002c06a9-150b-dea1-e967-81cc16301bd4_example-5c8848a0a2af7-idm45681586010320"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4_example-5c8848a0a2af7-idm45681586010320_body" data-parent="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4_example-5c8848a0a2af7-idm45681586010320"><div><div class="title"><h6 class="title">Sample output</h6></div></div></a></div></div><div class="panel-body collapse" id="UUID-002c06a9-150b-dea1-e967-81cc16301bd4_example-5c8848a0a2af7-idm45681586010320_body"><p>The following is a sample output that shows the index value, type, physical address, admin status, operation status and so on.</p><pre class="programlisting">SNMPv2-MIB::sysDescr.0 = STRING: Linux lcsnmp 4.4.0-141-generic #167-Ubuntu SMP Wed Dec 5 10:40:15 UTC 2018 x86_64
+SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.48007
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (2058) 0:00:20.58
+SNMPv2-MIB::sysContact.0 = STRING: nauman@netskope.com
+SNMPv2-MIB::sysName.0 = STRING: \"securecloud\"
+SNMPv2-MIB::sysLocation.0 = STRING: \"hq\"
+IF-MIB::ifNumber.0 = INTEGER: 14
+IF-MIB::ifIndex.1 = INTEGER: 1
+IF-MIB::ifIndex.2 = INTEGER: 2
+IF-MIB::ifIndex.3 = INTEGER: 3
+IF-MIB::ifIndex.4 = INTEGER: 4
+IF-MIB::ifIndex.5 = INTEGER: 5
+IF-MIB::ifIndex.6 = INTEGER: 6
+IF-MIB::ifIndex.7 = INTEGER: 7
+IF-MIB::ifIndex.8 = INTEGER: 8
+IF-MIB::ifIndex.435 = INTEGER: 435
+IF-MIB::ifIndex.437 = INTEGER: 437
+IF-MIB::ifIndex.439 = INTEGER: 439
+IF-MIB::ifIndex.441 = INTEGER: 441
+IF-MIB::ifIndex.445 = INTEGER: 445
+IF-MIB::ifIndex.447 = INTEGER: 447
+IF-MIB::ifDescr.1 = STRING: lo
+IF-MIB::ifDescr.2 = STRING: eth0
+IF-MIB::ifDescr.3 = STRING: eth1
+IF-MIB::ifDescr.4 = STRING: eth2
+IF-MIB::ifDescr.5 = STRING: eth3
+IF-MIB::ifDescr.6 = STRING: eth4
+IF-MIB::ifDescr.7 = STRING: eth5
+IF-MIB::ifDescr.8 = STRING: docker0
+IF-MIB::ifDescr.435 = STRING: bond0
+IF-MIB::ifDescr.437 = STRING: vethf288e04
+IF-MIB::ifDescr.439 = STRING: vethae371bc
+IF-MIB::ifDescr.441 = STRING: vethbef553b
+IF-MIB::ifDescr.445 = STRING: veth2df6fc1
+IF-MIB::ifDescr.447 = STRING: veth2fccd1c
+IF-MIB::ifType.1 = INTEGER: softwareLoopback(24)
+IF-MIB::ifType.2 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.3 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.4 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.5 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.6 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.7 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.8 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.435 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.437 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.439 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.441 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.445 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifType.447 = INTEGER: ethernetCsmacd(6)
+IF-MIB::ifMtu.1 = INTEGER: 65536
+IF-MIB::ifMtu.2 = INTEGER: 1500
+IF-MIB::ifMtu.3 = INTEGER: 1500
+IF-MIB::ifMtu.4 = INTEGER: 1500
+IF-MIB::ifMtu.5 = INTEGER: 1500
+IF-MIB::ifMtu.6 = INTEGER: 1500
+IF-MIB::ifMtu.7 = INTEGER: 1500
+IF-MIB::ifMtu.8 = INTEGER: 1500
+IF-MIB::ifMtu.435 = INTEGER: 1500
+IF-MIB::ifMtu.437 = INTEGER: 1500
+IF-MIB::ifMtu.439 = INTEGER: 1500
+IF-MIB::ifMtu.441 = INTEGER: 1500
+IF-MIB::ifMtu.445 = INTEGER: 1500
+IF-MIB::ifMtu.447 = INTEGER: 1500
+IF-MIB::ifSpeed.1 = Gauge32: 10000000
+IF-MIB::ifSpeed.2 = Gauge32: 1000000000
+IF-MIB::ifSpeed.3 = Gauge32: 1000000000
+IF-MIB::ifSpeed.4 = Gauge32: 1000000000
+IF-MIB::ifSpeed.5 = Gauge32: 0
+IF-MIB::ifSpeed.6 = Gauge32: 4294967295
+IF-MIB::ifSpeed.7 = Gauge32: 4294967295
+IF-MIB::ifSpeed.8 = Gauge32: 0
+IF-MIB::ifSpeed.435 = Gauge32: 4294967295
+IF-MIB::ifSpeed.437 = Gauge32: 4294967295
+IF-MIB::ifSpeed.439 = Gauge32: 4294967295
+IF-MIB::ifSpeed.441 = Gauge32: 4294967295
+IF-MIB::ifSpeed.445 = Gauge32: 4294967295
+IF-MIB::ifSpeed.447 = Gauge32: 4294967295
+IF-MIB::ifPhysAddress.1 = STRING:
+IF-MIB::ifPhysAddress.2 = STRING: 0:1e:67:bc:1e:b0
+IF-MIB::ifPhysAddress.3 = STRING: 0:1e:67:bc:1e:b1
+IF-MIB::ifPhysAddress.4 = STRING: 0:1e:67:bc:1e:b2
+IF-MIB::ifPhysAddress.5 = STRING: 0:1e:67:bc:1e:b3
+IF-MIB::ifPhysAddress.6 = STRING: 0:e0:ed:52:88:4e
+IF-MIB::ifPhysAddress.7 = STRING: 0:e0:ed:52:88:4f
+IF-MIB::ifPhysAddress.8 = STRING: 2:42:ee:f5:18:33
+IF-MIB::ifPhysAddress.435 = STRING: 0:e0:ed:52:88:4f
+IF-MIB::ifPhysAddress.437 = STRING: e6:6e:50:4a:f9:c3
+IF-MIB::ifPhysAddress.439 = STRING: a:52:ad:5f:b3:a7
+IF-MIB::ifPhysAddress.441 = STRING: 6a:9e:e9:5c:a6:72
+IF-MIB::ifPhysAddress.445 = STRING: 52:d6:2b:b8:c5:3b
+IF-MIB::ifPhysAddress.447 = STRING: c2:9:d8:83:2b:a9
+IF-MIB::ifAdminStatus.1 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.2 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.3 = INTEGER: down(2)
+IF-MIB::ifAdminStatus.4 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.5 = INTEGER: down(2)
+IF-MIB::ifAdminStatus.6 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.7 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.8 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.435 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.437 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.439 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.441 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.445 = INTEGER: up(1)
+IF-MIB::ifAdminStatus.447 = INTEGER: up(1)
+IF-MIB::ifOperStatus.1 = INTEGER: up(1)
+IF-MIB::ifOperStatus.2 = INTEGER: up(1)
+IF-MIB::ifOperStatus.3 = INTEGER: down(2)
+IF-MIB::ifOperStatus.4 = INTEGER: up(1)
+IF-MIB::ifOperStatus.5 = INTEGER: down(2)
+IF-MIB::ifOperStatus.6 = INTEGER: up(1)
+IF-MIB::ifOperStatus.7 = INTEGER: up(1)
+IF-MIB::ifOperStatus.8 = INTEGER: up(1)
+IF-MIB::ifOperStatus.435 = INTEGER: up(1)
+IF-MIB::ifOperStatus.437 = INTEGER: up(1)
+IF-MIB::ifOperStatus.439 = INTEGER: up(1)
+IF-MIB::ifOperStatus.441 = INTEGER: up(1)
+IF-MIB::ifOperStatus.445 = INTEGER: up(1)
+IF-MIB::ifOperStatus.447 = INTEGER: up(1)
+IF-MIB::ifLastChange.1 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.2 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.3 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.4 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.5 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.6 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.7 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.8 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.435 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.437 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.439 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.441 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.445 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifLastChange.447 = Timeticks: (0) 0:00:00.00
+IF-MIB::ifInOctets.1 = Counter32: 450968667
+IF-MIB::ifInOctets.2 = Counter32: 236332
+IF-MIB::ifInOctets.3 = Counter32: 0
+IF-MIB::ifInOctets.4 = Counter32: 737746681
+IF-MIB::ifInOctets.5 = Counter32: 0
+IF-MIB::ifInOctets.6 = Counter32: 114969261
+IF-MIB::ifInOctets.7 = Counter32: 3913275716
+IF-MIB::ifInOctets.8 = Counter32: 41464012
+IF-MIB::ifInOctets.435 = Counter32: 431052
+IF-MIB::ifInOctets.437 = Counter32: 46237
+IF-MIB::ifInOctets.439 = Counter32: 1983432
+IF-MIB::ifInOctets.441 = Counter32: 369579
+IF-MIB::ifInOctets.445 = Counter32: 3429165
+IF-MIB::ifInOctets.447 = Counter32: 161
+IF-MIB::ifInUcastPkts.1 = Counter32: 4919465
+IF-MIB::ifInUcastPkts.2 = Counter32: 4277256647
+IF-MIB::ifInUcastPkts.3 = Counter32: 0
+IF-MIB::ifInUcastPkts.4 = Counter32: 90857908
+IF-MIB::ifInUcastPkts.5 = Counter32: 0
+IF-MIB::ifInUcastPkts.6 = Counter32: 772091
+IF-MIB::ifInUcastPkts.7 = Counter32: 8032797
+IF-MIB::ifInUcastPkts.8 = Counter32: 376167
+IF-MIB::ifInUcastPkts.435 = Counter32: 4277258742
+IF-MIB::ifInUcastPkts.437 = Counter32: 616
+IF-MIB::ifInUcastPkts.439 = Counter32: 14723
+IF-MIB::ifInUcastPkts.441 = Counter32: 1754
+IF-MIB::ifInUcastPkts.445 = Counter32: 28438
+IF-MIB::ifInUcastPkts.447 = Counter32: 3
+IF-MIB::ifInNUcastPkts.1 = Counter32: 0
+IF-MIB::ifInNUcastPkts.2 = Counter32: 17714528
+IF-MIB::ifInNUcastPkts.3 = Counter32: 0
+IF-MIB::ifInNUcastPkts.4 = Counter32: 19679284
+IF-MIB::ifInNUcastPkts.5 = Counter32: 0
+IF-MIB::ifInNUcastPkts.6 = Counter32: 31018
+IF-MIB::ifInNUcastPkts.7 = Counter32: 43244
+IF-MIB::ifInNUcastPkts.8 = Counter32: 0
+IF-MIB::ifInNUcastPkts.435 = Counter32: 17714528
+IF-MIB::ifInNUcastPkts.437 = Counter32: 0
+IF-MIB::ifInNUcastPkts.439 = Counter32: 0
+IF-MIB::ifInNUcastPkts.441 = Counter32: 0
+IF-MIB::ifInNUcastPkts.445 = Counter32: 0
+IF-MIB::ifInNUcastPkts.447 = Counter32: 0
+IF-MIB::ifInDiscards.1 = Counter32: 0
+IF-MIB::ifInDiscards.2 = Counter32: 3869
+IF-MIB::ifInDiscards.3 = Counter32: 0
+IF-MIB::ifInDiscards.4 = Counter32: 129774
+IF-MIB::ifInDiscards.5 = Counter32: 0
+IF-MIB::ifInDiscards.6 = Counter32: 1953
+IF-MIB::ifInDiscards.7 = Counter32: 2021
+IF-MIB::ifInDiscards.8 = Counter32: 0
+IF-MIB::ifInDiscards.435 = Counter32: 3891
+IF-MIB::ifInDiscards.437 = Counter32: 0
+IF-MIB::ifInDiscards.439 = Counter32: 0
+IF-MIB::ifInDiscards.441 = Counter32: 0
+IF-MIB::ifInDiscards.445 = Counter32: 0
+IF-MIB::ifInDiscards.447 = Counter32: 0
+IF-MIB::ifInErrors.1 = Counter32: 0
+IF-MIB::ifInErrors.2 = Counter32: 0
+IF-MIB::ifInErrors.3 = Counter32: 0
+IF-MIB::ifInErrors.4 = Counter32: 0
+IF-MIB::ifInErrors.5 = Counter32: 0
+IF-MIB::ifInErrors.6 = Counter32: 0
+IF-MIB::ifInErrors.7 = Counter32: 0
+IF-MIB::ifInErrors.8 = Counter32: 0
+IF-MIB::ifInErrors.435 = Counter32: 0
+IF-MIB::ifInErrors.437 = Counter32: 0
+IF-MIB::ifInErrors.439 = Counter32: 0
+IF-MIB::ifInErrors.441 = Counter32: 0
+IF-MIB::ifInErrors.445 = Counter32: 0
+IF-MIB::ifInErrors.447 = Counter32: 0
+IF-MIB::ifInUnknownProtos.1 = Counter32: 0
+IF-MIB::ifInUnknownProtos.2 = Counter32: 0
+IF-MIB::ifInUnknownProtos.3 = Counter32: 0
+IF-MIB::ifInUnknownProtos.4 = Counter32: 0
+IF-MIB::ifInUnknownProtos.5 = Counter32: 0
+IF-MIB::ifInUnknownProtos.6 = Counter32: 0
+IF-MIB::ifInUnknownProtos.7 = Counter32: 0
+IF-MIB::ifInUnknownProtos.8 = Counter32: 0
+IF-MIB::ifInUnknownProtos.435 = Counter32: 0
+IF-MIB::ifInUnknownProtos.437 = Counter32: 0
+IF-MIB::ifInUnknownProtos.439 = Counter32: 0
+IF-MIB::ifInUnknownProtos.441 = Counter32: 0
+IF-MIB::ifInUnknownProtos.445 = Counter32: 0
+IF-MIB::ifInUnknownProtos.447 = Counter32: 0
+IF-MIB::ifOutOctets.1 = Counter32: 450969766
+IF-MIB::ifOutOctets.2 = Counter32: 126
+IF-MIB::ifOutOctets.3 = Counter32: 0
+IF-MIB::ifOutOctets.4 = Counter32: 0
+IF-MIB::ifOutOctets.5 = Counter32: 0
+IF-MIB::ifOutOctets.6 = Counter32: 13525764
+IF-MIB::ifOutOctets.7 = Counter32: 1342618225
+IF-MIB::ifOutOctets.8 = Counter32: 212431135
+IF-MIB::ifOutOctets.435 = Counter32: 186482
+IF-MIB::ifOutOctets.437 = Counter32: 44233
+IF-MIB::ifOutOctets.439 = Counter32: 3436917
+IF-MIB::ifOutOctets.441 = Counter32: 367769
+IF-MIB::ifOutOctets.445 = Counter32: 1994437
+IF-MIB::ifOutOctets.447 = Counter32: 460
+IF-MIB::ifOutUcastPkts.1 = Counter32: 4919477
+IF-MIB::ifOutUcastPkts.2 = Counter32: 3
+IF-MIB::ifOutUcastPkts.3 = Counter32: 0
+IF-MIB::ifOutUcastPkts.4 = Counter32: 0
+IF-MIB::ifOutUcastPkts.5 = Counter32: 0
+IF-MIB::ifOutUcastPkts.6 = Counter32: 322042
+IF-MIB::ifOutUcastPkts.7 = Counter32: 7073820
+IF-MIB::ifOutUcastPkts.8 = Counter32: 406501
+IF-MIB::ifOutUcastPkts.435 = Counter32: 1350
+IF-MIB::ifOutUcastPkts.437 = Counter32: 623
+IF-MIB::ifOutUcastPkts.439 = Counter32: 28469
+IF-MIB::ifOutUcastPkts.441 = Counter32: 2070
+IF-MIB::ifOutUcastPkts.445 = Counter32: 14864
+IF-MIB::ifOutUcastPkts.447 = Counter32: 10
+IF-MIB::ifOutNUcastPkts.1 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.2 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.3 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.4 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.5 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.6 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.7 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.8 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.435 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.437 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.439 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.441 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.445 = Counter32: 0
+IF-MIB::ifOutNUcastPkts.447 = Counter32: 0
+IF-MIB::ifOutDiscards.1 = Counter32: 0
+IF-MIB::ifOutDiscards.2 = Counter32: 0
+IF-MIB::ifOutDiscards.3 = Counter32: 0
+IF-MIB::ifOutDiscards.4 = Counter32: 0
+IF-MIB::ifOutDiscards.5 = Counter32: 0
+IF-MIB::ifOutDiscards.6 = Counter32: 0
+IF-MIB::ifOutDiscards.7 = Counter32: 0
+IF-MIB::ifOutDiscards.8 = Counter32: 0
+IF-MIB::ifOutDiscards.435 = Counter32: 0
+IF-MIB::ifOutDiscards.437 = Counter32: 0
+IF-MIB::ifOutDiscards.439 = Counter32: 0
+IF-MIB::ifOutDiscards.441 = Counter32: 0
+IF-MIB::ifOutDiscards.445 = Counter32: 0
+IF-MIB::ifOutDiscards.447 = Counter32: 0
+IF-MIB::ifOutErrors.1 = Counter32: 0
+IF-MIB::ifOutErrors.2 = Counter32: 0
+IF-MIB::ifOutErrors.3 = Counter32: 0
+IF-MIB::ifOutErrors.4 = Counter32: 0
+IF-MIB::ifOutErrors.5 = Counter32: 0
+IF-MIB::ifOutErrors.6 = Counter32: 0
+IF-MIB::ifOutErrors.7 = Counter32: 0
+IF-MIB::ifOutErrors.8 = Counter32: 0
+IF-MIB::ifOutErrors.435 = Counter32: 0
+IF-MIB::ifOutErrors.437 = Counter32: 0
+IF-MIB::ifOutErrors.439 = Counter32: 0
+IF-MIB::ifOutErrors.441 = Counter32: 0
+IF-MIB::ifOutErrors.445 = Counter32: 0
+IF-MIB::ifOutErrors.447 = Counter32: 0
+IF-MIB::ifOutQLen.1 = Gauge32: 0
+IF-MIB::ifOutQLen.2 = Gauge32: 0
+IF-MIB::ifOutQLen.3 = Gauge32: 0
+IF-MIB::ifOutQLen.4 = Gauge32: 0
+IF-MIB::ifOutQLen.5 = Gauge32: 0
+IF-MIB::ifOutQLen.6 = Gauge32: 0
+IF-MIB::ifOutQLen.7 = Gauge32: 0
+IF-MIB::ifOutQLen.8 = Gauge32: 0
+IF-MIB::ifOutQLen.435 = Gauge32: 0
+IF-MIB::ifOutQLen.437 = Gauge32: 0
+IF-MIB::ifOutQLen.439 = Gauge32: 0
+IF-MIB::ifOutQLen.441 = Gauge32: 0
+IF-MIB::ifOutQLen.445 = Gauge32: 0
+IF-MIB::ifOutQLen.447 = Gauge32: 0
+IF-MIB::ifSpecific.1 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.2 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.3 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.4 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.5 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.6 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.7 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.8 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.435 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.437 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.439 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.441 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.445 = OID: SNMPv2-SMI::zeroDotZero
+IF-MIB::ifSpecific.447 = OID: SNMPv2-SMI::zeroDotZero</pre><p>In the the sample output you can check that the eth0 interface as up and running based on the status of <code class="literal">ifAdminStatus.2</code> and <code class="literal">ifOperStatus.2</code> .</p><pre class="programlisting">IF-MIB::ifIndex.2 = INTEGER: 2
+IF-MIB::ifDescr.2 = STRING: eth0
+IF-MIB::ifPhysAddress.2 = STRING: 0:1e:67:bc:1e:b0
+IF-MIB::ifAdminStatus.2 = INTEGER: up(1)
+IF-MIB::ifOperStatus.2 = INTEGER: up(1)</pre></div></div></section></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm45846300703600"><div class="titlepage"><div><div class="title"><h6 class="title">Configure an HTTP Proxy for the Management Plane</h6></div></div></div><p>To configure an explicit HTTP proxy the management plane in the cloud, enter these commands:</p><pre class="programlisting">set management-plane upstream-proxy-server hostname <span class="emphasis"><em>&lt;hostname or IP&gt;</em></span>
+set management-plane upstream-proxy-server port <span class="emphasis"><em>&lt;port&gt;</em></span></pre><p>Make sure these services are allowed in the proxy:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="literal">https://config.goskope.com:443 </code></p></li><li class="listitem"><p><code class="literal">https://download.goskope.com:443 </code></p></li><li class="listitem"><p><code class="literal">https://messenger.goskope.com:443</code></p></li></ul></div><div dir="ltr" class="note"><h3 class="title">Note</h3><p>For international deployments, use <code class="literal">eu.goskope.com</code> or <code class="literal">de.goskope.com</code>.</p></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm45846300683552"><div class="titlepage"><div><div class="title"><h6 class="title">Configure a Serial Console Port</h6></div></div></div><p>You can connect to the serial console port of an appliance to manage it using the command line interface (CLI). Connect the serial console using an RJ45 to USB or RJ45 to Serial cable. The RJ45 end of the cable goes into the serial port of the appliance, and the other end can be connected to a terminal server or a laptop directly. On a laptop, you can use putty on Windows or minicom on Linux to connect to the serial console. The settings to connect are:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Speed(baud): <code class="literal">115200</code></p></li><li class="listitem"><p>Data bits: <code class="literal">8</code></p></li><li class="listitem"><p>Stop bits: <code class="literal">1</code></p></li><li class="listitem"><p>Parity: <code class="literal">None</code></p></li><li class="listitem"><p>Flow Control: <code class="literal">XON/XOFF</code></p></li></ul></div></section></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><aside class="section-nav-container"><ul class="section-nav nav"><li><a href="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4">Additional Network Configurations</a></li><li><a href="#idm45846300741056">Configure the Management Interface</a></li><li><a href="#idm45846300738352">Configure Inbound Interface Bonding</a></li><li><a href="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4_section-idm231933395246628">Configure Network Destinations per Interface</a></li><li><a href="#idm45846300721504">Configure an Outbound Interface</a></li><li><a href="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4_section-5c82c754d5d8b-idm44855511303840">View the status of the interfaces</a><ul class="nav"><li><a href="#UUID-002c06a9-150b-dea1-e967-81cc16301bd4_example-5c8848a0a2af7-idm45681586010320">Sample output</a></li></ul></li><li><a href="#idm45846300703600">Configure an HTTP Proxy for the Management Plane</a></li><li><a href="#idm45846300683552">Configure a Serial Console Port</a></li></ul></aside><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Additional%20Network%20Configurations%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Additional%20Network%20Configurations%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="access-the-management-plane-appliance-ui.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="additional-network-configurations.html#idm45846300741056">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2021 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">August 6, 2020</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W56WJ8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager (noscript)--></body></html>
