@@ -906,7 +906,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/public-cloud-rest-apis.html</loc>
-    <lastmod>2021-03-04</lastmod>
+    <lastmod>2021-06-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/public-cloud-api-endpoints.html</loc>
@@ -976,8 +976,6 @@
     <loc>https://docs.netskope.com/en/get-a-csa-scan-status.html</loc>
     <lastmod>2020-10-30</lastmod>
   </url>
-
-  
   <url>
     <loc>https://docs.netskope.com/en/view-security-assessment-violations.html</loc>
     <lastmod>2020-12-08</lastmod>
@@ -2657,10 +2655,6 @@
   <url>
     <loc>https://docs.netskope.com/en/supported-gcp-entities-for-real-time-protection.html</loc>
     <lastmod>2020-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/supported-aws-apis-for-real-time-protection.html</loc>
-    <lastmod>2021-06-05</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-policies.html</loc>
