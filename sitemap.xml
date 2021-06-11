@@ -976,62 +976,8 @@
     <loc>https://docs.netskope.com/en/get-a-csa-scan-status.html</loc>
     <lastmod>2020-10-30</lastmod>
   </url>
-  <url>
-    <loc>https://docs.netskope.com/en/manage-storage-scan-policies.html</loc>
-    <lastmod>2021-06-11</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-storage-scan-policy.html</loc>
-    <lastmod>2021-03-04</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/enable-or-disable-a-storage-scan-policy.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/apply-changes-to-storage-scan-policies.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/get-storage-scan-policy-details.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/list-storage-scan-policies.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/clone-a-storage-scan-policy.html</loc>
-    <lastmod>2021-01-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/update-a-storage-scan-policy.html</loc>
-    <lastmod>2021-03-04</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/delete-a-storage-scan-policy.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/revert-a-storage-scan-policy-change.html</loc>
-    <lastmod>2021-01-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-retro-scan-job.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/list-retro-scan-jobs.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/stop-retro-scan-jobs.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/delete-retro-scan-jobs.html</loc>
-    <lastmod>2021-02-25</lastmod>
-  </url>
+
+  
   <url>
     <loc>https://docs.netskope.com/en/view-security-assessment-violations.html</loc>
     <lastmod>2020-12-08</lastmod>
