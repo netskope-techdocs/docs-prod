@@ -11,7 +11,7 @@
   <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/6025b52aa794a.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/5f8501395fbab.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-141812/5c0075526d3af.jpg"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-60a2020868de81.03677474/226796-Netskope_Help-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-60c313127c6065.20045063/226796-Netskope_Help-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright" select=" &#xA9; 2021 Netskope "/>
@@ -20,12 +20,12 @@
   <param name="cookie.consent" select="0"/>
   <param name="privacypolicy" select="/privacy"/>
   <param name="privacypolicy" select="/privacy"/>
-  <param name="google.analytics" select="G-ZT8KHXMB6T"/>
-  <param name="google.analytics.type" select="gtag"/>
+  <param name="google.analytics" select="GTM-W56WJ8S"/>
+  <param name="google.analytics.type" select="tagmanager"/>
   <param name="user.custom.script" select="0"/>
-  <param name="layout.custom.script" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/6064cedac01d1.js"/>
-  <param name="create.sitemap" select="0"/>
-  <param name="destination.domain" select=""/>
+  <param name="layout.custom.script" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/60b8047b23d49.js"/>
+  <param name="create.sitemap" select="1"/>
+  <param name="destination.domain" select="https://docs.netskope.com/"/>
   <param name="submit.feedback" select="1"/>
   <param name="voting.panel" select="0"/>
   <param name="feedback.email" select="techpubs@netskope.com"/>
@@ -89,9 +89,9 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-60a2020868de81.03677474/226796-Netskope_Help-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-60c313127c6065.20045063/226796-Netskope_Help-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-60a2020868de81.03677474/226796-Netskope_Help-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-60c313127c6065.20045063/226796-Netskope_Help-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-60a2020868de81.03677474/226796-Netskope_Help-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-60c313127c6065.20045063/226796-Netskope_Help-html5/out/css/image/logo-dark.png"/>
 </params>

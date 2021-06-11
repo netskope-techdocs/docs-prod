@@ -789,8 +789,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "create-an-api-enabled-protection-policy.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 }]
 }]
@@ -1062,8 +1062,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "create-an-api-enabled-protection-policy-163050.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-163050.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -1419,8 +1419,106 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection.html",
-"text": "API-enabled Protection",
+"url": "netskope-saas-security-posture-management.html",
+"text": "Netskope SaaS Security Posture Management",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "security-posture-for-github.html",
+"text": "Security Posture for GitHub",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-github-instance-for-security-posture.html",
+"text": "Configure GitHub Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-microsoft-365.html",
+"text": "Security Posture for Microsoft 365",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-microsoft-365-instance-for-security-posture.html",
+"text": "Configure Microsoft 365 Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-salesforce.html",
+"text": "Security Posture for Salesforce",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-salesforce-instance-for-security-posture.html",
+"text": "Configure Salesforce Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-policy-wizard.html",
+"text": "Security Posture Policy Wizard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "security-posture-policy.html",
+"text": "Security Posture Policy",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-policy.html",
+"text": "Create a Security Posture Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-profile.html",
+"text": "Security Posture Profile",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-profile.html",
+"text": "Create a Security Posture Profile",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-rule.html",
+"text": "Security Posture Rule",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-rule.html",
+"text": "Create a Security Posture Rule",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "custom-rules-using-domain-specific-language-305074.html",
+"text": "Custom Rules using Domain Specific Language",
+"class": "topic-link section"
+}]
+}]
+}]
+},
+{
+"url": "view-security-posture-compliance.html",
+"text": "View Security Posture Compliance",
+"class": "topic-link section"
+}]
+},
+{
+"url": "api-data-protection.html",
+"text": "API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -1430,40 +1528,40 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-use-cases.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-for-risk-insights.html",
-"text": "API-enabled Protection for Risk Insights",
+"url": "api-data-protection-for-risk-insights.html",
+"text": "API Data Protection for Risk Insights",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-features.html",
-"text": "API-enabled Protection Features",
+"url": "api-data-protection-features.html",
+"text": "API Data Protection Features",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-for-box.html",
-"text": "API-enabled Protection for Box",
+"url": "api-data-protection-for-box.html",
+"text": "API Data Protection for Box",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117725.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117725.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -1474,13 +1572,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
 "url": "configure-box-for-api-enabled-protection.html",
-"text": "Configure Box for API-enabled Protection",
+"text": "Configure Box for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -1502,8 +1600,8 @@ var toc = [{
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118921.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118921.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -1604,25 +1702,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-cisco-webex-teams.html",
-"text": "API-enabled Protection for Cisco Webex Teams",
+"url": "api-data-protection-for-cisco-webex-teams.html",
+"text": "API Data Protection for Cisco Webex Teams",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120292.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120292.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117830.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117830.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117842.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117842.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -1633,19 +1731,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117834.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117834.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-cisco-webex-teams-for-api-enabled-protection.html",
-"text": "Configure Cisco Webex Teams for API-enabled Protection",
+"url": "configure-cisco-webex-teams-for-api-data-protection.html",
+"text": "Configure Cisco Webex Teams for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118922.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118922.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -1729,25 +1827,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-dropbox.html",
-"text": "API-enabled Protection for Dropbox",
+"url": "api-data-protection-for-dropbox.html",
+"text": "API Data Protection for Dropbox",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120293.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120293.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117877.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117877.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117887.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117887.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -1758,19 +1856,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117879.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117879.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-dropbox-for-api-enabled-protection.html",
-"text": "Configure Dropbox for API-enabled Protection",
+"url": "configure-dropbox-for-api-data-protection.html",
+"text": "Configure Dropbox for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118923.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118923.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -1861,25 +1959,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-egnyte.html",
-"text": "API-enabled Protection for Egnyte",
+"url": "api-data-protection-for-egnyte.html",
+"text": "API Data Protection for Egnyte",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120294.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120294.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-118028.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-118028.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-118038.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-118038.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -1890,19 +1988,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-118030.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-118030.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-egnyte-for-api-enabled-protection.html",
-"text": "Configure Egnyte for API-enabled Protection",
+"url": "configure-egnyte-for-api-data-protection.html",
+"text": "Configure Egnyte for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118924.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118924.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -1976,25 +2074,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-github.html",
-"text": "API-enabled Protection for GitHub",
+"url": "api-data-protection-for-github.html",
+"text": "API Data Protection for GitHub",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120295.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120295.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-119530.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-119530.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-119531.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-119531.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -2005,19 +2103,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-119536.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-119536.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-github-for-api-enabled-protection.html",
-"text": "Configure GitHub for API-enabled Protection",
+"url": "configure-github-for-api-data-protection.html",
+"text": "Configure GitHub for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-163059.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-163059.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2086,25 +2184,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-gmail.html",
-"text": "API-enabled Protection for Gmail",
+"url": "api-data-protection-for-gmail.html",
+"text": "API Data Protection for Gmail",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120296.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120296.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-118122.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-118122.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-118925.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-118925.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -2115,19 +2213,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-118124.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-118124.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-gmail-for-api-enabled-protection.html",
-"text": "Configure Gmail for API-enabled Protection",
+"url": "configure-gmail-for-api-data-protectionting.html",
+"text": "Configure Gmail for API Data Protectionting",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118926.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118926.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2201,25 +2299,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-google-drive.html",
-"text": "API-enabled Protection for Google Drive",
+"url": "api-data-protection-for-google-drive.html",
+"text": "API Data Protection for Google Drive",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120297.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120297.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117899.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117899.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117909.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117909.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -2230,19 +2328,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117901.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117901.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-google-drive-for-api-enabled-protection.html",
-"text": "Configure Google Drive for API-enabled Protection",
+"url": "configure-google-drive-for-api-data-protection.html",
+"text": "Configure Google Drive for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118927.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118927.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2336,42 +2434,42 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-microsoft-office-365-onedrive.html",
-"text": "API-enabled Protection for Microsoft Office 365 OneDrive",
+"url": "api-data-protection-for-microsoft-office-365-onedrive.html",
+"text": "API Data Protection for Microsoft Office 365 OneDrive",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120300.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120300.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117726.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117726.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117798.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117798.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for API-enabled Protection",
+"url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
+"text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection.html",
-"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection.html",
+"text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-enabled-protection-159895.html",
-"text": "Configure Microsoft Office 365 OneDrive for API-enabled Protection",
+"url": "configure-microsoft-office-365-onedrive-for-api-data-protection-159895.html",
+"text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -2443,15 +2541,15 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions.html",
-"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions.html",
+"text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
 }]
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118931.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118931.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2542,37 +2640,37 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-microsoft-office-365-outlook.html",
-"text": "API-enabled Protection for Microsoft Office 365 Outlook",
+"url": "api-data-protection-for-microsoft-office-365-outlook.html",
+"text": "API Data Protection for Microsoft Office 365 Outlook",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120301.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120301.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117973.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117973.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117985.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117985.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
 {
-"url": "configure-microsoft-office-365-outlook-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 Outlook for API-enabled Protection",
+"url": "configure-microsoft-office-365-outlook-for-api-data-protection.html",
+"text": "Configure Microsoft Office 365 Outlook for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-outlook-for-api-enabled-protection-159921.html",
-"text": "Configure Microsoft Office 365 Outlook for API-enabled Protection",
+"url": "configure-microsoft-office-365-outlook-for-api-data-protection-159921.html",
+"text": "Configure Microsoft Office 365 Outlook for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -2594,15 +2692,15 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions-159925.html",
-"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159925.html",
+"text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
 }]
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118932.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118932.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2676,42 +2774,42 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-microsoft-office-365-sharepoint.html",
-"text": "API-enabled Protection for Microsoft Office 365 SharePoint",
+"url": "api-data-protection-for-microsoft-office-365-sharepoint.html",
+"text": "API Data Protection for Microsoft Office 365 SharePoint",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120302.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120302.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-118075.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-118075.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-118085.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-118085.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
 {
-"url": "configure-microsoft-office-365-sharepoint-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 SharePoint for API-enabled Protection",
+"url": "configure-microsoft-office-365-sharepoint-for-api-data-protection.html",
+"text": "Configure Microsoft Office 365 SharePoint for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection-189817.html",
-"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-189817.html",
+"text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-sharepoint-sites-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 SharePoint Sites for API-enabled Protection",
+"url": "configure-microsoft-office-365-sharepoint-sites-for-api-data-protection.html",
+"text": "Configure Microsoft Office 365 SharePoint Sites for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -2773,15 +2871,15 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-enabled-protection-frequently-asked-questions-159918.html",
-"text": "Microsoft Office 365 and Netskope API-enabled Protection Frequently Asked Questions",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159918.html",
+"text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
 }]
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118933.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118933.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -2860,42 +2958,42 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-microsoft-office-365-teams.html",
-"text": "API-enabled Protection for Microsoft Office 365 Teams",
+"url": "api-data-protection-for-microsoft-office-365-teams.html",
+"text": "API Data Protection for Microsoft Office 365 Teams",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-179436.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-179436.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-179438.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-179438.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-179439.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-179439.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
 {
-"url": "configure-microsoft-office-365-teams-for-api-enabled-protection.html",
-"text": "Configure Microsoft Office 365 Teams for API-enabled Protection",
+"url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
+"text": "Configure Microsoft Office 365 Teams for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "supported-microsoft-office-365-licenses-for-api-enabled-protection-232870.html",
-"text": "Supported Microsoft Office 365 Licenses for API-enabled Protection",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-232870.html",
+"text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-teams-for-api-enabled-protection-178419.html",
-"text": "Configure Microsoft Office 365 Teams for API-enabled Protection",
+"url": "configure-microsoft-office-365-teams-for-api-data-protection-178419.html",
+"text": "Configure Microsoft Office 365 Teams for API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -2953,25 +3051,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-salesforce.html",
-"text": "API-enabled Protection for Salesforce",
+"url": "api-data-protection-for-salesforce.html",
+"text": "API Data Protection for Salesforce",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120303.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120303.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117855.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117855.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117865.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117865.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -2982,13 +3080,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117857.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117857.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-salesforce-for-api-enabled-protection.html",
-"text": "Configure Salesforce for API-enabled Protection",
+"url": "configure-salesforce-for-api-data-protection.html",
+"text": "Configure Salesforce for API Data Protection",
 "class": "topic-link section"
 }]
 },
@@ -2998,8 +3096,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "create-an-api-enabled-protection-policy-118934.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118934.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -3090,25 +3188,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-servicenow.html",
-"text": "API-enabled Protection for ServiceNow",
+"url": "api-data-protection-for-servicenow.html",
+"text": "API Data Protection for ServiceNow",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120304.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120304.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117922.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117922.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117931.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117931.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -3119,19 +3217,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117924.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117924.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-servicenow-for-api-enabled-protection.html",
-"text": "Configure ServiceNow for API-enabled Protection",
+"url": "configure-servicenow-for-api-data-protection.html",
+"text": "Configure ServiceNow for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118935.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118935.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -3190,25 +3288,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-slack-for-enterprise.html",
-"text": "API-enabled Protection for Slack for Enterprise",
+"url": "api-data-protection-for-slack-for-enterprise.html",
+"text": "API Data Protection for Slack for Enterprise",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120305.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120305.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-118099.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-118099.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-118110.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-118110.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -3219,19 +3317,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-118101.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-118101.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-slack-enterprise-for-api-enabled-protection.html",
-"text": "Configure Slack Enterprise for API-enabled Protection",
+"url": "configure-slack-enterprise-for-api-data-protection.html",
+"text": "Configure Slack Enterprise for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118936.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118936.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -3315,25 +3413,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-slack-for-teams.html",
-"text": "API-enabled Protection for Slack for Teams",
+"url": "api-data-protection-for-slack-for-teams.html",
+"text": "API Data Protection for Slack for Teams",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120306.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120306.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117794.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117794.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117818.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117818.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -3344,19 +3442,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117810.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117810.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-slack-for-team-for-api-enabled-protection.html",
-"text": "Configure Slack for Team for API-enabled Protection",
+"url": "configure-slack-for-team-for-api-data-protection.html",
+"text": "Configure Slack for Team for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118937.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118937.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -3435,25 +3533,25 @@ var toc = [{
 }]
 },
 {
-"url": "api-enabled-protection-for-workplace-by-facebook.html",
-"text": "API-enabled Protection for Workplace by Facebook",
+"url": "api-data-protection-for-workplace-by-facebook.html",
+"text": "API Data Protection for Workplace by Facebook",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "api-enabled-protection-overview-120307.html",
-"text": "API-enabled Protection Overview",
+"url": "api-data-protection-overview-120307.html",
+"text": "API Data Protection Overview",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-enabled-protection-use-cases-117942.html",
-"text": "API-enabled Protection Use Cases",
+"url": "api-data-protection-use-cases-117942.html",
+"text": "API Data Protection Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "api-enabled-protection-policy-actions-per-cloud-app-117953.html",
-"text": "API-enabled Protection Policy Actions per Cloud App",
+"url": "api-data-protection-policy-actions-per-cloud-app-117953.html",
+"text": "API Data Protection Policy Actions per Cloud App",
 "class": "topic-link section"
 }]
 },
@@ -3464,19 +3562,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-enabled-protection-api-connectors-117944.html",
-"text": "API-enabled Protection API Connectors",
+"url": "api-data-protection-api-connectors-117944.html",
+"text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
 {
-"url": "configure-workplace-by-facebook-for-api-enabled-protection.html",
-"text": "Configure Workplace by Facebook for API-enabled Protection",
+"url": "configure-workplace-by-facebook-for-api-data-protection.html",
+"text": "Configure Workplace by Facebook for API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "create-an-api-enabled-protection-policy-118938.html",
-"text": "Create an API-enabled Protection Policy",
+"url": "create-an-api-data-protection-policy-118938.html",
+"text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
 "children": [
@@ -3588,6 +3686,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "real-time-protection-for-public-cloud-207274.html",
+"text": "Real-time Protection for Public Cloud",
+"class": "topic-link section"
+},
+{
 "url": "supported-aws-entities-for-real-time-protection.html",
 "text": "Supported AWS Entities for Real-time Protection",
 "class": "topic-link section"
@@ -3600,6 +3703,11 @@ var toc = [{
 {
 "url": "supported-gcp-entities-for-real-time-protection.html",
 "text": "Supported GCP Entities for Real-time Protection",
+"class": "topic-link section"
+},
+{
+"url": "supported-aws-apis-for-real-time-protection.html",
+"text": "Supported AWS APIs for Real-time Protection",
 "class": "topic-link section"
 }]
 },
@@ -3648,8 +3756,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-encryption-for-api-enabled-protection-detection.html",
-"text": "Configure Encryption for API-enabled Protection Detection",
+"url": "configure-encryption-for-api-data-protection-detection.html",
+"text": "Configure Encryption for API Data Protection Detection",
 "class": "topic-link section"
 }]
 },
@@ -3906,6 +4014,11 @@ var toc = [{
 "url": "using-dlp-with-netskope-public-cloud-security.html",
 "text": "Using DLP with Netskope Public Cloud Security",
 "class": "topic-link section"
+},
+{
+"url": "supported-file-categories-and-file-types-307049.html",
+"text": "Supported File Categories and File Types",
+"class": "topic-link section"
 }]
 },
 {
@@ -3961,8 +4074,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-threat-protection-for-api-enabled-protection.html",
-"text": "Configure Threat Protection for API-enabled Protection",
+"url": "configure-threat-protection-for-api-data-protection.html",
+"text": "Configure Threat Protection for API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -3998,8 +4111,8 @@ var toc = [{
 }]
 },
 {
-"url": "malware-detection-types.html",
-"text": "Malware Detection Types",
+"url": "malware-severity-levels-and-detection-types.html",
+"text": "Malware Severity Levels and Detection Types",
 "class": "topic-link section"
 }]
 },
@@ -4042,8 +4155,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-api-enabled-protection-for-forensics.html",
-"text": "Configure API-enabled Protection for Forensics",
+"url": "configure-api-data-protection-for-forensics.html",
+"text": "Configure API Data Protection for Forensics",
 "class": "topic-link section"
 },
 {
@@ -4300,6 +4413,11 @@ var toc = [{
 {
 "url": "configure-a-publisher-in-azure.html",
 "text": "Configure a Publisher in Azure",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-publisher-in-gcp.html",
+"text": "Configure a Publisher in GCP",
 "class": "topic-link section"
 },
 {
@@ -4921,8 +5039,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-an-api-enabled-protection-policy-for-mip.html",
-"text": "Configure an API-enabled Protection Policy for MIP",
+"url": "configure-an-api-data-protection-policy-for-mip.html",
+"text": "Configure an API Data Protection Policy for MIP",
 "class": "topic-link section"
 },
 {
@@ -4958,10 +5076,76 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-an-api-enabled-protection-policy-for-vera.html",
-"text": "Configure an API-enabled Protection Policy for Vera",
+"url": "configure-an-api-data-protection-policy-for-vera.html",
+"text": "Configure an API Data Protection Policy for Vera",
 "class": "topic-link section"
 }]
+}]
+},
+{
+"url": "netskope-smtp-proxy.html",
+"text": "Netskope SMTP Proxy",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-smtp-proxy-212979.html",
+"text": "Netskope SMTP Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-smtp-proxy-with-microsoft-o365-exchange.html",
+"text": "Configure Netskope SMTP Proxy with Microsoft O365 Exchange",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "send-traffic-from-netskope-back-to-exchange.html",
+"text": "Send traffic from Netskope back to Exchange",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configure-netskope-smtp-proxy-with-gmail.html",
+"text": "Configure Netskope SMTP Proxy with Gmail",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "send-traffic-from-netskope-back-to-gmail.html",
+"text": "Send traffic from Netskope back to Gmail",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configure-real-time-protection-policies-for-email-outbound.html",
+"text": "Configure Real-time Protection Policies for Email Outbound",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-upstream-mta-to-use-netskope-headers.html",
+"text": "Configure the upstream MTA to use Netskope headers",
+"class": "topic-link section"
+},
+{
+"url": "view-netskope-smtp-proxy-alerts.html",
+"text": "View Netskope SMTP Proxy Alerts",
+"class": "topic-link section"
+},
+{
+"url": "view-dlp-incidents-related-to-smtp-proxy.html",
+"text": "View DLP Incidents related to SMTP Proxy",
+"class": "topic-link section"
+},
+{
+"url": "netskope-smtp-proxy-use-cases.html",
+"text": "Netskope SMTP Proxy Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "dlp-behavior-with-smtp-proxy.html",
+"text": "DLP Behavior with SMTP Proxy",
+"class": "topic-link section"
 }]
 },
 {
@@ -5018,6 +5202,104 @@ var toc = [{
 "url": "integrate-netskope-ipsec-with-viptela-vedge.html",
 "text": "Integrate Netskope IPSec with Viptela vEdge",
 "class": "topic-link section"
+},
+{
+"url": "integrate-netskope-ipsec-with-fortinet-fortigate.html",
+"text": "Integrate Netskope IPSec with Fortinet FortiGate",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "integrate-netskope-ipsec-with-fortinet-fortigate-305794.html",
+"text": "Integrate Netskope IPSec with Fortinet FortiGate",
+"class": "topic-link section"
+},
+{
+"url": "configure-fortigate.html",
+"text": "Configure FortiGate",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-with-an-associated-vpn-interface.html",
+"text": "Create a Policy with an Associated VPN Interface",
+"class": "topic-link section"
+},
+{
+"url": "create-a-route-to-push-vpn-into-rib.html",
+"text": "Create a Route to Push VPN into RIB",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-based-router-to-redirect-web-traffic-to-netskope.html",
+"text": "Create a Policy-Based Router to Redirect Web Traffic to Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-ipsec-305741.html",
+"text": "Configure Netskope IPSec",
+"class": "topic-link section"
+}]
+},
+{
+"url": "integrate-netskope-ipsec-with-silver-peak-edgeconnect.html",
+"text": "Integrate Netskope IPSec with Silver Peak EdgeConnect",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "about-netskope-ipsec-and-silver-peak-edgeconnect.html",
+"text": "About Netskope IPSec and Silver Peak EdgeConnect",
+"class": "topic-link section"
+},
+{
+"url": "silver-peak-edgeconnect-use-cases.html",
+"text": "Silver Peak EdgeConnect Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "active---backup-internet-use-case.html",
+"text": "Active - Backup Internet Use Case",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-tunnel-on-netskope.html",
+"text": "Create a Tunnel on Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-tunnels-on-edgeconnect.html",
+"text": "Configure Tunnels on EdgeConnect",
+"class": "topic-link section"
+},
+{
+"url": "configure-business-intent-overlay-policies.html",
+"text": "Configure Business Intent Overlay Policies",
+"class": "topic-link section"
+}]
+},
+{
+"url": "active---active-internet-use-case.html",
+"text": "Active - Active Internet Use Case",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-second-tunnel-on-netskope.html",
+"text": "Create a Second Tunnel on Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-additional-tunnels-on-edgeconnect.html",
+"text": "Configure Additional Tunnels on EdgeConnect",
+"class": "topic-link section"
+},
+{
+"url": "configure-business-intent-overlay-policies-305666.html",
+"text": "Configure Business Intent Overlay Policies",
+"class": "topic-link section"
+}]
+}]
 },
 {
 "url": "integrate-netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html",
@@ -5212,6 +5494,11 @@ var toc = [{
 "text": "Configure the Okta ACS URL Override",
 "class": "topic-link section"
 }]
+},
+{
+"url": "integrate-saml-reverse-proxy-for-google-chromebook.html",
+"text": "Integrate SAML Reverse Proxy for Google Chromebook",
+"class": "topic-link section"
 },
 {
 "url": "integrate-netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
@@ -5560,6 +5847,62 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-adapters.html",
+"text": "Netskope Adapters",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-adapters.html",
+"text": "About Netskope Adapters",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "scim-based-user-provisioning.html",
+"text": "SCIM-Based User Provisioning",
+"class": "topic-link section"
+}]
+},
+{
+"url": "install-and-configure-the-netskope-adapters.html",
+"text": "Install and Configure the Netskope Adapters",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-directory-importer.html",
+"text": "Configure Directory Importer",
+"class": "topic-link section"
+},
+{
+"url": "configure-dns-connector.html",
+"text": "Configure DNS Connector",
+"class": "topic-link section"
+},
+{
+"url": "configure-ad-connector.html",
+"text": "Configure AD Connector",
+"class": "topic-link section"
+}]
+},
+{
+"url": "verify-the-netskope-adapters.html",
+"text": "Verify the Netskope Adapters",
+"class": "topic-link section"
+},
+{
+"url": "upgrade-the-netskope-adapters.html",
+"text": "Upgrade the Netskope Adapters",
+"class": "topic-link section"
+},
+{
+"url": "add-custom-user-attributes.html",
+"text": "Add Custom User Attributes",
+"class": "topic-link section"
+}]
+},
+{
 "url": "mobile-device-management.html",
 "text": "Mobile Device Management",
 "class": "topic-link section reused-publication reused-publication"
@@ -5805,62 +6148,6 @@ var toc = [{
 "text": "iOS VPN Fail Open",
 "class": "topic-link section"
 }]
-}]
-},
-{
-"url": "netskope-adapters.html",
-"text": "Netskope Adapters",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-adapters.html",
-"text": "About Netskope Adapters",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "scim-based-user-provisioning.html",
-"text": "SCIM-Based User Provisioning",
-"class": "topic-link section"
-}]
-},
-{
-"url": "install-and-configure-the-netskope-adapters.html",
-"text": "Install and Configure the Netskope Adapters",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-directory-importer.html",
-"text": "Configure Directory Importer",
-"class": "topic-link section"
-},
-{
-"url": "configure-dns-connector.html",
-"text": "Configure DNS Connector",
-"class": "topic-link section"
-},
-{
-"url": "configure-ad-connector.html",
-"text": "Configure AD Connector",
-"class": "topic-link section"
-}]
-},
-{
-"url": "verify-the-netskope-adapters.html",
-"text": "Verify the Netskope Adapters",
-"class": "topic-link section"
-},
-{
-"url": "upgrade-the-netskope-adapters.html",
-"text": "Upgrade the Netskope Adapters",
-"class": "topic-link section"
-},
-{
-"url": "add-custom-user-attributes.html",
-"text": "Add Custom User Attributes",
-"class": "topic-link section"
 }]
 }]
 },
@@ -6675,8 +6962,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-85-0-0.html",
-"text": "Netskope Release Notes Version 85.0.0",
+"url": "netskope-release-notes-version-86-0-0.html",
+"text": "Netskope Release Notes Version 86.0.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -6701,14 +6988,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "appendix--fixed-issue-124698.html",
-"text": "Appendix: Fixed Issue 124698",
+"url": "new-product-available---netskope-saas-security-posture-management.html",
+"text": "New Product Available - Netskope SaaS Security Posture Management",
+"class": "topic-link section"
+},
+{
+"url": "new-product-available---advanced-analytics-ux-upgrade.html",
+"text": "New Product Available - Advanced Analytics UX Upgrade",
 "class": "topic-link section"
 }]
 },
 {
-"url": "on-premises-appliance-release-notes-version-77-3-0.html",
-"text": "On-Premises Appliance Release Notes Version 77.3.0",
+"url": "on-premises-appliance-release-notes-version-77-4-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.4.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -6739,8 +7031,8 @@ var toc = [{
 }]
 },
 {
-"url": "virtual-appliance-release-notes-version-77-3-0.html",
-"text": "Virtual Appliance Release Notes Version 77.3.0",
+"url": "virtual-appliance-release-notes-version-77-4-0.html",
+"text": "Virtual Appliance Release Notes Version 77.4.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
