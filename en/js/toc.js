@@ -1329,78 +1329,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-storage-scan-policies.html",
-"text": "Manage Storage Scan Policies",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-storage-scan-policy.html",
-"text": "Create a Storage Scan Policy",
-"class": "topic-link section"
-},
-{
-"url": "enable-or-disable-a-storage-scan-policy.html",
-"text": "Enable or Disable a Storage Scan Policy",
-"class": "topic-link section"
-},
-{
-"url": "apply-changes-to-storage-scan-policies.html",
-"text": "Apply Changes to Storage Scan Policies",
-"class": "topic-link section"
-},
-{
-"url": "get-storage-scan-policy-details.html",
-"text": "Get Storage Scan Policy Details",
-"class": "topic-link section"
-},
-{
-"url": "list-storage-scan-policies.html",
-"text": "List Storage Scan Policies",
-"class": "topic-link section"
-},
-{
-"url": "clone-a-storage-scan-policy.html",
-"text": "Clone a Storage Scan Policy",
-"class": "topic-link section"
-},
-{
-"url": "update-a-storage-scan-policy.html",
-"text": "Update a Storage Scan Policy",
-"class": "topic-link section"
-},
-{
-"url": "delete-a-storage-scan-policy.html",
-"text": "Delete a Storage Scan Policy",
-"class": "topic-link section"
-},
-{
-"url": "revert-a-storage-scan-policy-change.html",
-"text": "Revert a Storage Scan Policy Change",
-"class": "topic-link section"
-}]
-},
-{
-"url": "create-a-retro-scan-job.html",
-"text": "Create a Retro Scan Job",
-"class": "topic-link section"
-},
-{
-"url": "list-retro-scan-jobs.html",
-"text": "List Retro Scan Jobs",
-"class": "topic-link section"
-},
-{
-"url": "stop-retro-scan-jobs.html",
-"text": "Stop Retro Scan Jobs",
-"class": "topic-link section"
-},
-{
-"url": "delete-retro-scan-jobs.html",
-"text": "Delete Retro Scan Jobs",
-"class": "topic-link section"
-},
-{
 "url": "view-security-assessment-violations.html",
 "text": "View Security Assessment Violations",
 "class": "topic-link section"
@@ -3704,11 +3632,6 @@ var toc = [{
 "url": "supported-gcp-entities-for-real-time-protection.html",
 "text": "Supported GCP Entities for Real-time Protection",
 "class": "topic-link section"
-},
-{
-"url": "supported-aws-apis-for-real-time-protection.html",
-"text": "Supported AWS APIs for Real-time Protection",
-"class": "topic-link section"
 }]
 },
 {
@@ -4338,8 +4261,8 @@ var toc = [{
 }]
 },
 {
-"url": "create-an-real-time-protection-policy-for-web-categories.html",
-"text": "Create an Real-time Protection Policy for Web Categories",
+"url": "create-a-real-time-protection-policy-for-web-categories.html",
+"text": "Create a Real-time Protection Policy for Web Categories",
 "class": "topic-link section"
 },
 {
@@ -4385,6 +4308,11 @@ var toc = [{
 {
 "url": "about-netskope-private-access.html",
 "text": "About Netskope Private Access",
+"class": "topic-link section"
+},
+{
+"url": "private-apps-configuration-methods.html",
+"text": "Private Apps Configuration Methods",
 "class": "topic-link section"
 },
 {
@@ -6990,11 +6918,6 @@ var toc = [{
 {
 "url": "new-product-available---netskope-saas-security-posture-management.html",
 "text": "New Product Available - Netskope SaaS Security Posture Management",
-"class": "topic-link section"
-},
-{
-"url": "new-product-available---advanced-analytics-ux-upgrade.html",
-"text": "New Product Available - Advanced Analytics UX Upgrade",
 "class": "topic-link section"
 }]
 },
