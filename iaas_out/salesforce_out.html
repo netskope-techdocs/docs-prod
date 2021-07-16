@@ -10,7 +10,7 @@
   <div class="notes_container">
   
     <!-- AWS notes -->
-<p>The table below describes the Salesforce services and attributes supported by Netskope. </p>
+<p>The table below describes the Salesforce services and attributes supported by Netskope.</p>
   
   </div>
   <div class="container">
@@ -30,6 +30,10 @@
         
         <li class="entity_key" data-entity-name="Certificate">
           <span class="entity_name">Certificate</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ConnectedApp">
+          <span class="entity_name">ConnectedApp</span>
         </li>
         
         <li class="entity_key" data-entity-name="CorsAllowlistOrigin">
@@ -96,6 +100,447 @@
             <td>keySize</td>
             <td>number</td>
             <td>The size of the key in bits.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ConnectedApp">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>attributes</td>
+            <td>sequence</td>
+            <td>A custom attribute of the connected app. Represents the field names that make up a custom attribute when using SAML with a ConnectedApp. Tailor these values to a specific service provider.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>formula</td>
+            <td>string</td>
+            <td>The value of the attribute.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>key</td>
+            <td>string</td>
+            <td>The attribute's identifier.</td>
+          </tr>
+          
+          <tr>
+            <td>canvasConfig</td>
+            <td>sequence</td>
+            <td>The configuration options of the connected app if it's exposed as a canvas app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>accessMethod</td>
+            <td>string</td>
+            <td>Indicates how the canvas app initiates the OAuth authentication flow.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>canvasUrl</td>
+            <td>string</td>
+            <td>The URL of the third-party app that's exposed as a canvas app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>lifecycleClass</td>
+            <td>string</td>
+            <td>The name of the Canvas.CanvasLifecycleHandler Apex class.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>locations</td>
+            <td>string</td>
+            <td>Indicates where the canvas app can appear to the user.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>options</td>
+            <td>string</td>
+            <td>Indicates whether to hide the share button and header in the publisher for your canvas app, and whether the app is a canvas personal app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlInitiationMethod</td>
+            <td>string</td>
+            <td>If you're using SAML single sign-on (SSO), indicates which provider initiates the SSO flow.</td>
+          </tr>
+          
+          <tr>
+            <td>contactEmail</td>
+            <td>string</td>
+            <td>Required. The email address Salesforce uses for contacting you or your support team.</td>
+          </tr>
+          
+          <tr>
+            <td>contactPhone</td>
+            <td>string</td>
+            <td>The phone number for Salesforce to use to contact you.</td>
+          </tr>
+          
+          <tr>
+            <td>description</td>
+            <td>string</td>
+            <td>An optional description for your app.</td>
+          </tr>
+          
+          <tr>
+            <td>iconUrl</td>
+            <td>string</td>
+            <td>Reserved for future use.</td>
+          </tr>
+          
+          <tr>
+            <td>infoUrl</td>
+            <td>string</td>
+            <td>An optional URL for a web page with more information about your app.</td>
+          </tr>
+          
+          <tr>
+            <td>ipRanges</td>
+            <td>list</td>
+            <td>Specifies the ranges of IP addresses that can access the app without requiring the user to authenticate with the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>description</td>
+            <td>string</td>
+            <td>Use this field to identify the purpose of the range, such as which part of a network corresponds to this range.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>startAddress</td>
+            <td>string</td>
+            <td>The first address in the IP range, inclusive.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>endAddress</td>
+            <td>string</td>
+            <td>The last address in the IP range, inclusive.</td>
+          </tr>
+          
+          <tr>
+            <td>label</td>
+            <td>string</td>
+            <td>Required. The name of the app.</td>
+          </tr>
+          
+          <tr>
+            <td>logoUrl</td>
+            <td>string</td>
+            <td>An optional logo for the app. The logo appears with the app's entry in the list of apps and on the consent page the user sees when authenticating. The URL must use HTTPS, and the logo can't be larger than 125 pixels high or 200 pixels wide. The default logo is a cloud.</td>
+          </tr>
+          
+          <tr>
+            <td>mobileStartUrl</td>
+            <td>string</td>
+            <td>Users are directed to this URL after they've authenticated when the app is accessed from a mobile device. If you don't give a URL, the user is sent to the app's default start page after authentication completes. If the connected app that you're creating is a canvas app, then you can leave this field blank. The Canvas App URL field contains the URL that gets called for the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td>oauthConfig</td>
+            <td>sequence</td>
+            <td>Represents the field names that configure how your connected app communicates with Salesforce.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>assetTokenConfig</td>
+            <td>sequence</td>
+            <td>Specifies an OAuth asset token configuration for the connected app OAuth settings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>assetAudiences</td>
+            <td>string</td>
+            <td>The audience claim associated with the asset token payload. This claim identifies who the JWT is intended for.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>assetIncludeAttributes</td>
+            <td>boolean</td>
+            <td>If set to true (default setting), custom attributes associated with the connected app are included in the asset token payload. If set to false, these attributes aren't included.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>assetIncludeCustomPerms</td>
+            <td>boolean</td>
+            <td>If set to true (default setting), custom permissions associated with the connected app are included in the asset token payload. If set to false, these permissions aren't included.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>assetSigningCertId</td>
+            <td>string</td>
+            <td>The ID of the JWT certificate's signing secret.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>assetValidityPeriod</td>
+            <td>number</td>
+            <td>The asset token's validity period. The validity must be the expiration time of the assertion within 3 minutes, expressed as the number of seconds from 1970-01-01T0:0:0Z measured in UTC.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>callbackUrl</td>
+            <td>string</td>
+            <td>The endpoint that Salesforce calls back to your connected app during OAuth; it's the OAuth redirect_uri.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>certificate</td>
+            <td>string</td>
+            <td>The PEM-encoded certificate string, if the app uses a certificate.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>consumerKey</td>
+            <td>string</td>
+            <td>A value used by the consumer for identification to Salesforce.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>consumerSecret</td>
+            <td>string</td>
+            <td>A value that is combined with the consumerKey and used by the consumer for identification to Salesforce.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>idTokenConfig</td>
+            <td>sequence</td>
+            <td>Specifies the ID token configuration for the connected app OAuth settings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>idTokenAudience</td>
+            <td>string</td>
+            <td>The audiences that this ID token is intended for.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>idTokenIncludeAttributes</td>
+            <td>boolean</td>
+            <td>Indicates whether attributes are included in the ID token.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>idTokenIncludeCustomPerms</td>
+            <td>boolean</td>
+            <td>Indicates whether custom permissions are included in the ID token.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>idTokenIncludeStandardClaims</td>
+            <td>boolean</td>
+            <td>Indicates whether standard claims about the authentication event are included in the ID token.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>idTokenValidity</td>
+            <td>number</td>
+            <td>The length of time that the ID token is valid for after it's issued. The value can be from 1 to 720 minutes. The default is 2 minutes.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isAdminApproved</td>
+            <td>boolean</td>
+            <td>If set to false (default setting), anyone in the org can authorize the app. Users must approve the app the first time they access it. If set to true, only users with the appropriate profile or permission set can access the app. These users don't have to approve the app before they can access it.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isConsumerSecretOptional</td>
+            <td>boolean</td>
+            <td>If set to false (default setting), the connected app's client secret is required in exchange for an access token in the OAuth 2.0 web server flow.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isIntrospectAllTokens</td>
+            <td>boolean</td>
+            <td>If set to true, authorizes the connected app to introspect all access and refresh tokens within the entire org. If set to false (default), the connected app can introspect its own tokens.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>isSecretRequiredForRefreshToken</td>
+            <td>boolean</td>
+            <td>If set to true (default), the app's client secret is required in the authorization request of a refresh token and hybrid refresh token flow. If set to false and an app sends the client secret in the authorization request, Salesforce still validates it.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>scopes</td>
+            <td>list</td>
+            <td>A list of scopes associated with the connected app. The scopes refer to permissions given by the user running the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>scope</td>
+            <td>string</td>
+            <td>The name of the scope.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>singleLogoutUrl</td>
+            <td>string</td>
+            <td>The single logout endpoint. This URL is the endpoint where Salesforce sends a logout request when users log out of Salesforce.</td>
+          </tr>
+          
+          <tr>
+            <td>oauthPolicy</td>
+            <td>sequence</td>
+            <td>Specifies Oauth access policies associated with your connected app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ipRelaxation</td>
+            <td>string</td>
+            <td>Specifies whether a user's access to the connected app is restricted by IP ranges.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>refreshTokenPolicy</td>
+            <td>string</td>
+            <td>Specifies how long a refresh token is valid for.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>singleLogoutUri</td>
+            <td>string</td>
+            <td>If single logout is enabled, specify the single logout URL.</td>
+          </tr>
+          
+          <tr>
+            <td>permissionSetName</td>
+            <td>string</td>
+            <td>Specifies the permissions required to perform different functions with the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td>plugin</td>
+            <td>string</td>
+            <td>The name of a custom Apex class that extends Auth.ConnectedAppPlugin to customize the behavior of the app.</td>
+          </tr>
+          
+          <tr>
+            <td>pluginExecutionUser</td>
+            <td>string</td>
+            <td>Specifies the user to run the plugin as.</td>
+          </tr>
+          
+          <tr>
+            <td>profileName</td>
+            <td>string</td>
+            <td>Specifies the profile (base-level user permissions) required to perform different functions with the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td>samlConfig</td>
+            <td>sequence</td>
+            <td>Specifies how an app uses single sign-on.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>acsUrl</td>
+            <td>string</td>
+            <td>The assertion consumer service URL from the service provider.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>certificate</td>
+            <td>string</td>
+            <td>The PEM-encoded certificate string, if the app uses a certificate.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>entityUrl</td>
+            <td>string</td>
+            <td>The entity ID from your service provider.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>encryptionCertificate</td>
+            <td>string</td>
+            <td>The name of the certificate to use for encrypting SAML assertions to the service provider. This certificate is saved in the organization's Certificate and Key Management list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>encryptionType</td>
+            <td>string</td>
+            <td>When Salesforce is the identity provider, the SAML configuration can specify the encryption method used for encrypting SAML assertions to the service provider. The service provider detects the encryption method in the SAML assertion for decryption.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>issuer</td>
+            <td>string</td>
+            <td>A URI that sends the SAML response. A service provider can use this URI to determine which identity provider sent the response.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlIdpSLOBinding</td>
+            <td>string</td>
+            <td>The SAML HTTP binding type from the service provider used for single logout.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlNameIdFormat</td>
+            <td>string</td>
+            <td>Indicates the format the service provider (SP) requires for the user's single sign-on identifier.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlSigningAlgoType</td>
+            <td>string</td>
+            <td>Indicates the signing algorithm applied to SAML requests and responses when Salesforce is the identity provider.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlSloUrl</td>
+            <td>string</td>
+            <td>The SAML single-logout endpoint of the connected app service provider (SP). This endpoint is where SAML LogoutRequests and LogoutResponses are sent when users log out of Salesforce. The SP provides this endpoint.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlSubjectCustomAttr</td>
+            <td>string</td>
+            <td>If the samlSubjectType is CustomAttr, include that custom value here; otherwise, leave empty.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>samlSubjectType</td>
+            <td>string</td>
+            <td>The single sign-on identifier for the user.</td>
+          </tr>
+          
+          <tr>
+            <td>sessionPolicy</td>
+            <td>sequence</td>
+            <td>Specifies the configuration options for a connected app's session policies. Use these policies to define how long a user's session can last before reauthenticating, to block user access to the connected app, or to require multi-factor authentication (MFA) to access the app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>policyAction</td>
+            <td>string</td>
+            <td>If the High Assurance session security level is applied to the connected app, specify associated high assurance action.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>sessionLevel</td>
+            <td>string</td>
+            <td>Applies the High Assurance session security level to the connected app. This session level requires users to verify their identity with multi-factor authentication when they log in to the connected app.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>sessionTimeout</td>
+            <td>number</td>
+            <td>The length of time the connected app's session lasts.</td>
+          </tr>
+          
+          <tr>
+            <td>startUrl</td>
+            <td>string</td>
+            <td>If the app isn't accessed from a mobile device, users are directed to this URL after they've authenticated.</td>
           </tr>
           
         </table>

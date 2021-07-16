@@ -124,7 +124,39 @@ h1 {position: fixed; top: 75}
         <ul>
             
             <li class="rule_key" data-profile-name="BPR">
-              <span class="rule_name">Github Best Practices v1.0.0</span>
+              <span class="rule_name">GitHub Best Practices v1.0.0</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="CCM">
+              <span class="rule_name">CSA-CCM v4.0 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="GDPR">
+              <span class="rule_name">GDPR 2016/679 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="HIPAA">
+              <span class="rule_name">HIPAA 1996 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="ISO27K">
+              <span class="rule_name">ISO 27002 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST">
+              <span class="rule_name">NIST-CSF v1.1 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST800-53">
+              <span class="rule_name">NIST 800-53 r4 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="PCI">
+              <span class="rule_name">PCI-DSS v3.0 (GitHub)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="SOC2">
+              <span class="rule_name">SOC2-TSC 2017 (GitHub)</span>
             </li>
             
             <!--
@@ -151,8 +183,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="1">
             <!-- <td>1</td> -->
-            <td>2FA disabled for user</td>
-            <td>Organization shouldn't have users with 2FA disabled.</td>
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
             <td>
             
               Github<br>
@@ -163,8 +195,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="2">
             <!-- <td>2</td> -->
-            <td>2FA not enforced for organization</td>
-            <td>Organization should enforce 2FA for all users.</td>
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
             <td>
             
               Github<br>
@@ -175,8 +207,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="3">
             <!-- <td>3</td> -->
-            <td>Repository's branch protection rules bypass an admin user</td>
-            <td>Repository's branch protection rules should not bypass an admin user.</td>
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
             <td>
             
               Github<br>
@@ -187,8 +219,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="4">
             <!-- <td>4</td> -->
-            <td>Code snippet in public domain</td>
-            <td>Organization shouldn't have any public gists.</td>
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
             <td>
             
               Github<br>
@@ -199,8 +231,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="5">
             <!-- <td>5</td> -->
-            <td>Default branch is prone to deletion</td>
-            <td>Default branch of a repository should not allow deletions.</td>
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
             <td>
             
               Github<br>
@@ -211,8 +243,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="6">
             <!-- <td>6</td> -->
-            <td>Force-push on default branch is permitted</td>
-            <td>Force-push shouldn't be enabled on the default branch.</td>
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
             <td>
             
               Github<br>
@@ -223,8 +255,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="7">
             <!-- <td>7</td> -->
-            <td>Inactive Administrator in an Organization</td>
-            <td>There shouldn't be any inactive administrator in an organization.</td>
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
             <td>
             
               Github<br>
@@ -235,8 +267,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="8">
             <!-- <td>8</td> -->
-            <td>Inactive Repository</td>
-            <td>Inactive Repository for over 30 days.</td>
+            <td>Ensure there are no inactive repositories</td>
+            <td>There should be no inactive repository (no activity for over 30 days).</td>
             <td>
             
               Github<br>
@@ -247,8 +279,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="9">
             <!-- <td>9</td> -->
-            <td>Inactive User in an Organization</td>
-            <td>There shouldn't be any inactive user in an organization.</td>
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
             <td>
             
               Github<br>
@@ -259,8 +291,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="10">
             <!-- <td>10</td> -->
-            <td>New repository</td>
-            <td>Any new repository created within 1 day.</td>
+            <td>Ensure no new repositories exist</td>
+            <td>Ensure administrators are aware of any new repositories (created in the past day).</td>
             <td>
             
               Github<br>
@@ -271,8 +303,8 @@ h1 {position: fixed; top: 75}
           
           <tr num="11">
             <!-- <td>11</td> -->
-            <td>Private Repository has any forks</td>
-            <td>Private repository shouldn't have any forks.</td>
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
             <td>
             
               Github<br>
@@ -283,8 +315,1056 @@ h1 {position: fixed; top: 75}
           
           <tr num="12">
             <!-- <td>12</td> -->
-            <td>Repository set to public</td>
-            <td>Repository should be set to private.</td>
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+          <tr num="13">
+            <!-- <td>13</td> -->
+            <td>Ensure branch protection rules are enabled for all branches in the repository</td>
+            <td>The repository should have a branch protection rule enabled for all branches.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_enabled_for_all_branches eq true</td>
+          </tr>
+          
+          <tr num="14">
+            <!-- <td>14</td> -->
+            <td>Repositories should contain a CODEOWNERS file</td>
+            <td>The default branch of a repository should have a CODEOWNERS file.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.has_codeowners_file eq true</td>
+          </tr>
+          
+          <tr num="15">
+            <!-- <td>15</td> -->
+            <td>Repositories should contain a .gitignore file</td>
+            <td>The default branch of a repository should have a .gitignore file.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.has_gitignore_file eq true</td>
+          </tr>
+          
+          <tr num="16">
+            <!-- <td>16</td> -->
+            <td>Public repositories should have a LICENSE file</td>
+            <td>The default branch of a public repository should have a LICENSE file.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq false should have default_branch.has_license_file eq true</td>
+          </tr>
+          
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>Ensure Secrets Detection is enabled</td>
+            <td>Secret scanning should be enabled for the repository.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have secret_scanning_enabled eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="CCM">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="18">
+            <!-- <td>18</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="22">
+            <!-- <td>22</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="23">
+            <!-- <td>23</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="24">
+            <!-- <td>24</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="26">
+            <!-- <td>26</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="27">
+            <!-- <td>27</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="GDPR">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="28">
+            <!-- <td>28</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="29">
+            <!-- <td>29</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="30">
+            <!-- <td>30</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="31">
+            <!-- <td>31</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="32">
+            <!-- <td>32</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="33">
+            <!-- <td>33</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="34">
+            <!-- <td>34</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="36">
+            <!-- <td>36</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="37">
+            <!-- <td>37</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="HIPAA">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="38">
+            <!-- <td>38</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="39">
+            <!-- <td>39</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="40">
+            <!-- <td>40</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="41">
+            <!-- <td>41</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="42">
+            <!-- <td>42</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="ISO27K">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="43">
+            <!-- <td>43</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="44">
+            <!-- <td>44</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="45">
+            <!-- <td>45</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="46">
+            <!-- <td>46</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="47">
+            <!-- <td>47</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="48">
+            <!-- <td>48</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="49">
+            <!-- <td>49</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="50">
+            <!-- <td>50</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="51">
+            <!-- <td>51</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="52">
+            <!-- <td>52</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="53">
+            <!-- <td>53</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="54">
+            <!-- <td>54</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="55">
+            <!-- <td>55</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="56">
+            <!-- <td>56</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="57">
+            <!-- <td>57</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="58">
+            <!-- <td>58</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="59">
+            <!-- <td>59</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="60">
+            <!-- <td>60</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="61">
+            <!-- <td>61</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="62">
+            <!-- <td>62</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST800-53">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="63">
+            <!-- <td>63</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="64">
+            <!-- <td>64</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="65">
+            <!-- <td>65</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="66">
+            <!-- <td>66</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="67">
+            <!-- <td>67</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="68">
+            <!-- <td>68</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="69">
+            <!-- <td>69</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="70">
+            <!-- <td>70</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="71">
+            <!-- <td>71</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="72">
+            <!-- <td>72</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="PCI">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="73">
+            <!-- <td>73</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="74">
+            <!-- <td>74</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="75">
+            <!-- <td>75</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="76">
+            <!-- <td>76</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="77">
+            <!-- <td>77</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="78">
+            <!-- <td>78</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="79">
+            <!-- <td>79</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="80">
+            <!-- <td>80</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="81">
+            <!-- <td>81</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="82">
+            <!-- <td>82</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have private eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="SOC2">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="83">
+            <!-- <td>83</td> -->
+            <td>Ensure no users have 2FA disabled</td>
+            <td>The organization shouldn't have users with 2FA disabled.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_2fa_disable_users eq false</td>
+          </tr>
+          
+          <tr num="84">
+            <!-- <td>84</td> -->
+            <td>Ensure 2FA is required for the organization</td>
+            <td>The organization should enforce 2FA for all users.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have two_factor_requirement_enabled eq true</td>
+          </tr>
+          
+          <tr num="85">
+            <!-- <td>85</td> -->
+            <td>Do not allow admin users to bypass branch protection rules</td>
+            <td>Admin users should not be allowed to bypass branch protection rules.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have branch_protection_rule_bypass_admin_user eq false</td>
+          </tr>
+          
+          <tr num="86">
+            <!-- <td>86</td> -->
+            <td>Ensure no gists are public</td>
+            <td>The organization shouldn't have any public gists.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have public_gists_count eq 0</td>
+          </tr>
+          
+          <tr num="87">
+            <!-- <td>87</td> -->
+            <td>Ensure branch protection rules prohibit deletion of the default branch</td>
+            <td>The organization should have branch protection rules configured which prevent the default branch from being deleted.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_deletions eq false</td>
+          </tr>
+          
+          <tr num="88">
+            <!-- <td>88</td> -->
+            <td>Disable force-pushing on the default branch</td>
+            <td>Force-pushing should not be enabled on the default branch.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository should have default_branch.protection_rule.allow_force_pushes eq false</td>
+          </tr>
+          
+          <tr num="89">
+            <!-- <td>89</td> -->
+            <td>Ensure no administrators are inactive</td>
+            <td>The organization should have no inactive administrators (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_admin_users eq false</td>
+          </tr>
+          
+          <tr num="90">
+            <!-- <td>90</td> -->
+            <td>Ensure there are no inactive users in an organization</td>
+            <td>The organization should have no inactive users (no activity for over 30 days).</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Organization should have has_inactive_users eq false</td>
+          </tr>
+          
+          <tr num="91">
+            <!-- <td>91</td> -->
+            <td>Ensure private repositories do not have any forks</td>
+            <td>A private repository shouldn't have any forks.</td>
+            <td>
+            
+              Github<br>
+            
+            </td>
+            <td class="code">Repository where private eq true should have fork_count eq 0</td>
+          </tr>
+          
+          <tr num="92">
+            <!-- <td>92</td> -->
+            <td>Ensure repositories are set to private</td>
+            <td>The repository should be set to private.</td>
             <td>
             
               Github<br>

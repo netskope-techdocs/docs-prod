@@ -127,6 +127,38 @@ h1 {position: fixed; top: 75}
               <span class="rule_name">Salesforce Best Practices</span>
             </li>
             
+            <li class="rule_key" data-profile-name="CCM">
+              <span class="rule_name">CSA-CCM v4.0 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="GDPR">
+              <span class="rule_name">GDPR 2016/679 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="HIPAA">
+              <span class="rule_name">HIPAA 1996 (SDFC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="ISO27K">
+              <span class="rule_name">ISO 27002 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST">
+              <span class="rule_name">NIST-CSF v1.1 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST800-53">
+              <span class="rule_name">NIST 800-53 r4 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="PCI">
+              <span class="rule_name">PCI-DSS v3.0 (SFDC)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="SOC2">
+              <span class="rule_name">SOC2-TSC 2017 (SFDC)</span>
+            </li>
+            
             <!--
             <li class="rule_key" data-profile-name="ALL">
               <span class="rule_name">All Rules</span>
@@ -163,7 +195,19 @@ h1 {position: fixed; top: 75}
           
           <tr num="2">
             <!-- <td>2</td> -->
-            <td>Certificate key size is greater than 2048 bits</td>
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
             
@@ -173,8 +217,20 @@ h1 {position: fixed; top: 75}
             <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
           </tr>
           
-          <tr num="3">
-            <!-- <td>3</td> -->
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Connected app is not granted full access to all data accessible by the logged-in user</td>
+            <td>Ensure that no connected apps assigned the 'Full access' (full) OAuth scope. This scope allows access to all data accessible by the logged-in user, and encompasses all other scopes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">ConnectedApp should not have any oauthConfig . scopes with [ scope eq "Full" ]</td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
             <td>CORS allowlist origins configured</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -185,8 +241,8 @@ h1 {position: fixed; top: 75}
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="4">
-            <!-- <td>4</td> -->
+          <tr num="6">
+            <!-- <td>6</td> -->
             <td>Cross-Site Request Forgery (CSRF) is on by default</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
             <td>
@@ -197,8 +253,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="5">
-            <!-- <td>5</td> -->
+          <tr num="7">
+            <!-- <td>7</td> -->
             <td>Disable caching and autocomplete on login page</td>
             <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
             <td>
@@ -209,8 +265,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
           </tr>
           
-          <tr num="6">
-            <!-- <td>6</td> -->
+          <tr num="8">
+            <!-- <td>8</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -221,8 +277,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="7">
-            <!-- <td>7</td> -->
+          <tr num="9">
+            <!-- <td>9</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -233,8 +289,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="8">
-            <!-- <td>8</td> -->
+          <tr num="10">
+            <!-- <td>10</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -245,8 +301,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="9">
-            <!-- <td>9</td> -->
+          <tr num="11">
+            <!-- <td>11</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -257,8 +313,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="10">
-            <!-- <td>10</td> -->
+          <tr num="12">
+            <!-- <td>12</td> -->
             <td>Protect against content sniffing</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -269,8 +325,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="11">
-            <!-- <td>11</td> -->
+          <tr num="13">
+            <!-- <td>13</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -281,8 +337,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="12">
-            <!-- <td>12</td> -->
+          <tr num="14">
+            <!-- <td>14</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -290,11 +346,11 @@ h1 {position: fixed; top: 75}
               CRM<br>
             
             </td>
-            <td class="code">SharingSettings should have enableSecureGuestAccess eq true</td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="13">
-            <!-- <td>13</td> -->
+          <tr num="15">
+            <!-- <td>15</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -305,8 +361,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="14">
-            <!-- <td>14</td> -->
+          <tr num="16">
+            <!-- <td>16</td> -->
             <td>Protect against XSS</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -317,9 +373,9 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="15">
-            <!-- <td>15</td> -->
-            <td>No expired certificates</td>
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>No certificates are expired</td>
             <td>Ensure that no certificates have expired</td>
             <td>
             
@@ -329,8 +385,8 @@ h1 {position: fixed; top: 75}
             <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
           </tr>
           
-          <tr num="16">
-            <!-- <td>16</td> -->
+          <tr num="18">
+            <!-- <td>18</td> -->
             <td>File upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -338,23 +394,35 @@ h1 {position: fixed; top: 75}
               CRM<br>
             
             </td>
-            <td class="code">Organization should have FileUploadAndDownloadSecuritySettings len() gt 0 </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="17">
-            <!-- <td>17</td> -->
-            <td>Force logout on session timeout</td>
-            <td>Log users out after the session timeout period has elapsed.</td>
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
             
               CRM<br>
             
             </td>
-            <td class="code">SessionSettings should have forceLogoutOnSessionTimeout eq true </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="18">
-            <!-- <td>18</td> -->
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
             <td>IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -365,8 +433,8 @@ h1 {position: fixed; top: 75}
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="19">
-            <!-- <td>19</td> -->
+          <tr num="22">
+            <!-- <td>22</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -377,8 +445,8 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="20">
-            <!-- <td>20</td> -->
+          <tr num="23">
+            <!-- <td>23</td> -->
             <td>Passwords expire in 90 days</td>
             <td>Ensure that users are required to change their password after 90 days.</td>
             <td>
@@ -389,8 +457,8 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="21">
-            <!-- <td>21</td> -->
+          <tr num="24">
+            <!-- <td>24</td> -->
             <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
             <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
             <td>
@@ -401,20 +469,20 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="22">
-            <!-- <td>22</td> -->
-            <td>Password lockout interval</td>
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
             
               CRM<br>
             
             </td>
-            <td class="code">PasswordPolicies should have lockoutInterval in ("FifteenMinutes", "ThirtyMinutes") </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="23">
-            <!-- <td>23</td> -->
+          <tr num="26">
+            <!-- <td>26</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
             <td>
@@ -425,8 +493,8 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="24">
-            <!-- <td>24</td> -->
+          <tr num="27">
+            <!-- <td>27</td> -->
             <td>Obscure secret answers for password resets</td>
             <td>Hide answers to password reset security questions as the user types.</td>
             <td>
@@ -437,8 +505,8 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
           </tr>
           
-          <tr num="25">
-            <!-- <td>25</td> -->
+          <tr num="28">
+            <!-- <td>28</td> -->
             <td>Password hint question should not contain the password.</td>
             <td>Do not allow the answer to the password hint question to contain the password itself.</td>
             <td>
@@ -449,8 +517,8 @@ h1 {position: fixed; top: 75}
             <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
           </tr>
           
-          <tr num="26">
-            <!-- <td>26</td> -->
+          <tr num="29">
+            <!-- <td>29</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -461,8 +529,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="27">
-            <!-- <td>27</td> -->
+          <tr num="30">
+            <!-- <td>30</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -473,8 +541,8 @@ h1 {position: fixed; top: 75}
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
           </tr>
           
-          <tr num="28">
-            <!-- <td>28</td> -->
+          <tr num="31">
+            <!-- <td>31</td> -->
             <td>Warn users when they are redirected outside of Salesforce</td>
             <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
             <td>
@@ -485,8 +553,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have redirectionWarning eq true</td>
           </tr>
           
-          <tr num="29">
-            <!-- <td>29</td> -->
+          <tr num="32">
+            <!-- <td>32</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting</td>
             <td>
@@ -497,8 +565,8 @@ h1 {position: fixed; top: 75}
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="30">
-            <!-- <td>30</td> -->
+          <tr num="33">
+            <!-- <td>33</td> -->
             <td>Require email confirmations for email address changes</td>
             <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
             <td>
@@ -509,8 +577,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have canConfirmEmailChangeInLightningCommunities eq true</td>
           </tr>
           
-          <tr num="31">
-            <!-- <td>31</td> -->
+          <tr num="34">
+            <!-- <td>34</td> -->
             <td>Require secure connections (HTTPS)</td>
             <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
             <td>
@@ -521,9 +589,9 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have requireHttps eq true</td>
           </tr>
           
-          <tr num="32">
-            <!-- <td>32</td> -->
-            <td>Require HTTPS for Forcecom sites</td>
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
             <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
             <td>
             
@@ -533,8 +601,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
           </tr>
           
-          <tr num="33">
-            <!-- <td>33</td> -->
+          <tr num="36">
+            <!-- <td>36</td> -->
             <td>Require secure connections (HTTPS) for third-party domains</td>
             <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
             <td>
@@ -545,8 +613,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
           </tr>
           
-          <tr num="34">
-            <!-- <td>34</td> -->
+          <tr num="37">
+            <!-- <td>37</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -557,8 +625,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="35">
-            <!-- <td>35</td> -->
+          <tr num="38">
+            <!-- <td>38</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -569,8 +637,8 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="36">
-            <!-- <td>36</td> -->
+          <tr num="39">
+            <!-- <td>39</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -581,8 +649,3264 @@ h1 {position: fixed; top: 75}
             <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
           </tr>
           
-          <tr num="37">
-            <!-- <td>37</td> -->
+          <tr num="40">
+            <!-- <td>40</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="CCM">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="41">
+            <!-- <td>41</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="42">
+            <!-- <td>42</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="43">
+            <!-- <td>43</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="44">
+            <!-- <td>44</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="45">
+            <!-- <td>45</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="46">
+            <!-- <td>46</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="47">
+            <!-- <td>47</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="48">
+            <!-- <td>48</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="49">
+            <!-- <td>49</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="50">
+            <!-- <td>50</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="51">
+            <!-- <td>51</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="52">
+            <!-- <td>52</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="53">
+            <!-- <td>53</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="54">
+            <!-- <td>54</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="55">
+            <!-- <td>55</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="56">
+            <!-- <td>56</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="57">
+            <!-- <td>57</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="58">
+            <!-- <td>58</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="59">
+            <!-- <td>59</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="60">
+            <!-- <td>60</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="61">
+            <!-- <td>61</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="62">
+            <!-- <td>62</td> -->
+            <td>Password hint question should not contain the password.</td>
+            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
+          </tr>
+          
+          <tr num="63">
+            <!-- <td>63</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="64">
+            <!-- <td>64</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="65">
+            <!-- <td>65</td> -->
+            <td>Warn users when they are redirected outside of Salesforce</td>
+            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have redirectionWarning eq true</td>
+          </tr>
+          
+          <tr num="66">
+            <!-- <td>66</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="67">
+            <!-- <td>67</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="68">
+            <!-- <td>68</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="69">
+            <!-- <td>69</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="70">
+            <!-- <td>70</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="71">
+            <!-- <td>71</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="72">
+            <!-- <td>72</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="GDPR">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="73">
+            <!-- <td>73</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="74">
+            <!-- <td>74</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="75">
+            <!-- <td>75</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="76">
+            <!-- <td>76</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="77">
+            <!-- <td>77</td> -->
+            <td>Disable caching and autocomplete on login page</td>
+            <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
+          </tr>
+          
+          <tr num="78">
+            <!-- <td>78</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="79">
+            <!-- <td>79</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="80">
+            <!-- <td>80</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="81">
+            <!-- <td>81</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="82">
+            <!-- <td>82</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="83">
+            <!-- <td>83</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="84">
+            <!-- <td>84</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="85">
+            <!-- <td>85</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="86">
+            <!-- <td>86</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="87">
+            <!-- <td>87</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="88">
+            <!-- <td>88</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="89">
+            <!-- <td>89</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="90">
+            <!-- <td>90</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="91">
+            <!-- <td>91</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="92">
+            <!-- <td>92</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="93">
+            <!-- <td>93</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="94">
+            <!-- <td>94</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="95">
+            <!-- <td>95</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="96">
+            <!-- <td>96</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="97">
+            <!-- <td>97</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="98">
+            <!-- <td>98</td> -->
+            <td>Password hint question should not contain the password.</td>
+            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
+          </tr>
+          
+          <tr num="99">
+            <!-- <td>99</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="100">
+            <!-- <td>100</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="101">
+            <!-- <td>101</td> -->
+            <td>Warn users when they are redirected outside of Salesforce</td>
+            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have redirectionWarning eq true</td>
+          </tr>
+          
+          <tr num="102">
+            <!-- <td>102</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="103">
+            <!-- <td>103</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="104">
+            <!-- <td>104</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="105">
+            <!-- <td>105</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="106">
+            <!-- <td>106</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="107">
+            <!-- <td>107</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="108">
+            <!-- <td>108</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="109">
+            <!-- <td>109</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="HIPAA">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="110">
+            <!-- <td>110</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="111">
+            <!-- <td>111</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="112">
+            <!-- <td>112</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="113">
+            <!-- <td>113</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="114">
+            <!-- <td>114</td> -->
+            <td>Disable caching and autocomplete on login page</td>
+            <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
+          </tr>
+          
+          <tr num="115">
+            <!-- <td>115</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="116">
+            <!-- <td>116</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="117">
+            <!-- <td>117</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="118">
+            <!-- <td>118</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="119">
+            <!-- <td>119</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="120">
+            <!-- <td>120</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="121">
+            <!-- <td>121</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="122">
+            <!-- <td>122</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="123">
+            <!-- <td>123</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="124">
+            <!-- <td>124</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="125">
+            <!-- <td>125</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="126">
+            <!-- <td>126</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="127">
+            <!-- <td>127</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="128">
+            <!-- <td>128</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="129">
+            <!-- <td>129</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="130">
+            <!-- <td>130</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="131">
+            <!-- <td>131</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="132">
+            <!-- <td>132</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="133">
+            <!-- <td>133</td> -->
+            <td>Password hint question should not contain the password.</td>
+            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
+          </tr>
+          
+          <tr num="134">
+            <!-- <td>134</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="135">
+            <!-- <td>135</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="136">
+            <!-- <td>136</td> -->
+            <td>Warn users when they are redirected outside of Salesforce</td>
+            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have redirectionWarning eq true</td>
+          </tr>
+          
+          <tr num="137">
+            <!-- <td>137</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="138">
+            <!-- <td>138</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="139">
+            <!-- <td>139</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="140">
+            <!-- <td>140</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="141">
+            <!-- <td>141</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="142">
+            <!-- <td>142</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="143">
+            <!-- <td>143</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="ISO27K">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="144">
+            <!-- <td>144</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="145">
+            <!-- <td>145</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="146">
+            <!-- <td>146</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="147">
+            <!-- <td>147</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="148">
+            <!-- <td>148</td> -->
+            <td>Disable caching and autocomplete on login page</td>
+            <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
+          </tr>
+          
+          <tr num="149">
+            <!-- <td>149</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="150">
+            <!-- <td>150</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="151">
+            <!-- <td>151</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="152">
+            <!-- <td>152</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="153">
+            <!-- <td>153</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="154">
+            <!-- <td>154</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="155">
+            <!-- <td>155</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="156">
+            <!-- <td>156</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="157">
+            <!-- <td>157</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="158">
+            <!-- <td>158</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="159">
+            <!-- <td>159</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="160">
+            <!-- <td>160</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="161">
+            <!-- <td>161</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="162">
+            <!-- <td>162</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="163">
+            <!-- <td>163</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="164">
+            <!-- <td>164</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="165">
+            <!-- <td>165</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="166">
+            <!-- <td>166</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="167">
+            <!-- <td>167</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="168">
+            <!-- <td>168</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="169">
+            <!-- <td>169</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="170">
+            <!-- <td>170</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="171">
+            <!-- <td>171</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="172">
+            <!-- <td>172</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="173">
+            <!-- <td>173</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="174">
+            <!-- <td>174</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="175">
+            <!-- <td>175</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="176">
+            <!-- <td>176</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="177">
+            <!-- <td>177</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="178">
+            <!-- <td>178</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="179">
+            <!-- <td>179</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="180">
+            <!-- <td>180</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="181">
+            <!-- <td>181</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="182">
+            <!-- <td>182</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="183">
+            <!-- <td>183</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="184">
+            <!-- <td>184</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="185">
+            <!-- <td>185</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="186">
+            <!-- <td>186</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="187">
+            <!-- <td>187</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="188">
+            <!-- <td>188</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="189">
+            <!-- <td>189</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="190">
+            <!-- <td>190</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="191">
+            <!-- <td>191</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="192">
+            <!-- <td>192</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="193">
+            <!-- <td>193</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="194">
+            <!-- <td>194</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="195">
+            <!-- <td>195</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="196">
+            <!-- <td>196</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="197">
+            <!-- <td>197</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="198">
+            <!-- <td>198</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="199">
+            <!-- <td>199</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="200">
+            <!-- <td>200</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="201">
+            <!-- <td>201</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="202">
+            <!-- <td>202</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="203">
+            <!-- <td>203</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="204">
+            <!-- <td>204</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="205">
+            <!-- <td>205</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST800-53">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="206">
+            <!-- <td>206</td> -->
+            <td>Enable admin login as any user</td>
+            <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SecuritySettings should have enableAdminLoginAsAnyUser eq true </td>
+          </tr>
+          
+          <tr num="207">
+            <!-- <td>207</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="208">
+            <!-- <td>208</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="209">
+            <!-- <td>209</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="210">
+            <!-- <td>210</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="211">
+            <!-- <td>211</td> -->
+            <td>Disable caching and autocomplete on login page</td>
+            <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
+          </tr>
+          
+          <tr num="212">
+            <!-- <td>212</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="213">
+            <!-- <td>213</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="214">
+            <!-- <td>214</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="215">
+            <!-- <td>215</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="216">
+            <!-- <td>216</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="217">
+            <!-- <td>217</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="218">
+            <!-- <td>218</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="219">
+            <!-- <td>219</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="220">
+            <!-- <td>220</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="221">
+            <!-- <td>221</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="222">
+            <!-- <td>222</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="223">
+            <!-- <td>223</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="224">
+            <!-- <td>224</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="225">
+            <!-- <td>225</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="226">
+            <!-- <td>226</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="227">
+            <!-- <td>227</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="228">
+            <!-- <td>228</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="229">
+            <!-- <td>229</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="230">
+            <!-- <td>230</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="231">
+            <!-- <td>231</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="232">
+            <!-- <td>232</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="233">
+            <!-- <td>233</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="234">
+            <!-- <td>234</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="235">
+            <!-- <td>235</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="236">
+            <!-- <td>236</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="237">
+            <!-- <td>237</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="238">
+            <!-- <td>238</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="239">
+            <!-- <td>239</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="240">
+            <!-- <td>240</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="PCI">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="241">
+            <!-- <td>241</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="242">
+            <!-- <td>242</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="243">
+            <!-- <td>243</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="244">
+            <!-- <td>244</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="245">
+            <!-- <td>245</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="246">
+            <!-- <td>246</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="247">
+            <!-- <td>247</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="248">
+            <!-- <td>248</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="249">
+            <!-- <td>249</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="250">
+            <!-- <td>250</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="251">
+            <!-- <td>251</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="252">
+            <!-- <td>252</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="253">
+            <!-- <td>253</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="254">
+            <!-- <td>254</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="255">
+            <!-- <td>255</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="256">
+            <!-- <td>256</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="257">
+            <!-- <td>257</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="258">
+            <!-- <td>258</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="259">
+            <!-- <td>259</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="260">
+            <!-- <td>260</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="261">
+            <!-- <td>261</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="262">
+            <!-- <td>262</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="263">
+            <!-- <td>263</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="264">
+            <!-- <td>264</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="265">
+            <!-- <td>265</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="266">
+            <!-- <td>266</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="267">
+            <!-- <td>267</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="268">
+            <!-- <td>268</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="269">
+            <!-- <td>269</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="270">
+            <!-- <td>270</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="271">
+            <!-- <td>271</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="272">
+            <!-- <td>272</td> -->
+            <td>Single sign-on is enabled</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="SOC2">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="273">
+            <!-- <td>273</td> -->
+            <td>Certificate keys expire within 1 year</td>
+            <td>Ensure that all certificate keys expire within 1 year.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+          </tr>
+          
+          <tr num="274">
+            <!-- <td>274</td> -->
+            <td>Certificate key size is at least 2048 bits</td>
+            <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ keySize gte 2048 ] </td>
+          </tr>
+          
+          <tr num="275">
+            <!-- <td>275</td> -->
+            <td>CORS allowlist origins configured</td>
+            <td>Ensure that there are origins configured in the CORS allowlist</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
+          </tr>
+          
+          <tr num="276">
+            <!-- <td>276</td> -->
+            <td>Cross-Site Request Forgery (CSRF) is on by default</td>
+            <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages is enabled</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
+          </tr>
+          
+          <tr num="277">
+            <!-- <td>277</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
+          </tr>
+          
+          <tr num="278">
+            <!-- <td>278</td> -->
+            <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
+            <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
+          </tr>
+          
+          <tr num="279">
+            <!-- <td>279</td> -->
+            <td>Enable clickjack protection for non-setup Salesforce pages</td>
+            <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
+          </tr>
+          
+          <tr num="280">
+            <!-- <td>280</td> -->
+            <td>Enable clickjack protection for setup Salesforce pages</td>
+            <td>Clickjack protection for setup Salesforce pages is enabled.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
+          </tr>
+          
+          <tr num="281">
+            <!-- <td>281</td> -->
+            <td>Protect against content sniffing</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="282">
+            <!-- <td>282</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="283">
+            <!-- <td>283</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="284">
+            <!-- <td>284</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="285">
+            <!-- <td>285</td> -->
+            <td>Protect against XSS</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="286">
+            <!-- <td>286</td> -->
+            <td>No certificates are expired</td>
+            <td>Ensure that no certificates have expired</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+          </tr>
+          
+          <tr num="287">
+            <!-- <td>287</td> -->
+            <td>File upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="288">
+            <!-- <td>288</td> -->
+            <td>Display a session time out warning and force re-login upon session timeout</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="289">
+            <!-- <td>289</td> -->
+            <td>Limit the number failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="290">
+            <!-- <td>290</td> -->
+            <td>IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="291">
+            <!-- <td>291</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="292">
+            <!-- <td>292</td> -->
+            <td>Passwords expire in 90 days</td>
+            <td>Ensure that users are required to change their password after 90 days.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="293">
+            <!-- <td>293</td> -->
+            <td>Ensure that users do not reuse any of their previous 5 passwords.</td>
+            <td>The number of previous passwords saved for users to ensure that new passwords are unique.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="294">
+            <!-- <td>294</td> -->
+            <td>Password lockout interval is set to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="295">
+            <!-- <td>295</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="296">
+            <!-- <td>296</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+          </tr>
+          
+          <tr num="297">
+            <!-- <td>297</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="298">
+            <!-- <td>298</td> -->
+            <td>Require secure connections (HTTPS)</td>
+            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttps eq true</td>
+          </tr>
+          
+          <tr num="299">
+            <!-- <td>299</td> -->
+            <td>Require secure connections (HTTPS) for Forcecom sites</td>
+            <td>Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have hstsOnForcecomSites eq true</td>
+          </tr>
+          
+          <tr num="300">
+            <!-- <td>300</td> -->
+            <td>Require secure connections (HTTPS) for third-party domains</td>
+            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableUpgradeInsecureRequests eq true</td>
+          </tr>
+          
+          <tr num="301">
+            <!-- <td>301</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="302">
+            <!-- <td>302</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="303">
+            <!-- <td>303</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="304">
+            <!-- <td>304</td> -->
             <td>Single sign-on is enabled</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication </td>
             <td>

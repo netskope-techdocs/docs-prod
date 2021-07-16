@@ -211,6 +211,9 @@
         <li class="entity_key" data-entity-name="KMSKey">
           <span class="entity_name">KMSKey</span>
         </li>
+        <li class="entity_key" data-entity-name="AccessAnalyzer">
+          <span class="entity_name">AccessAnalyzer</span>
+        </li>
         
       </ul>
       
@@ -585,7 +588,7 @@
           </tr>
           
         </table>
-      
+        
         <table class="entity_table" data-entity-name="EC2Instance">
           <tr>
             <th>Attribute</th>
@@ -2472,7 +2475,97 @@
           </tr>
           
         </table>
-      
+        <table class="entity_table" data-entity-name="AccessAnalyzer">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the analyzer</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the analyzer</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Function</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Function</td>
+          </tr>
+          
+          <tr>
+            <td>CreatedAt</td>
+            <td>number</td>
+            <td>A timestamp for the time at which the analyzer was created.</td>
+          </tr>
+          
+          <tr>
+            <td>LastResourceAnalyzed</td>
+            <td>string</td>
+            <td>The time at which the most recently analyzed resource was analyzed</td>
+          </tr>
+          
+          <tr>
+            <td>LastResourceAnalyzedAt</td>
+            <td>number</td>
+            <td>The time at which the most recently analyzed resource was analyzed</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>The status of the analyzer. (Creating|Active|Disabled|Failed)</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>The type (zone of trust) of the analyzer. (ACCOUNT|ORGANIZATION).</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags added to the analyzer</td>
+          </tr>
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+        </table>
         <table class="entity_table" data-entity-name="MetricAlarm">
           <tr>
             <th>Attribute</th>
