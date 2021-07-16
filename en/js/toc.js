@@ -216,13 +216,11 @@ var toc = [{
 "url": "category-definitions.html",
 "text": "Category Definitions",
 "class": "topic-link section"
-,
-"children": [
+},
 {
 "url": "dynamic-classification.html",
 "text": "Dynamic Classification",
 "class": "topic-link section"
-}]
 },
 {
 "url": "skopeit-query-language.html",
@@ -735,6 +733,11 @@ var toc = [{
 }]
 },
 {
+"url": "aws-setup-faqs.html",
+"text": "AWS Setup FAQs",
+"class": "topic-link section"
+},
+{
 "url": "setting-up-aws-instances-using-old-ui.html",
 "text": "Setting Up AWS Instances using Old UI",
 "class": "topic-link section"
@@ -944,6 +947,38 @@ var toc = [{
 "url": "migrate-existing-google-cloud-platform-instances.html",
 "text": "Migrate Existing Google Cloud Platform Instances",
 "class": "topic-link section"
+},
+{
+"url": "configure-google-cloud-storage-for-dlp-scanning-and-threat-protection.html",
+"text": "Configure Google Cloud Storage for DLP Scanning and Threat Protection",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configuring-a-google-organization-resource-for-storage-scan.html",
+"text": "Configuring a Google Organization resource for Storage Scan",
+"class": "topic-link section"
+},
+{
+"url": "configuring-a-google-folder-resource-for-storage-scan.html",
+"text": "Configuring a Google Folder resource for Storage Scan",
+"class": "topic-link section"
+},
+{
+"url": "configuring-a-google-project-resource-for-storage-scan.html",
+"text": "Configuring a Google Project resource for Storage Scan",
+"class": "topic-link section"
+}]
+},
+{
+"url": "setting-up-policies-to-scan-google-cloud-storage.html",
+"text": "Setting up Policies to scan Google Cloud Storage",
+"class": "topic-link section"
+},
+{
+"url": "sample-granular-policies.html",
+"text": "Sample Granular Policies",
+"class": "topic-link section"
 }]
 },
 {
@@ -1130,6 +1165,16 @@ var toc = [{
 "text": "Add the Azure Subscription in Netskope API-enabled Protection",
 "class": "topic-link section"
 }]
+},
+{
+"url": "limit-permissions-for-forensics-to-azure-storage-account.html",
+"text": "Limit permissions for Forensics to Azure Storage Account",
+"class": "topic-link section"
+},
+{
+"url": "bulk-setup-of-multiple-azure-subscriptions-in-netskope-tenant.html",
+"text": "Bulk setup of multiple Azure subscriptions in Netskope tenant",
+"class": "topic-link section"
 }]
 },
 {
@@ -3712,6 +3757,13 @@ var toc = [{
 "url": "add-a-policy-for-ssl-decryption.html",
 "text": "Add a Policy for SSL Decryption",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "app-suite-details.html",
+"text": "App Suite Details",
+"class": "topic-link section"
+}]
 },
 {
 "url": "add-new-network-location-for-ssl-decryption.html",
@@ -4255,8 +4307,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "predefined-web-category-definitions.html",
-"text": "Predefined Web Category Definitions",
+"url": "category-definitions-310264.html",
+"text": "Category Definitions",
 "class": "topic-link section"
 }]
 },
@@ -4561,8 +4613,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-intune.html",
-"text": "Deploy Netskope Client with Intune",
+"url": "deploy-netskope-client-with-microsoft-endpoint-manager.html",
+"text": "Deploy Netskope Client with Microsoft Endpoint Manager",
 "class": "topic-link section"
 },
 {
@@ -5781,18 +5833,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-adapters.html",
-"text": "About Netskope Adapters",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "scim-based-user-provisioning.html",
-"text": "SCIM-Based User Provisioning",
-"class": "topic-link section"
-}]
-},
-{
 "url": "install-and-configure-the-netskope-adapters.html",
 "text": "Install and Configure the Netskope Adapters",
 "class": "topic-link section"
@@ -5804,13 +5844,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-dns-connector.html",
-"text": "Configure DNS Connector",
+"url": "configure-ad-connector.html",
+"text": "Configure AD Connector",
 "class": "topic-link section"
 },
 {
-"url": "configure-ad-connector.html",
-"text": "Configure AD Connector",
+"url": "configure-dns-connector.html",
+"text": "Configure DNS Connector",
 "class": "topic-link section"
 }]
 },
@@ -5822,6 +5862,11 @@ var toc = [{
 {
 "url": "upgrade-the-netskope-adapters.html",
 "text": "Upgrade the Netskope Adapters",
+"class": "topic-link section"
+},
+{
+"url": "scim-based-user-provisioning.html",
+"text": "SCIM-Based User Provisioning",
 "class": "topic-link section"
 },
 {
@@ -6890,19 +6935,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-86-0-0.html",
-"text": "Netskope Release Notes Version 86.0.0",
+"url": "netskope-release-notes-version-87-0-0.html",
+"text": "Netskope Release Notes Version 87.0.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
 "url": "new-features-and-enhancements.html",
 "text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "new-resource-types-supported-in-continuous-security-assessment.html",
-"text": "New Resource Types Supported in Continuous Security Assessment",
 "class": "topic-link section"
 },
 {
@@ -6913,11 +6953,6 @@ var toc = [{
 {
 "url": "fixed-issues.html",
 "text": "Fixed Issues",
-"class": "topic-link section"
-},
-{
-"url": "new-product-available---netskope-saas-security-posture-management.html",
-"text": "New Product Available - Netskope SaaS Security Posture Management",
 "class": "topic-link section"
 }]
 },
