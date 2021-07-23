@@ -260,8 +260,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis.html",
-"text": "Netskope REST APIs",
+"url": "netskope-platform-rest-apis.html",
+"text": "Netskope Platform REST APIs",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -4343,6 +4343,11 @@ var toc = [{
 "text": "Create a Page Events Custom Report",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configuring-cli-based-tools-and-development-frameworks-to-work-with-netskope-ssl-interception.html",
+"text": "Configuring CLI-based Tools and Development Frameworks to work with Netskope SSL Interception",
+"class": "topic-link section"
 }]
 },
 {
@@ -4820,14 +4825,48 @@ var toc = [{
 }]
 },
 {
+"url": "reverse-proxy-as-a-service-with-google-workspaces.html",
+"text": "Reverse Proxy as a Service with Google Workspaces",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "reverse-proxy-as-a-service-with-google-workspaces-309538.html",
+"text": "Reverse Proxy as a Service with Google Workspaces",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-raas-app-in-google.html",
+"text": "Create a RaaS App in Google",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-a-raas-app-in-google-309576.html",
+"text": "Create a RaaS App in Google",
+"class": "topic-link section"
+},
+{
+"url": "create-a-raas-account-in-netskope.html",
+"text": "Create a RaaS Account in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-user-access-in-google.html",
+"text": "Configure User Access in Google",
+"class": "topic-link section"
+}]
+},
+{
 "url": "saml-reverse-proxy-with-okta.html",
 "text": "SAML Reverse Proxy with Okta",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-reverse-proxy-with-okta-overview.html",
-"text": "Netskope Reverse Proxy with Okta Overview",
+"url": "netskope-reverse-proxy-with-okta.html",
+"text": "Netskope Reverse Proxy with Okta",
 "class": "topic-link section"
 ,
 "children": [
@@ -5135,8 +5174,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "integrate-netskope-ipsec-with-velocloud-orchestrator.html",
-"text": "Integrate Netskope IPSec with VeloCloud Orchestrator",
+"url": "netskope-ipsec-with-velocloud-orchestrator.html",
+"text": "Netskope IPSec with VeloCloud Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -5152,13 +5191,13 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-ipsec-with-versa-director.html",
-"text": "Integrate Netskope IPSec with Versa Director",
+"url": "netskope-ipsec-with-versa-director.html",
+"text": "Netskope IPSec with Versa Director",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-ipsec-with-versa-director.html",
+"url": "netskope-ipsec-with-versa-director-223744.html",
 "text": "Netskope IPSec with Versa Director",
 "class": "topic-link section"
 },
@@ -5179,18 +5218,18 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-ipsec-with-viptela-vedge.html",
-"text": "Integrate Netskope IPSec with Viptela vEdge",
+"url": "configure-netskope-ipsec-with-viptela-vedge.html",
+"text": "Configure Netskope IPSec with Viptela vEdge",
 "class": "topic-link section"
 },
 {
-"url": "integrate-netskope-ipsec-with-fortinet-fortigate.html",
-"text": "Integrate Netskope IPSec with Fortinet FortiGate",
+"url": "netskope-ipsec-with-fortinet-fortigate.html",
+"text": "Netskope IPSec with Fortinet FortiGate",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "integrate-netskope-ipsec-with-fortinet-fortigate-305794.html",
+"url": "integrate-netskope-ipsec-with-fortinet-fortigate.html",
 "text": "Integrate Netskope IPSec with Fortinet FortiGate",
 "class": "topic-link section"
 },
@@ -5221,8 +5260,8 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-ipsec-with-silver-peak-edgeconnect.html",
-"text": "Integrate Netskope IPSec with Silver Peak EdgeConnect",
+"url": "netskope-ipsec-with-silver-peak-edgeconnect.html",
+"text": "Netskope IPSec with Silver Peak EdgeConnect",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -5282,8 +5321,8 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html",
-"text": "Integrate Netskope Forward Proxy over IPSec\/GRE with Azure AD SAML Auth",
+"url": "netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html",
+"text": "Netskope Forward Proxy over IPSec\/GRE with Azure AD SAML Auth",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -5408,13 +5447,13 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-gre-with-palo-alto-networks-ngfw.html",
-"text": "Integrate Netskope GRE with Palo Alto Networks NGFW",
+"url": "netskope-gre-with-palo-alto-networks-ngfw.html",
+"text": "Netskope GRE with Palo Alto Networks NGFW",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-gre-with-palo-alto-networks-ngfw.html",
+"url": "netskope-gre-with-palo-alto-networks-ngfw-234580.html",
 "text": "Netskope GRE with Palo Alto Networks NGFW",
 "class": "topic-link section"
 },
@@ -5447,14 +5486,14 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "integrate-netskope-reverse-proxy-with-okta.html",
-"text": "Integrate Netskope Reverse Proxy with Okta",
+"url": "netskope-reverse-proxy-with-okta-118229.html",
+"text": "Netskope Reverse Proxy with Okta",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-reverse-proxy-with-okta-overview-118265.html",
-"text": "Netskope Reverse Proxy with Okta Overview",
+"url": "netskope-reverse-proxy-with-okta-118265.html",
+"text": "Netskope Reverse Proxy with Okta",
 "class": "topic-link section"
 ,
 "children": [
@@ -5479,6 +5518,72 @@ var toc = [{
 "url": "integrate-saml-reverse-proxy-for-google-chromebook.html",
 "text": "Integrate SAML Reverse Proxy for Google Chromebook",
 "class": "topic-link section"
+},
+{
+"url": "reverse-proxy-as-a-service-with-google-workspaces-2-309517.html",
+"text": "Reverse Proxy as a Service with Google Workspaces",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "reverse-proxy-as-a-service-with-google-workspaces-3-309538.html",
+"text": "Reverse Proxy as a Service with Google Workspaces",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-raas-app-in-google-2-309539.html",
+"text": "Create a RaaS App in Google",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-a-raas-app-in-google-3-309576.html",
+"text": "Create a RaaS App in Google",
+"class": "topic-link section"
+},
+{
+"url": "create-a-raas-account-in-netskope-309577.html",
+"text": "Create a RaaS Account in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-user-access-in-google-309578.html",
+"text": "Configure User Access in Google",
+"class": "topic-link section"
+}]
+},
+{
+"url": "reverse-proxy-as-a-service-with-azure-ad-120040.html",
+"text": "Reverse Proxy as a Service with Azure AD",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "reverse-proxy-as-a-service-overview-120096.html",
+"text": "Reverse Proxy as a Service Overview",
+"class": "topic-link section"
+},
+{
+"url": "create-the-raas-app-120081.html",
+"text": "Create the RaaS App",
+"class": "topic-link section"
+},
+{
+"url": "test-the-raas-app-120082.html",
+"text": "Test the RaaS App",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-conditional-access-120083.html",
+"text": "Configure the Conditional Access",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-conditional-access-policy-120084.html",
+"text": "Validate the Conditional Access Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "integrate-netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
@@ -5547,14 +5652,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "integrate-netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
-"text": "Integrate Netskope Client IdP Mode with Okta SCIM and SAML Auth",
+"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
+"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth-overview.html",
-"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth Overview",
+"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth-228895.html",
+"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
 "class": "topic-link section"
 },
 {
@@ -5615,8 +5720,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth-overview.html",
-"text": "Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth Overview",
+"url": "netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth.html",
+"text": "Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth",
 "class": "topic-link section"
 },
 {
@@ -5821,8 +5926,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "integrate-the-netskope-plugin-with-sailpoint-identityiq.html",
-"text": "Integrate the Netskope Plugin with SailPoint IdentityIQ",
+"url": "configure-the-netskope-plugin-with-sailpoint-identityiq.html",
+"text": "Configure the Netskope Plugin with SailPoint IdentityIQ",
 "class": "topic-link section"
 }]
 },
