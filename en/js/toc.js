@@ -260,7 +260,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-platform-rest-apis.html",
+"url": "netskope-rest-apis.html",
 "text": "Netskope Platform REST APIs",
 "class": "topic-link section reused-publication reused-publication"
 ,
