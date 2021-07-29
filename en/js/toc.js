@@ -4368,11 +4368,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "private-apps-configuration-methods.html",
-"text": "Private Apps Configuration Methods",
-"class": "topic-link section"
-},
-{
 "url": "create-a-new-publisher.html",
 "text": "Create a New Publisher",
 "class": "topic-link section"
