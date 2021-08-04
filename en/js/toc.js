@@ -260,7 +260,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-platform-rest-apis.html",
+"url": "netskope-rest-apis.html",
 "text": "Netskope Platform REST APIs",
 "class": "topic-link section reused-publication reused-publication"
 ,
@@ -4365,11 +4365,6 @@ var toc = [{
 {
 "url": "about-netskope-private-access.html",
 "text": "About Netskope Private Access",
-"class": "topic-link section"
-},
-{
-"url": "private-apps-configuration-methods.html",
-"text": "Private Apps Configuration Methods",
 "class": "topic-link section"
 },
 {
