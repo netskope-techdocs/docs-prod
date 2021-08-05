@@ -260,13 +260,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis.html",
+"url": "netskope-platform-rest-apis.html",
 "text": "Netskope Platform REST APIs",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-platform-api-endpoints.html",
+"url": "netskope-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
 ,
@@ -1347,6 +1347,85 @@ var toc = [{
 "url": "manage-multiple-aws-accounts.html",
 "text": "Manage Multiple AWS Accounts",
 "class": "topic-link section"
+},
+{
+"url": "manage-storage-scan-policies.html",
+"text": "Manage Storage Scan Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-storage-scan-policy.html",
+"text": "Create a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "enable-or-disable-a-storage-scan-policy.html",
+"text": "Enable or Disable a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "apply-changes-to-storage-scan-policies.html",
+"text": "Apply Changes to Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "list-storage-scan-policies.html",
+"text": "List Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "get-storage-scan-policy-details.html",
+"text": "Get Storage Scan Policy Details",
+"class": "topic-link section"
+},
+{
+"url": "revert-a-storage-scan-policy-change.html",
+"text": "Revert a Storage Scan Policy Change",
+"class": "topic-link section"
+},
+{
+"url": "clone-a-storage-scan-policy.html",
+"text": "Clone a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "update-a-storage-scan-policy.html",
+"text": "Update a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-storage-scan-policy.html",
+"text": "Delete a Storage Scan Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-retro-scan-jobs.html",
+"text": "Manage Retro Scan Jobs",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-retro-scan-job.html",
+"text": "Create a Retro Scan Job",
+"class": "topic-link section"
+},
+{
+"url": "list-retro-scan-jobs.html",
+"text": "List Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "stop-retro-scan-jobs.html",
+"text": "Stop Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-storage-scan-policy-312402.html",
+"text": "Delete a Storage Scan Policy",
+"class": "topic-link section"
+}]
 },
 {
 "url": "manage-bucket-lists-for-a-constraint-profile.html",
@@ -4368,6 +4447,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "private-apps-configuration-methods.html",
+"text": "Private Apps Configuration Methods",
+"class": "topic-link section"
+},
+{
 "url": "create-a-new-publisher.html",
 "text": "Create a New Publisher",
 "class": "topic-link section"
@@ -4633,8 +4717,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-interoperability.html",
-"text": "Netskope Client Interoperability",
+"url": "netskope-client-inter-operability.html",
+"text": "Netskope Client Inter-Operability",
 "class": "topic-link section"
 },
 {
@@ -7035,14 +7119,19 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-87-0-0.html",
-"text": "Netskope Release Notes Version 87.0.0",
+"url": "netskope-release-notes-version-88-0-0.html",
+"text": "Netskope Release Notes Version 88.0.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
 "url": "new-features-and-enhancements.html",
 "text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "new-product-available---netskope-saas-security-posture-management.html",
+"text": "New Product Available - Netskope SaaS Security Posture Management",
 "class": "topic-link section"
 },
 {
