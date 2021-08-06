@@ -141,12 +141,13 @@ function buildSectionToc() {
     if ($(".section-toc").length) {
 
         //Checks for the current actual chunk topic, even if an internal section in another chunk is clicked, to build section TOC then too
+        // CH update: Fix for vaoid partial match in regex, added '/' before currentChunkId
         var currentChunkId = $('#topic-content > section').attr('id');
-        var regex = new RegExp(".*" + currentChunkId + "\.html$");
+        var regex = new RegExp(".*/" + currentChunkId + "\.html$");
         if ($('#topic-content > section').is('[data-permalink]')) {
             currentChunkId = $('#topic-content > section').attr('data-permalink');
             var currentChunkIdDecoded = decodeURI(currentChunkId);
-            regex = new RegExp(".*" + currentChunkIdDecoded + "$");
+            regex = new RegExp(".*/" + currentChunkIdDecoded + "$");
         }
         var toc = $('aside ul.toc');
 
