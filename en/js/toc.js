@@ -4511,6 +4511,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-dns-cname-for-npa-clientless.html",
+"text": "Configure Clientless Private Apps",
+"class": "topic-link section"
+},
+{
 "url": "steer-traffic-for-private-apps.html",
 "text": "Steer Traffic for Private Apps",
 "class": "topic-link section"
