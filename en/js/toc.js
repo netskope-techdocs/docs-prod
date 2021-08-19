@@ -121,11 +121,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "behavior-analytics-incidents.html",
-"text": "Behavior Analytics Incidents",
-"class": "topic-link section"
-},
-{
 "url": "behavior-analytics-incident-details.html",
 "text": "Behavior Analytics Incident Details",
 "class": "topic-link section"
@@ -733,11 +728,6 @@ var toc = [{
 }]
 },
 {
-"url": "aws-setup-faqs.html",
-"text": "AWS Setup FAQs",
-"class": "topic-link section"
-},
-{
 "url": "setting-up-aws-instances-using-old-ui.html",
 "text": "Setting Up AWS Instances using Old UI",
 "class": "topic-link section"
@@ -797,6 +787,11 @@ var toc = [{
 "class": "topic-link section"
 }]
 }]
+},
+{
+"url": "aws-setup-faqs.html",
+"text": "AWS Setup FAQs",
+"class": "topic-link section"
 },
 {
 "url": "security-assessment.html",
@@ -874,6 +869,16 @@ var toc = [{
 "text": "Cloud Infrastructure Use Cases",
 "class": "topic-link section"
 }]
+},
+{
+"url": "setting-up-policies-to-scan-s3-buckets.html",
+"text": "Setting up Policies to scan S3 Buckets",
+"class": "topic-link section"
+},
+{
+"url": "sample-granular-policies.html",
+"text": "Sample Granular Policies",
+"class": "topic-link section"
 }]
 },
 {
@@ -976,7 +981,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "sample-granular-policies.html",
+"url": "sample-granular-policies-309504.html",
 "text": "Sample Granular Policies",
 "class": "topic-link section"
 }]
@@ -1509,6 +1514,35 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-security-posture.html",
 "text": "Configure Salesforce Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-servicenow.html",
+"text": "Security Posture for ServiceNow",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-servicenow-instance-for-security-posture.html",
+"text": "Configure ServiceNow Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-zoom.html",
+"text": "Security Posture for Zoom",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-zoom-instance-for-security-posture.html",
+"text": "Configure Zoom Instance for Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "uninstall-the-netskope-app-from-the-zoom-account.html",
+"text": "Uninstall the Netskope App from the Zoom Account",
 "class": "topic-link section"
 }]
 },
@@ -4512,7 +4546,7 @@ var toc = [{
 },
 {
 "url": "configure-dns-cname-for-npa-clientless.html",
-"text": "Configure Clientless Private Apps",
+"text": "Configure Browser Access for Private Apps",
 "class": "topic-link section"
 },
 {
@@ -5602,6 +5636,28 @@ var toc = [{
 "url": "integrate-saml-reverse-proxy-for-google-chromebook.html",
 "text": "Integrate SAML Reverse Proxy for Google Chromebook",
 "class": "topic-link section"
+},
+{
+"url": "saml-reverse-proxy-for-workday-with-okta.html",
+"text": "SAML Reverse Proxy for Workday with Okta",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-netskope-saml-proxy.html",
+"text": "Configure Netskope SAML Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-workday-account-in-okta.html",
+"text": "Configure a Workday Account in Okta",
+"class": "topic-link section"
+},
+{
+"url": "configure-workday.html",
+"text": "Configure Workday",
+"class": "topic-link section"
+}]
 },
 {
 "url": "reverse-proxy-as-a-service-with-google-workspaces-2-309517.html",
