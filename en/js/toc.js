@@ -4949,8 +4949,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-309538.html",
-"text": "Reverse Proxy as a Service with Google Workspaces",
+"url": "using-reverse-proxy-as-a-service-with-google-workspaces.html",
+"text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
 ,
 "children": [
@@ -5660,14 +5660,14 @@ var toc = [{
 }]
 },
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-2-309517.html",
+"url": "reverse-proxy-as-a-service-with-google-workspaces-309517.html",
 "text": "Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-3-309538.html",
-"text": "Reverse Proxy as a Service with Google Workspaces",
+"url": "using-reverse-proxy-as-a-service-with-google-workspaces-309538.html",
+"text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
 ,
 "children": [

@@ -158,7 +158,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/category-definitions.html</loc>
-    <lastmod>2021-08-05</lastmod>
+    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/dynamic-classification.html</loc>
@@ -3234,7 +3234,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/category-definitions-310264.html</loc>
-    <lastmod>2021-08-05</lastmod>
+    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-web-categories.html</loc>
@@ -3430,7 +3430,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-overview.html</loc>
-    <lastmod>2021-08-03</lastmod>
+    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -3454,7 +3454,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-jamf.html</loc>
-    <lastmod>2021-08-18</lastmod>
+    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-sccm.html</loc>
@@ -3626,11 +3626,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/reverse-proxy-as-a-service-with-google-workspaces.html</loc>
-    <lastmod>2021-07-14</lastmod>
+    <lastmod>2021-08-20</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/reverse-proxy-as-a-service-with-google-workspaces-309538.html</loc>
-    <lastmod>2021-07-17</lastmod>
+    <loc>https://docs.netskope.com/en/using-reverse-proxy-as-a-service-with-google-workspaces.html</loc>
+    <lastmod>2021-08-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-raas-app-in-google.html</loc>
@@ -4138,7 +4138,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-saml-proxy.html</loc>
-    <lastmod>2021-07-29</lastmod>
+    <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-a-workday-account-in-okta.html</loc>
@@ -4149,12 +4149,12 @@
     <lastmod>2021-07-29</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/reverse-proxy-as-a-service-with-google-workspaces-2-309517.html</loc>
-    <lastmod>2021-07-14</lastmod>
+    <loc>https://docs.netskope.com/en/reverse-proxy-as-a-service-with-google-workspaces-309517.html</loc>
+    <lastmod>2021-08-20</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/reverse-proxy-as-a-service-with-google-workspaces-3-309538.html</loc>
-    <lastmod>2021-07-17</lastmod>
+    <loc>https://docs.netskope.com/en/using-reverse-proxy-as-a-service-with-google-workspaces-309538.html</loc>
+    <lastmod>2021-08-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-raas-app-in-google-2-309539.html</loc>
