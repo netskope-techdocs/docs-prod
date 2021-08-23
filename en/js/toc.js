@@ -7266,11 +7266,7 @@ var toc = [{
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
-{
-"url": "new-product-available---remote-browser-isolation.html",
-"text": "New Product Available - Remote Browser Isolation",
-"class": "topic-link section"
-},
+
 {
 "url": "new-product-available---netskope-cloud-firewall.html",
 "text": "New Product Available - Netskope Cloud Firewall",
