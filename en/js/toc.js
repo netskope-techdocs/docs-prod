@@ -7256,6 +7256,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-hotfix-release-notes-version-88-1-0.html",
+"text": "Netskope Hotfix Release Notes Version 88.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "new-product-available---remote-browser-isolation.html",
+"text": "New Product Available - Remote Browser Isolation",
+"class": "topic-link section"
+},
+{
+"url": "new-product-available---netskope-cloud-firewall.html",
+"text": "New Product Available - Netskope Cloud Firewall",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
 "url": "on-premises-appliance-release-notes-version-77-4-0.html",
 "text": "On-Premises Appliance Release Notes Version 77.4.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -7267,7 +7294,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements.html",
+"url": "new-features-and-enhancements-85473.html",
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
@@ -7282,7 +7309,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues.html",
+"url": "fixed-issues-85476.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
@@ -7350,32 +7377,5 @@ var toc = [{
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
-}]
-},
-{
-"url": "netskope-hotfix-release-notes-version-88-1-0.html",
-"text": "Netskope Hotfix Release Notes Version 88.1.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-316177.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "new-product-available---remote-browser-isolation.html",
-"text": "New Product Available - Remote Browser Isolation",
-"class": "topic-link section"
-},
-{
-"url": "new-product-available---netskope-cloud-firewall.html",
-"text": "New Product Available - Netskope Cloud Firewall",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-316180.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
 }]
 }];
