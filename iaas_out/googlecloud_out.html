@@ -7,13 +7,6 @@
 <body>
   <img src="logo.png" alt="Netskope"/>
   <h1>Google Cloud Entities supported in DSL</h1>
-  <div class="notes_container">
-  
-    <!-- Google Cloud notes -->
-<p>The table below describes the Google Cloud services and attributes supported by Netskope. For additional information on the values for these attributes, refer to the <a href="https://cloud.google.com/docs#cloud-products" target="_blank">Google Cloud documentation</a>.</p>
-<p><strong>Note:</strong> To view information about your public cloud resources, in the Netskope UI go to <strong>Cloud Infrastructure > Inventory</strong>. For more information, see the <a href="https://support.netskope.com/hc/en-us/articles/360016146354-Inventory" target="_blank">help article</a>.</p>
-  
-  </div>
   <div class="container">
     <div class="entity_keys">
       
@@ -353,6 +346,24 @@
             <td><span class="_TAB">&nbsp;</span>RequesterPays</td>
             <td>boolean</td>
             <td>When set to true, Requester Pays is enabled for this bucket</td>
+          </tr>
+          
+          <tr>
+            <td>IAMConfiguration</td>
+            <td>sequence</td>
+            <td>The bucket's IAM configuration</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>UniformBucketLevelAccess</td>
+            <td>boolean</td>
+            <td>whether uniformBucketLevelAccess is enabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>BucketPolicyOnly</td>
+            <td>boolean</td>
+            <td>whether BucketPolicyOnly is enabled</td>
           </tr>
           
           <tr>
@@ -1379,6 +1390,18 @@
             <td>CpuPlatform</td>
             <td>string</td>
             <td>CPU platform used by this instance</td>
+          </tr>
+          
+          <tr>
+            <td>ShieldedVM</td>
+            <td>boolean</td>
+            <td>whether compute instance has ShieldedVM enabled</td>
+          </tr>
+          
+          <tr>
+            <td>ConfidentialComputing</td>
+            <td>boolean</td>
+            <td>whether compute instance has confidential computing enabled.</td>
           </tr>
           
           <tr>
@@ -2651,6 +2674,54 @@
           </tr>
           
           <tr>
+            <td>Tables</td>
+            <td>list</td>
+            <td>Tables belonging to the bigquery dataset</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID of the Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>creationTime</td>
+            <td>number</td>
+            <td>creationTime of Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>expirationTime</td>
+            <td>number</td>
+            <td>expirationTime of Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>lastModifiedTime</td>
+            <td>number</td>
+            <td>lastModifiedTime of Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>encryption</td>
+            <td>sequence</td>
+            <td>encryptionConfiguration of table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>kmsKeyName</td>
+            <td>string</td>
+            <td>cryptokey of the Table</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>enabled</td>
+            <td>boolean</td>
+            <td>Whether CMEK enabled for the table</td>
+          </tr>
+          
+          <tr>
             <td>DefaultPartitionExpirationMs</td>
             <td>number</td>
             <td>The default partition expiration for all partitioned tables in the dataset, in milliseconds</td>
@@ -2660,6 +2731,24 @@
             <td>DefaultTableExpirationMs</td>
             <td>number</td>
             <td>The default lifetime of all tables in the dataset, in milliseconds</td>
+          </tr>
+          
+          <tr>
+            <td>Encryption</td>
+            <td>sequence</td>
+            <td>CMEK settings</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Is bigquery dataset encrypted by CMEK</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CMEK</td>
+            <td>string</td>
+            <td>CMEK used to encrypt the bigquery dataset</td>
           </tr>
           
           <tr>
@@ -2906,6 +2995,12 @@
             <td>VPC</td>
             <td>Reference to VPC</td>
             <td>VPC name</td>
+          </tr>
+          
+          <tr>
+            <td>DatabaseType</td>
+            <td>string</td>
+            <td>Database type, valid values (POSTGRES, SQLSERVER, MYSQL)</td>
           </tr>
           
           <tr>
@@ -3589,6 +3684,36 @@
             <td>Compute Network/Subnet Mode, valid values (AUTO, CUSTOM, LEGACY)</td>
           </tr>
           
+          <tr>
+            <td>DNSPolicy</td>
+            <td>sequence</td>
+            <td>Network DNS Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>id</td>
+            <td>string</td>
+            <td>ID of DNS Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>name</td>
+            <td>string</td>
+            <td>Name of DNS Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>description</td>
+            <td>string</td>
+            <td>Description of DNS Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>enableLogging</td>
+            <td>boolean</td>
+            <td>Whether DNS Policy has logging enabled</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="KubernetesCluster">
@@ -3713,6 +3838,90 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>IstioConfig</td>
+            <td>sequence</td>
+            <td>Configuration for NetworkPolicy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Disabled</td>
+            <td>boolean</td>
+            <td>Disabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Auth</td>
+            <td>string</td>
+            <td>The specified Istio auth mode, either none, or mutual TLS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CloudRunConfig</td>
+            <td>sequence</td>
+            <td>Configuration options for the Cloud Run feature</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Disabled</td>
+            <td>boolean</td>
+            <td>Disabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LoadBalancerType</td>
+            <td>string</td>
+            <td>Which load balancer type is installed for Cloud Run</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DnsCacheConfig</td>
+            <td>sequence</td>
+            <td>Configuration for NodeLocal DNSCache</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether NodeLocal DNSCache is enabled for this cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ConfigConnectorConfig</td>
+            <td>sequence</td>
+            <td>Configuration for Config Connector add-on</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Cloud Connector is enabled for this cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>GcePersistentDiskCsiDriverConfig</td>
+            <td>sequence</td>
+            <td>Configuration for the Compute Engine PD CSI driver. This option can only be enabled at cluster creation time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether the Compute Engine PD CSI driver is enabled for this cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KalmConfig</td>
+            <td>sequence</td>
+            <td>Configuration for KALM addon</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether KALM is enabled for this cluster</td>
+          </tr>
+          
+          <tr>
             <td>Autoscaling</td>
             <td>sequence</td>
             <td>Cluster-level autoscaling configuration</td>
@@ -3746,6 +3955,144 @@
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ResourceType</td>
             <td>string</td>
             <td>Resource name "cpu", "memory" or gpu-specific string.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AutoscalingProfile</td>
+            <td>string</td>
+            <td>Defines autoscaling behaviour</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AutoprovisioningNodePoolDefaults</td>
+            <td>sequence</td>
+            <td>AutoprovisioningNodePoolDefaults contains defaults for a node pool created by NAP</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OauthScopes</td>
+            <td>list</td>
+            <td>Set of Google API scopes to be made available on all of the node VMs</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ServiceAccount</td>
+            <td>string</td>
+            <td>Google Cloud Platform Service Account to be used by the node VMs</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>UpgradeSettings</td>
+            <td>sequence</td>
+            <td>Upgrade settings control disruption and speed of the upgrade</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MaxSurge</td>
+            <td>number</td>
+            <td>The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MaxUnavailable</td>
+            <td>number</td>
+            <td>The maximum number of nodes that can be simultaneously unavailable during the upgrade process. A node is considered available if its status is Ready</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Management</td>
+            <td>sequence</td>
+            <td>NodeManagement configuration for this NodePool</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AutoUpgrade</td>
+            <td>boolean</td>
+            <td>Is node auto-upgrade is enabled for the node pool</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AutoRepair</td>
+            <td>boolean</td>
+            <td>Is node auto-repair is enabled for the node pool</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>UpgradeOptions</td>
+            <td>sequence</td>
+            <td>Specifies the Auto Upgrade knobs for the node pool</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AutoUpgradeStartTime</td>
+            <td>number</td>
+            <td>This field is set when upgrades are about to commence with the approximate start time for the upgrades</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Description</td>
+            <td>string</td>
+            <td>Field is set when upgrades are about to commence with the description of the upgrade</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MinCpuPlatform</td>
+            <td>string</td>
+            <td>Minimum CPU platform to be used by this instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DiskSizeGb</td>
+            <td>number</td>
+            <td>Size of the disk attached to each node, specified in GB</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DiskType</td>
+            <td>string</td>
+            <td>Type of the disk attached to each node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ImageType</td>
+            <td>string</td>
+            <td>Image type to use for this node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ShieldedInstanceConfig</td>
+            <td>sequence</td>
+            <td>A set of Shielded Instance options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableIntegrityMonitoring</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has integrity monitoring enabled. Enables monitoring and attestation of the boot integrity of the instance. The attestation is performed against the integrity policy baseline. This baseline is initially derived from the implicitly trusted boot image when the instance is created</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableSecureBoot</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>BootDiskKmsKey</td>
+            <td>string</td>
+            <td>The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool. This should be of the form projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AutoprovisioningLocations</td>
+            <td>list</td>
+            <td>The list of Google Compute Engine zones in which the NodePool’s nodes can be created by NAP</td>
           </tr>
           
           <tr>
@@ -3823,7 +4170,7 @@
           <tr>
             <td>EnableTpu</td>
             <td>boolean</td>
-            <td>Enable the ability to use Cloud TPUs in this cluster</td>
+            <td>Enable the ability to use Cloud TPUs in this cluster. This field is deprecated, use tpu_config.enabled instead.</td>
           </tr>
           
           <tr>
@@ -3847,7 +4194,7 @@
           <tr>
             <td>InitialNodeCount</td>
             <td>number</td>
-            <td>Number of nodes to create in this cluster</td>
+            <td>Number of nodes to create in this cluster. You must ensure that your Compute Engine resource quota is sufficient for this number of instances. You must also have available firewall and routes quota. For requests, this field should only be used in lieu of a “node_pool” object, since this configuration (along with the “node_config”) will be used to create a “NodePool” object with an auto-generated name. Do not use this and a node_pool at the same time. This field is deprecated, use node_pool.initial_node_count instead.</td>
           </tr>
           
           <tr>
@@ -3917,6 +4264,12 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>UseRoutes</td>
+            <td>boolean</td>
+            <td>Whether routes will be used for pod IPs in the cluster. This is used in conjunction with use_ip_aliases. It cannot be true if use_ip_aliases is true. If both use_ip_aliases and use_routes are false, then the server picks the default IP allocation mode</td>
+          </tr>
+          
+          <tr>
             <td>LabelFingerprint</td>
             <td>string</td>
             <td>Fingerprint of the set of labels for this cluster</td>
@@ -3959,6 +4312,12 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>ResourceVersion</td>
+            <td>string</td>
+            <td>A hash identifying the version of this policy, so that updates to fields of the policy won’t accidentally undo intermediate changes (and so that users of the API unaware of some fields won’t accidentally remove other fields). Make a get() request to the cluster to get the current resource version and include it with requests to set the policy</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span>Window</td>
             <td>sequence</td>
             <td>Specifies the maintenance window in which maintenance may be performed</td>
@@ -3980,6 +4339,36 @@
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Duration</td>
             <td>string</td>
             <td>Duration of the time window, automatically chosen to be smallest possible in the given scenario, format (PTnHnMnS)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>RecurringWindow</td>
+            <td>sequence</td>
+            <td>RecurringWindow specifies some number of recurring time periods for maintenance to occur. The time windows may be overlapping. If no maintenance windows are set, maintenance can occur at any time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Recurrence</td>
+            <td>string</td>
+            <td>An RRULE (https://tools.ietf.org/html/rfc5545#section-3.8.5.3) for how this window reccurs. They go on for the span of time between the start and end time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Window</td>
+            <td>sequence</td>
+            <td>Represents an arbitrary window of time</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>StartTime</td>
+            <td>number</td>
+            <td>The time that the window first starts</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EndTime</td>
+            <td>number</td>
+            <td>The time that the window ends. The end time should take place after the start time</td>
           </tr>
           
           <tr>
@@ -4091,6 +4480,30 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>EnableIntraNodeVisibility</td>
+            <td>boolean</td>
+            <td>Whether Intra-node visibility is enabled for this cluster. This makes same node pod to pod traffic visible for VPC network</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DefaultSnatStatus</td>
+            <td>sequence</td>
+            <td>Whether the cluster disables default in-node sNAT rules. In-node sNAT rules will be disabled when default_snat_status is disabled. When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Disabled</td>
+            <td>boolean</td>
+            <td>DefaultSnatStatus contains the desired state of whether default sNAT should be disabled on the cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DatapathProvider</td>
+            <td>string</td>
+            <td>The datapath provider selects the implementation of the Kubernetes networking model for service resolution and network policy enforcement</td>
+          </tr>
+          
+          <tr>
             <td>NetworkPolicy</td>
             <td>sequence</td>
             <td>Configuration options for the NetworkPolicy feature</td>
@@ -4111,7 +4524,7 @@
           <tr>
             <td>NodeConfig</td>
             <td>sequence</td>
-            <td>Parameters used in creating the cluster's nodes</td>
+            <td>Parameters used in creating the cluster's nodes. For requests, this field should only be used in lieu of a “node_pool” object, since this configuration (along with the “initial_node_count”) will be used to create a “NodePool” object with an auto-generated name. Do not use this and a node_pool at the same time. For responses, this field will be populated with the node configuration of the first node pool. (For configuration of each node pool, see node_pool.config). If unspecified, the defaults are used. This field is deprecated, use node_pool.config instead.</td>
           </tr>
           
           <tr>
@@ -4262,6 +4675,102 @@
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
             <td>string</td>
             <td>Effect for taint, (EFFECT_UNSPECIFIED, NO_SCHEDULE, PREFER_NO_SCHEDULE, NO_EXECUTE)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SandboxConfig</td>
+            <td>sequence</td>
+            <td>SandboxConfig contains configurations of the sandbox to use for the node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SandboxType</td>
+            <td>string</td>
+            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Type</td>
+            <td>string</td>
+            <td>Type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NodeGroup</td>
+            <td>string</td>
+            <td>Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on sole tenant nodes.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>BootDiskKmsKey</td>
+            <td>string</td>
+            <td>The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool. This should be of the form projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ShieldedInstanceConfig</td>
+            <td>sequence</td>
+            <td>A set of Shielded Instance options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableIntegrityMonitoring</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has integrity monitoring enabled. Enables monitoring and attestation of the boot integrity of the instance. The attestation is performed against the integrity policy baseline. This baseline is initially derived from the implicitly trusted boot image when the instance is created</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableSecureBoot</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ReservationAffinity</td>
+            <td>sequence</td>
+            <td>The optional reservation affinity. Setting this field will apply the specified Zonal Compute Reservation to this node pool.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ConsumeReservationType</td>
+            <td>string</td>
+            <td>Corresponds to the type of reservation consumption</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
+            <td>string</td>
+            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify “googleapis.com/reservation-name” as the key and specify the name of your reservation as its value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Values</td>
+            <td>list</td>
+            <td>Corresponds to the label value(s) of reservation resource(s)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LinuxNodeConfig</td>
+            <td>sequence</td>
+            <td>Parameters that can be configured on Linux nodes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sysctls</td>
+            <td>string</td>
+            <td>The Linux kernel parameters to be applied to the nodes and all pods running on the nodes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EphemeralStorageConfig</td>
+            <td>sequence</td>
+            <td>EphemeralStorageConfig contains configuration for the ephemeral storage filesystem.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LocalSsdCount</td>
+            <td>number</td>
+            <td>Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD is 375 GB in size. If zero, it means to disable using local SSDs as ephemeral storage</td>
           </tr>
           
           <tr>
@@ -4493,6 +5002,102 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SandboxConfig</td>
+            <td>sequence</td>
+            <td>SandboxConfig contains configurations of the sandbox to use for the node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SandboxType</td>
+            <td>string</td>
+            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Type</td>
+            <td>string</td>
+            <td>Type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NodeGroup</td>
+            <td>string</td>
+            <td>Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on sole tenant nodes.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>BootDiskKmsKey</td>
+            <td>string</td>
+            <td>The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool. This should be of the form projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ShieldedInstanceConfig</td>
+            <td>sequence</td>
+            <td>A set of Shielded Instance options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableIntegrityMonitoring</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has integrity monitoring enabled. Enables monitoring and attestation of the boot integrity of the instance. The attestation is performed against the integrity policy baseline. This baseline is initially derived from the implicitly trusted boot image when the instance is created</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EnableSecureBoot</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ReservationAffinity</td>
+            <td>sequence</td>
+            <td>The optional reservation affinity. Setting this field will apply the specified Zonal Compute Reservation to this node pool.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ConsumeReservationType</td>
+            <td>string</td>
+            <td>Corresponds to the type of reservation consumption</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
+            <td>string</td>
+            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify “googleapis.com/reservation-name” as the key and specify the name of your reservation as its value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Values</td>
+            <td>list</td>
+            <td>Corresponds to the label value(s) of reservation resource(s)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LinuxNodeConfig</td>
+            <td>sequence</td>
+            <td>Parameters that can be configured on Linux nodes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sysctls</td>
+            <td>string</td>
+            <td>The Linux kernel parameters to be applied to the nodes and all pods running on the nodes</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>EphemeralStorageConfig</td>
+            <td>sequence</td>
+            <td>EphemeralStorageConfig contains configuration for the ephemeral storage filesystem.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LocalSsdCount</td>
+            <td>number</td>
+            <td>Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD is 375 GB in size. If zero, it means to disable using local SSDs as ephemeral storage</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>WorkloadMetadataConfig</td>
             <td>sequence</td>
             <td>Workload metadata configuration for this node</td>
@@ -4536,7 +5141,7 @@
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AutoUpgradeStartTime</td>
-            <td>string</td>
+            <td>number</td>
             <td>This field is set when upgrades are about to commence with the approximate start time for the upgrades</td>
           </tr>
           
@@ -4580,6 +5185,48 @@
             <td><span class="_TAB">&nbsp;</span>Version</td>
             <td>string</td>
             <td>Version of the Kubernetes of this node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Locations</td>
+            <td>list</td>
+            <td>The list of Google Compute Engine zones in which the NodePool’s nodes should be located. If this value is unspecified during node pool creation, the Cluster.Locations value will be used, instead. Warning - changing node pool locations will result in nodes being added and/or removed</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>value</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SelfLink</td>
+            <td>string</td>
+            <td>Server-defined URL for the resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>PodIpv4CidrSize</td>
+            <td>number</td>
+            <td>The pod CIDR block size per node in this node pool</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>UpgradeSettings</td>
+            <td>sequence</td>
+            <td>Upgrade settings control disruption and speed of the upgrade</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MaxSurge</td>
+            <td>number</td>
+            <td>The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>MaxUnavailable</td>
+            <td>number</td>
+            <td>The maximum number of nodes that can be simultaneously unavailable during the upgrade process. A node is considered available if its status is Ready</td>
           </tr>
           
           <tr>
@@ -4643,6 +5290,24 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>PeeringName</td>
+            <td>string</td>
+            <td>The peering name in the customer VPC used by this cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MasterGlobalAccessConfig</td>
+            <td>sequence</td>
+            <td>Controls master global access settings</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whenever master is accessible globally or not</td>
+          </tr>
+          
+          <tr>
             <td>ServicesIpv4Cidr</td>
             <td>ip</td>
             <td>IP address range of the Kubernetes services in this cluster</td>
@@ -4657,7 +5322,7 @@
           <tr>
             <td>StatusMessage</td>
             <td>string</td>
-            <td>Additional information about the current status of this cluster</td>
+            <td>Additional information about the current status of this cluster. This field is deprecated. Use Conditions instead.</td>
           </tr>
           
           <tr>
@@ -4688,6 +5353,240 @@
             <td>Zone</td>
             <td>string</td>
             <td>Location/Zone</td>
+          </tr>
+          
+          <tr>
+            <td>DatabaseEncryption</td>
+            <td>sequence</td>
+            <td>Configuration of etcd encryption</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>State of etcd encryption</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KeyName</td>
+            <td>string</td>
+            <td>Name of CloudKMS key to use for the encryption of secrets in etcd. Ex. projects/my- project/locations/global/keyRings/my- ring/cryptoKeys/my-key</td>
+          </tr>
+          
+          <tr>
+            <td>ReleaseChannel</td>
+            <td>sequence</td>
+            <td>ReleaseChannel indicates which release channel a cluster is subscribed to. Release channels are arranged in order of risk. When a cluster is subscribed to a release channel, Google maintains both the master version and the node version. Node auto-upgrade defaults to true and cannot be disabled.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Channel</td>
+            <td>string</td>
+            <td>channel specifies which release channel the cluster is subscribed to</td>
+          </tr>
+          
+          <tr>
+            <td>ShieldedNodes</td>
+            <td>sequence</td>
+            <td>Configuration of Shielded Nodes feature</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Shielded Nodes features are enabled on all nodes in this cluster</td>
+          </tr>
+          
+          <tr>
+            <td>ShieldedInstanceConfig</td>
+            <td>sequence</td>
+            <td>A set of Shielded Instance options</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EnableIntegrityMonitoring</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has integrity monitoring enabled. Enables monitoring and attestation of the boot integrity of the instance. The attestation is performed against the integrity policy baseline. This baseline is initially derived from the implicitly trusted boot image when the instance is created</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EnableSecureBoot</td>
+            <td>boolean</td>
+            <td>Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails</td>
+          </tr>
+          
+          <tr>
+            <td>SandboxConfig</td>
+            <td>sequence</td>
+            <td>SandboxConfig contains configurations of the sandbox to use for the node</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SandboxType</td>
+            <td>string</td>
+            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+          </tr>
+          
+          <tr>
+            <td>ResourceLabels</td>
+            <td>list</td>
+            <td>The resource labels for the cluster to use to annotate any related Google Compute Engine resources</td>
+          </tr>
+          
+          <tr>
+            <td>ResourceUsageExportConfig</td>
+            <td>sequence</td>
+            <td>Configuration for exporting cluster resource usages</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>BigqueryDestination</td>
+            <td>sequence</td>
+            <td>Configuration to use BigQuery as usage export destination</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DatasetId</td>
+            <td>string</td>
+            <td>The ID of a BigQuery Dataset</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EnableNetworkEgressMetering</td>
+            <td>boolean</td>
+            <td>Whether to enable network egress metering for this cluster. If enabled, a daemonset will be created in the cluster to meter network egress traffic</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ConsumptionMeteringConfig</td>
+            <td>sequence</td>
+            <td>Configuration to enable resource consumption metering</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether to enable consumption metering for this cluster. If enabled, a second BigQuery table will be created to hold resource consumption records</td>
+          </tr>
+          
+          <tr>
+            <td>AuthenticatorGroupsConfig</td>
+            <td>sequence</td>
+            <td>Configuration for returning group information from authenticators</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether this cluster should return group membership lookups during authentication using a group of security groups</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecurityGroup</td>
+            <td>string</td>
+            <td>The name of the security group-of-groups to be used. Only relevant if enabled = true</td>
+          </tr>
+          
+          <tr>
+            <td>WorkloadIdentityConfig</td>
+            <td>sequence</td>
+            <td>Configuration for the use of Kubernetes Service Accounts in GCP IAM policies</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IdentityNamespace</td>
+            <td>string</td>
+            <td>IAM Identity Namespace to attach all Kubernetes Service Accounts to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>WorkloadPool</td>
+            <td>string</td>
+            <td>The workload pool to attach all Kubernetes service accounts to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IdentityProvider</td>
+            <td>string</td>
+            <td>identity provider is the third party identity provider</td>
+          </tr>
+          
+          <tr>
+            <td>ClusterTelemetry</td>
+            <td>sequence</td>
+            <td>Telemetry integration for the cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Type</td>
+            <td>string</td>
+            <td>Type of the integration</td>
+          </tr>
+          
+          <tr>
+            <td>TpuConfig</td>
+            <td>sequence</td>
+            <td>Configuration for Cloud TPU</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Cloud TPU integration is enabled or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>UseServiceNetworking</td>
+            <td>boolean</td>
+            <td>Whether to use service networking for Cloud TPU or not</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Ipv4CidrBlock</td>
+            <td>string</td>
+            <td>IPv4 CIDR block reserved for Cloud TPU in the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>NotificationConfig</td>
+            <td>sequence</td>
+            <td>NotificationConfig is the configuration of notifications</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Pubsub</td>
+            <td>sequence</td>
+            <td>Notification config for Pub/Sub</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Enable notifications for Pub/Sub</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Topic</td>
+            <td>string</td>
+            <td>The desired Pub/Sub topic to which notifications will be sent by GKE. Format is projects/{project}/topics/{topic}</td>
+          </tr>
+          
+          <tr>
+            <td>ConfidentialNodes</td>
+            <td>sequence</td>
+            <td>ConfidentialNodes is configuration for the confidential nodes feature, which makes nodes run on confidential VMs</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Whether Confidential Nodes feature is enabled for all nodes in this cluster</td>
+          </tr>
+          
+          <tr>
+            <td>SelfLink</td>
+            <td>string</td>
+            <td>Server-defined URL for the resource</td>
           </tr>
           
         </table>
@@ -5474,6 +6373,24 @@
             <td>NextRotationTime</td>
             <td>number</td>
             <td>Date/Time for next Rotation in Epock</td>
+          </tr>
+          
+          <tr>
+            <td>Bindings</td>
+            <td>list</td>
+            <td>IAM Policy bindings of Cloud KMS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Role</td>
+            <td>string</td>
+            <td>Role attached to Cloud KMS</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Members</td>
+            <td>list</td>
+            <td>Member of IAM Policy for Cloud KMS</td>
           </tr>
           
         </table>

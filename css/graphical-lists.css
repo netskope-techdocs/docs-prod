@@ -36,6 +36,12 @@ ol.procedure, ul.procedure {
     font-size: 14px;
     text-align: center;
 }
+/* Adjust for RTL stepnumbers */
+section[dir=rtl] .procedure > li::before{
+    float: right;
+    margin-left: 10px;
+}
+
 .theme2 .procedure > li::before {
   background-color: #333;
 }

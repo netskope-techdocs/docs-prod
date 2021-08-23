@@ -625,6 +625,82 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-firewall.html",
+"text": "Netskope Cloud Firewall",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-a-gre-tunnel.html",
+"text": "Configure a GRE Tunnel",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-ipsec-tunnel.html",
+"text": "Configure an IPSec Tunnel",
+"class": "topic-link section"
+},
+{
+"url": "gre---ipsec-tunnel-gateway---http-s--non-standard-port-support.html",
+"text": "GRE &amp; IPSec Tunnel Gateway - HTTP(s) Non-Standard Port Support",
+"class": "topic-link section"
+},
+{
+"url": "netskope-client-support-in-cloud-firewall.html",
+"text": "Netskope Client Support in Cloud Firewall",
+"class": "topic-link section"
+},
+{
+"url": "network-location.html",
+"text": "Network Location",
+"class": "topic-link section"
+},
+{
+"url": "configure-custom-applications.html",
+"text": "App Definition",
+"class": "topic-link section"
+},
+{
+"url": "inline-policies.html",
+"text": "Real-time Protection Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-users.html",
+"text": "Add Users",
+"class": "topic-link section"
+}]
+},
+{
+"url": "ssl-decryption.html",
+"text": "SSL Decryption",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-a-policy-for-ssl-decryption.html",
+"text": "Add a Policy for SSL Decryption",
+"class": "topic-link section"
+},
+{
+"url": "add-new-network-location-for-ssl-decryption.html",
+"text": "Add New Network Location for SSL Decryption",
+"class": "topic-link section"
+}]
+},
+{
+"url": "exceptions.html",
+"text": "Exceptions",
+"class": "topic-link section"
+},
+{
+"url": "cloud-firewall-network-events-and-alerts.html",
+"text": "Cloud Firewall Network Events and Alerts",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
 "class": "topic-link section reused-publication reused-publication"
@@ -3761,7 +3837,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "inline-policies.html",
+"url": "inline-policies-231157.html",
 "text": "Real-time Protection Policies",
 "class": "topic-link section"
 },
@@ -3861,13 +3937,13 @@ var toc = [{
 }]
 },
 {
-"url": "ssl-decryption.html",
+"url": "ssl-decryption-127472.html",
 "text": "SSL Decryption",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "add-a-policy-for-ssl-decryption.html",
+"url": "add-a-policy-for-ssl-decryption-127473.html",
 "text": "Add a Policy for SSL Decryption",
 "class": "topic-link section"
 ,
@@ -3879,7 +3955,7 @@ var toc = [{
 }]
 },
 {
-"url": "add-new-network-location-for-ssl-decryption.html",
+"url": "add-new-network-location-for-ssl-decryption-127474.html",
 "text": "Add New Network Location for SSL Decryption",
 "class": "topic-link section"
 }]
@@ -4211,18 +4287,18 @@ var toc = [{
 ,
 "children": [
 {
-"url": "create-a-ctep-profile.html",
-"text": "Create a CTEP Profile",
-"class": "topic-link section"
-},
-{
-"url": "enable-ctep-settings.html",
-"text": "Enable CTEP Settings",
-"class": "topic-link section"
-},
-{
 "url": "create-a-real-time-protection-policy-for-ctep.html",
 "text": "Create a Real-time Protection Policy for CTEP",
+"class": "topic-link section"
+},
+{
+"url": "about-ctep-settings.html",
+"text": "About CTEP Settings",
+"class": "topic-link section"
+},
+{
+"url": "create-a-signature-override.html",
+"text": "Create a Signature Override",
 "class": "topic-link section"
 }]
 },
@@ -4408,7 +4484,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "exceptions.html",
+"url": "exceptions-218533.html",
 "text": "Exceptions",
 "class": "topic-link section"
 }]
@@ -4572,7 +4648,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-users.html",
+"url": "add-users-164689.html",
 "text": "Add Users",
 "class": "topic-link section"
 },
@@ -4790,7 +4866,7 @@ var toc = [{
 }]
 },
 {
-"url": "configure-custom-applications.html",
+"url": "configure-custom-applications-164305.html",
 "text": "App Definitions ",
 "class": "topic-link section"
 },

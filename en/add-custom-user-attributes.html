@@ -50,7 +50,7 @@ UploadFilesize=461
 MAXCHUNKSIZE=5242880
 CSV file less than/equal to 5 MB. No need to split......
 { "errors": [ "Unable to save the data" ], "status": "error" }
-Data successfully Uploaded to Netskope</pre><p>It's important you see the message "Data successfully Uploaded to Netskope". Otherwise, the upload was not successful. Unfortunately, there is no way the verify in the Netskope UI whether the upload was successful. The only way is to parse a log file and verify the SkopeIT events.</p></li></ol></div><div class="example" id="idm44981371257264"><div class="example-title">Example 2. ns_userattr_upload.sh Script</div><div class="example-contents"><pre class="programlisting">#!/bin/bash
+Data successfully Uploaded to Netskope</pre><p>It's important you see the message "Data successfully Uploaded to Netskope". Otherwise, the upload was not successful. Unfortunately, there is no way the verify in the Netskope UI whether the upload was successful. The only way is to parse a log file and verify the SkopeIT events.</p></li></ol></div><div class="example" id="idm44958177733648"><div class="example-title">Example 2. ns_userattr_upload.sh Script</div><div class="example-contents"><pre class="programlisting">#!/bin/bash
 
 # ***********************************************************
 # Example Bash script to upload csv files for custom user
