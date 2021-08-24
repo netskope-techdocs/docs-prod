@@ -4286,22 +4286,22 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "create-a-real-time-protection-policy-for-ctep.html",
-"text": "Create a Real-time Protection Policy for CTEP",
-"class": "topic-link section"
-},
-{
-"url": "about-ctep-settings.html",
-"text": "About CTEP Settings",
-"class": "topic-link section"
-},
-{
-"url": "create-a-signature-override.html",
-"text": "Create a Signature Override",
-"class": "topic-link section"
-}]
-},
+  {
+  "url": "create-a-ctep-profile.html",
+  "text": "Create a CTEP Profile",
+  "class": "topic-link section"
+  },
+  {
+  "url": "enable-ctep-settings.html",
+  "text": "Enable CTEP Settings",
+  "class": "topic-link section"
+  },
+  {
+  "url": "create-a-real-time-protection-policy-for-ctep.html",
+  "text": "Create a Real-time Protection Policy for CTEP",
+  "class": "topic-link section"
+  }]
+  },
 {
 "url": "forensics.html",
 "text": "Forensics",
