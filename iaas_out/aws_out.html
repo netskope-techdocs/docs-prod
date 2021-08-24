@@ -7,13 +7,6 @@
 <body>
   <img src="logo.png" alt="Netskope"/>
   <h1>AWS Entities supported in DSL</h1>
-  <div class="notes_container">
-  
-    <!-- AWS notes -->
-<p>The table below describes the AWS services and attributes supported by Netskope. For additional information on the values for these attributes, refer to the <a href="https://docs.aws.amazon.com/" target="_blank">AWS documentation</a>.</p>
-<p><strong>Note:</strong> To view information about your public cloud resources, in the Netskope UI go to <strong>Cloud Infrastructure > Inventory</strong>. For more information, see the <a href="https://support.netskope.com/hc/en-us/articles/360016146354-Inventory" target="_blank">help article</a>.</p>
-  
-  </div>
   <div class="container">
     <div class="entity_keys">
       
@@ -120,6 +113,10 @@
           <span class="entity_name">IAMUser</span>
         </li>
         
+        <li class="entity_key" data-entity-name="ServerCertificate">
+          <span class="entity_name">ServerCertificate</span>
+        </li>
+        
       </ul>
       
       <h2 class="entity_category Management">Management</h2>
@@ -167,6 +164,10 @@
       <h2 class="entity_category Network">Network</h2>
       <ul>
         
+        <li class="entity_key" data-entity-name="CloudfrontDistribution">
+          <span class="entity_name">CloudfrontDistribution</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="ElasticLoadBalancer">
           <span class="entity_name">ElasticLoadBalancer</span>
         </li>
@@ -205,14 +206,32 @@
         
       </ul>
       
+      <h2 class="entity_category Networking">Networking</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="CustomerGateway">
+          <span class="entity_name">CustomerGateway</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ElasticIP">
+          <span class="entity_name">ElasticIP</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="VPNGateway">
+          <span class="entity_name">VPNGateway</span>
+        </li>
+        
+      </ul>
+      
       <h2 class="entity_category Security">Security</h2>
       <ul>
         
-        <li class="entity_key" data-entity-name="KMSKey">
-          <span class="entity_name">KMSKey</span>
-        </li>
         <li class="entity_key" data-entity-name="AccessAnalyzer">
           <span class="entity_name">AccessAnalyzer</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="KMSKey">
+          <span class="entity_name">KMSKey</span>
         </li>
         
       </ul>
@@ -587,8 +606,176 @@
             <td>Allowed origins for Rules</td>
           </tr>
           
+          <tr>
+            <td>LifeCycleConfigRules</td>
+            <td>list</td>
+            <td>Lifecycle configuration information set on the bucket</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ID</td>
+            <td>string</td>
+            <td>Unique identifier for the rule. The value cannot be longer than 255 characters</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Filter</td>
+            <td>sequence</td>
+            <td>The Filter is used to identify objects that a Lifecycle Rule applies to. A Filter must have exactly one of Prefix , Tag , or And specified. Filter is required if the LifecycleRule does not containt a Prefix element</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Prefix</td>
+            <td>string</td>
+            <td>Prefix identifying one or more objects to which the rule applies</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Tag</td>
+            <td>sequence</td>
+            <td>This tag must exist in the object's tag set in order for the rule to apply</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
+            <td>string</td>
+            <td>Name of the object key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value of the tag</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>And</td>
+            <td>sequence</td>
+            <td>This is used in a Lifecycle Rule Filter to apply a logical AND to two or more predicates. The Lifecycle Rule will apply to any object matching all of the predicates configured inside the And operator</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Prefix</td>
+            <td>string</td>
+            <td>Prefix identifying one or more objects to which the rule applies</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Tags</td>
+            <td>list</td>
+            <td>This tag must exist in the object's tag set in order for the rule to apply</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
+            <td>string</td>
+            <td>Name of the object key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Value of the tag</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Transitions</td>
+            <td>list</td>
+            <td>Specifies when an Amazon S3 object transitions to a specified storage class</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Days</td>
+            <td>number</td>
+            <td>Indicates the number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>StorageClass</td>
+            <td>string</td>
+            <td>The storage class to which you want the object to transition</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Date</td>
+            <td>number</td>
+            <td>Indicates when objects are transitioned to the specified storage class.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NoncurrentVersionTransitions</td>
+            <td>list</td>
+            <td>Specifies the transition rule for the lifecycle rule that describes when noncurrent objects transition to a specific storage class. If your bucket is versioning-enabled (or versioning is suspended), you can set this action to request that Amazon S3 transition noncurrent object versions to a specific storage class at a set period in the object's lifetime.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NoncurrentDays</td>
+            <td>number</td>
+            <td>Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>StorageClass</td>
+            <td>string</td>
+            <td>The class of storage used to store the object.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NoncurrentVersionExpiration</td>
+            <td>sequence</td>
+            <td>Specifies when noncurrent object versions expire. Upon expiration, Amazon S3 permanently deletes the noncurrent object versions.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NoncurrentDays</td>
+            <td>number</td>
+            <td>Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AbortIncompleteMultipartUpload</td>
+            <td>sequence</td>
+            <td>Specifies the days since the initiation of an incomplete multipart upload that Amazon S3 will wait before permanently removing all parts of the upload.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DaysAfterInitiation</td>
+            <td>number</td>
+            <td>Specifies the number of days after which Amazon S3 aborts an incomplete multipart upload.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Expiration</td>
+            <td>sequence</td>
+            <td>Specifies the expiration for the lifecycle of the object in the form of date, days and, whether the object has a delete marker.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Days</td>
+            <td>number</td>
+            <td>Indicates the lifetime, in days, of the objects that are subject to the rule. The value must be a non-zero positive integer.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ExpiredObjectDeleteMarker</td>
+            <td>boolean</td>
+            <td>Indicates whether Amazon S3 will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no action. This cannot be specified with Days or Date in a Lifecycle Expiration Policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Date</td>
+            <td>number</td>
+            <td>Indicates at what date the object is to be moved or deleted.</td>
+          </tr>
+          
         </table>
-        
+      
         <table class="entity_table" data-entity-name="EC2Instance">
           <tr>
             <th>Attribute</th>
@@ -1098,6 +1285,18 @@
           </tr>
           
           <tr>
+            <td>LatestRestorableTime</td>
+            <td>number</td>
+            <td>Specifies the latest time to which a database can be restored with point-in-time restore.</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>KMS key identifier for the encrypted DB instance.</td>
+          </tr>
+          
+          <tr>
             <td>Type</td>
             <td>string</td>
             <td>Database engine used for the RDS Instance</td>
@@ -1599,6 +1798,12 @@
             <td>DnsSupportEnabled</td>
             <td>boolean</td>
             <td>Enables DNS resolution in the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefault</td>
+            <td>boolean</td>
+            <td>Indicates whether the VPC is the default VPC</td>
           </tr>
           
         </table>
@@ -2475,97 +2680,7 @@
           </tr>
           
         </table>
-        <table class="entity_table" data-entity-name="AccessAnalyzer">
-          <tr>
-            <th>Attribute</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-          
-          <tr>
-            <td>id</td>
-            <td>string</td>
-            <td>The Amazon Resource Name (ARN) of the analyzer</td>
-          </tr>
-          
-          <tr>
-            <td>Name</td>
-            <td>string</td>
-            <td>The name of the analyzer</td>
-          </tr>
-          
-          <tr>
-            <td>RegionName</td>
-            <td>string</td>
-            <td>Name of region in which the Function resides</td>
-          </tr>
-          
-          <tr>
-            <td>RegionId</td>
-            <td>string</td>
-            <td>ID of region in which the Function resides</td>
-          </tr>
-          
-          <tr>
-            <td>AccountName</td>
-            <td>string</td>
-            <td>Name of account containing the Function</td>
-          </tr>
-          
-          <tr>
-            <td>AccountId</td>
-            <td>string</td>
-            <td>ID of account containing the Function</td>
-          </tr>
-          
-          <tr>
-            <td>CreatedAt</td>
-            <td>number</td>
-            <td>A timestamp for the time at which the analyzer was created.</td>
-          </tr>
-          
-          <tr>
-            <td>LastResourceAnalyzed</td>
-            <td>string</td>
-            <td>The time at which the most recently analyzed resource was analyzed</td>
-          </tr>
-          
-          <tr>
-            <td>LastResourceAnalyzedAt</td>
-            <td>number</td>
-            <td>The time at which the most recently analyzed resource was analyzed</td>
-          </tr>
-          
-          <tr>
-            <td>Status</td>
-            <td>string</td>
-            <td>The status of the analyzer. (Creating|Active|Disabled|Failed)</td>
-          </tr>
-          
-          <tr>
-            <td>Type</td>
-            <td>string</td>
-            <td>The type (zone of trust) of the analyzer. (ACCOUNT|ORGANIZATION).</td>
-          </tr>
-          
-          <tr>
-            <td>Tags</td>
-            <td>list</td>
-            <td>The tags added to the analyzer</td>
-          </tr>
-          <tr>
-            <td><span class="_TAB">&nbsp;</span>Name</td>
-            <td>string</td>
-            <td>Tag key</td>
-          </tr>
-          
-          <tr>
-            <td><span class="_TAB">&nbsp;</span>Value</td>
-            <td>string</td>
-            <td>Tag value</td>
-          </tr>
-          
-        </table>
+      
         <table class="entity_table" data-entity-name="MetricAlarm">
           <tr>
             <th>Attribute</th>
@@ -3099,6 +3214,12 @@
             <td>RotationEnabled</td>
             <td>boolean</td>
             <td>Whether automatic key rotation is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>KeyManager</td>
+            <td>string</td>
+            <td>The manager of the CMK. CMKs in your AWS account are either customer managed or AWS managed</td>
           </tr>
           
         </table>
@@ -6132,6 +6253,1092 @@
             <td><span class="_TAB">&nbsp;</span>Status</td>
             <td>string</td>
             <td>Status of Policy</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AccessAnalyzer">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the analyzer.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the analyzer</td>
+          </tr>
+          
+          <tr>
+            <td>CreatedAt</td>
+            <td>number</td>
+            <td>A timestamp for the time at which the analyzer was created.</td>
+          </tr>
+          
+          <tr>
+            <td>LastResourceAnalyzed</td>
+            <td>string</td>
+            <td>The resource that was most recently analyzed by the analyzer.</td>
+          </tr>
+          
+          <tr>
+            <td>LastResourceAnalyzedAt</td>
+            <td>number</td>
+            <td>The time at which the most recently analyzed resource was analyzed.</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>The status of the analyzer. (Creating|Active|Disabled|Failed)</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>The type (zone of trust) of the analyzer. (ACCOUNT|ORGANIZATION)</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags added to the analyzer.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Function</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Function</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ServerCertificate">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the certificate</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the certificate</td>
+          </tr>
+          
+          <tr>
+            <td>Path</td>
+            <td>string</td>
+            <td>Path to the certificate</td>
+          </tr>
+          
+          <tr>
+            <td>Arn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) specifying the server certificate.</td>
+          </tr>
+          
+          <tr>
+            <td>UploadDate</td>
+            <td>number</td>
+            <td>The date when the server certificate was uploaded.</td>
+          </tr>
+          
+          <tr>
+            <td>Expiration</td>
+            <td>number</td>
+            <td>The date on which the certificate is set to expire.</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Function resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Function</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Function</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CloudfrontDistribution">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the cloudfront distribution</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the cloudfront distribution</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags added to cloudfront distribution</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>The current status of the distribution</td>
+          </tr>
+          
+          <tr>
+            <td>DomainName</td>
+            <td>string</td>
+            <td>The domain name that corresponds to the distribution</td>
+          </tr>
+          
+          <tr>
+            <td>Aliases</td>
+            <td>sequence</td>
+            <td>CNAMEs (alternate domain names), if any, for this distribution</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of CNAME aliases, if any, that are  associated with this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>CNAME aliases, if any, that are associated with this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>Origins</td>
+            <td>sequence</td>
+            <td>Origins for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of origins for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list of origins.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>A unique identifier for the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>DomainName</td>
+            <td>string</td>
+            <td>The domain name for the origin</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginPath</td>
+            <td>string</td>
+            <td>An optional path that CloudFront appends to the origin domain name when CloudFront requests content from the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>CustomHeaders</td>
+            <td>list</td>
+            <td>A list of HTTP header names and values that CloudFront adds to the requests that it sends to the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of custom headers, if any, for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list that contains one OriginCustomHeader element for each custom header</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>HeaderName</td>
+            <td>string</td>
+            <td>The name of a header for CloudFront to send to origin</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>HeaderValue</td>
+            <td>string</td>
+            <td>The value for the header specified in the HeaderName field.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>S3OriginConfig</td>
+            <td>sequence</td>
+            <td>an origin that is an Amazon S3 bucket that is not configured with static website hosting</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginAccessIdentity</td>
+            <td>string</td>
+            <td>The CloudFront origin access identity to associate with the origin</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>CustomOriginConfig</td>
+            <td>sequence</td>
+            <td>Type if the Amazon S3 bucket is configured with static website hosting</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>HTTPPort</td>
+            <td>number</td>
+            <td>The HTTP port that CloudFront uses to connect to the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>HTTPSPort</td>
+            <td>number</td>
+            <td>The HTTPS port that CloudFront uses to connect to the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginProtocolPolicy</td>
+            <td>string</td>
+            <td>Specifies the protocol (HTTP or HTTPS) that CloudFront uses to connect to the origin</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginSslProtocols</td>
+            <td>sequence</td>
+            <td>Specifies the minimum SSL/TLS protocol that CloudFront uses when connecting to rigin over HTTPS.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of SSL/TLS protocols to allow CloudFront to use when establishing an HTTPS connection with this origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list that contains allowed SSL/TLS protocols for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginReadTimeout</td>
+            <td>number</td>
+            <td>Specifies how long, in seconds, CloudFront waits for a response from the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginKeepaliveTimeout</td>
+            <td>number</td>
+            <td>Specifies how long, in seconds, CloudFront persists its connection to the origin</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ConnectionAttempts</td>
+            <td>number</td>
+            <td>The number of times that CloudFront attempts to connect to the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ConnectionTimeout</td>
+            <td>number</td>
+            <td>The number of seconds that CloudFront waits when trying to establish a connection to the origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginShield</td>
+            <td>sequence</td>
+            <td>CloudFront Origin Shield</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>A flag that specifies whether Origin Shield is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginShieldRegion</td>
+            <td>string</td>
+            <td>The AWS Region for Origin Shield.</td>
+          </tr>
+          
+          <tr>
+            <td>OriginGroups</td>
+            <td>sequence</td>
+            <td>Contains information about origin groups for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of origin groups.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>The items (origin groups) in a distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>DefaultCacheBehavior</td>
+            <td>sequence</td>
+            <td>Describes the default cache behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TargetOriginId</td>
+            <td>string</td>
+            <td>The value of ID for the origin for  CloudFront to route requests to when they use the default cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TrustedSigners</td>
+            <td>sequence</td>
+            <td>A list of AWS account IDs whose public keys CloudFront can use to validate signed URLs or signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>if any of the AWS accounts have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of AWS accounts in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list of AWS account identifiers.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TrustedKeyGroups</td>
+            <td>sequence</td>
+            <td>A list of key groups that CloudFront can use to validate signed URLs or signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>if any of the key groups in the list have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of key groups in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list of key groups identifiers.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ViewerProtocolPolicy</td>
+            <td>string</td>
+            <td>The protocol that viewers can use to access the files in the origin specified by TargetOriginId</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AllowedMethods</td>
+            <td>sequence</td>
+            <td>HTTP methods which CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of HTTP methods for  CloudFront to forward to origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>HTTP methods for  CloudFront to process and forward to origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>CachedMethods</td>
+            <td>sequence</td>
+            <td>If CloudFront caches the response to requests using the specified HTTP method.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of HTTP methods for CloudFront to cache responses.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>HTTP methods for CloudFront to cache responses to.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SmoothStreaming</td>
+            <td>boolean</td>
+            <td>Indicates whether to distribute media files in the Microsoft Smooth Streaming format using the origin that is associated with this cache behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Compress</td>
+            <td>boolean</td>
+            <td>Whether CloudFront automatically compress certain files for this cache behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LambdaFunctionAssociations</td>
+            <td>sequence</td>
+            <td>Contains zero or more Lambda function associations for a cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of Lambda function associations for this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>LambdaFunctionAssociation items for this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FunctionAssociations</td>
+            <td>sequence</td>
+            <td>A list of CloudFront functions that are associated with this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of CloudFront functions in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>The CloudFront functions that are associated with a cache behavior in a CloudFront distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FieldLevelEncryptionId</td>
+            <td>string</td>
+            <td>The value of ID for the field-level encryption configuration for CloudFront to use for encrypting specific fields of data for the default cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RealtimeLogConfigArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the real-time log configuration that is attached to this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CachePolicyId</td>
+            <td>string</td>
+            <td>The unique identifier of the cache policy that is attached to the default cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>OriginRequestPolicyId</td>
+            <td>string</td>
+            <td>The unique identifier of the origin request policy that is attached to the default cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td>CustomErrorResponses</td>
+            <td>sequence</td>
+            <td>Error responses</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of HTTP status codes that specify a custom error page and/or a caching duration</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>CustomErrorResponse element for each HTTP status</td>
+          </tr>
+          
+          <tr>
+            <td>Comment</td>
+            <td>string</td>
+            <td>An optional comment to describe the distribution</td>
+          </tr>
+          
+          <tr>
+            <td>PriceClass</td>
+            <td>string</td>
+            <td>Information about price class for this streaming distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>Whether the distribution is enabled to accept user requests for content.</td>
+          </tr>
+          
+          <tr>
+            <td>ViewerCertificate</td>
+            <td>sequence</td>
+            <td>Determines the distributions SSL/TLS configuration for communicating with viewers.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CloudFrontDefaultCertificate</td>
+            <td>boolean</td>
+            <td>If the distribution uses the CloudFront domain name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IAMCertificateId</td>
+            <td>string</td>
+            <td>the ID of the IAM certificate.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ACMCertificateArn</td>
+            <td>string</td>
+            <td>Amazon Resource Name (ARN) of the ACM certificate</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SSLSupportMethod</td>
+            <td>string</td>
+            <td>which viewers the distribution accepts HTTPS connections from.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MinimumProtocolVersion</td>
+            <td>string</td>
+            <td>security policy for CloudFront to use for HTTPS connections with viewers.</td>
+          </tr>
+          
+          <tr>
+            <td>Restrictions</td>
+            <td>sequence</td>
+            <td>Ways in which to restrict distribution of your content.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>GeoRestriction</td>
+            <td>sequence</td>
+            <td>Controls the countries in which your content is distributed.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>RestrictionType</td>
+            <td>string</td>
+            <td>The method  to use to restrict distribution of your content by country</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>When geo restriction is enabled , this is the number of countries in your whitelist or blacklist .</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>Country in which CloudFront can either  distribute your content (whitelist ) or not distribute your content (blacklist).</td>
+          </tr>
+          
+          <tr>
+            <td>WebACLId</td>
+            <td>string</td>
+            <td>The Web ACL Id (if any) associated with the distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>HttpVersion</td>
+            <td>string</td>
+            <td>Specify the maximum HTTP version for viewers to use to communicate with CloudFront.</td>
+          </tr>
+          
+          <tr>
+            <td>IsIPV6Enabled</td>
+            <td>boolean</td>
+            <td>Whether CloudFront responds to IPv6 DNS requests with an IPv6 address for your distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>AliasICPRecordals</td>
+            <td>list</td>
+            <td>AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CNAME</td>
+            <td>string</td>
+            <td>A domain name associated with a distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ICPRecordalStatus</td>
+            <td>string</td>
+            <td>The Internet Content Provider (ICP) recordal status for a CNAME</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the cloudfront distribution resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the cloudfront distribution resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the cloudfront distribution</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the cloudfront distribution</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="VPNGateway">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>VPN Gateway ID</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>VPN Gateway Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the virtual private gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the virtual private gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the virtual private gateway</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the virtual private gateway</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZone</td>
+            <td>string</td>
+            <td>The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned.</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>The current state of the virtual private gateway</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>The type of VPN connection the virtual private gateway supports</td>
+          </tr>
+          
+          <tr>
+            <td>VpcAttachments</td>
+            <td>list</td>
+            <td>Any VPCs attached to the virtual private gateway</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>The current state of the attachment</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VpcId</td>
+            <td>string</td>
+            <td>The ID of the VPC</td>
+          </tr>
+          
+          <tr>
+            <td>AmazonSideAsn</td>
+            <td>string</td>
+            <td>The private Autonomous System Number (ASN) for the Amazon side of a BGP session</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags added to the virtual private gateway.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="CustomerGateway">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Customer Gateway ID</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Customer Gateway Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Customer Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Customer Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Customer Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Customer Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>BgpAsn</td>
+            <td>string</td>
+            <td>The customer gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN)</td>
+          </tr>
+          
+          <tr>
+            <td>IpAddress</td>
+            <td>string</td>
+            <td>The Internet-routable IP address of the customer gateway's outside interface</td>
+          </tr>
+          
+          <tr>
+            <td>CertificateArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) for the customer gateway certificate</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>The current state of the customer gateway</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>The type of VPN connection the customer gateway supports (ipsec.1 )</td>
+          </tr>
+          
+          <tr>
+            <td>DeviceName</td>
+            <td>string</td>
+            <td>The name of customer gateway device</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags added to the Customer Gateway.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ElasticIP">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Elastic IP ID</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Elastic IP Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Elastic IP resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Elastic IP resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Elastic IP</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Elastic IP</td>
+          </tr>
+          
+          <tr>
+            <td>InstanceId</td>
+            <td>string</td>
+            <td>The ID of the instance that the address is associated with (if any)</td>
+          </tr>
+          
+          <tr>
+            <td>PublicIp</td>
+            <td>string</td>
+            <td>The Elastic IP address</td>
+          </tr>
+          
+          <tr>
+            <td>AssociationId</td>
+            <td>string</td>
+            <td>The ID representing the association of the address with an instance in a VPC</td>
+          </tr>
+          
+          <tr>
+            <td>Domain</td>
+            <td>string</td>
+            <td>Indicates whether this Elastic IP address is for use with instances in EC2-Classic (standard ) or instances in a VPC (vpc )</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkInterfaceId</td>
+            <td>string</td>
+            <td>The ID of the network interface</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkInterfaceOwnerId</td>
+            <td>string</td>
+            <td>The ID of the account that owns the network interface</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateIpAddress</td>
+            <td>string</td>
+            <td>The private IP address associated with the Elastic IP address</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags assigned to the Elastic IP address.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>PublicIpv4Pool</td>
+            <td>string</td>
+            <td>The ID of an address pool</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkBorderGroup</td>
+            <td>string</td>
+            <td>The name of the unique set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses</td>
+          </tr>
+          
+          <tr>
+            <td>CustomerOwnedIp</td>
+            <td>string</td>
+            <td>The customer-owned IP address</td>
+          </tr>
+          
+          <tr>
+            <td>CustomerOwnedIpv4Pool</td>
+            <td>string</td>
+            <td>The ID of the customer-owned address pool</td>
+          </tr>
+          
+          <tr>
+            <td>CarrierIp</td>
+            <td>string</td>
+            <td>The carrier IP address associated. This option is only available for network interfaces which reside in a subnet in a Wavelength Zone (for example an EC2 instance)</td>
           </tr>
           
         </table>

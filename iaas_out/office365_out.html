@@ -7,21 +7,24 @@
 <body>
   <img src="logo.png" alt="Netskope"/>
   <h1>Office 365 Entities supported in DSL</h1>
-  <div class="notes_container">
-  
-    <!-- AWS notes -->
-<p>The table below describes the Office 365 services and attributes supported by Netskope.</p>
-  
-  </div>
   <div class="container">
     <div class="entity_keys">
       
-      <h2 class="entity_category O365 Resource Category">O365 Resource Category</h2>
+      <h2 class="entity_category Data">Data</h2>
       <ul>
         
-        <li class="entity_key" data-entity-name="AcceptedDomain">
-          <span class="entity_name">AcceptedDomain</span>
+        <li class="entity_key" data-entity-name="SharingPolicy">
+          <span class="entity_name">SharingPolicy</span>
         </li>
+        
+        <li class="entity_key" data-entity-name="TransportRule">
+          <span class="entity_name">TransportRule</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Endpoint">Endpoint</h2>
+      <ul>
         
         <li class="entity_key" data-entity-name="DeviceCompliancePolicy">
           <span class="entity_name">DeviceCompliancePolicy</span>
@@ -31,16 +34,38 @@
           <span class="entity_name">DeviceConfiguration</span>
         </li>
         
-        <li class="entity_key" data-entity-name="DkimSigningConfig">
-          <span class="entity_name">DkimSigningConfig</span>
+      </ul>
+      
+      <h2 class="entity_category Identity">Identity</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="AuthenticationPolicy">
+          <span class="entity_name">AuthenticationPolicy</span>
         </li>
         
-        <li class="entity_key" data-entity-name="HostedOutboundSpamFilterPolicy">
-          <span class="entity_name">HostedOutboundSpamFilterPolicy</span>
+        <li class="entity_key" data-entity-name="RoleAssignmentPolicy">
+          <span class="entity_name">RoleAssignmentPolicy</span>
         </li>
         
-        <li class="entity_key" data-entity-name="MalwareFilterPolicy">
-          <span class="entity_name">MalwareFilterPolicy</span>
+        <li class="entity_key" data-entity-name="User">
+          <span class="entity_name">User</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Management">Management</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="AcceptedDomain">
+          <span class="entity_name">AcceptedDomain</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ConditionalAccessPolicy">
+          <span class="entity_name">ConditionalAccessPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="CsOAuthConfiguration">
+          <span class="entity_name">CsOAuthConfiguration</span>
         </li>
         
         <li class="entity_key" data-entity-name="O365Domain">
@@ -59,28 +84,12 @@
           <span class="entity_name">OwaMailboxPolicy</span>
         </li>
         
-        <li class="entity_key" data-entity-name="RemoteDomainConfiguration">
-          <span class="entity_name">RemoteDomainConfiguration</span>
-        </li>
-        
-        <li class="entity_key" data-entity-name="RoleAssignmentPolicy">
-          <span class="entity_name">RoleAssignmentPolicy</span>
-        </li>
-        
-        <li class="entity_key" data-entity-name="SecureScore">
-          <span class="entity_name">SecureScore</span>
+        <li class="entity_key" data-entity-name="RemoteDomain">
+          <span class="entity_name">RemoteDomain</span>
         </li>
         
         <li class="entity_key" data-entity-name="SharepointTenant">
           <span class="entity_name">SharepointTenant</span>
-        </li>
-        
-        <li class="entity_key" data-entity-name="SharingPolicy">
-          <span class="entity_name">SharingPolicy</span>
-        </li>
-        
-        <li class="entity_key" data-entity-name="TransportRule">
-          <span class="entity_name">TransportRule</span>
         </li>
         
       </ul>
@@ -96,12 +105,24 @@
           <span class="entity_name">AntiPhishPolicy</span>
         </li>
         
-        <li class="entity_key" data-entity-name="ConditionalAccessPolicy">
-          <span class="entity_name">ConditionalAccessPolicy</span>
+        <li class="entity_key" data-entity-name="DkimSigningConfig">
+          <span class="entity_name">DkimSigningConfig</span>
         </li>
         
-        <li class="entity_key" data-entity-name="CsOAuthConfiguration">
-          <span class="entity_name">CsOAuthConfiguration</span>
+        <li class="entity_key" data-entity-name="HostedOutboundSpamFilterPolicy">
+          <span class="entity_name">HostedOutboundSpamFilterPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="MalwareFilterPolicy">
+          <span class="entity_name">MalwareFilterPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="OAuth2PermissionGrant">
+          <span class="entity_name">OAuth2PermissionGrant</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SecureScore">
+          <span class="entity_name">SecureScore</span>
         </li>
         
       </ul>
@@ -447,13 +468,13 @@
           </tr>
           
           <tr>
-            <td>passwordSigninFailureCountBeforeWipe</td>
+            <td>passcodeSignInFailureCountBeforeWipe</td>
             <td>number</td>
             <td>Number of failed authentication attempts before a device is wiped. (iOS)</td>
           </tr>
           
           <tr>
-            <td>passwordSigninFailureCountBeforeFactoryReset</td>
+            <td>passwordSignInFailureCountBeforeFactoryReset</td>
             <td>number</td>
             <td>Number of failed authentication attempts before a device is wiped. (Windows 8)</td>
           </tr>
@@ -534,7 +555,7 @@
           </tr>
           
           <tr>
-            <td>name</td>
+            <td>Name</td>
             <td>string</td>
             <td>Name of the policy.</td>
           </tr>
@@ -559,7 +580,7 @@
           
           <tr>
             <td>AssignedRoles</td>
-            <td>Reference to string</td>
+            <td>list</td>
             <td>List of roles assigned to this policy.  Some sample values are "My Custom Apps", "My Marketplace Apps", "My ReadWriteMailbox Apps".</td>
           </tr>
           
@@ -660,25 +681,25 @@
           </tr>
           
           <tr>
-            <td>mailTipsAllTipsEnabled</td>
+            <td>MailTipsAllTipsEnabled</td>
             <td>boolean</td>
             <td>True if mail tips are enabled.</td>
           </tr>
           
           <tr>
-            <td>mailTipsExternalRecipientsTipsEnabled</td>
+            <td>MailTipsExternalRecipientsTipsEnabled</td>
             <td>boolean</td>
             <td>True if external recipient mail tips are enabled.</td>
           </tr>
           
           <tr>
-            <td>mailTipsGroupMetricsEnabled</td>
+            <td>MailTipsGroupMetricsEnabled</td>
             <td>boolean</td>
             <td>True if mail tips group metrics are enabled.</td>
           </tr>
           
           <tr>
-            <td>mailTipsLargeAudienceThreshold</td>
+            <td>MailTipsLargeAudienceThreshold</td>
             <td>number</td>
             <td>This setting defines a "large audience" in your tenant.  If an email is about to be sent to a large audience, a mail tip will be shown to alert the user.</td>
           </tr>
@@ -695,6 +716,18 @@
             <td>If true, all non-user mailboxes have audit enabled. Otherwise, at least 1 non-user mailbox has auditing disabled. You can get this information from PowerShell using the command `Get-Mailbox -Filter 'AuditEnabled -eq $false -and RecipientTypeDetails -ne "UserMailbox" -and RecipientTypeDetails -ne "SharedMailbox"' -ResultSize 1 | Select-Object Id, Name, AuditEnabled`</td>
           </tr>
           
+          <tr>
+            <td>DefaultMailboxRegion</td>
+            <td>string</td>
+            <td>The default mailbox region of the organization.  Example value - "nam"</td>
+          </tr>
+          
+          <tr>
+            <td>OrganizationId</td>
+            <td>string</td>
+            <td>The identifier for the Exchange organization.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="OwaMailboxPolicy">
@@ -705,19 +738,19 @@
           </tr>
           
           <tr>
-            <td>linkedInEnabled</td>
+            <td>LinkedInEnabled</td>
             <td>boolean</td>
             <td>If False, LinkedIn contact synchronization is disabled.</td>
           </tr>
           
           <tr>
-            <td>facebookEnabled</td>
+            <td>FacebookEnabled</td>
             <td>boolean</td>
             <td>If False, Facebook contact synchronization is disabled.</td>
           </tr>
           
           <tr>
-            <td>additionalStorageProvidersAvailable</td>
+            <td>AdditionalStorageProvidersAvailable</td>
             <td>boolean</td>
             <td>If False, additional storage providers (such as Box, DropBox, etc.) in Outlook on the Web will be restricted.</td>
           </tr>
@@ -732,13 +765,25 @@
           </tr>
           
           <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>The id of the TransportRule</td>
+          </tr>
+          
+          <tr>
             <td>Name</td>
             <td>string</td>
             <td>The name of the Mail Transport Rule.</td>
           </tr>
           
           <tr>
-            <td>redirectMessageTo</td>
+            <td>State</td>
+            <td>string</td>
+            <td>The state of the TransportRule.  For example, "Enabled"</td>
+          </tr>
+          
+          <tr>
+            <td>RedirectMessageTo</td>
             <td>string</td>
             <td>An email address that this MailTransportRule will auto-forward emails to.</td>
           </tr>
@@ -762,31 +807,31 @@
           </tr>
           
           <tr>
-            <td>sentToScope</td>
+            <td>SentToScope</td>
             <td>string</td>
             <td>The "sent to scope" condition being checked in this Transport Rule. Possible values are "InOrganization", "NotInOrganization", "ExternalPartner" and "ExternalNonPartner". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more details.</td>
           </tr>
           
           <tr>
-            <td>fromScope</td>
+            <td>FromScope</td>
             <td>string</td>
             <td>The "from scope" condition being checked in this Transport Rule. Possible values are "InOrganization" "NotInOrganization". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more details.</td>
           </tr>
           
           <tr>
-            <td>messageTypeMatches</td>
+            <td>MessageTypeMatches</td>
             <td>string</td>
             <td>Specifies a condition that looks for messages of a specified type.  Possible values are "OOF", "AutoForward", "Encrypted", "Calendaring", "PermissionControlled", Voicemail", "Signed", "ApprovalRequest", and "ReadReceipt". See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more information.</td>
           </tr>
           
           <tr>
-            <td>rejectMessageEnhancedStatusCode</td>
+            <td>RejectMessageEnhancedStatusCode</td>
             <td>string</td>
             <td>Specifies the enhanced status code that's used when the rule rejects messages. See https://docs.microsoft.com/en-us/powershell/module/exchange/set-transportrule?view=exchange-ps for more information.</td>
           </tr>
           
           <tr>
-            <td>rejectMessageReasonText</td>
+            <td>RejectMessageReasonText</td>
             <td>string</td>
             <td>Specifies the explanation text that's used when a TransportRule rejects a message.</td>
           </tr>
@@ -832,7 +877,7 @@
           
         </table>
       
-        <table class="entity_table" data-entity-name="RemoteDomainConfiguration">
+        <table class="entity_table" data-entity-name="RemoteDomain">
           <tr>
             <th>Attribute</th>
             <th>Type</th>
@@ -842,7 +887,7 @@
           <tr>
             <td>Name</td>
             <td>string</td>
-            <td>The name of the Remote Domain Configuration. The default Remote Domain Configuration on an O365 account has name "Default", and domain "*".</td>
+            <td>The name of the Remote Domain asset. The default Remote Domain on an O365 account has name "Default", and domain "*".</td>
           </tr>
           
           <tr>
@@ -1047,6 +1092,189 @@
             <td>requireAnonymousLinksExpireInDays</td>
             <td>number</td>
             <td>The number of days before an anonymous sharing link for a file expires. A value of -1 indicates no expiry.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AuthenticationPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthActiveSync</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with Exchange Active Sync.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthAutodiscover</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with Autodiscover.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthImap</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with IMAP.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthMapi</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with MAPI.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthOfflineAddressBook</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with Offline Address Books.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthOutlookService</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with the Outlook service.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthPop</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with POP.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthPowershell</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with PowerShell.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthReportingWebServices</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with reporting web services.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthRest</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with REST API.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthRpc</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with RPC.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthSmtp</td>
+            <td>boolean</td>
+            <td>Whether to allow Basic authentication with SMTP.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowBasicAuthWebServices</td>
+            <td>boolean</td>
+            <td>whether to allow Basic authentication with Exchange Web Services (EWS).</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="User">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for the user.</td>
+          </tr>
+          
+          <tr>
+            <td>userPrincipalName</td>
+            <td>string</td>
+            <td>The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.</td>
+          </tr>
+          
+          <tr>
+            <td>mail</td>
+            <td>string</td>
+            <td>The SMTP address for the user, for example, jeff@contoso.onmicrosoft.com.</td>
+          </tr>
+          
+          <tr>
+            <td>displayName</td>
+            <td>string</td>
+            <td>The name displayed in the address book for the user.</td>
+          </tr>
+          
+          <tr>
+            <td>givenName</td>
+            <td>string</td>
+            <td>The first name of the user.</td>
+          </tr>
+          
+          <tr>
+            <td>surname</td>
+            <td>string</td>
+            <td>The last name of the user.</td>
+          </tr>
+          
+          <tr>
+            <td>passwordPolicies</td>
+            <td>string</td>
+            <td>A string representing password policies applied to this specific user. If the value is empty, or "None", then this user does not have any special password policy settings and follows the default password policies set for the Azure tenant.  Possible values for this field include "DisableStrongPassword", "DisablePasswordExpiration", or a combination of these two (e.g "DisableStrongPassword, DisablePasswordExpiration").</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="OAuth2PermissionGrant">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The ID of the OAuth2PermissionGrant.</td>
+          </tr>
+          
+          <tr>
+            <td>clientId</td>
+            <td>string</td>
+            <td>The ID of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Corresponds to the 'objectId' field inside the Azure 'Enterprise applications' page.</td>
+          </tr>
+          
+          <tr>
+            <td>consentType</td>
+            <td>string</td>
+            <td>Indicates if authorization is granted for the client application to impersonate all users or only a specific user. 'AllPrincipals' indicates authorization to impersonate all users. 'Principal' indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions.</td>
+          </tr>
+          
+          <tr>
+            <td>principalId</td>
+            <td>string</td>
+            <td>The ID of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is 'AllPrincipals' this value is null. Required when consentType is 'Principal'.</td>
+          </tr>
+          
+          <tr>
+            <td>resourceId</td>
+            <td>string</td>
+            <td>The ID of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.</td>
+          </tr>
+          
+          <tr>
+            <td>scope</td>
+            <td>string</td>
+            <td>A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, 'openid User.Read GroupMember.Read.All'. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.</td>
           </tr>
           
         </table>

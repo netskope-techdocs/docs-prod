@@ -1,0 +1,2217 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
+-->
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.2rem}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.2rem}
+body {font-family: Arial,sans-serif;}
+
+table.rule_table {font-size: 90%}
+td.code {font-family: monospace}
+th {font-weight: bold; cursor: pointer; }
+input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
+.headerSortDown:after,
+.headerSortUp:after{
+    content: ' ';
+    position: relative;
+    left: 10px;
+    border: 7px solid transparent;
+}
+.headerSortDown:after{
+    top: 10px;
+    border-top-color: silver;
+}
+.headerSortUp:after{
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+    padding-left: 20px;
+}
+
+img[alt="Netskope"] {display:block; margin:1.2rem;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys>.rule_category:first-child{margin-top:0;}
+.rule_keys ul {list-style: none;}
+.rule_keys li {cursor: pointer;}
+.rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.rule_keys {position: fixed; top:135}
+img {position: fixed; top: 0}
+h1 {position: fixed; top: 75}
+
+.rule_tables {flex:3 1 0px;display:inline-block;}
+.rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.rule_tables table {table-layout: fixed; width:100%;}
+.rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
+
+/* rule styles */
+.rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
+.rule_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.rule_category:before, .rule_category:after {display:inline-block; content:''; width:0.4rem;}
+.rule_key {padding:0.3rem;padding-left: 1.5rem;}
+.rule_key.active {background-color: #ff8300; color:#ffffff;}
+.rule_name {width:100%; text-align: left;}
+</style>
+
+<title>ServiceNow Predefined Rules</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>ServiceNow Predefined Rules</h1>
+  <div class="container">
+    <div class="rule_keys">
+        <ul>
+            
+            <li class="rule_key" data-profile-name="AICPA-SOC-TSC-2017">
+              <span class="rule_name">AICPA SOC2 TSC 2017 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="BPR">
+              <span class="rule_name">ServiceNow Best Practices</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="CSA-CCM-4.0">
+              <span class="rule_name">CSA-CCM v4.0 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="GDPR-2016-679">
+              <span class="rule_name">GDPR 2016/679 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="HIPAA-1996">
+              <span class="rule_name">HIPAA 1996 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="ISO-27002-2013">
+              <span class="rule_name">ISO 27002 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST-800-53-4">
+              <span class="rule_name">NIST 800-53 r4 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST-CSF-1.1">
+              <span class="rule_name">NIST-CSF v1.1 (ServiceNow)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="PCI-DSS-3.0">
+              <span class="rule_name">PCI-DSS v3.0 (ServiceNow)</span>
+            </li>
+            
+            <!--
+            <li class="rule_key" data-profile-name="ALL">
+              <span class="rule_name">All Rules</span>
+            </li>
+            -->
+        </ul>
+        <br><br>
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
+    </div>
+    <div class="rule_tables">
+      
+        <table id="table" class="rule_table" data-profile-name="AICPA-SOC-TSC-2017">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="1">
+            <!-- <td>1</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="2">
+            <!-- <td>2</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="6">
+            <!-- <td>6</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="7">
+            <!-- <td>7</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="8">
+            <!-- <td>8</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="9">
+            <!-- <td>9</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="10">
+            <!-- <td>10</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="11">
+            <!-- <td>11</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="12">
+            <!-- <td>12</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="13">
+            <!-- <td>13</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="14">
+            <!-- <td>14</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="15">
+            <!-- <td>15</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="16">
+            <!-- <td>16</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="BPR">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="18">
+            <!-- <td>18</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="22">
+            <!-- <td>22</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="23">
+            <!-- <td>23</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="24">
+            <!-- <td>24</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="26">
+            <!-- <td>26</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="27">
+            <!-- <td>27</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="28">
+            <!-- <td>28</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="29">
+            <!-- <td>29</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="30">
+            <!-- <td>30</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="31">
+            <!-- <td>31</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="32">
+            <!-- <td>32</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="33">
+            <!-- <td>33</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="34">
+            <!-- <td>34</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="CSA-CCM-4.0">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="36">
+            <!-- <td>36</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="37">
+            <!-- <td>37</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="38">
+            <!-- <td>38</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="39">
+            <!-- <td>39</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="40">
+            <!-- <td>40</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="41">
+            <!-- <td>41</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="42">
+            <!-- <td>42</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="43">
+            <!-- <td>43</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="44">
+            <!-- <td>44</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="45">
+            <!-- <td>45</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="46">
+            <!-- <td>46</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="47">
+            <!-- <td>47</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="48">
+            <!-- <td>48</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="49">
+            <!-- <td>49</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="50">
+            <!-- <td>50</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="51">
+            <!-- <td>51</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="GDPR-2016-679">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="52">
+            <!-- <td>52</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="53">
+            <!-- <td>53</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="54">
+            <!-- <td>54</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="55">
+            <!-- <td>55</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="56">
+            <!-- <td>56</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="57">
+            <!-- <td>57</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="58">
+            <!-- <td>58</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="59">
+            <!-- <td>59</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="60">
+            <!-- <td>60</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="61">
+            <!-- <td>61</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="62">
+            <!-- <td>62</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="63">
+            <!-- <td>63</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="64">
+            <!-- <td>64</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="65">
+            <!-- <td>65</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="66">
+            <!-- <td>66</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="67">
+            <!-- <td>67</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="68">
+            <!-- <td>68</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="HIPAA-1996">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="69">
+            <!-- <td>69</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="70">
+            <!-- <td>70</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="71">
+            <!-- <td>71</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="72">
+            <!-- <td>72</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="73">
+            <!-- <td>73</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="74">
+            <!-- <td>74</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="75">
+            <!-- <td>75</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="76">
+            <!-- <td>76</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="77">
+            <!-- <td>77</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="78">
+            <!-- <td>78</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="79">
+            <!-- <td>79</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="80">
+            <!-- <td>80</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="81">
+            <!-- <td>81</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="82">
+            <!-- <td>82</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="83">
+            <!-- <td>83</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="84">
+            <!-- <td>84</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="85">
+            <!-- <td>85</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="ISO-27002-2013">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="86">
+            <!-- <td>86</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="87">
+            <!-- <td>87</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="88">
+            <!-- <td>88</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="89">
+            <!-- <td>89</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="90">
+            <!-- <td>90</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="91">
+            <!-- <td>91</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="92">
+            <!-- <td>92</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="93">
+            <!-- <td>93</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="94">
+            <!-- <td>94</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="95">
+            <!-- <td>95</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="96">
+            <!-- <td>96</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="97">
+            <!-- <td>97</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="98">
+            <!-- <td>98</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="99">
+            <!-- <td>99</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="100">
+            <!-- <td>100</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="101">
+            <!-- <td>101</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="102">
+            <!-- <td>102</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST-800-53-4">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="103">
+            <!-- <td>103</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="104">
+            <!-- <td>104</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="105">
+            <!-- <td>105</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="106">
+            <!-- <td>106</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="107">
+            <!-- <td>107</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="108">
+            <!-- <td>108</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="109">
+            <!-- <td>109</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="110">
+            <!-- <td>110</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="111">
+            <!-- <td>111</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="112">
+            <!-- <td>112</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="113">
+            <!-- <td>113</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="114">
+            <!-- <td>114</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="115">
+            <!-- <td>115</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="116">
+            <!-- <td>116</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="117">
+            <!-- <td>117</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="118">
+            <!-- <td>118</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="119">
+            <!-- <td>119</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST-CSF-1.1">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="120">
+            <!-- <td>120</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="121">
+            <!-- <td>121</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="122">
+            <!-- <td>122</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="123">
+            <!-- <td>123</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="124">
+            <!-- <td>124</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="125">
+            <!-- <td>125</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="126">
+            <!-- <td>126</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="127">
+            <!-- <td>127</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="128">
+            <!-- <td>128</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="129">
+            <!-- <td>129</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="130">
+            <!-- <td>130</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="131">
+            <!-- <td>131</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="132">
+            <!-- <td>132</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="133">
+            <!-- <td>133</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="134">
+            <!-- <td>134</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="135">
+            <!-- <td>135</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="136">
+            <!-- <td>136</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="PCI-DSS-3.0">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="137">
+            <!-- <td>137</td> -->
+            <td>Enable antivirus scanning</td>
+            <td>Enable antivirus scanning.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__snap__enable_scan eq true</td>
+          </tr>
+          
+          <tr num="138">
+            <!-- <td>138</td> -->
+            <td>Users flagged to require a password reset have to do so before making API calls</td>
+            <td>Users flagged to require a password reset with the 'password_needs_reset' flag have to do so before making API calls.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__api__user__reset_password__mandatory eq true</td>
+          </tr>
+          
+          <tr num="139">
+            <!-- <td>139</td> -->
+            <td>Enable CSRF token validation</td>
+            <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__use_csrf_token eq true</td>
+          </tr>
+          
+          <tr num="140">
+            <!-- <td>140</td> -->
+            <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+            <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won't be allowed to log via their mobile device.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__device_encryption_enabled eq true</td>
+          </tr>
+          
+          <tr num="141">
+            <!-- <td>141</td> -->
+            <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+            <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__security__codetag__allow_script eq false</td>
+          </tr>
+          
+          <tr num="142">
+            <!-- <td>142</td> -->
+            <td>Guest session timeout is less than or equal to 30 minutes</td>
+            <td>Guest session timeout is less than or equal to 30 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__guest__session_timeout lte 30</td>
+          </tr>
+          
+          <tr num="143">
+            <!-- <td>143</td> -->
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__sg__allow_rooted_jailbroken_device eq false</td>
+          </tr>
+          
+          <tr num="144">
+            <!-- <td>144</td> -->
+            <td>Require a password for local logins</td>
+            <td>Local logins require a password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__login__no_blank_password eq true</td>
+          </tr>
+          
+          <tr num="145">
+            <!-- <td>145</td> -->
+            <td>Multi-factor authentication (MFA) is enabled</td>
+            <td>Multi-factor authentication (MFA) is enabled.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authenticate__multifactor eq true</td>
+          </tr>
+          
+          <tr num="146">
+            <!-- <td>146</td> -->
+            <td>Enforce password policies when users change their password</td>
+            <td>Password policies are enforced when a user changes their password.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__enable__password_policy eq true</td>
+          </tr>
+          
+          <tr num="147">
+            <!-- <td>147</td> -->
+            <td>Enable CAPTCHA validation during password resets</td>
+            <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__captcha__ignore eq false</td>
+          </tr>
+          
+          <tr num="148">
+            <!-- <td>148</td> -->
+            <td>Password reset security answers have a minimum length of 4</td>
+            <td>Password reset security answers have a minimum length of 4.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have password_reset__qa__ans_min_len gte 4</td>
+          </tr>
+          
+          <tr num="149">
+            <!-- <td>149</td> -->
+            <td>Require SSO credentials for the main ServiceNow login page</td>
+            <td>Require SSO credentials even for the main ServiceNow login page. The property 'glide.authenticate.failed_requirement_redirect' also has to be valid for proper redirects.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__authentication__external__disable_local_login eq true and glide__authenticate__failed_requirement_redirect len() gt 0 </td>
+          </tr>
+          
+          <tr num="150">
+            <!-- <td>150</td> -->
+            <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+            <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__security__strict_elevate_privilege eq true</td>
+          </tr>
+          
+          <tr num="151">
+            <!-- <td>151</td> -->
+            <td>Session timeout is less than or equal to 90 minutes</td>
+            <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__ui__session_timeout lte 90</td>
+          </tr>
+          
+          <tr num="152">
+            <!-- <td>152</td> -->
+            <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+            <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have glide__unauthorized__session_timeout lte 5</td>
+          </tr>
+          
+          <tr num="153">
+            <!-- <td>153</td> -->
+            <td>Enforce translated HTML sanitization</td>
+            <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+            <td>
+            
+              ITSM<br>
+            
+            </td>
+            <td class="code">SysProperties should have com__glide__security__check_unsanitized_html eq "enforce"</td>
+          </tr>
+          
+        </table>
+      
+      &nbsp;
+      <br><br>
+      <br><br>
+      <br><br>
+      &nbsp;
+    </div>
+  </div>
+  <script>
+
+  // Sort
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+      this.asc = !this.asc;
+      const table = th.closest('table');
+      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+          .forEach(tr => table.appendChild(tr) );
+      $('th').removeClass('headerSortDown').removeClass('headerSortUp')
+      if (this.asc) {
+        $(th).addClass('headerSortUp')
+      } else {
+        $(th).addClass('headerSortDown')
+      }
+  })));
+
+  // Search
+  var $rows = $('table.rule_table tr[num]');
+  $('#search').keyup(debounce(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+      reg = RegExp(val, 'i'),
+      text;
+
+    $rows.show().filter(function() {
+      text = $(this).text().replace(/\s+/g, ' ');
+      return !reg.test(text);
+    }).hide();
+  }, 300));
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  // Nav Menu Show/Hide
+  function hideRuleTables() {
+    $('.rule_table').hide()
+    $('.rule_key').removeClass('active')
+  }
+
+  function showRuleTable(name) {
+    // c) show this table
+    if (name == 'ALL') { 
+        $('.rule_table').show()
+    } else {
+        $('.rule_table[data-profile-name="'+name+'"]').show()
+    }
+  }
+
+  function activateRule(profile_name) {
+    // a) hide all the tables with the class 'rule_table'
+    hideRuleTables()
+    // b) find the table in '.rule_table' with the same 'profile-name' data attribute
+    showRuleTable(profile_name)
+    if (name == "ALL") { 
+        $('.rule_key').addClass('active')
+    } else {
+        $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
+    }
+  }
+
+  function initListeners(){
+    // 1. iterate over each Rule list item   
+    $('.rule_key').each(function(i, obj) {
+      var ruleKey = $(obj)
+      var ruleName = ruleKey.data('profile-name')
+      console.log('adding click listener to ' + ruleName);
+      // 2. add a click listener
+      ruleKey.click(function(event){
+        console.log('received click event for ' + ruleName)
+        activateRule(ruleName)
+      })
+    })
+  }
+  (function(){
+    hideRuleTables()
+    var firstRule = $($('.rule_key')[0]).data('profile-name')
+    console.log('activating first rule: ', firstRule)
+    activateRule(firstRule)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

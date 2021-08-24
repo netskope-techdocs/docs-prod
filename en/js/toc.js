@@ -121,11 +121,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "behavior-analytics-incidents.html",
-"text": "Behavior Analytics Incidents",
-"class": "topic-link section"
-},
-{
 "url": "behavior-analytics-incident-details.html",
 "text": "Behavior Analytics Incident Details",
 "class": "topic-link section"
@@ -260,13 +255,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis.html",
+"url": "netskope-platform-rest-apis.html",
 "text": "Netskope Platform REST APIs",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-platform-api-endpoints.html",
+"url": "netskope-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
 ,
@@ -630,6 +625,82 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-firewall.html",
+"text": "Netskope Cloud Firewall",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-a-gre-tunnel.html",
+"text": "Configure a GRE Tunnel",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-ipsec-tunnel.html",
+"text": "Configure an IPSec Tunnel",
+"class": "topic-link section"
+},
+{
+"url": "gre---ipsec-tunnel-gateway---http-s--non-standard-port-support.html",
+"text": "GRE &amp; IPSec Tunnel Gateway - HTTP(s) Non-Standard Port Support",
+"class": "topic-link section"
+},
+{
+"url": "netskope-client-support-in-cloud-firewall.html",
+"text": "Netskope Client Support in Cloud Firewall",
+"class": "topic-link section"
+},
+{
+"url": "network-location.html",
+"text": "Network Location",
+"class": "topic-link section"
+},
+{
+"url": "configure-custom-applications.html",
+"text": "App Definition",
+"class": "topic-link section"
+},
+{
+"url": "inline-policies.html",
+"text": "Real-time Protection Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-users.html",
+"text": "Add Users",
+"class": "topic-link section"
+}]
+},
+{
+"url": "ssl-decryption.html",
+"text": "SSL Decryption",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-a-policy-for-ssl-decryption.html",
+"text": "Add a Policy for SSL Decryption",
+"class": "topic-link section"
+},
+{
+"url": "add-new-network-location-for-ssl-decryption.html",
+"text": "Add New Network Location for SSL Decryption",
+"class": "topic-link section"
+}]
+},
+{
+"url": "exceptions.html",
+"text": "Exceptions",
+"class": "topic-link section"
+},
+{
+"url": "cloud-firewall-network-events-and-alerts.html",
+"text": "Cloud Firewall Network Events and Alerts",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
 "class": "topic-link section reused-publication reused-publication"
@@ -733,11 +804,6 @@ var toc = [{
 }]
 },
 {
-"url": "aws-setup-faqs.html",
-"text": "AWS Setup FAQs",
-"class": "topic-link section"
-},
-{
 "url": "setting-up-aws-instances-using-old-ui.html",
 "text": "Setting Up AWS Instances using Old UI",
 "class": "topic-link section"
@@ -797,6 +863,11 @@ var toc = [{
 "class": "topic-link section"
 }]
 }]
+},
+{
+"url": "aws-setup-faqs.html",
+"text": "AWS Setup FAQs",
+"class": "topic-link section"
 },
 {
 "url": "security-assessment.html",
@@ -874,6 +945,16 @@ var toc = [{
 "text": "Cloud Infrastructure Use Cases",
 "class": "topic-link section"
 }]
+},
+{
+"url": "setting-up-policies-to-scan-s3-buckets.html",
+"text": "Setting up Policies to scan S3 Buckets",
+"class": "topic-link section"
+},
+{
+"url": "sample-granular-policies.html",
+"text": "Sample Granular Policies",
+"class": "topic-link section"
 }]
 },
 {
@@ -976,7 +1057,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "sample-granular-policies.html",
+"url": "sample-granular-policies-309504.html",
 "text": "Sample Granular Policies",
 "class": "topic-link section"
 }]
@@ -1349,6 +1430,85 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "manage-storage-scan-policies.html",
+"text": "Manage Storage Scan Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-storage-scan-policy.html",
+"text": "Create a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "enable-or-disable-a-storage-scan-policy.html",
+"text": "Enable or Disable a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "apply-changes-to-storage-scan-policies.html",
+"text": "Apply Changes to Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "list-storage-scan-policies.html",
+"text": "List Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "get-storage-scan-policy-details.html",
+"text": "Get Storage Scan Policy Details",
+"class": "topic-link section"
+},
+{
+"url": "revert-a-storage-scan-policy-change.html",
+"text": "Revert a Storage Scan Policy Change",
+"class": "topic-link section"
+},
+{
+"url": "clone-a-storage-scan-policy.html",
+"text": "Clone a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "update-a-storage-scan-policy.html",
+"text": "Update a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-storage-scan-policy.html",
+"text": "Delete a Storage Scan Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-retro-scan-jobs.html",
+"text": "Manage Retro Scan Jobs",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-retro-scan-job.html",
+"text": "Create a Retro Scan Job",
+"class": "topic-link section"
+},
+{
+"url": "list-retro-scan-jobs.html",
+"text": "List Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "stop-retro-scan-jobs.html",
+"text": "Stop Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-storage-scan-policy-312402.html",
+"text": "Delete a Storage Scan Policy",
+"class": "topic-link section"
+}]
+},
+{
 "url": "manage-bucket-lists-for-a-constraint-profile.html",
 "text": "Manage Bucket Lists for a Constraint Profile",
 "class": "topic-link section"
@@ -1430,6 +1590,35 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-security-posture.html",
 "text": "Configure Salesforce Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-servicenow.html",
+"text": "Security Posture for ServiceNow",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-servicenow-instance-for-security-posture.html",
+"text": "Configure ServiceNow Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-for-zoom.html",
+"text": "Security Posture for Zoom",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-zoom-instance-for-security-posture.html",
+"text": "Configure Zoom Instance for Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "uninstall-the-netskope-app-from-the-zoom-account.html",
+"text": "Uninstall the Netskope App from the Zoom Account",
 "class": "topic-link section"
 }]
 },
@@ -3648,7 +3837,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "inline-policies.html",
+"url": "inline-policies-231157.html",
 "text": "Real-time Protection Policies",
 "class": "topic-link section"
 },
@@ -3748,13 +3937,13 @@ var toc = [{
 }]
 },
 {
-"url": "ssl-decryption.html",
+"url": "ssl-decryption-127472.html",
 "text": "SSL Decryption",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "add-a-policy-for-ssl-decryption.html",
+"url": "add-a-policy-for-ssl-decryption-127473.html",
 "text": "Add a Policy for SSL Decryption",
 "class": "topic-link section"
 ,
@@ -3766,7 +3955,7 @@ var toc = [{
 }]
 },
 {
-"url": "add-new-network-location-for-ssl-decryption.html",
+"url": "add-new-network-location-for-ssl-decryption-127474.html",
 "text": "Add New Network Location for SSL Decryption",
 "class": "topic-link section"
 }]
@@ -4097,22 +4286,22 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "create-a-ctep-profile.html",
-"text": "Create a CTEP Profile",
-"class": "topic-link section"
-},
-{
-"url": "enable-ctep-settings.html",
-"text": "Enable CTEP Settings",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-protection-policy-for-ctep.html",
-"text": "Create a Real-time Protection Policy for CTEP",
-"class": "topic-link section"
-}]
-},
+  {
+  "url": "create-a-ctep-profile.html",
+  "text": "Create a CTEP Profile",
+  "class": "topic-link section"
+  },
+  {
+  "url": "enable-ctep-settings.html",
+  "text": "Enable CTEP Settings",
+  "class": "topic-link section"
+  },
+  {
+  "url": "create-a-real-time-protection-policy-for-ctep.html",
+  "text": "Create a Real-time Protection Policy for CTEP",
+  "class": "topic-link section"
+  }]
+  },
 {
 "url": "forensics.html",
 "text": "Forensics",
@@ -4295,7 +4484,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "exceptions.html",
+"url": "exceptions-218533.html",
 "text": "Exceptions",
 "class": "topic-link section"
 }]
@@ -4368,6 +4557,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "private-apps-configuration-methods.html",
+"text": "Private Apps Configuration Methods",
+"class": "topic-link section"
+},
+{
 "url": "create-a-new-publisher.html",
 "text": "Create a New Publisher",
 "class": "topic-link section"
@@ -4427,6 +4621,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-dns-cname-for-npa-clientless.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+},
+{
 "url": "steer-traffic-for-private-apps.html",
 "text": "Steer Traffic for Private Apps",
 "class": "topic-link section"
@@ -4449,7 +4648,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-users.html",
+"url": "add-users-164689.html",
 "text": "Add Users",
 "class": "topic-link section"
 },
@@ -4633,8 +4832,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-interoperability.html",
-"text": "Netskope Client Interoperability",
+"url": "netskope-client-inter-operability.html",
+"text": "Netskope Client Inter-Operability",
 "class": "topic-link section"
 },
 {
@@ -4667,7 +4866,7 @@ var toc = [{
 }]
 },
 {
-"url": "configure-custom-applications.html",
+"url": "configure-custom-applications-164305.html",
 "text": "App Definitions ",
 "class": "topic-link section"
 },
@@ -4826,8 +5025,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-309538.html",
-"text": "Reverse Proxy as a Service with Google Workspaces",
+"url": "using-reverse-proxy-as-a-service-with-google-workspaces.html",
+"text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
 ,
 "children": [
@@ -5515,14 +5714,36 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-2-309517.html",
+"url": "saml-reverse-proxy-for-workday-with-okta.html",
+"text": "SAML Reverse Proxy for Workday with Okta",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-netskope-saml-proxy.html",
+"text": "Configure Netskope SAML Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-workday-account-in-okta.html",
+"text": "Configure a Workday Account in Okta",
+"class": "topic-link section"
+},
+{
+"url": "configure-workday.html",
+"text": "Configure Workday",
+"class": "topic-link section"
+}]
+},
+{
+"url": "reverse-proxy-as-a-service-with-google-workspaces-309517.html",
 "text": "Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "reverse-proxy-as-a-service-with-google-workspaces-3-309538.html",
-"text": "Reverse Proxy as a Service with Google Workspaces",
+"url": "using-reverse-proxy-as-a-service-with-google-workspaces-309538.html",
+"text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
 ,
 "children": [
@@ -7035,8 +7256,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-87-0-0.html",
-"text": "Netskope Release Notes Version 87.0.0",
+"url": "netskope-hotfix-release-notes-version-88-1-0.html",
+"text": "Netskope Hotfix Release Notes Version 88.1.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -7045,9 +7266,10 @@ var toc = [{
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
+
 {
-"url": "known-issues.html",
-"text": "Known Issues",
+"url": "new-product-available---netskope-cloud-firewall.html",
+"text": "New Product Available - Netskope Cloud Firewall",
 "class": "topic-link section"
 },
 {
@@ -7078,7 +7300,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "known-issues-85475.html",
+"url": "known-issues.html",
 "text": "Known Issues",
 "class": "topic-link section"
 },

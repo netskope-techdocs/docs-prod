@@ -1,0 +1,109 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="entity_styles.css">
+<title>Zoom Entities supported in DSL</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Zoom Entities supported in DSL</h1>
+  <div class="container">
+    <div class="entity_keys">
+      
+      <h2 class="entity_category Security">Security</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="AccountMeetingSecurity">
+          <span class="entity_name">AccountMeetingSecurity</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="AccountSettings">
+          <span class="entity_name">AccountSettings</span>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="entity_tables">
+      
+        <table class="entity_table" data-entity-name="AccountSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>schedule_meeting</td>
+            <td>entity</td>
+            <td>Meeting scheduling settings.</td>
+          </tr>
+          
+          <tr>
+            <td>in_meeting</td>
+            <td>entity</td>
+            <td>In-meeting settings.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AccountMeetingSecurity">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>meeting_security</td>
+            <td>entity</td>
+            <td>Meeting Security Settings</td>
+          </tr>
+          
+        </table>
+      
+    </div>
+  </div>
+  <script>
+  function hideEntityTables() {
+    $('.entity_table').hide()
+    $('.entity_key').removeClass('active')
+  }
+
+  function showEntityTable(name) {
+    // c) show this table
+    $('.entity_table[data-entity-name="'+name+'"]').show()
+  }
+
+  function activateEntity(entity_name) {
+    // a) hide all the tables with the class 'entity_table'
+    hideEntityTables()
+    // b) find the table in '.entity_table' with the same 'entity-name' data attribute
+    showEntityTable(entity_name)
+    $('.entity_key[data-entity-name="'+entity_name+'"]').addClass('active')
+  }
+
+  function initListeners(){
+    // 1. iterate over each Entity list item   
+    $('.entity_key').each(function(i, obj) {
+      var entityKey = $(obj)
+      var entityName = entityKey.data('entity-name')
+      console.log('adding click listener to ' + entityName);
+      // here, entityName might equal something like 'S3Bucket'
+      // 2. add a click listener
+      entityKey.click(function(event){
+        console.log('received click event for ' + entityName)
+        activateEntity(entityName)
+      })
+    })
+  }
+  (function(){
+    hideEntityTables()
+    var firstEntity = $($('.entity_key')[0]).data('entity-name')
+    console.log('activating first entity: ', firstEntity)
+    activateEntity(firstEntity)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

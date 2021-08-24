@@ -1,0 +1,2201 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
+-->
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start Netskope styles */
+
+h1 {font-size: 1.8em; font-family: Arial,sans-serif; margin: 1.2rem}
+h2 {font-size: 1.6em; font-family: Arial,sans-serif; margin: 1.2rem}
+body {font-family: Arial,sans-serif;}
+
+table.rule_table {font-size: 90%}
+td.code {font-family: monospace}
+th {font-weight: bold; cursor: pointer; }
+input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
+.headerSortDown:after,
+.headerSortUp:after{
+    content: ' ';
+    position: relative;
+    left: 10px;
+    border: 7px solid transparent;
+}
+.headerSortDown:after{
+    top: 10px;
+    border-top-color: silver;
+}
+.headerSortUp:after{
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+    padding-left: 20px;
+}
+
+img[alt="Netskope"] {display:block; margin:1.2rem;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
+._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
+.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys>.rule_category:first-child{margin-top:0;}
+.rule_keys ul {list-style: none;}
+.rule_keys li {cursor: pointer;}
+.rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
+
+.rule_keys {position: fixed; top:135}
+img {position: fixed; top: 0}
+h1 {position: fixed; top: 75}
+
+.rule_tables {flex:3 1 0px;display:inline-block;}
+.rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
+.rule_tables table {table-layout: fixed; width:100%;}
+.rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
+.rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
+
+/* rule styles */
+.rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
+.rule_category {font-size:1.3em;width: 100%;background-color: rgba(180,180,180,0.2); margin:0.5rem 0 0.2rem 0;padding:0;}
+.rule_category:before, .rule_category:after {display:inline-block; content:''; width:0.4rem;}
+.rule_key {padding:0.3rem;padding-left: 1.5rem;}
+.rule_key.active {background-color: #ff8300; color:#ffffff;}
+.rule_name {width:100%; text-align: left;}
+</style>
+
+<title>Zoom Predefined Rules</title>
+</head>
+<body>
+  <img src="logo.png" alt="Netskope"/>
+  <h1>Zoom Predefined Rules</h1>
+  <div class="container">
+    <div class="rule_keys">
+        <ul>
+            
+            <li class="rule_key" data-profile-name="AICPA-SOC-TSC-2017">
+              <span class="rule_name">AICPA SOC2 2017 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="CIS">
+              <span class="rule_name">CIS Zoom Benchmark v1.0.0</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="CSA-CCM-4.0">
+              <span class="rule_name">CSA-CCM v4.0 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="GDPR-2016-679">
+              <span class="rule_name">GDPR 2016/679 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="HIPAA-1996">
+              <span class="rule_name">HIPAA 1996 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="ISO-27002-2013">
+              <span class="rule_name">ISO 27002 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST-800-53-4">
+              <span class="rule_name">NIST 800-53 r4 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="NIST-CSF-1.1">
+              <span class="rule_name">NIST-CSF v1.1 (Zoom)</span>
+            </li>
+            
+            <li class="rule_key" data-profile-name="PCI-DSS-3.0">
+              <span class="rule_name">PCI-DSS v3.0 (Zoom)</span>
+            </li>
+            
+            <!--
+            <li class="rule_key" data-profile-name="ALL">
+              <span class="rule_name">All Rules</span>
+            </li>
+            -->
+        </ul>
+        <br><br>
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
+    </div>
+    <div class="rule_tables">
+      
+        <table id="table" class="rule_table" data-profile-name="AICPA-SOC-TSC-2017">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="1">
+            <!-- <td>1</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="2">
+            <!-- <td>2</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="3">
+            <!-- <td>3</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="4">
+            <!-- <td>4</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="5">
+            <!-- <td>5</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="6">
+            <!-- <td>6</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="7">
+            <!-- <td>7</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="8">
+            <!-- <td>8</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="9">
+            <!-- <td>9</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="10">
+            <!-- <td>10</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="11">
+            <!-- <td>11</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="12">
+            <!-- <td>12</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="13">
+            <!-- <td>13</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="14">
+            <!-- <td>14</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="15">
+            <!-- <td>15</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="16">
+            <!-- <td>16</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="17">
+            <!-- <td>17</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="18">
+            <!-- <td>18</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="19">
+            <!-- <td>19</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="CIS">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="20">
+            <!-- <td>20</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="21">
+            <!-- <td>21</td> -->
+            <td>Allow participants to rename themselves</td>
+            <td>Allow meeting participants and webinar panelists to rename themselves. This option is required to identify participants in a meeting that does not require registration. This option also allows participants to rename themselves to help others identify who they are.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.allow_participants_to_rename eq true</td>
+          </tr>
+          
+          <tr num="22">
+            <!-- <td>22</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="23">
+            <!-- <td>23</td> -->
+            <td>Enable co-hosts</td>
+            <td>Allow the host to add co-hosts. Co-hosts have the same in-meeting controls as the host.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.co_host eq true</td>
+          </tr>
+          
+          <tr num="24">
+            <!-- <td>24</td> -->
+            <td>Embed passcode in meeting links to allow joining with a single click</td>
+            <td>The meeting passcode will be encrypted and included in the invite link to allow participants to join with just one click without having to enter the passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.embed_password_in_join_link eq true</td>
+          </tr>
+          
+          <tr num="25">
+            <!-- <td>25</td> -->
+            <td>Allow users to provide feedback to Zoom</td>
+            <td>Add a Feedback tab to the Windows Settings or Mac Preferences dialog, and also enable users to provide feedback to Zoom at the end of the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.feedback eq true</td>
+          </tr>
+          
+          <tr num="26">
+            <!-- <td>26</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="27">
+            <!-- <td>27</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="28">
+            <!-- <td>28</td> -->
+            <td>Disable meeting reactions</td>
+            <td>Allow meeting participants to communicate without interrupting by reacting with an emoji that shows on their video. Reactions disappear after 10 seconds. Participants can change their reaction skin tone in Settings. This option can be misused by mischievous participants.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.meeting_reactions eq false</td>
+          </tr>
+          
+          <tr num="29">
+            <!-- <td>29</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="30">
+            <!-- <td>30</td> -->
+            <td>Ensure only authenticated users can join meetings</td>
+            <td>Ensure only authenticated users can join meetings. This requires participants to authenticate prior to joining meetings. Hosts can choose an authentication method when scheduling the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.enforce_login eq true</td>
+          </tr>
+          
+          <tr num="31">
+            <!-- <td>31</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="32">
+            <!-- <td>32</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="33">
+            <!-- <td>33</td> -->
+            <td>Allow hosts to add polls/quizzes to a meeting</td>
+            <td>This allows hosts to add polls/quizzes before or during a meeting in order to survey the attendees. Polls also enable the host to validate if participants are engaged in the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.polling eq true</td>
+          </tr>
+          
+          <tr num="34">
+            <!-- <td>34</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="35">
+            <!-- <td>35</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="36">
+            <!-- <td>36</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="37">
+            <!-- <td>37</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="38">
+            <!-- <td>38</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="39">
+            <!-- <td>39</td> -->
+            <td>Ensure screen sharing is enabled</td>
+            <td>Allow the host and participants to share their screen or content during meetings.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.screen_sharing eq true</td>
+          </tr>
+          
+          <tr num="40">
+            <!-- <td>40</td> -->
+            <td>Ensure meeting controls are always shown</td>
+            <td>Always show meeting controls during a meeting. This helps both hosts as well as participants in situations when they may need to quickly access their controls.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.show_meeting_control_toolbar eq true</td>
+          </tr>
+          
+          <tr num="41">
+            <!-- <td>41</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="42">
+            <!-- <td>42</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="43">
+            <!-- <td>43</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="44">
+            <!-- <td>44</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="45">
+            <!-- <td>45</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="46">
+            <!-- <td>46</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="47">
+            <!-- <td>47</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="CSA-CCM-4.0">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="48">
+            <!-- <td>48</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="49">
+            <!-- <td>49</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="50">
+            <!-- <td>50</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="51">
+            <!-- <td>51</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="52">
+            <!-- <td>52</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="53">
+            <!-- <td>53</td> -->
+            <td>Ensure only authenticated users can join meetings</td>
+            <td>Ensure only authenticated users can join meetings. This requires participants to authenticate prior to joining meetings. Hosts can choose an authentication method when scheduling the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.enforce_login eq true</td>
+          </tr>
+          
+          <tr num="54">
+            <!-- <td>54</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="55">
+            <!-- <td>55</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="56">
+            <!-- <td>56</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="57">
+            <!-- <td>57</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="58">
+            <!-- <td>58</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="59">
+            <!-- <td>59</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="60">
+            <!-- <td>60</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="61">
+            <!-- <td>61</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="62">
+            <!-- <td>62</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="63">
+            <!-- <td>63</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="64">
+            <!-- <td>64</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="65">
+            <!-- <td>65</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="66">
+            <!-- <td>66</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="67">
+            <!-- <td>67</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="GDPR-2016-679">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="68">
+            <!-- <td>68</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="69">
+            <!-- <td>69</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="70">
+            <!-- <td>70</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="71">
+            <!-- <td>71</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="72">
+            <!-- <td>72</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="73">
+            <!-- <td>73</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="74">
+            <!-- <td>74</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="75">
+            <!-- <td>75</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="76">
+            <!-- <td>76</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="77">
+            <!-- <td>77</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="78">
+            <!-- <td>78</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="79">
+            <!-- <td>79</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="80">
+            <!-- <td>80</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="81">
+            <!-- <td>81</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="82">
+            <!-- <td>82</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="83">
+            <!-- <td>83</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="84">
+            <!-- <td>84</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="85">
+            <!-- <td>85</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="86">
+            <!-- <td>86</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="HIPAA-1996">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="87">
+            <!-- <td>87</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="88">
+            <!-- <td>88</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="89">
+            <!-- <td>89</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="90">
+            <!-- <td>90</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="91">
+            <!-- <td>91</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="92">
+            <!-- <td>92</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="93">
+            <!-- <td>93</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="94">
+            <!-- <td>94</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="95">
+            <!-- <td>95</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="96">
+            <!-- <td>96</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="97">
+            <!-- <td>97</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="98">
+            <!-- <td>98</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="99">
+            <!-- <td>99</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="100">
+            <!-- <td>100</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="101">
+            <!-- <td>101</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="102">
+            <!-- <td>102</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="103">
+            <!-- <td>103</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="104">
+            <!-- <td>104</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="105">
+            <!-- <td>105</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="ISO-27002-2013">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="106">
+            <!-- <td>106</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="107">
+            <!-- <td>107</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="108">
+            <!-- <td>108</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="109">
+            <!-- <td>109</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="110">
+            <!-- <td>110</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="111">
+            <!-- <td>111</td> -->
+            <td>Ensure only authenticated users can join meetings</td>
+            <td>Ensure only authenticated users can join meetings. This requires participants to authenticate prior to joining meetings. Hosts can choose an authentication method when scheduling the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.enforce_login eq true</td>
+          </tr>
+          
+          <tr num="112">
+            <!-- <td>112</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="113">
+            <!-- <td>113</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="114">
+            <!-- <td>114</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="115">
+            <!-- <td>115</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="116">
+            <!-- <td>116</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="117">
+            <!-- <td>117</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="118">
+            <!-- <td>118</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="119">
+            <!-- <td>119</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="120">
+            <!-- <td>120</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="121">
+            <!-- <td>121</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="122">
+            <!-- <td>122</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="123">
+            <!-- <td>123</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="124">
+            <!-- <td>124</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="125">
+            <!-- <td>125</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST-800-53-4">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="126">
+            <!-- <td>126</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="127">
+            <!-- <td>127</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="128">
+            <!-- <td>128</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="129">
+            <!-- <td>129</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="130">
+            <!-- <td>130</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="131">
+            <!-- <td>131</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="132">
+            <!-- <td>132</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="133">
+            <!-- <td>133</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="134">
+            <!-- <td>134</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="135">
+            <!-- <td>135</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="136">
+            <!-- <td>136</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="137">
+            <!-- <td>137</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="138">
+            <!-- <td>138</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="139">
+            <!-- <td>139</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="140">
+            <!-- <td>140</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="141">
+            <!-- <td>141</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="142">
+            <!-- <td>142</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="143">
+            <!-- <td>143</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="144">
+            <!-- <td>144</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="NIST-CSF-1.1">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="145">
+            <!-- <td>145</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="146">
+            <!-- <td>146</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="147">
+            <!-- <td>147</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="148">
+            <!-- <td>148</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="149">
+            <!-- <td>149</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="150">
+            <!-- <td>150</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="151">
+            <!-- <td>151</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="152">
+            <!-- <td>152</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="153">
+            <!-- <td>153</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="154">
+            <!-- <td>154</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="155">
+            <!-- <td>155</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="156">
+            <!-- <td>156</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="157">
+            <!-- <td>157</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="158">
+            <!-- <td>158</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="159">
+            <!-- <td>159</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="160">
+            <!-- <td>160</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="161">
+            <!-- <td>161</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="162">
+            <!-- <td>162</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="163">
+            <!-- <td>163</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+        <table id="table" class="rule_table" data-profile-name="PCI-DSS-3.0">
+          <tr>
+            <!-- <th width="2%"></th> -->
+            <th width="19%" class="headerSortUp" asc="true">Name</th>
+            <th width="30%">Description</th>
+            <th width="10%">Service</th>
+            <th width="39%">Rule</th>
+          </tr>
+          
+          <tr num="164">
+            <!-- <td>164</td> -->
+            <td>Enable watermarks for meetings</td>
+            <td>Adding a watermark enables author accreditation. Each attendee sees a portion of their own email address embedded as a watermark in any shared content and on the video of the participant who is sharing their screen. This option requires enabling “Only signed-in users can join the meeting” or “Only signed-in users with specified domains can join meetings”.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.watermark eq true</td>
+          </tr>
+          
+          <tr num="165">
+            <!-- <td>165</td> -->
+            <td>Enable auto saving chats</td>
+            <td>Automatically save all in-meeting chats so that hosts do not need to manually save the text of the chat after the meeting starts.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.auto_saving_chat eq true</td>
+          </tr>
+          
+          <tr num="166">
+            <!-- <td>166</td> -->
+            <td>Do not start meetings with the host's video turned on</td>
+            <td>Does not require the host's video to be turned on when the host starts a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.host_video eq false</td>
+          </tr>
+          
+          <tr num="167">
+            <!-- <td>167</td> -->
+            <td>Disable joining before host</td>
+            <td>Do not allow participants to join a meeting before the host arrives. Otherwise, unwanted users cannot be removed or muted until the host arrives, which may prove disruptive to other attendees. Locking this setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.join_before_host eq false</td>
+          </tr>
+          
+          <tr num="168">
+            <!-- <td>168</td> -->
+            <td>Always display ‘Zoom Meeting’ as the meeting topic</td>
+            <td>Hide the actual meeting topic and display the text “Zoom Meeting”, for your scheduled meetings. This helps keep the meeting topic confidential by not displaying it publicly.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.not_store_meeting_topic eq true</td>
+          </tr>
+          
+          <tr num="169">
+            <!-- <td>169</td> -->
+            <td>Ensure Personal Meeting IDs are enabled</td>
+            <td>A Personal Meeting ID (PMI) is a dedicated 9-11 digit number which is assigned to each individual's account when the account is created. This becomes the user's personal meeting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.personal_meeting eq true</td>
+          </tr>
+          
+          <tr num="170">
+            <!-- <td>170</td> -->
+            <td>Require a passcode for Personal Meeting ID meetings</td>
+            <td>All PMI (Personal Meeting ID) meetings should be passcode-protected. This increases security by ensuring that no one can join a PMI meeting unless they also provide that meeting's passcode.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_pmi_meetings eq "all"</td>
+          </tr>
+          
+          <tr num="171">
+            <!-- <td>171</td> -->
+            <td>Disable private messaging between meeting participants</td>
+            <td>Do not allow meeting participants to send a private 1:1 message to another participant.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.private_chat eq false</td>
+          </tr>
+          
+          <tr num="172">
+            <!-- <td>172</td> -->
+            <td>Require a strong passcode</td>
+            <td>Enforce the following requirements for a strong passcode: passcodes should have at least 1 letter, at least 1 number, at least 1 special character, have both uppercase and lowercase letters, have no consecutive characters, and be at least 6 characters.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.length gte 6 and meeting_security.meeting_password_requirement.only_allow_numeric eq false and meeting_security.meeting_password_requirement.have_letter eq true and meeting_security.meeting_password_requirement.have_number eq true and meeting_security.meeting_password_requirement.have_special_character eq true and meeting_security.meeting_password_requirement.have_upper_and_lower_characters eq true and meeting_security.meeting_password_requirement.consecutive_characters_length gte 4</td>
+          </tr>
+          
+          <tr num="173">
+            <!-- <td>173</td> -->
+            <td>Require a passcode for instant meetings</td>
+            <td>A random passcode will be generated when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_instant_meetings eq true</td>
+          </tr>
+          
+          <tr num="174">
+            <!-- <td>174</td> -->
+            <td>Require a passcode for participants joining by phone</td>
+            <td>A numeric passcode will be required for participants joining by phone if your meeting has a passcode. For meeting with an alphanumeric passcode, a numeric version will be generated.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.phone_password eq true</td>
+          </tr>
+          
+          <tr num="175">
+            <!-- <td>175</td> -->
+            <td>Require a passcode when scheduling new meetings</td>
+            <td>Require a passcode when scheduling new meetings. A passcode will be generated when scheduling a meeting and participants require the passcode to join the meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.require_password_for_scheduling_new_meetings eq true</td>
+          </tr>
+          
+          <tr num="176">
+            <!-- <td>176</td> -->
+            <td>Do not start meetings with participants' videos turned on</td>
+            <td>Start meetings with participants' videos turned off. Participants can change this during the meeting. This ensures people joining a meeting do not have their camera on without them realizing. Locking the setting ensures no one changes this when creating a meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.participant_video eq false</td>
+          </tr>
+          
+          <tr num="177">
+            <!-- <td>177</td> -->
+            <td>Require encryption for third-party endpoints (SIP/H.323)</td>
+            <td>By default, Zoom requires encryption for all data transferred between the Zoom cloud, Zoom client, and Zoom Room. Turn on this setting to require encryption for third-party endpoints (SIP/H.323) as well.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have in_meeting.e2e_encryption eq true</td>
+          </tr>
+          
+          <tr num="178">
+            <!-- <td>178</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when starting an instant meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_instant_meetings eq false</td>
+          </tr>
+          
+          <tr num="179">
+            <!-- <td>179</td> -->
+            <td>Disable using the Personal Meeting ID (PMI) when scheduling a meeting</td>
+            <td>Do not use the Personal Meeting ID (PMI) when scheduling a meeting. This ensures a new meeting ID is used for newly scheduled meetings. Disruptive users would not be able to use the older meeting ID (the PMI) to join a new meeting.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountSettings should have schedule_meeting.use_pmi_for_scheduled_meetings eq false</td>
+          </tr>
+          
+          <tr num="180">
+            <!-- <td>180</td> -->
+            <td>Enable waiting room</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually. Enabling the waiting room automatically disables the setting that allows participants to join before the host does.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room eq true</td>
+          </tr>
+          
+          <tr num="181">
+            <!-- <td>181</td> -->
+            <td>Place all users in the meeting's waiting room</td>
+            <td>Ensure that all users are placed in the meeting waiting room.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.waiting_room_settings.participants_to_place_in_waiting_room eq 0</td>
+          </tr>
+          
+          <tr num="182">
+            <!-- <td>182</td> -->
+            <td>Enable weak passcode detection</td>
+            <td>Enabling the option to use “enhanced weak passcode detection” detects and informs users if their passcode is weak, enabling them to change their passcode to a stronger one.</td>
+            <td>
+            
+            </td>
+            <td class="code">AccountMeetingSecurity should have meeting_security.meeting_password_requirement.weak_enhance_detection eq true</td>
+          </tr>
+          
+        </table>
+      
+      &nbsp;
+      <br><br>
+      <br><br>
+      <br><br>
+      &nbsp;
+    </div>
+  </div>
+  <script>
+
+  // Sort
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+      this.asc = !this.asc;
+      const table = th.closest('table');
+      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
+          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc))
+          .forEach(tr => table.appendChild(tr) );
+      $('th').removeClass('headerSortDown').removeClass('headerSortUp')
+      if (this.asc) {
+        $(th).addClass('headerSortUp')
+      } else {
+        $(th).addClass('headerSortDown')
+      }
+  })));
+
+  // Search
+  var $rows = $('table.rule_table tr[num]');
+  $('#search').keyup(debounce(function() {
+
+    var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+      reg = RegExp(val, 'i'),
+      text;
+
+    $rows.show().filter(function() {
+      text = $(this).text().replace(/\s+/g, ' ');
+      return !reg.test(text);
+    }).hide();
+  }, 300));
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  // Nav Menu Show/Hide
+  function hideRuleTables() {
+    $('.rule_table').hide()
+    $('.rule_key').removeClass('active')
+  }
+
+  function showRuleTable(name) {
+    // c) show this table
+    if (name == 'ALL') { 
+        $('.rule_table').show()
+    } else {
+        $('.rule_table[data-profile-name="'+name+'"]').show()
+    }
+  }
+
+  function activateRule(profile_name) {
+    // a) hide all the tables with the class 'rule_table'
+    hideRuleTables()
+    // b) find the table in '.rule_table' with the same 'profile-name' data attribute
+    showRuleTable(profile_name)
+    if (name == "ALL") { 
+        $('.rule_key').addClass('active')
+    } else {
+        $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
+    }
+  }
+
+  function initListeners(){
+    // 1. iterate over each Rule list item   
+    $('.rule_key').each(function(i, obj) {
+      var ruleKey = $(obj)
+      var ruleName = ruleKey.data('profile-name')
+      console.log('adding click listener to ' + ruleName);
+      // 2. add a click listener
+      ruleKey.click(function(event){
+        console.log('received click event for ' + ruleName)
+        activateRule(ruleName)
+      })
+    })
+  }
+  (function(){
+    hideRuleTables()
+    var firstRule = $($('.rule_key')[0]).data('profile-name')
+    console.log('activating first rule: ', firstRule)
+    activateRule(firstRule)
+    initListeners()
+  })()
+  </script>
+</body>
+</html>

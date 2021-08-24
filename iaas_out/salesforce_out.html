@@ -7,12 +7,6 @@
 <body>
   <img src="logo.png" alt="Netskope"/>
   <h1>Salesforce Entities supported in DSL</h1>
-  <div class="notes_container">
-  
-    <!-- AWS notes -->
-<p>The table below describes the Salesforce services and attributes supported by Netskope.</p>
-  
-  </div>
   <div class="container">
     <div class="entity_keys">
       
@@ -82,6 +76,12 @@
             <th>Attribute</th>
             <th>Type</th>
             <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>caSigned</td>
+            <td>boolean</td>
+            <td>Required. Indicates whether this certificate is signed by the issuer (true) or not (false).</td>
           </tr>
           
           <tr>
@@ -775,9 +775,111 @@
           </tr>
           
           <tr>
+            <td>allowUserAuthenticationByCertificate</td>
+            <td>boolean</td>
+            <td>If enabled (true), users can authenticate with a PEM-encoded X.509 digital certificate. Not enabled by default. Available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>canConfirmIdentityBySmsOnly</td>
+            <td>boolean</td>
+            <td>Prevents identity verification by email for users who have registered other verification methods, such as SMS or Salesforce Authenticator. If no other verification methods are configured, users are verified by email. By default, this setting is disabled (false) for existing orgs. For new orgs, this setting is enabled (true) by default. Available in API version 48.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>canUsersGrantLoginAccess</td>
+            <td>boolean</td>
+            <td>If true, users can grant login access to Support. If false, only an admin can grant login access.</td>
+          </tr>
+          
+          <tr>
             <td>enableAdminLoginAsAnyUser</td>
             <td>boolean</td>
             <td>If true, the "Administrator Can Log in as Any User" field is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>enableAuditFieldsInactiveOwner</td>
+            <td>boolean</td>
+            <td>If true, this setting enables audit fields and updating the owner for records that are owned by inactive users. The default value is false. This field is available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableCSPOnEmail</td>
+            <td>boolean</td>
+            <td>Indicates whether a content security policy is enabled for the email template. A content security policy helps prevent cross-site scripting attacks by listing allowed sources of images and other content.</td>
+          </tr>
+          
+          <tr>
+            <td>enforceIpRangesEveryRequest</td>
+            <td>boolean</td>
+            <td>If true, the IP addresses in Login IP Ranges are enforced when a user accesses Salesforce (on every page request), including access from a client app. If false, the IP addresses in Login IP Ranges are enforced only when a user logs in. This field affects all user profiles that have login IP restrictions. Available in API version 34.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableLightningLoginOnlyWithUserPerm</td>
+            <td>boolean</td>
+            <td>If enabled (true), only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password. Available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableOauthCorsPolicy</td>
+            <td>boolean</td>
+            <td>If set to true, enables Cross-Origin Resource Sharing (CORS) for these OAuth endpoints: /services/oauth2/token /services/oauth2/revoke /services/oauth2/introspect Default setting is false. Available in API version 50.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enablePostForSessions</td>
+            <td>boolean</td>
+            <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests. Available in API version 31.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableU2F</td>
+            <td>boolean</td>
+            <td>If enabled (true), users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification. The default is false. Available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableSamlLogin</td>
+            <td>boolean</td>
+            <td>If you enable 'SAML Enabled' (true), users can SSO into Salesforce from providers via SAML. The default isn’t enabled (false).</td>
+          </tr>
+          
+          <tr>
+            <td>enforceUserDeviceRevoked</td>
+            <td>boolean</td>
+            <td>If enabled, and a UserDevice’s status is set to revoked, that device can’t log in from a Salesforce app. Logins from browsers aren’t affected. This field is available in API version 50.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>forceRelogin</td>
+            <td>boolean</td>
+            <td>If true, an admin who is logged in as another user must log in again to their original session, after logging out as the secondary user. If false, the admin isn’t required to log in again.</td>
+          </tr>
+          
+          <tr>
+            <td>hasRetainedLoginHints</td>
+            <td>boolean</td>
+            <td>If you enable 'Remember me until logout' (true), usernames (login hints) are cached until the user logs out. If a session times out, usernames appear on the Switcher as inactive. If false (default), usernames aren't cached for SSO sessions.</td>
+          </tr>
+          
+          <tr>
+            <td>hasUserSwitching</td>
+            <td>boolean</td>
+            <td>If 'Enable user switching' is true (default), users can log in to other orgs by selecting their profile picture and using the Switcher. You must also enable the 'Enable caching and autocomplete on login page' setting. If false, the Switcher isn’t enabled and your org doesn’t appear in Switchers on other orgs.</td>
+          </tr>
+          
+          <tr>
+            <td>lockSessionsToDomain</td>
+            <td>boolean</td>
+            <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain. The value is true by default for orgs created with the Spring ’15 release or later. Available in API version 33.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>lockSessionsToIp</td>
+            <td>boolean</td>
+            <td>Indicates whether user sessions are locked to the IP address from which the user logged in (true) or not (false).</td>
           </tr>
           
         </table>
@@ -964,6 +1066,84 @@
             <td>enableSecureGuestAccess</td>
             <td>boolean</td>
             <td>When true, guest users have organization-wide defaults set to Private. To share records with them, guest user sharing rules must be used.</td>
+          </tr>
+          
+          <tr>
+            <td>deferGroupMembership</td>
+            <td>boolean</td>
+            <td>Indicates whether group membership calculations are suspended (true) or not (false). This field has a default value of false. This field is available in API version 49.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>deferSharingRules</td>
+            <td>boolean</td>
+            <td>Indicates whether sharing rule calculations are suspended (true) or not (false). This field has a default value of false. This field is available in API version 49.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableAccountRoleOptimization</td>
+            <td>boolean</td>
+            <td>Indicates whether person roles are assigned to new site users in accounts without existing users (true) or if regular site roles are created for new users (false). This field has a default value of false.</td>
+          </tr>
+          
+          <tr>
+            <td>enableAssetSharing</td>
+            <td>boolean</td>
+            <td>Indicates whether sharing is enabled for assets (true) or asset access is determined by the parent object’s sharing rules (false). This field has a default value of false.</td>
+          </tr>
+          
+          <tr>
+            <td>enableCommunityUserVisibility</td>
+            <td>boolean</td>
+            <td>Indicates whether site users in the same site can see each other regardless of the organization-wide defaults (true) or not (false).  This field has a default value of false. In orgs created in API version 47.0 and later, this setting doesn’t apply to guest users.</td>
+          </tr>
+          
+          <tr>
+            <td>enableManagerGroups</td>
+            <td>boolean</td>
+            <td>Indicates whether users can share records with their managers and manager subordinates groups (true) or not (false). This field has a default value of false. To use this field, you need the 'View and Manage Users' permission.</td>
+          </tr>
+          
+          <tr>
+            <td>enableManualUserRecordSharing</td>
+            <td>boolean</td>
+            <td>Indicates whether users can share their own user record (true) or not (false). This field has a default value of false.</td>
+          </tr>
+          
+          <tr>
+            <td>enablePartnerSuperUserAccess</td>
+            <td>boolean</td>
+            <td>Indicates whether you can grant super user access to partners in sites (true) or not (false). This field has a default value of false. To use this field, you need the 'Customize Application' permission.</td>
+          </tr>
+          
+          <tr>
+            <td>enablePortalUserVisibility</td>
+            <td>boolean</td>
+            <td>Indicates whether portal users in the same customer or partner portal account can see each other regardless of the organization-wide defaults (true) or not (false). This field has a default value of false. To enable this field, contact Salesforce Support.</td>
+          </tr>
+          
+          <tr>
+            <td>enableRemoveTMGroupMembership</td>
+            <td>boolean</td>
+            <td>Removes group membership info for the original territory management feature after migrating to Enterprise Territory Management when set to true. This field has a default value of false. Once this field is set to true, it can't be set to false again.</td>
+          </tr>
+          
+          <tr>
+            <td>enableRestrictAccessLookupRecords</td>
+            <td>boolean</td>
+            <td>Indicates whether users must have read access to a record to see the record’s name in lookup and system fields (true) or not (false). This field has a default value of true in Salesforce orgs created in Spring ’20 or later and a default value of false in all other orgs. This field is available in API version 48.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableStandardReportVisibility</td>
+            <td>boolean</td>
+            <td>Indicates whether users can view reports based on standard report types that may expose data of users to whom they don't have access (true) or not (false). This field has a default value of false.</td>
+          </tr>
+          
+          <tr>
+            <td>enableTerritoryForecastManager</td>
+            <td>boolean</td>
+            <td>Indicates whether forecast managers can act as delegated administrators for territories below them in the hierarchy (true) or not (false). This field has a default value of false.</td>
           </tr>
           
         </table>
