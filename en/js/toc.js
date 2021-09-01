@@ -261,6 +261,16 @@ var toc = [{
 ,
 "children": [
 {
+"url": "rest-api-v1-overview.html",
+"text": "REST API v1 Overview",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-v2-overview.html",
+"text": "REST API v2 Overview",
+"class": "topic-link section"
+},
+{
 "url": "netskope-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
@@ -642,7 +652,7 @@ var toc = [{
 },
 {
 "url": "gre---ipsec-tunnel-gateway---http-s--non-standard-port-support.html",
-"text": "GRE &amp; IPSec Tunnel Gateway - HTTP(s) Non-Standard Port Support",
+"text": "GRE &amp; IPSec Tunnel Gateway - HTTP(S) Non-Standard Port Support",
 "class": "topic-link section"
 },
 {
@@ -1369,6 +1379,16 @@ var toc = [{
 ,
 "children": [
 {
+"url": "rest-api-v1-overview-316628.html",
+"text": "REST API v1 Overview",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-v2-overview-316629.html",
+"text": "REST API v2 Overview",
+"class": "topic-link section"
+},
+{
 "url": "public-cloud-api-endpoints.html",
 "text": "Public Cloud API Endpoints",
 "class": "topic-link section"
@@ -1831,8 +1851,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -1951,8 +1971,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120512.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120512.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2088,8 +2108,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120513.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120513.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2208,8 +2228,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120514.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120514.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2313,8 +2333,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120515.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120515.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2428,8 +2448,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120516.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120516.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2553,8 +2573,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120517.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120517.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2769,8 +2789,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120519.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120519.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -2903,8 +2923,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120520.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120520.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3087,8 +3107,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120521.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120521.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3305,8 +3325,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120522.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120522.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3432,8 +3452,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120523.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120523.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3537,8 +3557,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120524.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120524.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3657,8 +3677,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120525.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120525.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -3782,8 +3802,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-enabled-protection-dashboard-120526.html",
-"text": "View the API-enabled Protection Dashboard",
+"url": "view-the-api-data-protection-dashboard-120526.html",
+"text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -4286,22 +4306,64 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-  {
-  "url": "create-a-ctep-profile.html",
-  "text": "Create a CTEP Profile",
-  "class": "topic-link section"
-  },
-  {
-  "url": "enable-ctep-settings.html",
-  "text": "Enable CTEP Settings",
-  "class": "topic-link section"
-  },
-  {
-  "url": "create-a-real-time-protection-policy-for-ctep.html",
-  "text": "Create a Real-time Protection Policy for CTEP",
-  "class": "topic-link section"
-  }]
-  },
+{
+"url": "create-a-real-time-protection-policy-for-ctep.html",
+"text": "Create a Real-time Protection Policy for CTEP",
+"class": "topic-link section"
+},
+{
+"url": "about-ctep-settings.html",
+"text": "About CTEP Settings",
+"class": "topic-link section"
+},
+{
+"url": "create-a-signature-override.html",
+"text": "Create a Signature Override",
+"class": "topic-link section"
+}]
+},
+{
+"url": "remote-browser-isolation.html",
+"text": "Remote Browser Isolation",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "introduction-to-remote-browser-isolation.html",
+"text": "Introduction to Remote Browser Isolation",
+"class": "topic-link section"
+},
+{
+"url": "use-cases.html",
+"text": "Use Cases",
+"class": "topic-link section"
+},
+{
+"url": "prerequisites-313331.html",
+"text": "Prerequisites",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-protection-policy-for-isolation--targeted-rbi-.html",
+"text": "Create a Real-time Protection Policy for Isolation (Targeted RBI)",
+"class": "topic-link section"
+},
+{
+"url": "rbi-category-definitions.html",
+"text": "RBI Category Definitions",
+"class": "topic-link section"
+},
+{
+"url": "isolation-in-an-end-user-s-browser.html",
+"text": "Isolation in an End User's Browser",
+"class": "topic-link section"
+},
+{
+"url": "isolation-events-in-skope-it.html",
+"text": "Isolation Events in Skope IT",
+"class": "topic-link section"
+}]
+},
 {
 "url": "forensics.html",
 "text": "Forensics",
@@ -4621,7 +4683,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-dns-cname-for-npa-clientless.html",
+"url": "configure-browser-access-for-private-apps.html",
 "text": "Configure Browser Access for Private Apps",
 "class": "topic-link section"
 },
