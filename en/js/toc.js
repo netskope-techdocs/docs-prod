@@ -3886,7 +3886,7 @@ var toc = [{
 "url": "supported-gcp-entities-for-real-time-protection.html",
 "text": "Supported GCP Entities for Real-time Protection",
 "class": "topic-link section"
-}
+},
 {
 "url": "supported-aws-apis-for-real-time-protection.html",
 "text": "Supported AWS APIs for Real-time Protection",
