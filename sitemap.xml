@@ -2822,7 +2822,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection.html</loc>
-    <lastmod>2021-06-25</lastmod>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies-231157.html</loc>
@@ -2966,7 +2966,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/url-lists.html</loc>
-    <lastmod>2021-08-19</lastmod>
+    <lastmod>2021-09-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/url-list-best-practices.html</loc>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/url-lookup.html</loc>
@@ -2979,6 +2983,10 @@
   <url>
     <loc>https://docs.netskope.com/en/supported-file-categories-and-file-types.html</loc>
     <lastmod>2021-05-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/rest-api-v2-overview-317469.html</loc>
+    <lastmod>2021-08-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/policy-notification-templates.html</loc>
@@ -3182,7 +3190,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/prerequisites-313331.html</loc>
-    <lastmod>2021-09-02</lastmod>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-isolation--targeted-rbi-.html</loc>
@@ -3274,7 +3282,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-netskope-secure-web-gateway.html</loc>
-    <lastmod>2021-02-13</lastmod>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/choose-a-traffic-steering-method.html</loc>
@@ -3382,7 +3390,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-netskope-private-access.html</loc>
-    <lastmod>2021-09-02</lastmod>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
