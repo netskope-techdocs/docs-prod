@@ -4069,13 +4069,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "supported-file-categories-and-file-types.html",
-"text": "Supported File Categories and File Types",
+"url": "rest-api-v2-overview-317469.html",
+"text": "REST API v2 Overview",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-v2-overview-317469.html",
-"text": "REST API v2 Overview",
+"url": "supported-file-categories-and-file-types.html",
+"text": "Supported File Categories and File Types",
 "class": "topic-link section"
 }]
 },
