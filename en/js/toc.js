@@ -4059,11 +4059,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "url-lookup.html",
-"text": "URL Lookup",
-"class": "topic-link section"
-},
-{
 "url": "report-miscategorization.html",
 "text": "Report Miscategorization",
 "class": "topic-link section"
@@ -4071,6 +4066,11 @@ var toc = [{
 {
 "url": "rest-api-v2-overview-317469.html",
 "text": "REST API v2 Overview",
+"class": "topic-link section"
+},
+{
+"url": "url-lookup.html",
+"text": "URL Lookup",
 "class": "topic-link section"
 },
 {

@@ -2973,16 +2973,16 @@
     <lastmod>2021-09-03</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/url-lookup.html</loc>
-    <lastmod>2021-08-06</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/report-miscategorization.html</loc>
     <lastmod>2021-08-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rest-api-v2-overview-317469.html</loc>
     <lastmod>2021-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/url-lookup.html</loc>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-file-categories-and-file-types.html</loc>
@@ -3634,7 +3634,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
-    <lastmod>2021-08-06</lastmod>
+    <lastmod>2021-09-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
