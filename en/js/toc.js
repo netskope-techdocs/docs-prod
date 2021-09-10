@@ -5665,8 +5665,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "define-the-secondary-tunnel-interface.html",
-"text": "Define the Secondary Tunnel Interface",
+"url": "define-the-backup-tunnel-interface.html",
+"text": "Define the Backup Tunnel Interface",
 "class": "topic-link section"
 },
 {
@@ -7333,13 +7333,35 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-89-0-0.html",
+"text": "Netskope Release Notes Version 89.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+},
+{
+"url": "appendix--fixed-issue-134322.html",
+"text": "Appendix: Fixed Issue 134322",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-hotfix-release-notes-version-88-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 88.1.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements.html",
+"url": "new-features-and-enhancements-316177.html",
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
@@ -7354,7 +7376,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues.html",
+"url": "fixed-issues-316180.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
@@ -7392,8 +7414,8 @@ var toc = [{
 }]
 },
 {
-"url": "virtual-appliance-release-notes-version-77-4-0.html",
-"text": "Virtual Appliance Release Notes Version 77.4.0",
+"url": "virtual-appliance-release-notes-version-77-5-0.html",
+"text": "Virtual Appliance Release Notes Version 77.5.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
