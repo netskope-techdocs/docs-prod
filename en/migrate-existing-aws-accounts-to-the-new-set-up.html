@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			var versionsfile = '';
+
+
+			var indexDict = new Array();
+			var store = {};
+			var portalLanguage = 'en';
+			var enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				
+			
+			var useanchorlinks = false;
+			
+				useanchorlinks = true;
+				
+				var clicktocopy = 'Click to copy link';
+				var linkcopied =  'Copied!';</script><title>Migrate existing AWS accounts to the new set up</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link><link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/rwd-table.min.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/jquery.paligocode.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="post-set-up-updates.html#UUID-4519cdf2-b7a0-5757-a29f-375a73f3e2a0_section-idm4531670245500831610354701455" title="Updating the stack"></link><link rel="next" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502" title="Bulk migrate using migration_script.py"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">var containerid = 'GTM-W56WJ8S';
+
+						(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+						})(window,document,'script','dataLayer',containerid);
+					</script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script></head><body class="theme1 fixed-toolbar colored-top page-toc current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div id="navbar" class="navbar-collapse collapse"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside class="site-sidebar"><div class="site-sidebar-header"><button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><form class="site-sidebar-search" autocomplete="off"><input type="text" class="form-control search-field" placeholder="Search" id="aa-search-input"></input></form><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><h1 class="publication-title">Netskope Help</h1><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print print-icon"><a onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"><span class="print-text">print</span></i></a></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"> <a href="index-en.html">Netskope Help</a></li><li class="breadcrumb-link"><a href="network-security.html">Network Security</a></li><li class="breadcrumb-link"><a href="netskope-public-cloud-security.html"><span class="phrase">Netskope Public Cloud Security</span></a></li><li class="breadcrumb-link"><a href="continuous-security-assessment-for-amazon-web-services.html">Continuous Security Assessment for Amazon Web Services</a></li><li class="breadcrumb-link"><a href="setting-up-multiple-aws-accounts-using-the-new-ui.html">Setting Up Multiple AWS Accounts using the New UI</a></li><li class="breadcrumb-node">Migrate existing AWS accounts to the new set up</li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="post-set-up-updates.html#UUID-4519cdf2-b7a0-5757-a29f-375a73f3e2a0_section-idm4531670245500831610354701455">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502">Next</a></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-3c718459-c318-9bdb-7e1c-e796d87efdb6" data-permalink="migrate-existing-aws-accounts-to-the-new-set-up.html" data-topic-level="1" data-relative-prefix="" data-time-modified="May 27, 2021" data-publication-date="" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd"><div class="titlepage"><div><div class="title"><h6 class="title">Migrate existing AWS accounts to the new set up</h6></div></div></div><p>If you have existing AWS accounts in your Netskope tenant that use the old set up where DLP and malware scans are performed using CloudTrail events, then you can migrate them to the new set up which uses CloudWatch events to efficiently scan your resources for DLP violations and malware.</p><p>You can use one of the following methods to migrate your accounts.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_N1587084905023"><p><a class="xref" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502" title="Bulk migrate using migration_script.py"><span class="xreftitle">Bulk migrate using <code class="literal">migration_script.py</code></span></a></p></li><li class="listitem"><p><a class="xref" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4568085658176031741635417598" title="Manually migrate each account using aws-instance-setup.yml"><span class="xreftitle">Manually migrate each account using <code class="literal">aws-instance-setup.yml</code></span></a></p></li></ul></div><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502"><div class="titlepage"><div><div class="title"><h6 class="title">Bulk migrate using <code class="literal">migration_script.py</code></h6></div></div></div><p>You can run the script, <code class="literal">migration_script.py</code> to migrate several accounts at the same time. The script requires you to create a CSV file with the following information,</p><pre class="programlisting">&lt;instance_name&gt;,&lt;api_token&gt;,&lt;tenant_url&gt;,&lt;aws_access_key_id&gt;,&lt;aws_secret_key&gt;,&lt;aws_region&gt;
+&lt;instance_name&gt;,&lt;api_token&gt;,&lt;tenant_url&gt;,&lt;aws_access_key_id&gt;,&lt;aws_secret_key&gt;,&lt;aws_region&gt;</pre><p>where,</p><p><code class="literal">&lt;instance_name&gt;</code> is the name of the AWS account instance in the Netskope tenant.</p><p><code class="literal">&lt;api_token&gt;</code> is the REST API token from the Netskope tenant under <span class="bold bold"><strong>Settings &gt; Tools &gt; REST API</strong></span>.</p><p><code class="literal">&lt;tenant_url&gt;</code> is the Netskope tenant URL.</p><p><code class="literal">&lt;aws_access_key_id&gt;</code> and <code class="literal">&lt;aws_secret_key&gt;</code> are the keys from the AWS account.</p><p><code class="literal">&lt;aws_region&gt;</code> is the AWS region in which you want the script to upload the migration CFT, <code class="literal">aws-instance-setup.yml</code>. For information about the steps performed by the script, see <a class="xref" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4601666045758431743266588481" title="About migration_script.py"><span class="xreftitle">About <code class="literal">migration_script.py</code></span></a>.</p><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4601666045758431743266588481"><div class="titlepage"><div><div class="title"><h6 class="title">About <code class="literal">migration_script.py</code></h6></div></div></div><p>This script, <code class="literal">migration_script.py</code> performs the following steps.</p><div class="procedure" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_procedure-idm456810528643363174326701984"><ol class="procedure" type="1"><li class="step"><p>Reads the CSV file and verifies that the instance for the AWS account exists in the specified Netskope tenant.</p></li><li class="step"><p>Uses the API token to call the REST API and download the migration CFT, <code class="literal">aws-instance-setup.yml</code>. The template is customized based on the Netskope Public Cloud services enabled for the account.</p></li><li class="step"><p>Uses the provided AWS access key and secret key to connect to the AWS account and creates a stack called <span class="bold bold"><strong>netskopeCAR</strong></span> in the specified AWS region.</p></li><li class="step"><p>Uploads <code class="literal">aws-instance-setup.yml</code> to <span class="bold bold"><strong>netskopeCAR</strong></span> stack. When the stack creation is complete, the AWS accounts have been migrated to the new set up.</p></li></ol></div><p>For information on <code class="literal">aws-instance-setup.yml</code> and the background process, see <span class="emphasis"><em>"What happens in the process?"</em></span> section in <a class="xref" href="step-2-2--permissions.html" title="Step 2/2: Permissions"><span class="xreftitle">Step 2/2: Permissions</span></a>.</p></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4601666050513631743249502121"><div class="titlepage"><div><div class="title"><h6 class="title">Run <code class="literal">migration_script.py</code></h6></div></div></div><p>To run <code class="literal">migration_script.py</code>,</p><div class="procedure" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_procedure-idm4601665460656031743250348227"><ol class="procedure" type="1"><li class="step"><p>Create a file called <code class="literal">migration_script.py</code> and copy the following script into the file.</p><pre class="programlisting">import argparse
+import requests
+import time
+import csv
+import json
+import boto3
+import random
+from botocore.exceptions import ClientError
+import concurrent.futures
+from datetime import datetime
+
+
+STACK_UP_TO_DATE = 'No updates are to be performed'
+STACK_NOT_EXIST = 'does not exist'
+MAX_RETRIES = 8
+MIN_STACK_WAIT = 1
+MAX_STACK_WAIT = 10
+CLOUDFORMATION_SERVICE = 'cloudformation'
+STACK_NAME = 'netskopeCAR'
+STACK_SUCC_STATES = ['CREATE_COMPLETE','UPDATE_COMPLETE']
+IN_PROGRESS = 'IN_PROGRESS'
+ROLLED_BACK = 'ROLLBACK_COMPLETE'
+FAILED = 'FAILED'
+STACKS = 'Stacks'
+STACK_STATUS = 'StackStatus'
+STACK_ID = 'StackId'
+STACK_STATUS_REASON = 'StackStatusReason'
+
+APP = "aws"
+PATH = "/api/v1/public_cloud/account"
+
+
+def get_instance(hostname, app, instance_name, token):
+    """
+    Get instance details
+    :param hostname: tenant host
+    :param app: app name 'aws'
+    :param instance_name: name of the instance
+    :param token: REST API token
+    :return: instance details or Exception
+    """
+    print("Getting info for {}".format(instance_name))
+    params = {
+        "app": app,
+        "instance_name": instance_name,
+        "token": token
+    }
+    headers = { "Content-Type" : "application/json", "Accept" : "application/json" }
+    get_response = requests.get("https://{}/api/v1/introspection_instance".format(hostname), headers=headers, params=params, verify=False)
+    response_data = {}
+    json_output = json.loads(get_response.text)
+    if json_output.get("status") == "error":
+        raise Exception('Errors: {}'.format(json_output.get("errors")))
+    response_data["use_for"] = json_output["data"]["instance"]["use_for"]
+    response_data["admin_email"] = json_output["data"]["instance"]["admin_email"]
+    if "securityscan" in response_data["use_for"]:
+        response_data["securityscan_interval"] =  json_output["data"]["instance"]["securityscan_interval"]
+    print("Returning info for name {}: {}".format(instance_name, response_data))
+    return response_data
+
+def download_cft(hostname, token, app, instance_name, admin_email, usefor, securityscan_interval):
+    """
+    call the download of the migration CFT for the instance
+    :param hostname: tenant host
+    :param token: REST API token
+    :param app: app name 'aws'
+    :param instance_name: instance name
+    :param admin_email: admin email for the instance
+    :param usefor: services used by the instance
+    :param securityscan_interval: security scan interval
+    :return: CFT content or Exception
+    """
+    print("Downloading Migration Template for {}".format(instance_name))
+    qparams = {"token":token, "op":"download"}
+    headers = { "Content-Type" : "application/json" }
+    data = {
+        "app": app,
+        "type": "cft",
+        "use_for": usefor,
+        "mode" : "migrate",
+        "admin_email" : admin_email,
+        "instance_name": instance_name,
+        "securityscan_interval": securityscan_interval
+    }
+    res = requests.post("https://{}{}".format(hostname, PATH), headers=headers, params=qparams, data=json.dumps(data), verify=False)
+    response = res.text
+    if response.startswith("{"):
+        json_output = json.loads(response)
+        if json_output.get("status") == "error":
+            raise Exception('For instance "{}" errors received: {}'.format(instance_name, json_output.get("errors")))
+    return response
+
+def create_resource(instance_name, region, access_key, secret_key, template):
+    """
+    Call stack creation and wait the stack creation to be completed
+    :param instance_name: name of the instance
+    :param region: region in which the stack will be created
+    :param access_key: access key id for target aws account
+    :param secret_key: secret key for the target aws account
+    :param template: CFT template
+    :return: Exception if encountered
+    """
+    try:
+        print("creating stacks....")
+        client = boto3.client(CLOUDFORMATION_SERVICE,
+                                    aws_access_key_id=access_key,
+                                    aws_secret_access_key=secret_key,
+                                    region_name=region)
+        if not stack_exists(client, STACK_NAME, region):
+            print("stack does not exist, creating stack")
+            response = client.create_stack(
+                StackName=STACK_NAME,
+                TemplateBody=template,
+                Capabilities=['CAPABILITY_NAMED_IAM']
+            )
+            now = datetime.now()
+            start_time = datetime.timestamp(now)
+        else:
+            raise Exception("Stack already present for instance: {}".format(instance_name))
+        print("Waiting Stack creation to be completed for {}".format(instance_name))
+        while True:
+            time.sleep(random.randint(MIN_STACK_WAIT, MAX_STACK_WAIT))
+            stacks = client.describe_stacks(StackName=response[STACK_ID])
+            stack_status = stacks[STACKS][0][STACK_STATUS]
+            if stack_status in STACK_SUCC_STATES:
+                print("Stack creation for {} was successful".format(instance_name))
+                break
+            if IN_PROGRESS not in stack_status:
+                if stack_status == ROLLED_BACK or FAILED in stack_status:
+                    reason = stacks[STACKS][0].get(STACK_STATUS_REASON)
+                    if reason:
+                        raise Exception("Exception received while creating stack {} for instance : {} , {}".format(STACK_NAME, instance_name, reason))
+                    else:
+                        raise
+            current_time = datetime.timestamp(datetime.now())
+            if start_time + 600 &lt; current_time:
+                raise Exception("Stack creation for {} took longer than expected, please check the AWS console".format(instance_name))
+    except ClientError as exc:
+        if STACK_UP_TO_DATE not in str(exc):
+            raise
+        else:
+            print("{} Stack {} already up to date and no updates are to be performed".format(instance_name, STACK_NAME))
+    except Exception as exc:
+        raise
+
+def stack_exists(client, name, region):
+    """
+    Check if the stack with the provided name is already present
+    :param client: client
+    :param name: name of the stack
+    :param region: region in which the stack is to be deployed
+    :return: true if stack exists
+    """
+    try:
+        while True:
+            stacks = client.describe_stacks(StackName=name)
+            stack_status = stacks[STACKS][0][STACK_STATUS]
+            if 'IN_PROGRESS' in stack_status:
+                time.sleep(random.randint(MIN_STACK_WAIT, MAX_STACK_WAIT))
+            elif ROLLED_BACK == stack_status or FAILED in stack_status:
+                print("Stack in {} state. Stack cannot be recovered, triggering\
+                     deleting stack in region : {}".format(stack_status, region))
+                client.delete_stack(StackName=STACK_NAME)
+                time.sleep(random.randint(MIN_STACK_WAIT, MAX_STACK_WAIT))
+            else:
+                return True
+    except ClientError as exc:
+        if STACK_NOT_EXIST in str(exc):
+            return False
+        else:
+            raise
+
+def start_migration(row):
+    """
+    Caller method for gathering the instance details
+    call methods for
+    Getting instance details
+    Download migration CFT
+    call creation of stack
+    :param row: single row containing the instance details
+    :return:
+    """
+    details = {
+            "instance_name": row[0],
+            "apitoken": row[1],
+            "tenant_url": row[2],
+            "access_key_id" : row[3],
+            "secret_key": row[4],
+            "region": row[5]
+    }
+    hostname = details["tenant_url"]
+    instance_name = details["instance_name"]
+    apitoken = details["apitoken"]
+    region = details["region"]
+    access_key_id = details["access_key_id"]
+    secret_key = details["secret_key"]
+    try:
+        response_data = get_instance(hostname, APP, instance_name, apitoken)
+        use_for = response_data["use_for"]
+        admin_email = response_data["admin_email"]
+        securityscan_interval = response_data.get("securityscan_interval")
+        print("{}, {}".format(use_for, admin_email))
+        cft_yaml_body = download_cft(hostname, apitoken, APP, instance_name,
+                                     admin_email, use_for, securityscan_interval)
+        create_resource(instance_name, region, access_key_id, secret_key, cft_yaml_body)
+        print('Migration triggered successfully for : {}'.format(instance_name))
+    except Exception as exc:
+        return "For {} Exception received : {}".format(instance_name, str(exc))
+
+if __name__ == "__main__":
+    """
+    Customer will create and provide location of the csv file from which each instance
+    migration will be triggered. Migration contains the following parts
+    1-&gt; get instance details for the instance
+    2-&gt; download migration CFT for the instance
+    3-&gt; trigger create of stack with the downloaded CFT
+    4-&gt; Wait for the stack creation to be completed
+    5-&gt; post success or failure of the migration
+    """
+    PARSER = argparse.ArgumentParser()
+    PARSER.add_argument("--file", help="csv file", required=True)
+    ARGS = PARSER.parse_args()
+    file_path = ARGS.file
+    results = []
+    if str(file_path).endswith(".csv"):
+        with open(file_path) as f:
+            reader = csv.reader(f)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=200) as executor:
+                futures = [executor.submit(start_migration, row) for row in reader]
+                for idx, future in enumerate(concurrent.futures.as_completed(futures)):
+                    try:
+                        res = future.result(timeout=600)
+                        results.append(res)
+                    except concurrent.futures._base.TimeoutError as exc:
+                        print("timeout_error {} {}".format(str(exc), future))
+        print("FAILED RESULTS : {}".format(results))
+    else:
+        print("Expected a csv file and file path: {} is not a csv file".format(file_path))
+</pre></li><li class="step"><p>Open a CLI and at the prompt run,</p><pre class="programlisting">python migration_script.py --file &lt;path-to-csv&gt;</pre></li></ol></div></section></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4568085658176031741635417598"><div class="titlepage"><div><div class="title"><h6 class="title">Manually migrate each account using <code class="literal">aws-instance-setup.yml</code></h6></div></div></div><p>You can migrate one account at a time by downloading <code class="literal">aws-instance-setup.yml</code> and uploading it to a new CloudFormation stack in the AWS account.</p><p>To download <code class="literal">aws-instance-setup.yml</code> call the following REST API.</p><pre class="programlisting">https://&lt;tenant-name&gt;.goskope.com/api/v1/public_cloud/account?token=&lt;token&gt;&amp;op=download</pre><p>For more information on REST API endpoints see, <a class="xref" href="public-cloud-api-endpoints.html" title="Public Cloud API Endpoints"><span class="xreftitle">Public Cloud API Endpoints</span></a>.</p><p>If you want to download <code class="literal">aws-instance-setup.yml</code> through the Netskope tenant,</p><div class="procedure" id="UUID-ff88d934-8f56-2761-8744-ca46615deedd_procedure-idm4568105152731231741782901004"><ol class="procedure" type="1"><li class="step"><p>Go to <span class="bold bold"><strong>Settings &gt; API-enabled Protection &gt; IaaS</strong></span> page, click on the AWS account to view the edit screen.</p></li><li class="step"><p>Click <span class="bold bold"><strong>Start Migration</strong></span> and download the CFT, <code class="literal">aws-instance-setup.yml</code> from the migrate account screen.</p></li></ol></div><p>After you've downloaded <code class="literal">aws-instance-setup.yml</code> , you must create a new CloudFormation stack in the AWS account and upload the template. For detailed instructions on creating a stack and uploading the template, see <a class="xref" href="step-2-2--permissions.html" title="Step 2/2: Permissions"><span class="xreftitle">Step 2/2: Permissions</span></a>.</p></section></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><aside class="section-nav-container"><ul class="section-nav nav"><li><a href="#UUID-ff88d934-8f56-2761-8744-ca46615deedd">Migrate existing AWS accounts to the new set up</a></li><li><a href="#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502">Bulk migrate using migration_script.py</a><ul class="nav"><li><a href="#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4601666045758431743266588481">About migration_script.py</a></li><li><a href="#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4601666050513631743249502121">Run migration_script.py</a></li></ul></li><li><a href="#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4568085658176031741635417598">Manually migrate each account using aws-instance-setup.yml</a></li></ul></aside><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Migrate%20existing%20AWS%20accounts%20to%20the%20new%20set%20up%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Migrate%20existing%20AWS%20accounts%20to%20the%20new%20set%20up%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="post-set-up-updates.html#UUID-4519cdf2-b7a0-5757-a29f-375a73f3e2a0_section-idm4531670245500831610354701455">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="migrate-existing-aws-accounts-to-the-new-set-up.html#UUID-ff88d934-8f56-2761-8744-ca46615deedd_section-idm4554778600416031741635094502">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2021 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">May 27, 2021</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W56WJ8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager (noscript)--></body></html>

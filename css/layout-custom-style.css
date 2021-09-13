@@ -1,0 +1,436 @@
+
+
+
+
+/* PROVIDES THE LATO FONT STYLE USED THROUGHOUT */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+/* DONT THINK THESE TWO AFFECT ANYTHING, BUT THEY DID IN THE PREVIOUS LAYOUT
+.article h1.title  {
+    display: none;
+}
+
+ #publication-title {
+    display: none;
+}   */
+
+/* CONTROLS FONT WEIGHT AND SPACING; H2 IS THE PRIMARY HEADING STYLE IN THE HELP */
+h2, .h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #242424;
+    font-family: inherit;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+    h1, h3, h4, h5, h6, .h1, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+/* CHANGED THIS FROM UPPERCASE TO NONE SO H5 HEADINGS ARE NOT ALL CAPS
+ALSO ADDED FONT SIZE VALUE BECAUSE SECTION TITLES (h5) WHEN NESTED APPEAR AS NORMAL TEXT 10PT*/
+h5, .h5{
+    text-transform: none;
+    font-size: 13pt;
+}
+
+
+/* ADDED H6 FONT SIZE TO FIX BRIDGEHEAD TITLES APPEARING AS NORMAL SIZE TEXT */
+h6, .h6{
+font-size: 12pt;
+}
+
+
+/* ADDED H7 FONT SIZE TO FIX BRIDGEHEAD TITLES APPEARING AS NORMAL SIZE TEXT WHEN CONREFFED*/
+h7, .h7{
+font-size: 12pt;
+}
+
+
+/* APPLIES CORP TEXT STYLE LATO TO PAGE TEXT AND CONTROLS BODY TEXT FONT SIZE */
+body {
+	background-color: #fff;
+	font-family: 'Lato', 'Arial Unicode MS', Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 20px;
+	color: #242424;
+}
+
+
+/* REDUCED THE EXCESSIVE LEFT MARGIN ON MAIN VIEW PAGE BY CHANGING THE LEFT PADDING */
+ .theme1.page-toc main article {
+        padding-left: 5%;
+    }
+
+/* CHANGES THE LEFT MARGIN FOR THE FEEDBACK LINK AT THE BOTTOM OF THE PAGE */
+div.feedback-panel{
+    margin-left: 5%;
+}
+
+/* CONTROLS THE FONT STYLE FOR CODE STRINGS IF WE WANT TO MODIFY IT */
+
+code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#000;white-space:nowrap;background-color:#fff;border-radius:4px}
+
+
+/* CONTROLS THE SPACING IN THE LOGO BLOCK IN THE TOC NAV PANEL */
+.theme1 .site-sidebar .logo{
+    width: 70%;
+    max-width: 180px;
+    padding: 5px 0;
+    padding-top: 5px;
+    display: inline-block
+}
+
+
+/* CONTROLS SPACING OF TOPIC LINKS IN THE TOC NAV PANEL, HAD TO ADD TOP AND BOTTOM PADDING */
+.nav-site-sidebar .topic-link{
+    position: relative;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* COMMENTED OUT PER PALIGO SUPPORT'S SUGGESTION; THOUGHT IT REMOVED BLANK HOME PAGE LINK IN THE TOC NAV, BUT IT'S NOT THERE EVEN WITH THIS OUT
+ul.toc.nav.nav-site-sidebar > li:first-of-type {
+  display:none;
+} */
+
+/* CONTROLS SIZE OF TEXT FOR SEE ALSO LINKS */
+.section-toc .topic-link{
+    font-size: 10pt;
+}
+
+
+/* CONTROLS THE TEXT STYLE AND COLOR OF THE NOTE LABELS */
+
+/* CONTROLS THE COLORS OF THE NOTE ICONS */
+.note:before,
+.tip:before,
+.warning:before,
+.caution:before,
+.important:before{
+    content: '\f040';
+    color: #55565a;
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    vertical-align: middle;
+    font-family: FontAwesome;
+}
+
+
+/* CONTROLS THE COLOR OF THE SIDE BORDER AND BACKGROUND COLOR IN THE NOTE BOX */
+.note{
+    display: block;
+    padding: 12px 18px 12px 65px;
+    -moz-background-clip: padding;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #7693f9;
+    line-height: 1.4em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    position: relative;
+    background-color: #dee9fd;
+
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+
+  .tip{
+      display: block;
+      padding: 12px 18px 12px 65px;
+      -moz-background-clip: padding;
+      border-left-width: 5px;
+      border-left-style: solid;
+      border-left-color: #8cfb57;
+      line-height: 1.4em;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      position: relative;
+      background-color: #eafbe2;
+
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+
+
+  .important{
+        display: block;
+        padding: 12px 18px 12px 65px;
+        -moz-background-clip: padding;
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-left-color: #FDFD29;
+        line-height: 1.4em;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        position: relative;
+        background-color: #f6f6cc;
+
+        margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.caution,
+.warning{
+      display: block;
+      padding: 12px 18px 12px 65px;
+      -moz-background-clip: padding;
+      border-left-width: 5px;
+      border-left-style: solid;
+      border-left-color: #f9745d;
+      line-height: 1.4em;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      position: relative;
+      background-color: #f6deda;
+
+      margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* CONTROLS THE COLOR OF THE TOC NAV PANEL */
+
+.bg-primary,.btn-primary,.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus,.site-sidebar  {
+    background-color:#303e47;
+}
+
+/* REMOVED THIS SO BLACK DIDN'T BORDER THE ICONS ON THE PORTAL PAGE
+,.portal-single-publication ????*/
+
+
+/* REDUCES THE CATEGORY PANEL HEIGHT SIZE ON THE PORTAL PAGE*/
+
+.portal-single-publication a{
+  color:#555;
+  display:inline-block;
+  padding:20px 20px;
+  width:200px;
+  height:100%;
+  background-color:#fff;
+}
+
+/* CONTROLS THE COLOR OF THE ICONS ON THE INDEX.HTML HOME PAGE */
+.theme1 .publication-icon {
+    background-color:#b9bcbf;
+}
+
+/* CONTROLS TEXT COLOR OF SHOW MORE LINK UNDER CATEGORY SUBTOPIC LINKS */
+
+.publication-contents .more-toc {
+    font-weight: 500;
+    font-size: 14px;
+    color:#555;
+}
+
+/* CONTROLS HOVER COLOR OF ALL LINKS PORTAL AND TOPIC PAGES */
+a,.text-primary {
+    color:#1976d2;
+    font-size: 14px;
+  }
+
+/* CONTROLS HOVER COLOR OF THE CATEGORY TILE TEXT */
+a:hover,a:focus,.btn-link:hover,.btn-link:focus {
+    color: #1976d2;
+}
+
+/* CONTROLS THE COLOR OF THE ICONS IN THE CATEGORY PANELS
+.portal-single-publication .publication-icon .fa {
+  color: #000;
+}
+*/
+
+/* HIDES THE FEATURED CONTENT HEADER BETWEEN THE PANELS AND THE SUBTOPICS */
+.featured-content-label {
+  display: none;
+}
+
+/* INCREASES THE SPACING BETWEEN PANELS AND THE SUBTOPIC HEADINGS, AND HEADING TEXT SIZE AND WEIGHT */
+.publication-contents h4 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* MOVES THE SUBTOPIC LINKS MORE CENTER ALIGNED WITH THE PANELS */
+.publication-contents{
+  padding-left: 45px;
+}
+
+
+/* CONTROLS THE WEIGHT OF THE FEATURED CONTENT SUBTOPIC LINKS, MADE THEM THICKER */
+.publication-contents li {
+  font-weight: 500;
+}
+
+/* CONTROLS THE COLOR OF THE SHOW MORE LINK UNDER THE CATEGORY TILES */
+.category-more-toc {
+    color:#555;
+}
+
+
+/* REMOVES THE ENG LANGUAGE DROPDOWN ON THE BOTTOM OF THE PORTAL PAGE */
+.dropdown,.dropup{
+  position:relative;
+  display: none;
+}
+
+
+/* MODIFIED FLOAT TO MAKE MODIFICATION DATE IN FOOTER BE RIGHT JUSTIFIED*/
+
+.date-modified, .publication-date {
+    float: right;
+    margin-right: 30px;
+}
+
+
+/* CONTROLS THE BACKGROUND AND TEXT COLOR FOR THE PREV AND NEXT LINKS IN THE PAGE FOOTER */
+
+.pager li>a,.pager li>span {
+    color:#1976d2;
+    background-color:#dadfe3;
+
+}
+.pager li>a:hover,.pager li>span:hover {
+    background-color:#1976d2;
+}
+
+
+/* CONTROLS THE SIZE AND COLOR OF THE BREADCRUMB TEXT ON THE TOP OF THE PAGE */
+.breadcrumb {
+    font-size: 9pt;
+    color: #1976d2;
+}
+
+/* CONTROLS THE TEXT SIZE IN THE SEARCH RESULTS SNIPPETS */
+.searchresultsnippet{
+    font-weight: 350;
+    font-size: 10pt;
+    color: #000;
+}
+
+/* CONTROLS THE COLOR OF THE LINK IN SEARCH RESULTS */
+.search-result-url, .search-result-breadcrumbs{
+    color: #1976d2;
+}
+
+/* ADDED THE MARGIN-BOTTOM VALUE TO MAKE SPACE BELOW TABLES AND ABOVE HEADINGS, PARAS, ETC. */
+div.informaltable{
+    margin-bottom: 20px;
+}
+
+/* CONTROLS COLOR OF TABLE BORDERS/RULES */
+.rules-all td{
+border: 1px solid #b9bcbf;
+}
+.rules-all th{
+    border: 1px solid #888b8d;
+    padding: 8px;
+}
+
+/* CONTROLS THE TABLE ROW SHADING, EVERY OTHER ROW LIKE IT DOES IN THE PDFs AND ZENDESK */
+
+.informaltable table tr:nth-child(even),
+table tr:nth-child(even){
+    background-color: #EDEDED;
+    }
+
+ /* CONTROLS THE TABLE HEADER SHADING, LOOKS LIKE IT DOES IN THE PDFs AND ZENDESK */
+.informaltable th, .table th,
+.alternate table th, table th, table th a
+{
+    background-color: #BFBDBD;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    }
+
+/* REMOVES BACKGROUND COLOR IN BANNER */
+
+  .portal-header:before{
+        background-color: transparent;
+    }
+
+
+/*REMOVES THE BACKGROUND COLOR IN BANNER. CHANGED THE OPACITY TO .7 AND FILTER TO NONE */
+
+  .portal-header:after{
+        z-index: -5;
+        background: url(image/portal-bg.jpg) no-repeat center center;
+        background-size: cover;
+        opacity: .7;
+        filter: none;
+    }
+
+
+/* CONTROLS THE BACKGROUND COLOR OF THE SEARCH FIELD*/
+.portal-header .search-field{
+  background-color: #ffffff;
+  opacity: .7;
+}
+
+
+/*CONTROLS SIZE OF LOGO ON PORTAL PAGE */
+.portal-header .logo{
+  margin-bottom:0;height:28px
+}
+
+
+/* CONTROLS THE COLOR OF THE "HOW CAN WE HELP" TEXT*/
+.portal-header{
+  color:#303e47;
+  height:350px;
+  padding:30px 15px;
+  position:relative;
+  text-align:center
+}
+
+
+/* ADDED THIS PARAM TO CONTROL COLOR OF THE TEXT IN THE SEARCH FIELD*/
+.form-control.search-field {
+  color: #000;
+}
+
+
+/* CONTROLS THE COLOR OF THE SEARCH FIELD GHOST TEXT*/
+.search-field::placeholder{
+  color:#000;
+}
+
+/* CONTROLS THE BACKGROUND COLOR OF THE SEARCH FIELD*/
+.site-sidebar .search-field{
+  background-color: #ffffff;
+  opacity: .7;
+}
+
+/* CONTROLS THE PORTAL SEARCH BUTTON, HID THIS SINCE THE BUTTON IS DISABLED ANYWAY. */
+.portal-header .portal-search button,.publication-contents h4 span {
+    display:none
+}
+.portal-header .portal-search button:hover{
+    display:none
+}
+
+/*.publication-contents .more-toc{font-weight:500;font-size:14px}*/
+
+
+/*HIDES THE NUMBERS BESIDE THE TILE TOCS    NOW JUST NEED TO REMOVE THE SPACE THERE*/
+.publication-contents h4 span {
+    background-color:transparent;
+}
+
+
+/*REMOVES SEE ALSO LINKS
+.section-toc .section-toc-after {
+display:none;
+}*/
+

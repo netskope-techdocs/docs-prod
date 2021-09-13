@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			var versionsfile = '';
+
+
+			var indexDict = new Array();
+			var store = {};
+			var portalLanguage = 'en';
+			var enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				
+			
+			var useanchorlinks = false;
+			
+				useanchorlinks = true;
+				
+				var clicktocopy = 'Click to copy link';
+				var linkcopied =  'Copied!';</script><title>Configure SNMP </title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link><link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/rwd-table.min.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/jquery.paligocode.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="fetch-events.html#idm46450360568864" title="View Cron Jobs"></link><link rel="next" href="configure-snmp.html#idm46450360527664" title="Prerequisites"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">var containerid = 'GTM-W56WJ8S';
+
+						(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+						})(window,document,'script','dataLayer',containerid);
+					</script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script></head><body class="theme1 fixed-toolbar colored-top page-toc current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div id="navbar" class="navbar-collapse collapse"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside class="site-sidebar"><div class="site-sidebar-header"><button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><form class="site-sidebar-search" autocomplete="off"><input type="text" class="form-control search-field" placeholder="Search" id="aa-search-input"></input></form><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><h1 class="publication-title">Netskope Help</h1><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print print-icon"><a onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"><span class="print-text">print</span></i></a></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"> <a href="index-en.html">Netskope Help</a></li><li class="breadcrumb-link"><a href="appliances.html">Appliances</a></li><li class="breadcrumb-link"><a href="on-premises-appliance.html">On-Premises Appliance</a></li><li class="breadcrumb-link"><a href="advanced-configurations.html">Advanced Configurations</a></li><li class="breadcrumb-node">Configure SNMP </li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="fetch-events.html#idm46450360568864">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="configure-snmp.html#idm46450360527664">Next</a></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-864d0104-0fc1-5e0e-67e8-55cc96dbf790" data-permalink="configure-snmp.html" data-topic-level="1" data-relative-prefix="" data-time-modified="December 18, 2020" data-publication-date="" id="UUID-e433a56b-fafd-e154-08cf-1784ae7bf896"><div class="titlepage"><div><div class="title"><h5 class="title">Configure SNMP </h5></div></div></div><p>Enable SNMP on the appliance to monitor the appliance from your existing Network Management System. You can configure an SNMP agent on the appliance so that the SNMP manager can poll the appliance to get the status of the supported OIDs using v2c or v3 queries. For more information on the supported OIDs, see <a class="xref" href="configure-snmp.html#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_StandardOID" title="Standard OIDs"><span class="xreftitle">Standard OIDs</span></a> and <a class="xref" href="configure-snmp.html#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_CustomOID" title="Custom OIDs"><span class="xreftitle">Custom OIDs</span></a>.</p><p>The appliance can also send trap notifications to the trap receiver in your network when SNMP traps are configured on the appliance.</p><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm46450360527664"><div class="titlepage"><div><div class="title"><h6 class="title">Prerequisites</h6></div></div></div><p>The following settings need to be configured before an appliance can start responding to SNMP queries.</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Access the appliance console using ssh.</p></li><li class="listitem"><p>Log in using the <code class="literal">nsadmin/nsappliance</code> credentials. An nsshell opens.</p></li><li class="listitem"><p>Enter <code class="literal">configure</code> to enter the nsshell configure mode.</p></li><li class="listitem"><p>Configure the SNMP agent. See <a class="xref" href="configure-snmp.html#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigAgent" title="Configuring SNMP Agent"><span class="xreftitle">Configuring SNMP Agent</span></a>.</p></li><li class="listitem"><p>Configure the SNMP traps. See <a class="xref" href="configure-snmp.html#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigTraps" title="Configuring SNMP Traps"><span class="xreftitle">Configuring SNMP Traps</span></a>.</p></li></ol></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigAgent"><div class="titlepage"><div><div class="title"><h6 class="title">Configuring SNMP Agent</h6></div></div></div><p>Configure the SNMP agent so that the appliance responds to SNMP queries from the SNMP manager. Run these commands:</p><pre class="programlisting">set snmp agent enable true
+set snmp agent syscontact <span class="emphasis"><em>&lt;email address&gt;</em></span>
+set snmp agent syslocation <span class="emphasis"><em>&lt;location&gt;</em></span></pre><p>To poll the appliance using v2c queries, run:</p><pre class="programlisting">set snmp agent v2c rocommunity-string <span class="emphasis"><em>&lt;string value&gt;</em></span>
+add snmp agent v2c allowed-network-list
+set snmp agent v2c allowed-network-list 0 network <span class="emphasis"><em>&lt;IP address of the SNMP agent&gt;</em></span>
+save
+</pre><p>To poll the appliance using v3 queries, run:</p><pre class="programlisting">set snmp agent v3 engine-id <span class="emphasis"><em>&lt;engine-id&gt;</em></span>
+set snmp agent v3 usm auth username <span class="emphasis"><em>&lt;username&gt;</em></span> key <span class="emphasis"><em>&lt;passphrase&gt;</em></span> protocol [MD5|SHA]
+set snmp agent v3 usm privacy protocol [AES|DES] key <span class="emphasis"><em>&lt;passphrase&gt;</em></span>
+save
+</pre><p>The command descriptions are: </p><div class="informaltable table-responsive"><table style="width:100%;" class="informaltable table-bordered"><thead><tr><th colspan="2" class="th" data-priority="1"><p>CLI Command</p></th><th colspan="2" class="th" data-priority="1"><p>Description</p></th></tr></thead><tbody><tr><td rowspan="11" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">set snmp agent</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">enable</code></p></td><td colspan="2" class="td"><p>Enable/Disable SNMP agent on the appliance. When set to <code class="literal">true</code>, the appliance must be configured as v2c or v3 agent.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">syscontact</code></p></td><td colspan="2" class="td"><p>Set the system contact information (admin email etc). For example, admin@localskope.local.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">syslocation</code></p></td><td colspan="2" class="td"><p>Set the system location. For example, "Los Altos HQ".</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v2c rocommunity-string</code></p></td><td colspan="2" class="td"><p>Provide a string value. The string configured here will be used in <code class="literal">snmpwalk</code>/<code class="literal">snmpget</code> commands from the SNMP manager to access the information exposed. If the value does not match the one configured, the relevant information will not be returned. It is used as access control in SNMPv2.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v2c allowed-network-list</code></p></td><td colspan="2" class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Provide the list of hosts/subnets.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v3 engine-id</code></p></td><td colspan="2" class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Set the engine identifier of the SNMP agent in hex format. For example, 0x0102030405.</p></td></tr><tr><td rowspan="3" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v3 usm auth</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">username</code></p></td><td class="td"><p>Set the username to authenticate a user with the SNMP agent.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">key</code></p></td><td class="td"><p>Set the password required to connect with the SNMP agent.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">protocol</code></p></td><td class="td"><p>Choose a hash function, "MD5" or "SHA" to store the data exchanged between the SNMP agent on the appliance and the SNMP manager.</p></td></tr><tr><td rowspan="2" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> v3 usm privacy</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">protocol</code></p></td><td class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Choose an encryption type, "AES" or "DES" to encrypt the traffic between the SNMP agent on the appliance and the SNMP manager.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">key</code></p></td><td class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Set the password required to access the encrypted data on the SNMP agent.</p></td></tr></tbody></table></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigTraps"><div class="titlepage"><div><div class="title"><h6 class="title">Configuring SNMP Traps</h6></div></div></div><p>Configure SNMP traps on the appliance to send trap notifications to the SNMP trap receiver. Run these commands:</p><pre class="programlisting">set snmp traps server <span class="emphasis"><em>&lt;hostname or IP address&gt;</em></span></pre><p>To send SNMP v2c traps to the trap receiver, run:</p><pre class="programlisting">set snmp traps v2c enable true
+save</pre><p>To send SNMP v3 traps to the trap receiver, run:</p><pre class="programlisting">set snmp traps v3 enable true 
+set snmp traps v3 use-agent-settings [true|false]
+set snmp traps v3 engine-id <span class="emphasis"><em>&lt;engine-id&gt;</em></span>
+set snmp traps v3 usm auth username <span class="emphasis"><em>&lt;username&gt;</em></span> key <span class="emphasis"><em>&lt;passphrase&gt;</em></span> protocol [MD5|SHA]
+set snmp traps v3 usm privacy protocol [AES|DES] key <span class="emphasis"><em>&lt;passphrase&gt;</em></span>
+save</pre><p>The command descriptions are:</p><div class="informaltable table-responsive"><table class="informaltable table-bordered"><colgroup><col></col><col></col><col></col><col></col></colgroup><thead><tr><th colspan="2" class="th" data-priority="1"><p>CLI Command</p></th><th colspan="2" class="th" data-priority="1"><p>Description</p></th></tr></thead><tbody><tr><td rowspan="10" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">set snmp traps</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">server</code></p></td><td colspan="2" class="td"><p>Provide the hostname or IP address of the SNMP trap receiver so that the appliance can send v2c or v3 traps.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v2c enable</code></p></td><td colspan="2" class="td"><p>When set to <code class="literal">true</code>, the appliance sends v2c trap notifications to the trap receiver.</p></td></tr><tr><td rowspan="3" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v3</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">enable</code></p></td><td class="td"><p>When set to <code class="literal">true</code>, the appliance sends v3 trap notifications to the trap receiver.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">use-agent-settings</code></p></td><td class="td"><p>Set to <code class="literal">true</code> if you want to use the same v3 usm authentication and privacy configurations as the SNMP agent. Else, configure v3 usm authentication and privacy for the trap client on appliance.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">engine-id</code></p></td><td class="td"><p>Set the engine identifier of the trap client. This is required if <code class="literal">use-agent-settings</code> is not set.</p></td></tr><tr><td rowspan="3" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">v3 usm auth</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">username</code></p></td><td class="td"><p>Set the username to authenticate a user with the trap client.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">key</code></p></td><td class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Set the password required to connect with the trap client.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">protocol</code></p></td><td class="td"><p>Choose a hash function, "MD5" or "SHA" to store the data exchanged between the trap client on the appliance and the trap receiver.</p></td></tr><tr><td rowspan="2" class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> v3 usm privacy</code></p></td><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">protocol</code></p></td><td class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Choose an encryption type, "AES" or "DES" to encrypt the traffic between the trap client on the appliance and the trap receiver.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">key</code></p></td><td class="td"><p><span class="bold bold"><strong>(Optional)</strong></span> Set the password required to access the encrypted data on the appliance.</p></td></tr></tbody></table></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_StandardOID"><div class="titlepage"><div><div class="title"><h6 class="title">Standard OIDs</h6></div></div></div><p>These are the standard OIDs.</p><div class="informaltable table-responsive"><table class="informaltable table-bordered"><colgroup><col></col><col></col><col></col></colgroup><thead><tr><th class="th" data-priority="1"><p>OID</p></th><th class="th" data-priority="1"><p>Description</p></th><th class="th" data-priority="1"><p>Values</p></th></tr></thead><tbody><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> SNMPv2-MIB::sysDescr</code></p></td><td class="td"><p>Standard system description.</p></td><td class="td"><p>STRING: <code class="literal">Linux lcsnmp 4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 x86_64</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> DISMAN-EVENT-MIB::sysUpTimeInstance</code></p></td><td class="td"><p>Ticks since snmp agent has been up.</p></td><td class="td"><p>Timeticks: (2515) 0:00:25.15</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> SNMPv2-MIB::sysName</code></p></td><td class="td"><p>Hostname can be used for this. By default SNMP agent picks up the hostname.</p></td><td class="td"><p>Hostname set by CLI (<code class="literal">set system hostname</code>).</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> SNMPv2-MIB::sysContact</code></p></td><td class="td"><p>Standard SNMP configuration parameter.</p></td><td class="td"><p>Set by CLI: <code class="literal">set snmp agent syscontact</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> SNMPv2-MIB::sysLocation</code></p></td><td class="td"><p>Standard SNMP configuration parameter.</p></td><td class="td"><p>Set by CLI: <code class="literal">set snmp agent syslocation</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> SNMPv2-MIB::sysObjectID</code></p></td><td class="td"><p>Standard SNMP configuration parameter.</p></td><td class="td"><p>OID: <code class="literal">NET-SNMP-MIB::netSnmpAgentOIDs.10</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> HOST-RESOURCES-MIB::hrSystemUptime</code></p></td><td class="td"><p>Actual system up time.</p></td><td class="td"><p>Timeticks: (381446115) 44 days, 3:34:21.15</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> UCD-SNMP-MIB::systemStats</code></p></td><td class="td"><p>System wide statistics.</p></td><td class="td"><p>CLI command: <code class="literal">snmpwalk -v 2c -c appliancecom172.18.78.228UCD-SNMP- MIB::systemStats</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> UCD-SNMP-MIB::memory</code></p></td><td class="td"><p>Memory usage statistics.</p></td><td class="td"><p>CLI command: <code class="literal">snmpwalk -v 2c -c appliancecom172.18.78.228UCD-SNMP- MIB::memory</code></p></td></tr></tbody></table></div></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_CustomOID"><div class="titlepage"><div><div class="title"><h6 class="title">Custom OIDs</h6></div></div></div><p>The official Private Enterprise Number (PEN) assigned to Netskope from IANA (http://www.iana.org/ assignments/enterprise-numbers) is 48007.</p><div class="informaltable table-responsive"><table class="informaltable table-bordered"><colgroup><col></col><col></col><col></col></colgroup><thead><tr><th class="th" data-priority="1"><p>OID</p></th><th class="th" data-priority="1"><p>Description</p></th><th class="th" data-priority="1"><p>Values</p></th></tr></thead><tbody><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">enabledServices</code></p></td><td class="td"><p>Different services that are enabled on the box. For example: Management Plane, OPLP, Forwarder, and so on.</p></td><td class="td"><p>Possible values are: <code class="literal">Management-Plane</code>, <code class="literal">Tap</code>, <code class="literal">Forwarder</code>, <code class="literal">Forward-Proxy</code>, <code class="literal">DNS-Proxy</code>, <code class="literal">PAC-Server</code>, <code class="literal">Log-Processing</code>, <code class="literal">OPLP</code>, and <code class="literal">Database</code>. Sample output: <code class="literal">[DNS-Proxy,PAC-Server,OPLP] </code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">dataplaneStatus</code></p></td><td class="td"><p>Mirroring DP health check. <code class="literal">configure&gt; set dataplane healthcheck enable true</code>.</p></td><td class="td"><p>Integer values are: <code class="literal">1</code> = Down, <code class="literal">2</code> = Up, and <code class="literal">3</code> = Unknown</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">managementplaneStatus</code></p></td><td class="td"><p>If the appliance is connected to Management Plane or not. If connected, detailed monitoring status is available through the Management Plane.</p></td><td class="td"><p>Integer values are: <code class="literal">1</code> = Connected, <code class="literal">2</code> = Disconnected/Error condition, <code class="literal">3</code> = On Appliance, <code class="literal">4</code> = Unknown</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">lastConnectedToMP</code></p></td><td class="td"><p>The last time when there was a successful connection to the MP.</p></td><td class="td"><p>String as date-time. For example: <code class="literal">"Thu, 02 Jun 2016 21:28:27"</code></p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">deviceStatus</code></p></td><td class="td"><p>Represents the health of the appliance (as reported by the monitoring framework).</p><p>If the device is a management plane appliance, the status represents the health of the services like Zookeeper, Kafka and Mongo.</p><p>If the device is not management plane appliance, it represents the status of log management or any other relevant service for that mode.</p></td><td class="td"><p>Integer values are: <code class="literal">1</code> = Good, <code class="literal">2</code> = Bad <code class="literal">3</code> = Unknown</p></td></tr></tbody></table></div><p>Here's the Netskope MIB file:</p><pre class="programlisting">NETSKOPE-APPLIANCE-MIB DEFINITIONS ::= BEGIN
+IMPORTS
+    OBJECT-TYPE, NOTIFICATION-TYPE, enterprises, MODULE-IDENTITY
+          FROM SNMPv2-SMI
+    NOTIFICATION-GROUP, OBJECT-GROUP, MODULE-COMPLIANCE
+          FROM SNMPv2-CONF
+;
+netskopeApplianceMIB MODULE-IDENTITY
+  LAST-UPDATED "200006140000Z"
+  ORGANIZATION "Netskope"
+  CONTACT-INFO "nauman@netskope.com"
+  DESCRIPTION "Netskope Custom OIDs"
+  REVISION "200006140000Z"
+  DESCRIPTION "MIB file to represent state of Netskope Appliance"
+  ::= {netskopeAppliance 6}
+netskopeAppliance  OBJECT IDENTIFIER ::= {enterprises 48007}
+netskopeApplianceMIBNotifs OBJECT IDENTIFIER ::= {netskopeApplianceMIB 0}
+netskopeApplianceMIBNotifsGroups OBJECT IDENTIFIER ::= {netskopeApplianceMIB 1}
+netskopeApplianceMIBObjects OBJECT IDENTIFIER ::= {netskopeApplianceMIB 2}
+netskopeApplianceMIBGroups OBJECT IDENTIFIER ::= {netskopeApplianceMIB 3}
+-- [= = = Administrative/Conformance = = =]
+netskopeApplianceMIBConformance OBJECT IDENTIFIER ::= {netskopeApplianceMIB 4}
+-- [= = = OIDs section = = =]
+enabledServices OBJECT-TYPE
+  SYNTAX OCTET STRING (SIZE(0..1024))
+  MAX-ACCESS read-only
+  STATUS current
+  DESCRIPTION "Description of the modes the appliance is running in.
+         Example: [DNS-Proxy,OPLP]"
+  ::= {netskopeApplianceMIBObjects 1}
+dataplaneStatus OBJECT-TYPE
+  SYNTAX INTEGER { up(1), down(2), unknown(3) }
+  MAX-ACCESS read-only
+  STATUS current
+  DESCRIPTION "Status of dataplane if applicable"
+  ::= {netskopeApplianceMIBObjects 2}
+managementplaneStatus OBJECT-TYPE
+  SYNTAX INTEGER { up(1), down(2), onbox(3), unknown(4) }
+  MAX-ACCESS read-only
+  STATUS current
+  DESCRIPTION "Status of the appliance connection to MP.
+         Returns 2 if the box itself is the Management Plane."
+  ::= {netskopeApplianceMIBObjects 3}
+lastConnectedToMP OBJECT-TYPE
+  SYNTAX OCTET STRING (SIZE(0..256))
+  MAX-ACCESS read-only
+  STATUS current
+  DESCRIPTION "Timestamp when connection was made to MP last time.
+         Example: Sun, 26 Jun 2016 20:13:16"
+  ::= {netskopeApplianceMIBObjects 4}
+deviceStatus OBJECT-TYPE
+  SYNTAX INTEGER { good(1), bad(2), unknown(3) }
+  MAX-ACCESS read-only
+  STATUS current
+  DESCRIPTION "Status of the appliance as seen by the MP."
+  ::= {netskopeApplianceMIBObjects 5}
+-- [= = = Grouping OIDs = = =]
+netskopeApplianceGroup OBJECT-GROUP
+  OBJECTS {
+        enabledServices,
+        dataplaneStatus,
+        managementplaneStatus,
+        lastConnectedToMP,
+        deviceStatus
+      }
+  STATUS current
+  DESCRIPTION "Group of Netskope Appliance OIDs"
+  ::= {netskopeApplianceMIBGroups 1}
+-- [= = = Traps/Notifications section = = =]
+mpConnectionNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "MP Connection State Notification
+        1 = Connected
+        2 = Disconnected
+        3 = The device itself is MP
+        4 = Unknown"
+  ::= {netskopeApplianceMIBNotifs 1}
+deviceStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Device State Change Notification
+        1 = Healthy
+        2 = Unhealthy: one or more services/functionality may be affected
+        3 = Unknown"
+  ::= {netskopeApplianceMIBNotifs 2}
+deviceRebootedNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Device Rebooted Notification
+         1 = Device rebooted"
+  ::= {netskopeApplianceMIBNotifs 3}
+storageRootNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Root partition usage Notification.
+         1 = Normal
+         2 = Medium
+         3 = High"
+  ::= {netskopeApplianceMIBNotifs 4}
+storageMysqlNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Mysql partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 5}
+storageMongoInfraNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Mongo Infrastructure partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 6}
+storageLogNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Log processor partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 7}
+storageKafkaBrokerNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Kafka Broker partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 8}
+storageMongoEventNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Mongo Event parition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 9}
+reportjobWorkerNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Report job worker status Notification.
+        1 = Running
+        2 = Not Running"
+  ::= {netskopeApplianceMIBNotifs 10}
+reportjobSchedulerNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Report job scheduler status Notification.
+        1 = Running
+        2 = Not Running"
+  ::= {netskopeApplianceMIBNotifs 11}
+cfgagentConnectionNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Config agent connection status Notification.
+        1 = Connection restored"
+  ::= {netskopeApplianceMIBNotifs 12}
+mysqlNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Mysql status Notification.
+        1 = Running
+        2 = Not Running"
+  ::= {netskopeApplianceMIBNotifs 13}
+eventflowNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Event flow from device Notification.
+        1 = Restored
+        2 = Affected"
+  ::= {netskopeApplianceMIBNotifs 14}
+filesNotUploaded24hNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "File upload status Notification.
+        1 = Success
+        2 = At least 5 files not uploaded within last 24 hours"
+  ::= {netskopeApplianceMIBNotifs 15}
+filesNotUploaded48hNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "File upload status Notification.
+        1 = Success
+        2 = At least 5 files not uploaded within last 48 hours"
+  ::= {netskopeApplianceMIBNotifs 16}
+filesNotPicked24hNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "File picked status Notification.
+        1 = Success
+        2 = At least 1 file not uploaded within last 24 hours"
+  ::= {netskopeApplianceMIBNotifs 17}
+filesNotPicked48hNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "File picked status Notification.
+        1 = Success
+        2 = At least 1 files not uploaded within last 48 hours"
+  ::= {netskopeApplianceMIBNotifs 18}
+queryServiceStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Query service status Notification.
+        1 = Running
+        2 = Not running"
+  ::= {netskopeApplianceMIBNotifs 19}
+eventServiceStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Event service status Notification.
+        1 = Running
+        2 = Not running"
+  ::= {netskopeApplianceMIBNotifs 20}
+mongoSStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "MongoS status Notification.
+        1 = Running
+        2 = Not running"
+  ::= {netskopeApplianceMIBNotifs 21}
+mongoDBStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "MongoDB status Notification.
+        1 = Running
+        2 = Not running"
+  ::= {netskopeApplianceMIBNotifs 22}
+threatfeedAgeNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Threatfeed age status Notification.
+        1 = Up to date
+        2 = Outdated"
+  ::= {netskopeApplianceMIBNotifs 23}
+authProxyStatusNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Auth Proxy status Notification.
+        1 = Running
+        2 = Not running"
+  ::= {netskopeApplianceMIBNotifs 24}
+noEventsFromDeviceNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Event generation status Notification.
+        1 = Events from device are being successfully sent
+        2 = Events from device not received during last 24 hrs"
+  ::= {netskopeApplianceMIBNotifs 25}
+noMetricsFromDeviceNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Metrics generation status Notification.
+        1 = Metrics from device are being successfully sent
+        2 = Metrics from device are not received during last 6 hrs"
+  ::= {netskopeApplianceMIBNotifs 26}
+storageSecurestoreNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "SecureStore partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 27}
+storageUpgradeNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Upgrade partition usage Notification.
+        1 = Normal
+        2 = Medium
+        3 = High"
+  ::= {netskopeApplianceMIBNotifs 28}
+callhomeConnectivityNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Callhome service Connectivity Notification
+         1 = Reachable
+         2 = Not Reachable"
+  ::= {netskopeApplianceMIBNotifs 29}
+downloaderConnectivityNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Downloader Connectivity Notification
+         1 = Reachable
+         2 = Not Reachable"
+  ::= {netskopeApplianceMIBNotifs 30}
+configsvcConnectivityNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Config service Connectivity Notification
+         1 = Reachable
+         2 = Not Reachable"
+  ::= {netskopeApplianceMIBNotifs 31}
+uploadConnectivityNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Upload Connectivity Notification
+         1 = Reachable
+         2 = Not Reachable"
+  ::= {netskopeApplianceMIBNotifs 32}
+loguploadConnectivityNotif NOTIFICATION-TYPE
+  STATUS current
+  DESCRIPTION "Logupload Connectivity Notification
+         1 = Reachable
+         2 = Not Reachable"
+  ::= {netskopeApplianceMIBNotifs 33}
+-- [= = = Grouping Traps/Notifications = = =]
+netskopeApplianceNotifGroup NOTIFICATION-GROUP
+  NOTIFICATIONS {
+        mpConnectionNotif,
+        deviceStatusNotif,
+        deviceRebootedNotif,
+        storageRootNotif,
+        storageMysqlNotif,
+        storageMongoInfraNotif,
+        storageLogNotif,
+        storageKafkaBrokerNotif,
+        storageMongoEventNotif,
+        reportjobWorkerNotif,
+        reportjobSchedulerNotif,
+        cfgagentConnectionNotif,
+        mysqlNotif,
+        eventflowNotif,
+        filesNotUploaded24hNotif,
+        filesNotUploaded48hNotif,
+        filesNotPicked24hNotif,
+        filesNotPicked48hNotif,
+        queryServiceStatusNotif,
+        eventServiceStatusNotif,
+        mongoSStatusNotif,
+        mongoDBStatusNotif,
+        threatfeedAgeNotif,
+        authProxyStatusNotif,
+        noEventsFromDeviceNotif,
+        noMetricsFromDeviceNotif,
+        storageSecurestoreNotif,
+        storageUpgradeNotif,
+        callhomeConnectivityNotif,
+        downloaderConnectivityNotif,
+        configsvcConnectivityNotif,
+        uploadConnectivityNotif,
+        loguploadConnectivityNotif
+      }
+  STATUS current
+  DESCRIPTION "Group for Netskope Appliance Notifications"
+  ::= {netskopeApplianceMIBNotifsGroups 1}
+-- [= = = Conformance Information = = =]
+netskopeApplianceMIBCompliances
+  OBJECT IDENTIFIER ::= {netskopeApplianceMIBConformance 1}
+netskopeApplianceMIBCompliance MODULE-COMPLIANCE
+  STATUS current
+  DESCRIPTION "The compliance statement for Netskope Appliance"
+  MODULE -- this module
+  MANDATORY-GROUPS {
+        netskopeApplianceGroup,
+        netskopeApplianceNotifGroup
+       }
+  ::= { netskopeApplianceMIBCompliances 1}
+END</pre></section><section dir="ltr" class="section internal internal" data-origin-id="" data-publication-date="" id="idm46450360452336"><div class="titlepage"><div><div class="title"><h6 class="title">SNMP Traps</h6></div></div></div><p>Setup an SNMP traps receiver on your SNMP server to receive SNMP traps notifications from the appliance. The appliance uses the following SNMP traps notification OIDs.</p><div class="informaltable table-responsive"><table class="informaltable table-bordered"><colgroup><col></col><col></col><col></col></colgroup><thead><tr><th class="th" data-priority="1"><p>OID</p></th><th class="th" data-priority="1"><p>Description</p></th><th class="th" data-priority="1"><p>Values</p></th></tr></thead><tbody><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">mpConnectionNotif</code></p></td><td class="td"><p>Whenever the management plane connection status changes, a notification will be sent to the trap server.</p></td><td class="td"><p>N/A</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal"> deviceStatusNotif</code></p></td><td class="td"><p>Whenever the device status changes, a notification will be sent to the trap server.</p></td><td class="td"><p>N/A</p></td></tr></tbody></table></div><p>Make sure the daemon that receives the SNMP traps (<code class="literal">snmptrapd</code>) is running.</p><p>To set up the traps receiver,</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>On your SNMP server, go to the directory you want to use as your working directory. For example, <code class="literal">cd /Users/snmpuser/</code>.</p></li><li class="listitem"><p>Create a config file for <code class="literal">snmptrapd</code> (<code class="literal">snmptrapd.conf</code>), which just has one line.</p><pre class="programlisting">cat snmptrapd.conf 
+disableAuthorization yes</pre></li><li class="listitem"><p>Start the <code class="literal">snmptrapd</code>.</p><pre class="programlisting">sudo snmptrapd -f -Lo -c snmptrapd.conf</pre></li><li class="listitem"><p>Note this system's IP address, which should be reachable from the appliance you want to send the traps from.</p></li><li class="listitem"><p>On the appliance, configure that IP address as <code class="literal">snmp traps server</code> and make sure SNMP is enabled.</p><pre class="programlisting">set snmp traps server <span class="emphasis"><em>&lt;hostname or IP address&gt;</em></span></pre></li><li class="listitem"><p>When the management plane connection state changes, you should see a notification on the SNMP server similar to:</p><pre class="programlisting">2016-09-29 18:19:24 &lt;UNKNOWN&gt; [UDP: [192.168.64.36]:55034-&gt;[0.0.0.0]:0]:
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (28067711) 3 days, 5:57:57.11  
+SNMPv2-MIB::snmpTrapOID.0 = OID: SNMPv2-SMI::enterprises.48007.5    
+SNMPv2-SMI::enterprises.48007.5.1 = INTEGER: 0
+</pre><p>Note the value after <code class="literal">INTEGER:</code> is <code class="literal">0</code>, which reflects the current state of the management plane connection. Refer to <code class="literal">managementplaneStatus</code> in the Custom OIDs table for more value descriptions.</p></li></ol></div></section></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><aside class="section-nav-container"><ul class="section-nav nav"><li><a href="#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896">Configure SNMP </a></li><li><a href="#idm46450360527664">Prerequisites</a></li><li><a href="#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigAgent">Configuring SNMP Agent</a></li><li><a href="#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_ConfigTraps">Configuring SNMP Traps</a></li><li><a href="#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_StandardOID">Standard OIDs</a></li><li><a href="#UUID-e433a56b-fafd-e154-08cf-1784ae7bf896_CustomOID">Custom OIDs</a></li><li><a href="#idm46450360452336">SNMP Traps</a></li></ul></aside><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Configure%20SNMP%C2%A0%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Configure%20SNMP%C2%A0%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="fetch-events.html#idm46450360568864">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="configure-snmp.html#idm46450360527664">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2021 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">December 18, 2020</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W56WJ8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager (noscript)--></body></html>

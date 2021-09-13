@@ -230,6 +230,10 @@
           <span class="entity_name">AccessAnalyzer</span>
         </li>
         
+        <li class="entity_key" data-entity-name="GuardDutyDetector">
+          <span class="entity_name">GuardDutyDetector</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="KMSKey">
           <span class="entity_name">KMSKey</span>
         </li>
@@ -238,6 +242,10 @@
       
       <h2 class="entity_category Storage">Storage</h2>
       <ul>
+        
+        <li class="entity_key" data-entity-name="ECRRepository">
+          <span class="entity_name">ECRRepository</span>
+        </li>
         
         <li class="entity_key" data-entity-name="S3Bucket">
           <span class="entity_name">S3Bucket</span>
@@ -1210,9 +1218,15 @@
           </tr>
           
           <tr>
+            <td>SnapshotId</td>
+            <td>string</td>
+            <td>The ID of the snapshot for the volume. May reference a deleted snapshot.</td>
+          </tr>
+          
+          <tr>
             <td>Snapshot</td>
             <td>Reference to Snapshots</td>
-            <td>Snapshot of the Volume</td>
+            <td>Snapshot of the Volume. May be null if SnapshotId references a deleted snapshot.</td>
           </tr>
           
         </table>
@@ -5166,6 +5180,42 @@
             <td>End Point Private Access</td>
           </tr>
           
+          <tr>
+            <td>PublicAccessCidrs</td>
+            <td>list</td>
+            <td>The CIDR blocks that are allowed access to your cluster's public Kubernetes API server endpoint.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CidrBlock</td>
+            <td>ip</td>
+            <td>A CIDR block</td>
+          </tr>
+          
+          <tr>
+            <td>EncryptionConfig</td>
+            <td>list</td>
+            <td>The encryption configuration for the cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Resources</td>
+            <td>list</td>
+            <td>Specifies the resources to be encrypted.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>KeyArn</td>
+            <td>Reference to KMSKey</td>
+            <td>ARN or alias of the KMS key.</td>
+          </tr>
+          
+          <tr>
+            <td>FargateProfileNames</td>
+            <td>list</td>
+            <td>A list of all of the Fargate profiles associated with the specified cluster.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="ECSCluster">
@@ -7339,6 +7389,174 @@
             <td>CarrierIp</td>
             <td>string</td>
             <td>The carrier IP address associated. This option is only available for network interfaces which reside in a subnet in a Wavelength Zone (for example an EC2 instance)</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="GuardDutyDetector">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Detector ID.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>ID of the Detector</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Detector resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Detector resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Detector</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Detector</td>
+          </tr>
+          
+          <tr>
+            <td>CreatedAt</td>
+            <td>number</td>
+            <td>The timestamp of when the detector was created.</td>
+          </tr>
+          
+          <tr>
+            <td>FindingPublishingFrequency</td>
+            <td>string</td>
+            <td>The publishing frequency of the finding. (FIFTEEN_MINUTES|ONE_HOUR|SIX_HOURS)</td>
+          </tr>
+          
+          <tr>
+            <td>ServiceRole</td>
+            <td>Reference to IAMRole</td>
+            <td>The GuardDuty service role.</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>The detector status. (ENABLED|DISABLED)</td>
+          </tr>
+          
+          <tr>
+            <td>UpdatedAt</td>
+            <td>number</td>
+            <td>The last-updated timestamp for the detector.</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags of the detector resource.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ECRRepository">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>ID of the ECR Repository</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Repository</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the ECR Repository resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the ECR Repository resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Repository</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Repository</td>
+          </tr>
+          
+          <tr>
+            <td>RepositoryUri</td>
+            <td>string</td>
+            <td>The URI for the repository. You can use this URI for container image push and pull operations.</td>
+          </tr>
+          
+          <tr>
+            <td>CreatedAt</td>
+            <td>number</td>
+            <td>A timestamp for the date when the repository was created.</td>
+          </tr>
+          
+          <tr>
+            <td>ImageTagMutability</td>
+            <td>string</td>
+            <td>The tag mutability setting for the repository. (MUTABLE|IMMUTABLE)</td>
+          </tr>
+          
+          <tr>
+            <td>ImageScanningConfiguration</td>
+            <td>sequence</td>
+            <td>The image scanning configuration for a repository.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ScanOnPush</td>
+            <td>boolean</td>
+            <td>The setting that determines whether images are scanned after being pushed to a repository.</td>
           </tr>
           
         </table>

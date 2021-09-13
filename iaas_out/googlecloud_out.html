@@ -4092,7 +4092,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>AutoprovisioningLocations</td>
             <td>list</td>
-            <td>The list of Google Compute Engine zones in which the NodePool’s nodes can be created by NAP</td>
+            <td>The list of Google Compute Engine zones in which the NodePool's nodes can be created by NAP</td>
           </tr>
           
           <tr>
@@ -4194,7 +4194,7 @@
           <tr>
             <td>InitialNodeCount</td>
             <td>number</td>
-            <td>Number of nodes to create in this cluster. You must ensure that your Compute Engine resource quota is sufficient for this number of instances. You must also have available firewall and routes quota. For requests, this field should only be used in lieu of a “node_pool” object, since this configuration (along with the “node_config”) will be used to create a “NodePool” object with an auto-generated name. Do not use this and a node_pool at the same time. This field is deprecated, use node_pool.initial_node_count instead.</td>
+            <td>Number of nodes to create in this cluster. You must ensure that your Compute Engine resource quota is sufficient for this number of instances. You must also have available firewall and routes quota. For requests, this field should only be used in lieu of a "node_pool" object, since this configuration (along with the "node_config") will be used to create a "NodePool" object with an auto-generated name. Do not use this and a node_pool at the same time. This field is deprecated, use node_pool.initial_node_count instead.</td>
           </tr>
           
           <tr>
@@ -4314,7 +4314,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>ResourceVersion</td>
             <td>string</td>
-            <td>A hash identifying the version of this policy, so that updates to fields of the policy won’t accidentally undo intermediate changes (and so that users of the API unaware of some fields won’t accidentally remove other fields). Make a get() request to the cluster to get the current resource version and include it with requests to set the policy</td>
+            <td>A hash identifying the version of this policy, so that updates to fields of the policy won't accidentally undo intermediate changes (and so that users of the API unaware of some fields won't accidentally remove other fields). Make a get() request to the cluster to get the current resource version and include it with requests to set the policy</td>
           </tr>
           
           <tr>
@@ -4524,7 +4524,7 @@
           <tr>
             <td>NodeConfig</td>
             <td>sequence</td>
-            <td>Parameters used in creating the cluster's nodes. For requests, this field should only be used in lieu of a “node_pool” object, since this configuration (along with the “initial_node_count”) will be used to create a “NodePool” object with an auto-generated name. Do not use this and a node_pool at the same time. For responses, this field will be populated with the node configuration of the first node pool. (For configuration of each node pool, see node_pool.config). If unspecified, the defaults are used. This field is deprecated, use node_pool.config instead.</td>
+            <td>Parameters used in creating the cluster's nodes. For requests, this field should only be used in lieu of a "node_pool" object, since this configuration (along with the "initial_node_count") will be used to create a "NodePool" object with an auto-generated name. Do not use this and a node_pool at the same time. For responses, this field will be populated with the node configuration of the first node pool. (For configuration of each node pool, see node_pool.config). If unspecified, the defaults are used. This field is deprecated, use node_pool.config instead.</td>
           </tr>
           
           <tr>
@@ -4686,7 +4686,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SandboxType</td>
             <td>string</td>
-            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+            <td>Type of the sandbox to use for the node (e.g. 'gvisor')</td>
           </tr>
           
           <tr>
@@ -4740,7 +4740,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
             <td>string</td>
-            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify “googleapis.com/reservation-name” as the key and specify the name of your reservation as its value</td>
+            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify "googleapis.com/reservation-name" as the key and specify the name of your reservation as its value</td>
           </tr>
           
           <tr>
@@ -5010,7 +5010,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SandboxType</td>
             <td>string</td>
-            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+            <td>Type of the sandbox to use for the node (e.g. 'gvisor')</td>
           </tr>
           
           <tr>
@@ -5064,7 +5064,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Key</td>
             <td>string</td>
-            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify “googleapis.com/reservation-name” as the key and specify the name of your reservation as its value</td>
+            <td>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify "googleapis.com/reservation-name" as the key and specify the name of your reservation as its value</td>
           </tr>
           
           <tr>
@@ -5190,7 +5190,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>Locations</td>
             <td>list</td>
-            <td>The list of Google Compute Engine zones in which the NodePool’s nodes should be located. If this value is unspecified during node pool creation, the Cluster.Locations value will be used, instead. Warning - changing node pool locations will result in nodes being added and/or removed</td>
+            <td>The list of Google Compute Engine zones in which the NodePool's nodes should be located. If this value is unspecified during node pool creation, the Cluster.Locations value will be used, instead. Warning - changing node pool locations will result in nodes being added and/or removed</td>
           </tr>
           
           <tr>
@@ -5424,7 +5424,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>SandboxType</td>
             <td>string</td>
-            <td>Type of the sandbox to use for the node (e.g. ‘gvisor’)</td>
+            <td>Type of the sandbox to use for the node (e.g. 'gvisor')</td>
           </tr>
           
           <tr>
