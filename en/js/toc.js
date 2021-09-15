@@ -5644,77 +5644,15 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-gre-with-cisco-ios.html",
-"text": "Integrate Netskope GRE with Cisco IOS",
+"url": "netskope-gre-with-cisco-ios.html",
+"text": "Netskope GRE with Cisco IOS",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-gre-tunnels-overview.html",
-"text": "Netskope GRE Tunnels Overview",
-"class": "topic-link section"
-},
-{
-"url": "create-gre-tunnels-in-netskope.html",
-"text": "Create GRE Tunnels in Netskope",
-"class": "topic-link section"
-},
-{
-"url": "define-the-primary-tunnel-interface.html",
-"text": "Define the Primary Tunnel Interface",
-"class": "topic-link section"
-},
-{
-"url": "define-the-backup-tunnel-interface.html",
-"text": "Define the Backup Tunnel Interface",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-acl---route-map.html",
-"text": "Configure the ACL &amp; Route Map",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-failover-options.html",
-"text": "Configure the Failover Options",
-"class": "topic-link section"
-},
-{
 "url": "additional-eem-applet-examples.html",
 "text": "Additional EEM Applet Examples",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "primary-tunnel-state-down.html",
-"text": "Primary Tunnel State Down",
-"class": "topic-link section"
-},
-{
-"url": "primary-tunnel-state-up.html",
-"text": "Primary Tunnel State Up",
-"class": "topic-link section"
-},
-{
-"url": "backup-tunnel-state-down.html",
-"text": "Backup Tunnel State Down",
-"class": "topic-link section"
-},
-{
-"url": "backup-tunnel-state-up.html",
-"text": "Backup Tunnel State Up",
-"class": "topic-link section"
-},
-{
-"url": "both-tunnels-down--fail-open-.html",
-"text": "Both Tunnels Down (Fail-Open) ",
-"class": "topic-link section"
-},
-{
-"url": "both-tunnels-up.html",
-"text": "Both Tunnels Up",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -7382,8 +7320,8 @@ var toc = [{
 }]
 },
 {
-"url": "on-premises-appliance-release-notes-version-77-4-0.html",
-"text": "On-Premises Appliance Release Notes Version 77.4.0",
+"url": "on-premises-appliance-release-notes-version-77-5-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.5.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [

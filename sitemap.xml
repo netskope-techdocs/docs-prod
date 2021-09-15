@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-user-confidence-index.html</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-incident-details.html</loc>
@@ -486,7 +486,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-ipsec-tunnel.html</loc>
-    <lastmod>2021-08-24</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre---ipsec-tunnel-gateway---http-s--non-standard-port-support.html</loc>
@@ -3170,7 +3170,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-ctep-settings.html</loc>
-    <lastmod>2021-08-31</lastmod>
+    <lastmod>2021-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-signature-override.html</loc>
@@ -3294,7 +3294,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2021-08-16</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -3586,7 +3586,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-microsoft-endpoint-manager.html</loc>
-    <lastmod>2021-07-12</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-via-idp.html</loc>
@@ -3630,11 +3630,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
-    <lastmod>2021-08-16</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
-    <lastmod>2021-09-11</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
@@ -3906,7 +3906,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/connecting-to-the-mip-instance.html</loc>
-    <lastmod>2020-07-15</lastmod>
+    <lastmod>2021-09-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-api-data-protection-policy-for-mip.html</loc>
@@ -4141,59 +4141,11 @@
     <lastmod>2021-04-02</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/integrate-netskope-gre-with-cisco-ios.html</loc>
-    <lastmod>2021-02-11</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-gre-tunnels-overview.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-gre-tunnels-in-netskope.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/define-the-primary-tunnel-interface.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/define-the-backup-tunnel-interface.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-acl---route-map.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-failover-options.html</loc>
-    <lastmod>2021-09-11</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-gre-with-cisco-ios.html</loc>
+    <lastmod>2021-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/additional-eem-applet-examples.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/primary-tunnel-state-down.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/primary-tunnel-state-up.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/backup-tunnel-state-down.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/backup-tunnel-state-up.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/both-tunnels-down--fail-open-.html</loc>
-    <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/both-tunnels-up.html</loc>
     <lastmod>2021-09-10</lastmod>
   </url>
   <url>
@@ -5398,7 +5350,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues.html</loc>
-    <lastmod>2021-09-11</lastmod>
+    <lastmod>2021-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/appendix--fixed-issue-134322.html</loc>
@@ -5425,20 +5377,20 @@
     <lastmod>2021-08-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-77-4-0.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-77-5-0.html</loc>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-85472.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-85473.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/other-changes.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues.html</loc>
@@ -5446,11 +5398,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-85476.html</loc>
-    <lastmod>2021-05-21</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-77-5-0.html</loc>
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-85641.html</loc>
@@ -5458,23 +5410,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/requirements.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-85643.html</loc>
-    <lastmod>2021-09-10</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/other-changes-213637.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-85645.html</loc>
-    <lastmod>2021-05-21</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-85646.html</loc>
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/management-plane-appliance-release-notes.html</loc>
@@ -5482,7 +5434,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-148593.html</loc>
-    <lastmod>2021-05-18</lastmod>
+    <lastmod>2021-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-149241.html</loc>
