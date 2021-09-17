@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <script src="jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="entity_styles.css">
@@ -40,9 +40,141 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span>join_before_host</td>
+            <td>boolean</td>
+            <td>Allow participants to join the meeting before the host arrives.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>not_store_meeting_topic</td>
+            <td>boolean</td>
+            <td>Always display "Zoom Meeting" as the meeting topic.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>host_video</td>
+            <td>boolean</td>
+            <td>Start meetings with the host video on.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>participant_video</td>
+            <td>boolean</td>
+            <td>Start meetings with the participant video on.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>require_password_for_instant_meetings</td>
+            <td>boolean</td>
+            <td>Require a password for instant meetings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>require_password_for_pmi_meetings</td>
+            <td>string</td>
+            <td>Require a password for a meeting held using a Personal Meeting ID (PMI).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>enforce_login</td>
+            <td>boolean</td>
+            <td>Only Zoom users who are signed in can join meetings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>require_password_for_scheduling_new_meetings</td>
+            <td>boolean</td>
+            <td>Require a password when scheduling new meetings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>use_pmi_for_scheduled_meetings</td>
+            <td>boolean</td>
+            <td>Use the Personal Meeting ID (PMI) when scheduling a meeting.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>use_pmi_for_instant_meetings</td>
+            <td>boolean</td>
+            <td>Use the Personal Meeting ID (PMI) when starting an instant meeting.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>personal_meeting</td>
+            <td>boolean</td>
+            <td>Whether Personal Meeting IDs are enabled or not. If true, users receive a unique dedicated 9-11 digit number which can be used as the user's personal meeting room.</td>
+          </tr>
+          
+          <tr>
             <td>in_meeting</td>
             <td>entity</td>
             <td>In-meeting settings.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>watermark</td>
+            <td>boolean</td>
+            <td>Add a watermark when viewing a shared screen.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>polling</td>
+            <td>boolean</td>
+            <td>Allow hosts to add polls/quizzes before or during a meeting</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>feedback</td>
+            <td>boolean</td>
+            <td>Add a \"Feedback\" tab to the Windows Settings or Mac Preferences dialog. This enables users to provide feedback to Zoom at the end of the meeting.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>allow_participants_to_rename</td>
+            <td>boolean</td>
+            <td>If the value of this field is set to `true`, meeting participants and webinar panelists are allowed to rename themselves during a meeting or a webinar.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>meeting_reactions</td>
+            <td>boolean</td>
+            <td>Enable or disable meeting reactions.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>private_chat</td>
+            <td>boolean</td>
+            <td>Allow a meeting participant to send a private message to another participant.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>co_host</td>
+            <td>boolean</td>
+            <td>Allow the host to add co-hosts.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>show_meeting_control_toolbar</td>
+            <td>boolean</td>
+            <td>Always show the meeting controls during a meeting.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>auto_saving_chat</td>
+            <td>boolean</td>
+            <td>Automatically save all in-meeting chats so that the host does not need to manually save the chat transcript after the meeting starts.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>e2e_encryption</td>
+            <td>boolean</td>
+            <td>By default, Zoom requires encryption for all data between the Zoom cloud, Zoom client, and Zoom Room. If this setting is set to `true`, encryption will also be enabled for third-party endpoints (SIP/H.323) as well.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>screen_sharing</td>
+            <td>boolean</td>
+            <td>Allow the host and participants to share their screen or content during meetings.</td>
           </tr>
           
         </table>
@@ -58,6 +190,90 @@
             <td>meeting_security</td>
             <td>entity</td>
             <td>Meeting Security Settings</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>waiting_room</td>
+            <td>boolean</td>
+            <td>When participants join a meeting, place them in a waiting room and require the host to admit them individually.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>embed_password_in_join_link</td>
+            <td>boolean</td>
+            <td>If set to `true`, the meeting passcode will be encrypted and included in the invite link to allow participants to join with just one click without having to enter the passcode.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>phone_password</td>
+            <td>boolean</td>
+            <td>Require a passcode for participants joining by phone.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>meeting_password_requirement</td>
+            <td>entity</td>
+            <td>Meeting password requirements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>length</td>
+            <td>number</td>
+            <td>The minimum length that the meeting/webinar password needs to have.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>have_letter</td>
+            <td>boolean</td>
+            <td>If set to `true`, the password must contain at least 1 letter.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>have_number</td>
+            <td>boolean</td>
+            <td>If set to `true`, the password must contain at least 1 number.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>have_special_character</td>
+            <td>boolean</td>
+            <td>If set to `true`, the password must have at least 1 special character (!, @, #, etc.).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>only_allow_numeric</td>
+            <td>boolean</td>
+            <td>If set to `true`, the password must only contain numbers and no other characters.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>have_upper_and_lower_characters</td>
+            <td>boolean</td>
+            <td>If set to `true`, the password must include both uppercase and lowercase characters.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>consecutive_characters_length</td>
+            <td>number</td>
+            <td>Number of consecutive identical characters allowed in a password.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>weak_enhance_detection</td>
+            <td>boolean</td>
+            <td>If set to `true`, users will be informed if the provided password is weak.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>waiting_room_settings</td>
+            <td>entity</td>
+            <td>Specify the settings to be applied if the Waiting Room feature is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>participants_to_place_in_waiting_room</td>
+            <td>number</td>
+            <td>Specify who should be admitted to the waiting room. The value of this field can be one of the following: 0: All attendees. 1: Users who are not in your account. 2: Users who are not in your account and are not part of the specified whitelisted domains.</td>
           </tr>
           
         </table>
