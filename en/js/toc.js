@@ -4775,7 +4775,11 @@ var toc = [{
 "url": "private-access-faqs.html",
 "text": "Private Access FAQs",
 "class": "topic-link section"
-}]
+},
+{
+"url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
+"text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
+"class": "topic-link section"
 },
 {
 "url": "netskope-private-access-troubleshooting-guide.html",
