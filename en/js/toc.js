@@ -6160,27 +6160,6 @@ var toc = [{
 "url": "configure-the-netskope-plugin-with-sailpoint-identityiq.html",
 "text": "Configure the Netskope Plugin with SailPoint IdentityIQ",
 "class": "topic-link section"
-},
-{
-"url": "cisco-umbrella-with-the-netskope-client.html",
-"text": "Cisco Umbrella with the Netskope Client",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "cisco-umbrella-with-the-netskope-client-310454.html",
-"text": "Cisco Umbrella with the Netskope Client",
-"class": "topic-link section"
-},
-{
-"url": "create-an-umbrella-ip-bypass-list-in-netskope.html",
-"text": "Create an Umbrella IP Bypass List in Netskope",
-"class": "topic-link section"
-},
-{
-"url": "bypass-umbrella-processes-for-umbrella-dns-based-protection.html",
-"text": "Bypass Umbrella Processes for Umbrella DNS-based Protection",
-"class": "topic-link section"
 }]
 },
 {
