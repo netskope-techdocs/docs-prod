@@ -6163,6 +6163,39 @@ var toc = [{
 }]
 },
 {
+"url": "cisco-umbrella-with-the-netskope-client.html",
+"text": "Cisco Umbrella with the Netskope Client",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "cisco-umbrella-with-the-netskope-client-310454.html",
+"text": "Cisco Umbrella with the Netskope Client",
+"class": "topic-link section"
+},
+{
+"url": "create-an-umbrella-ip-bypass-list-in-netskope.html",
+"text": "Create an Umbrella IP Bypass List in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "bypass-umbrella-processes-for-umbrella-dns-based-protection.html",
+"text": "Bypass Umbrella Processes for Umbrella DNS-based Protection",
+"class": "topic-link section"
+},
+{
+"url": "enable-the-perform-server-name-indication--sni--check-in-netskope.html",
+"text": "Enable the Perform Server Name Indication (SNI) Check in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "faq.html",
+"text": "FAQ",
+"class": "topic-link section"
+}]
+}]
+},
+{
 "url": "netskope-adapters.html",
 "text": "Netskope Adapters",
 "class": "topic-link section reused-publication reused-publication"
