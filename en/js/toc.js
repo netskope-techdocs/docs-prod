@@ -1587,6 +1587,11 @@ var toc = [{
 "url": "configure-github-instance-for-security-posture.html",
 "text": "Configure GitHub Instance for Security Posture",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-github.html",
+"text": "Permissions Required for GitHub",
+"class": "topic-link section"
 }]
 },
 {
@@ -1599,6 +1604,11 @@ var toc = [{
 "url": "configure-microsoft-365-instance-for-security-posture.html",
 "text": "Configure Microsoft 365 Instance for Security Posture",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-microsoft-365.html",
+"text": "Permissions Required for Microsoft 365",
+"class": "topic-link section"
 }]
 },
 {
@@ -1610,6 +1620,11 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-security-posture.html",
 "text": "Configure Salesforce Instance for Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-salesforce.html",
+"text": "Permissions Required for Salesforce",
 "class": "topic-link section"
 }]
 },
@@ -1634,6 +1649,11 @@ var toc = [{
 {
 "url": "configure-zoom-instance-for-security-posture.html",
 "text": "Configure Zoom Instance for Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-zoom.html",
+"text": "Permissions Required for Zoom",
 "class": "topic-link section"
 },
 {
@@ -4471,7 +4491,7 @@ var toc = [{
 {
 "url": "traffic-management.html",
 "text": "Traffic Management",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
@@ -4619,7 +4639,7 @@ var toc = [{
 {
 "url": "netskope-private-access.html",
 "text": "Netskope Private Access",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -4629,151 +4649,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "about-netskope-private-access.html",
-"text": "About Netskope Private Access",
-"class": "topic-link section"
-},
-{
-"url": "private-apps-configuration-methods.html",
-"text": "Private Apps Configuration Methods",
-"class": "topic-link section"
-},
-{
-"url": "create-a-new-publisher.html",
-"text": "Create a New Publisher",
-"class": "topic-link section"
-},
-{
-"url": "deploy-a-publisher.html",
-"text": "Deploy a Publisher",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-a-publisher-in-aws.html",
-"text": "Configure a Publisher in AWS",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "factor-firewall-rules.html",
-"text": "Factor Firewall Rules",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-a-publisher-in-azure.html",
-"text": "Configure a Publisher in Azure",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-publisher-in-gcp.html",
-"text": "Configure a Publisher in GCP",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-publisher-in-centosos.html",
-"text": "Configure a Publisher in CentosOS",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-publisher-in-hyper-v.html",
-"text": "Configure a Publisher in Hyper-V",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-publisher-in-vmware-esxi.html",
-"text": "Configure a Publisher in VMWare ESXi",
-"class": "topic-link section"
-},
-{
-"url": "enable-snmp-on-a-publisher.html",
-"text": "Enable SNMP on a Publisher",
-"class": "topic-link section"
-}]
-},
-{
-"url": "create-a-private-app.html",
-"text": "Create a Private App",
-"class": "topic-link section"
-},
-{
-"url": "configure-browser-access-for-private-apps.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "steer-traffic-for-private-apps.html",
-"text": "Steer Traffic for Private Apps",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-steering-configuration-for-an-ou-or-user-group.html",
-"text": "Create a Steering Configuration for an OU or User Group",
-"class": "topic-link section"
-},
-{
-"url": "change-steering-configurations-to-include-private-apps.html",
-"text": "Change Steering Configurations to Include Private Apps",
-"class": "topic-link section"
-}]
-},
-{
-"url": "source-ip-anchoring-for-an-idp-with-netskope-private-access.html",
-"text": "Source IP Anchoring for an IdP with Netskope Private Access",
-"class": "topic-link section"
-},
-{
-"url": "add-users-164689.html",
-"text": "Add Users",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-protection-policy-for-private-access.html",
-"text": "Create a Real-time Protection Policy for Private Access",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-client-for-netskope-private-access.html",
-"text": "Configure the Netskope Client for Netskope Private Access",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "install-the-client-for-private-access.html",
-"text": "Install the Client for Private Access",
-"class": "topic-link section"
-},
-{
-"url": "view-private-access-status-for-devices.html",
-"text": "View Private Access Status for Devices",
-"class": "topic-link section"
-},
-{
-"url": "use-client-re-authentication.html",
-"text": "Use Client Re-authentication",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-events-and-alerts-for-private-apps.html",
-"text": "View Events and Alerts for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "change-publishers-for-private-apps.html",
-"text": "Change Publishers for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "upgrade-the-publisher.html",
-"text": "Upgrade the Publisher",
-"class": "topic-link section"
-},
-{
-"url": "private-access-faqs.html",
-"text": "Private Access FAQs",
+"url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
+"text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
 "class": "topic-link section"
 }]
 },
@@ -4783,11 +4660,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "troubleshooting-netskope-private-access.html",
-"text": "Troubleshooting Netskope Private Access",
-"class": "topic-link section"
-},
 {
 "url": "the-npa-troubleshooter-tool.html",
 "text": "The NPA Troubleshooter Tool",
@@ -4810,14 +4682,14 @@ var toc = [{
 }]
 },
 {
-"url": "private-access-publisher-security-and-hardening.html",
-"text": "Private Access Publisher Security and Hardening",
+"url": "secure-tenant-hardening-and-configuration.html",
+"text": "Secure Tenant Hardening and Configuration",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "private-access-publisher-security-and-hardening-291561.html",
-"text": "Private Access Publisher Security and Hardening",
+"url": "secure-tenant-hardening-and-configuration-291561.html",
+"text": "Secure Tenant Hardening and Configuration",
 "class": "topic-link section"
 },
 {
@@ -6160,6 +6032,38 @@ var toc = [{
 "url": "configure-the-netskope-plugin-with-sailpoint-identityiq.html",
 "text": "Configure the Netskope Plugin with SailPoint IdentityIQ",
 "class": "topic-link section"
+},
+{
+"url": "cisco-umbrella-with-the-netskope-client.html",
+"text": "Cisco Umbrella with the Netskope Client",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "cisco-umbrella-with-the-netskope-client-310454.html",
+"text": "Cisco Umbrella with the Netskope Client",
+"class": "topic-link section"
+},
+{
+"url": "create-an-umbrella-ip-bypass-list-in-netskope.html",
+"text": "Create an Umbrella IP Bypass List in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "bypass-umbrella-processes-for-umbrella-dns-based-protection.html",
+"text": "Bypass Umbrella Processes for Umbrella DNS-based Protection",
+"class": "topic-link section"
+},
+{
+"url": "enable-the-perform-server-name-indication--sni--check-in-netskope.html",
+"text": "Enable the Perform Server Name Indication (SNI) Check in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "faq.html",
+"text": "FAQ",
+"class": "topic-link section"
+}]
 }]
 },
 {
