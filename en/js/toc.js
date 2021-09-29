@@ -6040,11 +6040,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "cisco-umbrella-with-the-netskope-client-310454.html",
-"text": "Cisco Umbrella with the Netskope Client",
-"class": "topic-link section"
-},
-{
 "url": "create-an-umbrella-ip-bypass-list-in-netskope.html",
 "text": "Create an Umbrella IP Bypass List in Netskope",
 "class": "topic-link section"
