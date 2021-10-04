@@ -5528,13 +5528,6 @@ var toc = [{
 "url": "netskope-gre-with-juniper-srx.html",
 "text": "Netskope GRE with Juniper SRX",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-the-real-time-performance-monitoring-probes.html",
-"text": "Configure the Real-Time Performance Monitoring Probes",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-gre-with-palo-alto-networks-ngfw.html",
