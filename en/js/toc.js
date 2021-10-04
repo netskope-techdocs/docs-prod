@@ -4652,6 +4652,11 @@ var toc = [{
 "url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
 "text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
 "class": "topic-link section"
+},
+{
+"url": "private-access-faqs.html",
+"text": "Private Access FAQs",
+"class": "topic-link section"
 }]
 },
 {
@@ -5317,16 +5322,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-ipsec-with-amazon-web-services.html",
+"text": "Netskope IPSec with Amazon Web Services",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-an-ipsec-tunnel-for-an-aws-virtual-private-gateway.html",
+"text": "Configure an IPSec Tunnel for an AWS Virtual Private Gateway",
+"class": "topic-link section"
+},
+{
+"url": "configure-an-ipsec-tunnel-for-an-aws-transit-gateway.html",
+"text": "Configure an IPSec Tunnel for an AWS Transit Gateway",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-ipsec-with-velocloud-orchestrator.html",
 "text": "Netskope IPSec with VeloCloud Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-and-velocloud-integration-overview.html",
-"text": "Netskope and VeloCloud Integration Overview",
-"class": "topic-link section"
-},
 {
 "url": "configure-ipsec-from-the-velocloud-orchestrator-to-a-netskope-pop.html",
 "text": "Configure IPSec from the VeloCloud Orchestrator to a Netskope POP",
@@ -5339,11 +5356,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-ipsec-with-versa-director-223744.html",
-"text": "Netskope IPSec with Versa Director",
-"class": "topic-link section"
-},
 {
 "url": "configure-an-ipsectunnel-using-a-workflow-template.html",
 "text": "Configure an IPsec Tunnel using a Workflow Template",
@@ -5371,11 +5383,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "integrate-netskope-ipsec-with-fortinet-fortigate.html",
-"text": "Integrate Netskope IPSec with Fortinet FortiGate",
-"class": "topic-link section"
-},
 {
 "url": "configure-fortigate.html",
 "text": "Configure FortiGate",
@@ -5408,11 +5415,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "about-netskope-ipsec-and-silver-peak-edgeconnect.html",
-"text": "About Netskope IPSec and Silver Peak EdgeConnect",
-"class": "topic-link section"
-},
 {
 "url": "silver-peak-edgeconnect-use-cases.html",
 "text": "Silver Peak EdgeConnect Use Cases",
@@ -5470,11 +5472,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "integrate-netskope-ipsec-gre-with-azure-ad-saml-auth.html",
-"text": "Integrate Netskope IPSec\/GRE with Azure AD SAML Auth",
-"class": "topic-link section"
-},
-{
 "url": "get-netskope-saml-settings.html",
 "text": "Get Netskope SAML Settings",
 "class": "topic-link section"
@@ -5528,16 +5525,23 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-gre-with-juniper-srx.html",
+"text": "Netskope GRE with Juniper SRX",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-the-real-time-performance-monitoring-probes.html",
+"text": "Configure the Real-Time Performance Monitoring Probes",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-gre-with-palo-alto-networks-ngfw.html",
 "text": "Netskope GRE with Palo Alto Networks NGFW",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-gre-with-palo-alto-networks-ngfw-234580.html",
-"text": "Netskope GRE with Palo Alto Networks NGFW",
-"class": "topic-link section"
-},
 {
 "url": "netskope-gre-configuration.html",
 "text": "Netskope GRE Configuration",
@@ -5562,27 +5566,15 @@ var toc = [{
 ,
 "children": [
 {
-"url": "integrate-saml-reverse-proxy-for-google-workspace-with-aws-single-sign-on.html",
-"text": "Integrate SAML Reverse Proxy for Google Workspace with AWS Single Sign-On",
-"class": "topic-link section"
-},
-{
-"url": "netskope-reverse-proxy-with-okta-118229.html",
-"text": "Netskope Reverse Proxy with Okta",
+"url": "reverse-proxy-with-okta.html",
+"text": "Reverse Proxy with Okta",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-reverse-proxy-with-okta-118265.html",
-"text": "Netskope Reverse Proxy with Okta",
-"class": "topic-link section"
 ,
 "children": [
 {
 "url": "disable-the-re-sign-saml-assertion-118269.html",
 "text": "Disable the Re-Sign SAML Assertion",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-a-saas-application-instance-in-the-netskope-ui-118865.html",
@@ -5596,31 +5588,14 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-saml-reverse-proxy-for-google-chromebook.html",
-"text": "Integrate SAML Reverse Proxy for Google Chromebook",
+"url": "reverse-proxy-for-google-workspace-with-aws-single-sign-on.html",
+"text": "Reverse Proxy for Google Workspace with AWS Single Sign-On",
 "class": "topic-link section"
 },
 {
-"url": "saml-reverse-proxy-for-workday-with-okta.html",
-"text": "SAML Reverse Proxy for Workday with Okta",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-netskope-saml-proxy.html",
-"text": "Configure Netskope SAML Proxy",
+"url": "reverse-proxy-for-google-chromebook.html",
+"text": "Reverse Proxy for Google Chromebook",
 "class": "topic-link section"
-},
-{
-"url": "configure-a-workday-account-in-okta.html",
-"text": "Configure a Workday Account in Okta",
-"class": "topic-link section"
-},
-{
-"url": "configure-workday.html",
-"text": "Configure Workday",
-"class": "topic-link section"
-}]
 },
 {
 "url": "reverse-proxy-as-a-service-with-google-workspaces-309517.html",
@@ -5657,6 +5632,50 @@ var toc = [{
 }]
 },
 {
+"url": "reverse-proxy-for-okta-and-g-suite-with-acs-url.html",
+"text": "Reverse Proxy for Okta and G Suite with ACS URL",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-federation-with-okta.html",
+"text": "Configure Federation with Okta",
+"class": "topic-link section"
+},
+{
+"url": "configure-reverse-proxy-in-netskope.html",
+"text": "Configure Reverse Proxy in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "update-the-acs-override-url-in-okta.html",
+"text": "Update the ACS Override URL in Okta",
+"class": "topic-link section"
+}]
+},
+{
+"url": "reverse-proxy-for-workday-and-okta-with-acs-url.html",
+"text": "Reverse Proxy for Workday and Okta with ACS URL",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-netskope-reverse-proxy.html",
+"text": "Configure Netskope Reverse Proxy",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-workday-account-in-okta.html",
+"text": "Configure a Workday Account in Okta",
+"class": "topic-link section"
+},
+{
+"url": "configure-workday.html",
+"text": "Configure Workday",
+"class": "topic-link section"
+}]
+},
+{
 "url": "reverse-proxy-as-a-service-with-azure-ad-120040.html",
 "text": "Reverse Proxy as a Service with Azure AD",
 "class": "topic-link section reused-publication reused-publication"
@@ -5689,33 +5708,16 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
-"text": "Integrate Netskope Explicit Proxy for Chromebooks with Google SAML Forward Proxy",
+"url": "forward-proxy-with-adfs.html",
+"text": "Forward Proxy with ADFS",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-explicit-proxy-with-chromebooks-and-google-saml-forward-proxy.html",
-"text": "Netskope Explicit Proxy with Chromebooks and Google SAML Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "configure-saml-forward-proxy-for-google.html",
-"text": "Configure SAML Forward Proxy for Google",
-"class": "topic-link section"
-},
-{
-"url": "configure-explicit-proxy-for-managed-chromebook-devices.html",
-"text": "Configure Explicit Proxy for Managed Chromebook Devices",
-"class": "topic-link section"
-}]
-},
 {
 "url": "integrate-netskope-saml-forward-proxy-with-adfs.html",
 "text": "Integrate Netskope SAML Forward Proxy with ADFS",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
+"class": "topic-link section"
+},
 {
 "url": "configure-adfs-for-netskope-saml.html",
 "text": "Configure ADFS for Netskope SAML",
@@ -5736,6 +5738,23 @@ var toc = [{
 "url": "forward-to-proxy-integration.html",
 "text": "Forward to Proxy Integration",
 "class": "topic-link section"
+},
+{
+"url": "netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
+"text": "Netskope Explicit Proxy for Chromebooks with Google SAML Forward Proxy",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-saml-forward-proxy-for-google.html",
+"text": "Configure SAML Forward Proxy for Google",
+"class": "topic-link section"
+},
+{
+"url": "configure-explicit-proxy-for-managed-chromebook-devices.html",
+"text": "Configure Explicit Proxy for Managed Chromebook Devices",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-forcepoint-for-proxy-chaining.html",
@@ -5761,11 +5780,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth-228895.html",
-"text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
-"class": "topic-link section"
-},
-{
 "url": "configure-netskope-oauth-token-for-okta-scim-integration.html",
 "text": "Configure Netskope OAuth Token for Okta SCIM Integration",
 "class": "topic-link section"
@@ -5777,7 +5791,7 @@ var toc = [{
 },
 {
 "url": "get-netskope-saml-settings-228899.html",
-"text": "Get Netskope SAML settings",
+"text": "Get Netskope SAML Settings",
 "class": "topic-link section"
 },
 {
@@ -5817,16 +5831,11 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-client-idp-mode-with-azure-scim-and-azure-ad-or-adfs-saml-auth.html",
-"text": "Integrate Netskope Client IdP Mode with Azure SCIM and Azure AD or ADFS SAML Auth",
+"url": "netskope-client-idp-mode-with-azure-scim-and-azure-ad-or-adfs-saml-auth.html",
+"text": "Netskope Client IdP Mode with Azure SCIM and Azure AD or ADFS SAML Auth",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-client-idp-mode-with-azure-scim-and-adfs-saml-auth.html",
-"text": "Netskope Client IdP Mode with Azure SCIM and ADFS SAML Auth",
-"class": "topic-link section"
-},
 {
 "url": "configure-netskope-oauth-token-for-azure-scim-integration.html",
 "text": "Configure Netskope OAuth Token for Azure SCIM Integration",
@@ -5889,16 +5898,11 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-client-idp-mode-with-google-saml-auth.html",
-"text": "Integrate Netskope Client IdP Mode with Google SAML Auth",
+"url": "netskope-client-idp-mode-with-google-saml-auth.html",
+"text": "Netskope Client IdP Mode with Google SAML Auth",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-client-idp-mode-with-google-saml-auth.html",
-"text": "Netskope Client IdP Mode with Google SAML Auth",
-"class": "topic-link section"
-},
 {
 "url": "get-the-netskope-saml-settings.html",
 "text": "Get the Netskope SAML Settings",
@@ -5916,35 +5920,35 @@ var toc = [{
 }]
 },
 {
-"url": "integrate-netskope-sso-with-azure-ad.html",
-"text": "Integrate Netskope SSO with Azure AD",
+"url": "netskope-sso-with-azure-ad.html",
+"text": "Netskope SSO with Azure AD",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "configuring-an-enterprise-application-in-microsoft-azure-active-directory-using-saml.html",
-"text": "Configuring an Enterprise Application in Microsoft Azure Active Directory using SAML",
+"url": "configure-an-enterprise-application-in-microsoft-azure-active-directory-using-saml.html",
+"text": "Configure an Enterprise Application in Microsoft Azure Active Directory using SAML",
 "class": "topic-link section"
 },
 {
-"url": "configuring-sso-settings-in-the-netskope-tenant.html",
-"text": "Configuring SSO settings in the Netskope tenant",
+"url": "configure-sso-settings-in-the-netskope-ui.html",
+"text": "Configure SSO Settings in the Netskope UI",
 "class": "topic-link section"
 },
 {
-"url": "adding-azure-active-directory-users-to-the-defined-application-and-assign-roles.html",
-"text": "Adding Azure Active Directory users to the defined application and assign roles",
+"url": "add-azure-active-directory-users-to-the-defined-application-and-assign-roles.html",
+"text": "Add Azure Active Directory Users to the Defined Application and Assign Roles",
 "class": "topic-link section"
 },
 {
-"url": "defining-custom-roles-for-azure-active-directory-enterprise-application.html",
-"text": "Defining Custom Roles for Azure Active Directory Enterprise Application",
+"url": "define-custom-roles-for-azure-active-directory-enterprise-application.html",
+"text": "Define Custom Roles for Azure Active Directory Enterprise Application",
 "class": "topic-link section"
 }]
 },
 {
-"url": "integrate-netskope-sso-with-adfs.html",
-"text": "Integrate Netskope SSO with ADFS",
+"url": "netskope-sso-with-adfs.html",
+"text": "Netskope SSO with ADFS",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
