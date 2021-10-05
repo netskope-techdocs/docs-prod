@@ -711,6 +711,221 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-private-access.html",
+"text": "Netskope Private Access",
+"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
+,
+"children": [
+{
+"url": "netskope-private-access-user-guide.html",
+"text": "Netskope Private Access User Guide",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
+"text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
+"class": "topic-link section"
+},
+{
+"url": "private-access-faqs.html",
+"text": "Private Access FAQs",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-troubleshooting-guide.html",
+"text": "Netskope Private Access Troubleshooting Guide",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "the-npa-troubleshooter-tool.html",
+"text": "The NPA Troubleshooter Tool",
+"class": "topic-link section"
+},
+{
+"url": "general-troubleshooting-methods.html",
+"text": "General Troubleshooting Methods",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-tcping-and-psping.html",
+"text": "Troubleshooting Performance and Connectivity using TCPing and PsPing",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
+"text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
+"class": "topic-link section"
+}]
+},
+{
+"url": "secure-tenant-hardening-and-configuration.html",
+"text": "Secure Tenant Hardening and Configuration",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "secure-tenant-hardening-and-configuration-291561.html",
+"text": "Secure Tenant Hardening and Configuration",
+"class": "topic-link section"
+},
+{
+"url": "selinux---firewalld.html",
+"text": "SELinux &amp; FirewallD",
+"class": "topic-link section"
+},
+{
+"url": "tunneling-info.html",
+"text": "Tunneling Info",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "netskope-secure-web-gateway.html",
+"text": "Netskope Secure Web Gateway",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "about-netskope-secure-web-gateway.html",
+"text": "About Netskope Secure Web Gateway",
+"class": "topic-link section"
+},
+{
+"url": "choose-a-traffic-steering-method.html",
+"text": "Choose a Traffic Steering Method",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "netskope-client.html",
+"text": "Netskope Client",
+"class": "topic-link section"
+},
+{
+"url": "ipsec.html",
+"text": "IPSec",
+"class": "topic-link section"
+},
+{
+"url": "gre.html",
+"text": "GRE",
+"class": "topic-link section"
+},
+{
+"url": "explicit-proxy.html",
+"text": "Explicit Proxy",
+"class": "topic-link section"
+},
+{
+"url": "proxy-chaining.html",
+"text": "Proxy Chaining",
+"class": "topic-link section"
+},
+{
+"url": "secure-forwarder.html",
+"text": "Secure Forwarder",
+"class": "topic-link section"
+},
+{
+"url": "dataplane-on-premises-appliance.html",
+"text": "Dataplane On-Premises Appliance",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-interface-for-dataplane-on-premises.html",
+"text": "Configure the Interface for Dataplane On-Premises",
+"class": "topic-link section"
+},
+{
+"url": "steer-traffic-through-the-appliance.html",
+"text": "Steer Traffic through the Appliance",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-appliance-in-dns-mode.html",
+"text": "Configure the appliance in DNS mode",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-appliance-in-explicit-proxy-mode.html",
+"text": "Configure the Appliance in Explicit Proxy mode",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configure-certificates.html",
+"text": "Configure Certificates",
+"class": "topic-link section"
+}]
+},
+{
+"url": "default-steering-configuration.html",
+"text": "Default Steering Configuration",
+"class": "topic-link section"
+},
+{
+"url": "exceptions-218533.html",
+"text": "Exceptions",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-custom-categories.html",
+"text": "Create Custom Categories",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "category-definitions-310264.html",
+"text": "Category Definitions",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-a-real-time-protection-policy-for-web-categories.html",
+"text": "Create a Real-time Protection Policy for Web Categories",
+"class": "topic-link section"
+},
+{
+"url": "web-configuration.html",
+"text": "Web Configuration",
+"class": "topic-link section"
+},
+{
+"url": "web-usage-summary-119067.html",
+"text": "Web Usage Summary",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "sites-119070.html",
+"text": "Sites",
+"class": "topic-link section"
+},
+{
+"url": "page-events-119058.html",
+"text": "Page Events",
+"class": "topic-link section"
+},
+{
+"url": "create-a-page-events-custom-report-119163.html",
+"text": "Create a Page Events Custom Report",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configuring-cli-based-tools-and-development-frameworks-to-work-with-netskope-ssl-interception.html",
+"text": "Configuring CLI-based Tools and Development Frameworks to work with Netskope SSL Interception",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
 "class": "topic-link section reused-publication reused-publication"
@@ -4494,221 +4709,6 @@ var toc = [{
 "class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
-{
-"url": "netskope-secure-web-gateway.html",
-"text": "Netskope Secure Web Gateway",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "about-netskope-secure-web-gateway.html",
-"text": "About Netskope Secure Web Gateway",
-"class": "topic-link section"
-},
-{
-"url": "choose-a-traffic-steering-method.html",
-"text": "Choose a Traffic Steering Method",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "netskope-client.html",
-"text": "Netskope Client",
-"class": "topic-link section"
-},
-{
-"url": "ipsec.html",
-"text": "IPSec",
-"class": "topic-link section"
-},
-{
-"url": "gre.html",
-"text": "GRE",
-"class": "topic-link section"
-},
-{
-"url": "explicit-proxy.html",
-"text": "Explicit Proxy",
-"class": "topic-link section"
-},
-{
-"url": "proxy-chaining.html",
-"text": "Proxy Chaining",
-"class": "topic-link section"
-},
-{
-"url": "secure-forwarder.html",
-"text": "Secure Forwarder",
-"class": "topic-link section"
-},
-{
-"url": "dataplane-on-premises-appliance.html",
-"text": "Dataplane On-Premises Appliance",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-interface-for-dataplane-on-premises.html",
-"text": "Configure the Interface for Dataplane On-Premises",
-"class": "topic-link section"
-},
-{
-"url": "steer-traffic-through-the-appliance.html",
-"text": "Steer Traffic through the Appliance",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-appliance-in-dns-mode.html",
-"text": "Configure the appliance in DNS mode",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-appliance-in-explicit-proxy-mode.html",
-"text": "Configure the Appliance in Explicit Proxy mode",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-certificates.html",
-"text": "Configure Certificates",
-"class": "topic-link section"
-}]
-},
-{
-"url": "default-steering-configuration.html",
-"text": "Default Steering Configuration",
-"class": "topic-link section"
-},
-{
-"url": "exceptions-218533.html",
-"text": "Exceptions",
-"class": "topic-link section"
-}]
-},
-{
-"url": "create-custom-categories.html",
-"text": "Create Custom Categories",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "category-definitions-310264.html",
-"text": "Category Definitions",
-"class": "topic-link section"
-}]
-},
-{
-"url": "create-a-real-time-protection-policy-for-web-categories.html",
-"text": "Create a Real-time Protection Policy for Web Categories",
-"class": "topic-link section"
-},
-{
-"url": "web-configuration.html",
-"text": "Web Configuration",
-"class": "topic-link section"
-},
-{
-"url": "web-usage-summary-119067.html",
-"text": "Web Usage Summary",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "sites-119070.html",
-"text": "Sites",
-"class": "topic-link section"
-},
-{
-"url": "page-events-119058.html",
-"text": "Page Events",
-"class": "topic-link section"
-},
-{
-"url": "create-a-page-events-custom-report-119163.html",
-"text": "Create a Page Events Custom Report",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configuring-cli-based-tools-and-development-frameworks-to-work-with-netskope-ssl-interception.html",
-"text": "Configuring CLI-based Tools and Development Frameworks to work with Netskope SSL Interception",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access.html",
-"text": "Netskope Private Access",
-"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
-,
-"children": [
-{
-"url": "netskope-private-access-user-guide.html",
-"text": "Netskope Private Access User Guide",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
-"text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
-"class": "topic-link section"
-},
-{
-"url": "private-access-faqs.html",
-"text": "Private Access FAQs",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-troubleshooting-guide.html",
-"text": "Netskope Private Access Troubleshooting Guide",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "the-npa-troubleshooter-tool.html",
-"text": "The NPA Troubleshooter Tool",
-"class": "topic-link section"
-},
-{
-"url": "general-troubleshooting-methods.html",
-"text": "General Troubleshooting Methods",
-"class": "topic-link section"
-},
-{
-"url": "troubleshooting-performance-and-connectivity-using-tcping-and-psping.html",
-"text": "Troubleshooting Performance and Connectivity using TCPing and PsPing",
-"class": "topic-link section"
-},
-{
-"url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
-"text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
-"class": "topic-link section"
-}]
-},
-{
-"url": "secure-tenant-hardening-and-configuration.html",
-"text": "Secure Tenant Hardening and Configuration",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "secure-tenant-hardening-and-configuration-291561.html",
-"text": "Secure Tenant Hardening and Configuration",
-"class": "topic-link section"
-},
-{
-"url": "selinux---firewalld.html",
-"text": "SELinux &amp; FirewallD",
-"class": "topic-link section"
-},
-{
-"url": "tunneling-info.html",
-"text": "Tunneling Info",
-"class": "topic-link section"
-}]
-}]
-},
 {
 "url": "netskope-client-105999.html",
 "text": "Netskope Client",
