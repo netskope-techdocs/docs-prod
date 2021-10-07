@@ -926,6 +926,336 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-cloud-exchange.html",
+"text": "Netskope Cloud Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "about-cloud-exchange.html",
+"text": "About Cloud Exchange",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "supported-3rd-party-plugins.html",
+"text": "Supported 3rd-party Plugins",
+"class": "topic-link section"
+}]
+},
+{
+"url": "install-cloud-exchange.html",
+"text": "Install Cloud Exchange",
+"class": "topic-link section"
+},
+{
+"url": "get-started.html",
+"text": "Get Started",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "explore-the-dashboards.html",
+"text": "Explore the Dashboards",
+"class": "topic-link section"
+}]
+},
+{
+"url": "threat-exchange.html",
+"text": "Threat Exchange",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-threat-exchange-plugin.html",
+"text": "Configure the Threat Exchange Plugin",
+"class": "topic-link section"
+},
+{
+"url": "3rd-party-risk-exchange-plugins.html",
+"text": "3rd-party Risk Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "view-configured-threat-exchange-plugins.html",
+"text": "View Configured Threat Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "update-configured-threat-exchange-plugins.html",
+"text": "Update Configured Threat Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "configure-ioc-sharing.html",
+"text": "Configure IoC Sharing",
+"class": "topic-link section"
+},
+{
+"url": "ioc-sharing-best-practices.html",
+"text": "IoC Sharing Best Practices",
+"class": "topic-link section"
+},
+{
+"url": "list-iocs-and-use-filter-options.html",
+"text": "List IoCs and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "delete-iocs.html",
+"text": "Delete IoCs",
+"class": "topic-link section"
+},
+{
+"url": "manage-tags.html",
+"text": "Manage Tags",
+"class": "topic-link section"
+},
+{
+"url": "select-and-modify-tags.html",
+"text": "Select and Modify Tags",
+"class": "topic-link section"
+}]
+},
+{
+"url": "ticket-orchestrator.html",
+"text": "Ticket Orchestrator",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-ticket-orchestrator-plugin.html",
+"text": "Configure the Ticket Orchestrator Plugin",
+"class": "topic-link section"
+},
+{
+"url": "3rd-party-threat-exchange-plugins.html",
+"text": "3rd-party Threat Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "update-configured-ticket-orchestrator-plugins.html",
+"text": "Update Configured Ticket Orchestrator Plugins",
+"class": "topic-link section"
+},
+{
+"url": "manage-ticket-orchestrator-business-rules.html",
+"text": "Manage Ticket Orchestrator Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "list-alerts-and-use-filter-options.html",
+"text": "List Alerts and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "list-tickets-and-use-filter-options.html",
+"text": "List Tickets and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "mapping-a-business-rule-to-a-workflow-queue.html",
+"text": "Mapping a Business Rule to a Workflow Queue",
+"class": "topic-link section"
+}]
+},
+{
+"url": "risk-exchange.html",
+"text": "Risk Exchange",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-risk-exchange-plugin.html",
+"text": "Configure the Risk Exchange Plugin",
+"class": "topic-link section"
+},
+{
+"url": "3rd-party-ticket-orchestrator-plugins.html",
+"text": "3rd-party Ticket Orchestrator Plugins",
+"class": "topic-link section"
+},
+{
+"url": "manage-risk-exchange-business-rules.html",
+"text": "Manage Risk Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "manage-configured-risk-exchange-actions.html",
+"text": "Manage Configured Risk Exchange Actions",
+"class": "topic-link section"
+},
+{
+"url": "list-users-hosts-and-use-filter-options.html",
+"text": "List Users\/Hosts and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "edit-user-and-host-scores.html",
+"text": "Edit User and Host Scores",
+"class": "topic-link section"
+},
+{
+"url": "action-logs.html",
+"text": "Action Logs",
+"class": "topic-link section"
+},
+{
+"url": "plugin-activity.html",
+"text": "Plugin Activity",
+"class": "topic-link section"
+}]
+},
+{
+"url": "log-shipper.html",
+"text": "Log Shipper",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-log-shipper-plugin.html",
+"text": "Configure the Log Shipper Plugin",
+"class": "topic-link section"
+},
+{
+"url": "3rd-party-log-shipper-plugins.html",
+"text": "3rd-party Log Shipper Plugins",
+"class": "topic-link section"
+},
+{
+"url": "manage-log-shipper-business-rules.html",
+"text": "Manage Log Shipper Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "update-configured-log-shipper-plugins.html",
+"text": "Update Configured Log Shipper Plugins",
+"class": "topic-link section"
+},
+{
+"url": "configure-siem-mappings-for-log-shipper.html",
+"text": "Configure SIEM Mappings for Log Shipper",
+"class": "topic-link section"
+}]
+},
+{
+"url": "audit-logs.html",
+"text": "Audit Logs",
+"class": "topic-link section"
+},
+{
+"url": "notifications.html",
+"text": "Notifications",
+"class": "topic-link section"
+},
+{
+"url": "operations.html",
+"text": "Operations",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "reset-password.html",
+"text": "Reset Password",
+"class": "topic-link section"
+},
+{
+"url": "log-cleanup.html",
+"text": "Log cleanup",
+"class": "topic-link section"
+},
+{
+"url": "update-plugin-configuration-checkpoint--last-run-time-.html",
+"text": "Update Plugin Configuration Checkpoint (Last Run time)",
+"class": "topic-link section"
+}]
+},
+{
+"url": "settings.html",
+"text": "Settings",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "general.html",
+"text": "General",
+"class": "topic-link section"
+},
+{
+"url": "proxy.html",
+"text": "Proxy",
+"class": "topic-link section"
+},
+{
+"url": "logs.html",
+"text": "Logs",
+"class": "topic-link section"
+},
+{
+"url": "api-tokens.html",
+"text": "API Tokens",
+"class": "topic-link section"
+},
+{
+"url": "users-291062.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "plugins.html",
+"text": "Plugins",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-threat-exchange-plugin-291069.html",
+"text": "Configure the Threat Exchange Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-ticket-orchestrator-plugin-291070.html",
+"text": "Configure the Ticket Orchestrator Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "plugin-repository.html",
+"text": "Plugin Repository",
+"class": "topic-link section"
+},
+{
+"url": "netskope-tenants.html",
+"text": "Netskope Tenants",
+"class": "topic-link section"
+},
+{
+"url": "sso-configuration.html",
+"text": "SSO Configuration",
+"class": "topic-link section"
+}]
+},
+{
+"url": "account-settings.html",
+"text": "Account Settings",
+"class": "topic-link section"
+},
+{
+"url": "help---api-docs.html",
+"text": "Help - API Docs",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-tips-and-faqs.html",
+"text": "Troubleshooting Tips and FAQs",
+"class": "topic-link section"
+},
+{
+"url": "migrating-from-ce-2-x-to-ce-3-x.html",
+"text": "Migrating from CE 2.x to CE 3.x",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
 "class": "topic-link section reused-publication reused-publication"
