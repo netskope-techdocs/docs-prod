@@ -1240,6 +1240,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "cloud-exchange-videos.html",
+"text": "Cloud Exchange Videos",
+"class": "topic-link section"
+},
+{
 "url": "help---api-docs.html",
 "text": "Help - API Docs",
 "class": "topic-link section"
@@ -5688,7 +5693,7 @@ var toc = [{
 "children": [
 {
 "url": "configure-an-ipsectunnel-using-a-workflow-template.html",
-"text": "Configure an IPsec Tunnel using a Workflow Template",
+"text": "Configure an IPSec Tunnel using a Workflow Template",
 "class": "topic-link section"
 },
 {

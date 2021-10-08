@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics.html</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-user-confidence-index.html</loc>
@@ -334,7 +334,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-library.html</loc>
-    <lastmod>2021-04-09</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explore-page.html</loc>
@@ -690,7 +690,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2021-10-07</lastmod>
+    <lastmod>2021-10-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -802,7 +802,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-risk-exchange-business-rules.html</loc>
-    <lastmod>2021-10-07</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-configured-risk-exchange-actions.html</loc>
@@ -923,6 +923,10 @@
   <url>
     <loc>https://docs.netskope.com/en/account-settings.html</loc>
     <lastmod>2021-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/cloud-exchange-videos.html</loc>
+    <lastmod>2021-10-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/help---api-docs.html</loc>
@@ -3486,7 +3490,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/building-regular-expressions.html</loc>
-    <lastmod>2020-07-29</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrate-with-3rd-party-apps.html</loc>
@@ -3530,7 +3534,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-crowdstrike.html</loc>
-    <lastmod>2021-10-07</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-threat-protection.html</loc>
@@ -4162,7 +4166,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-ipsec-with-velocloud-orchestrator.html</loc>
-    <lastmod>2021-09-30</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-ipsec-from-the-velocloud-orchestrator-to-a-netskope-pop.html</loc>
@@ -4170,11 +4174,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-ipsec-with-versa-director.html</loc>
-    <lastmod>2021-09-30</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-ipsectunnel-using-a-workflow-template.html</loc>
-    <lastmod>2021-09-30</lastmod>
+    <lastmod>2021-10-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-ipsec.html</loc>
