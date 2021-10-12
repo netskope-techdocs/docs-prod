@@ -1097,8 +1097,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-risk-exchange-plugins.html",
-"text": "3rd-party Risk Exchange Plugins",
+"url": "3rd-party-ticket-orchestrator-plugins.html",
+"text": "3rd-party Ticket Orchestrator Plugins",
 "class": "topic-link section"
 },
 {
@@ -1139,8 +1139,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-ticket-orchestrator-plugins.html",
-"text": "3rd-party Ticket Orchestrator Plugins",
+"url": "3rd-party-risk-exchange-plugins.html",
+"text": "3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
 },
 {
