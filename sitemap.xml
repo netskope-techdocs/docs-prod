@@ -538,7 +538,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-user-guide.html</loc>
-    <lastmod>2021-09-28</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -1154,7 +1154,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview.html</loc>
-    <lastmod>2021-10-02</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance.html</loc>
@@ -1214,7 +1214,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-221909.html</loc>
-    <lastmod>2021-10-02</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-144063.html</loc>
@@ -1310,7 +1310,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-221910.html</loc>
-    <lastmod>2021-10-02</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-144058.html</loc>
@@ -1446,7 +1446,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-163009.html</loc>
-    <lastmod>2021-10-02</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compliance-141715.html</loc>
@@ -4186,7 +4186,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-upstream-mta-to-use-netskope-headers.html</loc>
-    <lastmod>2021-10-09</lastmod>
+    <lastmod>2021-10-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-netskope-smtp-proxy-alerts.html</loc>
