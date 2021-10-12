@@ -5,14 +5,14 @@
   <param name="jquery.version" select="3.4.1"/>
   <param name="use.algolia.search" select="0"/>
   <param name="use.algolia.free.docsearch" select="0"/>
-  <param name="publication.id" select="en-UUID-9b616a07-02d3-a0de-70e8-9201ffb3076c"/>
+  <param name="publication.id" select="en-UUID-299bc6dd-413b-c4c5-5cf2-82170c02ad73"/>
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="0"/>
   <param name="use.multilingual.default.search" select="0"/>
   <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/6025b52aa794a.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-213547/5f8501395fbab.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-141812/5c0075526d3af.jpg"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-615f7644b040f1.19823438/288553-Cloud_Exchange-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-6164f800bb24a7.31694151/164307-Netskope_Private_Access_User_Guide-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2021 Netskope </param>
@@ -62,7 +62,7 @@
   <param name="versions.file" select=""/>
   <param name="fuse.threshold" select="0.3"/>
   <param name="use.print.icon" select="1"/>
-  <param name="portal.publication.title" select="Netskope Cloud Exchange"/>
+  <param name="portal.publication.title" select="Netskope Private Access User Guide"/>
   <param name="collapsible.toc" select="0"/>
   <param name="focus.on.current.toc.section" select="1"/>
   <param name="use.resource.version.suffix" select="0"/>
@@ -90,9 +90,9 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-615f7644b040f1.19823438/288553-Cloud_Exchange-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-6164f800bb24a7.31694151/164307-Netskope_Private_Access_User_Guide-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-615f7644b040f1.19823438/288553-Cloud_Exchange-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-6164f800bb24a7.31694151/164307-Netskope_Private_Access_User_Guide-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-615f7644b040f1.19823438/288553-Cloud_Exchange-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-6164f800bb24a7.31694151/164307-Netskope_Private_Access_User_Guide-html5/out/css/image/logo-dark.png"/>
 </params>

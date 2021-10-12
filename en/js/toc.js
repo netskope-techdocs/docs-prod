@@ -723,8 +723,73 @@ var toc = [{
 ,
 "children": [
 {
+"url": "private-apps-configuration-methods.html",
+"text": "Private Apps Configuration Methods",
+"class": "topic-link section"
+},
+{
+"url": "create-a-new-publisher.html",
+"text": "Create a New Publisher",
+"class": "topic-link section"
+},
+{
+"url": "deploy-a-publisher.html",
+"text": "Deploy a Publisher",
+"class": "topic-link section"
+},
+{
+"url": "create-a-private-app.html",
+"text": "Create a Private App",
+"class": "topic-link section"
+},
+{
+"url": "configure-browser-access-for-private-apps.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "steer-traffic-for-private-apps.html",
+"text": "Steer Traffic for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "source-ip-anchoring-for-an-idp-with-netskope-private-access.html",
+"text": "Source IP Anchoring for an IdP with Netskope Private Access",
+"class": "topic-link section"
+},
+{
 "url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
 "text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
+"class": "topic-link section"
+},
+{
+"url": "add-users-164689.html",
+"text": "Add Users",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-protection-policy-for-private-access.html",
+"text": "Create a Real-time Protection Policy for Private Access",
+"class": "topic-link section"
+},
+{
+"url": "deploy-the-netskope-client-for-netskope-private-access.html",
+"text": "Deploy the Netskope Client for Netskope Private Access",
+"class": "topic-link section"
+},
+{
+"url": "view-events-and-alerts-for-private-apps.html",
+"text": "View Events and Alerts for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "change-publishers-for-private-apps.html",
+"text": "Change Publishers for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "upgrade-the-publisher.html",
+"text": "Upgrade the Publisher",
 "class": "topic-link section"
 },
 {
@@ -935,13 +1000,16 @@ var toc = [{
 "url": "about-cloud-exchange.html",
 "text": "About Cloud Exchange",
 "class": "topic-link section"
-,
-"children": [
+},
 {
 "url": "supported-3rd-party-plugins.html",
 "text": "Supported 3rd-party Plugins",
 "class": "topic-link section"
-}]
+},
+{
+"url": "feature-lists.html",
+"text": "Feature Lists",
+"class": "topic-link section"
 },
 {
 "url": "install-cloud-exchange.html",
@@ -972,8 +1040,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-risk-exchange-plugins.html",
-"text": "3rd-party Risk Exchange Plugins",
+"url": "3rd-party-threat-exchange-plugins.html",
+"text": "3rd-party Threat Exchange Plugins",
 "class": "topic-link section"
 },
 {
@@ -1029,18 +1097,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-threat-exchange-plugins.html",
-"text": "3rd-party Threat Exchange Plugins",
+"url": "3rd-party-risk-exchange-plugins.html",
+"text": "3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
 },
 {
 "url": "update-configured-ticket-orchestrator-plugins.html",
 "text": "Update Configured Ticket Orchestrator Plugins",
-"class": "topic-link section"
-},
-{
-"url": "manage-ticket-orchestrator-business-rules.html",
-"text": "Manage Ticket Orchestrator Business Rules",
 "class": "topic-link section"
 },
 {
@@ -1056,6 +1119,11 @@ var toc = [{
 {
 "url": "mapping-a-business-rule-to-a-workflow-queue.html",
 "text": "Mapping a Business Rule to a Workflow Queue",
+"class": "topic-link section"
+},
+{
+"url": "manage-ticket-orchestrator-business-rules.html",
+"text": "Manage Ticket Orchestrator Business Rules",
 "class": "topic-link section"
 }]
 },
@@ -1240,8 +1308,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "cloud-exchange-videos.html",
-"text": "Cloud Exchange Videos",
+"url": "cloud-exchange-setup-videos.html",
+"text": "Cloud Exchange Setup Videos",
 "class": "topic-link section"
 },
 {
