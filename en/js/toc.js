@@ -435,8 +435,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "advanced-analytics-report-interface.html",
-"text": "Advanced Analytics Report Interface",
+"url": "advanced-analytics-interface.html",
+"text": "Advanced Analytics Interface",
 "class": "topic-link section"
 },
 {
@@ -832,11 +832,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "secure-tenant-hardening-and-configuration-291561.html",
-"text": "Secure Tenant Hardening and Configuration",
-"class": "topic-link section"
-},
-{
 "url": "selinux---firewalld.html",
 "text": "SELinux &amp; FirewallD",
 "class": "topic-link section"
@@ -1043,6 +1038,164 @@ var toc = [{
 "url": "3rd-party-threat-exchange-plugins.html",
 "text": "3rd-party Threat Exchange Plugins",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "carbon-black-plugin-for-threat-exchange.html",
+"text": "Carbon Black Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-carbon-black-for-cloud-threat-exchange.html",
+"text": "Configure Carbon Black for Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "create-a-secure-web-gateway-custom-file-profile.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "create-a-malware-detection-profile-for-carbon-black.html",
+"text": "Create a Malware Detection Profile for Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-threat-protection-policy-for-carbon-black.html",
+"text": "Create a Real-time Threat Protection Policy for Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "create-carbon-black-api-credentials.html",
+"text": "Create Carbon Black API Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-carbon-black-plugin-for-cbc-ngav-in-cloud-exchange.html",
+"text": "Configure the Carbon Black Plugin for CBC NGAV in Cloud Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-carbon-black-plugin-for-cbc-edr-in-threat-exchange.html",
+"text": "Configure the Carbon Black Plugin for CBC EDR in Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-carbon-black.html",
+"text": "Configure Sharing for Netskope and Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-plugins.html",
+"text": "Validate the Plugins",
+"class": "topic-link section"
+}]
+},
+{
+"url": "crowdstrike-plugin-for-threat-exchange.html",
+"text": "CrowdStrike Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-crowdstrike-for-threat-exchange.html",
+"text": "Configure CrowdStrike for Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "create-a-secure-web-gateway-custom-file-profile-298906.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "create-a-malware-detection-profile-for-crowdstrike.html",
+"text": "Create a Malware Detection Profile for CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-threat-protection-policy-for-crowdstrike.html",
+"text": "Create a Real-time Threat Protection Policy for CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token-298909.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "create-a-crowdstrike-api-credentials.html",
+"text": "Create a CrowdStrike API Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-298911.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-crowdstrike-plugin-in-cloud-exchange.html",
+"text": "Configure the CrowdStrike Plugin in Cloud Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-crowdstrike.html",
+"text": "Configure Sharing for Netskope and CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-plugins-298914.html",
+"text": "Validate the Plugins",
+"class": "topic-link section"
+}]
+},
+{
+"url": "mimecast-plugin-for-threat-exchange.html",
+"text": "Mimecast Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-the-mimecast-plugin-for-cloud-threat-exchange.html",
+"text": "Configure the Mimecast Plugin for Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-mimecast-credentials.html",
+"text": "Configure Mimecast Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-mimecast-plugin-in-cloud-exchange.html",
+"text": "Configure the Mimecast Plugin in Cloud Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-mimecast.html",
+"text": "Configure Sharing for Netskope and Mimecast",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-mimecast-plugin.html",
+"text": "Validate the Mimecast Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "proofpoint-plugin-for-threat-exchange.html",
+"text": "Proofpoint Plugin for Threat Exchange",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-configured-threat-exchange-plugins.html",
@@ -5256,6 +5409,11 @@ var toc = [{
 "url": "ipv6-traffic-steering.html",
 "text": "IPv6 Traffic Steering",
 "class": "topic-link section"
+},
+{
+"url": "locating-your-netskope-newedge-data-center.html",
+"text": "Locating Your Netskope NewEdge Data Center",
+"class": "topic-link section"
 }]
 },
 {
@@ -5385,16 +5543,9 @@ var toc = [{
 "url": "using-reverse-proxy-as-a-service-with-google-workspaces.html",
 "text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-raas-app-in-google.html",
-"text": "Create a RaaS App in Google",
-"class": "topic-link section"
-}]
 },
 {
-"url": "create-a-raas-app-in-google-309576.html",
+"url": "create-a-raas-app-in-google.html",
 "text": "Create a RaaS App in Google",
 "class": "topic-link section"
 },
@@ -5415,18 +5566,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-reverse-proxy-with-okta.html",
-"text": "Netskope Reverse Proxy with Okta",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "disable-the-re-sign-saml-assertion.html",
-"text": "Disable the Re-Sign SAML Assertion",
-"class": "topic-link section"
-}]
-},
 {
 "url": "create-a-saas-application-instance-in-the-netskope-ui.html",
 "text": "Create a SaaS Application Instance in the Netskope UI",
@@ -5968,7 +6107,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "disable-the-re-sign-saml-assertion-118269.html",
+"url": "disable-the-re-sign-saml-assertion.html",
 "text": "Disable the Re-Sign SAML Assertion",
 "class": "topic-link section"
 },
@@ -6003,16 +6142,9 @@ var toc = [{
 "url": "using-reverse-proxy-as-a-service-with-google-workspaces-309538.html",
 "text": "Using Reverse Proxy as a Service with Google Workspaces",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-raas-app-in-google-2-309539.html",
-"text": "Create a RaaS App in Google",
-"class": "topic-link section"
-}]
 },
 {
-"url": "create-a-raas-app-in-google-3-309576.html",
+"url": "create-a-raas-app-in-google-309576.html",
 "text": "Create a RaaS App in Google",
 "class": "topic-link section"
 },
@@ -6109,11 +6241,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "integrate-netskope-saml-forward-proxy-with-adfs.html",
-"text": "Integrate Netskope SAML Forward Proxy with ADFS",
-"class": "topic-link section"
-},
 {
 "url": "configure-adfs-for-netskope-saml.html",
 "text": "Configure ADFS for Netskope SAML",
@@ -7711,6 +7838,23 @@ var toc = [{
 {
 "url": "fixed-issues-148595.html",
 "text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6431.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6431",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-323570.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-323671.html",
+"text": "Known Issues",
 "class": "topic-link section"
 }]
 }]
