@@ -1069,11 +1069,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-carbon-black-for-cloud-threat-exchange.html",
-"text": "Configure Carbon Black for Cloud Threat Exchange",
-"class": "topic-link section"
-},
-{
 "url": "create-a-secure-web-gateway-custom-file-profile.html",
 "text": "Create a Secure Web Gateway Custom File Profile",
 "class": "topic-link section"
@@ -1131,11 +1126,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-crowdstrike-for-threat-exchange.html",
-"text": "Configure CrowdStrike for Threat Exchange",
-"class": "topic-link section"
-},
-{
 "url": "create-a-secure-web-gateway-custom-file-profile-298906.html",
 "text": "Create a Secure Web Gateway Custom File Profile",
 "class": "topic-link section"
@@ -1187,11 +1177,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "configure-the-mimecast-plugin-for-cloud-threat-exchange.html",
-"text": "Configure the Mimecast Plugin for Cloud Threat Exchange",
-"class": "topic-link section"
-},
 {
 "url": "configure-mimecast-credentials.html",
 "text": "Configure Mimecast Credentials",
