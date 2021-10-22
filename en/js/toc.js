@@ -90,6 +90,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "incidents-interface.html",
+"text": "Incidents Interface",
+"class": "topic-link section"
+},
+{
 "url": "search-filters-and-query-fields.html",
 "text": "Search Filters and Query Fields",
 "class": "topic-link section"
@@ -776,6 +781,23 @@ var toc = [{
 "url": "deploy-the-netskope-client-for-netskope-private-access.html",
 "text": "Deploy the Netskope Client for Netskope Private Access",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "install-the-client-for-private-access.html",
+"text": "Install the Client for Private Access",
+"class": "topic-link section"
+},
+{
+"url": "view-private-access-status-for-devices.html",
+"text": "View Private Access Status for Devices",
+"class": "topic-link section"
+},
+{
+"url": "use-client-re-authentication.html",
+"text": "Use Client Re-authentication",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-events-and-alerts-for-private-apps.html",
@@ -5177,16 +5199,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "about-forensics.html",
-"text": "About Forensics",
-"class": "topic-link section"
-},
-{
-"url": "configure-forensics.html",
-"text": "Configure Forensics",
-"class": "topic-link section"
-},
-{
 "url": "configure-api-data-protection-for-forensics.html",
 "text": "Configure API Data Protection for Forensics",
 "class": "topic-link section"
@@ -5208,11 +5220,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "log-uploads.html",
-"text": "Risk Insights",
-"class": "topic-link section"
-},
 {
 "url": "upload-logs-to-the-netskope-cloud.html",
 "text": "Upload Logs to the Netskope Cloud",

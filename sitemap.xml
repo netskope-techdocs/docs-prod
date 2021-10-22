@@ -66,7 +66,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/incidents.html</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/incidents-interface.html</loc>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/search-filters-and-query-fields.html</loc>
@@ -390,11 +394,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/reports.html</loc>
-    <lastmod>2021-02-09</lastmod>
+    <lastmod>2021-10-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/reports-interface.html</loc>
-    <lastmod>2021-02-09</lastmod>
+    <lastmod>2021-10-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-report.html</loc>
@@ -585,6 +589,18 @@
     <lastmod>2021-10-12</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/install-the-client-for-private-access.html</loc>
+    <lastmod>2021-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/view-private-access-status-for-devices.html</loc>
+    <lastmod>2021-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/use-client-re-authentication.html</loc>
+    <lastmod>2021-10-22</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/view-events-and-alerts-for-private-apps.html</loc>
     <lastmod>2021-10-12</lastmod>
   </url>
@@ -734,7 +750,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configuring-cli-based-tools-and-development-frameworks-to-work-with-netskope-ssl-interception.html</loc>
-    <lastmod>2021-09-02</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
@@ -1834,7 +1850,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-rules-using-domain-specific-language-305074.html</loc>
-    <lastmod>2021-08-18</lastmod>
+    <lastmod>2021-10-22</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-compliance.html</loc>
@@ -3482,7 +3498,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-encryption-for-api-data-protection-detection.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/kmip.html</loc>
@@ -3590,7 +3606,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention.html</loc>
-    <lastmod>2021-07-19</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention-104893.html</loc>
@@ -3806,15 +3822,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/forensics.html</loc>
-    <lastmod>2021-02-17</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/about-forensics.html</loc>
-    <lastmod>2021-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-forensics.html</loc>
-    <lastmod>2021-05-13</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-api-data-protection-for-forensics.html</loc>
@@ -3830,11 +3838,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/risk-insights.html</loc>
-    <lastmod>2021-02-10</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/log-uploads.html</loc>
-    <lastmod>2021-08-03</lastmod>
+    <lastmod>2021-10-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upload-logs-to-the-netskope-cloud.html</loc>
@@ -3942,7 +3946,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/traffic-steering.html</loc>
-    <lastmod>2021-10-15</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/steering-configuration.html</loc>
@@ -3966,7 +3970,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
@@ -3990,7 +3994,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxies.html</loc>
-    <lastmod>2021-07-17</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/auth-integration.html</loc>
@@ -4890,7 +4894,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/mobile-device-management.html</loc>
-    <lastmod>2021-02-11</lastmod>
+    <lastmod>2021-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/mobileiron-cloud.html</loc>
@@ -5686,7 +5690,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-hotfix-release-notes-version-88-1-0.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2021-10-22</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-316177.html</loc>
