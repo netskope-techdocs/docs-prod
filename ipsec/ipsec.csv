@@ -1,0 +1,11 @@
+tunnel name,Source Identity,Source IP address,Primary POP,Failover POP,Encryption Cipher,PSK,Maximum Bandwidth,Enabled
+EB-Branch-Seattle,EB-Branch-Seattle,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Vancouver,EB-Branch-Vancouver,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Dallas,EB-Branch-Dallas,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-NYC,EB-Branch-NYC,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Montreal,EB-Branch-Montreal,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Atlanta,EB-Branch-Atlanta,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Paris,EB-Branch-Paris,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Stockholm,EB-Branch-Stockholm,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Sydney,EB-Branch-Sydney,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
+EB-Branch-Osaka,EB-Branch-Osaka,76.226.66.226,LON1,HKG1,AES256-CBC,GoNetskope!,50,TRUE
