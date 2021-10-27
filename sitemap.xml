@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skopeit.html</loc>
-    <lastmod>2021-09-29</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skopeit-pages.html</loc>
@@ -155,6 +155,10 @@
   <url>
     <loc>https://docs.netskope.com/en/page-events.html</loc>
     <lastmod>2020-04-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/page-events-faqs.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/network-events.html</loc>
@@ -214,11 +218,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-alerts-data.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2021-10-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-events-data.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2021-10-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rest-api-events-and-alerts-response-descriptions.html</loc>
@@ -238,7 +242,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-advanced-analytics-data.html</loc>
-    <lastmod>2021-07-16</lastmod>
+    <lastmod>2021-10-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-a-steering-configuration-list.html</loc>
@@ -666,7 +670,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2021-09-14</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -766,7 +770,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/feature-lists.html</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-cloud-exchange.html</loc>
@@ -794,7 +798,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/carbon-black-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-22</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile.html</loc>
@@ -810,7 +814,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token.html</loc>
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-carbon-black-api-credentials.html</loc>
@@ -818,7 +822,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange.html</loc>
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-ngav-in-cloud-exchange.html</loc>
@@ -834,11 +838,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-plugins.html</loc>
-    <lastmod>2021-04-30</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/crowdstrike-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-22</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile-298906.html</loc>
@@ -854,7 +858,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token-298909.html</loc>
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-crowdstrike-api-credentials.html</loc>
@@ -862,19 +866,19 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-298911.html</loc>
-    <lastmod>2021-04-28</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-crowdstrike-plugin-in-cloud-exchange.html</loc>
-    <lastmod>2021-04-29</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-crowdstrike.html</loc>
     <lastmod>2021-04-27</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/validate-the-plugins-298914.html</loc>
-    <lastmod>2021-04-30</lastmod>
+    <loc>https://docs.netskope.com/en/validate-the-crowdstrike-plugin.html</loc>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/mimecast-plugin-for-threat-exchange.html</loc>
@@ -1230,7 +1234,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-aws-s3-for-dlp-scanning-and-threat-protection.html</loc>
-    <lastmod>2021-05-27</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy.html</loc>
@@ -1306,7 +1310,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-google-cloud-platform.html</loc>
-    <lastmod>2021-01-26</lastmod>
+    <lastmod>2021-10-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-google-cloud-platform-for-continuous-security-assessment.html</loc>
@@ -1454,7 +1458,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-azure-ad-application-for-dlp-and-threat-protection.html</loc>
-    <lastmod>2021-07-02</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/add-the-azure-subscription-in-netskope-api-enabled-protection-163049.html</loc>
@@ -1506,7 +1510,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-azure-ad-application-for-forensics.html</loc>
-    <lastmod>2021-10-22</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/add-the-azure-subscription-in-netskope-api-enabled-protection-188656.html</loc>
@@ -1845,6 +1849,62 @@
     <lastmod>2021-08-11</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform-faq.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-office-365-onedrive.html</loc>
+    <lastmod>2021-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html</loc>
+    <lastmod>2021-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-2-320219.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-scan-320220.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps.html</loc>
+    <lastmod>2021-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page.html</loc>
+    <lastmod>2020-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/api-data-protection.html</loc>
     <lastmod>2021-02-12</lastmod>
   </url>
@@ -1902,7 +1962,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-box-instance-in-netskope-ui.html</loc>
-    <lastmod>2021-07-07</lastmod>
+    <lastmod>2021-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118921.html</loc>
@@ -1945,11 +2005,11 @@
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps.html</loc>
+    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps-117800.html</loc>
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing.html</loc>
+    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing-117801.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
@@ -1957,7 +2017,7 @@
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard.html</loc>
+    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard-120511.html</loc>
     <lastmod>2021-08-30</lastmod>
   </url>
   <url>
@@ -2557,7 +2617,7 @@
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account.html</loc>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-192120.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
@@ -2649,15 +2709,15 @@
     <lastmod>2021-08-30</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page-207484.html</loc>
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page-207485.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page-207486.html</loc>
     <lastmod>2020-08-04</lastmod>
   </url>
   <url>
@@ -2665,7 +2725,7 @@
     <lastmod>2020-08-05</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events-192030.html</loc>
     <lastmod>2020-04-04</lastmod>
   </url>
   <url>
@@ -3870,15 +3930,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-overview.html</loc>
-    <lastmod>2021-10-05</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
     <lastmod>2021-08-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-client-admin-configuration.html</loc>
-    <lastmod>2021-09-02</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-client-configuration.html</loc>
+    <lastmod>2021-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-network-configuration.html</loc>
@@ -3954,7 +4014,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
-    <lastmod>2021-09-14</lastmod>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
@@ -5725,8 +5785,8 @@
     <lastmod>2021-09-14</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-77-5-0.html</loc>
-    <lastmod>2021-10-14</lastmod>
+    <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-77-6-0.html</loc>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-85641.html</loc>
@@ -5734,23 +5794,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/requirements.html</loc>
-    <lastmod>2021-09-21</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-85643.html</loc>
-    <lastmod>2021-09-21</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/other-changes-213637.html</loc>
-    <lastmod>2021-09-14</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-85645.html</loc>
-    <lastmod>2021-10-14</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-85646.html</loc>
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/management-plane-appliance-release-notes.html</loc>
@@ -5783,5 +5843,61 @@
   <url>
     <loc>https://docs.netskope.com/en/known-issues-323671.html</loc>
     <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform-316866.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform-faq-316867.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-office-365-onedrive-320215.html</loc>
+    <lastmod>2021-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection-320217.html</loc>
+    <lastmod>2021-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-4-320218.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-18-320219.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-scan-10-320220.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps-4-320221.html</loc>
+    <lastmod>2021-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing-4-320222.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard-16-320223.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page-2-320224.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page-2-320225.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page-2-320226.html</loc>
+    <lastmod>2020-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events-2-320227.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
 </urlset>

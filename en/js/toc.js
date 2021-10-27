@@ -205,6 +205,13 @@ var toc = [{
 "url": "page-events.html",
 "text": "Page Events",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "page-events-faqs.html",
+"text": "Page Events FAQs",
+"class": "topic-link section"
+}]
 },
 {
 "url": "network-events.html",
@@ -1166,8 +1173,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "validate-the-plugins-298914.html",
-"text": "Validate the Plugins",
+"url": "validate-the-crowdstrike-plugin.html",
+"text": "Validate the CrowdStrike Plugin",
 "class": "topic-link section"
 }]
 },
@@ -2497,6 +2504,84 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-platform.html",
+"text": "Next Generation API Data Protection Platform",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "next-generation-api-data-protection-platform-faq.html",
+"text": "Next Generation API Data Protection Platform FAQ",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
+"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-data-protection-policy-2-320219.html",
+"text": "Create an API Data Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-320220.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-the-api-data-protection-dashboard.html",
+"text": "View the API Data Protection Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"text": "Microsoft Office 365 OneDrive Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-files-page.html",
+"text": "Microsoft Office 365 OneDrive Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-users-page.html",
+"text": "Microsoft Office 365 OneDrive Users Page",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"text": "Microsoft Office 365 OneDrive for Business Audit Events",
+"class": "topic-link section"
+}]
+}]
+},
+{
 "url": "api-data-protection.html",
 "text": "API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -2632,12 +2717,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "retroactive-ongoing-processing-for-apps.html",
+"url": "retroactive-ongoing-processing-for-apps-117800.html",
 "text": "Retroactive Ongoing Processing for Apps",
 "class": "topic-link section"
 },
 {
-"url": "purpose-of-retroactive-ongoing-processing.html",
+"url": "purpose-of-retroactive-ongoing-processing-117801.html",
 "text": "Purpose of Retroactive Ongoing Processing",
 "class": "topic-link section"
 },
@@ -2649,7 +2734,7 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-data-protection-dashboard.html",
+"url": "view-the-api-data-protection-dashboard-120511.html",
 "text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
@@ -3469,7 +3554,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account.html",
+"url": "delete-or-downgrade-the-global-administrator-account-192120.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
@@ -3593,17 +3678,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"url": "microsoft-office-365-onedrive-files-and-users-page-207484.html",
 "text": "Microsoft Office 365 OneDrive Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-files-page.html",
+"url": "microsoft-office-365-onedrive-files-page-207485.html",
 "text": "Microsoft Office 365 OneDrive Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-users-page.html",
+"url": "microsoft-office-365-onedrive-users-page-207486.html",
 "text": "Microsoft Office 365 OneDrive Users Page",
 "class": "topic-link section"
 }]
@@ -3614,7 +3699,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"url": "microsoft-office-365-onedrive-for-business-audit-events-192030.html",
 "text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
@@ -5274,8 +5359,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-admin-configuration.html",
-"text": "Netskope Client Admin Configuration",
+"url": "netskope-client-configuration.html",
+"text": "Netskope Client Configuration",
 "class": "topic-link section"
 },
 {
@@ -7775,8 +7860,8 @@ var toc = [{
 }]
 },
 {
-"url": "virtual-appliance-release-notes-version-77-5-0.html",
-"text": "Virtual Appliance Release Notes Version 77.5.0",
+"url": "virtual-appliance-release-notes-version-77-6-0.html",
+"text": "Virtual Appliance Release Notes Version 77.6.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -7852,6 +7937,84 @@ var toc = [{
 {
 "url": "known-issues-323671.html",
 "text": "Known Issues",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "next-generation-api-data-protection-platform-316866.html",
+"text": "Next Generation API Data Protection Platform",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "next-generation-api-data-protection-platform-faq-316867.html",
+"text": "Next Generation API Data Protection Platform FAQ",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive-320215.html",
+"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection-320217.html",
+"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account-4-320218.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-data-protection-policy-18-320219.html",
+"text": "Create an API Data Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-10-320220.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps-4-320221.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing-4-320222.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-the-api-data-protection-dashboard-16-320223.html",
+"text": "View the API Data Protection Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrive-files-and-users-page-2-320224.html",
+"text": "Microsoft Office 365 OneDrive Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-files-page-2-320225.html",
+"text": "Microsoft Office 365 OneDrive Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-users-page-2-320226.html",
+"text": "Microsoft Office 365 OneDrive Users Page",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-office-365-onedrive-for-business-audit-events-2-320227.html",
+"text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
 }]
