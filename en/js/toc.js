@@ -2504,28 +2504,6 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-platform.html",
-"text": "Next Generation API Data Protection Platform",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "next-generation-api-data-protection-platform-faq.html",
-"text": "Next Generation API Data Protection Platform FAQ",
-"class": "topic-link section"
-},
-{
-"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
-"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
-"class": "topic-link section"
-},
-{
 "url": "delete-or-downgrade-the-global-administrator-account.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
