@@ -1064,8 +1064,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-threat-exchange-plugins.html",
-"text": "3rd-party Threat Exchange Plugins",
+"url": "configure-3rd-party-threat-exchange-plugins.html",
+"text": "Configure 3rd-party Threat Exchange Plugins",
 "class": "topic-link section"
 ,
 "children": [
@@ -1179,6 +1179,117 @@ var toc = [{
 }]
 },
 {
+"url": "github-plugin-for-threat-exchange.html",
+"text": "GitHub Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-the-netskope-api-token-324234.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-github-api-token.html",
+"text": "Get the GitHub API Token",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-github-plugin.html",
+"text": "Configure the GitHub Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-github.html",
+"text": "Configure Sharing for Netskope and GitHub",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-github-plugin.html",
+"text": "Validate the GitHub Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-defender-plugin-for-threat-exchange.html",
+"text": "Microsoft Defender Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "create-a-secure-web-gateway-custom-file-profile-324294.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token-324383.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-microsoft-defender-api-credentials.html",
+"text": "Get the Microsoft Defender API Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-microsoft-defender.html",
+"text": "Configure Sharing for Netskope and Microsoft Defender",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-microsoft-defender-plugin.html",
+"text": "Validate the Microsoft Defender Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-cas-plugin-for-threat-exchange.html",
+"text": "Microsoft CAS Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-the-netskope-api-token-324474.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-microsoft-cas-api-token.html",
+"text": "Get the Microsoft CAS API Token",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-microsoft-cas-plugin.html",
+"text": "Configure the Microsoft CAS Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-microsoft-cas.html",
+"text": "Configure Sharing for Netskope and Microsoft CAS",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-microsoft-cas-plugin.html",
+"text": "Validate the Microsoft CAS Plugin",
+"class": "topic-link section"
+}]
+},
+{
 "url": "mimecast-plugin-for-threat-exchange.html",
 "text": "Mimecast Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
@@ -1264,8 +1375,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-ticket-orchestrator-plugins.html",
-"text": "3rd-party Ticket Orchestrator Plugins",
+"url": "configure-3rd-party-ticket-orchestrator-plugins.html",
+"text": "Configure 3rd-party Ticket Orchestrator Plugins",
 "class": "topic-link section"
 },
 {
@@ -1306,8 +1417,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-risk-exchange-plugins.html",
-"text": "3rd-party Risk Exchange Plugins",
+"url": "configure-3rd-party-risk-exchange-plugins.html",
+"text": "Configure 3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
 },
 {
@@ -1353,8 +1464,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "3rd-party-log-shipper-plugins.html",
-"text": "3rd-party Log Shipper Plugins",
+"url": "configure-3rd-party-log-shipper-plugins.html",
+"text": "Configure 3rd-party Log Shipper Plugins",
 "class": "topic-link section"
 },
 {
@@ -2504,84 +2615,6 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-platform.html",
-"text": "Next Generation API Data Protection Platform",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "next-generation-api-data-protection-platform-faq.html",
-"text": "Next Generation API Data Protection Platform FAQ",
-"class": "topic-link section"
-},
-{
-"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
-"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
-"class": "topic-link section"
-},
-{
-"url": "delete-or-downgrade-the-global-administrator-account.html",
-"text": "Delete or Downgrade the Global Administrator Account",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-data-protection-policy-2-320219.html",
-"text": "Create an API Data Protection Policy",
-"class": "topic-link section"
-},
-{
-"url": "retroactive-scan-320220.html",
-"text": "Retroactive Scan",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "retroactive-ongoing-processing-for-apps.html",
-"text": "Retroactive Ongoing Processing for Apps",
-"class": "topic-link section"
-},
-{
-"url": "purpose-of-retroactive-ongoing-processing.html",
-"text": "Purpose of Retroactive Ongoing Processing",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-the-api-data-protection-dashboard.html",
-"text": "View the API Data Protection Dashboard",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "microsoft-office-365-onedrive-files-and-users-page.html",
-"text": "Microsoft Office 365 OneDrive Files and Users Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-files-page.html",
-"text": "Microsoft Office 365 OneDrive Files Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-users-page.html",
-"text": "Microsoft Office 365 OneDrive Users Page",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
-"text": "Microsoft Office 365 OneDrive for Business Audit Events",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "api-data-protection.html",
 "text": "API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -2717,12 +2750,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "retroactive-ongoing-processing-for-apps-117800.html",
+"url": "retroactive-ongoing-processing-for-apps.html",
 "text": "Retroactive Ongoing Processing for Apps",
 "class": "topic-link section"
 },
 {
-"url": "purpose-of-retroactive-ongoing-processing-117801.html",
+"url": "purpose-of-retroactive-ongoing-processing.html",
 "text": "Purpose of Retroactive Ongoing Processing",
 "class": "topic-link section"
 },
@@ -2734,7 +2767,7 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-data-protection-dashboard-120511.html",
+"url": "view-the-api-data-protection-dashboard.html",
 "text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
@@ -3554,7 +3587,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account-192120.html",
+"url": "delete-or-downgrade-the-global-administrator-account.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
@@ -3678,17 +3711,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrive-files-and-users-page-207484.html",
+"url": "microsoft-office-365-onedrive-files-and-users-page.html",
 "text": "Microsoft Office 365 OneDrive Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-files-page-207485.html",
+"url": "microsoft-office-365-onedrive-files-page.html",
 "text": "Microsoft Office 365 OneDrive Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-users-page-207486.html",
+"url": "microsoft-office-365-onedrive-users-page.html",
 "text": "Microsoft Office 365 OneDrive Users Page",
 "class": "topic-link section"
 }]
@@ -3699,7 +3732,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-business-audit-events-192030.html",
+"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
 "text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
@@ -7937,84 +7970,6 @@ var toc = [{
 {
 "url": "known-issues-323671.html",
 "text": "Known Issues",
-"class": "topic-link section"
-}]
-}]
-},
-{
-"url": "next-generation-api-data-protection-platform-316866.html",
-"text": "Next Generation API Data Protection Platform",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "next-generation-api-data-protection-platform-faq-316867.html",
-"text": "Next Generation API Data Protection Platform FAQ",
-"class": "topic-link section"
-},
-{
-"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive-320215.html",
-"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection-320217.html",
-"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
-"class": "topic-link section"
-},
-{
-"url": "delete-or-downgrade-the-global-administrator-account-4-320218.html",
-"text": "Delete or Downgrade the Global Administrator Account",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-data-protection-policy-18-320219.html",
-"text": "Create an API Data Protection Policy",
-"class": "topic-link section"
-},
-{
-"url": "retroactive-scan-10-320220.html",
-"text": "Retroactive Scan",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "retroactive-ongoing-processing-for-apps-4-320221.html",
-"text": "Retroactive Ongoing Processing for Apps",
-"class": "topic-link section"
-},
-{
-"url": "purpose-of-retroactive-ongoing-processing-4-320222.html",
-"text": "Purpose of Retroactive Ongoing Processing",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-the-api-data-protection-dashboard-16-320223.html",
-"text": "View the API Data Protection Dashboard",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "microsoft-office-365-onedrive-files-and-users-page-2-320224.html",
-"text": "Microsoft Office 365 OneDrive Files and Users Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-files-page-2-320225.html",
-"text": "Microsoft Office 365 OneDrive Files Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-users-page-2-320226.html",
-"text": "Microsoft Office 365 OneDrive Users Page",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-office-365-onedrive-for-business-audit-events-2-320227.html",
-"text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
 }]
