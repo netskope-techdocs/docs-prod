@@ -7861,8 +7861,8 @@ var toc = [{
 }]
 },
 {
-"url": "on-premises-appliance-release-notes-version-77-5-0.html",
-"text": "On-Premises Appliance Release Notes Version 77.5.0",
+"url": "on-premises-appliance-release-notes-version-77-6-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.6.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
