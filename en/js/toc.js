@@ -723,156 +723,6 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access.html",
-"text": "Netskope Private Access",
-"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
-,
-"children": [
-{
-"url": "netskope-private-access-user-guide.html",
-"text": "Netskope Private Access User Guide",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "private-apps-configuration-methods.html",
-"text": "Private Apps Configuration Methods",
-"class": "topic-link section"
-},
-{
-"url": "create-a-new-publisher.html",
-"text": "Create a New Publisher",
-"class": "topic-link section"
-},
-{
-"url": "deploy-a-publisher.html",
-"text": "Deploy a Publisher",
-"class": "topic-link section"
-},
-{
-"url": "create-a-private-app.html",
-"text": "Create a Private App",
-"class": "topic-link section"
-},
-{
-"url": "configure-browser-access-for-private-apps.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "steer-traffic-for-private-apps.html",
-"text": "Steer Traffic for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "source-ip-anchoring-for-an-idp-with-netskope-private-access.html",
-"text": "Source IP Anchoring for an IdP with Netskope Private Access",
-"class": "topic-link section"
-},
-{
-"url": "netskope-private-access-for-active-directory-domain-join-and-new-user-logon.html",
-"text": "Netskope Private Access for Active Directory Domain Join and New User Logon",
-"class": "topic-link section"
-},
-{
-"url": "add-users-164689.html",
-"text": "Add Users",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-protection-policy-for-private-access.html",
-"text": "Create a Real-time Protection Policy for Private Access",
-"class": "topic-link section"
-},
-{
-"url": "deploy-the-netskope-client-for-netskope-private-access.html",
-"text": "Deploy the Netskope Client for Netskope Private Access",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "install-the-client-for-private-access.html",
-"text": "Install the Client for Private Access",
-"class": "topic-link section"
-},
-{
-"url": "view-private-access-status-for-devices.html",
-"text": "View Private Access Status for Devices",
-"class": "topic-link section"
-},
-{
-"url": "use-client-re-authentication.html",
-"text": "Use Client Re-authentication",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-events-and-alerts-for-private-apps.html",
-"text": "View Events and Alerts for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "change-publishers-for-private-apps.html",
-"text": "Change Publishers for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "upgrade-the-publisher.html",
-"text": "Upgrade the Publisher",
-"class": "topic-link section"
-},
-{
-"url": "private-access-faqs.html",
-"text": "Private Access FAQs",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-troubleshooting-guide.html",
-"text": "Netskope Private Access Troubleshooting Guide",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "the-npa-troubleshooter-tool.html",
-"text": "The NPA Troubleshooter Tool",
-"class": "topic-link section"
-},
-{
-"url": "general-troubleshooting-methods.html",
-"text": "General Troubleshooting Methods",
-"class": "topic-link section"
-},
-{
-"url": "troubleshooting-performance-and-connectivity-using-tcping-and-psping.html",
-"text": "Troubleshooting Performance and Connectivity using TCPing and PsPing",
-"class": "topic-link section"
-},
-{
-"url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
-"text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
-"class": "topic-link section"
-}]
-},
-{
-"url": "secure-tenant-hardening-and-configuration.html",
-"text": "Secure Tenant Hardening and Configuration",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "selinux---firewalld.html",
-"text": "SELinux &amp; FirewallD",
-"class": "topic-link section"
-},
-{
-"url": "tunneling-info.html",
-"text": "Tunneling Info",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "netskope-secure-web-gateway.html",
 "text": "Netskope Secure Web Gateway",
 "class": "topic-link section reused-publication reused-publication"
@@ -1011,6 +861,134 @@ var toc = [{
 {
 "url": "configuring-cli-based-tools-and-development-frameworks-to-work-with-netskope-ssl-interception.html",
 "text": "Configuring CLI-based Tools and Development Frameworks to work with Netskope SSL Interception",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access.html",
+"text": "Netskope Private Access",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "private-apps-configuration-methods.html",
+"text": "Private Apps Configuration Methods",
+"class": "topic-link section"
+},
+{
+"url": "publisher-management.html",
+"text": "Publisher Management",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "deploy-a-publisher.html",
+"text": "Deploy a Publisher",
+"class": "topic-link section"
+},
+{
+"url": "manage-a-publisher.html",
+"text": "Manage a Publisher",
+"class": "topic-link section"
+}]
+},
+{
+"url": "create-a-private-app.html",
+"text": "Create a Private App",
+"class": "topic-link section"
+},
+{
+"url": "configure-browser-access-for-private-apps.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "steer-traffic-for-private-apps.html",
+"text": "Steer Traffic for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "add-users-164689.html",
+"text": "Add Users",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-protection-policy-for-private-access.html",
+"text": "Create a Real-time Protection Policy for Private Access",
+"class": "topic-link section"
+},
+{
+"url": "deploy-the-netskope-client-for-netskope-private-access.html",
+"text": "Deploy the Netskope Client for Netskope Private Access",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "install-the-client-for-private-access.html",
+"text": "Install the Client for Private Access",
+"class": "topic-link section"
+},
+{
+"url": "view-private-access-status-for-devices.html",
+"text": "View Private Access Status for Devices",
+"class": "topic-link section"
+},
+{
+"url": "use-client-re-authentication.html",
+"text": "Use Client Re-authentication",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-events-and-alerts-for-private-apps.html",
+"text": "View Events and Alerts for Private Apps",
+"class": "topic-link section"
+},
+{
+"url": "private-access-faqs.html",
+"text": "Private Access FAQs",
+"class": "topic-link section"
+},
+{
+"url": "private-access-troubleshooting.html",
+"text": "Private Access Troubleshooting",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "the-npa-troubleshooter-tool.html",
+"text": "The NPA Troubleshooter Tool",
+"class": "topic-link section"
+},
+{
+"url": "general-troubleshooting-methods.html",
+"text": "General Troubleshooting Methods",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-tcping-and-psping.html",
+"text": "Troubleshooting Performance and Connectivity using TCPing and PsPing",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
+"text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-for-microsoft-active-directory-domain-services.html",
+"text": "Netskope Private Access for Microsoft Active Directory Domain Services",
+"class": "topic-link section"
+},
+{
+"url": "netskope-private-access-for-microsoft-active-directory-domain-join-and-new-user-logon.html",
+"text": "Netskope Private Access for Microsoft Active Directory Domain Join and New User Logon",
+"class": "topic-link section"
+},
+{
+"url": "source-ip-anchoring-for-an-idp-with-netskope-private-access.html",
+"text": "Source IP Anchoring for an IdP with Netskope Private Access",
 "class": "topic-link section"
 }]
 },
@@ -1175,117 +1153,6 @@ var toc = [{
 {
 "url": "validate-the-crowdstrike-plugin.html",
 "text": "Validate the CrowdStrike Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "github-plugin-for-threat-exchange.html",
-"text": "GitHub Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-the-netskope-api-token-324234.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
-"url": "get-the-github-api-token.html",
-"text": "Get the GitHub API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-github-plugin.html",
-"text": "Configure the GitHub Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-github.html",
-"text": "Configure Sharing for Netskope and GitHub",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-github-plugin.html",
-"text": "Validate the GitHub Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-defender-plugin-for-threat-exchange.html",
-"text": "Microsoft Defender Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-secure-web-gateway-custom-file-profile-324294.html",
-"text": "Create a Secure Web Gateway Custom File Profile",
-"class": "topic-link section"
-},
-{
-"url": "get-the-netskope-api-token-324383.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
-"url": "get-the-microsoft-defender-api-credentials.html",
-"text": "Get the Microsoft Defender API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-microsoft-defender.html",
-"text": "Configure Sharing for Netskope and Microsoft Defender",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-defender-plugin.html",
-"text": "Validate the Microsoft Defender Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-cas-plugin-for-threat-exchange.html",
-"text": "Microsoft CAS Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-the-netskope-api-token-324474.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
-"url": "get-the-microsoft-cas-api-token.html",
-"text": "Get the Microsoft CAS API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-microsoft-cas-plugin.html",
-"text": "Configure the Microsoft CAS Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-microsoft-cas.html",
-"text": "Configure Sharing for Netskope and Microsoft CAS",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-cas-plugin.html",
-"text": "Validate the Microsoft CAS Plugin",
 "class": "topic-link section"
 }]
 },
