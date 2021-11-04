@@ -641,8 +641,8 @@ var toc = [{
 }]
 },
 {
-"url": "network-security.html",
-"text": "Network Security",
+"url": "data-security.html",
+"text": "Data Security",
 "class": "topic-link section"
 ,
 "children": [
@@ -1009,8 +1009,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "feature-lists.html",
-"text": "Feature Lists",
+"url": "cloud-exchange-feature-lists.html",
+"text": "Cloud Exchange Feature Lists",
 "class": "topic-link section"
 },
 {
@@ -1084,8 +1084,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-carbon-black-plugin-for-cbc-ngav-in-cloud-exchange.html",
-"text": "Configure the Carbon Black Plugin for CBC NGAV in Cloud Exchange",
+"url": "configure-the-carbon-black-plugin-for-cbc-ngav-in-threat-exchange.html",
+"text": "Configure the Carbon Black Plugin for CBC NGAV in Threat Exchange",
 "class": "topic-link section"
 },
 {

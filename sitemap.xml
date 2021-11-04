@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skopeit.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skopeit-pages.html</loc>
@@ -342,7 +342,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-library.html</loc>
-    <lastmod>2021-10-08</lastmod>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explore-page.html</loc>
@@ -390,7 +390,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-visualizations-and-graphs.html</loc>
-    <lastmod>2020-09-04</lastmod>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/visualization-types.html</loc>
@@ -481,8 +481,8 @@
     <lastmod>2021-08-18</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/network-security.html</loc>
-    <lastmod>2021-08-20</lastmod>
+    <loc>https://docs.netskope.com/en/data-security.html</loc>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-firewall.html</loc>
@@ -753,8 +753,8 @@
     <lastmod>2021-10-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/feature-lists.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <loc>https://docs.netskope.com/en/cloud-exchange-feature-lists.html</loc>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-cloud-exchange.html</loc>
@@ -809,8 +809,8 @@
     <lastmod>2021-10-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-ngav-in-cloud-exchange.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-ngav-in-threat-exchange.html</loc>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-edr-in-threat-exchange.html</loc>
@@ -2530,7 +2530,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-api-data-protection-159895.html</loc>
-    <lastmod>2021-10-05</lastmod>
+    <lastmod>2021-11-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/remove-the-netskope-introspection-v1-app.html</loc>
@@ -3446,7 +3446,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rule-based-policies.html</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-based-policies.html</loc>
@@ -3858,7 +3858,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-overview.html</loc>
-    <lastmod>2021-10-26</lastmod>
+    <lastmod>2021-11-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -3910,7 +3910,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/uninstalling-the-netskope-client.html</loc>
-    <lastmod>2021-07-27</lastmod>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-inter-operability.html</loc>
@@ -4210,7 +4210,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/connecting-to-the-mip-instance.html</loc>
-    <lastmod>2021-09-13</lastmod>
+    <lastmod>2021-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-api-data-protection-policy-for-mip.html</loc>
@@ -5674,7 +5674,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-316177.html</loc>
-    <lastmod>2021-08-30</lastmod>
+    <lastmod>2021-11-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-product-available---remote-browser-isolation.html</loc>
