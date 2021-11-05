@@ -1,7 +1,7 @@
 var toc = [{
 "url": "admin-console.html",
 "text": "Admin Console",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
@@ -643,7 +643,7 @@ var toc = [{
 {
 "url": "data-security.html",
 "text": "Data Security",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
@@ -1153,6 +1153,117 @@ var toc = [{
 {
 "url": "validate-the-crowdstrike-plugin.html",
 "text": "Validate the CrowdStrike Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "github-plugin-for-threat-exchange.html",
+"text": "GitHub Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-the-netskope-api-token-324234.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-github-api-token.html",
+"text": "Get the GitHub API Token",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-github-plugin.html",
+"text": "Configure the GitHub Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-github.html",
+"text": "Configure Sharing for Netskope and GitHub",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-github-plugin.html",
+"text": "Validate the GitHub Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-cas-plugin-for-threat-exchange.html",
+"text": "Microsoft CAS Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-the-netskope-api-token-324474.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-microsoft-cas-api-token.html",
+"text": "Get the Microsoft CAS API Token",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-microsoft-cas-plugin.html",
+"text": "Configure the Microsoft CAS Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-microsoft-cas.html",
+"text": "Configure Sharing for Netskope and Microsoft CAS",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-microsoft-cas-plugin.html",
+"text": "Validate the Microsoft CAS Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-defender-plugin-for-threat-exchange.html",
+"text": "Microsoft Defender Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "create-a-secure-web-gateway-custom-file-profile-324294.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token-324383.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
+"url": "get-the-microsoft-defender-api-credentials.html",
+"text": "Get the Microsoft Defender API Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html",
+"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-microsoft-defender.html",
+"text": "Configure Sharing for Netskope and Microsoft Defender",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-microsoft-defender-plugin.html",
+"text": "Validate the Microsoft Defender Plugin",
 "class": "topic-link section"
 }]
 },
@@ -5699,7 +5810,7 @@ var toc = [{
 {
 "url": "integrations.html",
 "text": "Integrations",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
@@ -6871,7 +6982,7 @@ var toc = [{
 {
 "url": "appliances.html",
 "text": "Appliances",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
@@ -7675,7 +7786,7 @@ var toc = [{
 {
 "url": "release-notes.html",
 "text": "Release Notes",
-"class": "topic-link section"
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {

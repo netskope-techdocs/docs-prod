@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/admin-console.html</loc>
-    <lastmod>2020-11-14</lastmod>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/administration.html</loc>
@@ -742,7 +742,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-05</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -863,6 +863,90 @@
   <url>
     <loc>https://docs.netskope.com/en/validate-the-crowdstrike-plugin.html</loc>
     <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/github-plugin-for-threat-exchange.html</loc>
+    <lastmod>2021-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324234.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-github-api-token.html</loc>
+    <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-github-plugin.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-github.html</loc>
+    <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/validate-the-github-plugin.html</loc>
+    <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-cas-plugin-for-threat-exchange.html</loc>
+    <lastmod>2021-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324474.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-microsoft-cas-api-token.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-microsoft-cas-plugin.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-microsoft-cas.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/validate-the-microsoft-cas-plugin.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-defender-plugin-for-threat-exchange.html</loc>
+    <lastmod>2021-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile-324294.html</loc>
+    <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324383.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-microsoft-defender-api-credentials.html</loc>
+    <lastmod>2021-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-microsoft-defender.html</loc>
+    <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/validate-the-microsoft-defender-plugin.html</loc>
+    <lastmod>2021-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/mimecast-plugin-for-threat-exchange.html</loc>
@@ -4194,7 +4278,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrations.html</loc>
-    <lastmod>2021-02-05</lastmod>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/information-rights-management.html</loc>
@@ -5050,7 +5134,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/appliances.html</loc>
-    <lastmod>2021-02-11</lastmod>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance.html</loc>
@@ -5650,7 +5734,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes.html</loc>
-    <lastmod>2021-01-12</lastmod>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-89-0-0.html</loc>
