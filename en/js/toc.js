@@ -1079,8 +1079,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"url": "configure-the-netskope-plugin-in-threat-exchange.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1136,8 +1136,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-298911.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"url": "configure-the-netskope-plugin-in-threat-exchange-298911.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1173,8 +1173,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"url": "configure-the-netskope-plugin-in-threat-exchange-324233.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1210,8 +1210,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"url": "configure-the-netskope-plugin-in-threat-exchange-324475.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1252,8 +1252,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html",
-"text": "Configure the Netskope Plugin in Cloud Threat Exchange",
+"url": "configure-the-netskope-plugin-in-threat-exchange-324384.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -7867,6 +7867,43 @@ var toc = [{
 {
 "url": "fixed-issues-85476.html",
 "text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "virtual-appliance-release-notes-version-77-5-0.html",
+"text": "Virtual Appliance Release Notes Version 77.5.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-virtual-appliance-version-77-5-0.html",
+"text": "Overview for Virtual Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "requirements-for-virtual-appliance-version-77-5-0.html",
+"text": "Requirements for Virtual Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-virtual-appliance-version-77-5-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "other-changes-for-virtual-appliance-version-77-5-0.html",
+"text": "Other changes for Virtual Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-virtual-appliance-version-77-5-0.html",
+"text": "Known Issues for Virtual Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-virtual-appliance-version-77-5-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
 },
