@@ -2619,39 +2619,16 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "api-data-protection-policy-actions-per-cloud-app.html",
+"text": "API Data Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+},
+{
 "url": "api-data-protection-for-box.html",
 "text": "API Data Protection for Box",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117725.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-the-api-connector-for-box.html",
-"text": "Configure the API Connector for Box",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
 {
 "url": "configure-box-for-api-enabled-protection.html",
 "text": "Configure Box for API Data Protection",
@@ -2672,7 +2649,6 @@ var toc = [{
 "url": "configure-box-instance-in-netskope-ui.html",
 "text": "Configure Box Instance in Netskope UI",
 "class": "topic-link section internal internal"
-}]
 }]
 },
 {
@@ -2784,30 +2760,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120292.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117830.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117842.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-the-api-connector-for-cisco-webex-teams.html",
 "text": "Configure the API Connector for Cisco Webex Teams",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "api-data-protection-api-connectors-117834.html",
+"url": "api-data-protection-api-connectors.html",
 "text": "API Data Protection API Connectors",
 "class": "topic-link section"
 },
@@ -2908,23 +2867,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120293.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117877.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117887.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-dropbox.html",
 "text": "Configure the API Connector for Dropbox",
@@ -3041,23 +2983,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120294.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-118028.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-118038.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-the-api-connector-for-egnyte.html",
 "text": "Configure the API Connector for Egnyte",
 "class": "topic-link section"
@@ -3156,23 +3081,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120295.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-119530.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-119531.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-api-connectors-for-github.html",
 "text": "Configure API Connectors for GitHub",
 "class": "topic-link section"
@@ -3265,23 +3173,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120296.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-118122.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-118925.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-gmail.html",
 "text": "Configure the API Connector for Gmail",
@@ -3380,23 +3271,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120297.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117899.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117909.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-google-drive.html",
 "text": "Configure the API Connector for Google Drive",
@@ -3515,23 +3389,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120300.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117726.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117798.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
@@ -3722,23 +3579,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120301.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117973.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117985.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-microsoft-office-365-outlook-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Outlook for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -3855,23 +3695,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120302.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-118075.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-118085.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-microsoft-office-365-sharepoint-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 SharePoint for API Data Protection",
@@ -4040,23 +3863,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-179436.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-179438.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-179439.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Teams for API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -4132,23 +3938,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120303.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117855.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117865.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-salesforce.html",
 "text": "Configure the API Connector for Salesforce",
@@ -4270,23 +4059,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120304.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117922.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117931.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-the-api-connector-for-servicenow.html",
 "text": "Configure the API Connector for ServiceNow",
 "class": "topic-link section"
@@ -4369,23 +4141,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120305.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-118099.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-118110.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-slack-for-enterprise.html",
 "text": "Configure the API Connector for Slack for Enterprise",
@@ -4495,23 +4250,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-data-protection-overview-120306.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117794.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117818.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
-{
 "url": "configure-the-api-connector-for-slack-for-team.html",
 "text": "Configure the API Connector for Slack for Team",
 "class": "topic-link section"
@@ -4614,23 +4352,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "api-data-protection-overview-120307.html",
-"text": "API Data Protection Overview",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-use-cases-117942.html",
-"text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-policy-actions-per-cloud-app-117953.html",
-"text": "API Data Protection Policy Actions per Cloud App",
-"class": "topic-link section"
-}]
-},
 {
 "url": "configure-the-api-connector-for-workplace-by-facebook.html",
 "text": "Configure the API Connector for Workplace by Facebook",
@@ -7835,6 +7556,38 @@ var toc = [{
 {
 "url": "fixed-issues-316180.html",
 "text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "on-premises-appliance-release-notes-version-77-5-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.5.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-on-premises-appliance-version-77-5-0.html",
+"text": "Overview for On-Premises Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-77-5-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "other-changes-for-on-premises-appliance-version-77-5-0.html",
+"text": "Other changes for On-Premises Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-on-premises-appliance-version-77-5-0.html",
+"text": "Known Issues for On-Premises Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-on-premises-appliance-version-77-5-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
 },
