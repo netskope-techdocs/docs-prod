@@ -390,7 +390,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-visualizations-and-graphs.html</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/visualization-types.html</loc>
@@ -566,7 +566,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy.html</loc>
-    <lastmod>2021-03-18</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxy-chaining.html</loc>
@@ -646,7 +646,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2021-11-01</lastmod>
+    <lastmod>2021-11-05</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -750,7 +750,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
-    <lastmod>2021-10-07</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-feature-lists.html</loc>
@@ -782,179 +782,195 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/carbon-black-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-malware-detection-profile-for-carbon-black.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-threat-protection-policy-for-carbon-black.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-carbon-black-api-credentials.html</loc>
-    <lastmod>2021-04-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-ngav-in-threat-exchange.html</loc>
-    <lastmod>2021-11-04</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-carbon-black-plugin-for-cbc-edr-in-threat-exchange.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-carbon-black.html</loc>
-    <lastmod>2021-04-30</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-plugins.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/crowdstrike-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile-298906.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-malware-detection-profile-for-crowdstrike.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-threat-protection-policy-for-crowdstrike.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token-298909.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-crowdstrike-api-credentials.html</loc>
-    <lastmod>2021-10-08</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-298911.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange-298911.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-crowdstrike-plugin-in-cloud-exchange.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-crowdstrike-plugin-in-threat-exchange.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-crowdstrike.html</loc>
-    <lastmod>2021-04-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-crowdstrike-plugin.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/github-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324234.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-github-api-token.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324233.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange-324233.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-github-plugin.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-github.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-github-plugin.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-cas-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324474.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-microsoft-cas-api-token.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324475.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange-324475.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-microsoft-cas-plugin.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-microsoft-cas.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-microsoft-cas-plugin.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-defender-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile-324294.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-netskope-api-token-324383.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-the-microsoft-defender-api-credentials.html</loc>
-    <lastmod>2021-10-27</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-cloud-threat-exchange-324384.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange-324384.html</loc>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-microsoft-defender-plugin.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-sharing-for-netskope-and-microsoft-defender.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/validate-the-microsoft-defender-plugin.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/mimecast-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-a-secure-web-gateway-custom-file-profile-327531.html</loc>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-netskope-api-token-327532.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-mimecast-credentials.html</loc>
-    <lastmod>2021-04-12</lastmod>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-in-threat-exchange-327533.html</loc>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-mimecast-plugin-in-cloud-exchange.html</loc>
@@ -970,7 +986,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proofpoint-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-10-29</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-configured-threat-exchange-plugins.html</loc>
@@ -1186,7 +1202,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/migrating-from-ce-2-x-to-ce-3-x.html</loc>
-    <lastmod>2021-10-07</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-public-cloud-security.html</loc>
@@ -1306,7 +1322,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/aws-setup-faqs.html</loc>
@@ -1534,7 +1550,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-163050.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application.html</loc>
@@ -1622,7 +1638,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-rules-using-domain-specific-language.html</loc>
-    <lastmod>2021-08-18</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-infrastructure-141713.html</loc>
@@ -1662,7 +1678,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-rules-using-domain-specific-language-143208.html</loc>
-    <lastmod>2021-08-18</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/public-cloud-rest-apis.html</loc>
@@ -1882,15 +1898,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-policy-wizard.html</loc>
-    <lastmod>2021-08-11</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-policy.html</loc>
-    <lastmod>2021-08-11</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-security-posture-policy.html</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-profile.html</loc>
@@ -1898,15 +1914,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-security-posture-profile.html</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-rule.html</loc>
-    <lastmod>2021-04-19</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-security-posture-rule.html</loc>
-    <lastmod>2021-04-26</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-rules-using-domain-specific-language-305074.html</loc>
@@ -1914,11 +1930,67 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-compliance.html</loc>
-    <lastmod>2021-08-11</lastmod>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform.html</loc>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-platform-faq.html</loc>
+    <lastmod>2021-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-office-365-onedrive.html</loc>
+    <lastmod>2021-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html</loc>
+    <lastmod>2021-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-320219.html</loc>
+    <lastmod>2021-10-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-scan-320220.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps.html</loc>
+    <lastmod>2021-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page.html</loc>
+    <lastmod>2020-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events.html</loc>
+    <lastmod>2021-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection.html</loc>
-    <lastmod>2021-02-12</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-migration.html</loc>
@@ -1937,28 +2009,12 @@
     <lastmod>2020-02-05</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-for-box.html</loc>
-    <lastmod>2021-10-04</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117725.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app.html</loc>
     <lastmod>2021-09-16</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-box.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <loc>https://docs.netskope.com/en/api-data-protection-for-box.html</loc>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-box-for-api-enabled-protection.html</loc>
@@ -1978,7 +2034,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118921.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117425.html</loc>
@@ -2017,11 +2073,11 @@
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps.html</loc>
+    <loc>https://docs.netskope.com/en/retroactive-ongoing-processing-for-apps-117800.html</loc>
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing.html</loc>
+    <loc>https://docs.netskope.com/en/purpose-of-retroactive-ongoing-processing-117801.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
@@ -2029,7 +2085,7 @@
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard.html</loc>
+    <loc>https://docs.netskope.com/en/view-the-api-data-protection-dashboard-120511.html</loc>
     <lastmod>2021-08-30</lastmod>
   </url>
   <url>
@@ -2054,27 +2110,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-cisco-webex-teams.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120292.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117830.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117842.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-cisco-webex-teams.html</loc>
-    <lastmod>2020-08-05</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117834.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-cisco-webex-teams-for-api-data-protection.html</loc>
@@ -2082,7 +2118,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118922.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-120284.html</loc>
@@ -2146,27 +2182,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-dropbox.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120293.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117877.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117887.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-dropbox.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117879.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-dropbox-for-api-data-protection.html</loc>
@@ -2174,7 +2190,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118923.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117882.html</loc>
@@ -2242,27 +2258,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-egnyte.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120294.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-118028.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-118038.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-egnyte.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-118030.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-egnyte-for-api-data-protection.html</loc>
@@ -2270,7 +2266,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118924.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-118033.html</loc>
@@ -2326,27 +2322,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-github.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120295.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-119530.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-119531.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-api-connectors-for-github.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-119536.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-github-for-api-data-protection.html</loc>
@@ -2354,7 +2330,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-163059.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-119539.html</loc>
@@ -2406,27 +2382,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-gmail.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120296.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-118122.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-118925.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-gmail.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-118124.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-gmail-for-api-data-protectionting.html</loc>
@@ -2434,7 +2390,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118926.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-118127.html</loc>
@@ -2490,27 +2446,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-google-drive.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120297.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117899.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117909.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-google-drive.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117901.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-google-drive-for-api-data-protection.html</loc>
@@ -2518,7 +2454,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118927.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117904.html</loc>
@@ -2590,30 +2526,14 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-onedrive.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120300.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117726.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117798.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-api-data-protection.html</loc>
-    <lastmod>2020-10-17</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-microsoft-office-365-licenses-for-api-data-protection.html</loc>
-    <lastmod>2021-01-08</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-api-data-protection-159895.html</loc>
+    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-onedrive-for-api-data-protection.html</loc>
     <lastmod>2021-11-03</lastmod>
   </url>
   <url>
@@ -2625,11 +2545,23 @@
     <lastmod>2020-02-26</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/create-an-app-catalog.html</loc>
+    <lastmod>2021-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/add-global-administrator-to-the-site-collection-administrators.html</loc>
+    <lastmod>2021-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/install-the-netskope-introspection-v2-app.html</loc>
+    <lastmod>2021-08-26</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/configure-netskope-to-access-your-office-365-onedrive-app.html</loc>
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account.html</loc>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-326311.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
@@ -2674,7 +2606,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118931.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117713.html</loc>
@@ -2721,15 +2653,15 @@
     <lastmod>2021-08-30</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-and-users-page-207484.html</loc>
     <lastmod>2021-10-04</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-files-page-207485.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page-207486.html</loc>
     <lastmod>2020-08-04</lastmod>
   </url>
   <url>
@@ -2737,31 +2669,15 @@
     <lastmod>2020-08-05</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events-192030.html</loc>
     <lastmod>2020-04-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-outlook.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120301.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117973.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117985.html</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-outlook-for-api-data-protection.html</loc>
-    <lastmod>2020-01-29</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-outlook-for-api-data-protection-159921.html</loc>
     <lastmod>2021-08-21</lastmod>
   </url>
   <url>
@@ -2769,20 +2685,20 @@
     <lastmod>2021-02-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/additional-reading-159922.html</loc>
+    <loc>https://docs.netskope.com/en/additional-reading-326326.html</loc>
     <lastmod>2019-06-27</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/internal-domain-limitations-159924.html</loc>
+    <loc>https://docs.netskope.com/en/internal-domain-limitations-326327.html</loc>
     <lastmod>2019-06-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159925.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326328.html</loc>
     <lastmod>2020-02-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118932.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117980.html</loc>
@@ -2838,54 +2754,50 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-sharepoint.html</loc>
-    <lastmod>2021-08-30</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120302.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-118075.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-118085.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-sharepoint-for-api-data-protection.html</loc>
-    <lastmod>2020-10-17</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/supported-microsoft-office-365-licenses-for-api-data-protection-189817.html</loc>
-    <lastmod>2021-01-08</lastmod>
+    <loc>https://docs.netskope.com/en/supported-microsoft-office-365-licenses-for-api-data-protection-326329.html</loc>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-sharepoint-sites-for-api-data-protection.html</loc>
     <lastmod>2020-07-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/remove-the-netskope-introspection-v1-app-188975.html</loc>
+    <loc>https://docs.netskope.com/en/remove-the-netskope-introspection-v1-app-326331.html</loc>
     <lastmod>2021-03-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-188917.html</loc>
+    <loc>https://docs.netskope.com/en/add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-326332.html</loc>
     <lastmod>2020-02-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-an-app-catalog-326333.html</loc>
+    <lastmod>2021-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/add-global-administrator-to-the-site-collection-administrators-326334.html</loc>
+    <lastmod>2021-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/install-the-netskope-introspection-v2-app-326335.html</loc>
+    <lastmod>2021-08-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-to-access-your-office-365-sharepoint-sites-app.html</loc>
     <lastmod>2021-08-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-192121.html</loc>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-326337.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/additional-reading-159914.html</loc>
+    <loc>https://docs.netskope.com/en/additional-reading-326338.html</loc>
     <lastmod>2019-06-27</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/grant-failure-on-newly-created-app-instance-223625.html</loc>
+    <loc>https://docs.netskope.com/en/grant-failure-on-newly-created-app-instance-326339.html</loc>
     <lastmod>2021-05-04</lastmod>
   </url>
   <url>
@@ -2897,11 +2809,11 @@
     <lastmod>2021-01-11</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-multi-geo-support-163715.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-multi-geo-support-326342.html</loc>
     <lastmod>2021-05-27</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/internal-domain-limitations-159916.html</loc>
+    <loc>https://docs.netskope.com/en/internal-domain-limitations-326343.html</loc>
     <lastmod>2019-06-21</lastmod>
   </url>
   <url>
@@ -2909,12 +2821,12 @@
     <lastmod>2021-05-27</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159918.html</loc>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326345.html</loc>
     <lastmod>2020-02-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118933.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-118080.html</loc>
@@ -2974,34 +2886,18 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-teams.html</loc>
-    <lastmod>2021-08-30</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-179436.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-179438.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-179439.html</loc>
-    <lastmod>2021-09-16</lastmod>
+    <loc>https://docs.netskope.com/en/supported-microsoft-office-365-licenses-for-api-data-protection-326346.html</loc>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-teams-for-api-data-protection.html</loc>
-    <lastmod>2021-01-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/supported-microsoft-office-365-licenses-for-api-data-protection-232870.html</loc>
-    <lastmod>2021-01-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-office-365-teams-for-api-data-protection-178419.html</loc>
     <lastmod>2021-09-16</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-192474.html</loc>
+    <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-326348.html</loc>
     <lastmod>2021-08-31</lastmod>
   </url>
   <url>
@@ -3042,27 +2938,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-salesforce.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120303.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117855.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117865.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-salesforce.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117857.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-salesforce-for-api-data-protection.html</loc>
@@ -3074,7 +2950,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118934.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117860.html</loc>
@@ -3142,27 +3018,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-servicenow.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120304.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117922.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117931.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-servicenow.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117924.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-servicenow-for-api-data-protection.html</loc>
@@ -3170,7 +3026,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118935.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117927.html</loc>
@@ -3214,27 +3070,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-slack-for-enterprise.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120305.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-118099.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-118110.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-slack-for-enterprise.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-118101.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-slack-enterprise-for-api-data-protection.html</loc>
@@ -3242,7 +3078,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118936.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-118104.html</loc>
@@ -3306,27 +3142,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-slack-for-teams.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120306.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117794.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117818.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-slack-for-team.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117810.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-slack-for-team-for-api-data-protection.html</loc>
@@ -3334,7 +3150,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118937.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117813.html</loc>
@@ -3394,27 +3210,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-workplace-by-facebook.html</loc>
-    <lastmod>2021-08-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-overview-120307.html</loc>
-    <lastmod>2021-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-use-cases-117942.html</loc>
-    <lastmod>2020-03-02</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app-117953.html</loc>
-    <lastmod>2021-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-api-connector-for-workplace-by-facebook.html</loc>
-    <lastmod>2019-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/api-data-protection-api-connectors-117944.html</loc>
-    <lastmod>2020-02-13</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-workplace-by-facebook-for-api-data-protection.html</loc>
@@ -3422,7 +3218,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118938.html</loc>
-    <lastmod>2021-05-26</lastmod>
+    <lastmod>2021-11-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/application-117947.html</loc>
@@ -4010,7 +3806,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/steering-configuration.html</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-11-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/exceptions-221607.html</loc>
@@ -4034,7 +3830,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
-    <lastmod>2021-03-18</lastmod>
+    <lastmod>2021-11-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-over-ipsec-and-gre-tunnels.html</loc>
@@ -5773,6 +5569,30 @@
     <lastmod>2021-08-28</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/overview-for-on-premises-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-on-premises-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/other-changes-for-on-premises-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-for-on-premises-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-on-premises-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-77-6-0.html</loc>
     <lastmod>2021-10-28</lastmod>
   </url>
@@ -5795,6 +5615,34 @@
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-85476.html</loc>
     <lastmod>2021-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-77-5-0.html</loc>
+    <lastmod>2021-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/overview-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/requirements-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/other-changes-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-virtual-appliance-version-77-5-0.html</loc>
+    <lastmod>2021-11-05</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-77-6-0.html</loc>
@@ -5855,5 +5703,29 @@
   <url>
     <loc>https://docs.netskope.com/en/known-issues-323671.html</loc>
     <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-threat-content-release-notes.html</loc>
+    <lastmod>2021-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release---90-0-1-104.html</loc>
+    <lastmod>2021-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release---89-0-1-94.html</loc>
+    <lastmod>2021-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-88-1-1-91.html</loc>
+    <lastmod>2021-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release---88-0-1-87.html</loc>
+    <lastmod>2021-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release---87-0-1-78.html</loc>
+    <lastmod>2021-11-09</lastmod>
   </url>
 </urlset>

@@ -1141,8 +1141,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-crowdstrike-plugin-in-cloud-exchange.html",
-"text": "Configure the CrowdStrike Plugin in Cloud Exchange",
+"url": "configure-the-crowdstrike-plugin-in-threat-exchange.html",
+"text": "Configure the CrowdStrike Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1257,6 +1257,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-the-microsoft-defender-plugin.html",
+"text": "Configure the Microsoft Defender Plugin",
+"class": "topic-link section"
+},
+{
 "url": "configure-sharing-for-netskope-and-microsoft-defender.html",
 "text": "Configure Sharing for Netskope and Microsoft Defender",
 "class": "topic-link section"
@@ -1274,8 +1279,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "create-a-secure-web-gateway-custom-file-profile-327531.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token-327532.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
 "url": "configure-mimecast-credentials.html",
 "text": "Configure Mimecast Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-threat-exchange-327533.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -2593,6 +2613,84 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-platform.html",
+"text": "Next Generation API Data Protection Platform",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "next-generation-api-data-protection-platform-faq.html",
+"text": "Next Generation API Data Protection Platform FAQ",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
+"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-data-protection-policy-320219.html",
+"text": "Create an API Data Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-320220.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-the-api-data-protection-dashboard.html",
+"text": "View the API Data Protection Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"text": "Microsoft Office 365 OneDrive Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-files-page.html",
+"text": "Microsoft Office 365 OneDrive Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-users-page.html",
+"text": "Microsoft Office 365 OneDrive Users Page",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"text": "Microsoft Office 365 OneDrive for Business Audit Events",
+"class": "topic-link section"
+}]
+}]
+},
+{
 "url": "api-data-protection.html",
 "text": "API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -2704,12 +2802,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "retroactive-ongoing-processing-for-apps.html",
+"url": "retroactive-ongoing-processing-for-apps-117800.html",
 "text": "Retroactive Ongoing Processing for Apps",
 "class": "topic-link section"
 },
 {
-"url": "purpose-of-retroactive-ongoing-processing.html",
+"url": "purpose-of-retroactive-ongoing-processing-117801.html",
 "text": "Purpose of Retroactive Ongoing Processing",
 "class": "topic-link section"
 },
@@ -2721,7 +2819,7 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-data-protection-dashboard.html",
+"url": "view-the-api-data-protection-dashboard-120511.html",
 "text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
@@ -2760,21 +2858,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-cisco-webex-teams.html",
-"text": "Configure the API Connector for Cisco Webex Teams",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-cisco-webex-teams-for-api-data-protection.html",
 "text": "Configure Cisco Webex Teams for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118922.html",
@@ -2868,21 +2954,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-dropbox.html",
-"text": "Configure the API Connector for Dropbox",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117879.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-dropbox-for-api-data-protection.html",
 "text": "Configure Dropbox for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118923.html",
@@ -2983,21 +3057,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-egnyte.html",
-"text": "Configure the API Connector for Egnyte",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118030.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-egnyte-for-api-data-protection.html",
 "text": "Configure Egnyte for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118924.html",
@@ -3081,21 +3143,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-api-connectors-for-github.html",
-"text": "Configure API Connectors for GitHub",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-119536.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-github-for-api-data-protection.html",
 "text": "Configure GitHub for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-163059.html",
@@ -3174,21 +3224,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-gmail.html",
-"text": "Configure the API Connector for Gmail",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118124.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-gmail-for-api-data-protectionting.html",
 "text": "Configure Gmail for API Data Protectionting",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118926.html",
@@ -3272,21 +3310,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-google-drive.html",
-"text": "Configure the API Connector for Google Drive",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117901.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-google-drive-for-api-data-protection.html",
 "text": "Configure Google Drive for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118927.html",
@@ -3390,18 +3416,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
 "url": "supported-microsoft-office-365-licenses-for-api-data-protection.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-data-protection-159895.html",
+"url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
 "class": "topic-link section"
 ,
@@ -3415,6 +3435,23 @@ var toc = [{
 "url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account.html",
 "text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-an-app-catalog.html",
+"text": "Create an App Catalog",
+"class": "topic-link section"
+},
+{
+"url": "add-global-administrator-to-the-site-collection-administrators.html",
+"text": "Add Global Administrator to the Site Collection Administrators",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-introspection-v2-app.html",
+"text": "Install the Netskope Introspection v2 App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-onedrive-app.html",
@@ -3422,7 +3459,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326311.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
@@ -3477,7 +3514,6 @@ var toc = [{
 "url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3546,17 +3582,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"url": "microsoft-office-365-onedrive-files-and-users-page-207484.html",
 "text": "Microsoft Office 365 OneDrive Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-files-page.html",
+"url": "microsoft-office-365-onedrive-files-page-207485.html",
 "text": "Microsoft Office 365 OneDrive Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-users-page.html",
+"url": "microsoft-office-365-onedrive-users-page-207486.html",
 "text": "Microsoft Office 365 OneDrive Users Page",
 "class": "topic-link section"
 }]
@@ -3567,7 +3603,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"url": "microsoft-office-365-onedrive-for-business-audit-events-192030.html",
 "text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
@@ -3581,12 +3617,6 @@ var toc = [{
 {
 "url": "configure-microsoft-office-365-outlook-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Outlook for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-outlook-for-api-data-protection-159921.html",
-"text": "Configure Microsoft Office 365 Outlook for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -3597,21 +3627,20 @@ var toc = [{
 }]
 },
 {
-"url": "additional-reading-159922.html",
+"url": "additional-reading-326326.html",
 "text": "Additional Reading",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "internal-domain-limitations-159924.html",
+"url": "internal-domain-limitations-326327.html",
 "text": "Internal Domain Limitations",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159925.html",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326328.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3696,13 +3725,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-sharepoint-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 SharePoint for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "supported-microsoft-office-365-licenses-for-api-data-protection-189817.html",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-326329.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
@@ -3713,14 +3736,31 @@ var toc = [{
 ,
 "children": [
 {
-"url": "remove-the-netskope-introspection-v1-app-188975.html",
+"url": "remove-the-netskope-introspection-v1-app-326331.html",
 "text": "Remove the Netskope Introspection v1 App",
 "class": "topic-link section"
 },
 {
-"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-188917.html",
+"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-326332.html",
 "text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-an-app-catalog-326333.html",
+"text": "Create an App Catalog",
+"class": "topic-link section"
+},
+{
+"url": "add-global-administrator-to-the-site-collection-administrators-326334.html",
+"text": "Add Global Administrator to the Site Collection Administrators",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-introspection-v2-app-326335.html",
+"text": "Install the Netskope Introspection v2 App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-sharepoint-sites-app.html",
@@ -3728,19 +3768,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account-192121.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326337.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
 },
 {
-"url": "additional-reading-159914.html",
+"url": "additional-reading-326338.html",
 "text": "Additional Reading",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "grant-failure-on-newly-created-app-instance-223625.html",
+"url": "grant-failure-on-newly-created-app-instance-326339.html",
 "text": "Grant Failure on Newly Created App Instance",
 "class": "topic-link section"
 },
@@ -3755,12 +3795,12 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-multi-geo-support-163715.html",
+"url": "microsoft-office-365-multi-geo-support-326342.html",
 "text": "Microsoft Office 365 Multi-Geo Support",
 "class": "topic-link section"
 },
 {
-"url": "internal-domain-limitations-159916.html",
+"url": "internal-domain-limitations-326343.html",
 "text": "Internal Domain Limitations",
 "class": "topic-link section"
 },
@@ -3770,10 +3810,9 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159918.html",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326345.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3863,23 +3902,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 Teams for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "supported-microsoft-office-365-licenses-for-api-data-protection-232870.html",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-326346.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-teams-for-api-data-protection-178419.html",
+"url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Teams for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account-192474.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326348.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 },
@@ -3887,7 +3920,6 @@ var toc = [{
 "url": "azure-web-app-permissions-for-microsoft-office-365-teams.html",
 "text": "Azure Web App Permissions for Microsoft Office 365 Teams",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-a-microsoft-office-365-teams-policy.html",
@@ -3939,21 +3971,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-salesforce.html",
-"text": "Configure the API Connector for Salesforce",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117857.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-salesforce-for-api-data-protection.html",
 "text": "Configure Salesforce for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "security-compliance-report-for-salesforce.html",
@@ -4059,21 +4079,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-servicenow.html",
-"text": "Configure the API Connector for ServiceNow",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117924.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-servicenow-for-api-data-protection.html",
 "text": "Configure ServiceNow for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118935.html",
@@ -4142,21 +4150,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-slack-for-enterprise.html",
-"text": "Configure the API Connector for Slack for Enterprise",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118101.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-slack-enterprise-for-api-data-protection.html",
 "text": "Configure Slack Enterprise for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118936.html",
@@ -4250,21 +4246,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-slack-for-team.html",
-"text": "Configure the API Connector for Slack for Team",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117810.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-slack-for-team-for-api-data-protection.html",
 "text": "Configure Slack for Team for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118937.html",
@@ -4353,21 +4337,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-workplace-by-facebook.html",
-"text": "Configure the API Connector for Workplace by Facebook",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117944.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-workplace-by-facebook-for-api-data-protection.html",
 "text": "Configure Workplace by Facebook for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118938.html",
@@ -7738,6 +7710,38 @@ var toc = [{
 {
 "url": "known-issues-323671.html",
 "text": "Known Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "ctep-threat-content-release-notes.html",
+"text": "CTEP Threat Content Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "ctep-ips-threat-content-update-release---90-0-1-104.html",
+"text": "CTEP\/IPS Threat Content Update Release : 90.0.1.104",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release---89-0-1-94.html",
+"text": "CTEP\/IPS Threat Content Update Release : 89.0.1.94",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-88-1-1-91.html",
+"text": "CTEP\/IPS Threat Content Update Release 88.1.1.91",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release---88-0-1-87.html",
+"text": "CTEP\/IPS Threat Content Update Release : 88.0.1.87",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release---87-0-1-78.html",
+"text": "CTEP\/IPS Threat Content Update Release : 87.0.1.78",
 "class": "topic-link section"
 }]
 }]
