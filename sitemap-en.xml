@@ -646,7 +646,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2021-11-05</lastmod>
+    <lastmod>2021-11-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -663,6 +663,10 @@
   <url>
     <loc>https://docs.netskope.com/en/manage-a-publisher.html</loc>
     <lastmod>2021-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/publisher-metrics.html</loc>
+    <lastmod>2021-11-04</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-private-app.html</loc>
@@ -750,7 +754,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
-    <lastmod>2021-11-10</lastmod>
+    <lastmod>2021-11-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-feature-lists.html</loc>

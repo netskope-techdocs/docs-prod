@@ -890,6 +890,11 @@ var toc = [{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
+},
+{
+"url": "publisher-metrics.html",
+"text": "Publisher Metrics",
+"class": "topic-link section"
 }]
 },
 {
