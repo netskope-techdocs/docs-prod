@@ -56,6 +56,16 @@ function showCurrentLanguage(portalLanguage) {
     //Show/hide more category panels, only for the current language
     $("*[data-portal-language='" + portalLanguage + "'] .portal-single-publication:not(:lt(" + categoriesShown + "))").hide();
     var pageUrl = '?lang=' + portalLanguage;
+
+    // add query params to url
+    var queryParams = getQueryVariables();
+    delete queryParams['lang'];
+    var queryParamsString = getQueryVariableString(queryParams);
+
+    if (queryParamsString.length) {
+        pageUrl = pageUrl + "&" + queryParamsString;
+    }
+   
     var pageTitle = languageTitleMap[portalLanguage];
     if (pageTitle) {$("html head title").text(pageTitle);}
     window.history.replaceState('', '', pageUrl);
@@ -63,11 +73,33 @@ function showCurrentLanguage(portalLanguage) {
 
 function getQueryVariable(variable)
 {
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
+    var vars = getQueryVariables();
+    return vars[variable];
+}
+
+function getQueryVariables()
+{
+    var queryString = window.location.search.substring(1);
+    var varsString = queryString.split("&");
+    var vars = {};
+
+    for (var i = 0; i < varsString.length; i++) {
+        var pair = varsString[i].split("=");
+        vars[pair[0]] = pair[1];
+    }
+    
+    return vars;
+}
+
+function getQueryVariableString(queryParams)
+{
+    var parameters = [];
+
+    for (var key in queryParams) {
+        if (queryParams[key] !== undefined) {
+            parameters.push(encodeURI(key + '=' + queryParams[key]));
+        }
+    }
+
+    return parameters.join('&');
 }

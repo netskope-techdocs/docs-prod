@@ -173,6 +173,10 @@
           <span class="entity_name">BlobContainer</span>
         </li>
         
+        <li class="entity_key" data-entity-name="ClassicStorageAccount">
+          <span class="entity_name">ClassicStorageAccount</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="StorageAccount">
           <span class="entity_name">StorageAccount</span>
         </li>
@@ -247,6 +251,12 @@
             <td>Status</td>
             <td>string</td>
             <td>Subscription status</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkWatcherEnabled</td>
+            <td>boolean</td>
+            <td>Whether Network Watcher is Enabled for all regions in Azure subscription</td>
           </tr>
           
           <tr>
@@ -459,7 +469,7 @@
           <tr>
             <td>Type</td>
             <td>string</td>
-            <td>Storage Account Performance</td>
+            <td>Storage Account type</td>
           </tr>
           
           <tr>
@@ -483,7 +493,7 @@
           <tr>
             <td>KeyRegenerated</td>
             <td>Boolean</td>
-            <td>access key regeneration within last 3 months</td>
+            <td>Whether access key has been regenerated within the last 90 days</td>
           </tr>
           
           <tr>
@@ -767,6 +777,111 @@
           
         </table>
       
+        <table class="entity_table" data-entity-name="ClassicStorageAccount">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Classic Storage Account ID</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Classic Storage Account Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of location of the Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of location of the Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>ID of subscription of the Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Display name of subscription of the Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Time when Classic Storage Account was created</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Storage Account type</td>
+          </tr>
+          
+          <tr>
+            <td>StorageKind</td>
+            <td>string</td>
+            <td>Storage Kind</td>
+          </tr>
+          
+          <tr>
+            <td>ResourceGroup</td>
+            <td>string</td>
+            <td>Resource Group of Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>KeyRegeneratedIn90Days</td>
+            <td>Boolean</td>
+            <td>Whether access key has been regenerated within the last 90 days</td>
+          </tr>
+          
+          <tr>
+            <td>ProvisioningState</td>
+            <td>string</td>
+            <td>Provisioning State of the Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>Size</td>
+            <td>number</td>
+            <td>Blob Capacity of Classic Classic Storage Account</td>
+          </tr>
+          
+          <tr>
+            <td>RBACOwner</td>
+            <td>list</td>
+            <td>RBAC Owner at Classic SA scope</td>
+          </tr>
+          
+          <tr>
+            <td>RBACReader</td>
+            <td>list</td>
+            <td>RBAC Reader at Classic SA scope</td>
+          </tr>
+          
+          <tr>
+            <td>RBACContributor</td>
+            <td>list</td>
+            <td>RBAC Contributor at Classic SA scope</td>
+          </tr>
+          
+        </table>
+      
         <table class="entity_table" data-entity-name="VirtualMachine">
           <tr>
             <th>Attribute</th>
@@ -897,7 +1012,7 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>IPConfigurations</td>
             <td>list</td>
-            <td>List of Network interface IP configuration in the subnet</td>
+            <td>List of Network interface IP configuration id using subnet</td>
           </tr>
           
           <tr>
@@ -1041,13 +1156,13 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span>OSDisk</td>
             <td>boolean</td>
-            <td>Is OS Disk encrypted</td>
+            <td>Whether OS Disk encryption is in use</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span>DataDisk</td>
             <td>boolean</td>
-            <td>Is Data Disks encrypted</td>
+            <td>Whether Data Disk encryption is in use</td>
           </tr>
           
         </table>
@@ -1251,7 +1366,19 @@
           <tr>
             <td>Encrypted</td>
             <td>boolean</td>
-            <td>Whether disk is encrypted or not</td>
+            <td>True if encryption type is Encryption at-rest with a customer-managed key or Double encryption with platform-managed and customer-managed keys</td>
+          </tr>
+          
+          <tr>
+            <td>EncryptionType</td>
+            <td>string</td>
+            <td>The type of key used to encrypt the data of the disk</td>
+          </tr>
+          
+          <tr>
+            <td>DiskEncryptionSetId</td>
+            <td>string</td>
+            <td>ResourceId of the disk encryption set to use for enabling encryption at rest</td>
           </tr>
           
         </table>

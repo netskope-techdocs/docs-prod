@@ -80,6 +80,10 @@
           <span class="entity_name">DynamoDBTable</span>
         </li>
         
+        <li class="entity_key" data-entity-name="RDSCluster">
+          <span class="entity_name">RDSCluster</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="RDSInstance">
           <span class="entity_name">RDSInstance</span>
         </li>
@@ -172,6 +176,10 @@
           <span class="entity_name">ElasticLoadBalancer</span>
         </li>
         
+        <li class="entity_key" data-entity-name="InternetGateway">
+          <span class="entity_name">InternetGateway</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="NetworkACL">
           <span class="entity_name">NetworkACL</span>
         </li>
@@ -245,6 +253,10 @@
         
         <li class="entity_key" data-entity-name="ECRRepository">
           <span class="entity_name">ECRRepository</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="ElasticFileSystem">
+          <span class="entity_name">ElasticFileSystem</span>
         </li>
         
         <li class="entity_key" data-entity-name="S3Bucket">
@@ -3798,6 +3810,42 @@
             <td><span class="_TAB">&nbsp;</span>NextRotationTime</td>
             <td>number</td>
             <td>Time when the password needs to be changed next</td>
+          </tr>
+          
+          <tr>
+            <td>SSHPublicKeys</td>
+            <td>list</td>
+            <td>SSH public keys associated with the IAM user</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SSHPublicKeyId</td>
+            <td>string</td>
+            <td>The unique identifier for the SSH public key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the SSH public key. (Active|Inactive)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>UploadTime</td>
+            <td>number</td>
+            <td>SSH public key uploaded time</td>
+          </tr>
+          
+          <tr>
+            <td>ActiveSSHPublicKeysCount</td>
+            <td>number</td>
+            <td>Count of active SSH public keys associated with the IAM user</td>
+          </tr>
+          
+          <tr>
+            <td>InactiveSSHPublicKeysCount</td>
+            <td>number</td>
+            <td>Count of inactive SSH public keys associated with the IAM user</td>
           </tr>
           
           <tr>
@@ -7557,6 +7605,801 @@
             <td><span class="_TAB">&nbsp;</span>ScanOnPush</td>
             <td>boolean</td>
             <td>The setting that determines whether images are scanned after being pushed to a repository.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="ElasticFileSystem">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The ID of the file system, assigned by Amazon EFS</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the File System resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the File System resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the File System</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the File System</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZoneId</td>
+            <td>string</td>
+            <td>The unique and consistent identifier of the Availability Zone in which the file system's One Zone storage classes exist</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZoneName</td>
+            <td>string</td>
+            <td>Describes the AWS Availability Zone in which the file system is located, and is valid only for file systems using One Zone storage classes</td>
+          </tr>
+          
+          <tr>
+            <td>CreationTime</td>
+            <td>number</td>
+            <td>The time that the file system was created</td>
+          </tr>
+          
+          <tr>
+            <td>CreationToken</td>
+            <td>string</td>
+            <td>The opaque string specified in the request</td>
+          </tr>
+          
+          <tr>
+            <td>Encrypted</td>
+            <td>boolean</td>
+            <td>True, if the file system is encrypted, else False</td>
+          </tr>
+          
+          <tr>
+            <td>FileSystemArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) for the EFS file system</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>An AWS Key Management Service (AWS KMS) customer master key (CMK)</td>
+          </tr>
+          
+          <tr>
+            <td>LifeCycleState</td>
+            <td>string</td>
+            <td>The lifecycle phase of the file system. (creating|available|updating|deleting|deleted|error)</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name of the File System</td>
+          </tr>
+          
+          <tr>
+            <td>NumberOfMountTargets</td>
+            <td>number</td>
+            <td>The current number of mount targets that the file system has</td>
+          </tr>
+          
+          <tr>
+            <td>OwnerId</td>
+            <td>string</td>
+            <td>The AWS IAM account user that created the file system</td>
+          </tr>
+          
+          <tr>
+            <td>PerformanceMode</td>
+            <td>string</td>
+            <td>The performance mode of the file system. (generalPurpose|maxIO)</td>
+          </tr>
+          
+          <tr>
+            <td>ProvisionedThroughputInMibps</td>
+            <td>number</td>
+            <td>The amount of provisioned throughput, measured in MiB/s, for the file system</td>
+          </tr>
+          
+          <tr>
+            <td>SizeInBytes</td>
+            <td>sequence</td>
+            <td>The latest known metered size (in bytes) of data stored in the file system</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Timestamp</td>
+            <td>number</td>
+            <td>The time at which the size of data was determined</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>number</td>
+            <td>The latest known metered size (in bytes) of data stored in the file system</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ValueInIA</td>
+            <td>number</td>
+            <td>The latest known metered size (in bytes) of data stored in the Infrequent Access storage class</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ValueInStandard</td>
+            <td>number</td>
+            <td>The latest known metered size (in bytes) of data stored in the Standard storage class.</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>The tags associated with the file system</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>The tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>The value of the tag key</td>
+          </tr>
+          
+          <tr>
+            <td>ThroughputMode</td>
+            <td>string</td>
+            <td>Displays the file system's throughput mode. (bursting|provisioned)</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="InternetGateway">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The ID of the internet gateway.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The Name of the Internet Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Internet Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Internet Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Internet Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Internet Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>Attachments</td>
+            <td>list</td>
+            <td>Any VPCs attached to the internet gateway. Each item describes the attachment of a VPC to an internet gateway or an egress-only internet gateway.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>The current state of the attachment. For an internet gateway, the state is available when attached to a VPC; otherwise, this value is not returned.(available|attaching|attached|detaching|detached)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VPC</td>
+            <td>Reference to VPC</td>
+            <td>Amazon Virtual Private Cloud (VPC)</td>
+          </tr>
+          
+          <tr>
+            <td>OwnerId</td>
+            <td>string</td>
+            <td>The ID of the Amazon Web Services account that owns the internet gateway.</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Any tags assigned to the internet gateway.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>The key of the tag. (Tag keys are case-sensitive and accept a maximum of 127 Unicode characters. May not begin with aws)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>The value of the tag. (Tag values are case-sensitive and accept a maximum of 255 Unicode characters)</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RDSCluster">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) for the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>A unique key that identifies a DB cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the RDS Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the RDS Cluster</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the RDS Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the RDS Cluster resides</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamKMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>The Amazon Web Services KMS key used for encrypting messages in the database activity stream.</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamStatus</td>
+            <td>string</td>
+            <td>The status of the database activity stream. (stopped|starting|started|stopping)</td>
+          </tr>
+          
+          <tr>
+            <td>AllocatedStorage</td>
+            <td>number</td>
+            <td>For all database engines except Amazon Aurora, it specifies the allocated storage size in gibibytes (GiB). For Aurora, it returns 1, since Aurora DB cluster storage size is dynamically adjusted.</td>
+          </tr>
+          
+          <tr>
+            <td>AssociatedRoles</td>
+            <td>list</td>
+            <td>List of the Amazon Web Services Identity and Access Management (IAM) roles that are associated with the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RoleArn</td>
+            <td>Reference to IAMRole</td>
+            <td>The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Describes the state of association between the IAM role and the DB cluster. (ACTIVE|PENDING|INVALID)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FeatureName</td>
+            <td>string</td>
+            <td>The name of the feature associated with the Amazon Web Services Identity and Access Management (IAM) role.</td>
+          </tr>
+          
+          <tr>
+            <td>AvailabilityZones</td>
+            <td>list</td>
+            <td>List of Availability Zones (AZs) where instances in the DB cluster can be created.</td>
+          </tr>
+          
+          <tr>
+            <td>BackupRetentionPeriod</td>
+            <td>number</td>
+            <td>Number of days for which automatic DB snapshots are retained.</td>
+          </tr>
+          
+          <tr>
+            <td>ClusterCreateTime</td>
+            <td>number</td>
+            <td>Time when the DB cluster was created,</td>
+          </tr>
+          
+          <tr>
+            <td>CopyTagsToSnapshot</td>
+            <td>boolean</td>
+            <td>Specifies whether tags are copied from the DB cluster to snapshots of the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>CrossAccountClone</td>
+            <td>boolean</td>
+            <td>Specifies whether the DB cluster is a clone of a DB cluster owned by a different Amazon Web Services account.</td>
+          </tr>
+          
+          <tr>
+            <td>DBClusterMembers</td>
+            <td>list</td>
+            <td>Provides the list of instances that make up the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBInstance</td>
+            <td>Reference to RDSInstance</td>
+            <td>Instance for this member of the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IsClusterWriter</td>
+            <td>boolean</td>
+            <td>Value that is true if the cluster member is the primary instance for the DB cluster and false otherwise.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBClusterParameterGroupStatus</td>
+            <td>string</td>
+            <td>Status of the DB cluster parameter group for this member of the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>PromotionTier</td>
+            <td>integer</td>
+            <td>Specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance.</td>
+          </tr>
+          
+          <tr>
+            <td>DBClusterParameterGroup</td>
+            <td>string</td>
+            <td>Name of the DB cluster parameter group for the DB cluster</td>
+          </tr>
+          
+          <tr>
+            <td>DBSubnetGroup</td>
+            <td>string</td>
+            <td>Name, description, and subnets in the subnet group associated with the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>DatabaseName</td>
+            <td>string</td>
+            <td>Name of the initial database of this DB cluster that was provided at create time</td>
+          </tr>
+          
+          <tr>
+            <td>DbClusterResourceId</td>
+            <td>string</td>
+            <td>Identifier for the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>DeletionProtection</td>
+            <td>boolean</td>
+            <td>Indicates if the DB cluster has deletion protection enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>DomainMemberships</td>
+            <td>list</td>
+            <td>The Active Directory Domain membership records associated with the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Domain</td>
+            <td>string</td>
+            <td>The identifier of the Active Directory Domain.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the Active Directory Domain membership for the DB instance or cluster. (joined|pending-join|failed)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FQDN</td>
+            <td>string</td>
+            <td>The fully qualified domain name of the Active Directory Domain.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IAMRoleName</td>
+            <td>string</td>
+            <td>The name of the IAM role to be used when making API calls to the Directory Service.</td>
+          </tr>
+          
+          <tr>
+            <td>EarliestRestorableTime</td>
+            <td>number</td>
+            <td>The earliest time to which a database can be restored with point-in-time restore.</td>
+          </tr>
+          
+          <tr>
+            <td>EnabledCloudwatchLogsExports</td>
+            <td>list</td>
+            <td>A list of log types that this DB cluster is configured to export to CloudWatch Logs.</td>
+          </tr>
+          
+          <tr>
+            <td>Endpoint</td>
+            <td>string</td>
+            <td>Specifies the connection endpoint for the primary instance of the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>Engine</td>
+            <td>string</td>
+            <td>The name of the database engine to be used for this DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>EngineMode</td>
+            <td>string</td>
+            <td>The DB engine mode of the DB cluster. (provisioned|serverless|parallelquery|global|multimaster)</td>
+          </tr>
+          
+          <tr>
+            <td>EngineVersion</td>
+            <td>string</td>
+            <td>Indicates the database engine version.</td>
+          </tr>
+          
+          <tr>
+            <td>HostedZoneId</td>
+            <td>string</td>
+            <td>Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.</td>
+          </tr>
+          
+          <tr>
+            <td>HttpEndpointEnabled</td>
+            <td>boolean</td>
+            <td>Indicates whether the HTTP endpoint for an Aurora Serverless DB cluster is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>IAMDatabaseAuthenticationEnabled</td>
+            <td>boolean</td>
+            <td>Indicates whether the mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>KMSKey</td>
+            <td>Reference to KMSKey</td>
+            <td>AWS KMS key identifier for the encrypted DB</td>
+          </tr>
+          
+          <tr>
+            <td>LatestRestorableTime</td>
+            <td>number</td>
+            <td>Specifies the latest time to which a database can be restored with point-in-time restore.</td>
+          </tr>
+          
+          <tr>
+            <td>MasterUsername</td>
+            <td>string</td>
+            <td>Contains the master username for the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>MultiAZ</td>
+            <td>boolean</td>
+            <td>Specifies whether the DB cluster has instances in multiple Availability Zones.</td>
+          </tr>
+          
+          <tr>
+            <td>PendingModifiedValues</td>
+            <td>sequence</td>
+            <td>A value that specifies that changes to the DB cluster are pending.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>PendingCloudwatchLogsExports</td>
+            <td>sequence</td>
+            <td>A list of the log types whose configuration is  in the process of being activated or deactivated.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LogTypesToEnable</td>
+            <td>list</td>
+            <td>Log types that are in the process of being deactivated.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LogTypesToDisable</td>
+            <td>list</td>
+            <td>Log types that are in the process of being enabled.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBClusterIdentifier</td>
+            <td>string</td>
+            <td>The DBClusterIdentifier value for the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MasterUserPassword</td>
+            <td>string</td>
+            <td>The master credentials for the DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IAMDatabaseAuthenticationEnabled</td>
+            <td>boolean</td>
+            <td>Indicates whether mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EngineVersion</td>
+            <td>string</td>
+            <td>The database engine version.</td>
+          </tr>
+          
+          <tr>
+            <td>Port</td>
+            <td>number</td>
+            <td>Specifies the port that the database engine is listening on.</td>
+          </tr>
+          
+          <tr>
+            <td>PreferredBackupWindow</td>
+            <td>string</td>
+            <td>Specifies the daily time range during which automated backups are created</td>
+          </tr>
+          
+          <tr>
+            <td>PreferredMaintenanceWindow</td>
+            <td>string</td>
+            <td>Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).</td>
+          </tr>
+          
+          <tr>
+            <td>ReadReplicaIdentifiers</td>
+            <td>list</td>
+            <td>Contains list of identifiers of the read replicas associated with this DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>ReaderEndpoint</td>
+            <td>string</td>
+            <td>The reader endpoint for the DB cluster that load-balances connections across available Aurora Replicas.</td>
+          </tr>
+          
+          <tr>
+            <td>ScalingConfigurationInfo</td>
+            <td>sequence</td>
+            <td>Information about scaling configuration for an Aurora DB cluster in serverless DB engine mode.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MinCapacity</td>
+            <td>number</td>
+            <td>The minimum capacity for the Aurora DB cluster in serverless DB engine mode.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>MaxCapacity</td>
+            <td>number</td>
+            <td>The maximum capacity for an Aurora DB cluster in serverless DB engine mode.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AutoPause</td>
+            <td>boolean</td>
+            <td>Indicates whether automatic pause is allowed for the Aurora DB cluster in serverless DB engine mode.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecondsUntilAutoPause</td>
+            <td>number</td>
+            <td>The remaining amount of time, in seconds, before the Aurora DB cluster in serverless mode is paused.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TimeoutAction</td>
+            <td>string</td>
+            <td>The action that occurs when Aurora times out while attempting to change the capacity of an Aurora Serverless cluster. (ForceApplyCapacityChange|RollbackCapacityChange )</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecondsBeforeTimeout</td>
+            <td>number</td>
+            <td>The number of seconds before scaling times out.</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>Current state of this DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>StorageEncrypted</td>
+            <td>boolean</td>
+            <td>Specifies whether the DB cluster is encrypted.</td>
+          </tr>
+          
+          <tr>
+            <td>VpcSecurityGroups</td>
+            <td>list</td>
+            <td>Provides a list of VPC security groups that the DB cluster belongs to.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecurityGroup</td>
+            <td>Reference to SecurityGroup</td>
+            <td>VPC security group.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the VPC security group.</td>
+          </tr>
+          
+          <tr>
+            <td>CharacterSetName</td>
+            <td>string</td>
+            <td>Name of the character set that this cluster is associated with.</td>
+          </tr>
+          
+          <tr>
+            <td>AutomaticRestartTime</td>
+            <td>number</td>
+            <td>The time when a stopped DB cluster is restarted automatically.</td>
+          </tr>
+          
+          <tr>
+            <td>PercentProgress</td>
+            <td>string</td>
+            <td>The progress of the current operation as a percentage.</td>
+          </tr>
+          
+          <tr>
+            <td>CustomEndpoints</td>
+            <td>list</td>
+            <td>Identifies all custom endpoints associated with the cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>DBClusterOptionGroupMemberships</td>
+            <td>list</td>
+            <td>Provides the list of option group memberships for this DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBClusterOptionGroupName</td>
+            <td>string</td>
+            <td>Specifies the name of the DB cluster option group.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Specifies the status of the DB cluster option group.</td>
+          </tr>
+          
+          <tr>
+            <td>ReplicationSourceIdentifier</td>
+            <td>string</td>
+            <td>Contains the identifier of the source DB cluster for the read replica.</td>
+          </tr>
+          
+          <tr>
+            <td>CloneGroupId</td>
+            <td>string</td>
+            <td>Identifies the clone group to which the DB cluster is associated.</td>
+          </tr>
+          
+          <tr>
+            <td>EarliestBacktrackTime</td>
+            <td>number</td>
+            <td>The earliest time to which a DB cluster can be backtracked.</td>
+          </tr>
+          
+          <tr>
+            <td>BacktrackWindow</td>
+            <td>number</td>
+            <td>The target backtrack window, in seconds. If this value is set to 0, backtracking is disabled for the DB cluster. Otherwise, backtracking is enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>BacktrackConsumedChangeRecords</td>
+            <td>number</td>
+            <td>The number of change records stored for Backtrack.</td>
+          </tr>
+          
+          <tr>
+            <td>Capacity</td>
+            <td>number</td>
+            <td>The current capacity of an Aurora Serverless DB cluster.</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamMode</td>
+            <td>string</td>
+            <td>The mode of the database activity stream. (sync|async)</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamKinesisStreamName</td>
+            <td>string</td>
+            <td>The name of the Amazon Kinesis data stream used for the database activity stream.</td>
+          </tr>
+          
+          <tr>
+            <td>GlobalWriteForwardingStatus</td>
+            <td>string</td>
+            <td>Specifies whether a secondary cluster in an Aurora global database has write forwarding enabled, not enabled, or is in the process of enabling it. (enabled|disabled|enabling|disabling|unknown)</td>
+          </tr>
+          
+          <tr>
+            <td>GlobalWriteForwardingRequested</td>
+            <td>boolean</td>
+            <td>Specifies whether you have requested to enable write forwarding for a secondary cluster in an Aurora global database.</td>
           </tr>
           
         </table>

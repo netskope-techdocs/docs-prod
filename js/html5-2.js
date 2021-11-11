@@ -17,7 +17,7 @@ $(document).ready(function () {
     displayAccordionTarget(hash);
     
     /*Same page*/
-    $(document.body).on('click', 'a.xref, a.link, .aa-dropdown-menu a, #search-result-wrapper a', function (event) {
+    $(document.body).on('click', 'a.xref, a.topic-link, a.link, .aa-dropdown-menu a, #search-result-wrapper a', function (event) {
         var id = this.hash;
         displayAccordionTarget(id);
     });

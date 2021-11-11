@@ -1,643 +1,303 @@
 var toc = [{
-"url": "admin-console.html",
-"text": "Admin Console",
+"url": "release-notes.html",
+"text": "Release Notes",
 "class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
-"url": "administration.html",
-"text": "Administration",
+"url": "netskope-release-notes-version-90-1-0.html",
+"text": "Netskope Release Notes Version 90.1.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "managing-administrators.html",
-"text": "Managing Administrators",
+"url": "new-platform-available---next-generation-api-data-protection.html",
+"text": "New Platform Available - Next-Generation API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "create-administrators.html",
-"text": "Create Administrators",
+"url": "new-features-and-enhancements.html",
+"text": "New Features and Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "create-roles-for-restricted-administrators.html",
-"text": "Create Roles for Restricted Administrators",
+"url": "fixed-issues.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 },
 {
-"url": "assign-roles-to-restricted-administrators.html",
-"text": "Assign Roles to Restricted Administrators",
-"class": "topic-link section"
-},
-{
-"url": "configure-single-sign-on-for-the-netskope-ui.html",
-"text": "Configure Single Sign On for the Netskope UI",
-"class": "topic-link section"
-},
-{
-"url": "set-log-in-attempts.html",
-"text": "Set Log In Attempts",
-"class": "topic-link section"
-},
-{
-"url": "set-idle-timeout.html",
-"text": "Set Idle Timeout",
-"class": "topic-link section"
-},
-{
-"url": "set-password-expiration.html",
-"text": "Set Password Expiration",
-"class": "topic-link section"
-},
-{
-"url": "disallow-concurrent-logins-by-an-admin.html",
-"text": "Disallow Concurrent Logins by an Admin",
-"class": "topic-link section"
-},
-{
-"url": "change-access-for-an-admin-account.html",
-"text": "Change Access for an Admin Account",
+"url": "known-issues.html",
+"text": "Known Issues",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-ui-and-dashboard.html",
-"text": "Netskope UI and Dashboard",
+"url": "netskope-hotfix-release-notes-version-88-1-0.html",
+"text": "Netskope Hotfix Release Notes Version 88.1.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "user-interface.html",
-"text": "User Interface",
+"url": "new-features-and-enhancements-316177.html",
+"text": "New Features and Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "netskope-dashboards.html",
-"text": "Netskope Dashboards",
+"url": "new-product-available---remote-browser-isolation.html",
+"text": "New Product Available - Remote Browser Isolation",
 "class": "topic-link section"
 },
 {
-"url": "dashboard-widgets-library.html",
-"text": "Dashboard Widgets Library",
+"url": "new-product-available---netskope-cloud-firewall.html",
+"text": "New Product Available - Netskope Cloud Firewall",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-316180.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
 {
-"url": "incidents.html",
-"text": "Incidents",
+"url": "on-premises-appliance-release-notes-version-77-6-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.6.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "incidents-interface.html",
-"text": "Incidents Interface",
+"url": "overview.html",
+"text": "Overview",
 "class": "topic-link section"
 },
 {
-"url": "search-filters-and-query-fields.html",
-"text": "Search Filters and Query Fields",
+"url": "new-features-and-enhancements-85473.html",
+"text": "New Features and Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "dlp.html",
-"text": "DLP",
+"url": "other-changes.html",
+"text": "Other changes",
 "class": "topic-link section"
 },
 {
-"url": "anomalies.html",
-"text": "Anomalies",
+"url": "known-issues-85475.html",
+"text": "Known Issues",
 "class": "topic-link section"
 },
 {
-"url": "compromised-credentials.html",
-"text": "Compromised Credentials",
-"class": "topic-link section"
-},
-{
-"url": "behavior-analytics.html",
-"text": "Behavior Analytics",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "behavior-analytics-user-confidence-index.html",
-"text": "Behavior Analytics User Confidence Index",
-"class": "topic-link section"
-},
-{
-"url": "behavior-analytics-incident-details.html",
-"text": "Behavior Analytics Incident Details",
+"url": "fixed-issues-85476.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
 {
-"url": "malware.html",
-"text": "Malware",
-"class": "topic-link section"
-},
-{
-"url": "malicious-sites.html",
-"text": "Malicious Sites",
-"class": "topic-link section"
-},
-{
-"url": "quarantine.html",
-"text": "Quarantine",
-"class": "topic-link section"
-},
-{
-"url": "legal-hold.html",
-"text": "Legal Hold",
-"class": "topic-link section"
-}]
-},
-{
-"url": "skopeit.html",
-"text": "SkopeIT",
+"url": "on-premises-appliance-release-notes-version-77-5-0.html",
+"text": "On-Premises Appliance Release Notes Version 77.5.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "skopeit-pages.html",
-"text": "SkopeIT Pages",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "applications.html",
-"text": "Applications",
+"url": "overview-for-on-premises-appliance-version-77-5-0.html",
+"text": "Overview for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "sites.html",
-"text": "Sites",
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-77-5-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "users.html",
-"text": "Users",
+"url": "other-changes-for-on-premises-appliance-version-77-5-0.html",
+"text": "Other changes for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
-,
-"children": [
+},
 {
-"url": "user-details.html",
-"text": "User Details",
+"url": "known-issues-for-on-premises-appliance-version-77-5-0.html",
+"text": "Known Issues for On-Premises Appliance Version 77.5.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-on-premises-appliance-version-77-5-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
 },
 {
-"url": "events.html",
-"text": "Events",
-"class": "topic-link section"
-},
-{
-"url": "alerts.html",
-"text": "Alerts",
-"class": "topic-link section"
-},
-{
-"url": "application-events.html",
-"text": "Application Events",
-"class": "topic-link section"
-},
-{
-"url": "page-events.html",
-"text": "Page Events",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "page-events-faqs.html",
-"text": "Page Events FAQs",
-"class": "topic-link section"
-}]
-},
-{
-"url": "network-events.html",
-"text": "Network Events",
-"class": "topic-link section"
-}]
-},
-{
-"url": "category-definitions.html",
-"text": "Category Definitions",
-"class": "topic-link section"
-},
-{
-"url": "dynamic-classification.html",
-"text": "Dynamic Classification",
-"class": "topic-link section"
-},
-{
-"url": "skopeit-query-language.html",
-"text": "SkopeIT Query Language",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "skopeit-query-language-search-examples.html",
-"text": "SkopeIT Query Language Search Examples",
-"class": "topic-link section"
-},
-{
-"url": "skopeit-queries-library.html",
-"text": "SkopeIT Queries Library",
-"class": "topic-link section"
-},
-{
-"url": "save-skopeit-searches.html",
-"text": "Save SkopeIT Searches",
-"class": "topic-link section"
-},
-{
-"url": "create-a-watch-list.html",
-"text": "Create a Watch List",
-"class": "topic-link section"
-}]
-},
-{
-"url": "filter-data-sources.html",
-"text": "Filter Data Sources",
-"class": "topic-link section"
-},
-{
-"url": "clear-events.html",
-"text": "Clear Events",
-"class": "topic-link section"
-},
-{
-"url": "netskope-platform-rest-apis.html",
-"text": "Netskope Platform REST APIs",
+"url": "virtual-appliance-release-notes-version-77-6-0.html",
+"text": "Virtual Appliance Release Notes Version 77.6.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "rest-api-v1-overview.html",
-"text": "REST API v1 Overview",
+"url": "overview-85641.html",
+"text": "Overview",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-v2-overview.html",
-"text": "REST API v2 Overview",
+"url": "requirements.html",
+"text": "Requirements",
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis.html",
-"text": "Netskope Platform API Endpoints",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "get-alerts-data.html",
-"text": "Get Alerts Data",
+"url": "new-features-and-enhancements-85643.html",
+"text": "New Features and Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "get-events-data.html",
-"text": "Get Events Data",
+"url": "other-changes-213637.html",
+"text": "Other changes",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-events-and-alerts-response-descriptions.html",
-"text": "REST API Events and Alerts Response Descriptions",
+"url": "known-issues-85645.html",
+"text": "Known Issues",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-pagination-best-practices.html",
-"text": "REST API Pagination Best Practices",
-"class": "topic-link section"
-},
-{
-"url": "get-client-data.html",
-"text": "Get Client Data",
-"class": "topic-link section"
-},
-{
-"url": "get-reports-data.html",
-"text": "Get Reports Data",
-"class": "topic-link section"
-},
-{
-"url": "get-advanced-analytics-data.html",
-"text": "Get Advanced Analytics Data",
-"class": "topic-link section"
-},
-{
-"url": "get-a-steering-configuration-list.html",
-"text": "Get a Steering Configuration List",
-"class": "topic-link section"
-},
-{
-"url": "get-steering-configuration-information.html",
-"text": "Get Steering Configuration Information",
-"class": "topic-link section"
-},
-{
-"url": "get-user-configuration-data.html",
-"text": "Get User Configuration Data",
-"class": "topic-link section"
-},
-{
-"url": "get-log-upload-token.html",
-"text": "Get Log Upload Token",
-"class": "topic-link section"
-},
-{
-"url": "manage-user-roles.html",
-"text": "Manage User Roles",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-user-role.html",
-"text": "Create a User Role",
-"class": "topic-link section"
-},
-{
-"url": "update-a-user-role.html",
-"text": "Update a User Role",
-"class": "topic-link section"
-},
-{
-"url": "delete-a-user-role.html",
-"text": "Delete a User Role",
-"class": "topic-link section"
-},
-{
-"url": "list-user-roles.html",
-"text": "List User Roles",
+"url": "fixed-issues-85646.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
 {
-"url": "manage-quarantine-files.html",
-"text": "Manage Quarantine Files",
-"class": "topic-link section"
-},
-{
-"url": "manage-legal-hold-files.html",
-"text": "Manage Legal Hold Files",
-"class": "topic-link section"
-},
-{
-"url": "update-a-file-hash-list.html",
-"text": "Update a File Hash List",
-"class": "topic-link section"
-},
-{
-"url": "update-a-url-list.html",
-"text": "Update a URL List",
-"class": "topic-link section"
-},
-{
-"url": "acknowledge-anomalies.html",
-"text": "Acknowledge Anomalies",
-"class": "topic-link section"
-},
-{
-"url": "acknowledge-compromised-credentials.html",
-"text": "Acknowledge Compromised Credentials",
-"class": "topic-link section"
-}]
-}]
-}]
-},
-{
-"url": "cloud-confidence-index.html",
-"text": "Cloud Confidence Index",
+"url": "virtual-appliance-release-notes-version-77-5-0.html",
+"text": "Virtual Appliance Release Notes Version 77.5.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "evaluate-apps.html",
-"text": "Evaluate Apps",
+"url": "overview-for-virtual-appliance-version-77-5-0.html",
+"text": "Overview for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "advanced-search.html",
-"text": "Advanced Search",
+"url": "requirements-for-virtual-appliance-version-77-5-0.html",
+"text": "Requirements for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "view-specific-app-details.html",
-"text": "View Specific App Details",
+"url": "new-features-and-enhancements-for-virtual-appliance-version-77-5-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "compare-apps.html",
-"text": "Compare Apps",
+"url": "other-changes-for-virtual-appliance-version-77-5-0.html",
+"text": "Other changes for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "tag-apps.html",
-"text": "Tag Apps",
+"url": "known-issues-for-virtual-appliance-version-77-5-0.html",
+"text": "Known Issues for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 },
 {
-"url": "create-pdf-reports.html",
-"text": "Create PDF Reports",
+"url": "fixed-issues-for-virtual-appliance-version-77-5-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
 },
 {
-"url": "advanced-analytics.html",
-"text": "Advanced Analytics",
+"url": "management-plane-appliance-release-notes.html",
+"text": "Management Plane Appliance Release Notes",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "advanced-analytics-interface.html",
-"text": "Advanced Analytics Interface",
+"url": "overview-148593.html",
+"text": "Overview",
 "class": "topic-link section"
 },
 {
-"url": "netskope-library.html",
-"text": "Netskope Library",
+"url": "new-features-and-enhancements-149241.html",
+"text": "New Features and Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "explore-page.html",
-"text": "Explore Page",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "exploring-data-in-reports.html",
-"text": "Exploring Data in Reports",
+"url": "known-issues-148594.html",
+"text": "Known Issues",
 "class": "topic-link section"
 },
 {
-"url": "filtering-and-limiting-data.html",
-"text": "Filtering and Limiting Data",
-"class": "topic-link section"
-},
-{
-"url": "merging-results-from-different-explores.html",
-"text": "Merging Results from Different Explores",
-"class": "topic-link section"
-},
-{
-"url": "creating-expressions.html",
-"text": "Creating Expressions",
-"class": "topic-link section"
-},
-{
-"url": "filter-expressions.html",
-"text": "Filter Expressions",
-"class": "topic-link section"
-},
-{
-"url": "functions-and-operators.html",
-"text": "Functions and Operators",
-"class": "topic-link section"
-},
-{
-"url": "using-table-calculations.html",
-"text": "Using Table Calculations",
-"class": "topic-link section"
-},
-{
-"url": "adding-custom-formatting-to-numeric-fields.html",
-"text": "Adding Custom Formatting to Numeric Fields",
-"class": "topic-link section"
-},
-{
-"url": "adding-custom-fields.html",
-"text": "Adding Custom Fields",
+"url": "fixed-issues-148595.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
 {
-"url": "creating-reports--dashboards-.html",
-"text": "Creating Reports (Dashboards)",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "creating-visualizations-and-graphs.html",
-"text": "Creating Visualizations and Graphs",
-"class": "topic-link section"
-},
-{
-"url": "visualization-types.html",
-"text": "Visualization Types",
-"class": "topic-link section"
-}]
-}]
-},
-{
-"url": "reports.html",
-"text": "Reports",
+"url": "netskope-private-access-release-notes-version-1-4-6431.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6431",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "reports-interface.html",
-"text": "Reports Interface",
+"url": "fixed-issues-323570.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 },
 {
-"url": "create-a-report.html",
-"text": "Create a Report",
+"url": "known-issues-323671.html",
+"text": "Known Issues",
 "class": "topic-link section"
+}]
 },
 {
-"url": "create-a-report-using-the-template-library.html",
-"text": "Create a Report Using the Template Library",
-"class": "topic-link section"
-},
-{
-"url": "widget-library.html",
-"text": "Widget Library",
-"class": "topic-link section"
-},
-{
-"url": "create-custom-reports.html",
-"text": "Create Custom Reports",
-"class": "topic-link section"
+"url": "ctep-threat-content-release-notes.html",
+"text": "CTEP Threat Content Release Notes",
+"class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "create-a-page-events-custom-report.html",
-"text": "Create a Page Events Custom Report",
+"url": "ctep-ips-threat-content-update-release---90-0-1-104.html",
+"text": "CTEP\/IPS Threat Content Update Release : 90.0.1.104",
 "class": "topic-link section"
 },
 {
-"url": "create-a-high-risk-users-report.html",
-"text": "Create a High Risk Users Report",
+"url": "ctep-ips-threat-content-update-release---89-0-1-94.html",
+"text": "CTEP\/IPS Threat Content Update Release : 89.0.1.94",
 "class": "topic-link section"
 },
 {
-"url": "create-a-high-risk-apps-report.html",
-"text": "Create a High Risk Apps Report",
+"url": "ctep-ips-threat-content-update-release-88-1-1-91.html",
+"text": "CTEP\/IPS Threat Content Update Release 88.1.1.91",
 "class": "topic-link section"
 },
 {
-"url": "create-a-high-risk-software-development-apps-report.html",
-"text": "Create a High Risk Software Development Apps Report",
+"url": "ctep-ips-threat-content-update-release---88-0-1-87.html",
+"text": "CTEP\/IPS Threat Content Update Release : 88.0.1.87",
 "class": "topic-link section"
 },
 {
-"url": "create-a-top-users-accessing-high-risk-software-development-apps-report.html",
-"text": "Create a Top Users Accessing High Risk Software Development Apps Report",
+"url": "ctep-ips-threat-content-update-release---87-0-1-78.html",
+"text": "CTEP\/IPS Threat Content Update Release : 87.0.1.78",
 "class": "topic-link section"
-},
-{
-"url": "create-a-users-accessing-a-specific-app-report.html",
-"text": "Create a Users Accessing a Specific App Report",
-"class": "topic-link section"
-},
-{
-"url": "create-an-apps-used-in-risky-countries-report.html",
-"text": "Create an Apps Used in Risky Countries Report",
-"class": "topic-link section"
+}]
 }]
 },
 {
-"url": "custom-report-queries.html",
-"text": "Custom Report Queries",
-"class": "topic-link section"
-},
-{
-"url": "create-predefined-reports.html",
-"text": "Create Predefined Reports",
-"class": "topic-link section"
+"url": "getting-started.html",
+"text": "Getting Started",
+"class": "topic-link section top-nav-link top-nav-link"
 ,
 "children": [
 {
-"url": "create-a-top-10-biggest-uploaders-report.html",
-"text": "Create a Top 10 Biggest Uploaders Report",
+"url": "netskope-security-cloud-features.html",
+"text": "Netskope Security Cloud Features",
 "class": "topic-link section"
 },
 {
-"url": "create-a-top-apps-by-usage-report.html",
-"text": "Create a Top Apps by Usage Report",
-"class": "topic-link section"
+"url": "deployment-options.html",
+"text": "Deployment Options",
+"class": "topic-link section original-topic original-topic"
 },
 {
-"url": "web-usage-summary.html",
-"text": "Web Usage Summary",
-"class": "topic-link section"
-}]
+"url": "about-the-admin-console.html",
+"text": "About the Admin Console",
+"class": "topic-link section original-topic original-topic"
 },
 {
-"url": "other-types-of-reports.html",
-"text": "Other Types of Reports",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "common-reports.html",
-"text": "Common Reports",
-"class": "topic-link section"
-},
-{
-"url": "rest-api-reports.html",
-"text": "REST API Reports",
-"class": "topic-link section"
-}]
-}]
+"url": "getting-started-microlearning-video-library.html",
+"text": "Getting Started Microlearning Video Library",
+"class": "topic-link section original-topic original-topic"
 }]
 },
 {
@@ -821,7 +481,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "category-definitions-310264.html",
+"url": "category-definitions.html",
 "text": "Category Definitions",
 "class": "topic-link section"
 }]
@@ -837,23 +497,23 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "web-usage-summary-119067.html",
+"url": "web-usage-summary.html",
 "text": "Web Usage Summary",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "sites-119070.html",
+"url": "sites.html",
 "text": "Sites",
 "class": "topic-link section"
 },
 {
-"url": "page-events-119058.html",
+"url": "page-events.html",
 "text": "Page Events",
 "class": "topic-link section"
 },
 {
-"url": "create-a-page-events-custom-report-119163.html",
+"url": "create-a-page-events-custom-report.html",
 "text": "Create a Page Events Custom Report",
 "class": "topic-link section"
 }]
@@ -889,6 +549,11 @@ var toc = [{
 {
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
+"class": "topic-link section"
+},
+{
+"url": "publisher-metrics.html",
+"text": "Publisher Metrics",
 "class": "topic-link section"
 }]
 },
@@ -1141,8 +806,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-crowdstrike-plugin-in-cloud-exchange.html",
-"text": "Configure the CrowdStrike Plugin in Cloud Exchange",
+"url": "configure-the-crowdstrike-plugin-in-threat-exchange.html",
+"text": "Configure the CrowdStrike Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1257,6 +922,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-the-microsoft-defender-plugin.html",
+"text": "Configure the Microsoft Defender Plugin",
+"class": "topic-link section"
+},
+{
 "url": "configure-sharing-for-netskope-and-microsoft-defender.html",
 "text": "Configure Sharing for Netskope and Microsoft Defender",
 "class": "topic-link section"
@@ -1274,8 +944,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "create-a-secure-web-gateway-custom-file-profile-327531.html",
+"text": "Create a Secure Web Gateway Custom File Profile",
+"class": "topic-link section"
+},
+{
+"url": "get-the-netskope-api-token-327532.html",
+"text": "Get the Netskope API Token",
+"class": "topic-link section"
+},
+{
 "url": "configure-mimecast-credentials.html",
 "text": "Configure Mimecast Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-in-threat-exchange-327533.html",
+"text": "Configure the Netskope Plugin in Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1521,7 +1206,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "users-291062.html",
+"url": "users.html",
 "text": "Users",
 "class": "topic-link section"
 },
@@ -1803,7 +1488,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "overview.html",
+"url": "overview-163008.html",
 "text": "Overview",
 "class": "topic-link section"
 },
@@ -2083,7 +1768,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dlp-163054.html",
+"url": "dlp.html",
 "text": "DLP",
 "class": "topic-link section"
 },
@@ -2253,12 +1938,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "rest-api-v1-overview-316628.html",
+"url": "rest-api-v1-overview.html",
 "text": "REST API v1 Overview",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-v2-overview-316629.html",
+"url": "rest-api-v2-overview.html",
 "text": "REST API v2 Overview",
 "class": "topic-link section"
 },
@@ -2593,6 +2278,84 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-platform.html",
+"text": "Next Generation API Data Protection Platform",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "next-generation-api-data-protection-platform-faq.html",
+"text": "Next Generation API Data Protection Platform FAQ",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
+"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "delete-or-downgrade-the-global-administrator-account.html",
+"text": "Delete or Downgrade the Global Administrator Account",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-data-protection-policy-320219.html",
+"text": "Create an API Data Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-320220.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "retroactive-ongoing-processing-for-apps.html",
+"text": "Retroactive Ongoing Processing for Apps",
+"class": "topic-link section"
+},
+{
+"url": "purpose-of-retroactive-ongoing-processing.html",
+"text": "Purpose of Retroactive Ongoing Processing",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-the-api-data-protection-dashboard.html",
+"text": "View the API Data Protection Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"text": "Microsoft Office 365 OneDrive Files and Users Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-files-page.html",
+"text": "Microsoft Office 365 OneDrive Files Page",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-onedrive-users-page.html",
+"text": "Microsoft Office 365 OneDrive Users Page",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"text": "Microsoft Office 365 OneDrive for Business Audit Events",
+"class": "topic-link section"
+}]
+}]
+},
+{
 "url": "api-data-protection.html",
 "text": "API Data Protection",
 "class": "topic-link section reused-publication reused-publication"
@@ -2704,12 +2467,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "retroactive-ongoing-processing-for-apps.html",
+"url": "retroactive-ongoing-processing-for-apps-117800.html",
 "text": "Retroactive Ongoing Processing for Apps",
 "class": "topic-link section"
 },
 {
-"url": "purpose-of-retroactive-ongoing-processing.html",
+"url": "purpose-of-retroactive-ongoing-processing-117801.html",
 "text": "Purpose of Retroactive Ongoing Processing",
 "class": "topic-link section"
 },
@@ -2721,7 +2484,7 @@ var toc = [{
 }]
 },
 {
-"url": "view-the-api-data-protection-dashboard.html",
+"url": "view-the-api-data-protection-dashboard-120511.html",
 "text": "View the API Data Protection Dashboard",
 "class": "topic-link section"
 ,
@@ -2760,21 +2523,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-cisco-webex-teams.html",
-"text": "Configure the API Connector for Cisco Webex Teams",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-cisco-webex-teams-for-api-data-protection.html",
 "text": "Configure Cisco Webex Teams for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118922.html",
@@ -2868,21 +2619,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-dropbox.html",
-"text": "Configure the API Connector for Dropbox",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117879.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-dropbox-for-api-data-protection.html",
 "text": "Configure Dropbox for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118923.html",
@@ -2983,21 +2722,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-egnyte.html",
-"text": "Configure the API Connector for Egnyte",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118030.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-egnyte-for-api-data-protection.html",
 "text": "Configure Egnyte for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118924.html",
@@ -3081,21 +2808,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-api-connectors-for-github.html",
-"text": "Configure API Connectors for GitHub",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-119536.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-github-for-api-data-protection.html",
 "text": "Configure GitHub for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-163059.html",
@@ -3174,21 +2889,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-gmail.html",
-"text": "Configure the API Connector for Gmail",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118124.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-gmail-for-api-data-protectionting.html",
 "text": "Configure Gmail for API Data Protectionting",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118926.html",
@@ -3272,21 +2975,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-google-drive.html",
-"text": "Configure the API Connector for Google Drive",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117901.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-google-drive-for-api-data-protection.html",
 "text": "Configure Google Drive for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118927.html",
@@ -3390,18 +3081,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
 "url": "supported-microsoft-office-365-licenses-for-api-data-protection.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-onedrive-for-api-data-protection-159895.html",
+"url": "configure-microsoft-office-365-onedrive-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 OneDrive for API Data Protection",
 "class": "topic-link section"
 ,
@@ -3415,6 +3100,23 @@ var toc = [{
 "url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account.html",
 "text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-an-app-catalog.html",
+"text": "Create an App Catalog",
+"class": "topic-link section"
+},
+{
+"url": "add-global-administrator-to-the-site-collection-administrators.html",
+"text": "Add Global Administrator to the Site Collection Administrators",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-introspection-v2-app.html",
+"text": "Install the Netskope Introspection v2 App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-onedrive-app.html",
@@ -3422,7 +3124,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326311.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
@@ -3477,7 +3179,6 @@ var toc = [{
 "url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3546,17 +3247,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "microsoft-office-365-onedrive-files-and-users-page.html",
+"url": "microsoft-office-365-onedrive-files-and-users-page-207484.html",
 "text": "Microsoft Office 365 OneDrive Files and Users Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-files-page.html",
+"url": "microsoft-office-365-onedrive-files-page-207485.html",
 "text": "Microsoft Office 365 OneDrive Files Page",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-users-page.html",
+"url": "microsoft-office-365-onedrive-users-page-207486.html",
 "text": "Microsoft Office 365 OneDrive Users Page",
 "class": "topic-link section"
 }]
@@ -3567,7 +3268,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-onedrive-for-business-audit-events.html",
+"url": "microsoft-office-365-onedrive-for-business-audit-events-192030.html",
 "text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
@@ -3581,12 +3282,6 @@ var toc = [{
 {
 "url": "configure-microsoft-office-365-outlook-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Outlook for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-outlook-for-api-data-protection-159921.html",
-"text": "Configure Microsoft Office 365 Outlook for API Data Protection",
 "class": "topic-link section"
 ,
 "children": [
@@ -3597,21 +3292,20 @@ var toc = [{
 }]
 },
 {
-"url": "additional-reading-159922.html",
+"url": "additional-reading-326326.html",
 "text": "Additional Reading",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "internal-domain-limitations-159924.html",
+"url": "internal-domain-limitations-326327.html",
 "text": "Internal Domain Limitations",
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159925.html",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326328.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3696,13 +3390,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-sharepoint-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 SharePoint for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "supported-microsoft-office-365-licenses-for-api-data-protection-189817.html",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-326329.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
@@ -3713,14 +3401,31 @@ var toc = [{
 ,
 "children": [
 {
-"url": "remove-the-netskope-introspection-v1-app-188975.html",
+"url": "remove-the-netskope-introspection-v1-app-326331.html",
 "text": "Remove the Netskope Introspection v1 App",
 "class": "topic-link section"
 },
 {
-"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-188917.html",
+"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-326332.html",
 "text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-an-app-catalog-326333.html",
+"text": "Create an App Catalog",
+"class": "topic-link section"
+},
+{
+"url": "add-global-administrator-to-the-site-collection-administrators-326334.html",
+"text": "Add Global Administrator to the Site Collection Administrators",
+"class": "topic-link section"
+},
+{
+"url": "install-the-netskope-introspection-v2-app-326335.html",
+"text": "Install the Netskope Introspection v2 App",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-sharepoint-sites-app.html",
@@ -3728,19 +3433,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account-192121.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326337.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 }]
 },
 {
-"url": "additional-reading-159914.html",
+"url": "additional-reading-326338.html",
 "text": "Additional Reading",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "grant-failure-on-newly-created-app-instance-223625.html",
+"url": "grant-failure-on-newly-created-app-instance-326339.html",
 "text": "Grant Failure on Newly Created App Instance",
 "class": "topic-link section"
 },
@@ -3755,12 +3460,12 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-multi-geo-support-163715.html",
+"url": "microsoft-office-365-multi-geo-support-326342.html",
 "text": "Microsoft Office 365 Multi-Geo Support",
 "class": "topic-link section"
 },
 {
-"url": "internal-domain-limitations-159916.html",
+"url": "internal-domain-limitations-326343.html",
 "text": "Internal Domain Limitations",
 "class": "topic-link section"
 },
@@ -3770,10 +3475,9 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-159918.html",
+"url": "microsoft-office-365-and-netskope-api-data-protection-frequently-asked-questions-326345.html",
 "text": "Microsoft Office 365 and Netskope API Data Protection Frequently Asked Questions",
 "class": "topic-link section"
-}]
 }]
 },
 {
@@ -3863,23 +3567,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
-"text": "Configure Microsoft Office 365 Teams for API Data Protection",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "supported-microsoft-office-365-licenses-for-api-data-protection-232870.html",
+"url": "supported-microsoft-office-365-licenses-for-api-data-protection-326346.html",
 "text": "Supported Microsoft Office 365 Licenses for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-microsoft-office-365-teams-for-api-data-protection-178419.html",
+"url": "configure-microsoft-office-365-teams-for-api-data-protection.html",
 "text": "Configure Microsoft Office 365 Teams for API Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "delete-or-downgrade-the-global-administrator-account-192474.html",
+"url": "delete-or-downgrade-the-global-administrator-account-326348.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
 },
@@ -3887,7 +3585,6 @@ var toc = [{
 "url": "azure-web-app-permissions-for-microsoft-office-365-teams.html",
 "text": "Azure Web App Permissions for Microsoft Office 365 Teams",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-a-microsoft-office-365-teams-policy.html",
@@ -3939,21 +3636,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-salesforce.html",
-"text": "Configure the API Connector for Salesforce",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117857.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-salesforce-for-api-data-protection.html",
 "text": "Configure Salesforce for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "security-compliance-report-for-salesforce.html",
@@ -4059,21 +3744,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-servicenow.html",
-"text": "Configure the API Connector for ServiceNow",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117924.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-servicenow-for-api-data-protection.html",
 "text": "Configure ServiceNow for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118935.html",
@@ -4142,21 +3815,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-slack-for-enterprise.html",
-"text": "Configure the API Connector for Slack for Enterprise",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-118101.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-slack-enterprise-for-api-data-protection.html",
 "text": "Configure Slack Enterprise for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118936.html",
@@ -4250,21 +3911,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-slack-for-team.html",
-"text": "Configure the API Connector for Slack for Team",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117810.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-slack-for-team-for-api-data-protection.html",
 "text": "Configure Slack for Team for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118937.html",
@@ -4353,21 +4002,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-api-connector-for-workplace-by-facebook.html",
-"text": "Configure the API Connector for Workplace by Facebook",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "api-data-protection-api-connectors-117944.html",
-"text": "API Data Protection API Connectors",
-"class": "topic-link section"
-},
-{
 "url": "configure-workplace-by-facebook-for-api-data-protection.html",
 "text": "Configure Workplace by Facebook for API Data Protection",
 "class": "topic-link section"
-}]
 },
 {
 "url": "create-an-api-data-protection-policy-118938.html",
@@ -4914,12 +4551,12 @@ var toc = [{
 ,
 "children": [
 {
-"url": "malware-86191.html",
+"url": "malware.html",
 "text": "Malware",
 "class": "topic-link section"
 },
 {
-"url": "malicious-sites-86192.html",
+"url": "malicious-sites.html",
 "text": "Malicious Sites",
 "class": "topic-link section"
 }]
@@ -6701,6 +6338,648 @@ var toc = [{
 }]
 },
 {
+"url": "admin-console.html",
+"text": "Admin Console",
+"class": "topic-link section top-nav-link top-nav-link"
+,
+"children": [
+{
+"url": "administration.html",
+"text": "Administration",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "managing-administrators.html",
+"text": "Managing Administrators",
+"class": "topic-link section"
+},
+{
+"url": "create-administrators.html",
+"text": "Create Administrators",
+"class": "topic-link section"
+},
+{
+"url": "create-roles-for-restricted-administrators.html",
+"text": "Create Roles for Restricted Administrators",
+"class": "topic-link section"
+},
+{
+"url": "assign-roles-to-restricted-administrators.html",
+"text": "Assign Roles to Restricted Administrators",
+"class": "topic-link section"
+},
+{
+"url": "configure-single-sign-on-for-the-netskope-ui.html",
+"text": "Configure Single Sign On for the Netskope UI",
+"class": "topic-link section"
+},
+{
+"url": "set-log-in-attempts.html",
+"text": "Set Log In Attempts",
+"class": "topic-link section"
+},
+{
+"url": "set-idle-timeout.html",
+"text": "Set Idle Timeout",
+"class": "topic-link section"
+},
+{
+"url": "set-password-expiration.html",
+"text": "Set Password Expiration",
+"class": "topic-link section"
+},
+{
+"url": "disallow-concurrent-logins-by-an-admin.html",
+"text": "Disallow Concurrent Logins by an Admin",
+"class": "topic-link section"
+},
+{
+"url": "change-access-for-an-admin-account.html",
+"text": "Change Access for an Admin Account",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-ui-and-dashboard.html",
+"text": "Netskope UI and Dashboard",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "user-interface.html",
+"text": "User Interface",
+"class": "topic-link section"
+},
+{
+"url": "netskope-dashboards.html",
+"text": "Netskope Dashboards",
+"class": "topic-link section"
+},
+{
+"url": "dashboard-widgets-library.html",
+"text": "Dashboard Widgets Library",
+"class": "topic-link section"
+}]
+},
+{
+"url": "incidents.html",
+"text": "Incidents",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "incidents-interface.html",
+"text": "Incidents Interface",
+"class": "topic-link section"
+},
+{
+"url": "search-filters-and-query-fields.html",
+"text": "Search Filters and Query Fields",
+"class": "topic-link section"
+},
+{
+"url": "dlp-86207.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "anomalies.html",
+"text": "Anomalies",
+"class": "topic-link section"
+},
+{
+"url": "compromised-credentials.html",
+"text": "Compromised Credentials",
+"class": "topic-link section"
+},
+{
+"url": "behavior-analytics.html",
+"text": "Behavior Analytics",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "behavior-analytics-user-confidence-index.html",
+"text": "Behavior Analytics User Confidence Index",
+"class": "topic-link section"
+},
+{
+"url": "behavior-analytics-incident-details.html",
+"text": "Behavior Analytics Incident Details",
+"class": "topic-link section"
+}]
+},
+{
+"url": "malware-86210.html",
+"text": "Malware",
+"class": "topic-link section"
+},
+{
+"url": "malicious-sites-86211.html",
+"text": "Malicious Sites",
+"class": "topic-link section"
+},
+{
+"url": "quarantine.html",
+"text": "Quarantine",
+"class": "topic-link section"
+},
+{
+"url": "legal-hold.html",
+"text": "Legal Hold",
+"class": "topic-link section"
+}]
+},
+{
+"url": "skopeit.html",
+"text": "SkopeIT",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "skopeit-pages.html",
+"text": "SkopeIT Pages",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "applications.html",
+"text": "Applications",
+"class": "topic-link section"
+},
+{
+"url": "sites-127014.html",
+"text": "Sites",
+"class": "topic-link section"
+},
+{
+"url": "users-86217.html",
+"text": "Users",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "user-details.html",
+"text": "User Details",
+"class": "topic-link section"
+}]
+},
+{
+"url": "events.html",
+"text": "Events",
+"class": "topic-link section"
+},
+{
+"url": "alerts.html",
+"text": "Alerts",
+"class": "topic-link section"
+},
+{
+"url": "application-events.html",
+"text": "Application Events",
+"class": "topic-link section"
+},
+{
+"url": "page-events-112502.html",
+"text": "Page Events",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "page-events-faqs.html",
+"text": "Page Events FAQs",
+"class": "topic-link section"
+}]
+},
+{
+"url": "network-events.html",
+"text": "Network Events",
+"class": "topic-link section"
+}]
+},
+{
+"url": "category-definitions-86220.html",
+"text": "Category Definitions",
+"class": "topic-link section"
+},
+{
+"url": "dynamic-classification.html",
+"text": "Dynamic Classification",
+"class": "topic-link section"
+},
+{
+"url": "skopeit-query-language.html",
+"text": "SkopeIT Query Language",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "skopeit-query-language-search-examples.html",
+"text": "SkopeIT Query Language Search Examples",
+"class": "topic-link section"
+},
+{
+"url": "skopeit-queries-library.html",
+"text": "SkopeIT Queries Library",
+"class": "topic-link section"
+},
+{
+"url": "save-skopeit-searches.html",
+"text": "Save SkopeIT Searches",
+"class": "topic-link section"
+},
+{
+"url": "create-a-watch-list.html",
+"text": "Create a Watch List",
+"class": "topic-link section"
+}]
+},
+{
+"url": "filter-data-sources.html",
+"text": "Filter Data Sources",
+"class": "topic-link section"
+},
+{
+"url": "clear-events.html",
+"text": "Clear Events",
+"class": "topic-link section"
+},
+{
+"url": "netskope-platform-rest-apis.html",
+"text": "Netskope Platform REST APIs",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "rest-api-v1-overview-316626.html",
+"text": "REST API v1 Overview",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-v2-overview-316627.html",
+"text": "REST API v2 Overview",
+"class": "topic-link section"
+},
+{
+"url": "netskope-rest-apis.html",
+"text": "Netskope Platform API Endpoints",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "get-alerts-data.html",
+"text": "Get Alerts Data",
+"class": "topic-link section"
+},
+{
+"url": "get-events-data.html",
+"text": "Get Events Data",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-events-and-alerts-response-descriptions.html",
+"text": "REST API Events and Alerts Response Descriptions",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-pagination-best-practices.html",
+"text": "REST API Pagination Best Practices",
+"class": "topic-link section"
+},
+{
+"url": "get-client-data.html",
+"text": "Get Client Data",
+"class": "topic-link section"
+},
+{
+"url": "get-reports-data.html",
+"text": "Get Reports Data",
+"class": "topic-link section"
+},
+{
+"url": "get-advanced-analytics-data.html",
+"text": "Get Advanced Analytics Data",
+"class": "topic-link section"
+},
+{
+"url": "get-a-steering-configuration-list.html",
+"text": "Get a Steering Configuration List",
+"class": "topic-link section"
+},
+{
+"url": "get-steering-configuration-information.html",
+"text": "Get Steering Configuration Information",
+"class": "topic-link section"
+},
+{
+"url": "get-user-configuration-data.html",
+"text": "Get User Configuration Data",
+"class": "topic-link section"
+},
+{
+"url": "get-log-upload-token.html",
+"text": "Get Log Upload Token",
+"class": "topic-link section"
+},
+{
+"url": "manage-user-roles.html",
+"text": "Manage User Roles",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-user-role.html",
+"text": "Create a User Role",
+"class": "topic-link section"
+},
+{
+"url": "update-a-user-role.html",
+"text": "Update a User Role",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-user-role.html",
+"text": "Delete a User Role",
+"class": "topic-link section"
+},
+{
+"url": "list-user-roles.html",
+"text": "List User Roles",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-quarantine-files.html",
+"text": "Manage Quarantine Files",
+"class": "topic-link section"
+},
+{
+"url": "manage-legal-hold-files.html",
+"text": "Manage Legal Hold Files",
+"class": "topic-link section"
+},
+{
+"url": "update-a-file-hash-list.html",
+"text": "Update a File Hash List",
+"class": "topic-link section"
+},
+{
+"url": "update-a-url-list.html",
+"text": "Update a URL List",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-anomalies.html",
+"text": "Acknowledge Anomalies",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-compromised-credentials.html",
+"text": "Acknowledge Compromised Credentials",
+"class": "topic-link section"
+}]
+}]
+}]
+},
+{
+"url": "cloud-confidence-index.html",
+"text": "Cloud Confidence Index",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "evaluate-apps.html",
+"text": "Evaluate Apps",
+"class": "topic-link section"
+},
+{
+"url": "advanced-search.html",
+"text": "Advanced Search",
+"class": "topic-link section"
+},
+{
+"url": "view-specific-app-details.html",
+"text": "View Specific App Details",
+"class": "topic-link section"
+},
+{
+"url": "compare-apps.html",
+"text": "Compare Apps",
+"class": "topic-link section"
+},
+{
+"url": "tag-apps.html",
+"text": "Tag Apps",
+"class": "topic-link section"
+},
+{
+"url": "create-pdf-reports.html",
+"text": "Create PDF Reports",
+"class": "topic-link section"
+}]
+},
+{
+"url": "advanced-analytics.html",
+"text": "Advanced Analytics",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "advanced-analytics-interface.html",
+"text": "Advanced Analytics Interface",
+"class": "topic-link section"
+},
+{
+"url": "netskope-library.html",
+"text": "Netskope Library",
+"class": "topic-link section"
+},
+{
+"url": "explore-page.html",
+"text": "Explore Page",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "exploring-data-in-reports.html",
+"text": "Exploring Data in Reports",
+"class": "topic-link section"
+},
+{
+"url": "filtering-and-limiting-data.html",
+"text": "Filtering and Limiting Data",
+"class": "topic-link section"
+},
+{
+"url": "merging-results-from-different-explores.html",
+"text": "Merging Results from Different Explores",
+"class": "topic-link section"
+},
+{
+"url": "creating-expressions.html",
+"text": "Creating Expressions",
+"class": "topic-link section"
+},
+{
+"url": "filter-expressions.html",
+"text": "Filter Expressions",
+"class": "topic-link section"
+},
+{
+"url": "functions-and-operators.html",
+"text": "Functions and Operators",
+"class": "topic-link section"
+},
+{
+"url": "using-table-calculations.html",
+"text": "Using Table Calculations",
+"class": "topic-link section"
+},
+{
+"url": "adding-custom-formatting-to-numeric-fields.html",
+"text": "Adding Custom Formatting to Numeric Fields",
+"class": "topic-link section"
+},
+{
+"url": "adding-custom-fields.html",
+"text": "Adding Custom Fields",
+"class": "topic-link section"
+}]
+},
+{
+"url": "creating-reports--dashboards-.html",
+"text": "Creating Reports (Dashboards)",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "creating-visualizations-and-graphs.html",
+"text": "Creating Visualizations and Graphs",
+"class": "topic-link section"
+},
+{
+"url": "visualization-types.html",
+"text": "Visualization Types",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "reports.html",
+"text": "Reports",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "reports-interface.html",
+"text": "Reports Interface",
+"class": "topic-link section"
+},
+{
+"url": "create-a-report.html",
+"text": "Create a Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-report-using-the-template-library.html",
+"text": "Create a Report Using the Template Library",
+"class": "topic-link section"
+},
+{
+"url": "widget-library.html",
+"text": "Widget Library",
+"class": "topic-link section"
+},
+{
+"url": "create-custom-reports.html",
+"text": "Create Custom Reports",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-page-events-custom-report-110782.html",
+"text": "Create a Page Events Custom Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-high-risk-users-report.html",
+"text": "Create a High Risk Users Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-high-risk-apps-report.html",
+"text": "Create a High Risk Apps Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-high-risk-software-development-apps-report.html",
+"text": "Create a High Risk Software Development Apps Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-top-users-accessing-high-risk-software-development-apps-report.html",
+"text": "Create a Top Users Accessing High Risk Software Development Apps Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-users-accessing-a-specific-app-report.html",
+"text": "Create a Users Accessing a Specific App Report",
+"class": "topic-link section"
+},
+{
+"url": "create-an-apps-used-in-risky-countries-report.html",
+"text": "Create an Apps Used in Risky Countries Report",
+"class": "topic-link section"
+}]
+},
+{
+"url": "custom-report-queries.html",
+"text": "Custom Report Queries",
+"class": "topic-link section"
+},
+{
+"url": "create-predefined-reports.html",
+"text": "Create Predefined Reports",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-top-10-biggest-uploaders-report.html",
+"text": "Create a Top 10 Biggest Uploaders Report",
+"class": "topic-link section"
+},
+{
+"url": "create-a-top-apps-by-usage-report.html",
+"text": "Create a Top Apps by Usage Report",
+"class": "topic-link section"
+},
+{
+"url": "web-usage-summary-110786.html",
+"text": "Web Usage Summary",
+"class": "topic-link section"
+}]
+},
+{
+"url": "other-types-of-reports.html",
+"text": "Other Types of Reports",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "common-reports.html",
+"text": "Common Reports",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-reports.html",
+"text": "REST API Reports",
+"class": "topic-link section"
+}]
+}]
+}]
+},
+{
 "url": "appliances.html",
 "text": "Appliances",
 "class": "topic-link section top-nav-link top-nav-link"
@@ -7505,240 +7784,220 @@ var toc = [{
 }]
 },
 {
-"url": "release-notes.html",
-"text": "Release Notes",
-"class": "topic-link section top-nav-link top-nav-link"
+"url": "videos.html",
+"text": "Videos",
+"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
 ,
 "children": [
 {
-"url": "netskope-release-notes-version-89-0-0.html",
-"text": "Netskope Release Notes Version 89.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"url": "customer-webinars.html",
+"text": "Customer Webinars",
+"class": "topic-link section"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
+"url": "reimagine-your-perimeter.html",
+"text": "Reimagine Your Perimeter",
+"class": "topic-link section original-topic original-topic"
 },
 {
-"url": "fixed-issues.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
+"url": "translating-your-ciso-s-strategy-into-a-risk-focused-security-plan.html",
+"text": "Translating your CISO's Strategy into a Risk Focused Security Plan",
+"class": "topic-link section original-topic original-topic"
 },
 {
-"url": "appendix--fixed-issue-134322.html",
-"text": "Appendix: Fixed Issue 134322",
-"class": "topic-link section"
+"url": "advanced-analytics-318933.html",
+"text": "Advanced Analytics",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-dlp-best-practices-and-netskope-ml-ai-update.html",
+"text": "Netskope DLP Best Practices and Netskope ML\/AI Update",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "using-sase-to-secure-the-public-cloud.html",
+"text": "Using SASE to Secure the Public Cloud",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "securing-microsoft-teams-with-netskope.html",
+"text": "Securing Microsoft Teams with Netskope",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "deploying-the-netskope-for-splunk-app.html",
+"text": "Deploying the Netskope for Splunk App",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "using-netskope-ml-ai-to-identify-sensitive-information-and-threats.html",
+"text": "Using Netskope ML\/AI to Identify Sensitive Information and Threats",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-cloud-and-threat-report.html",
+"text": "Netskope Cloud and Threat Report",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-and-okta.html",
+"text": "Netskope and Okta",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "defending-against-insider-threats-with-netskope.html",
+"text": "Defending Against Insider Threats with Netskope",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "threat-research-and-prevention.html",
+"text": "Threat Research and Prevention",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-for-private-access.html",
+"text": "Netskope for Private Access",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "protecting-sensitive-data-in-a-cloud-first-world.html",
+"text": "Protecting Sensitive Data in a Cloud-first World",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "a-unified-security-solution-for-all-your-web-traffic-with-netskope-for-web.html",
+"text": "A Unified Security Solution for All Your Web Traffic with Netskope for Web",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-dlp---protecting-ip-in-the-cloud.html",
+"text": "Netskope DLP - Protecting IP in the Cloud",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "enhance-your-security-posture-with-netskope-threat-intelligence.html",
+"text": "Enhance Your Security Posture with Netskope Threat Intelligence",
+"class": "topic-link section original-topic original-topic"
 }]
 },
 {
-"url": "netskope-hotfix-release-notes-version-88-1-0.html",
-"text": "Netskope Hotfix Release Notes Version 88.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"url": "microlearning.html",
+"text": "Microlearning",
+"class": "topic-link section"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-316177.html",
-"text": "New Features and Enhancements",
+"url": "policy-enhancements.html",
+"text": "Policy Enhancements",
 "class": "topic-link section"
 },
 {
-"url": "new-product-available---remote-browser-isolation.html",
-"text": "New Product Available - Remote Browser Isolation",
+"url": "netskope-reverse-proxy-as-a-service-with-azure-active-directory--ad-.html",
+"text": "Netskope Reverse Proxy as a Service with Azure Active Directory (AD)",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-reverse-proxy-with-salesforce.html",
+"text": "Netskope Reverse Proxy with SalesForce",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "okta-and-netskope-scim-provisioning.html",
+"text": "Okta and Netskope SCIM Provisioning",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-ipsec-steering---part-1---initial-setup.html",
+"text": "Netskope IPSec Steering - Part 1 - Initial Setup",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-ipsec-steering---part-2---create-a-sample-policy.html",
+"text": "Netskope IPSec Steering - Part 2 - Create a Sample Policy",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-ipsec-steering---part-3---enable-forward-proxy-for-saml-authentication.html",
+"text": "Netskope IPSec Steering - Part 3 - Enable Forward Proxy for SAML Authentication",
 "class": "topic-link section"
 },
 {
-"url": "new-product-available---netskope-cloud-firewall.html",
-"text": "New Product Available - Netskope Cloud Firewall",
-"class": "topic-link section"
+"url": "ping-and-netskope-role-based-access-control.html",
+"text": "Ping and Netskope Role-Based Access Control",
+"class": "topic-link section original-topic original-topic"
 },
 {
-"url": "fixed-issues-316180.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
+"url": "configuring-netskope-with-sailpoint.html",
+"text": "Configuring Netskope with SailPoint",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-splunk-integration.html",
+"text": "Netskope Splunk Integration",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-auth-proxy-with-okta-and-o365.html",
+"text": "Netskope Auth Proxy with Okta and O365",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-client-deployment-with-email-invitation.html",
+"text": "Netskope Client Deployment with Email Invitation",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-directory-importer-via-email--formerly-ad-importer-.html",
+"text": "Netskope Directory Importer via Email (Formerly AD Importer)",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "configuring-azure-ad-scim-with-netskope-scim.html",
+"text": "Configuring Azure AD SCIM with Netskope SCIM",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "configuring-okta-scim-with-netskope-scim.html",
+"text": "Configuring Okta SCIM with Netskope SCIM",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-client-install-for-macos-with-airwatch.html",
+"text": "Netskope Client Install for MacOS with Airwatch",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-client-deployment-with-jamf---upn-and-multi-user-modes.html",
+"text": "Netskope Client Deployment with JAMF - UPN and Multi-User Modes",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-client-deployment-with-jamf---email-mode.html",
+"text": "Netskope Client Deployment with JAMF - Email Mode",
+"class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-client-deployment-with-jamf---non-ad-joined-mac-os-devices.html",
+"text": "Netskope Client Deployment with JAMF - Non-AD Joined Mac OS Devices",
+"class": "topic-link section original-topic original-topic"
 }]
 },
 {
-"url": "on-premises-appliance-release-notes-version-77-5-0.html",
-"text": "On-Premises Appliance Release Notes Version 77.5.0",
-"class": "topic-link section reused-publication reused-publication"
+"url": "demos.html",
+"text": "Demos",
+"class": "topic-link section"
 ,
 "children": [
 {
-"url": "overview-for-on-premises-appliance-version-77-5-0.html",
-"text": "Overview for On-Premises Appliance Version 77.5.0",
+"url": "netskope-demo.html",
+"text": "Netskope Demo",
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-for-on-premises-appliance-version-77-5-0.html",
-"text": "New Features and Enhancements for On-Premises Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "other-changes-for-on-premises-appliance-version-77-5-0.html",
-"text": "Other changes for On-Premises Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-for-on-premises-appliance-version-77-5-0.html",
-"text": "Known Issues for On-Premises Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-for-on-premises-appliance-version-77-5-0.html",
-"text": "Fixed Issues for On-Premises Appliance Version 77.5.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "on-premises-appliance-release-notes-version-77-6-0.html",
-"text": "On-Premises Appliance Release Notes Version 77.6.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "overview-85472.html",
-"text": "Overview",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-85473.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "other-changes.html",
-"text": "Other changes",
-"class": "topic-link section"
-},
-{
-"url": "known-issues.html",
-"text": "Known Issues",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-85476.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "virtual-appliance-release-notes-version-77-5-0.html",
-"text": "Virtual Appliance Release Notes Version 77.5.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "overview-for-virtual-appliance-version-77-5-0.html",
-"text": "Overview for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "requirements-for-virtual-appliance-version-77-5-0.html",
-"text": "Requirements for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-for-virtual-appliance-version-77-5-0.html",
-"text": "New Features and Enhancements for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "other-changes-for-virtual-appliance-version-77-5-0.html",
-"text": "Other changes for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-for-virtual-appliance-version-77-5-0.html",
-"text": "Known Issues for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-for-virtual-appliance-version-77-5-0.html",
-"text": "Fixed Issues for Virtual Appliance Version 77.5.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "virtual-appliance-release-notes-version-77-6-0.html",
-"text": "Virtual Appliance Release Notes Version 77.6.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "overview-85641.html",
-"text": "Overview",
-"class": "topic-link section"
-},
-{
-"url": "requirements.html",
-"text": "Requirements",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-85643.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "other-changes-213637.html",
-"text": "Other changes",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-85645.html",
-"text": "Known Issues",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-85646.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "management-plane-appliance-release-notes.html",
-"text": "Management Plane Appliance Release Notes",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "overview-148593.html",
-"text": "Overview",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-149241.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-148594.html",
-"text": "Known Issues",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-148595.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6431.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6431",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "fixed-issues-323570.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-323671.html",
-"text": "Known Issues",
-"class": "topic-link section"
+"url": "real-time-user-coaching.html",
+"text": "Real-time User Coaching",
+"class": "topic-link section original-topic original-topic"
 }]
 }]
 }];

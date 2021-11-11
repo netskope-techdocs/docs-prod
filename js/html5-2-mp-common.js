@@ -78,30 +78,44 @@ function addGlobalVersions(versionsfile) {
     });
 }
 
+function URLFromHref(href) {
+  const hrefWithHost = href.includes(window.location.origin) ? href : window.location.origin + href;
+  return new URL(hrefWithHost);
+}
+
 function mapVersionPage(){
     //Version dropdown: Loading same page in other version, if it exists, otherwise redirecting to home page of other version
     $(document).on('click', '.version-dropdown li a', function (event) {
         event.stopPropagation();
+        /* currentVersion and newVersion should contain all path to document like
+        '/versionFolder/oneMoreFolder/1.9.1'
+        but without hostname, no absolut paths!
+         */
         // default value
-        var currentVersion = window.location.pathname.split('/')[1];
+        let currentVersion = window.location.pathname.split('/')[1];
         // let's find actual current version among available
-        var $parent = $(this).closest('.version-dropdown');
+        const $parent = $(this).closest('.version-dropdown');
         $parent.find('li a').each( function (idx, el) {
-            const version = el.getAttribute('href').replace('index.html', '');
+            const versionURL = URLFromHref(el.getAttribute('href'));
+            const version = versionURL.pathname.replace('index.html', '');
             if (window.location.pathname.indexOf(version) === 0) {
                 currentVersion = version;
             }
         });
-        var lang = document.documentElement.lang || portalLanguage || '';
-        var candidateDefault = this.getAttribute('href');
-        var urlDefault = new URL(window.location.origin + candidateDefault);
-        urlDefault.searchParams.set('lang', lang);
-        var newVersion = candidateDefault.replace('index.html', '')
-        var candidate = window.location.href.replace(currentVersion, newVersion);
+        const lang = document.documentElement.lang || portalLanguage || '';
+        const candidateURL = URLFromHref(this.getAttribute('href'));
+        const defaultURL = URLFromHref(this.getAttribute('href'));
 
-        $.get(candidate)
-    .done(function() { return window.location.href = candidate })
-    .fail(function() { return window.location.href = urlDefault.href });
+        // for default - only set lang
+        defaultURL.searchParams.set('lang', lang);
+
+        // for candidate - try use current with new version only
+        const newVersion = candidateURL.pathname.replace('index.html', '')
+        candidateURL.pathname = window.location.pathname.replace(currentVersion, newVersion);
+
+        $.get(candidateURL.href)
+            .done(function() { return window.location.href = candidateURL.href })
+            .fail(function() { return window.location.href = defaultURL.href });
         return false;
     });
 }

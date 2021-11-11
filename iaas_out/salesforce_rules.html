@@ -200,7 +200,7 @@ h1 {position: fixed; top: 75}
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enableU2F eq true</td>
+            <td class="code">SessionSettings should have enableU2F eq true </td>
           </tr>
           
           <tr num="3">
@@ -210,7 +210,7 @@ h1 {position: fixed; top: 75}
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have allowUserAuthenticationByCertificate eq true</td>
+            <td class="code">SessionSettings should have allowUserAuthenticationByCertificate eq true </td>
           </tr>
           
           <tr num="4">
@@ -222,7 +222,7 @@ h1 {position: fixed; top: 75}
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="5">
@@ -234,7 +234,7 @@ h1 {position: fixed; top: 75}
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="6">
@@ -333,7 +333,7 @@ When 'Enable user switching' is disabled, the Switcher is also disabled and your
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have hasUserSwitching eq false</td>
+            <td class="code">SessionSettings should have hasUserSwitching eq false </td>
           </tr>
           
           <tr num="15">
@@ -346,7 +346,7 @@ When 'Enable user switching' is disabled, the Switcher is also disabled and your
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enableOauthCorsPolicy eq false</td>
+            <td class="code">SessionSettings should have enableOauthCorsPolicy eq false </td>
           </tr>
           
           <tr num="16">
@@ -376,7 +376,7 @@ When 'Enable user switching' is disabled, the Switcher is also disabled and your
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have hasRetainedLoginHints eq false</td>
+            <td class="code">SessionSettings should have hasRetainedLoginHints eq false </td>
           </tr>
           
           <tr num="19">
@@ -520,7 +520,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enableLightningLoginOnlyWithUserPerm eq true</td>
+            <td class="code">SessionSettings should have enableLightningLoginOnlyWithUserPerm eq true </td>
           </tr>
           
           <tr num="32">
@@ -540,7 +540,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enableSamlLogin eq true</td>
+            <td class="code">SingleSignOnSettings should have enableSamlLogin eq true </td>
           </tr>
           
           <tr num="34">
@@ -586,7 +586,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enforceIpRangesEveryRequest eq true</td>
+            <td class="code">SessionSettings should have enforceIpRangesEveryRequest eq true </td>
           </tr>
           
           <tr num="38">
@@ -598,7 +598,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="39">
@@ -642,7 +642,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have lockSessionsToDomain eq true</td>
+            <td class="code">SessionSettings should have lockSessionsToDomain eq true </td>
           </tr>
           
           <tr num="43">
@@ -652,7 +652,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have lockSessionsToIp eq true</td>
+            <td class="code">SessionSettings should have lockSessionsToIp eq true </td>
           </tr>
           
           <tr num="44">
@@ -770,7 +770,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have canConfirmIdentityBySmsOnly eq true</td>
+            <td class="code">SessionSettings should have canConfirmIdentityBySmsOnly eq true </td>
           </tr>
           
           <tr num="54">
@@ -794,7 +794,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="56">
@@ -924,7 +924,7 @@ Administrators should suspend group membership calculations only when performing
             <td>
             
             </td>
-            <td class="code">SecuritySettings should have enablePostForSessions eq true</td>
+            <td class="code">SessionSettings should have enablePostForSessions eq true </td>
           </tr>
           
         </table>
@@ -947,7 +947,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="68">
@@ -959,7 +959,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="69">
@@ -1103,7 +1103,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="81">
@@ -1223,7 +1223,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="91">
@@ -1342,7 +1342,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="100">
@@ -1354,7 +1354,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="101">
@@ -1510,7 +1510,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="114">
@@ -1666,7 +1666,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="127">
@@ -1797,7 +1797,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="137">
@@ -1809,7 +1809,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="138">
@@ -1941,7 +1941,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="149">
@@ -2097,7 +2097,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="162">
@@ -2216,7 +2216,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="171">
@@ -2228,7 +2228,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="172">
@@ -2384,7 +2384,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="185">
@@ -2516,7 +2516,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="196">
@@ -2611,7 +2611,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="203">
@@ -2623,7 +2623,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="204">
@@ -2767,7 +2767,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="216">
@@ -2875,7 +2875,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="225">
@@ -2994,7 +2994,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="234">
@@ -3006,7 +3006,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="235">
@@ -3162,7 +3162,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="248">
@@ -3294,7 +3294,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="259">
@@ -3413,7 +3413,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="268">
@@ -3425,7 +3425,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="269">
@@ -3569,7 +3569,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="281">
@@ -3689,7 +3689,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="291">
@@ -3808,7 +3808,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") and expirationDate isEarlierThan(365, "days") </td>
           </tr>
           
           <tr num="300">
@@ -3820,7 +3820,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ keySize gte 4096 ] </td>
+            <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
           <tr num="301">
@@ -3964,7 +3964,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">Organization should have every Certificates with [ expirationDate isLaterThan(0, "days") ] </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
           <tr num="313">
@@ -4084,7 +4084,7 @@ Administrators should suspend group membership calculations only when performing
               CRM<br>
             
             </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . remaining lt StreamingApiConcurrentClients . max) </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
           <tr num="323">
