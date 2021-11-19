@@ -358,18 +358,6 @@ var toc = [{
 "url": "ssl-decryption.html",
 "text": "SSL Decryption",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "add-a-policy-for-ssl-decryption.html",
-"text": "Add a Policy for SSL Decryption",
-"class": "topic-link section"
-},
-{
-"url": "add-new-network-location-for-ssl-decryption.html",
-"text": "Add New Network Location for SSL Decryption",
-"class": "topic-link section"
-}]
 },
 {
 "url": "exceptions.html",
@@ -400,8 +388,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client.html",
-"text": "Netskope Client",
+"url": "netskope-client-overview.html",
+"text": "Netskope Client Overview",
 "class": "topic-link section"
 },
 {
@@ -679,8 +667,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "install-cloud-exchange.html",
-"text": "Install Cloud Exchange",
+"url": "install-cloud-exchange-via-git.html",
+"text": "Install Cloud Exchange via Git",
+"class": "topic-link section"
+},
+{
+"url": "install-cloud-exchange-via-zip.html",
+"text": "Install Cloud Exchange via Zip",
 "class": "topic-link section"
 },
 {
@@ -4210,7 +4203,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "add-a-policy-for-ssl-decryption-127473.html",
+"url": "add-a-policy-for-ssl-decryption.html",
 "text": "Add a Policy for SSL Decryption",
 "class": "topic-link section"
 ,
@@ -4222,7 +4215,7 @@ var toc = [{
 }]
 },
 {
-"url": "add-new-network-location-for-ssl-decryption-127474.html",
+"url": "add-new-network-location-for-ssl-decryption.html",
 "text": "Add New Network Location for SSL Decryption",
 "class": "topic-link section"
 }]
@@ -4702,13 +4695,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client-105999.html",
+"url": "netskope-client.html",
 "text": "Netskope Client",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-client-overview.html",
+"url": "netskope-client-overview-178472.html",
 "text": "Netskope Client Overview",
 "class": "topic-link section"
 },
