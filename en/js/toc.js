@@ -4612,6 +4612,11 @@ var toc = [{
 "url": "isolation-events-in-skope-it.html",
 "text": "Isolation Events in Skope IT",
 "class": "topic-link section"
+},
+{
+"url": "rbi-best-practices.html",
+"text": "RBI Best Practices",
+"class": "topic-link section"
 }]
 },
 {
