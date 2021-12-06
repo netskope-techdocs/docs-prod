@@ -230,6 +230,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "new-features-and-enhancements-331410.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
 "url": "fixed-issues-323570.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
@@ -237,6 +242,23 @@ var toc = [{
 {
 "url": "known-issues-323671.html",
 "text": "Known Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6526.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6526",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-331259.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-331260.html",
+"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
@@ -367,6 +389,11 @@ var toc = [{
 {
 "url": "cloud-firewall-network-events-and-alerts.html",
 "text": "Cloud Firewall Network Events and Alerts",
+"class": "topic-link section"
+},
+{
+"url": "cloud-firewall-advanced-analytics-events.html",
+"text": "Cloud Firewall Advanced Analytics Events",
 "class": "topic-link section"
 }]
 },
@@ -538,11 +565,13 @@ var toc = [{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
-},
+,
+"children": [
 {
-"url": "publisher-metrics.html",
-"text": "Publisher Metrics",
+"url": "publisher-monitoring.html",
+"text": "Publisher Monitoring",
 "class": "topic-link section"
+}]
 }]
 },
 {
@@ -643,6 +672,18 @@ var toc = [{
 "url": "source-ip-anchoring-for-an-idp-with-netskope-private-access.html",
 "text": "Source IP Anchoring for an IdP with Netskope Private Access",
 "class": "topic-link section"
+},
+{
+"url": "private-access-rest-apis.html",
+"text": "Private Access REST APIs",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "private-access-api-endpoints.html",
+"text": "Private Access API Endpoints",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -1930,16 +1971,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "rest-api-v1-overview.html",
-"text": "REST API v1 Overview",
-"class": "topic-link section"
-},
-{
-"url": "rest-api-v2-overview.html",
-"text": "REST API v2 Overview",
-"class": "topic-link section"
-},
 {
 "url": "public-cloud-api-endpoints.html",
 "text": "Public Cloud API Endpoints",
@@ -4299,7 +4330,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "rest-api-v2-overview-317469.html",
+"url": "rest-api-v2-overview.html",
 "text": "REST API v2 Overview",
 "class": "topic-link section"
 },
@@ -4365,14 +4396,21 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "select-dlp-entity.html",
+"text": "Select DLP Entity",
+"class": "topic-link section"
+,
+"children": [
+{
 "url": "select-predefined-data-identifiers.html",
 "text": "Select Predefined Data Identifiers",
 "class": "topic-link section"
 },
 {
-"url": "create-custom-data-identifiers.html",
-"text": "Create Custom Data Identifiers",
+"url": "select-custom-entities.html",
+"text": "Select Custom Entities",
 "class": "topic-link section"
+}]
 },
 {
 "url": "select-an-exact-match-file.html",
@@ -4401,24 +4439,26 @@ var toc = [{
 }]
 },
 {
-"url": "advanced-options.html",
-"text": "Advanced Options",
+"url": "dlp-entity.html",
+"text": "DLP Entity",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "building-regular-expressions.html",
+"text": "Building Regular Expressions",
+"class": "topic-link section"
+}]
+},
+{
+"url": "fingerprint-rules.html",
+"text": "Fingerprint Rules",
 "class": "topic-link section"
 ,
 "children": [
 {
 "url": "create-fingerprint-rules.html",
 "text": "Create Fingerprint Rules",
-"class": "topic-link section"
-},
-{
-"url": "use-dictionary-files.html",
-"text": "Use Dictionary Files",
-"class": "topic-link section"
-},
-{
-"url": "building-regular-expressions.html",
-"text": "Building Regular Expressions",
 "class": "topic-link section"
 }]
 },
@@ -5311,6 +5351,18 @@ var toc = [{
 {
 "url": "configure-an-ipsec-tunnel-for-an-aws-transit-gateway.html",
 "text": "Configure an IPSec Tunnel for an AWS Transit Gateway",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-ipsec-with-juniper-srx.html",
+"text": "Netskope IPSec with Juniper SRX",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "editing-the-default-system-security-policy.html",
+"text": "Editing the Default-System Security Policy",
 "class": "topic-link section"
 }]
 },
@@ -6600,16 +6652,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "rest-api-v1-overview-316626.html",
-"text": "REST API v1 Overview",
-"class": "topic-link section"
-},
-{
-"url": "rest-api-v2-overview-316627.html",
-"text": "REST API v2 Overview",
-"class": "topic-link section"
-},
-{
 "url": "netskope-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
@@ -6962,6 +7004,318 @@ var toc = [{
 {
 "url": "rest-api-reports.html",
 "text": "REST API Reports",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "rest-api.html",
+"text": "REST API",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "rest-api-v1-overview.html",
+"text": "REST API v1 Overview",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-v2-overview-312207.html",
+"text": "REST API v2 Overview",
+"class": "topic-link section"
+},
+{
+"url": "netskope-rest-apis-150925.html",
+"text": "Netskope Platform API Endpoints",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "get-alerts-data-150916.html",
+"text": "Get Alerts Data",
+"class": "topic-link section"
+},
+{
+"url": "get-events-data-150915.html",
+"text": "Get Events Data",
+"class": "topic-link section"
+},
+{
+"url": "rest-api-events-and-alerts-response-descriptions-176575.html",
+"text": "REST API Events and Alerts Response Descriptions",
+"class": "topic-link section"
+},
+{
+"url": "get-client-data-163909.html",
+"text": "Get Client Data",
+"class": "topic-link section"
+},
+{
+"url": "get-reports-data-150918.html",
+"text": "Get Reports Data",
+"class": "topic-link section"
+},
+{
+"url": "get-advanced-analytics-data-236206.html",
+"text": "Get Advanced Analytics Data",
+"class": "topic-link section"
+},
+{
+"url": "get-a-steering-configuration-list-171985.html",
+"text": "Get a Steering Configuration List",
+"class": "topic-link section"
+},
+{
+"url": "get-steering-configuration-information-171986.html",
+"text": "Get Steering Configuration Information",
+"class": "topic-link section"
+},
+{
+"url": "get-user-configuration-data-150917.html",
+"text": "Get User Configuration Data",
+"class": "topic-link section"
+},
+{
+"url": "get-log-upload-token-150987.html",
+"text": "Get Log Upload Token",
+"class": "topic-link section"
+},
+{
+"url": "manage-user-roles-235712.html",
+"text": "Manage User Roles",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-user-role-235713.html",
+"text": "Create a User Role",
+"class": "topic-link section"
+},
+{
+"url": "update-a-user-role-235769.html",
+"text": "Update a User Role",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-user-role-235715.html",
+"text": "Delete a User Role",
+"class": "topic-link section"
+},
+{
+"url": "list-user-roles-235716.html",
+"text": "List User Roles",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-quarantine-files-150930.html",
+"text": "Manage Quarantine Files",
+"class": "topic-link section"
+},
+{
+"url": "manage-legal-hold-files-150929.html",
+"text": "Manage Legal Hold Files",
+"class": "topic-link section"
+},
+{
+"url": "update-a-file-hash-list-150931.html",
+"text": "Update a File Hash List",
+"class": "topic-link section"
+},
+{
+"url": "update-a-url-list-150932.html",
+"text": "Update a URL List",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-anomalies-150926.html",
+"text": "Acknowledge Anomalies",
+"class": "topic-link section"
+},
+{
+"url": "acknowledge-compromised-credentials-150927.html",
+"text": "Acknowledge Compromised Credentials",
+"class": "topic-link section"
+}]
+},
+{
+"url": "public-cloud-api-endpoints-150903.html",
+"text": "Public Cloud API Endpoints",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "get-prep-info-to-create-an-aws-role-150904.html",
+"text": "Get Prep Info to Create an AWS Role",
+"class": "topic-link section"
+},
+{
+"url": "create-an-aws-instance-150905.html",
+"text": "Create an AWS Instance",
+"class": "topic-link section"
+},
+{
+"url": "create-an-azure-instance-150906.html",
+"text": "Create an Azure Instance",
+"class": "topic-link section"
+},
+{
+"url": "create-a-google-cloud-platform-instance-150907.html",
+"text": "Create a Google Cloud Platform Instance",
+"class": "topic-link section"
+},
+{
+"url": "grant-netskope-to-access-an-iaas-instance-150908.html",
+"text": "Grant Netskope to Access an IaaS Instance",
+"class": "topic-link section"
+},
+{
+"url": "get-instance-info-150909.html",
+"text": "Get Instance Info",
+"class": "topic-link section"
+},
+{
+"url": "update-an-aws-instance-150910.html",
+"text": "Update an AWS Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-an-azure-instance-150911.html",
+"text": "Update an Azure Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-a-gcp-instance-150912.html",
+"text": "Update a GCP Instance",
+"class": "topic-link section"
+},
+{
+"url": "delete-an-iaas-instance-150913.html",
+"text": "Delete an IaaS Instance",
+"class": "topic-link section"
+},
+{
+"url": "manage-multiple-aws-accounts-189322.html",
+"text": "Manage Multiple AWS Accounts",
+"class": "topic-link section"
+},
+{
+"url": "start-a-csa-scan-161032.html",
+"text": "Start a CSA Scan",
+"class": "topic-link section"
+},
+{
+"url": "get-a-csa-scan-status-226990.html",
+"text": "Get a CSA Scan Status",
+"class": "topic-link section"
+},
+{
+"url": "manage-storage-scan-policies-304761.html",
+"text": "Manage Storage Scan Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-storage-scan-policy-304762.html",
+"text": "Create a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "enable-or-disable-a-storage-scan-policy-304763.html",
+"text": "Enable or Disable a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "apply-changes-to-storage-scan-policies-304764.html",
+"text": "Apply Changes to Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "list-storage-scan-policies-304765.html",
+"text": "List Storage Scan Policies",
+"class": "topic-link section"
+},
+{
+"url": "get-storage-scan-policy-details-304766.html",
+"text": "Get Storage Scan Policy Details",
+"class": "topic-link section"
+},
+{
+"url": "revert-a-storage-scan-policy-change-304767.html",
+"text": "Revert a Storage Scan Policy Change",
+"class": "topic-link section"
+},
+{
+"url": "clone-a-storage-scan-policy-304768.html",
+"text": "Clone a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "update-a-storage-scan-policy-304769.html",
+"text": "Update a Storage Scan Policy",
+"class": "topic-link section"
+},
+{
+"url": "delete-a-storage-scan-policy-304770.html",
+"text": "Delete a Storage Scan Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-retro-scan-jobs-304774.html",
+"text": "Manage Retro Scan Jobs",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-retro-scan-job-304775.html",
+"text": "Create a Retro Scan Job",
+"class": "topic-link section"
+},
+{
+"url": "list-retro-scan-jobs-304776.html",
+"text": "List Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "stop-retro-scan-jobs-304777.html",
+"text": "Stop Retro Scan Jobs",
+"class": "topic-link section"
+},
+{
+"url": "delete-retro-scan-jobs.html",
+"text": "Delete Retro Scan Jobs",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-bucket-lists-for-a-constraint-profile-161147.html",
+"text": "Manage Bucket Lists for a Constraint Profile",
+"class": "topic-link section"
+},
+{
+"url": "evaluate-custom-rules-220720.html",
+"text": "Evaluate Custom Rules",
+"class": "topic-link section"
+},
+{
+"url": "import-and-export-csa-custom-rules-189326.html",
+"text": "Import and Export CSA Custom Rules",
+"class": "topic-link section"
+},
+{
+"url": "view-security-assessment-violations-150935.html",
+"text": "View Security Assessment Violations",
+"class": "topic-link section"
+},
+{
+"url": "view-cloud-provider-inventory-171905.html",
+"text": "View Cloud Provider Inventory",
+"class": "topic-link section"
+},
+{
+"url": "view-a-bucket-list-163082.html",
+"text": "View a Bucket List",
 "class": "topic-link section"
 }]
 }]
@@ -7499,7 +7853,7 @@ var toc = [{
 }]
 },
 {
-"url": "advanced-options-144873.html",
+"url": "advanced-options.html",
 "text": "Advanced Options",
 "class": "topic-link section"
 ,
