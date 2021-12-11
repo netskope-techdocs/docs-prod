@@ -305,18 +305,6 @@ var toc = [{
 "text": "CTEP\/IPS Threat Content Update Release : 87.0.1.78",
 "class": "topic-link section"
 }]
-},
-{
-"url": "netskope-golden-client-release-notes-version-90-2-0-331885.html",
-"text": "Netskope Golden Client Release Notes Version 90.2.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "fixed-issues-8-331902.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -1324,6 +1312,23 @@ var toc = [{
 {
 "url": "migrating-from-ce-2-x-to-ce-3-x.html",
 "text": "Migrating from CE 2.x to CE 3.x",
+"class": "topic-link section"
+}]
+},
+{
+"url": "transaction-events.html",
+"text": "Transaction Events",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-transaction-events.html",
+"text": "Netskope Transaction Events",
+"class": "topic-link section"
+},
+{
+"url": "transaction-event-fields.html",
+"text": "Transaction Event Fields",
 "class": "topic-link section"
 }]
 },
