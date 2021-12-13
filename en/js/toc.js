@@ -5,13 +5,45 @@ var toc = [{
 ,
 "children": [
 {
+"url": "release-notes-subscription.html",
+"text": "Release Notes Subscription",
+"class": "topic-link section"
+},
+{
+"url": "netskope-release-notes-version-91-0-0.html",
+"text": "Netskope Release Notes Version 91.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+},
+{
+"url": "known-issues.html",
+"text": "Known Issues",
+"class": "topic-link section"
+},
+{
+"url": "new-product-available---cloud-firewall-advanced-analytics-events.html",
+"text": "New Product Available - Cloud Firewall Advanced Analytics Events",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-golden-client-release-notes-version-90-2-0.html",
 "text": "Netskope Golden Client Release Notes Version 90.2.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "fixed-issues.html",
+"url": "fixed-issues-331902.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
@@ -28,7 +60,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements.html",
+"url": "new-features-and-enhancements-320826.html",
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
@@ -38,7 +70,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "known-issues.html",
+"url": "known-issues-320828.html",
 "text": "Known Issues",
 "class": "topic-link section"
 }]
@@ -280,6 +312,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-91-0-6-139.html",
+"text": "CTEP\/IPS Threat Content Update Release 91.0.6.139",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release---90-0-1-104.html",
 "text": "CTEP\/IPS Threat Content Update Release : 90.0.1.104",
