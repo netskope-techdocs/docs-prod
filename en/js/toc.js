@@ -4933,13 +4933,6 @@ var toc = [{
 "url": "netskope-ipsec-with-juniper-srx.html",
 "text": "Netskope IPSec with Juniper SRX",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "editing-the-default-system-security-policy.html",
-"text": "Editing the Default-System Security Policy",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-ipsec-with-amazon-web-services.html",
