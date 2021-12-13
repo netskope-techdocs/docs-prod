@@ -174,7 +174,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -940,7 +942,7 @@ h1 {position: fixed; top: 75}
               EC2Instance<br>
             
             </td>
-            <td class="code">Volume should have Snapshot . Encrypted eq true </td>
+            <td class="code">Snapshots should have Encrypted </td>
           </tr>
           
           <tr num="64">
@@ -1448,9 +1450,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -1540,9 +1542,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -1582,9 +1584,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -1610,9 +1612,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -1666,9 +1668,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -1680,9 +1682,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2031,9 +2033,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -2123,9 +2125,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2165,9 +2167,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2193,9 +2195,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2249,9 +2251,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2263,9 +2265,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2506,9 +2508,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -2598,9 +2600,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2640,9 +2642,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2668,9 +2670,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2724,9 +2726,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -2738,9 +2740,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -3201,9 +3203,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -3578,9 +3580,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -3931,9 +3933,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -4023,9 +4025,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4065,9 +4067,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4093,9 +4095,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4149,9 +4151,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4163,9 +4165,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4358,9 +4360,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4386,9 +4388,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4586,9 +4588,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4600,9 +4602,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -4870,9 +4872,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -5419,9 +5421,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -5511,9 +5513,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -5553,9 +5555,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -5581,9 +5583,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -5637,9 +5639,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -5651,9 +5653,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6316,9 +6318,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -6394,9 +6396,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6436,9 +6438,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6464,9 +6466,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6520,9 +6522,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6534,9 +6536,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -6873,9 +6875,9 @@ h1 {position: fixed; top: 75}
             <td>AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), any configuration changes between resources. The AWS configuration item history captured by AWS Config enables security analysis, resource change tracking, and compliance auditing. It is recommended to enable AWS Config be enabled in all regions.</td>
             <td>
             
-              Config<br>
-            
               CloudTrail<br>
+            
+              Config<br>
             
             </td>
             <td class="code">AWS should have ( ConfigRecorders with [ Status and RecordingGroup . AllSupported ] ) and ConfigDeliveryChannels with [ StreamDelivery . LastSuccess and HistoryDelivery . LastSuccess ] </td>
@@ -6965,9 +6967,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for root login attempts</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "{\s*\$\.userIdentity\.type\s*=\s*\"Root\"\s*\&\&\s*\$\.userIdentity\.invokedBy\s*NOT\s*EXISTS\s*\&\&\s*\$\.eventType\s*!=\s*\"AwsServiceEvent\"\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -7007,9 +7009,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for failed console authentication attempts.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*ConsoleLogin\)\s*\&\&\s*\(\$\.errorMessage\s*=\s*\"Failed\s*authentication\"\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -7035,9 +7037,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is recommended that a metric filter and alarm be established for changes to S3 bucket policies.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*s3\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*PutBucketAcl\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*PutBucketReplication\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketCors\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketLifecycle\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteBucketReplication\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -7091,9 +7093,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. Routing tables are used to route network traffic between subnets and to network gateways. It is recommended that a metric filter and alarm be established for changes to route tables.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*ReplaceRouteTableAssociation\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRouteTable\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteRoute\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisassociateRouteTable\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -7105,9 +7107,9 @@ h1 {position: fixed; top: 75}
             <td>Real-time monitoring of API calls can be achieved by directing CloudTrail Logs to CloudWatch Logs and establishing corresponding metric filters and alarms. It is possible to have more than 1 VPC within an account, in addition it is also possible to create a peer connection between 2 VPCs enabling network traffic to route between VPCs. It is recommended that a metric filter and alarm be established for changes made to VPCs.</td>
             <td>
             
-              CloudWatch<br>
-            
               CloudTrail<br>
+            
+              CloudWatch<br>
             
             </td>
             <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventName\s*=\s*CreateVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*ModifyVpcAttribute\)\s*\|\|\s*\(\$\.eventName\s*=\s*AcceptVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*RejectVpcPeeringConnection\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachClassicLinkVpc\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisableVpcClassicLink\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnableVpcClassicLink\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
@@ -7192,7 +7194,7 @@ h1 {position: fixed; top: 75}
   })));
 
   // Search
-  var $rows = $('#table tr:gt(0)');
+  var $rows = $('table.rule_table tr[num]');
   $('#search').keyup(debounce(function() {
 
     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',

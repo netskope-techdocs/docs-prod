@@ -146,6 +146,10 @@
           <span class="entity_name">Organization</span>
         </li>
         
+        <li class="entity_key" data-entity-name="RDSEventSubscription">
+          <span class="entity_name">RDSEventSubscription</span>
+        </li>
+        
       </ul>
       
       <h2 class="entity_category Messaging">Messaging</h2>
@@ -168,12 +172,20 @@
       <h2 class="entity_category Network">Network</h2>
       <ul>
         
+        <li class="entity_key" data-entity-name="APIGateway">
+          <span class="entity_name">APIGateway</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="CloudfrontDistribution">
           <span class="entity_name">CloudfrontDistribution</span>
         </li>
         
         <li class="entity_key" data-entity-name="ElasticLoadBalancer">
           <span class="entity_name">ElasticLoadBalancer</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="Endpoint">
+          <span class="entity_name">Endpoint</span>
         </li>
         
         <li class="entity_key" data-entity-name="InternetGateway">
@@ -990,6 +1002,132 @@
           </tr>
           
           <tr>
+            <td>EbsOptimized</td>
+            <td>boolean</td>
+            <td>Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance</td>
+          </tr>
+          
+          <tr>
+            <td>EnaSupport</td>
+            <td>boolean</td>
+            <td>Specifies whether enhanced networking with ENA is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>Hypervisor</td>
+            <td>string</td>
+            <td>The hypervisor type of the instance. The value xen is used for both Xen and Nitro hypervisors</td>
+          </tr>
+          
+          <tr>
+            <td>InstanceLifecycle</td>
+            <td>string</td>
+            <td>Indicates whether this is a Spot Instance or a Scheduled Instance</td>
+          </tr>
+          
+          <tr>
+            <td>StateTransitionReason</td>
+            <td>string</td>
+            <td>The reason for the most recent state transition. This might be an empty string</td>
+          </tr>
+          
+          <tr>
+            <td>StateTransitionTime</td>
+            <td>number</td>
+            <td>The epoch time for the most recent state transition. This might be None if no recent state transition.</td>
+          </tr>
+          
+          <tr>
+            <td>RootDeviceType</td>
+            <td>string</td>
+            <td>The root device type used by the AMI. The AMI can use an EBS volume or an instance store volume</td>
+          </tr>
+          
+          <tr>
+            <td>SourceDestCheck</td>
+            <td>boolean</td>
+            <td>Indicates whether source/destination checking is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>SpotInstanceRequestId</td>
+            <td>string</td>
+            <td>If the request is a Spot Instance request, the ID of the request</td>
+          </tr>
+          
+          <tr>
+            <td>VirtualizationType</td>
+            <td>string</td>
+            <td>The virtualization type of the instance</td>
+          </tr>
+          
+          <tr>
+            <td>CpuOptions</td>
+            <td>sequence</td>
+            <td>The CPU options for the instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CoreCount</td>
+            <td>number</td>
+            <td>The number of CPU cores for the instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ThreadsPerCore</td>
+            <td>number</td>
+            <td>The number of threads per CPU core</td>
+          </tr>
+          
+          <tr>
+            <td>HibernationOptionsConfigured</td>
+            <td>boolean</td>
+            <td>If this parameter is set to true , your instance is enabled for hibernation; otherwise, it is not enabled for hibernation</td>
+          </tr>
+          
+          <tr>
+            <td>MetadataOptions</td>
+            <td>sequence</td>
+            <td>The metadata options for the instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>State</td>
+            <td>string</td>
+            <td>The state of the metadata option changes.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HttpTokens</td>
+            <td>string</td>
+            <td>The state of token usage for your instance metadata requests. If the parameter is not specified in the request, the default state is optional</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HttpPutResponseHopLimit</td>
+            <td>number</td>
+            <td>The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Default valus is 1 and Possible values are Integers from 1 to 64</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HttpEndpoint</td>
+            <td>string</td>
+            <td>Indicates whether the HTTP metadata endpoint on your instances is enabled or disabled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HttpProtocolIpv6</td>
+            <td>string</td>
+            <td>Indicates whether the IPv6 endpoint for the instance metadata service is enabled or disabled</td>
+          </tr>
+          
+          <tr>
+            <td>EnclaveOptionsEnabled</td>
+            <td>boolean</td>
+            <td>Indicates whether the instance is enabled for Amazon Web Services Nitro Enclaves</td>
+          </tr>
+          
+          <tr>
             <td>ReservationId</td>
             <td>string</td>
             <td>Reservation ID</td>
@@ -1232,13 +1370,25 @@
           <tr>
             <td>SnapshotId</td>
             <td>string</td>
-            <td>The ID of the snapshot for the volume. May reference a deleted snapshot.</td>
+            <td>The ID of the snapshot from which the volume was created. Will be null if this volume was not created from a snapshot. The snapshot may have subsequently been deleted, in which case it will still be recorded here. To reference the snapshots created from this volume, instead use BackupSnapshots</td>
           </tr>
           
           <tr>
             <td>Snapshot</td>
             <td>Reference to Snapshots</td>
-            <td>Snapshot of the Volume. May be null if SnapshotId references a deleted snapshot.</td>
+            <td>The snapshot from which the volume was created. May be null if the snapshot has been deleted since the volume was created.</td>
+          </tr>
+          
+          <tr>
+            <td>BackupSnapshots</td>
+            <td>Reference to Snapshots</td>
+            <td>List of shapshots created from this volume.</td>
+          </tr>
+          
+          <tr>
+            <td>EbsEncryptionByDefault</td>
+            <td>boolean</td>
+            <td>Indicates whether encryption by default is enabled</td>
           </tr>
           
         </table>
@@ -1476,6 +1626,480 @@
             <td><span class="_TAB">&nbsp;</span>DBSubnetGroupArn</td>
             <td>string</td>
             <td>Subnet Group Arn</td>
+          </tr>
+          
+          <tr>
+            <td>Endpoint</td>
+            <td>sequence</td>
+            <td>Specifies the connection endpoint</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Address</td>
+            <td>string</td>
+            <td>Specifies the DNS address of the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Port</td>
+            <td>number</td>
+            <td>Specifies the port that the database engine is listening on</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HostedZoneId</td>
+            <td>string</td>
+            <td>Specifies the ID that Amazon Route 53 assigns when you create a hosted zone</td>
+          </tr>
+          
+          <tr>
+            <td>AllocatedStorage</td>
+            <td>number</td>
+            <td>Specifies the allocated storage size specified in gibibytes</td>
+          </tr>
+          
+          <tr>
+            <td>DBSecurityGroups</td>
+            <td>list</td>
+            <td>A list of DB security group elements containing DBSecurityGroup.Name and DBSecurityGroup.Status subelements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBSecurityGroupName</td>
+            <td>string</td>
+            <td>The name of the DB security group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the DB security group</td>
+          </tr>
+          
+          <tr>
+            <td>VpcSecurityGroups</td>
+            <td>list</td>
+            <td>Provides a list of VPC security group elements that the DB instance belongs to.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecurityGroup</td>
+            <td>Reference to SecurityGroup</td>
+            <td>VPC security group.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the VPC security group.</td>
+          </tr>
+          
+          <tr>
+            <td>DBParameterGroups</td>
+            <td>list</td>
+            <td>Provides the list of DB parameter groups applied to this DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBParameterGroupName</td>
+            <td>string</td>
+            <td>The name of the DB parameter group</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ParameterApplyStatus</td>
+            <td>string</td>
+            <td>The status of parameter updates</td>
+          </tr>
+          
+          <tr>
+            <td>EngineVersion</td>
+            <td>string</td>
+            <td>Indicates the database engine version</td>
+          </tr>
+          
+          <tr>
+            <td>ReadReplicaSourceDBInstanceIdentifier</td>
+            <td>string</td>
+            <td>Contains the identifier of the source DB instance if this DB instance is a read replica</td>
+          </tr>
+          
+          <tr>
+            <td>ReadReplicaDBInstanceIdentifiers</td>
+            <td>list</td>
+            <td>Contains one or more identifiers of the read replicas associated with this DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>ReadReplicaDBClusterIdentifiers</td>
+            <td>list</td>
+            <td>Contains one or more identifiers of Aurora DB clusters to which the RDS DB instance is replicated as a read replica. For example, when you create an Aurora read replica of an RDS MySQL DB instance, the Aurora MySQL DB cluster for the Aurora read replica is shown. This output does not contain information about cross region Aurora read replicas</td>
+          </tr>
+          
+          <tr>
+            <td>ReplicaMode</td>
+            <td>string</td>
+            <td>The open mode of an Oracle read replica. The default is open-read-only</td>
+          </tr>
+          
+          <tr>
+            <td>LicenseModel</td>
+            <td>string</td>
+            <td>License model information for this DB instance. This setting doesn't apply to RDS Custom</td>
+          </tr>
+          
+          <tr>
+            <td>Iops</td>
+            <td>number</td>
+            <td>Specifies the Provisioned IOPS (I/O operations per second) value</td>
+          </tr>
+          
+          <tr>
+            <td>OptionGroupMemberships</td>
+            <td>list</td>
+            <td>Provides the list of option group memberships for this DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>OptionGroupName</td>
+            <td>string</td>
+            <td>The name of the option group that the instance belongs to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the DB instance's option group membership. (in-sync | pending-apply | pending-removal | pending-maintenance-apply | pending-maintenance-removal | applying | removing | failed )</td>
+          </tr>
+          
+          <tr>
+            <td>CharacterSetName</td>
+            <td>string</td>
+            <td>If present, specifies the name of the character set that this instance is associated with</td>
+          </tr>
+          
+          <tr>
+            <td>NcharCharacterSetName</td>
+            <td>string</td>
+            <td>The name of the NCHAR character set for the Oracle DB instance. This character set specifies the Unicode encoding for data stored in table columns of type NCHAR, NCLOB, or NVARCHAR2</td>
+          </tr>
+          
+          <tr>
+            <td>SecondaryAvailabilityZone</td>
+            <td>string</td>
+            <td>If present, specifies the name of the secondary Availability Zone for a DB instance with multi-AZ support</td>
+          </tr>
+          
+          <tr>
+            <td>StatusInfos</td>
+            <td>list</td>
+            <td>The status of a read replica. May be null If the instance isn't a read replica</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>StatusType</td>
+            <td>string</td>
+            <td>This value is currently "read replication"</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Normal</td>
+            <td>boolean</td>
+            <td>Boolean value that is true if the instance is operating normally, or false if the instance is in an error state</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Status of the DB instance. For a StatusType of read replica, the values can be replicating, replication stop point set, replication stop point reached, error, stopped, or terminated</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Message</td>
+            <td>string</td>
+            <td>Details of the error if there is an error for the instance. If the instance isn't in an error state, this value is blank</td>
+          </tr>
+          
+          <tr>
+            <td>StorageType</td>
+            <td>string</td>
+            <td>Specifies the storage type associated with DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>TdeCredentialArn</td>
+            <td>string</td>
+            <td>The ARN from the key store with which the instance is associated for TDE encryption</td>
+          </tr>
+          
+          <tr>
+            <td>DbInstancePort</td>
+            <td>number</td>
+            <td>Specifies the port that the DB instance listens on. If the DB instance is part of a DB cluster, this can be a different port than the DB cluster port</td>
+          </tr>
+          
+          <tr>
+            <td>DBClusterIdentifier</td>
+            <td>string</td>
+            <td>If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of</td>
+          </tr>
+          
+          <tr>
+            <td>DbiResourceId</td>
+            <td>string</td>
+            <td>The Amazon Web Services Region-unique, immutable identifier for the DB instance. This identifier is found in Amazon Web Services CloudTrail log entries whenever the Amazon Web Services KMS key for the DB instance is accessed</td>
+          </tr>
+          
+          <tr>
+            <td>CACertificateIdentifier</td>
+            <td>string</td>
+            <td>The identifier of the CA certificate for this DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>DomainMemberships</td>
+            <td>list</td>
+            <td>The Active Directory Domain membership records associated with the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Domain</td>
+            <td>string</td>
+            <td>The identifier of the Active Directory Domain</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>The status of the Active Directory Domain membership for the DB instance or cluster. (joined|pending-join|failed)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FQDN</td>
+            <td>string</td>
+            <td>The fully qualified domain name of the Active Directory Domain</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IAMRoleName</td>
+            <td>sequence</td>
+            <td>The name of the IAM role to be used when making API calls to the Directory Service</td>
+          </tr>
+          
+          <tr>
+            <td>CopyTagsToSnapshot</td>
+            <td>boolean</td>
+            <td>Specifies whether tags are copied from the DB instance to snapshots of the DB instance. Copying tags to snapshots is managed by the DB cluster. Setting this value for an Aurora DB instance has no effect on the DB cluster setting.</td>
+          </tr>
+          
+          <tr>
+            <td>EnhancedMonitoringResourceArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the Amazon CloudWatch Logs log stream that receives the Enhanced Monitoring metrics data for the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>MonitoringRoleArn</td>
+            <td>Reference to IAMRole</td>
+            <td>The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to Amazon CloudWatch Logs</td>
+          </tr>
+          
+          <tr>
+            <td>PromotionTier</td>
+            <td>number</td>
+            <td>A value that specifies the order in which an Aurora Replica is promoted to the primary instance after a failure of the existing primary instance</td>
+          </tr>
+          
+          <tr>
+            <td>DBInstanceArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) for the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>Timezone</td>
+            <td>string</td>
+            <td>The time zone of the DB instance. In most cases, the Timezone element is empty. Timezone content appears only for Microsoft SQL Server DB instances that were created with a time zone specified</td>
+          </tr>
+          
+          <tr>
+            <td>IAMDatabaseAuthenticationEnabled</td>
+            <td>boolean</td>
+            <td>rue if mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.</td>
+          </tr>
+          
+          <tr>
+            <td>PerformanceInsightsEnabled</td>
+            <td>boolean</td>
+            <td>True if Performance Insights is enabled for the DB instance, and otherwise false</td>
+          </tr>
+          
+          <tr>
+            <td>PerformanceInsightsKMSKeyId</td>
+            <td>string</td>
+            <td>The Amazon Web Services KMS key identifier for encryption of Performance Insights data. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key</td>
+          </tr>
+          
+          <tr>
+            <td>PerformanceInsightsRetentionPeriod</td>
+            <td>number</td>
+            <td>The amount of time, in days, to retain Performance Insights data.</td>
+          </tr>
+          
+          <tr>
+            <td>EnabledCloudwatchLogsExports</td>
+            <td>list</td>
+            <td>A list of log types that this DB instance is configured to export to CloudWatch Logs. Log types vary by DB engine.</td>
+          </tr>
+          
+          <tr>
+            <td>ProcessorFeatures</td>
+            <td>list</td>
+            <td>The number of CPU cores and the number of threads per core for the DB instance class of the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>The name of the processor feature. ( coreCount | threadsPerCore )</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>The value of a processor feature name</td>
+          </tr>
+          
+          <tr>
+            <td>DeletionProtection</td>
+            <td>boolean</td>
+            <td>Indicates if the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled</td>
+          </tr>
+          
+          <tr>
+            <td>AssociatedRoles</td>
+            <td>list</td>
+            <td>The Amazon Web Services Identity and Access Management (IAM) roles associated with the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>RoleArn</td>
+            <td>Reference to IAMRole</td>
+            <td>The Amazon Resource Name (ARN) of the IAM role that is associated with the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>FeatureName</td>
+            <td>string</td>
+            <td>The name of the feature associated with the Amazon Web Services Identity and Access Management (IAM) role</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Status</td>
+            <td>string</td>
+            <td>Describes the state of association between the IAM role and the DB instance. ( ACTIVE | PENDING | INVALID )</td>
+          </tr>
+          
+          <tr>
+            <td>ListenerEndpoint</td>
+            <td>sequence</td>
+            <td>Specifies the listener connection endpoint for SQL Server Always On</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Address</td>
+            <td>string</td>
+            <td>Specifies the DNS address of the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Port</td>
+            <td>number</td>
+            <td>Specifies the port that the database engine is listening on</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HostedZoneId</td>
+            <td>string</td>
+            <td>Specifies the ID that Amazon Route 53 assigns when you create a hosted zone</td>
+          </tr>
+          
+          <tr>
+            <td>MaxAllocatedStorage</td>
+            <td>number</td>
+            <td>The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>DBInstanceAutomatedBackupsReplications</td>
+            <td>list</td>
+            <td>The list of replicated automated backups associated with the DB instance</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DBInstanceAutomatedBackupsArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the replicated automated backups</td>
+          </tr>
+          
+          <tr>
+            <td>CustomerOwnedIpEnabled</td>
+            <td>boolean</td>
+            <td>Specifies whether a customer-owned IP address (CoIP) is enabled for an RDS on Outposts DB instance</td>
+          </tr>
+          
+          <tr>
+            <td>AwsBackupRecoveryPointArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the recovery point in Amazon Web Services Backup</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamStatus</td>
+            <td>string</td>
+            <td>The status of the database activity stream</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamKmsKeyId</td>
+            <td>string</td>
+            <td>The Amazon Web Services KMS key identifier used for encrypting messages in the database activity stream. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamKinesisStreamName</td>
+            <td>string</td>
+            <td>The name of the Amazon Kinesis data stream used for the database activity stream</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamMode</td>
+            <td>string</td>
+            <td>The mode of the database activity stream. Database events such as a change or access generate an activity stream event. RDS for Oracle always handles these events asynchronously</td>
+          </tr>
+          
+          <tr>
+            <td>ActivityStreamEngineNativeAuditFieldsIncluded</td>
+            <td>boolean</td>
+            <td>Indicates whether engine-native audit fields are included in the database activity stream</td>
+          </tr>
+          
+          <tr>
+            <td>AutomationMode</td>
+            <td>string</td>
+            <td>The automation mode of the RDS Custom DB instance is full or all paused . If full , the DB instance automates monitoring and instance recovery. If all paused , the instance pauses automation for the duration set by --resume-full-automation-mode-minutes</td>
+          </tr>
+          
+          <tr>
+            <td>ResumeFullAutomationModeTime</td>
+            <td>number</td>
+            <td>The number of minutes to pause the automation. When the time period ends, RDS Custom resumes full automation. The minimum value is 60 (default). The maximum value is 1,440</td>
+          </tr>
+          
+          <tr>
+            <td>CustomIamInstanceProfile</td>
+            <td>string</td>
+            <td>The instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance</td>
           </tr>
           
         </table>
@@ -1738,13 +2362,7 @@
           
           <tr>
             <td>InternetGateways</td>
-            <td>list</td>
-            <td>Internet Gateways</td>
-          </tr>
-          
-          <tr>
-            <td><span class="_TAB">&nbsp;</span>id</td>
-            <td>string</td>
+            <td>Reference to InternetGateway</td>
             <td>Internet Gateways</td>
           </tr>
           
@@ -1792,7 +2410,7 @@
           
           <tr>
             <td>Endpoints</td>
-            <td>list</td>
+            <td>Reference to Endpoint</td>
             <td>Endpoints</td>
           </tr>
           
@@ -2118,6 +2736,30 @@
             <td>Status</td>
             <td>string</td>
             <td>Status of the Subnet</td>
+          </tr>
+          
+          <tr>
+            <td>MapPublicIpOnLaunch</td>
+            <td>boolean</td>
+            <td>Indicates whether instances launched in this subnet receive a public IPv4 address</td>
+          </tr>
+          
+          <tr>
+            <td>DefaultForAz</td>
+            <td>boolean</td>
+            <td>Indicates whether this is the default subnet for the Availability Zone</td>
+          </tr>
+          
+          <tr>
+            <td>AvailableIpAddressCount</td>
+            <td>number</td>
+            <td>The number of unused private IPv4 addresses in the subnet. The IPv4 addresses for any stopped instances are considered unavailable</td>
+          </tr>
+          
+          <tr>
+            <td>AssignIpv6AddressOnCreation</td>
+            <td>boolean</td>
+            <td>Indicates whether a network interface created in this subnet (including a network interface created by RunInstances ) receives an IPv6 address</td>
           </tr>
           
           <tr>
@@ -4394,7 +5036,7 @@
           <tr>
             <td>AccountId</td>
             <td>string</td>
-            <td>ID of acocunt containing the Policy</td>
+            <td>ID of account containing the Policy</td>
           </tr>
           
           <tr>
@@ -4980,6 +5622,276 @@
             <td><span class="_TAB">&nbsp;</span>Value</td>
             <td>string</td>
             <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>Runtime</td>
+            <td>string</td>
+            <td>The runtime environment for the Lambda function</td>
+          </tr>
+          
+          <tr>
+            <td>VpcConfig</td>
+            <td>sequence</td>
+            <td>The function's networking configuration</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>A list of VPC subnets</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>A list of VPC security groups</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VPC</td>
+            <td>Reference to VPC</td>
+            <td>VPC</td>
+          </tr>
+          
+          <tr>
+            <td>DeadLetterConfig</td>
+            <td>sequence</td>
+            <td>The function's dead letter queue</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TargetArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of an Amazon SQS queue or Amazon SNS topic</td>
+          </tr>
+          
+          <tr>
+            <td>TracingConfigMode</td>
+            <td>string</td>
+            <td>The function's X-Ray tracing configuration mode ( Active | PassThrough )</td>
+          </tr>
+          
+          <tr>
+            <td>RevisionId</td>
+            <td>string</td>
+            <td>The latest updated revision of the function or alias</td>
+          </tr>
+          
+          <tr>
+            <td>Layers</td>
+            <td>list</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Arn</td>
+            <td>string</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CodeSize</td>
+            <td>number</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SigningProfileVersionArn</td>
+            <td>string</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>SigningJobArn</td>
+            <td>string</td>
+            <td>None</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>The current state of the function. ( 'Pending' | 'Active' | 'Inactive' | 'Failed' )</td>
+          </tr>
+          
+          <tr>
+            <td>LastUpdateStatus</td>
+            <td>string</td>
+            <td>The status of the last update that was performed on the function. This is first set to Successful after function creation completes</td>
+          </tr>
+          
+          <tr>
+            <td>FileSystemConfigs</td>
+            <td>list</td>
+            <td>Details about the connection between a Lambda function and an Amazon EFS file system</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Arn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the Amazon EFS access point that provides access to the file system</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LocalMountPath</td>
+            <td>string</td>
+            <td>The path where the function can access the file system, starting with /mnt/</td>
+          </tr>
+          
+          <tr>
+            <td>PackageType</td>
+            <td>string</td>
+            <td>The type of deployment package. Set to Image for container image and set Zip for .zip file archive</td>
+          </tr>
+          
+          <tr>
+            <td>SigningProfileVersionArn</td>
+            <td>string</td>
+            <td>The ARN of the signing profile version</td>
+          </tr>
+          
+          <tr>
+            <td>SigningJobArn</td>
+            <td>string</td>
+            <td>The ARN of the signing job</td>
+          </tr>
+          
+          <tr>
+            <td>Architectures</td>
+            <td>list</td>
+            <td>The instruction set architecture that the function supports. Architecture is a string array with one of the valid values. The default architecture value is x86_64</td>
+          </tr>
+          
+          <tr>
+            <td>ResourceBasedIAMPolicy</td>
+            <td>sequence</td>
+            <td>The resource-based policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>ID of the policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statements</td>
+            <td>list</td>
+            <td>Permission statements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Sid of the policy statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect of the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
           </tr>
           
         </table>
@@ -6143,6 +7055,42 @@
             <td>Resource</td>
           </tr>
           
+          <tr>
+            <td>DomainEndpointOptions</td>
+            <td>sequence</td>
+            <td>The current status of the Elasticsearch domain's endpoint options.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EnforceHTTPS</td>
+            <td>boolean</td>
+            <td>Specify if only HTTPS endpoint should be enabled for the Elasticsearch domain.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>TLSSecurityPolicy</td>
+            <td>string</td>
+            <td>Specify the TLS security policy that needs to be applied to the HTTPS endpoint of Elasticsearch domain. (Policy-Min-TLS-1-0-2019-07 | Policy-Min-TLS-1-2-2019-07)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CustomEndpointEnabled</td>
+            <td>boolean</td>
+            <td>Specify if custom endpoint should be enabled for the Elasticsearch domain.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CustomEndpoint</td>
+            <td>string</td>
+            <td>Specify the fully qualified domain for your custom endpoint.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CustomEndpointCertificateArn</td>
+            <td>string</td>
+            <td>Specify ACM certificate ARN for your custom endpoint.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="Snapshots">
@@ -6239,7 +7187,7 @@
           <tr>
             <td>Access</td>
             <td>string</td>
-            <td>Value from an Amazon-maintained list</td>
+            <td>Whether the snapshot is Public or Private. In AWS Console this is seen in the Permissions tab.</td>
           </tr>
           
           <tr>
@@ -7100,6 +8048,240 @@
             <td>ID of account containing the cloudfront distribution</td>
           </tr>
           
+          <tr>
+            <td>DefaultRootObject</td>
+            <td>string</td>
+            <td>The object that CloudFront will request from the origin when a viewer requests the root URL for this distribution instead of a specific object.</td>
+          </tr>
+          
+          <tr>
+            <td>Logging</td>
+            <td>sequence</td>
+            <td>A control that checks whether access logs are written for the distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Specifies whether the CloudFront saves access logs to an Amazon S3 bucket.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>IncludeCookies</td>
+            <td>boolean</td>
+            <td>Specifies whether the CloudFront includes cookies in access logs</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Bucket</td>
+            <td>Reference to S3Bucket</td>
+            <td>The Amazon S3 bucket to store the access logs in.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Prefix</td>
+            <td>string</td>
+            <td>An optional string that CloudFront prefixes to the access log filenames for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td>CacheBehaviors</td>
+            <td>sequence</td>
+            <td>Describes CacheBehavior elements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of cache behaviors for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>List of cache behaviors for this distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>PathPattern</td>
+            <td>string</td>
+            <td>The pattern (for example, images/*.jpg ) that specifies which requests to apply the behavior to.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>TargetOriginId</td>
+            <td>string</td>
+            <td>The value of ID for the origin that you want CloudFront to route requests to when they match this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>TrustedSigners</td>
+            <td>sequence</td>
+            <td>A list of AWS account IDs whose public keys CloudFront can use to validate signed URLs or signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Checks if any of the AWS accounts have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of AWS accounts in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list of AWS account identifiers.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>TrustedKeyGroups</td>
+            <td>sequence</td>
+            <td>A list of key groups that CloudFront can use to validate signed URLs or signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Enabled</td>
+            <td>boolean</td>
+            <td>Checks if any of the key groups in the list have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of key groups in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>A list of key groups identifiers.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ViewerProtocolPolicy</td>
+            <td>string</td>
+            <td>The protocol that viewers can use to access the files in the origin specified by TargetOriginId when a request matches the path pattern in PathPattern (allow-all | https-only | redirect-to-https)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>AllowedMethods</td>
+            <td>sequence</td>
+            <td>HTTP methods which CloudFront processes and forwards to your Amazon S3 bucket or your custom origin (GET and HEAD | GET , HEAD , and OPTIONS | GET, HEAD, OPTIONS, PUT, PATCH, POST , and DELETE).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of HTTP methods for  CloudFront to forward to origin (2 | 3 | 7).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>HTTP methods for  CloudFront to process and forward to origin.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>CachedMethods</td>
+            <td>sequence</td>
+            <td>If CloudFront caches the response to requests using the specified HTTP method (GET and HEAD | GET , HEAD , and OPTIONS).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of HTTP methods for CloudFront to cache responses (2 | 3).</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>HTTP methods for CloudFront to cache responses to.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>SmoothStreaming</td>
+            <td>boolean</td>
+            <td>Indicates whether to distribute media files in the Microsoft Smooth Streaming format using the origin that is associated with this cache behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Compress</td>
+            <td>boolean</td>
+            <td>Whether CloudFront automatically compress certain files for this cache behavior</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>LambdaFunctionAssociations</td>
+            <td>sequence</td>
+            <td>Contains zero or more Lambda@Edge function associations for a cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of Lambda@Edge function associations for this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>LambdaFunctionAssociation items for this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>FunctionAssociations</td>
+            <td>sequence</td>
+            <td>A list of CloudFront functions that are associated with this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Quantity</td>
+            <td>number</td>
+            <td>The number of CloudFront functions in the list.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Items</td>
+            <td>list</td>
+            <td>The CloudFront functions that are associated with a cache behavior in a CloudFront distribution.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>FieldLevelEncryptionId</td>
+            <td>string</td>
+            <td>The value of ID for the field-level encryption configuration for CloudFront to use for encrypting specific fields of data for this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>RealtimeLogConfigArn</td>
+            <td>string</td>
+            <td>The Amazon Resource Name (ARN) of the real-time log configuration that is attached to this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>CachePolicyId</td>
+            <td>string</td>
+            <td>The unique identifier of the cache policy that is attached to this cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>OriginRequestPolicyId</td>
+            <td>string</td>
+            <td>The unique identifier of the origin request policy that is attached to the default cache behavior.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>ResponseHeadersPolicyId</td>
+            <td>string</td>
+            <td>The identifier for a response headers policy.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="VPNGateway">
@@ -7911,6 +9093,24 @@
           </tr>
           
           <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the RDS cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
             <td>ActivityStreamKMSKey</td>
             <td>Reference to KMSKey</td>
             <td>The Amazon Web Services KMS key used for encrypting messages in the database activity stream.</td>
@@ -8400,6 +9600,531 @@
             <td>GlobalWriteForwardingRequested</td>
             <td>boolean</td>
             <td>Specifies whether you have requested to enable write forwarding for a secondary cluster in an Aurora global database.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RDSEventSubscription">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Identifier of the RDS Event Subscription</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the RDS Event Subscription</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the RDS Event Subscription resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the RDS Event Subscription resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the RDS Event Subscription</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the RDS Event Subscription</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the RDS Event Subscription</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>SnsTopicArn</td>
+            <td>Reference to SNSTopic</td>
+            <td>The topic ARN of the RDS event notification subscription</td>
+          </tr>
+          
+          <tr>
+            <td>Status</td>
+            <td>string</td>
+            <td>The status of the RDS event notification subscription. The status "no-permission" indicates that RDS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created. ( creating | modifying | deleting | active | no-permission | topic-not-exist )</td>
+          </tr>
+          
+          <tr>
+            <td>SubscriptionCreationTime</td>
+            <td>string</td>
+            <td>The time the RDS event notification subscription was created</td>
+          </tr>
+          
+          <tr>
+            <td>SourceType</td>
+            <td>string</td>
+            <td>The source type for the RDS event notification subscription. ( db-instance | db-cluster | db-parameter-group | db-security-group | db-snapshot | db-cluster-snapshot )</td>
+          </tr>
+          
+          <tr>
+            <td>SourceIdsList</td>
+            <td>list</td>
+            <td>A list of source IDs for the RDS event notification subscription</td>
+          </tr>
+          
+          <tr>
+            <td>EventCategoriesList</td>
+            <td>list</td>
+            <td>A list of event categories for the RDS event notification subscription</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>A Boolean value indicating if the subscription is enabled. True indicates the subscription is enabled</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="Endpoint">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Identifier of the Endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the Endpoint resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the Endpoint resides</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the Endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the Endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the Endpoint</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>The type of endpoint. ( Interface | Gateway | GatewayLoadBalancer )</td>
+          </tr>
+          
+          <tr>
+            <td>VPC</td>
+            <td>Reference to VPC</td>
+            <td>The VPC to which the endpoint is associated</td>
+          </tr>
+          
+          <tr>
+            <td>ServiceName</td>
+            <td>string</td>
+            <td>The name of the service to which the endpoint is associated</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>The state of the VPC endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>PolicyDocument</td>
+            <td>string</td>
+            <td>The policy document associated with the endpoint, if applicable</td>
+          </tr>
+          
+          <tr>
+            <td>RouteTables</td>
+            <td>Reference to RouteTable</td>
+            <td>(Gateway endpoint) One or more route tables associated with the endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>Subnets</td>
+            <td>Reference to Subnet</td>
+            <td>(Interface endpoint) One or more subnets in which the endpoint is located</td>
+          </tr>
+          
+          <tr>
+            <td>SecurityGroups</td>
+            <td>Reference to SecurityGroup</td>
+            <td>(Interface endpoint) Information about the security groups that are associated with the network interface</td>
+          </tr>
+          
+          <tr>
+            <td>PrivateDnsEnabled</td>
+            <td>boolean</td>
+            <td>(Interface endpoint) Indicates whether the VPC is associated with a private hosted zone</td>
+          </tr>
+          
+          <tr>
+            <td>RequesterManaged</td>
+            <td>boolean</td>
+            <td>Indicates whether the VPC endpoint is being managed by its service</td>
+          </tr>
+          
+          <tr>
+            <td>NetworkInterfaces</td>
+            <td>Reference to NetworkInterface</td>
+            <td>(Interface endpoint) One or more network interfaces for the endpoint</td>
+          </tr>
+          
+          <tr>
+            <td>DnsEntries</td>
+            <td>list</td>
+            <td>(Interface endpoint) The DNS entries for the endpoint</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>DnsName</td>
+            <td>string</td>
+            <td>The DNS name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>HostedZoneId</td>
+            <td>string</td>
+            <td>The ID of the private hosted zone</td>
+          </tr>
+          
+          <tr>
+            <td>CreationTime</td>
+            <td>number</td>
+            <td>VPC endpoint created time in epoch</td>
+          </tr>
+          
+          <tr>
+            <td>LastErrorMessage</td>
+            <td>string</td>
+            <td>The last error that occurred for VPC endpoint</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="APIGateway">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The API's identifier.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The API's name.</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>ID of account containing the API Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Name of account containing the API Gateway</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>ID of region in which the API Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Name of region in which the API Gateway resides</td>
+          </tr>
+          
+          <tr>
+            <td>Description</td>
+            <td>string</td>
+            <td>The API's description.</td>
+          </tr>
+          
+          <tr>
+            <td>CreatedDate</td>
+            <td>number</td>
+            <td>The timestamp when the API was created.</td>
+          </tr>
+          
+          <tr>
+            <td>Version</td>
+            <td>string</td>
+            <td>A version identifier for the API.</td>
+          </tr>
+          
+          <tr>
+            <td>Warnings</td>
+            <td>list</td>
+            <td>The warning messages reported when failonwarnings is turned on during API import.</td>
+          </tr>
+          
+          <tr>
+            <td>BinaryMediaTypes</td>
+            <td>list</td>
+            <td>The list of binary media types supported by the RestApi.</td>
+          </tr>
+          
+          <tr>
+            <td>MinimumCompressionSize</td>
+            <td>number</td>
+            <td>Used to enable compression or disable compression on an API.</td>
+          </tr>
+          
+          <tr>
+            <td>ApiKeySource</td>
+            <td>string</td>
+            <td>The source of the API key for metering requests according to a usage plan. (HEADER | AUTHORIZER)</td>
+          </tr>
+          
+          <tr>
+            <td>EndpointConfiguration</td>
+            <td>sequence</td>
+            <td>The endpoint configuration of this RestApi showing the endpoint types of the API.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Types</td>
+            <td>list</td>
+            <td>A list of endpoint types of an API ( RestApi ) or its custom domain name. (EDGE | REGIONAL | PRIVATE)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>VpcEndpointIds</td>
+            <td>list</td>
+            <td>A list of VpcEndpointIds of an API ( RestApi ) against which to create Route53 ALIASes.</td>
+          </tr>
+          
+          <tr>
+            <td>DisableExecuteApiEndpoint</td>
+            <td>boolean</td>
+            <td>Specifies whether clients can invoke your API by using the default execute-api endpoint.</td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>list</td>
+            <td>Tags assigned to the RDS cluster</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Tag key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Value</td>
+            <td>string</td>
+            <td>Tag value</td>
+          </tr>
+          
+          <tr>
+            <td>Policy</td>
+            <td>sequence</td>
+            <td>A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Version</td>
+            <td>string</td>
+            <td>Policy version</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Id</td>
+            <td>string</td>
+            <td>ID of the policy</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Statements</td>
+            <td>list</td>
+            <td>Permission statements</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Sid</td>
+            <td>string</td>
+            <td>Sid of the policy statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect of the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
           </tr>
           
         </table>

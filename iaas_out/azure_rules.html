@@ -178,7 +178,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -8407,7 +8409,7 @@ h1 {position: fixed; top: 75}
   })));
 
   // Search
-  var $rows = $('#table tr:gt(0)');
+  var $rows = $('table.rule_table tr[num]');
   $('#search').keyup(debounce(function() {
 
     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',

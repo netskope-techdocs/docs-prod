@@ -114,11 +114,11 @@ h1 {position: fixed; top: 75}
 .rule_name {width:100%; text-align: left;}
 </style>
 
-<title>GCP Predefined Rules</title>
+<title>Google Cloud Predefined Rules</title>
 </head>
 <body>
   <img src="logo.png" alt="Netskope"/>
-  <h1>GCP Predefined Rules</h1>
+  <h1>Google Cloud Predefined Rules</h1>
   <div class="container">
     <div class="rule_keys">
         <ul>
@@ -178,7 +178,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -6679,7 +6681,7 @@ h1 {position: fixed; top: 75}
   })));
 
   // Search
-  var $rows = $('#table tr:gt(0)');
+  var $rows = $('table.rule_table tr[num]');
   $('#search').keyup(debounce(function() {
 
     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
