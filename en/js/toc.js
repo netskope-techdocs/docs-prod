@@ -6078,13 +6078,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "user-confidence-index-in-policies.html",
+"text": "User Confidence Index in Policies",
+"class": "topic-link section"
+},
+{
 "url": "behavior-analytics-user-confidence-index.html",
 "text": "Behavior Analytics User Confidence Index",
 "class": "topic-link section"
 },
 {
+"url": "behavior-analytics-incidents.html",
+"text": "Behavior Analytics Incidents",
+"class": "topic-link section"
+},
+{
 "url": "behavior-analytics-incident-details.html",
 "text": "Behavior Analytics Incident Details",
+"class": "topic-link section"
+},
+{
+"url": "behavior-analytics-detection-scenarios.html",
+"text": "Behavior Analytics Detection Scenarios",
 "class": "topic-link section"
 }]
 },
