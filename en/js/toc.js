@@ -76,6 +76,28 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-release-notes-version-89-0-0.html",
+"text": "Netskope Release Notes Version 89.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-179821.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-179823.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+},
+{
+"url": "appendix--fixed-issue-134322.html",
+"text": "Appendix: Fixed Issue 134322",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-hotfix-release-notes-version-88-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 88.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -1349,23 +1371,6 @@ var toc = [{
 {
 "url": "migrating-from-ce-2-x-to-ce-3-x.html",
 "text": "Migrating from CE 2.x to CE 3.x",
-"class": "topic-link section"
-}]
-},
-{
-"url": "transaction-events.html",
-"text": "Transaction Events",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-transaction-events.html",
-"text": "Netskope Transaction Events",
-"class": "topic-link section"
-},
-{
-"url": "transaction-event-fields.html",
-"text": "Transaction Event Fields",
 "class": "topic-link section"
 }]
 },
@@ -4184,8 +4189,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "create-a-real-time-protection-policy-for-ctep.html",
-"text": "Create a Real-time Protection Policy for CTEP",
+"url": "creating-a-real-time-protection-policy-for-ctep.html",
+"text": "Creating a Real-time Protection Policy for CTEP",
 "class": "topic-link section"
 },
 {
@@ -4194,8 +4199,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "create-a-signature-override.html",
-"text": "Create a Signature Override",
+"url": "creating-a-signature-override.html",
+"text": "Creating a Signature Override",
 "class": "topic-link section"
 }]
 },
@@ -6353,39 +6358,19 @@ var toc = [{
 }]
 },
 {
-"url": "cloud-confidence-index.html",
-"text": "Cloud Confidence Index",
+"url": "transaction-events.html",
+"text": "Transaction Events",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "evaluate-apps.html",
-"text": "Evaluate Apps",
+"url": "netskope-transaction-events.html",
+"text": "Netskope Transaction Events",
 "class": "topic-link section"
 },
 {
-"url": "advanced-search.html",
-"text": "Advanced Search",
-"class": "topic-link section"
-},
-{
-"url": "view-specific-app-details.html",
-"text": "View Specific App Details",
-"class": "topic-link section"
-},
-{
-"url": "compare-apps.html",
-"text": "Compare Apps",
-"class": "topic-link section"
-},
-{
-"url": "tag-apps.html",
-"text": "Tag Apps",
-"class": "topic-link section"
-},
-{
-"url": "create-pdf-reports.html",
-"text": "Create PDF Reports",
+"url": "transaction-event-fields.html",
+"text": "Transaction Event Fields",
 "class": "topic-link section"
 }]
 },
@@ -6586,6 +6571,43 @@ var toc = [{
 "text": "REST API Reports",
 "class": "topic-link section"
 }]
+}]
+},
+{
+"url": "cloud-confidence-index.html",
+"text": "Cloud Confidence Index",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "evaluate-apps.html",
+"text": "Evaluate Apps",
+"class": "topic-link section"
+},
+{
+"url": "advanced-search.html",
+"text": "Advanced Search",
+"class": "topic-link section"
+},
+{
+"url": "view-specific-app-details.html",
+"text": "View Specific App Details",
+"class": "topic-link section"
+},
+{
+"url": "compare-apps.html",
+"text": "Compare Apps",
+"class": "topic-link section"
+},
+{
+"url": "tag-apps.html",
+"text": "Tag Apps",
+"class": "topic-link section"
+},
+{
+"url": "create-pdf-reports.html",
+"text": "Create PDF Reports",
+"class": "topic-link section"
 }]
 },
 {
