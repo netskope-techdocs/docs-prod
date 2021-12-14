@@ -57,6 +57,22 @@
     <lastmod>2021-11-09</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/netskope-release-notes-version-89-0-0.html</loc>
+    <lastmod>2021-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-179821.html</loc>
+    <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-179823.html</loc>
+    <lastmod>2021-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/appendix--fixed-issue-134322.html</loc>
+    <lastmod>2021-09-10</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-hotfix-release-notes-version-88-1-0.html</loc>
     <lastmod>2021-10-22</lastmod>
   </url>
@@ -1011,18 +1027,6 @@
   <url>
     <loc>https://docs.netskope.com/en/migrating-from-ce-2-x-to-ce-3-x.html</loc>
     <lastmod>2021-11-18</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/transaction-events.html</loc>
-    <lastmod>2021-10-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-transaction-events.html</loc>
-    <lastmod>2021-12-13</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
-    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-public-cloud-security.html</loc>
@@ -2778,7 +2782,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-policies.html</loc>
-    <lastmod>2021-08-18</lastmod>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rule-based-policies.html</loc>
@@ -2786,7 +2790,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-based-policies.html</loc>
-    <lastmod>2021-12-11</lastmod>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/time-based-policies.html</loc>
@@ -3093,16 +3097,16 @@
     <lastmod>2021-10-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-ctep.html</loc>
-    <lastmod>2021-08-31</lastmod>
+    <loc>https://docs.netskope.com/en/creating-a-real-time-protection-policy-for-ctep.html</loc>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-ctep-settings.html</loc>
     <lastmod>2021-12-09</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/create-a-signature-override.html</loc>
-    <lastmod>2021-12-09</lastmod>
+    <loc>https://docs.netskope.com/en/creating-a-signature-override.html</loc>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/remote-browser-isolation.html</loc>
@@ -4490,11 +4494,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-user-confidence-index.html</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-incident-details.html</loc>
-    <lastmod>2021-12-10</lastmod>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-malware-86210.html</loc>
@@ -4693,32 +4697,16 @@
     <lastmod>2021-10-20</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/cloud-confidence-index.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <loc>https://docs.netskope.com/en/transaction-events.html</loc>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/evaluate-apps.html</loc>
-    <lastmod>2021-03-12</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-transaction-events.html</loc>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/advanced-search.html</loc>
-    <lastmod>2019-11-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/view-specific-app-details.html</loc>
-    <lastmod>2019-10-09</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/compare-apps.html</loc>
-    <lastmod>2021-07-16</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/tag-apps.html</loc>
-    <lastmod>2017-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-pdf-reports.html</loc>
-    <lastmod>2017-11-28</lastmod>
+    <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
+    <lastmod>2021-12-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics.html</loc>
@@ -4867,6 +4855,34 @@
   <url>
     <loc>https://docs.netskope.com/en/rest-api-reports.html</loc>
     <lastmod>2021-08-18</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/cloud-confidence-index.html</loc>
+    <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/evaluate-apps.html</loc>
+    <lastmod>2021-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/advanced-search.html</loc>
+    <lastmod>2019-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/view-specific-app-details.html</loc>
+    <lastmod>2019-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/compare-apps.html</loc>
+    <lastmod>2021-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/tag-apps.html</loc>
+    <lastmod>2017-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-pdf-reports.html</loc>
+    <lastmod>2017-11-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rest-api.html</loc>
