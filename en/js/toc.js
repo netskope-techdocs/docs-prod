@@ -748,13 +748,6 @@ var toc = [{
 "url": "private-access-rest-apis.html",
 "text": "Private Access REST APIs",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "private-access-api-endpoints.html",
-"text": "Private Access API Endpoints",
-"class": "topic-link section"
-}]
 }]
 },
 {

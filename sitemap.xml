@@ -454,7 +454,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2021-12-03</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -554,11 +554,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-rest-apis.html</loc>
-    <lastmod>2021-12-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/private-access-api-endpoints.html</loc>
-    <lastmod>2021-12-04</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
@@ -1086,7 +1082,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-an-azure-ad-application-for-csa.html</loc>
-    <lastmod>2021-12-09</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/azure-permissions-for-csa.html</loc>
@@ -1206,7 +1202,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sample-granular-policies.html</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-iaas-services-for-storage-scan.html</loc>
@@ -1230,7 +1226,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-2-2--configure-aws-permissions-for-forensic.html</loc>
-    <lastmod>2021-12-09</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-azure-blob-storage-as-a-forensic-destination.html</loc>
