@@ -1025,6 +1025,18 @@
     <lastmod>2021-11-18</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/transaction-events.html</loc>
+    <lastmod>2021-12-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-transaction-events.html</loc>
+    <lastmod>2021-12-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
+    <lastmod>2021-12-13</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-public-cloud-security.html</loc>
     <lastmod>2021-12-13</lastmod>
   </url>
@@ -2754,7 +2766,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection.html</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies-231157.html</loc>
@@ -2778,15 +2790,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics-policies.html</loc>
-    <lastmod>2021-12-13</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rule-based-policies.html</loc>
-    <lastmod>2021-12-11</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/behavior-based-policies.html</loc>
-    <lastmod>2021-12-13</lastmod>
+    <loc>https://docs.netskope.com/en/ml-based-policies.html</loc>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/time-based-policies.html</loc>
@@ -4705,18 +4717,6 @@
     <lastmod>2021-10-20</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/transaction-events.html</loc>
-    <lastmod>2021-12-13</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-transaction-events.html</loc>
-    <lastmod>2021-12-13</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
-    <lastmod>2021-12-13</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/advanced-analytics.html</loc>
     <lastmod>2021-10-20</lastmod>
   </url>
@@ -5734,7 +5734,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/videos.html</loc>
-    <lastmod>2021-11-05</lastmod>
+    <lastmod>2021-12-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/customer-webinars.html</loc>
@@ -5817,6 +5817,10 @@
     <lastmod>2021-09-23</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/real-time-user-coaching.html</loc>
+    <lastmod>2021-09-23</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-reverse-proxy-as-a-service-with-azure-active-directory--ad-.html</loc>
     <lastmod>2021-09-23</lastmod>
   </url>
@@ -5886,18 +5890,6 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-deployment-with-jamf---non-ad-joined-mac-os-devices.html</loc>
-    <lastmod>2021-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/demos.html</loc>
-    <lastmod>2021-09-23</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-demo.html</loc>
-    <lastmod>2021-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/real-time-user-coaching.html</loc>
     <lastmod>2021-09-23</lastmod>
   </url>
 </urlset>

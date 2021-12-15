@@ -1368,6 +1368,23 @@ var toc = [{
 }]
 },
 {
+"url": "transaction-events.html",
+"text": "Transaction Events",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-transaction-events.html",
+"text": "Netskope Transaction Events",
+"class": "topic-link section"
+},
+{
+"url": "transaction-event-fields.html",
+"text": "Transaction Event Fields",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
 "class": "topic-link section reused-publication reused-publication"
@@ -3747,7 +3764,7 @@ var toc = [{
 {
 "url": "behavior-analytics-policies.html",
 "text": "Behavior Analytics Policies",
-"class": "topic-link section"
+"class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
@@ -3756,8 +3773,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "behavior-based-policies.html",
-"text": "Behavior-Based Policies",
+"url": "ml-based-policies.html",
+"text": "ML Based Policies",
 "class": "topic-link section"
 }]
 },
@@ -6366,23 +6383,6 @@ var toc = [{
 }]
 },
 {
-"url": "transaction-events.html",
-"text": "Transaction Events",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-transaction-events.html",
-"text": "Netskope Transaction Events",
-"class": "topic-link section"
-},
-{
-"url": "transaction-event-fields.html",
-"text": "Transaction Event Fields",
-"class": "topic-link section"
-}]
-},
-{
 "url": "advanced-analytics.html",
 "text": "Advanced Analytics",
 "class": "topic-link section reused-publication reused-publication"
@@ -7845,6 +7845,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "real-time-user-coaching.html",
+"text": "Real-time User Coaching",
+"class": "topic-link section original-topic original-topic"
+},
+{
 "url": "netskope-reverse-proxy-as-a-service-with-azure-active-directory--ad-.html",
 "text": "Netskope Reverse Proxy as a Service with Azure Active Directory (AD)",
 "class": "topic-link section original-topic original-topic"
@@ -7932,23 +7937,6 @@ var toc = [{
 {
 "url": "netskope-client-deployment-with-jamf---non-ad-joined-mac-os-devices.html",
 "text": "Netskope Client Deployment with JAMF - Non-AD Joined Mac OS Devices",
-"class": "topic-link section original-topic original-topic"
-}]
-},
-{
-"url": "demos.html",
-"text": "Demos",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "netskope-demo.html",
-"text": "Netskope Demo",
-"class": "topic-link section"
-},
-{
-"url": "real-time-user-coaching.html",
-"text": "Real-time User Coaching",
 "class": "topic-link section original-topic original-topic"
 }]
 }]
