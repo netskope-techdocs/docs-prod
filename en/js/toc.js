@@ -2515,8 +2515,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-gmail-for-api-data-protectionting.html",
-"text": "Configure Gmail for API Data Protectionting",
+"url": "configure-gmail-for-api-data-protection.html",
+"text": "Configure Gmail for API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -4215,8 +4215,8 @@ var toc = [{
 }]
 },
 {
-"url": "remote-browser-isolation.html",
-"text": "Remote Browser Isolation",
+"url": "netskope-secure-web-gatewayremote-browser-isolation.html",
+"text": "Netskope Secure Web GatewayRemote Browser Isolation",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -7526,8 +7526,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "monitor-status-using-a-command-line-interface.html",
-"text": "Monitor Status using a Command Line Interface",
+"url": "monitor-log-processing-status-using-a-command-line-interface.html",
+"text": "Monitor Log Processing Status using a Command Line Interface",
 "class": "topic-link section"
 }]
 },
