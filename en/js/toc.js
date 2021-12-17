@@ -6142,8 +6142,8 @@ var toc = [{
 }]
 },
 {
-"url": "skopeit.html",
-"text": "SkopeIT",
+"url": "skope-it.html",
+"text": "Skope IT",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
