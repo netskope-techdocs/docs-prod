@@ -800,8 +800,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-threat-exchange-plugin.html",
-"text": "Configure the Threat Exchange Plugin",
+"url": "configure-the-netskope-plugin-for-threat-exchange.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -842,8 +842,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-303195.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -899,8 +899,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange-298911.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-298911.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -936,8 +936,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange-324233.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-324233.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -973,8 +973,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange-324475.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-324475.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1015,8 +1015,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange-324384.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-324384.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1057,8 +1057,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-in-threat-exchange-327533.html",
-"text": "Configure the Netskope Plugin in Threat Exchange",
+"url": "configure-the-netskope-plugin-for-threat-exchange-327533.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1131,8 +1131,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-ticket-orchestrator-plugin.html",
-"text": "Configure the Ticket Orchestrator Plugin",
+"url": "configure-the-netskope-plugin-for-ticket-orchestrator.html",
+"text": "Configure the Netskope Plugin for Ticket Orchestrator",
 "class": "topic-link section"
 },
 {
@@ -1173,8 +1173,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-risk-exchange-plugin.html",
-"text": "Configure the Risk Exchange Plugin",
+"url": "configure-the-netskope-plugin-for-risk-exchange.html",
+"text": "Configure the Netskope Plugin for Risk Exchange",
 "class": "topic-link section"
 },
 {
@@ -1220,8 +1220,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-log-shipper-plugin.html",
-"text": "Configure the Log Shipper Plugin",
+"url": "configure-the-netskope-plugin-for-log-shipper.html",
+"text": "Configure the Netskope Plugin for Log Shipper",
 "class": "topic-link section"
 },
 {
@@ -1315,13 +1315,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-threat-exchange-plugin-291069.html",
-"text": "Configure the Threat Exchange Plugin",
+"url": "configure-the-threat-exchange-plugin-old.html",
+"text": "Configure the Threat Exchange Plugin-OLD",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-ticket-orchestrator-plugin-291070.html",
-"text": "Configure the Ticket Orchestrator Plugin",
+"url": "configure-the-ticket-orchestrator-plugin-old.html",
+"text": "Configure the Ticket Orchestrator Plugin-OLD",
 "class": "topic-link section"
 }]
 },
@@ -6148,8 +6148,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "skopeit-pages.html",
-"text": "SkopeIT Pages",
+"url": "skope-it-pages.html",
+"text": "Skope IT Pages",
 "class": "topic-link section"
 ,
 "children": [
@@ -6219,24 +6219,24 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "skopeit-query-language.html",
-"text": "SkopeIT Query Language",
+"url": "skope-it-query-language.html",
+"text": "Skope IT Query Language",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "skopeit-query-language-search-examples.html",
-"text": "SkopeIT Query Language Search Examples",
+"url": "skope-it-query-language-search-examples.html",
+"text": "Skope IT Query Language Search Examples",
 "class": "topic-link section"
 },
 {
-"url": "skopeit-queries-library.html",
-"text": "SkopeIT Queries Library",
+"url": "skope-it-queries-library.html",
+"text": "Skope IT Queries Library",
 "class": "topic-link section"
 },
 {
-"url": "save-skopeit-searches.html",
-"text": "Save SkopeIT Searches",
+"url": "save-skope-it-searches.html",
+"text": "Save Skope IT Searches",
 "class": "topic-link section"
 },
 {
@@ -6944,8 +6944,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "overview-of-netskope-on-premise-appliance.html",
-"text": "Overview of Netskope On-Premise Appliance",
+"url": "overview-of-netskope-on-premises-appliance.html",
+"text": "Overview of Netskope On-Premises Appliance",
 "class": "topic-link section"
 },
 {

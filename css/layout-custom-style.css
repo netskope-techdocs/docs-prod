@@ -13,6 +13,7 @@
 
 
 
+
 /* PROVIDES THE LATO FONT STYLE USED THROUGHOUT */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
 
@@ -207,7 +208,7 @@ code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code
 }
 
 .collapsible-sidebar-nav .site-sidebar-header .navbar-toggle{
-  display:inline-block!important;
+  display:inline-block;
   vertical-align:left;
   padding-top: 18px;
   margin-left:10px;
@@ -669,7 +670,7 @@ table tr:nth-child(even){
   .portal-header:after{
         z-index: -5;
         background: url(image/portal-bg.jpg) no-repeat center center;
-        background-size: auto;
+        background-size: cover;
         opacity: .9;
         filter: none;
     }
@@ -733,7 +734,13 @@ table tr:nth-child(even){
 }
 
 
+/* HIDES THE LEFT NAV PANEL
+.nav-site-sidebar {
+display:none;
+}  */
+
 /*REMOVES SEE ALSO LINKS
 .section-toc .section-toc-after {
 display:none;
 }*/
+
