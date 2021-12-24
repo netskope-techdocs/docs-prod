@@ -329,39 +329,44 @@ var toc = [{
 }]
 },
 {
-"url": "ctep-threat-content-release-notes.html",
-"text": "CTEP Threat Content Release Notes",
+"url": "client-traffic-exploit-prevention-intrusion-prevention-system-threat-content-release-notes.html",
+"text": "Client Traffic Exploit Prevention\/Intrusion Prevention System Threat Content Release Notes",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "ctep-ips-threat-content-update-release-91-0-6-139.html",
-"text": "CTEP\/IPS Threat Content Update Release 91.0.6.139",
+"url": "ctep-ips-threat-content-update-release-notes-91-0-8-142.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.8.142",
 "class": "topic-link section"
 },
 {
-"url": "ctep-ips-threat-content-update-release---90-0-1-104.html",
-"text": "CTEP\/IPS Threat Content Update Release : 90.0.1.104",
+"url": "ctep-ips-threat-content-update-release-notes-91-0-6-139.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.6.139",
 "class": "topic-link section"
 },
 {
-"url": "ctep-ips-threat-content-update-release---89-0-1-94.html",
-"text": "CTEP\/IPS Threat Content Update Release : 89.0.1.94",
+"url": "ctep-ips-threat-content-update-release-notes-90-0-1-104.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 90.0.1.104",
 "class": "topic-link section"
 },
 {
-"url": "ctep-ips-threat-content-update-release-88-1-1-91.html",
-"text": "CTEP\/IPS Threat Content Update Release 88.1.1.91",
+"url": "ctep-ips-threat-content-update-release-notes-89-0-1-94.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 89.0.1.94",
 "class": "topic-link section"
 },
 {
-"url": "ctep-ips-threat-content-update-release---88-0-1-87.html",
-"text": "CTEP\/IPS Threat Content Update Release : 88.0.1.87",
+"url": "ctep-ips-threat-content-update-release-notes-88-1-1-91.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 88.1.1.91",
 "class": "topic-link section"
 },
 {
-"url": "ctep-ips-threat-content-update-release---87-0-1-78.html",
-"text": "CTEP\/IPS Threat Content Update Release : 87.0.1.78",
+"url": "ctep-ips-threat-content-update-release-notes-88-0-1-87.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 88.0.1.87",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-87-0-1-78.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 87.0.1.78",
 "class": "topic-link section"
 }]
 }]
@@ -832,18 +837,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "get-the-netskope-api-token.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "create-carbon-black-api-credentials.html",
 "text": "Create Carbon Black API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-303195.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -889,18 +884,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "get-the-netskope-api-token-298909.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "create-a-crowdstrike-api-credentials.html",
 "text": "Create a CrowdStrike API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-298911.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -926,18 +911,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "get-the-netskope-api-token-324234.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "get-the-github-api-token.html",
 "text": "Get the GitHub API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-324233.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -963,18 +938,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "get-the-netskope-api-token-324474.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "get-the-microsoft-cas-api-token.html",
 "text": "Get the Microsoft CAS API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-324475.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1005,18 +970,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "get-the-netskope-api-token-324383.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "get-the-microsoft-defender-api-credentials.html",
 "text": "Get the Microsoft Defender API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-324384.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -1047,18 +1002,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "get-the-netskope-api-token-327532.html",
-"text": "Get the Netskope API Token",
-"class": "topic-link section"
-},
-{
 "url": "configure-mimecast-credentials.html",
 "text": "Configure Mimecast Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange-327533.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
 "class": "topic-link section"
 },
 {
@@ -4873,11 +4818,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "netskope-smtp-proxy-212979.html",
-"text": "Netskope SMTP Proxy",
-"class": "topic-link section"
-},
 {
 "url": "configure-netskope-smtp-proxy-with-microsoft-o365-exchange.html",
 "text": "Configure Netskope SMTP Proxy with Microsoft O365 Exchange",
