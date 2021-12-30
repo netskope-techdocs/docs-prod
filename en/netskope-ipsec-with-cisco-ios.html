@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			var versionsfile = '';
+
+
+			var indexDict = new Array();
+			var store = {};
+			var portalLanguage = 'en';
+			var enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				
+			
+			var useanchorlinks = false;
+			
+				useanchorlinks = true;
+				
+				var clicktocopy = 'Click to copy link';
+				var linkcopied =  'Copied!';</script><title>Netskope IPSec with Cisco IOS</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link><link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/rwd-table.min.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/jquery.paligocode.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="ipsec-and-gre.html" title="IPSec and GRE"></link><link rel="next" href="netskope-ipsec-with-cisco-ios.html#UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e_section-idm4598047297344032766074830949" title="Prerequisites"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">var containerid = 'GTM-W56WJ8S';
+
+						(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+						})(window,document,'script','dataLayer',containerid);
+					</script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script></head><body class="theme1 fixed-toolbar colored-top page-toc collapsible-sidebar-nav current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div id="navbar" class="navbar-collapse collapse"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside class="site-sidebar"><div class="site-sidebar-header"><button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><form class="site-sidebar-search" autocomplete="off"><input type="text" class="form-control search-field" placeholder="Search" id="aa-search-input"></input></form><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><h1 class="publication-title">Netskope Help</h1><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print print-icon"><a onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"><span class="print-text">print</span></i></a></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"> <a href="index-en.html">Netskope Help</a></li><li class="breadcrumb-link"><a href="integrations.html">Integrations</a></li><li class="breadcrumb-link"><a href="ipsec-and-gre.html">IPSec and GRE</a></li><li class="breadcrumb-node">Netskope IPSec with Cisco IOS</li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="ipsec-and-gre.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="netskope-ipsec-with-cisco-ios.html#UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e_section-idm4598047297344032766074830949">Next</a></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section reused-publication reused-publication" data-origin-id="UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e" data-permalink="netskope-ipsec-with-cisco-ios.html" data-topic-level="1" data-relative-prefix="" data-time-modified="December 10, 2021" data-publication-date="" id="UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e"><div class="titlepage"><div><div class="title"><h4 class="title">Netskope IPSec with Cisco IOS</h4></div></div></div><p>Netskope supports Internet Protocol Security (IPSec) tunnels as a traffic steering method. IPSec tunnels allow you to route web traffic (port 80 and 443) to Netskope using logical tunnel interfaces that terminate to a Netskope IPSec gateway. When you create IPSec tunnels in the Netskope UI, Netskope provides parameters for configuring the tunnels on your firewall. The IPSec configuration below utilizes Cisco IOS XE commands and concepts.</p><p>This guide illustrates how to configure GRE tunnels between Netskope and the following Cisco routers:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Cisco CSR 1000v (VXE) running IOS XE version 17.03.03</p></li><li class="listitem"><p>Cisco ISR 3900 (C3900-UNIVERSALK9-M) running IOS XE version 15.4(3)M3</p></li></ul></div><p>IPSec has two modes: tunnel mode and transport mode. This guide is for tunnel mode. To learn more about the CLI steps on Cisco IOS XE, see the <a class="link" href="https://www.cisco.com/c/en/us/support/all-products.html" target="_blank" rel="noopener">Cisco documentation</a>.</p><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e_section-idm4598047297344032766074830949"><div class="titlepage"><div><div class="title"><h5 class="title">Prerequisites</h5></div></div></div><p>Before configuring IPSec, review the <a class="link" href="ipsec.html" title="IPSec">prerequisites</a>.</p></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-474fd7c9-d963-7610-fbb7-6c34402acb23" data-time-modified="December 10, 2021" data-publication-date="" id="UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3_body" data-parent="#UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3"><div><div class="title"><h5 class="title">Creating IPSec Tunnels in Netskope</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3_body"><p>To create the IPSec tunnels for Cisco routers in the Netskope UI:</p><div class="procedure" id="UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3_procedure-idm4523179400553632771239338824"><ol class="procedure" type="1"><li class="step"><p>Go to <span class="bold bold"><strong>Settings</strong></span> &gt; <span class="bold bold"><strong>Security Cloud Platform</strong></span> &gt; <span class="bold bold"><strong>IPSec</strong></span>.</p></li><li class="step"><p>Click <span class="bold bold"><strong>Add New Tunnel</strong></span>.</p></li><li class="step"><p>In the <span class="bold bold"><strong>Add New IPSec Tunnel</strong></span> window:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold bold"><strong>Tunnel Name</strong></span>: Enter a name for the IPSec tunnel.</p></li><li class="listitem"><p><span class="bold bold"><strong>Source IP Address</strong></span>: (Optional) Enter the source peer IP address (i.e., exit public IP) of the Cisco router that Netskope will receive packets from. Netskope identifies traffic belonging to your organization through your router or firewall IP addresses.</p></li><li class="listitem"><p><span class="bold bold"><strong>Source Identity</strong></span>: Enter an IP address, a fully-qualified domain name (FQDN), or an ID in email address format. For example, 1.1.1.1 or sourcelocation@company.com. The router or firewall uses the source identity for authentication during Internet Key Exchange (IKE).</p></li><li class="listitem"><p><span class="bold bold"><strong>Primary Netskope POP</strong></span>: Select the primary Netskope point of presence (POP) closest to you, and copy the <span class="bold bold"><strong>IPSec Gateway</strong></span> IP address. You need this information to establish the primary IPSec tunnel on your Cisco router. For optimal performance, Netskope recommends using the geographically closest POPs and configuring at least two tunnels for each egress location in your network.</p></li><li class="listitem"><p><span class="bold bold"><strong>Failover Netskope POP</strong></span>: Select the backup Netskope POP closest to you, and copy the <span class="bold bold"><strong>IPSec Gateway</strong></span> IP address. You need this information to establish the backup IPSec tunnel on your Cisco router. For optimal performance, Netskope recommends using the geographically closest POPs and configuring at least two tunnels for each egress location in your network.</p></li><li class="listitem"><p><span class="bold bold"><strong>Pre-Shared Key (PSK)</strong></span>: Enter the pre-shared key that both sides of the tunnel will use to authenticate one another. The PSK must be unique for each tunnel.</p></li><li class="listitem"><p><span class="bold bold"><strong>Encryption Cipher</strong></span>: Select an encryption algorithm for the IPSec tunnel.</p></li><li class="listitem"><p><span class="bold bold"><strong>Maximum Bandwidth</strong></span>: Enter the maximum bandwidth for the IPSec tunnel. The tunnel size can be up to 250 Mbps.</p></li></ul></div><div class="mediaobject"><img src="image/uuid-0653c5f6-e2c1-c771-f16a-31cd6ad84460.png" style="" alt="The configured Add New IPSec Tunnel window." title="Add New IPSec Tunnel window"></img></div></li><li class="step"><p>Click <span class="bold bold"><strong>Add</strong></span>.</p></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-81e98b06-1a79-e1dd-bbc1-3a9b77dbf68e" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5_body" data-parent="#UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5"><div><div class="title"><h5 class="title">Configuring the IKEv2 Key Rings</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5_body"><p>Configure two IKEv2 key rings for your primary and backup IPSec tunnels.</p><div class="procedure" id="UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5_procedure-idm4577174336968032776390315085"><ol class="procedure" type="1"><li class="step"><p>Log in to your Cisco router.</p></li><li class="step"><p>Enter configuration mode:</p><pre class="programlisting"># configure terminal</pre></li><li class="step"><p>Enter an IKEv2 key ring name for the primary IPSec tunnel:</p><pre class="programlisting">(config)# crypto ikev2 keyring nskpkey1</pre></li><li class="step"><p>Enter a peer name for the primary IPSec tunnel:</p><pre class="programlisting">(config-ikev2-keyring)# peer ipsecgw</pre></li><li class="step"><p>Enter the IP address for the peer:</p><pre class="programlisting">(config-ikev2-keyring-peer)# address 10.136.176.30</pre></li><li class="step"><p>Enter the PSK for the peer:</p><pre class="programlisting">(config-ikev2-keyring-peer)# pre-shared-key local NetskopeTest</pre></li><li class="step"><p>Enter an IKEv2 key ring name for the backup IPSec tunnel:</p><pre class="programlisting">(config)# crypto ikev2 keyring nskpkey2</pre></li><li class="step"><p>Enter a peer name for the backup IPSec tunnel:</p><pre class="programlisting">(config-ikev2-keyring)# peer ipsecgw2</pre></li><li class="step"><p>Enter the IP address for the peer:</p><pre class="programlisting">(config-ikev2-keyring-peer)# address 10.136.176.31</pre></li><li class="step"><p>Enter the PSK for the peer:</p><pre class="programlisting">(config-ikev2-keyring-peer)# pre-shared-key local NetskopeTest</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-a1e4e7d7-c987-0beb-53f9-9e214961a5c1" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b_body" data-parent="#UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b"><div><div class="title"><h5 class="title">Configuring the IKEv2 Profiles</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b_body"><p>Configure two IKEv2 profiles to associate with your IKEv2 key rings. The IKEv2 profiles define the nonnegotiable parameters of the IKE SA.</p><div class="procedure"><ol class="procedure" type="1"><li class="step"><p>Enter an IKEv2 profile name for the primary IPSec tunnel:</p><pre class="programlisting">(config)# crypto ikev2 profile nsprofile1</pre></li><li class="step"><p>Define the match statement for the primary IKEv2 profile:</p><pre class="programlisting">(config-ikev2-profile)# match identity remote address 10.136.176.30 255.255.255.255</pre></li><li class="step"><p>Enter the local IKEv2 identity:</p><pre class="programlisting">(config-ikev2-profile)# identity local fqdn cisco123</pre></li><li class="step"><p>Define the remote authentication method:</p><pre class="programlisting">(config-ikev2-profile)# authentication remote pre-share</pre></li><li class="step"><p>Define the local authentication method:</p><pre class="programlisting">(config-ikev2-profile)# authentication local pre-share</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5" title="Configuring the IKEv2 Key Rings">IKEv2 key ring name</a> you configured for the backup IPSec tunnel:</p><pre class="programlisting">(config-ikev2-profile)# keyring local nskpkey1</pre></li><li class="step"><p>Enable Dead Peer Detection (DPD) and enter an interval:</p><pre class="programlisting">(config-ikev2-profile)# dpd 10 2 periodic</pre></li><li class="step"><p>Enter an IKEv2 profile name for the backup IPSec tunnel:</p><pre class="programlisting">(config)# crypto ikev2 profile nsprofile2</pre></li><li class="step"><p>Define the match statement for the backup IKEv2 profile:</p><pre class="programlisting">(config-ikev2-profile)# match identity remote address 10.136.176.31 255.255.255.255</pre></li><li class="step"><p>Enter the local IKEv2 identity:</p><pre class="programlisting">(config-ikev2-profile)# identity local fqdn cisco4567</pre></li><li class="step"><p>Define the remote authentication method:</p><pre class="programlisting">(config-ikev2-profile)# authentication remote pre-share</pre></li><li class="step"><p>Define the local authentication method:</p><pre class="programlisting">(config-ikev2-profile)# authentication local pre-share</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5" title="Configuring the IKEv2 Key Rings">IKEv2 key ring name</a> you configured for the backup IPSec tunnel:</p><pre class="programlisting">(config-ikev2-profile)# keyring local nskpkey2</pre></li><li class="step"><p>Enable DPD and enter an interval:</p><pre class="programlisting">(config-ikev2-profile)# dpd 10 2 periodic</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-ed1d76c3-2323-6066-abe3-12b7c74c9740" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c_body" data-parent="#UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c"><div><div class="title"><h5 class="title">Defining the IPSec Transform Set</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c_body"><p>The transform set defines the security protocols and algorithms that the peers agree to use during the IPSec SA negotiation.</p><div class="procedure" id="UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c_procedure-idm4575915755486432778156689126"><ol class="procedure" type="1"><li class="step"><p>Enter a name for the transform set and define the authentication and encryption algorithms:</p><pre class="programlisting">(config)# crypto ipsec transform nskptrans esp-gcm 256</pre></li><li class="step"><p>Define the IPSec mode:</p><pre class="programlisting">(cfg-crypto-trans)# mode tunnel</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-7b63f1c6-c099-b9ea-1652-d09517243e66" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619_body" data-parent="#UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619"><div><div class="title"><h5 class="title">Configuring the IPSec Profiles</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619_body"><p>Configure two IPSec profiles to associate with your transform set and IKEv2 profiles.</p><div class="procedure" id="UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619_procedure-idm457717107533283277818274385"><ol class="procedure" type="1"><li class="step"><p>Enter an IPSec profile name for the primary IPSec tunnel:</p><pre class="programlisting">(config)# crypto ipsec profile ipsec-prof-nskp1</pre></li><li class="step"><p>Enter the <a class="xref" href="netskope-ipsec-with-cisco-ios.html#UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c" title="Defining the IPSec Transform Set"><span class="xreftitle">Defining the IPSec Transform Set</span></a> you defined for the IPSec tunnels:</p><pre class="programlisting">(ipsec-profile)# set transform-set nskptrans</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b" title="Configuring the IKEv2 Profiles">IKEv2 profile name</a> you configured for the primary IPSec tunnel:</p><pre class="programlisting">(ipsec-profile)# set ikev2-profile nsprofile1</pre></li><li class="step"><p>Enter an IPSec profile name for the backup IPSec tunnel:</p><pre class="programlisting">(config)# crypto ipsec profile ipsec-prof-nskp2</pre></li><li class="step"><p>Enter the <a class="xref" href="netskope-ipsec-with-cisco-ios.html#UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c" title="Defining the IPSec Transform Set"><span class="xreftitle">Defining the IPSec Transform Set</span></a> you defined for the IPSec tunnels:</p><pre class="programlisting">(ipsec-profile)# set transform-set nskptrans</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b" title="Configuring the IKEv2 Profiles">IKEv2 profile name</a> you configured for the backup IPSec tunnel:</p><pre class="programlisting">(ipsec-profile)# set ikev2-profile nsprofile2</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-59263c91-e582-a2a9-d1a6-759361145dd6" data-time-modified="December 9, 2021" data-publication-date="" id="UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b_body" data-parent="#UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b"><div><div class="title"><h5 class="title">Creating the Tunnel Interfaces</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b_body"><p>Create two tunnel interfaces to associate with your IPSec profiles.</p><div class="procedure" id="UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b_procedure-idm4556875682662432779691409775"><ol class="procedure" type="1"><li class="step"><p>Create your primary tunnel interface with an ID:</p><pre class="programlisting">(config)# interface Tunnel1</pre></li><li class="step"><p>Enter a local IP address for the interface. It can be any one you choose.</p><pre class="programlisting">(config-if)# ip address 10.0.0.1 255.255.255.0</pre></li><li class="step"><p>Set the tunnel source interface, which is the interface that the tunnel is attached to. It's typically the public interface of the router.</p><pre class="programlisting">(config-if)# tunnel source 192.168.180.3</pre></li><li class="step"><p>Define the tunnel mode:</p><pre class="programlisting">(config-if)# tunnel mode ipsec ipv4</pre></li><li class="step"><p>Set the tunnel destination to the IP address of the primary Netskope POP, which you copied in <a class="xref" href="netskope-ipsec-with-cisco-ios.html#UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3" title="Creating IPSec Tunnels in Netskope"><span class="xreftitle">Creating IPSec Tunnels in Netskope</span></a>:</p><pre class="programlisting">(config-if)# tunnel destination 10.136.176.30</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619" title="Configuring the IPSec Profiles">IPSec profile name</a> you configured for the primary IPSec tunnel:</p><pre class="programlisting">(config-if)# tunnel protection ipsec-prof-nskp1</pre></li><li class="step"><p>Create your backup tunnel interface with an ID:</p><pre class="programlisting">(config)# interface Tunnel2</pre></li><li class="step"><p>Enter a local IP address for the interface. It can be any one you choose.</p><pre class="programlisting">(config-if)# ip address 9.0.0.1 255.255.255.0</pre></li><li class="step"><p>Set the tunnel source interface, which is the interface that the tunnel is attached to. It's typically the public interface of the router.</p><pre class="programlisting">(config-if)# tunnel source 192.168.180.3</pre></li><li class="step"><p>Define the tunnel mode:</p><pre class="programlisting">(config-if)# tunnel mode ipsec ipv4</pre></li><li class="step"><p>Set the tunnel destination to the IP address of the backup Netskope POP, which you copied in <a class="xref" href="netskope-ipsec-with-cisco-ios.html#UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3" title="Creating IPSec Tunnels in Netskope"><span class="xreftitle">Creating IPSec Tunnels in Netskope</span></a>:</p><pre class="programlisting">(config-if)# tunnel destination 10.136.176.31</pre></li><li class="step"><p>Enter the <a class="link" href="netskope-ipsec-with-cisco-ios.html#UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619" title="Configuring the IPSec Profiles">IPSec profile name</a> you configured for the backup IPSec tunnel:</p><pre class="programlisting">(config-if)# tunnel protection ipsec-prof-nskp2</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-d3c9f873-fed7-e4e2-9adc-9bc0fe7dbdd9" data-time-modified="December 10, 2021" data-publication-date="" id="UUID-311aef9b-4099-10c6-7373-524228ff894e"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-311aef9b-4099-10c6-7373-524228ff894e_body" data-parent="#UUID-311aef9b-4099-10c6-7373-524228ff894e"><div><div class="title"><h5 class="title">Configuring the ACL &amp; Route Map</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-311aef9b-4099-10c6-7373-524228ff894e_body"><p>You can use the route map to only route web traffic on ports 80 and 443 to through the IPSec tunnels.</p><p>To configure an access control list (ACL) and route map:</p><div class="procedure" id="UUID-311aef9b-4099-10c6-7373-524228ff894e_procedure-idm4545475984688032783257135328"><ol class="procedure" type="1"><li class="step"><p>Create an ACL for the traffic you want to match and apply the route map to:</p><pre class="programlisting">(config)# access-list 101 permit tcp any any eq www
+(config)# access-list 101 permit tcp any any eq 443</pre></li><li class="step"><p>Define a route map to match traffic against:</p><pre class="programlisting">(config)# route-map netskope permit 5</pre></li><li class="step"><p>Assign the access-list to the route map you created in Step 2:</p><pre class="programlisting">(config-route-map)# match ip address 101</pre></li><li class="step"><p>Set the tunnel interfaces in order of priority:</p><pre class="programlisting">(config-route-map)# set interface Tunnel1 Tunnel2</pre></li><li class="step"><p>Apply the route map to the interface that the traffic must be rerouted from:</p><pre class="programlisting">(config-route-map)# interface GigabitEthernet0/1
+(config-if)# ip policy route-map netskope</pre></li></ol></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-def0faf2-f4fd-6447-f770-f9d28e60b7a6" data-time-modified="December 10, 2021" data-publication-date="" id="UUID-a7bb30e1-3bb9-0496-5a1c-b11c94cf4769"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-a7bb30e1-3bb9-0496-5a1c-b11c94cf4769_body" data-parent="#UUID-a7bb30e1-3bb9-0496-5a1c-b11c94cf4769"><div><div class="title"><h5 class="title">Sample CLI Configuration</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-a7bb30e1-3bb9-0496-5a1c-b11c94cf4769_body"><p>Below is a sample CLI IPSec tunnel configuration for Cisco routers:</p><pre class="programlisting">crypto ikev2 keyring nskpkey1
+ peer ipsecgw
+  address 10.136.176.30
+  pre-shared-key NetskopeTest
+!         
+crypto ikev2 keyring nskpkey2
+ peer ipsecgw2
+  address 10.136.176.31
+  pre-shared-key NetskopeTest
+!        
+crypto ikev2 profile nsprofile1
+ match fvrf any
+ match identity remote address 10.136.176.30 255.255.255.255 
+ identity local fqdn cisco123
+ authentication remote pre-share
+ authentication local pre-share
+ keyring local nskpkey1
+ dpd 10 2 periodic
+!         
+crypto ikev2 profile nsprofile2
+ match fvrf any
+ match identity remote address 10.136.176.31 255.255.255.255 
+ identity local fqdn cisco4567
+ authentication remote pre-share
+ authentication local pre-share
+ keyring local nskpkey2
+ dpd 10 2 periodic
+!
+crypto ipsec transform-set nskptrans esp-gcm 256 
+ mode tunnel
+!         
+crypto ipsec profile ipsec-prof-nskp1
+ set transform-set nskptrans 
+ set ikev2-profile nsprofile1
+!         
+crypto ipsec profile ipsec-prof-nskp2
+ set transform-set nskptrans 
+ set ikev2-profile nsprofile2
+!         
+interface Tunnel1
+ ip address 10.0.0.1 255.255.255.0
+ tunnel source 192.168.180.3
+ tunnel mode ipsec ipv4
+ tunnel destination 10.136.176.30
+ tunnel protection ipsec profile ipsec-prof-nskp1
+!
+interface Tunnel2
+ ip address 9.0.0.1 255.255.255.0
+ tunnel source 192.168.180.3
+ tunnel mode ipsec ipv4
+ tunnel destination 10.136.176.31
+ tunnel protection ipsec profile ipsec-prof-nskp2
+!
+interface GigabitEthernet0/0
+ description "External network  -  VLAN180"
+ ip address 192.168.180.3 255.255.252.0
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!         
+interface GigabitEthernet0/1
+ description "Internal network  -  VLAN119"
+ ip address 192.168.119.3 255.255.255.0
+ ip virtual-reassembly in
+ ip policy route-map netskope
+ duplex auto
+ speed auto
+!
+route-map netskope permit 5
+ match ip address 101
+ set interface Tunnel1 Tunnel2
+!
+access-list 101 permit tcp any any eq www
+access-list 101 permit tcp any any eq 443</pre></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-9b82070c-ad32-6305-4e65-7307de03a473" data-time-modified="December 3, 2021" data-publication-date="" id="UUID-0e4a2ccc-7239-5bae-67f3-2049c9235ad3"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-0e4a2ccc-7239-5bae-67f3-2049c9235ad3_body" data-parent="#UUID-0e4a2ccc-7239-5bae-67f3-2049c9235ad3"><div><div class="title"><h5 class="title">Troubleshooting</h5></div></div></a></div></div><div class="panel-body collapse" id="UUID-0e4a2ccc-7239-5bae-67f3-2049c9235ad3_body"><p>You can use any of the following commands to troubleshoot the IPSec tunnels on the Cisco router:</p><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-dc7f0d23-ee85-60c3-aa50-dba8c5071198" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-348528e5-12bd-4087-3176-310d7dc0e987"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-348528e5-12bd-4087-3176-310d7dc0e987_body" data-parent="#UUID-348528e5-12bd-4087-3176-310d7dc0e987"><div><div class="title"><h6 class="title">Troubleshooting Phase 1</h6></div></div></a></div></div><div class="panel-body collapse" id="UUID-348528e5-12bd-4087-3176-310d7dc0e987_body"><div class="panel-inner"><p>Enter the following command to troubleshoot Phase 1:</p><pre class="programlisting"># show crypto ikev2 sa</pre><p>The CLI output should similar to the following:</p><pre class="programlisting">csr#sh crypto ikev2 session
+ IPv4 Crypto IKEv2 Session 
+Session-id:3326, Status:UP-ACTIVE, IKE count:1, CHILD count:1
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+2         10.2.10.85/4500       66.151.135.63/4500    none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA384, Hash: SHA384, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 86400/11454 sec
+Child sa: local selector  0.0.0.0/0 - 255.255.255.255/65535
+          remote selector 0.0.0.0/0 - 255.255.255.255/65535
+          ESP spi in/out: 0x8013BA61/0xC34C9E57  
+Session-id:3325, Status:UP-ACTIVE, IKE count:1, CHILD count:1
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+1         10.2.10.85/4500       163.116.136.184/4500  none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA384, Hash: SHA384, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 86400/19347 sec
+Child sa: local selector  0.0.0.0/0 - 255.255.255.255/65535
+          remote selector 0.0.0.0/0 - 255.255.255.255/65535
+          ESP spi in/out: 0x49262441/0xC09E0275  
+ IPv6 Crypto IKEv2 Session 
+
+csr#sh crypto ikev2 sa 
+ IPv4 Crypto IKEv2  SA 
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+2         10.2.10.85/4500       66.151.135.63/4500    none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA384, Hash: SHA384, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 86400/11123 sec
+Tunnel-id Local                 Remote                fvrf/ivrf            Status 
+1         10.2.10.85/4500       163.116.136.184/4500  none/none            READY  
+      Encr: AES-CBC, keysize: 256, PRF: SHA384, Hash: SHA384, DH Grp:14, Auth sign: PSK, Auth verify: PSK
+      Life/Active Time: 86400/19016 sec
+ IPv6 Crypto IKEv2  SA </pre></div></div></div></section><section xml:lang="en" lang="en" dir="ltr" class="section accordion accordion" data-origin-id="UUID-e0b5573a-f6c1-9b7e-7c4b-c0e524f85a5a" data-time-modified="December 8, 2021" data-publication-date="" id="UUID-97b6f6de-d839-9fc0-7276-ca92c78215f0"><div class="accordion-icon"></div><div class="panel panel-default"><div class="panel-heading"><div class="titlepage"><a data-toggle="collapse" href="#UUID-97b6f6de-d839-9fc0-7276-ca92c78215f0_body" data-parent="#UUID-97b6f6de-d839-9fc0-7276-ca92c78215f0"><div><div class="title"><h6 class="title">Troubleshooting Phase 2</h6></div></div></a></div></div><div class="panel-body collapse" id="UUID-97b6f6de-d839-9fc0-7276-ca92c78215f0_body"><div class="panel-inner"><p>Enter the following command to troubleshoot Phase 2:</p><pre class="programlisting"># show crypto ipsec sa</pre><p>The CLI output should similar to the following:</p><pre class="programlisting">csr#sh crypto ipsec sa
+interface: Tunnel1
+    Crypto map tag: Tunnel1-head-0, local addr 10.2.10.85
+   protected vrf: (none)
+   local  ident (addr/mask/prot/port): (0.0.0.0/0.0.0.0/0/0)
+   remote ident (addr/mask/prot/port): (0.0.0.0/0.0.0.0/0/0)
+   current_peer 163.116.136.184 port 4500
+     PERMIT, flags={origin_is_acl,}
+    #pkts encaps: 151253, #pkts encrypt: 151253, #pkts digest: 151253
+    #pkts decaps: 3771, #pkts decrypt: 3771, #pkts verify: 3771
+    #pkts compressed: 0, #pkts decompressed: 0
+    #pkts not compressed: 0, #pkts compr. failed: 0
+    #pkts not decompressed: 0, #pkts decompress failed: 0
+    #send errors 0, #recv errors 0
+     local crypto endpt.: 10.2.10.85, remote crypto endpt.: 163.116.136.184
+     plaintext mtu 1438, path mtu 1500, ip mtu 1500, ip mtu idb GigabitEthernet1
+     current outbound spi: 0xC5EB7597(3320542615)
+     PFS (Y/N): N, DH group: none
+     inbound esp sas:
+      spi: 0x7B464481(2068202625)
+        transform: esp-gcm 256 ,
+        in use settings ={Tunnel UDP-Encaps, }
+        conn id: 17496, flow_id: CSR:15496, sibling_flags FFFFFFFF80000048, crypto map: Tunnel1-head-0
+         sa timing: remaining key lifetime (k/sec): (2560/73)
+        IV size: 8 bytes
+        replay detection support: Y
+        Status: ACTIVE(ACTIVE)
+     inbound ah sas:
+     inbound pcp sas:
+     outbound esp sas:
+      spi: 0xC5EB7597(3320542615)
+        transform: esp-gcm 256 ,
+        in use settings ={Tunnel UDP-Encaps, }
+        conn id: 17495, flow_id: CSR:15495, sibling_flags FFFFFFFF80000048, crypto map: Tunnel1-head-0
+         sa timing: remaining key lifetime (k/sec): (2552/73)
+        IV size: 8 bytes
+        replay detection support: Y
+        Status: ACTIVE(ACTIVE)
+     outbound ah sas:
+     outbound pcp sas:
+
+interface: Tunnel2
+    Crypto map tag: Tunnel2-head-0, local addr 10.2.10.85
+   protected vrf: (none)
+   local  ident (addr/mask/prot/port): (0.0.0.0/0.0.0.0/0/0)
+   remote ident (addr/mask/prot/port): (0.0.0.0/0.0.0.0/0/0)
+   current_peer 66.151.135.63 port 4500
+     PERMIT, flags={origin_is_acl,}
+    #pkts encaps: 110, #pkts encrypt: 110, #pkts digest: 110
+    #pkts decaps: 112, #pkts decrypt: 112, #pkts verify: 112
+    #pkts compressed: 0, #pkts decompressed: 0
+    #pkts not compressed: 0, #pkts compr. failed: 0
+    #pkts not decompressed: 0, #pkts decompress failed: 0
+    #send errors 0, #recv errors 0
+     local crypto endpt.: 10.2.10.85, remote crypto endpt.: 66.151.135.63
+     plaintext mtu 1438, path mtu 1500, ip mtu 1500, ip mtu idb GigabitEthernet1
+     current outbound spi: 0xCF1B446D(3474670701)
+     PFS (Y/N): N, DH group: none
+     inbound esp sas:
+      spi: 0x5C1B62E4(1545298660)
+        transform: esp-gcm 256 ,
+        in use settings ={Tunnel UDP-Encaps, }
+        conn id: 17494, flow_id: CSR:15494, sibling_flags FFFFFFFF80000048, crypto map: Tunnel2-head-0
+         sa timing: remaining key lifetime (k/sec): (2560/46)
+        IV size: 8 bytes
+        replay detection support: Y
+        Status: ACTIVE(ACTIVE)
+     inbound ah sas:
+      inbound pcp sas:
+   outbound esp sas:
+      spi: 0xCF1B446D(3474670701)
+        transform: esp-gcm 256 ,
+        in use settings ={Tunnel UDP-Encaps, }
+        conn id: 17493, flow_id: CSR:15493, sibling_flags FFFFFFFF80000048, crypto map: Tunnel2-head-0
+         sa timing: remaining key lifetime (k/sec): (2560/46)
+        IV size: 8 bytes
+        replay detection support: Y
+        Status: ACTIVE(ACTIVE)     outbound ah sas:
+     outbound pcp sas:</pre></div></div></div></section></div></div></section></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><aside class="section-nav-container"><ul class="section-nav nav"><li><a href="#UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e">Netskope IPSec with Cisco IOS</a></li><li><a href="#UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e_section-idm4598047297344032766074830949">Prerequisites</a></li><li><a href="#UUID-3535f77f-8d0c-71a3-4ad1-0016ec45afa3">Creating IPSec Tunnels in Netskope</a></li><li><a href="#UUID-a5ebbff8-2587-7612-7174-0eb5a5392ae5">Configuring the IKEv2 Key Rings</a></li><li><a href="#UUID-220d66b4-3ec4-87f7-5dfa-af49b5668b8b">Configuring the IKEv2 Profiles</a></li><li><a href="#UUID-eef2d6a3-dbea-029a-d9db-25f2c6250b5c">Defining the IPSec Transform Set</a></li><li><a href="#UUID-88de49b5-9194-a39d-4cb5-61d42fa7e619">Configuring the IPSec Profiles</a></li><li><a href="#UUID-06520cba-e5a7-a8c3-e41a-08973a47f11b">Creating the Tunnel Interfaces</a></li><li><a href="#UUID-311aef9b-4099-10c6-7373-524228ff894e">Configuring the ACL &amp; Route Map</a></li><li><a href="#UUID-a7bb30e1-3bb9-0496-5a1c-b11c94cf4769">Sample CLI Configuration</a></li><li><a href="#UUID-0e4a2ccc-7239-5bae-67f3-2049c9235ad3">Troubleshooting</a></li></ul></aside><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Netskope%20IPSec%20with%20Cisco%20IOS%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Netskope%20IPSec%20with%20Cisco%20IOS%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="ipsec-and-gre.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="netskope-ipsec-with-cisco-ios.html#UUID-c8f1d1ca-7944-b7c5-90d3-cb9f2f235c9e_section-idm4598047297344032766074830949">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2021 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">December 10, 2021</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W56WJ8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager (noscript)--></body></html>

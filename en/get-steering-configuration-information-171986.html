@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			var versionsfile = '';
+
+
+			var indexDict = new Array();
+			var store = {};
+			var portalLanguage = 'en';
+			var enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				
+			
+			var useanchorlinks = false;
+			
+				useanchorlinks = true;
+				
+				var clicktocopy = 'Click to copy link';
+				var linkcopied =  'Copied!';</script><title>Get Steering Configuration Information</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link><link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/rwd-table.min.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/jquery.paligocode.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="get-a-steering-configuration-list-171985.html" title="Get a Steering Configuration List"></link><link rel="next" href="get-user-configuration-data-150917.html" title="Get User Configuration Data"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">var containerid = 'GTM-W56WJ8S';
+
+						(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+						j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+						'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+						})(window,document,'script','dataLayer',containerid);
+					</script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script></head><body class="theme1 fixed-toolbar colored-top page-toc collapsible-sidebar-nav current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div id="navbar" class="navbar-collapse collapse"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside class="site-sidebar"><div class="site-sidebar-header"><button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../index.html?lang=en"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><form class="site-sidebar-search" autocomplete="off"><input type="text" class="form-control search-field" placeholder="Search" id="aa-search-input"></input></form><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><h1 class="publication-title">Netskope Help</h1><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print print-icon"><a onclick="window.print();return false;"><i class="fa fa-print" aria-hidden="true"><span class="print-text">print</span></i></a></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"> <a href="index-en.html">Netskope Help</a></li><li class="breadcrumb-link"><a href="admin-console.html">Admin Console</a></li><li class="breadcrumb-link"><a href="rest-api.html">REST API</a></li><li class="breadcrumb-link"><a href="netskope-rest-apis-150925.html">Netskope Platform API Endpoints</a></li><li class="breadcrumb-node">Get Steering Configuration Information</li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="get-a-steering-configuration-list-171985.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="get-user-configuration-data-150917.html">Next</a></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-480ff620-1cef-2b4c-9609-589946283be6" data-permalink="get-steering-configuration-information-171986.html" data-topic-level="1" data-relative-prefix="" data-time-modified="October 20, 2021" data-publication-date="" id="UUID-dc946496-edab-88bb-df7d-d4ea6003cc39"><div class="titlepage"><div><div class="title"><h5 class="title">Get Steering Configuration Information</h5></div></div></div><p>Use this endpoint to get these details about your steering configuration(s):</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Steering Configuration information</p></li><li class="listitem"><p>Exceptions for the Steering Configuration</p></li><li class="listitem"><p>On-Premises and Off-Premises Steering Configuration and Exceptions information if the configuration has Location-Based Steering enabled.</p></li></ul></div><h6 id="UUID-dc946496-edab-88bb-df7d-d4ea6003cc39_bridgehead-5da1075165306-idm45304091315456" class="bridgehead">Request Endpoint</h6><pre class="programlisting">https://<span class="emphasis"><em>&lt;tenant-name&gt;</em></span>.goskope.com/api/v1/steeringconfig</pre><p>Valid query parameters are:</p><div class="informaltable table-responsive"><table class="informaltable frame-box rules-all"><colgroup><col style="width:25%;"></col><col style="width:25%;"></col><col style="width:50%;"></col></colgroup><thead><tr><th class="th" data-priority="1"><p>Key</p></th><th class="th" data-priority="1"><p>Value</p></th><th class="th" data-priority="1"><p>Description</p></th></tr></thead><tbody><tr><td class="td"><p><code class="literal">token</code></p></td><td class="td"><p>string</p></td><td class="td"><p>Required. The token obtained from the REST API page in the Netskope UI ( <span class="bold bold"><strong>Settings &gt; Tools &gt; Rest API v1</strong></span>) is required. We recommend that you place the token in the body of the request, not in the endpoint URL.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">config</code></p></td><td class="td"><p>URL-encoded string</p></td><td class="td"><p>Filters results by the Steering Configuration name. Use a <code class="literal">config</code> (name) value from the <a class="link" href="get-a-steering-configuration-list.html" title="Get a Steering Configuration List">steeringconfiglist</a> API.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">config_id</code></p></td><td class="td"><p>Positive Integer (specific to a steering configuration)</p></td><td class="td"><p>Filters results by the Steering Configuration ID. Use a <code class="literal">config_id</code> value from the <a class="link" href="get-a-steering-configuration-list.html" title="Get a Steering Configuration List">steeringconfiglist</a> API.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">limit</code></p></td><td class="td"><p>Positive integer less than 10000</p></td><td class="td"><p>REST API responses can return up to 10000 records in a single response. You can use pagination to retrieve more results.</p></td></tr><tr><td class="td"><p><code xml:lang="en" lang="en" dir="ltr" class="literal">skip</code></p></td><td class="td"><p>Positive integer</p></td><td class="td"><p>Skip over some of the records (useful for pagination in combination with <code class="literal">limit</code>).</p></td></tr></tbody></table></div><div dir="ltr" class="note"><h3 class="title">Note</h3><p>Not using <code class="literal">config</code> or <code class="literal">config_id</code> will return all steering configurations information.</p></div><h6 id="UUID-dc946496-edab-88bb-df7d-d4ea6003cc39_bridgehead-5da510f6a18a4-idm45530494083808" class="bridgehead">Request Example with Response using <code class="literal">config</code></h6><p>Note that the config name passed in the parameters is URL-encoded.</p><pre class="programlisting">POST 'https://<span class="emphasis"><em>&lt;tenant-name&gt;</em></span>/api/v1/steeringconfig?config=location%20based%20steering
+{    
+    "token": "f32a973eddd7bc1602fc0f48dc0a"
+} 
+</pre><pre class="programlisting">
+{
+  "status": "success",
+  "msg": "",
+  "data": [
+    {
+      "steering_config": "location based steering",
+      "enabled": true,
+      "location_based_steering": true,
+      "private_apps_enabled": false,
+      "priority": "2",
+      "on_prem": {
+        "steered_traffic": {
+          "data": [
+            {
+              "app_id": "101",
+              "app_name": "Adrenalin",
+              "disabled": "0",
+              "app_domains": "adrenalin.com",
+              "app_category": "HR",
+              "modify_time": "2019-08-19 17:38:15",
+              "app_cci": "31",
+              "app_ccl": "poor"
+            },
+            {
+              "app_id": "105",
+              "app_name": "ProcessManagement",
+              "disabled": "0",
+              "app_domains": "processmanagement.com",
+              "app_category": "Business Process Management",
+              "modify_time": "2019-08-19 17:38:15",
+              "app_cci": "63",
+              "app_ccl": "medium"
+            }
+          ],
+          "count": 2
+        },
+        "exceptions": {
+          "applictions": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "domains": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "src_netloc": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "dst_netloc": {
+            "data": [
+              {
+                "notes": "on-prem: [default destination location]",
+                "dst_netloc": [
+                  "Local IP address range"
+                ]
+              }
+            ],
+            "count": 1
+          },
+          "countries": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "cert_pinned_apps": {
+            "data": [
+              {
+                "notes": "on-prem: [default ssl pinned app]",
+                "app_name": "Amazon CloudDrive",
+                "enabled": true,
+                "data": {
+                  "custom": false,
+                  "appName": "Amazon CloudDrive",
+                  "android": {
+                    "action": "1",
+                    "processes": [
+                      "com.amazon.clouddrive",
+                      "com.amazon.clouddrive"
+                    ],
+                    "enabled": true,
+                    "domains": [
+                      "drive.amazonaws.com",
+		      "us-east-1.amazonaws.com",
+		      "us-west-2.amazonaws.com",
+		      "drive.amazon.com",
+		      "amazon.ca",
+		      "amazon.in",
+                      "amazon.co.uk"
+                    ]
+                  },
+                  "mac": {
+                    "action": "1",
+                    "processes": [
+                      "Amazon Cloud Dr",
+                      "Amazon Cloud Drive Sync Service",
+                      "Amazon Cloud Drive"
+                    ],
+                    "enabled": true,
+                    "managed_device": false,
+                    "tunnel": false,
+                    "tunnel_domains": [
+                       
+                    ]
+                  },
+                  "windows": {
+                    "action": "1",
+                    "processes": [
+                      "AmazonCloudDriveW.exe",
+                      "AmazonCloudDrive.exe"
+                    ],
+                    "enabled": true,
+                    "managed_device": false,
+                    "tunnel": false,
+                    "tunnel_domains": [
+                       
+                    ]
+                  },
+                  "ios": {
+                    "action": "1",
+                    "processes": [
+                       
+                    ],
+                    "enabled": false,
+                    "domains": [
+                      "drive.amazonaws.com",
+		      "us-east-1.amazonaws.com",
+		      "us-west-2.amazonaws.com",
+		      "drive.amazon.com",
+		      "amazon.ca",
+		      "amazon.in",
+                      "amazon.co.uk"
+                    ]
+                  }
+                }
+              }
+            ],
+            "count": 1
+          }
+        }
+      },
+      "off_prem": {
+        "steered_traffic": {
+          "data": [
+             
+          ],
+          "count": 0
+        },
+        "exceptions": {
+          "categories": {
+            "data": [
+              {
+                "categories": [
+                  "Finance/Accounting",
+                  "Internet Telephony",
+                  "Streaming &amp; Downloadable Audio",
+                  "Streaming &amp; Downloadable Video",
+                  "Telecom and Call Center",
+                  "Web Conferencing"
+                ],
+                "notes": "off-prem: [default categories]"
+              }
+            ],
+            "count": 1
+          },
+          "domains": {
+            "data": [
+              {
+                "domains": [
+                  "android.clients.google.com",
+                  "apple.com",
+                  "gs.apple.com",
+                  "itunes.apple.com",
+                  "play.google.com",
+                  "webex.com",
+                  "youtube.com"
+                ],
+                "notes": "off-prem: [default domains]"
+              }
+            ],
+            "count": 1
+          },
+          "src_netloc": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "dst_netloc": {
+            "data": [
+              {
+                "notes": "off-prem: [default destination location]",
+                "dst_netloc": [
+                  "Local IP address range"
+                ]
+              }
+            ],
+            "count": 1
+          },
+          "countries": {
+            "data": [
+               
+            ],
+            "count": 0
+          },
+          "cert_pinned_apps": {
+            "data": [
+              {
+                "notes": "off-prem: [default ssl pinned app]",
+                "app_name": "Amazon CloudDrive",
+                "enabled": true,
+                "data": {
+                  "custom": false,
+                  "appName": "Amazon CloudDrive",
+                  "android": {
+                    "action": "1",
+                    "processes": [
+                      "com.amazon.clouddrive",
+                      "com.amazon.clouddrive"
+                    ],
+                    "enabled": true,
+                    "domains": [
+                      "drive.amazonaws.com",
+		      "us-east-1.amazonaws.com",
+		      "us-west-2.amazonaws.com",
+		      "drive.amazon.com",
+		      "amazon.ca",
+		      "amazon.in",
+                      "amazon.co.uk"
+                    ]
+                  },
+                  "mac": {
+                    "action": "1",
+                    "processes": [
+                      "Amazon Cloud Dr",
+                      "Amazon Cloud Drive Sync Service",
+                      "Amazon Cloud Drive"
+                    ],
+                    "enabled": true,
+                    "managed_device": false,
+                    "tunnel": false,
+                    "tunnel_domains": [
+                       
+                    ]
+                  },
+                  "windows": {
+                    "action": "1",
+                    "processes": [
+                      "AmazonCloudDriveW.exe",
+                      "AmazonCloudDrive.exe"
+                    ],
+                    "enabled": true,
+                    "managed_device": false,
+                    "tunnel": false,
+                    "tunnel_domains": [
+                       
+                    ]
+                  },
+                  "ios": {
+                    "action": "1",
+                    "processes": [
+                       
+                    ],
+                    "enabled": false,
+                    "domains": [
+                      "drive.amazonaws.com",
+                      "us-east-1.amazonaws.com",
+                      "us-west-2.amazonaws.com",
+                      "drive.amazon.com",
+                      "amazon.ca",
+                      "amazon.in",
+                      "amazon.co.uk"
+                    ]
+                  }
+                }
+              }
+            ],
+            "count": 1
+          }
+        }
+      }
+    }
+  ]
+}</pre><h6 id="idm45652868240640" class="bridgehead">Request Example with Response using <code class="literal">config_id</code></h6><pre class="programlisting">POST 'https://<span class="emphasis"><em>&lt;tenant-name&gt;</em></span>/api/v1/steeringconfig?config_id=2
+{    
+    "token": "f32a973eddd7bc1602fc0f48dc0a"
+} 
+</pre><pre class="programlisting">
+{
+  status: "success",
+  msg: "",
+  data: [
+    {
+      steering_config: "web",
+      enabled: true,
+      location_based_steering: false,
+      private_apps_enabled: false,
+      priority: "1",
+      traffic_type: "web",
+      steered_traffic: {
+        data: [
+           
+        ],
+        count: 0
+      },
+      exceptions: {
+        categories: {
+          data: [
+            {
+              categories: [
+                "Adult Content - Other",
+                "Advocacy Groups &amp; Trade Associations"
+              ],
+              notes: "bypass categories"
+            }
+          ],
+          count: 1
+        },
+        domains: {
+          data: [
+            {
+              domains: [
+                 
+              ],
+              notes: null
+            },
+            {
+              domains: [
+                "www.facebook.com",
+                "www.google.com"
+              ],
+              notes: "bypass google and facebook"
+            }
+          ],
+          count: 2
+        },
+        src_netloc: {
+          data: [
+            {
+              notes: "bypass source locations",
+              src_netloc: [
+                "Any network 2",
+                "Lab Subnet"
+              ]
+            }
+          ],
+          count: 1
+        },
+        dst_netloc: {
+          data: [
+            {
+              notes: "default destination location",
+              dst_netloc: [
+                "Local IP address range"
+              ]
+            },
+            {
+              notes: "bypass destination locations",
+              dst_netloc: [
+                "162.16.192.65-range OUTside",
+                "nw_location"
+              ]
+            }
+          ],
+          count: 2
+        },
+        countries: {
+          data: [
+            {
+              notes: "bypass traffic from these countries",
+              countries: [
+                "Andorra",
+                "American Samoa"
+              ]
+            }
+          ],
+          count: 1
+        },
+        cert_pinned_apps: {
+          data: [
+            {
+              notes: "default ssl pinned app",
+              app_name: "Amazon CloudDrive",
+              enabled: true,
+              data: {
+                custom: false,
+                appName: "Amazon CloudDrive",
+                android: {
+                  action: "1",
+                  processes: [
+                    "com.amazon.clouddrive",
+                    "com.amazon.clouddrive"
+                  ],
+                  enabled: true,
+                  domains: [
+                    "drive.amazonaws.com",
+		    "us-east-1.amazonaws.com",
+		    "us-west-2.amazonaws.com",
+		    "drive.amazon.com",
+		    "amazon.ca",
+		    "amazon.in",
+                    "amazon.co.uk"
+                  ]
+                },
+                mac: {
+                  action: "1",
+                  processes: [
+                    "Amazon Cloud Dr",
+                    "Amazon Cloud Drive Sync Service",
+                    "Amazon Cloud Drive"
+                  ],
+                  enabled: true,
+                  managed_device: false,
+                  tunnel: false,
+                  tunnel_domains: [
+                     
+                  ]
+                },
+                windows: {
+                  action: "1",
+                  processes: [
+                    "AmazonCloudDriveW.exe",
+                    "AmazonCloudDrive.exe"
+                  ],
+                  enabled: true,
+                  managed_device: false,
+                  tunnel: false,
+                  tunnel_domains: [
+                     
+                  ]
+                },
+                ios: {
+                  action: "1",
+                  processes: [
+                     
+                  ],
+                  enabled: false,
+                  domains: [
+                    "drive.amazonaws.com",
+		    "us-east-1.amazonaws.com",
+		    "us-west-2.amazonaws.com",
+		    "drive.amazon.com",
+		    "amazon.ca",
+		    "amazon.in",
+                    "amazon.co.uk"
+                  ]
+                }
+              }
+            },
+            {
+              notes: "default ssl pinned app",
+              app_name: "Ablaze",
+              enabled: true,
+              data: {
+                custom: false,
+                appName: "Adrenalin",
+                windows: {
+                  action: "1",
+                  processes: [
+                    "Adrnln.exe"
+                  ],
+                  enabled: true,
+                  managed_device: false,
+                  tunnel: false,
+                  tunnel_domains: [
+                     
+                  ]
+                },
+                mac: {
+                  action: "1",
+                  managed_device: false,
+                  tunnel: false,
+                  tunnel_domains: [
+                     
+                  ],
+                  processes: [
+                     
+                  ],
+                  enabled: false,
+                  domains: [
+                    "adrenalin.com"
+                  ]
+                },
+                android: {
+                  action: "1",
+                  processes: [
+                     
+                  ],
+                  enabled: false,
+                  domains: [
+                    "adrenalin.com"
+                  ]
+                },
+                ios: {
+                  action: "1",
+                  processes: [
+                     
+                  ],
+                  enabled: false,
+                  domains: [
+                    "adrenalin.com"
+                  ]
+                }
+              }
+            }
+          ],
+          count: 2
+        }
+      }
+    }
+  ]
+}
+</pre></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Get%20Steering%20Configuration%20Information%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Get%20Steering%20Configuration%20Information%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="get-a-steering-configuration-list-171985.html">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="get-user-configuration-data-150917.html">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2021 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">October 20, 2021</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><!--Google Tag Manager (noscript)--><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W56WJ8S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager (noscript)--></body></html>

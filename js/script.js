@@ -151,29 +151,39 @@ function addSwipeNavigation() {
 }
 
 function getEmbedCode(){
-	var lang = hljs.listLanguages();
+    $("pre.embedcode[data-resource^='https:']").each(function () {
+        /**
+         * @type {Object}
+         */
+        var $pre = $(this);
 
-	$("pre.embedcode").each(function () {
+        /**
+         * @type {String}
+         */
         var resource = $(this).data("resource");
-        if(resource.match(/^https/)){
-			var $pre = $(this);
-			
-			$.get(resource).done(function(data){
-                var code;
 
-                $pre.empty().addClass('hljs');
+        $.get(resource)
+            .fail(function(){
+                throw "[Paligo] Not able to load source: "+resource;
+            })
+            .success(function(data) {
+                let code = {
+                    value: data,
+                    language: '',
+                };
 
-                if ($pre.data('language') && $.inArray($pre.data('language'), lang) > -1) {
-                    code = hljs.highlight($pre.data('language'), data);
-                } else {
-                    code = hljs.highlightAuto(data);
+                if (typeof hljs !== 'undefined') {
+                    $pre.empty().addClass('hljs');
+
+                    if ($pre.data('language') && $.inArray($pre.data('language'), hljs.listLanguages()) > -1) {
+                        code = hljs.highlight($pre.data('language'), code.value);
+                    } else {
+                        code = hljs.highlightAuto(code.value);
+                    }
                 }
-        
+
                 $pre.append(code.value).addClass(code.language);
-
-			});
-        }
-
+            });
     });
 }
 

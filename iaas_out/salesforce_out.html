@@ -13,15 +13,6 @@
       <h2 class="entity_category Identity">Identity</h2>
       <ul>
         
-        <li class="entity_key" data-entity-name="PasswordPolicies">
-          <span class="entity_name">PasswordPolicies</span>
-        </li>
-        
-      </ul>
-      
-      <h2 class="entity_category Security">Security</h2>
-      <ul>
-        
         <li class="entity_key" data-entity-name="Certificate">
           <span class="entity_name">Certificate</span>
         </li>
@@ -29,6 +20,36 @@
         <li class="entity_key" data-entity-name="ConnectedApp">
           <span class="entity_name">ConnectedApp</span>
         </li>
+        
+        <li class="entity_key" data-entity-name="PasswordPolicies">
+          <span class="entity_name">PasswordPolicies</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Management">Management</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="LightningExperienceSettings">
+          <span class="entity_name">LightningExperienceSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="MobileSettings">
+          <span class="entity_name">MobileSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RealTimeEventSettings">
+          <span class="entity_name">RealTimeEventSettings</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SharingSettings">
+          <span class="entity_name">SharingSettings</span>
+        </li>
+        
+      </ul>
+      
+      <h2 class="entity_category Security">Security</h2>
+      <ul>
         
         <li class="entity_key" data-entity-name="CorsAllowlistOrigin">
           <span class="entity_name">CorsAllowlistOrigin</span>
@@ -42,10 +63,6 @@
           <span class="entity_name">NetworkAccessIpRange</span>
         </li>
         
-        <li class="entity_key" data-entity-name="RealTimeEventSettings">
-          <span class="entity_name">RealTimeEventSettings</span>
-        </li>
-        
         <li class="entity_key" data-entity-name="RemoteSiteSettings">
           <span class="entity_name">RemoteSiteSettings</span>
         </li>
@@ -56,10 +73,6 @@
         
         <li class="entity_key" data-entity-name="SessionSettings">
           <span class="entity_name">SessionSettings</span>
-        </li>
-        
-        <li class="entity_key" data-entity-name="SharingSettings">
-          <span class="entity_name">SharingSettings</span>
         </li>
         
         <li class="entity_key" data-entity-name="SingleSignOnSettings">
@@ -599,6 +612,36 @@
           
         </table>
       
+        <table class="entity_table" data-entity-name="LightningExperienceSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>enableAuraCDNPref</td>
+            <td>boolean</td>
+            <td>Indicates whether Lightning Experience and other apps use a content delivery network (CDN) to serve the static content for Lightning Component framework.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="MobileSettings">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>enableS1EncryptedStoragePref2</td>
+            <td>boolean</td>
+            <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching to improve performance (true) or not (false).</td>
+          </tr>
+          
+        </table>
+      
         <table class="entity_table" data-entity-name="NetworkAccessIpRange">
           <tr>
             <th>Attribute</th>
@@ -715,13 +758,13 @@
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span>max</td>
+            <td><span class="_TAB">&nbsp;</span>Max</td>
             <td>number</td>
             <td>The maximum number of Concurrent CometD clients (subscribers) across all channels and for all event types</td>
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span>remaining</td>
+            <td><span class="_TAB">&nbsp;</span>Remaining</td>
             <td>number</td>
             <td>The remaining number of Concurrent CometD clients (subscribers) across all channels and for all event types that can subscribe</td>
           </tr>
@@ -775,18 +818,6 @@
           </tr>
           
           <tr>
-            <td>allowUserAuthenticationByCertificate</td>
-            <td>boolean</td>
-            <td>If enabled (true), users can authenticate with a PEM-encoded X.509 digital certificate. Not enabled by default. Available in API version 47.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>canConfirmIdentityBySmsOnly</td>
-            <td>boolean</td>
-            <td>Prevents identity verification by email for users who have registered other verification methods, such as SMS or Salesforce Authenticator. If no other verification methods are configured, users are verified by email. By default, this setting is disabled (false) for existing orgs. For new orgs, this setting is enabled (true) by default. Available in API version 48.0 and later.</td>
-          </tr>
-          
-          <tr>
             <td>canUsersGrantLoginAccess</td>
             <td>boolean</td>
             <td>If true, users can grant login access to Support. If false, only an admin can grant login access.</td>
@@ -805,81 +836,9 @@
           </tr>
           
           <tr>
-            <td>enableCSPOnEmail</td>
-            <td>boolean</td>
-            <td>Indicates whether a content security policy is enabled for the email template. A content security policy helps prevent cross-site scripting attacks by listing allowed sources of images and other content.</td>
-          </tr>
-          
-          <tr>
-            <td>enforceIpRangesEveryRequest</td>
-            <td>boolean</td>
-            <td>If true, the IP addresses in Login IP Ranges are enforced when a user accesses Salesforce (on every page request), including access from a client app. If false, the IP addresses in Login IP Ranges are enforced only when a user logs in. This field affects all user profiles that have login IP restrictions. Available in API version 34.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>enableLightningLoginOnlyWithUserPerm</td>
-            <td>boolean</td>
-            <td>If enabled (true), only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password. Available in API version 47.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>enableOauthCorsPolicy</td>
-            <td>boolean</td>
-            <td>If set to true, enables Cross-Origin Resource Sharing (CORS) for these OAuth endpoints: /services/oauth2/token /services/oauth2/revoke /services/oauth2/introspect Default setting is false. Available in API version 50.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>enablePostForSessions</td>
-            <td>boolean</td>
-            <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests. Available in API version 31.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>enableU2F</td>
-            <td>boolean</td>
-            <td>If enabled (true), users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification. The default is false. Available in API version 47.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>enableSamlLogin</td>
-            <td>boolean</td>
-            <td>If you enable 'SAML Enabled' (true), users can SSO into Salesforce from providers via SAML. The default isn't enabled (false).</td>
-          </tr>
-          
-          <tr>
             <td>enforceUserDeviceRevoked</td>
             <td>boolean</td>
             <td>If enabled, and a UserDevice's status is set to revoked, that device can't log in from a Salesforce app. Logins from browsers aren't affected. This field is available in API version 50.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>forceRelogin</td>
-            <td>boolean</td>
-            <td>If true, an admin who is logged in as another user must log in again to their original session, after logging out as the secondary user. If false, the admin isn't required to log in again.</td>
-          </tr>
-          
-          <tr>
-            <td>hasRetainedLoginHints</td>
-            <td>boolean</td>
-            <td>If you enable 'Remember me until logout' (true), usernames (login hints) are cached until the user logs out. If a session times out, usernames appear on the Switcher as inactive. If false (default), usernames aren't cached for SSO sessions.</td>
-          </tr>
-          
-          <tr>
-            <td>hasUserSwitching</td>
-            <td>boolean</td>
-            <td>If 'Enable user switching' is true (default), users can log in to other orgs by selecting their profile picture and using the Switcher. You must also enable the 'Enable caching and autocomplete on login page' setting. If false, the Switcher isn't enabled and your org doesn't appear in Switchers on other orgs.</td>
-          </tr>
-          
-          <tr>
-            <td>lockSessionsToDomain</td>
-            <td>boolean</td>
-            <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain. The value is true by default for orgs created with the Spring '15 release or later. Available in API version 33.0 and later.</td>
-          </tr>
-          
-          <tr>
-            <td>lockSessionsToIp</td>
-            <td>boolean</td>
-            <td>Indicates whether user sessions are locked to the IP address from which the user logged in (true) or not (false).</td>
           </tr>
           
         </table>
@@ -892,9 +851,21 @@
           </tr>
           
           <tr>
+            <td>allowUserAuthenticationByCertificate</td>
+            <td>boolean</td>
+            <td>If enabled (true), users can authenticate with a PEM-encoded X.509 digital certificate. Not enabled by default. Available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
             <td>canConfirmEmailChangeInLightningCommunities</td>
             <td>boolean</td>
             <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect.</td>
+          </tr>
+          
+          <tr>
+            <td>canConfirmIdentityBySmsOnly</td>
+            <td>boolean</td>
+            <td>Prevents identity verification by email for users who have registered other verification methods, such as SMS or Salesforce Authenticator. If no other verification methods are configured, users are verified by email. By default, this setting is disabled (false) for existing orgs. For new orgs, this setting is enabled (true) by default. Available in API version 48.0 and later.</td>
           </tr>
           
           <tr>
@@ -906,7 +877,7 @@
           <tr>
             <td>enableCSPOnEmail</td>
             <td>boolean</td>
-            <td>None</td>
+            <td>Indicates whether a content security policy is enabled for the email template. A content security policy helps prevent cross-site scripting attacks by listing allowed sources of images and other content.</td>
           </tr>
           
           <tr>
@@ -964,21 +935,57 @@
           </tr>
           
           <tr>
+            <td>enableLightningLoginOnlyWithUserPerm</td>
+            <td>boolean</td>
+            <td>If enabled (true), only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password. Available in API version 47.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enableOauthCorsPolicy</td>
+            <td>boolean</td>
+            <td>If set to true, enables Cross-Origin Resource Sharing (CORS) for these OAuth endpoints: /services/oauth2/token /services/oauth2/revoke /services/oauth2/introspect Default setting is false. Available in API version 50.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enablePostForSessions</td>
+            <td>boolean</td>
+            <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests. Available in API version 31.0 and later.</td>
+          </tr>
+          
+          <tr>
             <td>enableSMSIdentity</td>
             <td>boolean</td>
             <td>If enabled (true), the default, users can receive a one-time password in a text message (SMS) to verify their identity. Users must verify their mobile phone number before they can receive SMS messages.</td>
           </tr>
           
           <tr>
-            <td>enableUpgradeInsecureRequests</td>
+            <td>enableU2F</td>
             <td>boolean</td>
-            <td>Indicates if HTTPS is required for connecting to third-party domains.</td>
+            <td>If enabled (true), users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification. The default is false. Available in API version 47.0 and later.</td>
           </tr>
           
           <tr>
             <td>enableXssProtection</td>
             <td>boolean</td>
             <td>Indicates if protection against reflected cross-site scripting attacks is enabled. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content. This field is available in API version 39.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>enforceIpRangesEveryRequest</td>
+            <td>boolean</td>
+            <td>If true, the IP addresses in Login IP Ranges are enforced when a user accesses Salesforce (on every page request), including access from a client app. If false, the IP addresses in Login IP Ranges are enforced only when a user logs in. This field affects all user profiles that have login IP restrictions. Available in API version 34.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>hasRetainedLoginHints</td>
+            <td>boolean</td>
+            <td>If you enable 'Remember me until logout' (true), usernames (login hints) are cached until the user logs out. If a session times out, usernames appear on the Switcher as inactive. If false (default), usernames aren't cached for SSO sessions.</td>
+          </tr>
+          
+          <tr>
+            <td>hasUserSwitching</td>
+            <td>boolean</td>
+            <td>If 'Enable user switching' is true (default), users can log in to other orgs by selecting their profile picture and using the Switcher. You must also enable the 'Enable caching and autocomplete on login page' setting. If false, the Switcher isn't enabled and your org doesn't appear in Switchers on other orgs.</td>
           </tr>
           
           <tr>
@@ -1012,12 +1019,6 @@
           </tr>
           
           <tr>
-            <td>hstsOnForcecomSites</td>
-            <td>boolean</td>
-            <td>Indicates whether Visualforce, Salesforce sites, or Experience Cloud sites must use HTTPS. Available in API version 41.0 and later.</td>
-          </tr>
-          
-          <tr>
             <td>identityConfirmationOnEmailChange</td>
             <td>boolean</td>
             <td>Indicates if a user's identity is confirmed when changing their email address, instead of requiring a re-login. This field is available in API version 42.0 and later.</td>
@@ -1027,6 +1028,18 @@
             <td>identityConfirmationOnTwoFactorRegistrationEnabled</td>
             <td>boolean</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login. (Multi-factor authentication was formerly called two-factor authentication.) This field is available in API version 40.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>lockSessionsToDomain</td>
+            <td>boolean</td>
+            <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain. The value is true by default for orgs created with the Spring '15 release or later. Available in API version 33.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>lockSessionsToIp</td>
+            <td>boolean</td>
+            <td>Indicates whether user sessions are locked to the IP address from which the user logged in (true) or not (false).</td>
           </tr>
           
           <tr>
@@ -1042,9 +1055,9 @@
           </tr>
           
           <tr>
-            <td>requireHttps</td>
+            <td>requireHttpOnly</td>
             <td>boolean</td>
-            <td>Determines whether HTTPS is required to log in to or access Salesforce.</td>
+            <td>Sets the HttpOnly attribute on session cookies, making them inaccessible via JavaScript. If true, session ID cookie access is restricted.</td>
           </tr>
           
           <tr>
@@ -1153,6 +1166,12 @@
             <th>Attribute</th>
             <th>Type</th>
             <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>enableSamlLogin</td>
+            <td>boolean</td>
+            <td>If you enable 'SAML Enabled' (true), users can SSO into Salesforce from providers via SAML. The default isn't enabled (false).</td>
           </tr>
           
           <tr>

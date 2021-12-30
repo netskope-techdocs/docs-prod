@@ -178,7 +178,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        <!-- 
+        -->
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -763,7 +765,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="48">
@@ -1734,7 +1736,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="128">
@@ -2609,7 +2611,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="200">
@@ -3496,7 +3498,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="273">
@@ -5089,7 +5091,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="403">
@@ -5856,7 +5858,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="466">
@@ -6515,7 +6517,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="520">
@@ -7486,7 +7488,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="600">
@@ -8121,7 +8123,7 @@ h1 {position: fixed; top: 75}
               Network<br>
             
             </td>
-            <td class="code">Azure should have NetworkWatcher len() >= 28 </td>
+            <td class="code">Subscription should have NetworkWatcherEnabled </td>
           </tr>
           
           <tr num="652">
@@ -8407,7 +8409,7 @@ h1 {position: fixed; top: 75}
   })));
 
   // Search
-  var $rows = $('#table tr:gt(0)');
+  var $rows = $('table.rule_table tr[num]');
   $('#search').keyup(debounce(function() {
 
     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
