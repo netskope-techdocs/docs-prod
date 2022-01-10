@@ -762,6 +762,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "cloud-exchange-release-notes.html",
+"text": "Cloud Exchange Release Notes",
+"class": "topic-link section"
+},
+{
 "url": "about-cloud-exchange.html",
 "text": "About Cloud Exchange",
 "class": "topic-link section"
@@ -777,13 +782,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "install-cloud-exchange-via-git.html",
-"text": "Install Cloud Exchange via Git",
-"class": "topic-link section"
-},
-{
-"url": "install-cloud-exchange-via-zip.html",
-"text": "Install Cloud Exchange via Zip",
+"url": "install-cloud-exchange.html",
+"text": "Install Cloud Exchange",
 "class": "topic-link section"
 },
 {
@@ -799,273 +799,51 @@ var toc = [{
 }]
 },
 {
-"url": "threat-exchange.html",
-"text": "Threat Exchange",
+"url": "log-shipper.html",
+"text": "Log Shipper",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configure-the-netskope-plugin-for-threat-exchange.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
+"url": "configure-the-netskope-plugin-for-log-shipper.html",
+"text": "Configure the Netskope Plugin for Log Shipper",
 "class": "topic-link section"
 },
 {
-"url": "configure-3rd-party-threat-exchange-plugins.html",
-"text": "Configure 3rd-party Threat Exchange Plugins",
+"url": "configure-3rd-party-log-shipper-plugins.html",
+"text": "Configure 3rd-party Log Shipper Plugins",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "carbon-black-plugin-for-threat-exchange.html",
-"text": "Carbon Black Plugin for Threat Exchange",
+"url": "azure-sentinel-plugin-for-log-shipper.html",
+"text": "Azure Sentinel Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-secure-web-gateway-custom-file-profile.html",
-"text": "Create a Secure Web Gateway Custom File Profile",
-"class": "topic-link section"
 },
 {
-"url": "create-a-malware-detection-profile-for-carbon-black.html",
-"text": "Create a Malware Detection Profile for Carbon Black",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-threat-protection-policy-for-carbon-black.html",
-"text": "Create a Real-time Threat Protection Policy for Carbon Black",
-"class": "topic-link section"
-},
-{
-"url": "create-carbon-black-api-credentials.html",
-"text": "Create Carbon Black API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-carbon-black-plugin-for-cbc-ngav-in-threat-exchange.html",
-"text": "Configure the Carbon Black Plugin for CBC NGAV in Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-carbon-black-plugin-for-cbc-edr-in-threat-exchange.html",
-"text": "Configure the Carbon Black Plugin for CBC EDR in Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-carbon-black.html",
-"text": "Configure Sharing for Netskope and Carbon Black",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-plugins.html",
-"text": "Validate the Plugins",
-"class": "topic-link section"
-}]
-},
-{
-"url": "crowdstrike-plugin-for-threat-exchange.html",
-"text": "CrowdStrike Plugin for Threat Exchange",
+"url": "azure-storage-plugin-for-log-shipper.html",
+"text": "Azure Storage Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-secure-web-gateway-custom-file-profile-298906.html",
-"text": "Create a Secure Web Gateway Custom File Profile",
-"class": "topic-link section"
 },
 {
-"url": "create-a-malware-detection-profile-for-crowdstrike.html",
-"text": "Create a Malware Detection Profile for CrowdStrike",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-threat-protection-policy-for-crowdstrike.html",
-"text": "Create a Real-time Threat Protection Policy for CrowdStrike",
-"class": "topic-link section"
-},
-{
-"url": "create-a-crowdstrike-api-credentials.html",
-"text": "Create a CrowdStrike API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-crowdstrike-plugin-in-threat-exchange.html",
-"text": "Configure the CrowdStrike Plugin in Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-crowdstrike.html",
-"text": "Configure Sharing for Netskope and CrowdStrike",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-crowdstrike-plugin.html",
-"text": "Validate the CrowdStrike Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "github-plugin-for-threat-exchange.html",
-"text": "GitHub Plugin for Threat Exchange",
+"url": "microsoft-cas-plugin-for-log-shipper.html",
+"text": "Microsoft CAS Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-the-github-api-token.html",
-"text": "Get the GitHub API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-github-plugin.html",
-"text": "Configure the GitHub Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-github.html",
-"text": "Configure Sharing for Netskope and GitHub",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-github-plugin.html",
-"text": "Validate the GitHub Plugin",
-"class": "topic-link section"
 }]
 },
 {
-"url": "microsoft-cas-plugin-for-threat-exchange.html",
-"text": "Microsoft CAS Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-the-microsoft-cas-api-token.html",
-"text": "Get the Microsoft CAS API Token",
+"url": "update-configured-log-shipper-plugins.html",
+"text": "Update Configured Log Shipper Plugins",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-microsoft-cas-plugin.html",
-"text": "Configure the Microsoft CAS Plugin",
+"url": "manage-log-shipper-business-rules.html",
+"text": "Manage Log Shipper Business Rules",
 "class": "topic-link section"
 },
 {
-"url": "configure-sharing-for-netskope-and-microsoft-cas.html",
-"text": "Configure Sharing for Netskope and Microsoft CAS",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-cas-plugin.html",
-"text": "Validate the Microsoft CAS Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-defender-plugin-for-threat-exchange.html",
-"text": "Microsoft Defender Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-secure-web-gateway-custom-file-profile-324294.html",
-"text": "Create a Secure Web Gateway Custom File Profile",
-"class": "topic-link section"
-},
-{
-"url": "get-the-microsoft-defender-api-credentials.html",
-"text": "Get the Microsoft Defender API Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-microsoft-defender-plugin.html",
-"text": "Configure the Microsoft Defender Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-microsoft-defender.html",
-"text": "Configure Sharing for Netskope and Microsoft Defender",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-defender-plugin.html",
-"text": "Validate the Microsoft Defender Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "mimecast-plugin-for-threat-exchange.html",
-"text": "Mimecast Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-secure-web-gateway-custom-file-profile-327531.html",
-"text": "Create a Secure Web Gateway Custom File Profile",
-"class": "topic-link section"
-},
-{
-"url": "configure-mimecast-credentials.html",
-"text": "Configure Mimecast Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-mimecast-plugin-in-cloud-exchange.html",
-"text": "Configure the Mimecast Plugin in Cloud Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-mimecast.html",
-"text": "Configure Sharing for Netskope and Mimecast",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-mimecast-plugin.html",
-"text": "Validate the Mimecast Plugin",
-"class": "topic-link section"
-}]
-},
-{
-"url": "proofpoint-plugin-for-threat-exchange.html",
-"text": "Proofpoint Plugin for Threat Exchange",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-configured-threat-exchange-plugins.html",
-"text": "View Configured Threat Exchange Plugins",
-"class": "topic-link section"
-},
-{
-"url": "update-configured-threat-exchange-plugins.html",
-"text": "Update Configured Threat Exchange Plugins",
-"class": "topic-link section"
-},
-{
-"url": "configure-ioc-sharing.html",
-"text": "Configure IoC Sharing",
-"class": "topic-link section"
-},
-{
-"url": "ioc-sharing-best-practices.html",
-"text": "IoC Sharing Best Practices",
-"class": "topic-link section"
-},
-{
-"url": "list-iocs-and-use-filter-options.html",
-"text": "List IoCs and Use Filter Options",
-"class": "topic-link section"
-},
-{
-"url": "delete-iocs.html",
-"text": "Delete IoCs",
-"class": "topic-link section"
-},
-{
-"url": "manage-tags.html",
-"text": "Manage Tags",
-"class": "topic-link section"
-},
-{
-"url": "select-and-modify-tags.html",
-"text": "Select and Modify Tags",
+"url": "configure-siem-mappings-for-log-shipper.html",
+"text": "Configure SIEM Mappings for Log Shipper",
 "class": "topic-link section"
 }]
 },
@@ -1091,13 +869,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "list-alerts-and-use-filter-options.html",
-"text": "List Alerts and Use Filter Options",
-"class": "topic-link section"
-},
-{
-"url": "list-tickets-and-use-filter-options.html",
-"text": "List Tickets and Use Filter Options",
+"url": "manage-ticket-orchestrator-business-rules.html",
+"text": "Manage Ticket Orchestrator Business Rules",
 "class": "topic-link section"
 },
 {
@@ -1106,8 +879,119 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-ticket-orchestrator-business-rules.html",
-"text": "Manage Ticket Orchestrator Business Rules",
+"url": "list-alerts-and-use-filter-options.html",
+"text": "List Alerts and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "list-tickets-and-use-filter-options.html",
+"text": "List Tickets and Use Filter Options",
+"class": "topic-link section"
+}]
+},
+{
+"url": "threat-exchange.html",
+"text": "Threat Exchange",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-netskope-plugin-for-threat-exchange.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-3rd-party-threat-exchange-plugins.html",
+"text": "Configure 3rd-party Threat Exchange Plugins",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "carbon-black-plugin-for-threat-exchange.html",
+"text": "Carbon Black Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "crowdstrike-plugin-for-threat-exchange.html",
+"text": "CrowdStrike Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "github-plugin-for-threat-exchange.html",
+"text": "GitHub Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "microsoft-cas-plugin-for-threat-exchange.html",
+"text": "Microsoft CAS Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "microsoft-defender-plugin-for-threat-exchange.html",
+"text": "Microsoft Defender Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "mimecast-plugin-for-threat-exchange.html",
+"text": "Mimecast Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-sharing-for-netskope-and-mimecast.html",
+"text": "Configure Sharing for Netskope and Mimecast",
+"class": "topic-link section"
+}]
+},
+{
+"url": "proofpoint-plugin-for-threat-exchange.html",
+"text": "Proofpoint Plugin for Threat Exchange",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-configured-threat-exchange-plugins.html",
+"text": "View Configured Threat Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "update-configured-threat-exchange-plugins.html",
+"text": "Update Configured Threat Exchange Plugins",
+"class": "topic-link section"
+},
+{
+"url": "manage-threat-exchange-business-rules.html",
+"text": "Manage Threat Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "ioc-sharing-best-practices.html",
+"text": "IoC Sharing Best Practices",
+"class": "topic-link section"
+},
+{
+"url": "manage-ioc-sharing.html",
+"text": "Manage IoC Sharing",
+"class": "topic-link section"
+},
+{
+"url": "list-iocs-and-use-filter-options.html",
+"text": "List IoCs and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "delete-iocs.html",
+"text": "Delete IoCs",
+"class": "topic-link section"
+},
+{
+"url": "manage-tags.html",
+"text": "Manage Tags",
+"class": "topic-link section"
+},
+{
+"url": "select-and-modify-tags.html",
+"text": "Select and Modify Tags",
 "class": "topic-link section"
 }]
 },
@@ -1155,38 +1039,6 @@ var toc = [{
 {
 "url": "plugin-activity.html",
 "text": "Plugin Activity",
-"class": "topic-link section"
-}]
-},
-{
-"url": "log-shipper.html",
-"text": "Log Shipper",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-netskope-plugin-for-log-shipper.html",
-"text": "Configure the Netskope Plugin for Log Shipper",
-"class": "topic-link section"
-},
-{
-"url": "configure-3rd-party-log-shipper-plugins.html",
-"text": "Configure 3rd-party Log Shipper Plugins",
-"class": "topic-link section"
-},
-{
-"url": "manage-log-shipper-business-rules.html",
-"text": "Manage Log Shipper Business Rules",
-"class": "topic-link section"
-},
-{
-"url": "update-configured-log-shipper-plugins.html",
-"text": "Update Configured Log Shipper Plugins",
-"class": "topic-link section"
-},
-{
-"url": "configure-siem-mappings-for-log-shipper.html",
-"text": "Configure SIEM Mappings for Log Shipper",
 "class": "topic-link section"
 }]
 },
@@ -1309,6 +1161,16 @@ var toc = [{
 {
 "url": "migrating-from-ce-2-x-to-ce-3-x.html",
 "text": "Migrating from CE 2.x to CE 3.x",
+"class": "topic-link section"
+},
+{
+"url": "migrating-to-ce-3-1-5-or-greater.html",
+"text": "Migrating to CE 3.1.5 or Greater",
+"class": "topic-link section"
+},
+{
+"url": "generate-diagnostic-logs.html",
+"text": "Generate Diagnostic Logs",
 "class": "topic-link section"
 }]
 },
@@ -5070,8 +4932,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "check-skopeit-events.html",
-"text": "Check SkopeIT events",
+"url": "check-skope-it-events.html",
+"text": "Check Skope IT events",
 "class": "topic-link section"
 },
 {
@@ -5374,8 +5236,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "test-website-access-and-check-skopeit-events.html",
-"text": "Test Website Access and Check SkopeIT Events",
+"url": "test-website-access-and-check-skope-it-events.html",
+"text": "Test Website Access and Check Skope IT Events",
 "class": "topic-link section"
 },
 {
@@ -5441,8 +5303,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "test-website-access-and-check-skopeit-events-232227.html",
-"text": "Test Website Access and Check SkopeIT Events",
+"url": "test-website-access-and-check-skope-it-events-232227.html",
+"text": "Test Website Access and Check Skope IT Events",
 "class": "topic-link section"
 },
 {
@@ -6519,6 +6381,33 @@ var toc = [{
 "text": "REST API Reports",
 "class": "topic-link section"
 }]
+}]
+},
+{
+"url": "digital-experience-management.html",
+"text": "Digital Experience Management",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "tenant-overview.html",
+"text": "Tenant Overview",
+"class": "topic-link section"
+},
+{
+"url": "network-steering.html",
+"text": "Network Steering",
+"class": "topic-link section"
+},
+{
+"url": "client-steering.html",
+"text": "Client Steering",
+"class": "topic-link section"
+},
+{
+"url": "private-applications.html",
+"text": "Private Applications",
+"class": "topic-link section"
 }]
 },
 {
