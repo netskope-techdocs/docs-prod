@@ -960,8 +960,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-threat-exchange-business-rules.html",
-"text": "Manage Threat Exchange Business Rules",
+"url": "manage-threat-exchange-business-rules-and-ioc-sharing.html",
+"text": "Manage Threat Exchange Business Rules and IoC Sharing",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-threat-exchange-business-rules.html",
+"text": "Configure Threat Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "configure-threat-exchange-ioc-sharing.html",
+"text": "Configure Threat Exchange IoC Sharing",
 "class": "topic-link section"
 },
 {
@@ -970,19 +981,10 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-ioc-sharing.html",
-"text": "Manage IoC Sharing",
-"class": "topic-link section"
-},
-{
 "url": "list-iocs-and-use-filter-options.html",
 "text": "List IoCs and Use Filter Options",
 "class": "topic-link section"
-},
-{
-"url": "delete-iocs.html",
-"text": "Delete IoCs",
-"class": "topic-link section"
+}]
 },
 {
 "url": "manage-tags.html",
@@ -6056,132 +6058,6 @@ var toc = [{
 "url": "clear-events.html",
 "text": "Clear Events",
 "class": "topic-link section"
-},
-{
-"url": "netskope-platform-rest-apis.html",
-"text": "Netskope Platform REST APIs",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "netskope-rest-apis.html",
-"text": "Netskope Platform API Endpoints",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "get-alerts-data.html",
-"text": "Get Alerts Data",
-"class": "topic-link section"
-},
-{
-"url": "get-events-data.html",
-"text": "Get Events Data",
-"class": "topic-link section"
-},
-{
-"url": "rest-api-events-and-alerts-response-descriptions.html",
-"text": "REST API Events and Alerts Response Descriptions",
-"class": "topic-link section"
-},
-{
-"url": "rest-api-pagination-best-practices.html",
-"text": "REST API Pagination Best Practices",
-"class": "topic-link section"
-},
-{
-"url": "get-client-data.html",
-"text": "Get Client Data",
-"class": "topic-link section"
-},
-{
-"url": "get-reports-data.html",
-"text": "Get Reports Data",
-"class": "topic-link section"
-},
-{
-"url": "get-advanced-analytics-data.html",
-"text": "Get Advanced Analytics Data",
-"class": "topic-link section"
-},
-{
-"url": "get-a-steering-configuration-list.html",
-"text": "Get a Steering Configuration List",
-"class": "topic-link section"
-},
-{
-"url": "get-steering-configuration-information.html",
-"text": "Get Steering Configuration Information",
-"class": "topic-link section"
-},
-{
-"url": "get-user-configuration-data.html",
-"text": "Get User Configuration Data",
-"class": "topic-link section"
-},
-{
-"url": "get-log-upload-token.html",
-"text": "Get Log Upload Token",
-"class": "topic-link section"
-},
-{
-"url": "manage-user-roles.html",
-"text": "Manage User Roles",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-user-role.html",
-"text": "Create a User Role",
-"class": "topic-link section"
-},
-{
-"url": "update-a-user-role.html",
-"text": "Update a User Role",
-"class": "topic-link section"
-},
-{
-"url": "delete-a-user-role.html",
-"text": "Delete a User Role",
-"class": "topic-link section"
-},
-{
-"url": "list-user-roles.html",
-"text": "List User Roles",
-"class": "topic-link section"
-}]
-},
-{
-"url": "manage-quarantine-files.html",
-"text": "Manage Quarantine Files",
-"class": "topic-link section"
-},
-{
-"url": "manage-legal-hold-files.html",
-"text": "Manage Legal Hold Files",
-"class": "topic-link section"
-},
-{
-"url": "update-a-file-hash-list.html",
-"text": "Update a File Hash List",
-"class": "topic-link section"
-},
-{
-"url": "update-a-url-list.html",
-"text": "Update a URL List",
-"class": "topic-link section"
-},
-{
-"url": "acknowledge-anomalies.html",
-"text": "Acknowledge Anomalies",
-"class": "topic-link section"
-},
-{
-"url": "acknowledge-compromised-credentials.html",
-"text": "Acknowledge Compromised Credentials",
-"class": "topic-link section"
-}]
-}]
 }]
 },
 {
@@ -6464,115 +6340,115 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis-150925.html",
+"url": "netskope-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "get-alerts-data-150916.html",
+"url": "get-alerts-data.html",
 "text": "Get Alerts Data",
 "class": "topic-link section"
 },
 {
-"url": "get-events-data-150915.html",
+"url": "get-events-data.html",
 "text": "Get Events Data",
 "class": "topic-link section"
 },
 {
-"url": "rest-api-events-and-alerts-response-descriptions-176575.html",
+"url": "rest-api-events-and-alerts-response-descriptions.html",
 "text": "REST API Events and Alerts Response Descriptions",
 "class": "topic-link section"
 },
 {
-"url": "get-client-data-163909.html",
+"url": "get-client-data.html",
 "text": "Get Client Data",
 "class": "topic-link section"
 },
 {
-"url": "get-reports-data-150918.html",
+"url": "get-reports-data.html",
 "text": "Get Reports Data",
 "class": "topic-link section"
 },
 {
-"url": "get-advanced-analytics-data-236206.html",
+"url": "get-advanced-analytics-data.html",
 "text": "Get Advanced Analytics Data",
 "class": "topic-link section"
 },
 {
-"url": "get-a-steering-configuration-list-171985.html",
+"url": "get-a-steering-configuration-list.html",
 "text": "Get a Steering Configuration List",
 "class": "topic-link section"
 },
 {
-"url": "get-steering-configuration-information-171986.html",
+"url": "get-steering-configuration-information.html",
 "text": "Get Steering Configuration Information",
 "class": "topic-link section"
 },
 {
-"url": "get-user-configuration-data-150917.html",
+"url": "get-user-configuration-data.html",
 "text": "Get User Configuration Data",
 "class": "topic-link section"
 },
 {
-"url": "get-log-upload-token-150987.html",
+"url": "get-log-upload-token.html",
 "text": "Get Log Upload Token",
 "class": "topic-link section"
 },
 {
-"url": "manage-user-roles-235712.html",
+"url": "manage-user-roles.html",
 "text": "Manage User Roles",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-user-role-235713.html",
+"url": "create-a-user-role.html",
 "text": "Create a User Role",
 "class": "topic-link section"
 },
 {
-"url": "update-a-user-role-235769.html",
+"url": "update-a-user-role.html",
 "text": "Update a User Role",
 "class": "topic-link section"
 },
 {
-"url": "delete-a-user-role-235715.html",
+"url": "delete-a-user-role.html",
 "text": "Delete a User Role",
 "class": "topic-link section"
 },
 {
-"url": "list-user-roles-235716.html",
+"url": "list-user-roles.html",
 "text": "List User Roles",
 "class": "topic-link section"
 }]
 },
 {
-"url": "manage-quarantine-files-150930.html",
+"url": "manage-quarantine-files.html",
 "text": "Manage Quarantine Files",
 "class": "topic-link section"
 },
 {
-"url": "manage-legal-hold-files-150929.html",
+"url": "manage-legal-hold-files.html",
 "text": "Manage Legal Hold Files",
 "class": "topic-link section"
 },
 {
-"url": "update-a-file-hash-list-150931.html",
+"url": "update-a-file-hash-list.html",
 "text": "Update a File Hash List",
 "class": "topic-link section"
 },
 {
-"url": "update-a-url-list-150932.html",
+"url": "update-a-url-list.html",
 "text": "Update a URL List",
 "class": "topic-link section"
 },
 {
-"url": "acknowledge-anomalies-150926.html",
+"url": "acknowledge-anomalies.html",
 "text": "Acknowledge Anomalies",
 "class": "topic-link section"
 },
 {
-"url": "acknowledge-compromised-credentials-150927.html",
+"url": "acknowledge-compromised-credentials.html",
 "text": "Acknowledge Compromised Credentials",
 "class": "topic-link section"
 }]
