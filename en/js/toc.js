@@ -772,6 +772,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "system-requirements.html",
+"text": "System Requirements",
+"class": "topic-link section"
+},
+{
 "url": "supported-3rd-party-plugins.html",
 "text": "Supported 3rd-party Plugins",
 "class": "topic-link section"
@@ -1067,7 +1072,7 @@ var toc = [{
 },
 {
 "url": "log-cleanup.html",
-"text": "Log cleanup",
+"text": "Log Cleanup",
 "class": "topic-link section"
 },
 {
