@@ -290,6 +290,23 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-private-access-release-notes-version-1-4-6526.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6526",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-331259.html",
+"text": "New Features and Enhancements",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-331260.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-release-notes-version-1-4-6431.html",
 "text": "Netskope Private Access Release Notes Version 1.4.6431",
 "class": "topic-link section reused-publication reused-publication"
@@ -308,23 +325,6 @@ var toc = [{
 {
 "url": "known-issues-323671.html",
 "text": "Known Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6526.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6526",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-331259.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-331260.html",
-"text": "Fixed Issues",
 "class": "topic-link section"
 }]
 },
