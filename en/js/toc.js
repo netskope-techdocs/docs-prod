@@ -836,8 +836,8 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
-"url": "microsoft-cas-plugin-for-log-shipper.html",
-"text": "Microsoft CAS Plugin for Log Shipper",
+"url": "microsoft-defender-for-cloud-apps-plugin-for-log-shipper.html",
+"text": "Microsoft Defender for Cloud Apps Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
 }]
 },
@@ -932,8 +932,8 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
-"url": "microsoft-cas-plugin-for-threat-exchange.html",
-"text": "Microsoft CAS Plugin for Threat Exchange",
+"url": "microsoft-defender-for-cloud-apps-plugin-for-threat-exchange.html",
+"text": "Microsoft Defender for Cloud Apps Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
 },
 {
