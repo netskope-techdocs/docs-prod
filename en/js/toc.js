@@ -1,7 +1,7 @@
 var toc = [{
 "url": "release-notes.html",
 "text": "Release Notes",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section"
 ,
 "children": [
 {
@@ -49,8 +49,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-release-notes-version-90-1-0.html",
-"text": "Netskope Release Notes Version 90.1.0",
+"url": "netskope-hotfix-release-notes-version-90-1-0.html",
+"text": "Netskope Hotfix Release Notes Version 90.1.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -285,6 +285,18 @@ var toc = [{
 },
 {
 "url": "fixed-issues-148595.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6620.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6620",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-335839.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
@@ -4008,6 +4020,11 @@ var toc = [{
 {
 "url": "malware-severity-levels-and-detection-types.html",
 "text": "Malware Severity Levels and Detection Types",
+"class": "topic-link section"
+},
+{
+"url": "viewing-patient-zero-events.html",
+"text": "Viewing Patient Zero Events",
 "class": "topic-link section"
 }]
 },
