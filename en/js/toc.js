@@ -9,6 +9,29 @@ var toc = [{
 "text": "Release Notes Subscription",
 "class": "topic-link section"
 },
+
+{
+"url": "netskope-hotfix-release-notes-version-91-1-0.html",
+"text": "Netskope Hotfix Release Notes Version 91.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-91-1-0.html",
+"text": "New Features and Enhancements in Hotfix Release 91.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-91-1-0.html",
+"text": "Fixed Issues in Hotfix Release 91.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-91-1-0.html",
+"text": "Known Issues in Hotfix Release 91.1.0",
+"class": "topic-link section"
+}]
+},
 {
 "url": "netskope-release-notes-version-91-0-0.html",
 "text": "Netskope Release Notes Version 91.0.0",
