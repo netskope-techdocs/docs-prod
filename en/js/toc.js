@@ -9,7 +9,6 @@ var toc = [{
 "text": "Release Notes Subscription",
 "class": "topic-link section"
 },
-
 {
 "url": "netskope-hotfix-release-notes-version-91-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 91.1.0",
@@ -418,9 +417,9 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-security-cloud-features.html",
-"text": "Netskope Security Cloud Features",
-"class": "topic-link section"
+"url": "about-the-admin-console.html",
+"text": "About the Admin Console",
+"class": "topic-link section original-topic original-topic"
 },
 {
 "url": "deployment-options.html",
@@ -428,14 +427,19 @@ var toc = [{
 "class": "topic-link section original-topic original-topic"
 },
 {
-"url": "about-the-admin-console.html",
-"text": "About the Admin Console",
-"class": "topic-link section original-topic original-topic"
+"url": "netskope-security-cloud-features.html",
+"text": "Netskope Security Cloud Features",
+"class": "topic-link section"
 },
 {
 "url": "getting-started-microlearning-video-library.html",
 "text": "Getting Started Microlearning Video Library",
 "class": "topic-link section original-topic original-topic"
+},
+{
+"url": "netskope-success-resource-center.html",
+"text": "Netskope Success Resource Center",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -780,6 +784,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-private-access-for-smb-and-dfs-services.html",
+"text": "Netskope Private Access for SMB and DFS Services",
+"class": "topic-link section"
+},
+{
 "url": "netskope-private-access-for-microsoft-active-directory-domain-join-and-new-user-logon.html",
 "text": "Netskope Private Access for Microsoft Active Directory Domain Join and New User Logon",
 "class": "topic-link section"
@@ -861,6 +870,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "aws-s3-plugin-for-log-shipper.html",
+"text": "AWS S3 Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "azure-sentinel-plugin-for-log-shipper.html",
 "text": "Azure Sentinel Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
@@ -873,6 +887,36 @@ var toc = [{
 {
 "url": "microsoft-defender-for-cloud-apps-plugin-for-log-shipper.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "chronicle-plugin-for-log-shipper.html",
+"text": "Chronicle Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "google-cloud-storage-plugin-for-log-shipper.html",
+"text": "Google Cloud Storage Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "google-cloud-scc-plugin-for-log-shipper.html",
+"text": "Google Cloud SCC Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "elastic-plugin-for-log-shipper.html",
+"text": "Elastic Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "qradar-plugin-for-log-shipper.html",
+"text": "QRadar Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "rapid7-plugin-for-log-shipper.html",
+"text": "Rapid7 Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
 }]
 },
@@ -887,8 +931,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-siem-mappings-for-log-shipper.html",
-"text": "Configure SIEM Mappings for Log Shipper",
+"url": "configure-log-shipper-siem-mappings.html",
+"text": "Configure Log Shipper SIEM Mappings",
 "class": "topic-link section"
 }]
 },
@@ -3600,11 +3644,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "real-time-protection-for-public-cloud-207274.html",
-"text": "Real-time Protection for Public Cloud",
-"class": "topic-link section"
-},
-{
 "url": "supported-aws-entities-for-real-time-protection.html",
 "text": "Supported AWS Entities for Real-time Protection",
 "class": "topic-link section"
@@ -4043,11 +4082,6 @@ var toc = [{
 {
 "url": "malware-severity-levels-and-detection-types.html",
 "text": "Malware Severity Levels and Detection Types",
-"class": "topic-link section"
-},
-{
-"url": "viewing-patient-zero-events.html",
-"text": "Viewing Patient Zero Events",
 "class": "topic-link section"
 }]
 },
