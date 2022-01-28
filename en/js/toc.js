@@ -1084,6 +1084,11 @@ var toc = [{
 "url": "select-and-modify-tags.html",
 "text": "Select and Modify Tags",
 "class": "topic-link section"
+},
+{
+"url": "netskope-threat-exchange-developers-guide.html",
+"text": "Netskope Threat Exchange Developers Guide",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
