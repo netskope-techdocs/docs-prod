@@ -10,6 +10,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-hotfix-release-notes-version-91-2-0.html",
+"text": "Netskope Hotfix Release Notes Version 91.2.0.",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-91-2-0.html",
+"text": "Fixed Issues in Hotfix Release 91.2.0.",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-hotfix-release-notes-version-91-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 91.1.0",
 "class": "topic-link section reused-publication reused-publication"
