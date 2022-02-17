@@ -9,10 +9,12 @@
 
 
 
+/* WHAT DOES THIS DO?, AFFECTS THE TOP NAV BAR LOGO AREA SPACING */
 
-
-
-
+@media (min-width:768px){
+  .navbar-left{float:left!important}
+  .navbar-right{float:none!important;margin-right:-15px;margin-top:-5px;}
+}
 
 /* PROVIDES THE LATO FONT STYLE USED THROUGHOUT */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
@@ -34,12 +36,12 @@
    font-family: inherit;
 }
 
-/* CONTROLS FONT WEIGHT AND SPACING; H2 IS THE PRIMARY HEADING STYLE IN THE HELP, changed color */
+/* CONTROLS FONT WEIGHT AND SPACING FOR THE KNOWLEDGE PORTAL TEXT ON THE LANDING PAGE; H2 IS THE PRIMARY HEADING STYLE IN THE HELP, changed color */
 
 h1, .h1 {
     font-weight: 500;
     font-size: 16pt;
-    line-height: 36px;
+    line-height: 2px;
     color: #FFFEFD;
     font-family: inherit;
     margin-bottom: 20px;
@@ -104,11 +106,31 @@ font-family: inherit;
 }
 
 /* CONTROLS COLOR AND FONT SIZE OF PAGE TITLES THAT ARE NESTED IN SUBPUBS, LIKE H2S */
-#topic-content > section > .titlepage .title{
+#topic-content > section > .titlepage .title {
     margin: 0em 0 1em;
     font-size: 16pt;
     color: #003B49
 }
+
+/* ADDED THIS SO HEADINGS ON THE NETSKOPE HOME PAGE ARE TEAL INSTEAD OF PURPLE */
+.titlepage h2.title,.titlepage h3.title {
+    color: #00A9CE;
+}
+
+
+/* ADDED THIS TO SHADE THE LEFT NAV SAME AS THE TOP NAV BAR */
+.theme2.colored-top .nav-site-sidebar{
+  background-color: #C8C9C7;
+}
+
+
+.theme2 .site-sidebar{
+    background-color: #C8C9C7;
+}
+
+.theme2 .toc > li {
+    border-bottom: 0.5px solid #C8C9C7;
+  }
 
 
 /* APPLIES CORP TEXT STYLE LATO TO PAGE TEXT AND CONTROLS BODY TEXT FONT SIZE */
@@ -118,6 +140,12 @@ body {
 	font-size: 11pt;
 	line-height: 20px;
 	color: #53565A;
+}
+
+/* CONTROLS TEXT STYLE, SIZE, AND COLOR IN THEME2 CHANGE */
+body.theme2 {
+    background-color: #FFFEFD;
+    font-size: 11pt;
 }
 
 
@@ -134,7 +162,7 @@ main ol{
 
 
 /* CONTROL THE COLOR OF THE NUMBERED CIRCLES FOR PROCEDURES */
-.theme1 .procedure > li::before {
+.theme2 .procedure > li::before {
     background-color: #EDEDED;
 }
 
@@ -144,16 +172,20 @@ main ol{
 }
 
 /* REDUCED THE EXCESSIVE LEFT MARGIN ON MAIN VIEW PAGE BY CHANGING THE LEFT PADDING */
- .theme1.page-toc main article {
-        padding-left: 5%;
+ .theme2.page-toc main article {
+  padding-left: 16%;
     }
 
-/* CHANGES THE LEFT MARGIN FOR THE FEEDBACK LINK AT THE BOTTOM OF THE PAGE */
+/* CHANGES THE LEFT MARGIN AND ICON IMAGE AND COLOR FOR THE FEEDBACK LINK AT THE BOTTOM OF THE PAGE */
 div.feedback-panel{
-    margin-left: 5%;
+    margin-left: 10%;
 
 }
 
+.fa-pencil-square-o-feedback:before {
+  content: "\f044";
+  color: #008C95;
+}
 /* CONTROLS THE COLOR OF THE FEEDBACK ICON */
 
 .feedbackicon{
@@ -161,11 +193,6 @@ div.feedback-panel{
     font-size: 1.5em;
     vertical-align: text-bottom;
     color:#008C95
-}
-
-.fa-pencil-square-o-feedback:before {
-  content: "\f044";
-  color: #008C95;
 }
 
 /* CONTROLS THE BLUE TEXT FOR VERBS USING THE COMMAND TAG
@@ -193,12 +220,14 @@ code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code
 
 
 /* CONTROLS THE SPACING IN THE LOGO BLOCK IN THE TOC NAV PANEL */
-.theme1 .site-sidebar .logo{
+.theme2 .site-sidebar .logo{
     width: 70%;
+    height: 50%;
     max-width: 180px;
     padding: 5px 0;
-    padding-top: 5px;
-    display: inline-block
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
 }
 
 /* CONTROLS THE COLOR OF THE BAR ICON BESIDE THE LOGO ABOVE THE NAV PANEL */
@@ -208,10 +237,10 @@ code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code
 }
 
 .collapsible-sidebar-nav .site-sidebar-header .navbar-toggle{
-  display:inline-block;
+  display:none;
   vertical-align:left;
-  padding-top: 18px;
-  margin-left:10px;
+  padding-top: 5px;
+  margin-left:0px;
   margin-right:5px;
 }
 
@@ -225,6 +254,11 @@ code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code
     font-size: 11pt;
 }
 
+
+/* HIDE THE LEFT NAV PANEL CONTENTS (BUT NOT THE SPACE IT USES) *
+*.site-sidebar {
+    display: none;
+}
 
 /* CONTROLS THE COLOR OF THE ACTIVE LINK IN THE LEFT NAV */
 .toc .opened > .topic-link{
@@ -255,12 +289,24 @@ ul.toc.nav.nav-site-sidebar > li:first-of-type {
 }
 
 
-/* CONTROLS THE COLOR OF THE IN THIS SECTION TEXT */
+/* CONTROLS THE COLOR OF THE IN THIS SECTION TEXT, WHEN CONTENT-THEME2.CSS SETTING IS NOT INTERVENING */
 
 .section-toc-title{
     color: #003B49;
+    font-size: 13pt;
 
 }
+
+/* DOES THIS DO ANYTHING?
+
+
+.div.section-toc-title  {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #003B49;
+}
+*/
 
 /* CONTROLS THE TEXT STYLE AND COLOR OF THE NOTE LABELS */
 
@@ -373,12 +419,25 @@ ul.toc.nav.nav-site-sidebar > li:first-of-type {
   margin-right: 0px !important;
 }
 
-/* CONTROLS THE COLOR OF THE TOC NAV PANEL */
+/* CONTROLS THE COLOR OF THE TOC NAV PANEL, ADDED TOOLBAR AND SEARCH BITS FOR THEME2 CHANGE */
 
-.bg-primary,.btn-primary,.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus,.site-sidebar  {
+.bg-primary,.btn-primary,.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus,.site-sidebar,.toolbar,.tool-search-form .search-field,.pager li>a:hover  {
     background-color:#C8C9C7;
-    border-color: #FFFFFF;
 }
+
+/*
+.theme2 .toolbar.top-nav-on {
+    padding: 12px 25px;
+}
+ */
+
+
+/* CONTROLS THE SPACING IN THE SEARCH FIELD IN COLLAPSED PAGE */
+.tool-search-form .search-field{
+    padding-top: 19px;
+}
+
+
 
 /* CONTROLS THE HOVER COLOR FOR THE COPY ICONS IN THE CODE SAMPLES */
 a.text-primary:hover,a.text-primary:focus,.btn-primary:hover,a.bg-primary:hover,a.bg-primary:focus,.btn-primary:focus,.btn-primary.focus,.btn-primary:active,.btn-primary.active,.open > .dropdown-toggle.btn-primary,.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus {
@@ -389,12 +448,17 @@ a.text-primary:hover,a.text-primary:focus,.btn-primary:hover,a.bg-primary:hover,
 ,.portal-single-publication ????*/
 
 
+.colored-top .site-sidebar-header {
+    background-color: #C8C9C7;
+    border-color: #C8C9C7;
+  }
+
 /* REDUCES THE CATEGORY PANEL HEIGHT SIZE ON THE PORTAL PAGE*/
 
 .portal-single-publication a{
   color:#555;
   display:inline-block;
-  padding:10px 10px;
+  padding:5px 5px;
   width:200px;
   height:100%;
   background-color:#FFFEFD;
@@ -402,7 +466,7 @@ a.text-primary:hover,a.text-primary:focus,.btn-primary:hover,a.bg-primary:hover,
 
 /* CONTROLS THE COLOR OF THE OLD ICONS ON THE INDEX.HTML HOME PAGE, ONLY USE NOW IS TO KEEP
 DARK CIRCLES FROM APPEARING WHEN YOU RELOAD THE PAGE */
-.theme1 .publication-icon {
+.theme2 .publication-icon {
     background-color:#FFFEFD;
 }
 
@@ -428,9 +492,10 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
 
 
 /* CONTROLS THE COLOR OF THE PRINT ICON */
-.theme1 .tool-print.print-icon a {
-  color: #008C95;
+.theme2 .tool-print.print-icon a {
+  color: #53565A;
 }
+
 
 
 /* CONTROLS THE COLOR OF THE JUMP LIST LINKS BELOW THE TITLES
@@ -486,13 +551,14 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
 
 .date-modified, .publication-date {
     float: right;
-    margin-right: 30px;
+    margin-right: 300px;
     font-size: 8pt;
     color: #53565A;
 }
 
 /* ADDED FONT SIZE TO MAKE FOOTER TEXT SIZE CONSISTENT */
  .copyright{
+    padding-left: 17%;
     float:left;
     margin-right: 30px;
     font-size: 8pt;
@@ -521,7 +587,7 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
 /* CONTROLS THE MARGINS AND TEXT SPACING IN ACCORDIONS */
 /* For accordions (collapsible panels):*/
 .panel-group{
-    margin-bottom: 0;
+    margin-bottom: 1em;
 }
 
  .panel-default >.panel-heading{
@@ -531,7 +597,7 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
  }
 
   #main-content .panel-default >.panel-heading > .titlepage{
-     padding: 0px 0px;
+     padding-top: 0px;
  }
  .panel-heading h1, .panel-heading h2, .panel-heading h3{
      margin-top: 0px;
@@ -554,13 +620,13 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
 
 
 /* CONTROLS THE COLOR OF THE TEXT FOR SELECTED NAV LINKS */
-.theme1 .section-nav.nav li.active>a {
+.theme2 .section-nav.nav li.active>a {
     color: #53565A;
 }
 
 
 /* CONTROLS THE BULLET BESIDE THE SECTION LINKS IN THE RIGHT SIDEBAR */
-.theme1 .section-nav.nav>li.active>a:before {
+.theme2 .section-nav.nav>li.active>a:before {
     content: '';
     border-radius: 50%;
     left: -3px;
@@ -571,19 +637,19 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
     height: 6px;
 }
 
-.theme1 .topic-link section {
+.theme2 .topic-link section {
   color: #FF8200;
 }
 
 /* CONTROLS THE SIZE AND COLOR OF THE BREADCRUMB TEXT ON THE TOP OF THE PAGE */
 .breadcrumb {
-    font-size: 11pt;
+    font-size: 10pt;
     color: #00A9CE;
 }
 
 .topic-content .breadcrumb {
     font-size: 10pt;
-    color: #C8C9C7;
+    color: #003B49;
 }
 
 .topic-content .breadcrumb a {
@@ -665,13 +731,13 @@ table tr:nth-child(even){
     }
 
 
-/*REMOVES THE BACKGROUND COLOR IN BANNER. CHANGED THE OPACITY TO .9 AND FILTER TO NONE */
+/*REMOVES THE BACKGROUND COLOR IN BANNER. CHANGED THE OPACITY TO .7 AND FILTER TO NONE */
 
   .portal-header:after{
         z-index: -5;
         background: url(image/portal-bg.jpg) no-repeat center center;
-        background-size: cover;
-        opacity: .9;
+        background-size: contain;
+        opacity: .7;
         filter: none;
     }
 
@@ -683,41 +749,69 @@ table tr:nth-child(even){
 }
 
 
-/*CONTROLS SIZE OF LOGO ON PORTAL PAGE */
+/*CONTROLS SIZE OF LOGO ON PORTAL LANDING PAGE */
 .portal-header .logo{
   margin-bottom:0;
-  height:55px;
+  height:50px;
 }
 
 
-/* CONTROLS THE COLOR OF THE "KNOWLEDGE PORTAL" TEXT, THE SIZE OF THE BANNER IMAGE SPACE*/
+/* CONTROLS THE COLOR OF THE TOP NAV LINK TEXT (LANDING PAGE ONLY), THE SIZE OF THE BANNER IMAGE SPACE, ON LANDING PAGE */
 .portal-header{
-  color:#003B49;
+  color:#FFFEFD;
   height:375px;
   padding:30px 15px;
   position:relative;
   text-align:center;
 }
 
+/* CONTROLS THE SIZE OF THE TOP NAV LINK TEXT ON LANDING AND TOPIC PAGES */
+.sm-simple a {
+    font-size: 11.5pt;
+    font-weight: 500;
+
+  /*  text-shadow: 1px 1px #FFFFFF; */
+}
+
+.toolbar-tools {
+    float: left;
+    margin-left: 375px;
+}
+
+
+/* CONTROLS THE COLOR OF THE TOP NAV LINK TEXT AND SEARCH ICON IN THE COLLAPSED PAGE */
+.toolbar {
+  color: #53565A;
+}
+
+
+
+/* CONTROLS THE PADDING AROUND THE TOP NAV LINKS */
+.portal-header-navbar .sm-simple {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
 
 /* ADDED THIS PARAM TO CONTROL COLOR OF THE TEXT IN THE SEARCH FIELD*/
 .form-control.search-field {
   color: #000;
+  margin-top: 4px;
 }
 
 
 /* CONTROLS THE COLOR OF THE SEARCH FIELD GHOST TEXT*/
 .search-field::placeholder{
-  color:#000;
+  color:#53565A;
 }
 
 /* CONTROLS THE BACKGROUND COLOR OF THE SEARCH FIELD*/
 .site-sidebar .search-field{
-  background-color: #ffffff;
+  background-color: #FFFEFD;
   opacity: .7;
 }
 
-/* CONTROLS THE PORTAL SEARCH BUTTON, HID THIS SINCE THE BUTTON IS DISABLED ANYWAY. */
+/* CONTROLS THE PORTAL SEARCH BUTTON, HID THIS SINCE THE BUTTON IS DISABLED ANYWAY */
 .portal-header .portal-search button,.publication-contents h4 span {
     display:none
 }
@@ -734,10 +828,12 @@ table tr:nth-child(even){
 }
 
 
-/* HIDES THE LEFT NAV PANEL
-.nav-site-sidebar {
-display:none;
-}  */
+
+/* MAKES THE FOOTER BACKGROUUND THE SAME COLOR AS THE PAGE */
+.portal-footer {
+    background: #FFFEFD;
+    color: #FFFEFD;
+}
 
 /*REMOVES SEE ALSO LINKS
 .section-toc .section-toc-after {

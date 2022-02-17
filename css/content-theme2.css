@@ -80,23 +80,25 @@ th{
 /* PORTAL */
 
 .theme3 .portal-single-publication .publication-icon{
-  background-color: #4fc3f7;  
+  background-color: #4fc3f7;
 }
 
 .theme2 .portal-footer{
-  color: #fff;  
+  color: #fff;
 }
 
 .theme2 .dropup.languages > a{
-    color: #fff;  
+    color: #fff;
 }
 
 .theme2 .dropup .caret{
     border-bottom: 4px solid #fff;
 }
 
+
+/* CONTROLS COLOR OF BANNER BEFORE CUSTOM CSS APPEARS */
 .theme2 .portal-header::before{
-    background-color: #222;
+    background-color: #FFFEFD;
 }
 
 
@@ -181,7 +183,7 @@ li.searchresultitem{
 
 /* Features */
 #disqus_thread{
-   margin-top: 40px; 
+   margin-top: 40px;
 }
 
 /* Site content */
@@ -225,7 +227,7 @@ li.searchresultitem{
 
 body{
     /* Important: cannot be set to left, otherwise rtl languages do not work */
-    text-align: start;  
+    text-align: start;
 }
 
 /*Changed in main themes instead: PAL2-1976*/
@@ -392,11 +394,13 @@ h5, .h5{
     padding-left: 0px;
 }
 
-div.section-toc-title{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+
+/* CONTROLS IN THIS SECTION TEXT */
+.section-toc-title {
+  display: none;
 }
+
+
 
 /* If using both section toc and relationships in sequence */
 .section-toc + .relationship-toc {
@@ -604,8 +608,8 @@ div.feedback-panel .btn:active{
     color: #ffffff;
 }
 
-div.feedback-panel .btn.active.focus, div.feedback-panel .btn.active:focus, 
-div.feedback-panel .btn.focus, div.feedback-panel .btn:active.focus, 
+div.feedback-panel .btn.active.focus, div.feedback-panel .btn.active:focus,
+div.feedback-panel .btn.focus, div.feedback-panel .btn:active.focus,
 div.feedback-panel .btn:active:focus, div.feedback-panel .btn:focus {
     outline: none;
 }
@@ -687,10 +691,10 @@ div.feedback-panel .btn:active:focus, div.feedback-panel .btn:focus {
 
 
 /* ==========
- * Top navigation 
+ * Top navigation
  * ==========
  * */
- 
+
 /* Don't show on mobile */
 .toolbar-tools .navbar-collapse.collapse {
     display: none;
@@ -878,7 +882,7 @@ div.feedback-panel .btn:active:focus, div.feedback-panel .btn:focus {
 
     .portal-header-navbar .navbar-brand {
         margin-left: 0px!important;
-    }    
+    }
 }
 
 
@@ -892,18 +896,18 @@ div.feedback-panel .btn:active:focus, div.feedback-panel .btn:focus {
 /* END Top navigation for portal */
 
 /* ==========
- * End Top navigation 
+ * End Top navigation
  * ==========
  * */
- 
+
 .dropdown.version-dropdown {
     margin-bottom: -10px;
     margin-top: -10px;
 }
- 
+
 .dropdown.version-dropdown .dropdown-menu {
     left:-5rem;
-} 
+}
 
 .theme1 .version-dropdown .btn.btn-primary.dropdown-toggle {
     background-color: #1976d2;
@@ -962,13 +966,13 @@ ul.searchresults .search-highlight {
 
 /* Avoiding target elements being hidden by banner when using sticky header */
 html {
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 80px;
 }
 
 /* Safari 11+ (scroll-padding-top not supported in Safari yet) */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .section:target { 
+    .section:target {
         padding-top: 80px;
         margin-top: -80px;
     }
