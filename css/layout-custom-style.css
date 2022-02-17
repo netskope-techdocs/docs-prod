@@ -277,7 +277,7 @@ ul.toc.nav.nav-site-sidebar > li:first-of-type {
   display:none;
 } */
 
-/* CONTROLS SIZE AND COLOR OF TEXT FOR IN THIS SECTION LINKS, ADDED TEXT COLOR */
+/* CONTROLS SIZE AND COLOR OF TEXT FOR IN THIS SECTION LINKS, ADDED TEXT COLOR. WHAT ABOUT BELOW, HOW RELATED? */
 .topic-link{
     font-size: 11pt;
     color: #FF8200;
@@ -616,7 +616,10 @@ a:hover,a:focus,.btn-link:hover,.btn-link:focus {
    /*border: 0.5px solid #ccc;*/
 }
 
-
+/* CONTROLS THE SPACING FOR SECTION TITLES AND ACCORDIONS */
+.section {
+    padding: 0 0;
+}
 
 
 /* CONTROLS THE COLOR OF THE TEXT FOR SELECTED NAV LINKS */
@@ -839,4 +842,3 @@ table tr:nth-child(even){
 .section-toc .section-toc-after {
 display:none;
 }*/
-
