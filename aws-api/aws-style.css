@@ -242,7 +242,7 @@ div[class*=databaseTable_import_wrap] {
 }
 
 .databaseTable_UI_scrollRight:before {
-  content: "";
+  content: ">";
   position: absolute;
   background: rgba(255, 255, 255, 0.87);
   box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
