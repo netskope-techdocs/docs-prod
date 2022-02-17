@@ -121,12 +121,20 @@
           <span class="entity_name">AtpPolicyForO365</span>
         </li>
         
+        <li class="entity_key" data-entity-name="AuthorizationPolicy">
+          <span class="entity_name">AuthorizationPolicy</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="B2BManagementPolicy">
           <span class="entity_name">B2BManagementPolicy</span>
         </li>
         
         <li class="entity_key" data-entity-name="DkimSigningConfig">
           <span class="entity_name">DkimSigningConfig</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="EmailAuthenticationMethodConfiguration">
+          <span class="entity_name">EmailAuthenticationMethodConfiguration</span>
         </li>
         
         <li class="entity_key" data-entity-name="HostedContentFilterPolicy">
@@ -524,9 +532,21 @@
           </tr>
           
           <tr>
+            <td>passwordMinutesOfInactivityBeforeLock</td>
+            <td>number</td>
+            <td>Minutes of inactivity before the screen locks. (macOS)</td>
+          </tr>
+          
+          <tr>
             <td>passcodeMinutesOfInactivityBeforeScreenTimeout</td>
             <td>number</td>
             <td>Minutes of inactivity before the screen times out.</td>
+          </tr>
+          
+          <tr>
+            <td>passcodeMinutesOfInactivityBeforeLock</td>
+            <td>number</td>
+            <td>Minutes of inactivity before the screen locks. (iOS)</td>
           </tr>
           
           <tr>
@@ -1110,13 +1130,13 @@
           
           <tr>
             <td>sharingAllowedDomainList</td>
-            <td>Reference to string</td>
+            <td>list</td>
             <td>List of domains that resources are allowed to be shared with, if "sharingDomainRestrictionMode" = 1 (AllowList)</td>
           </tr>
           
           <tr>
             <td>sharingBlockedDomainList</td>
-            <td>Reference to string</td>
+            <td>list</td>
             <td>List of domains that resources will not be allowed to be shared with, if "sharingDomainRestrictionMode" = 2 (BlockList)</td>
           </tr>
           
@@ -1128,7 +1148,7 @@
           
           <tr>
             <td>allowedDomainListForSyncClient</td>
-            <td>Reference to string</td>
+            <td>list</td>
             <td>The list of allowed domains if "isUnManagedSyncClientForTenantRestricted" is set to True.</td>
           </tr>
           
@@ -1165,13 +1185,13 @@
           <tr>
             <td>allowLimitedAccessOnUnmanagedDevices</td>
             <td>boolean</td>
-            <td>If true, unamanged devices will only be allowed limited, web-only access to SharePoint. Note only one of the allowLimitedAccessOnUnmanagedDevices and blockAccessOnUnmanagedDevices settings can be true at the same time. If both settings are false, then all devices, unmanaged or not, will have full access to SharePoint.</td>
+            <td>If true, unmanaged devices will only be allowed limited, web-only access to SharePoint. Note only one of the allowLimitedAccessOnUnmanagedDevices and blockAccessOnUnmanagedDevices settings can be true at the same time. If both settings are false, then all devices, unmanaged or not, will have full access to SharePoint.</td>
           </tr>
           
           <tr>
             <td>blockAccessOnUnmanagedDevices</td>
             <td>boolean</td>
-            <td>If true, unamanaged devices will not be allowed access to SharePoint. Note only one of the allowLimitedAccessOnUnmanagedDevices and blockAccessOnUnmanagedDevices settings can be true at the same time. If both settings are false, then all devices, unmanaged or not, will have full access to SharePoint.</td>
+            <td>If true, unmanaged devices will not be allowed access to SharePoint. Note only one of the allowLimitedAccessOnUnmanagedDevices and blockAccessOnUnmanagedDevices settings can be true at the same time. If both settings are false, then all devices, unmanaged or not, will have full access to SharePoint.</td>
           </tr>
           
           <tr>
@@ -1436,7 +1456,7 @@
           </tr>
           
           <tr>
-            <td>SenderIpAddresses</td>
+            <td>SenderIPAddresses</td>
             <td>list</td>
             <td>The SenderIPAddresses parameter specifies the source IPV4 IP addresses that the connector accepts messages from.</td>
           </tr>
@@ -1597,7 +1617,7 @@
           <tr>
             <td>SenderRewritingEnabled</td>
             <td>boolean</td>
-            <td>The SenderRewritingEnabled parameter specifies that all messages that normally qualify for SRS rewritting are rewritten for traffic to on-premises. This parameter is only effective for OnPremises connectors as Partner connectors already have SRS rewritting enabled.</td>
+            <td>The SenderRewritingEnabled parameter specifies that all messages that normally qualify for SRS rewriting are rewritten for traffic to on-premises. This parameter is only effective for OnPremises connectors as Partner connectors already have SRS rewriting enabled.</td>
           </tr>
           
           <tr>
@@ -1636,7 +1656,7 @@
           <tr>
             <td>invitationsAllowedAndBlockedDomainsPolicy</td>
             <td>sequence</td>
-            <td>This policy specifies domain restrictions with regards to inviting external users to collaborate.  Only one of the blockedDomains and allowedDomains list can be populated at once.  If blockedDomains is populated, any domain outside of blockedDomains can be invited to collaborate.  If allowedDomains is populated, any domain outside of allowedDomains will be blocked.  If both lists are empty, then there are no domain restrictions on invitiations to collaborate.</td>
+            <td>This policy specifies domain restrictions with regards to inviting external users to collaborate.  Only one of the blockedDomains and allowedDomains list can be populated at once.  If blockedDomains is populated, any domain outside of blockedDomains can be invited to collaborate.  If allowedDomains is populated, any domain outside of allowedDomains will be blocked.  If both lists are empty, then there are no domain restrictions on invitations to collaborate.</td>
           </tr>
           
           <tr>
@@ -1748,6 +1768,12 @@
           </tr>
           
           <tr>
+            <td>EnableSafeLinksForWebAccessCompanion</td>
+            <td>boolean</td>
+            <td>Enables safe links for web access companion.</td>
+          </tr>
+          
+          <tr>
             <td>EnableSafeLinksForO365Clients</td>
             <td>boolean</td>
             <td>The EnableSafeLinksForO365Clients parameter enables or disables Safe Links for Office 365 apps.</td>
@@ -1803,7 +1829,7 @@
           
           <tr>
             <td>BulkThreshold</td>
-            <td>int</td>
+            <td>number</td>
             <td>The BulkThreshold parameter specifies the BCL on messages that triggers the action specified by the BulkSpamAction parameter (greater than the specified BCL value, not greater than or equal to). A valid value is an integer from 1 to 9. The default value is 7, which means a BCL of 8 or 9 on messages will trigger the action that's specified by the BulkSpamAction parameter. A higher BCL indicates the message is more likely to generate complaints (and is therefore more likely to be spam).</td>
           </tr>
           
@@ -1829,6 +1855,72 @@
             <td>HighConfidencePhishAction</td>
             <td>string</td>
             <td>The HighConfidencePhishAction parameter specifies the action to take on messages that are marked as high confidence phishing (not phishing). Phishing messages use fraudulent links or spoofed domains to get personal information. Valid values are: MoveToJmf: Deliver the message to the recipient's mailbox, and move the message to the Junk Email folder. The message is moved only if the junk email rule is enabled on the mailbox (it's enabled by default).  Redirect: Redirect the message to the recipients specified by the RedirectToRecipients parameter. Quarantine: Move the message to quarantine. By default, messages that are quarantined as high confidence phishing are available only to admins. Or, you can use the HighConfidencePhishQuarantineTag parameter to specify what end-users are allowed to do on quarantined messages.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AuthorizationPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>allowInvitesFrom</td>
+            <td>string</td>
+            <td>Indicates who can invite external users to the organization. Possible values are: none, adminsAndGuestInviters, adminsGuestInvitersAndAllMembers, everyone. everyone is the default setting for all cloud environments except US Government.</td>
+          </tr>
+          
+          <tr>
+            <td>guestUserRoleId</td>
+            <td>string</td>
+            <td>Represents role templateId for the role that should be granted to guest user. Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).</td>
+          </tr>
+          
+          <tr>
+            <td>defaultUserRolePermissions</td>
+            <td>sequence</td>
+            <td>Default user role permissions for the AAD tenant.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>allowedToCreateApps</td>
+            <td>boolean</td>
+            <td>Indicates whether the default user role can create applications.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>allowedToCreateSecurityGroups</td>
+            <td>boolean</td>
+            <td>Indicates whether the default user role can create security groups.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>allowedToReadOtherUsers</td>
+            <td>boolean</td>
+            <td>Indicates whether the default user role can read other users.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="EmailAuthenticationMethodConfiguration">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>state</td>
+            <td>string</td>
+            <td>The current state of the email authentication method configuration. Valid values are "enabled" or "disabled".</td>
+          </tr>
+          
+          <tr>
+            <td>allowExternalIdToUseEmailOtp</td>
+            <td>string</td>
+            <td>Determines whether email OTP is usable by external users for authentication. Possible values are: default, enabled, disabled, unknownFutureValue. Tenants in the default state who did not use public preview will automatically have email OTP enabled beginning in October 2021.</td>
           </tr>
           
         </table>
