@@ -464,16 +464,87 @@ var toc = [{
 "url": "deployment-options.html",
 "text": "Deployment Options",
 "class": "topic-link section original-topic original-topic"
+,
+"children": [
+{
+"url": "top-use-cases-at-a-glance.html",
+"text": "Top Use Cases at a Glance",
+"class": "topic-link section"
+},
+{
+"url": "product-deployments.html",
+"text": "Product Deployments",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-security-cloud-features.html",
 "text": "Netskope Security Cloud Features",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "saas--iaas--web-discovery--and-risk-assessment-features.html",
+"text": "SaaS, IaaS, Web Discovery, and Risk Assessment Features",
+"class": "topic-link section"
 },
 {
-"url": "getting-started-microlearning-video-library.html",
-"text": "Getting Started Microlearning Video Library",
+"url": "granular-visibility-and-control-of-saas--iaas--and-web-features.html",
+"text": "Granular Visibility and Control of SaaS, IaaS, and Web Features",
+"class": "topic-link section"
+},
+{
+"url": "encryption-and-tokenization-features.html",
+"text": "Encryption and Tokenization Features",
+"class": "topic-link section"
+},
+{
+"url": "award-winning-dlp-features.html",
+"text": "Award-Winning DLP Features",
+"class": "topic-link section"
+},
+{
+"url": "threat-protection-features.html",
+"text": "Threat Protection Features",
+"class": "topic-link section"
+},
+{
+"url": "architectural-advantage-features.html",
+"text": "Architectural Advantage Features",
+"class": "topic-link section"
+},
+{
+"url": "supported-integrations-features.html",
+"text": "Supported Integrations Features",
+"class": "topic-link section"
+}]
+},
+{
+"url": "microlearning-video-library.html",
+"text": "Microlearning Video Library",
 "class": "topic-link section original-topic original-topic"
+,
+"children": [
+{
+"url": "netskope-client-videos.html",
+"text": "Netskope Client Videos",
+"class": "topic-link section"
+},
+{
+"url": "netskope-directory-importer-videos.html",
+"text": "Netskope Directory Importer Videos",
+"class": "topic-link section"
+},
+{
+"url": "ipsec-videos.html",
+"text": "IPSec Videos",
+"class": "topic-link section"
+},
+{
+"url": "integrations-videos.html",
+"text": "Integrations Videos",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-success-resource-center.html",
