@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-92-0-0.html</loc>
-    <lastmod>2022-02-10</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-92-0-0.html</loc>
@@ -342,15 +342,67 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deployment-options.html</loc>
-    <lastmod>2021-10-13</lastmod>
+    <lastmod>2022-02-18</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/top-use-cases-at-a-glance.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/product-deployments.html</loc>
+    <lastmod>false</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-security-cloud-features.html</loc>
-    <lastmod>2021-10-13</lastmod>
+    <lastmod>2022-02-18</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/getting-started-microlearning-video-library.html</loc>
-    <lastmod>2021-11-05</lastmod>
+    <loc>https://docs.netskope.com/en/saas--iaas--web-discovery--and-risk-assessment-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/granular-visibility-and-control-of-saas--iaas--and-web-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/encryption-and-tokenization-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/award-winning-dlp-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/threat-protection-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/architectural-advantage-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/supported-integrations-features.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/microlearning-video-library.html</loc>
+    <lastmod>2022-02-18</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-client-videos.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-directory-importer-videos.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ipsec-videos.html</loc>
+    <lastmod>false</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/integrations-videos.html</loc>
+    <lastmod>false</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-success-resource-center.html</loc>
@@ -722,7 +774,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-file-categories-and-file-types.html</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/policy-notification-templates.html</loc>
@@ -830,7 +882,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-file-categories-and-file-types-307049.html</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
@@ -1526,7 +1578,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app.html</loc>
-    <lastmod>2022-01-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-box.html</loc>
@@ -1610,11 +1662,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/external-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deleted-suspended-user-behavior-in-box.html</loc>
@@ -1682,7 +1734,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cisco-webex-users-page.html</loc>
-    <lastmod>2020-06-01</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cisco-webex-teams-page.html</loc>
@@ -1758,11 +1810,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-users-page-117893.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/external-users-page-117894.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deleted-suspended-user-behavior-in-dropbox.html</loc>
@@ -1826,7 +1878,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-users-page-118044.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deleted-deactivated-user-behavior-in-egnyte.html</loc>
@@ -1886,7 +1938,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/github-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/removed-blocked-user-behavior-in-github.html</loc>
@@ -1902,7 +1954,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-gmail-for-api-data-protection.html</loc>
-    <lastmod>2021-12-15</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118926.html</loc>
@@ -1946,7 +1998,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gmail-users-page.html</loc>
-    <lastmod>2020-08-03</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gmail-external-recipients-page.html</loc>
@@ -2018,11 +2070,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-users-page-117915.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/external-users-page-117916.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/google-teams-page.html</loc>
@@ -2178,7 +2230,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deleted-suspended-user-behavior-in-microsoft-office-365-onedrive.html</loc>
@@ -2254,7 +2306,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/outlook-users-page.html</loc>
-    <lastmod>2020-08-03</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/outlook-external-recipients-page.html</loc>
@@ -2394,7 +2446,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-sharepoint-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deleted-suspended-user-behavior-in-microsoft-office-365-sharepoint.html</loc>
@@ -2514,7 +2566,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-users-page-117871.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/salesforce-key-management.html</loc>
@@ -2646,7 +2698,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/slack-users-page.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/slack-channels-page.html</loc>
@@ -2714,7 +2766,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/slack-users-page-117826.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/slack-channels-page-117825.html</loc>
@@ -2790,7 +2842,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/workplace-by-facebook-users-page.html</loc>
-    <lastmod>2020-08-25</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/workplace-by-facebook-groups-page.html</loc>
@@ -2858,7 +2910,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-users-page-320226.html</loc>
-    <lastmod>2020-08-04</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events-320227.html</loc>
@@ -2886,7 +2938,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-365-instance-for-security-posture.html</loc>
-    <lastmod>2021-10-28</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/permissions-required-for-microsoft-365.html</loc>
@@ -3062,7 +3114,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-microsoft-group-policy-object--gpo-.html</loc>
-    <lastmod>2022-02-16</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-microsoft-endpoint-manager.html</loc>
@@ -3382,7 +3434,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/system-requirements.html</loc>
-    <lastmod>2022-02-02</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
@@ -5142,7 +5194,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-quarantine-files.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2022-02-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-legal-hold-files.html</loc>
