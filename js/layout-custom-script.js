@@ -23,8 +23,8 @@ $(".publication-icon").remove();
 $("#email-feedback a").text("Click to send us feedback.")
 $("#email-feedback a").before('<i class="fa fa-pencil-square-o-feedback feedbackicon aria-hidden="true""></i>')
 
-/*Collapse sidebar after page loads*/
-$(".site-body-row").toggleClass("collapse-sidebar-nav");
+/*Collapse sidebar after page loads
+$(".site-body-row").toggleClass("collapse-sidebar-nav");*/
 
 var scripts = document.getElementsByTagName( "script" );
     for ( var i = 0; i < scripts.length; ++ i )
