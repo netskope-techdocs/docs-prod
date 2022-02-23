@@ -663,6 +663,43 @@ var toc = [{
 }]
 },
 {
+"url": "api-dlp--protection-for-managed-app-activities-.html",
+"text": "API DLP (Protection for Managed App activities)",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "create-a-dlp-policy-to-search-an-entire-data-repository-and-apply-predefined-labels-per-enterprise-data-classification-rules.html",
+"text": "Create a DLP policy to search an entire data repository and apply predefined labels per Enterprise data classification rules",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-to-identify-sensitive-data-in-specific-locations--public--external-or-non-approved-groups-.html",
+"text": "Create a policy to identify sensitive data in specific locations (public, external or non-approved groups)",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-to-alert-or-block-sharing-of-sensitive-data-with-external-teams.html",
+"text": "Create a policy to alert or block sharing of sensitive data with external Teams",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-to-find-encrypted-or-password-protected-files.html",
+"text": "Create a policy to find encrypted or password protected files",
+"class": "topic-link section"
+},
+{
+"url": "create-and-apply-a-legal-hold-policy-if-required.html",
+"text": "Create and apply a legal hold policy if required",
+"class": "topic-link section"
+},
+{
+"url": "identify-malware-in-data-repositories-and-action-per-defined-policy.html",
+"text": "Identify Malware in data repositories and action per defined policy",
+"class": "topic-link section"
+}]
+},
+{
 "url": "iaas--monitor-.html",
 "text": "IaaS (Monitor)",
 "class": "topic-link section reused-publication reused-publication"
@@ -1247,8 +1284,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "cloud-sandbox-analysis.html",
-"text": "Cloud Sandbox Analysis",
+"url": "viewing-cloud-sandbox-analysis.html",
+"text": "Viewing Cloud Sandbox Analysis",
 "class": "topic-link section"
 }]
 }]
@@ -4264,9 +4301,36 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-inter-operability.html",
-"text": "Netskope Client Inter-Operability",
+"url": "netskope-client-interoperability.html",
+"text": "Netskope Client Interoperability",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "steering-configuration-for-vpn-applications.html",
+"text": "Steering Configuration for VPN Applications",
+"class": "topic-link section"
+},
+{
+"url": "exceptions-for-anti-virus-applications.html",
+"text": "Exceptions for Anti Virus Applications",
+"class": "topic-link section"
+},
+{
+"url": "palo-alto-globalprotect.html",
+"text": "Palo Alto GlobalProtect",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-always-on-vpn---work-in-progress.html",
+"text": "Microsoft Always-On VPN - Work In Progress",
+"class": "topic-link section"
+},
+{
+"url": "interop-with-cisco-anyconnect.html",
+"text": "Interop with Cisco AnyConnect",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-client-command-reference.html",
