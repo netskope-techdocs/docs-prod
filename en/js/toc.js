@@ -10,6 +10,28 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-release-notes-hotfix-version-92-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 92.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-92-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 92.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-92-1-0.html",
+"text": "Fixed Issues In Hotfix Release 92.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-92-1-0.html",
+"text": "Known Issues In Hotfix Release 92.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-92-0-0.html",
 "text": "Netskope Release Notes Version 92.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -403,6 +425,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-92-1-1-161.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 92.1.1.161",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-92-0-1-157.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 92.0.1.157",
 "class": "topic-link section"
@@ -559,21 +586,59 @@ var toc = [{
 ,
 "children": [
 {
-"url": "understand-the-risk-of-cloud-services-utilization-by-leveraging-netskope-cloud-confidence-index.html",
-"text": "Understand the risk of cloud services utilization by leveraging Netskope Cloud confidence Index",
+"url": "understand-the-risk-of-cloud-services-utilization-by-leveraging-cci.html",
+"text": "Understand the risk of cloud services utilization by leveraging CCI",
 "class": "topic-link section"
 },
 {
-"url": "provide-a-risk-assessment-of-a-cloud-service-using-netskope-cloud-confidence-index.html",
-"text": "Provide a risk assessment of a cloud service using Netskope Cloud Confidence Index",
+"url": "provide-a-risk-assessment-of-a-cloud-service-using-cci.html",
+"text": "Provide a risk assessment of a cloud service using CCI",
 "class": "topic-link section"
 },
 {
-"url": "use-netskope-cloud-confidence-index--cci--to-understand-cloud-spending.html",
-"text": "Use Netskope Cloud Confidence Index (CCI) to understand cloud spending",
+"url": "use-cci-to-understand-cloud-spending.html",
+"text": "Use CCI to understand cloud spending",
 "class": "topic-link section"
 }]
 },
+{
+"url": "observe-cloud-app-activities--oplp--and-risk-insights.html",
+"text": "Observe Cloud App Activities (OPLP) and Risk Insights",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "visibility-on-data-movements-to-and-from-cloud-services.html",
+"text": "Visibility on data movements to and from cloud services",
+"class": "topic-link section"
+},
+{
+"url": "view-top-cloud-categories-by-usage.html",
+"text": "View top cloud categories by usage",
+"class": "topic-link section"
+},
+{
+"url": "view-top-apps--activities--and-data-by-usage.html",
+"text": "View top apps, activities, and data by usage",
+"class": "topic-link section"
+},
+{
+"url": "view-users-access-to-cloud-services-geographically.html",
+"text": "View users access to cloud services geographically",
+"class": "topic-link section"
+},
+{
+"url": "view-the-number-of-sessions-and-users-by-category-or-app.html",
+"text": "View the number of sessions and users by category or app",
+"class": "topic-link section"
+}]
+},
+{
+"url": "casb-api-protection.html",
+"text": "CASB API Protection",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
 {
 "url": "understanding-api-protection.html",
 "text": "Understanding API Protection",
@@ -613,8 +678,18 @@ var toc = [{
 ,
 "children": [
 {
-"url": "create-a-list-of-publicly-accessible-documents--externally-shared-documents-private-documents-stored-in-an-api-protected-service.html",
-"text": "Create a list of publicly accessible documents\/ externally shared documents\/private documents stored in an API-Protected service",
+"url": "create-a-list-of-publicly-accessible-documents-in-an-api-protected-service.html",
+"text": "Create a list of publicly accessible documents in an API-Protected service",
+"class": "topic-link section"
+},
+{
+"url": "create-a-list-of-externally-shared-documents-stored-in-an-api-protected-service.html",
+"text": "Create a list of externally shared documents stored in an API-Protected service",
+"class": "topic-link section"
+},
+{
+"url": "create-a-list-of-private-documents-stored-in-an-api-protected-service.html",
+"text": "Create a list of private documents stored in an API-Protected service",
 "class": "topic-link section"
 },
 {
@@ -623,8 +698,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "create-a-list-of-users-with-most-public-files-non-expiring-links-to-files-stored-in-an-api-protected-service.html",
-"text": "Create a list of users with most public files\/non-expiring links to files stored in an API-protected service",
+"url": "create-a-list-of-users-with-most-public-files-stored-in-an-api-protected-service.html",
+"text": "Create a list of users with most public files stored in an API-protected service",
+"class": "topic-link section"
+},
+{
+"url": "create-a-list-of-users-with-non-expiring-links-to-files-stored-in-an-api-protected-service.html",
+"text": "Create a list of users with non-expiring links to files stored in an API-Protected service",
 "class": "topic-link section"
 },
 {
@@ -640,13 +720,38 @@ var toc = [{
 ,
 "children": [
 {
-"url": "investigate-specific-external-or-internal-user-activity-to-determine-risk-posture--identify-and-act-on-individual-files-or-folders-on-a-case-by-case-basis.html",
-"text": "Investigate specific external or internal user activity to determine risk posture, Identify and act on individual files or folders on a case-by-case basis",
+"url": "alert-when-a-file-is-shared-with-large-number-of-users--internal-external-.html",
+"text": "Alert when a file is shared with large number of users (internal\/external)",
 "class": "topic-link section"
 },
 {
-"url": "alert-when-a-file-is-made-public-externally-shared-shared-with-a-large-number-of-users--internal-external--shared-with-specific-groups.html",
-"text": "Alert when a file is made public\/externally shared\/shared with a large number of users (internal\/external)\/shared with specific groups",
+"url": "alert-when-a-file-is-shared-with-specific-groups.html",
+"text": "Alert when a file is shared with specific groups",
+"class": "topic-link section"
+},
+{
+"url": "investigate-specific-external-user-activity-to-determine-risk-posture.html",
+"text": "Investigate specific external user activity to determine risk posture",
+"class": "topic-link section"
+},
+{
+"url": "investigate-specific-internal-user-activity-to-determine-risk-posture.html",
+"text": "Investigate specific internal user activity to determine risk posture",
+"class": "topic-link section"
+},
+{
+"url": "identify-and-act-on-individual-files-or-folders-on-a-case-by-case-basis.html",
+"text": "Identify and act on individual files or folders on a case by case basis",
+"class": "topic-link section"
+},
+{
+"url": "alert-when-a-file-is-made-public.html",
+"text": "Alert when a file is made public",
+"class": "topic-link section"
+},
+{
+"url": "alert-when-a-file-is-externally-shared.html",
+"text": "Alert when a file is externally shared",
 "class": "topic-link section"
 }]
 },
@@ -657,14 +762,24 @@ var toc = [{
 ,
 "children": [
 {
-"url": "create-a-policy-to-allow-block-sharing-with-approved-identified-external-users--to-identify-and-modify-internal-and-external-sharing.html",
-"text": "Create a policy to allow\/block sharing with approved\/identified external users, to identify and modify internal and external sharing",
+"url": "create-a-policy-to-allow-sharing-with-approved-external-users.html",
+"text": "Create a policy to allow sharing with approved external users",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-to-block-sharing-with-identified-external-users.html",
+"text": "Create a policy to block sharing with identified external users",
+"class": "topic-link section"
+},
+{
+"url": "create-a-policy-to-identify-and-modify-internal-and-external-sharing.html",
+"text": "Create a policy to identify and modify internal and external sharing",
 "class": "topic-link section"
 }]
 },
 {
-"url": "api-dlp--protection-for-managed-app-activities-.html",
-"text": "API DLP (Protection for Managed App activities)",
+"url": "dlp---protect-state-for-managed-app-activities.html",
+"text": "DLP – Protect state for Managed App Activities",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -692,82 +807,27 @@ var toc = [{
 "url": "create-and-apply-a-legal-hold-policy-if-required.html",
 "text": "Create and apply a legal hold policy if required",
 "class": "topic-link section"
+}]
 },
+{
+"url": "threat-protection---protect-state-for-managed-app-activities.html",
+"text": "Threat Protection – Protect state for Managed App Activities",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
 {
 "url": "identify-malware-in-data-repositories-and-action-per-defined-policy.html",
 "text": "Identify Malware in data repositories and action per defined policy",
 "class": "topic-link section"
 }]
-},
-{
-"url": "iaas--monitor-.html",
-"text": "IaaS (Monitor)",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "to-view-all-public-cloud-inventory-in-one-screen.html",
-"text": "To view all public cloud inventory in one screen",
-"class": "topic-link section"
-},
-{
-"url": "to-view-all-inventory-for-iaas-providers.html",
-"text": "To view all inventory for IaaS providers",
-"class": "topic-link section"
-},
-{
-"url": "to-view-the-public-cloud-security-posture.html",
-"text": "To view the public cloud security posture",
-"class": "topic-link section"
-},
-{
-"url": "to-perform-cspm-scan-on-aws-azure-gcp-accounts.html",
-"text": "To perform CSPM scan on AWS\/Azure\/GCP accounts",
-"class": "topic-link section"
-},
-{
-"url": "dlp-scan-on-aws-azure-gcp-accounts.html",
-"text": "DLP scan on AWS\/Azure\/GCP accounts",
-"class": "topic-link section"
-},
-{
-"url": "threat-scan-on-iaas-storage.html",
-"text": "Threat scan on IaaS storage",
-"class": "topic-link section"
 }]
 },
 {
-"url": "swg-web-traffic--observe--monitor--and-protect-.html",
-"text": "SWG Web traffic (Observe, Monitor, and Protect)",
+"url": "cloud-inline-protection.html",
+"text": "Cloud Inline Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "to-block-online-ads-silently.html",
-"text": "To block online ads silently",
-"class": "topic-link section"
-},
-{
-"url": "to-filter-top-level-domains--tlds-.html",
-"text": "To filter Top Level Domains (TLDs)",
-"class": "topic-link section"
-},
-{
-"url": "to-have-http-header-based-policies.html",
-"text": "To have HTTP header-based policies",
-"class": "topic-link section"
-},
-{
-"url": "to-filter-traffic-to-high-risk-countries.html",
-"text": "To filter traffic to high-risk countries",
-"class": "topic-link section"
-},
-{
-"url": "review-available-metrics-and-confirm-what-reports-to-track.html",
-"text": "Review available metrics and confirm what reports to track",
-"class": "topic-link section"
-}]
-},
 {
 "url": "inline-monitoring-for-cloud-apps.html",
 "text": "Inline monitoring for Cloud apps",
@@ -816,58 +876,253 @@ var toc = [{
 "text": "We would like to coach users away from unsanctioned applications and allow justification of required use",
 "class": "topic-link section"
 }]
-},
-{
-"url": "observe-cloud-app-activities--oplp--and-risk-insights.html",
-"text": "Observe Cloud App Activities (OPLP) and Risk Insights",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "visibility-on-data-movements-to-and-from-cloud-services.html",
-"text": "Visibility on data movements to and from cloud services",
-"class": "topic-link section"
-},
-{
-"url": "view-top-cloud-categories-by-usage.html",
-"text": "View top cloud categories by usage",
-"class": "topic-link section"
-},
-{
-"url": "view-top-apps--activities--and-data-by-usage.html",
-"text": "View top apps, activities, and data by usage",
-"class": "topic-link section"
-},
-{
-"url": "view-users-access-to-cloud-services-geographically.html",
-"text": "View users access to cloud services geographically",
-"class": "topic-link section"
-},
-{
-"url": "view-the-number-of-sessions-and-users-by-category-or-app.html",
-"text": "View the number of sessions and users by category or app",
-"class": "topic-link section"
 }]
 },
 {
-"url": "unmanaged-device-protection--monitor-.html",
-"text": "Unmanaged Device Protection (Monitor)",
+"url": "unmanaged-device-protection.html",
+"text": "Unmanaged Device Protection",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "monitor-activity-with-reverse-proxy-as-an-access-method-report-on-all-activity-with-reverse-proxy-as-an-access-method-alert-on-all-activities-accessing-a-managed-service-via-reverse-proxy.html",
-"text": "Monitor activity with reverse proxy as an access method\/Report on all activity with reverse proxy as an access method\/Alert on all activities accessing a managed service via reverse proxy",
+"url": "monitor---unmanaged-device-protection.html",
+"text": "Monitor – Unmanaged Device Protection",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "monitor-activity-with-reverse-proxy-as-an-access-method.html",
+"text": "Monitor activity with reverse proxy as an access method",
+"class": "topic-link section"
+},
+{
+"url": "report-on-all-activity-with-reverse-proxy-as-the-access-method.html",
+"text": "Report on all activity with reverse proxy as the access method",
+"class": "topic-link section"
+},
+{
+"url": "alert-on-all-activities-accessing-a-managed-service-via-reverse-proxy.html",
+"text": "Alert on all activities accessing a managed service via reverse proxy",
 "class": "topic-link section"
 },
 {
 "url": "create-dlp-policies-for-sensitive-data-for-a-specific-ou-from-a-user-and-provide-user-coaching.html",
 "text": "Create DLP policies for sensitive data for a specific OU from a user and provide user coaching",
 "class": "topic-link section"
+}]
 },
 {
-"url": "block-unmanaged-devices-from-malicious-files-uploaded-or-downloaded-from-our-sanctioned-apps---block-unmanaged-devices-from-performing-sensitive-activities-from-our-sanctioned-apps.html",
-"text": "Block unmanaged devices from malicious files uploaded or downloaded from our sanctioned apps \/ Block unmanaged devices from performing sensitive activities from our sanctioned apps",
+"url": "protect---unmanaged-device-protection.html",
+"text": "Protect – Unmanaged Device Protection",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "block-unmanaged-devices-from-malicious-files-uploaded-or-downloaded-from-our-sanctioned-apps.html",
+"text": "Block unmanaged devices from malicious files uploaded or downloaded from our sanctioned apps",
+"class": "topic-link section"
+},
+{
+"url": "block-unmanaged-devices-from-performing-sensitive-activities-from-our-sanctioned-apps.html",
+"text": "Block unmanaged devices from performing sensitive activities from our sanctioned apps",
+"class": "topic-link section"
+},
+{
+"url": "block-unmanaged-devices-from-downloading-sensitive-data-from-our-sanctioned-apps.html",
+"text": "Block unmanaged devices from downloading sensitive data from our sanctioned apps",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "iaas.html",
+"text": "IaaS",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "iaas---monitor.html",
+"text": "IaaS - Monitor",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "public-cloud-overview.html",
+"text": "Public Cloud Overview",
+"class": "topic-link section"
+},
+{
+"url": "view-all-inventory-for-iaas-providers.html",
+"text": "View all inventory for IaaS providers",
+"class": "topic-link section"
+},
+{
+"url": "public-cloud-security-posture.html",
+"text": "Public Cloud Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "cspm-scans-on-aws-accounts.html",
+"text": "CSPM Scans on AWS Accounts",
+"class": "topic-link section"
+},
+{
+"url": "cspm-scans-on-azure-accounts.html",
+"text": "CSPM Scans on Azure Accounts",
+"class": "topic-link section"
+},
+{
+"url": "cspm-scans-on-gcp-accounts.html",
+"text": "CSPM Scans on GCP Accounts",
+"class": "topic-link section"
+},
+{
+"url": "dlp-scans-on-aws-accounts.html",
+"text": "DLP Scans on AWS Accounts",
+"class": "topic-link section"
+},
+{
+"url": "dlp-scans-on-azure-accounts.html",
+"text": "DLP Scans on Azure Accounts",
+"class": "topic-link section"
+},
+{
+"url": "dlp-scans-on-gcp-accounts.html",
+"text": "DLP Scans on GCP Accounts",
+"class": "topic-link section"
+},
+{
+"url": "threat-scan-on-iaas-storage.html",
+"text": "Threat scan on IaaS storage",
+"class": "topic-link section"
+}]
+},
+{
+"url": "iaas---protect.html",
+"text": "IaaS - Protect",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "remediate-iaas-misconfigurations.html",
+"text": "Remediate IaaS misconfigurations",
+"class": "topic-link section"
+},
+{
+"url": "manual-steps-for-remediation.html",
+"text": "Manual steps for remediation",
+"class": "topic-link section"
+},
+{
+"url": "auto-remediation.html",
+"text": "Auto Remediation",
+"class": "topic-link section"
+},
+{
+"url": "using-classic-reports.html",
+"text": "Using Classic Reports",
+"class": "topic-link section"
+},
+{
+"url": "using-advanced-analytics.html",
+"text": "Using Advanced Analytics",
+"class": "topic-link section"
+},
+{
+"url": "using-cloud-exchange.html",
+"text": "Using Cloud Exchange",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "swg-web-traffic.html",
+"text": "SWG Web traffic",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "ngswg-basic-policies.html",
+"text": "NGSWG Basic Policies",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "blocking-online-ads-silently.html",
+"text": "Blocking Online Ads Silently",
+"class": "topic-link section"
+},
+{
+"url": "filtering-top-level-domains.html",
+"text": "Filtering Top Level Domains",
+"class": "topic-link section"
+},
+{
+"url": "http-header-policies.html",
+"text": "HTTP Header Policies",
+"class": "topic-link section"
+},
+{
+"url": "filtering-traffic-to-high-risk-countries.html",
+"text": "Filtering Traffic to High-Risk Countries",
+"class": "topic-link section"
+},
+{
+"url": "review-available-metrics-and-confirm-reports.html",
+"text": "Review Available Metrics and Confirm Reports",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "advanced-threat-protection.html",
+"text": "Advanced Threat Protection",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "protect-against-unknown-malicious-websites.html",
+"text": "Protect against unknown malicious websites",
+"class": "topic-link section"
+},
+{
+"url": "protect-against-unknown-web-threats.html",
+"text": "Protect against unknown web threats",
+"class": "topic-link section"
+},
+{
+"url": "protect-against-viruses-and-malicious-files.html",
+"text": "Protect against viruses and malicious files",
+"class": "topic-link section"
+},
+{
+"url": "protect-against-network-based-attacks.html",
+"text": "Protect against network-based attacks",
+"class": "topic-link section"
+},
+{
+"url": "protection-against-insider-threats.html",
+"text": "Protection against Insider threats",
+"class": "topic-link section"
+},
+{
+"url": "protect-against-unmanaged-s3-access.html",
+"text": "Protect against Unmanaged S3 access",
+"class": "topic-link section"
+},
+{
+"url": "shadow-it---identifying-unsanctioned-aws-accounts-using-skope-it.html",
+"text": "Shadow IT – Identifying unsanctioned AWS accounts using Skope IT",
+"class": "topic-link section"
+},
+{
+"url": "shadow-it---identifying-unsanctioned-aws-accounts-using-advanced-analytics.html",
+"text": "Shadow IT – Identifying unsanctioned AWS accounts using Advanced Analytics",
+"class": "topic-link section"
+},
+{
+"url": "control-aws-apps-using-instance-ids.html",
+"text": "Control AWS apps using Instance IDs",
 "class": "topic-link section"
 }]
 }]
@@ -1273,7 +1528,7 @@ var toc = [{
 }]
 },
 {
-"url": "advanced-threat-protection.html",
+"url": "advanced-threat-protection-86194.html",
 "text": "Advanced Threat Protection",
 "class": "topic-link section"
 ,
@@ -4301,38 +4556,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-interoperability.html",
-"text": "Netskope Client Interoperability",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "steering-configuration-for-vpn-applications.html",
-"text": "Steering Configuration for VPN Applications",
-"class": "topic-link section"
-},
-{
-"url": "exceptions-for-anti-virus-applications.html",
-"text": "Exceptions for Anti Virus Applications",
-"class": "topic-link section"
-},
-{
-"url": "palo-alto-globalprotect.html",
-"text": "Palo Alto GlobalProtect",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-always-on-vpn---work-in-progress.html",
-"text": "Microsoft Always-On VPN - Work In Progress",
-"class": "topic-link section"
-},
-{
-"url": "interop-with-cisco-anyconnect.html",
-"text": "Interop with Cisco AnyConnect",
-"class": "topic-link section"
-}]
-},
-{
 "url": "netskope-client-command-reference.html",
 "text": "Netskope Client Command Reference",
 "class": "topic-link section"
@@ -4352,6 +4575,11 @@ var toc = [{
 {
 "url": "error-settings.html",
 "text": "Error Settings",
+"class": "topic-link section"
+},
+{
+"url": "dynamic-steering.html",
+"text": "Dynamic Steering",
 "class": "topic-link section"
 }]
 },
@@ -4867,129 +5095,21 @@ var toc = [{
 "url": "servicenow-plugin-for-ticket-orchestrator.html",
 "text": "ServiceNow Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "confirm-servicenow-account-roles.html",
-"text": "Confirm ServiceNow Account Roles",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-servicenow-plugin.html",
-"text": "Configure the ServiceNow Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-business-rules-for-servicenow.html",
-"text": "Configure Ticket Orchestrator Business Rules for ServiceNow",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-queues-for-servicenow.html",
-"text": "Configure Ticket Orchestrator Queues for ServiceNow",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-servicenow-plugin.html",
-"text": "Validate the ServiceNow Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "jira-plugin-for-ticket-orchestrator.html",
 "text": "Jira Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-jira-api-token.html",
-"text": "Create a Jira API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-jira-plugin.html",
-"text": "Configure the Jira Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-business-rules-for-jira.html",
-"text": "Configure Ticket Orchestrator Business Rules for Jira",
-"class": "topic-link section"
-},
-{
-"url": "configure-queues-for-jira.html",
-"text": "Configure Queues for Jira",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-jira-plugin.html",
-"text": "Validate the Jira Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "microsoft-teams-plugin-for-ticket-orchestrator.html",
 "text": "Microsoft Teams Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-or-get-an-incoming-webhook-url.html",
-"text": "Create or Get an Incoming Webhook URL",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-microsoft-teams-plugin.html",
-"text": "Configure the Microsoft Teams Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-business-rules-for-microsoft-teams.html",
-"text": "Configure Ticket Orchestrator Business Rules for Microsoft Teams",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-queues-for-microsoft-teams.html",
-"text": "Configure Ticket Orchestrator Queues for Microsoft Teams",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-teams-plugin.html",
-"text": "Validate the Microsoft Teams Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "slack-notifier-plugin-for-ticket-orchestrator.html",
 "text": "Slack Notifier Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-a-slack-webhook-url.html",
-"text": "Create a Slack Webhook URL",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-slack-notifier-plugin.html",
-"text": "Configure the Slack Notifier Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-business-rule-for-slack-notifier.html",
-"text": "Configure Ticket Orchestrator Business Rule for Slack Notifier",
-"class": "topic-link section"
-},
-{
-"url": "configure-ticket-orchestrator-queues-for-slack-notifier.html",
-"text": "Configure Ticket Orchestrator Queues for Slack Notifier",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-slack-notifier-plugin.html",
-"text": "Validate the Slack Notifier Plugin",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -6305,7 +6425,7 @@ var toc = [{
 },
 {
 "url": "airwatch.html",
-"text": "AirWatch",
+"text": "Airwatch",
 "class": "topic-link section"
 ,
 "children": [
