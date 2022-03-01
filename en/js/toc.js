@@ -7133,7 +7133,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-rest-apis.html",
+"url": "netskope-platform-rest-apis.html",
 "text": "Netskope Platform API Endpoints",
 "class": "topic-link section"
 ,
