@@ -5989,6 +5989,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+  {
+  "url": "scim-based-user-provisioning.html",
+  "text": "SCIM-Based User Provisioning",
+  "class": "topic-link section"
+  },
 {
 "url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
 "text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
