@@ -368,6 +368,18 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-private-access-release-notes-version-1-4-6715.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6715",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-345695.html",
+"text": "Fixed Issues",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-release-notes-version-1-4-6620.html",
 "text": "Netskope Private Access Release Notes Version 1.4.6620",
 "class": "topic-link section reused-publication reused-publication"
