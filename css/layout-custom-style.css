@@ -117,6 +117,12 @@ font-family: inherit;
     color: #00A9CE;
 }
 
+/* image border */
+.mediaobject {
+    border:  solid 1px BFBFBF !important;
+}
+
+
 
 /* ADDED THIS TO SHADE THE LEFT NAV SAME AS THE TOP NAV BAR */
 .theme2.colored-top .nav-site-sidebar{
