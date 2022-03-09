@@ -17,7 +17,7 @@ a:hover,a:focus,a.text-primary:hover,a.text-primary:focus,.btn-link:hover,.btn-l
 }
 
 a.bg-primary:hover,a.bg-primary:focus,.btn-primary:hover,.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus,.portal-header .portal-search button:hover {
-    background-color: #593696;
+    background-color: #C8C9C7;
 }
 
 .nav-site-sidebar li a:focus{
@@ -25,12 +25,12 @@ a.bg-primary:hover,a.bg-primary:focus,.btn-primary:hover,.btn-primary:active:hov
 }
 
 .btn-primary:hover,.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus {
-    border-color: #593696;
+    border-color: #C8C9C7;
 }
 
 /* Secondary color - For portal search button, publication count */
 .portal-header .portal-search button {
-    background-color:#7e57c2;
+    background-color:#C8C9C7;
 }
 
 .publication-contents h4 span {
