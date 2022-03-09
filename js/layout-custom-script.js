@@ -40,7 +40,7 @@ var scripts = document.getElementsByTagName( "script" );
     }
 
 
-document.getElementsByClassName("section-toc-title")[0].firstChild.nodeValue = "Related Articles";
+/*document.getElementsByClassName("section-toc-title")[0].firstChild.nodeValue = "Related Articles";*/
 });
 $(document).ready(function () {
     setWelcomeText();
