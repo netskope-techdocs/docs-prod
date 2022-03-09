@@ -127,11 +127,13 @@ font-family: inherit;
 /* ADDED THIS TO SHADE THE LEFT NAV SAME AS THE TOP NAV BAR */
 .theme2.colored-top .nav-site-sidebar{
   background-color: #C8C9C7;
+
 }
 
 
 .theme2 .site-sidebar{
     background-color: #C8C9C7;
+    border-color: #C8C9C7;
 }
 
 .theme2 .toc > li {
