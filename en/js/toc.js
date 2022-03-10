@@ -4986,7 +4986,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "migrating-to-ce-3-1-5-from-3.x.html",
+"url": "migrating-to-ce-3-1-5-from-3-x.html",
 "text": "Migrating to CE 3.1.5 from 3.x",
 "class": "topic-link section"
 },
