@@ -9,10 +9,10 @@
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="0"/>
   <param name="use.multilingual.default.search" select="0"/>
-  <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/620ec7418b1d0.css"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62282ca49bd49.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c344991193.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c5ada456dc.png"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-621848e5932744.48625223/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-6230cb10af9ef2.83107402/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2022 Netskope </param>
@@ -24,7 +24,7 @@
   <param name="google.analytics" select="GTM-W56WJ8S"/>
   <param name="google.analytics.type" select="tagmanager"/>
   <param name="user.custom.script" select="0"/>
-  <param name="layout.custom.script" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62103ba48b2a9.js"/>
+  <param name="layout.custom.script" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62282d4821a7e.js"/>
   <param name="create.sitemap" select="1"/>
   <param name="destination.domain" select="https://docs.netskope.com/"/>
   <param name="submit.feedback" select="1"/>
@@ -59,6 +59,7 @@
   <param name="external.top.nav.links" select=""/>
   <param name="top.nav.section.depth" select="3"/>
   <param name="gentext.for.top.nav" select="0"/>
+  <param name="use.portal.category" select="1"/>
   <param name="version.dropdown.values" select=""/>
   <param name="enter.key.search.behaviour" select="select"/>
   <param name="versions.file" select=""/>
@@ -73,7 +74,7 @@
   <param name="custom.favicon.path" select=""/>
   <param name="initial.heading.level" select="default"/>
   <param name="add.rel.noopener" select="1"/>
-  <param name="scripts.in.body" select="0"/>
+  <param name="scripts.in.body" select="1"/>
   <param name="external.logo.link.in.same.tab" select="0"/>
   <param name="drift.id" select=""/>
   <param name="pendo.agent" select=""/>
@@ -92,10 +93,10 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-621848e5932744.48625223/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-6230cb10af9ef2.83107402/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-621848e5932744.48625223/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-6230cb10af9ef2.83107402/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-621848e5932744.48625223/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-6230cb10af9ef2.83107402/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
 </params>

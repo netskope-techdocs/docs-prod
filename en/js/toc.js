@@ -1,13 +1,41 @@
 var toc = [{
-"url": "release-notes.html",
-"text": "Release Notes",
-"class": "topic-link section top-nav-link portal-category top-nav-link portal-category"
+"url": "netskope-release-notes.html",
+"text": "Netskope Release Notes",
+"class": "topic-link section top-nav-link portal-category reused-publication top-nav-link portal-category; reused-publication"
 ,
 "children": [
 {
 "url": "release-notes-subscription.html",
 "text": "Release Notes Subscription",
 "class": "topic-link section"
+},
+{
+"url": "netskope-cloud-release-notes.html",
+"text": "Netskope Cloud Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-release-notes-version-93-0-0.html",
+"text": "Netskope Release Notes Version 93.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-93-0-0.html",
+"text": "New Features And Enhancements In Release 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-93-0-0.html",
+"text": "Fixed Issues In Release 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-93-0-0.html",
+"text": "Known Issues In Release 93.0.0",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-release-notes-hotfix-version-92-1-0.html",
@@ -61,7 +89,7 @@ var toc = [{
 "children": [
 {
 "url": "fixed-issues-in-hotfix-release-91-2-0.html",
-"text": "Fixed Issues in Hotfix Release 91.2.0",
+"text": "Fixed Issues In Hotfix Release 91.2.0",
 "class": "topic-link section"
 }]
 },
@@ -78,12 +106,12 @@ var toc = [{
 },
 {
 "url": "fixed-issues-in-hotfix-release-91-1-0.html",
-"text": "Fixed Issues in Hotfix Release 91.1.0",
+"text": "Fixed Issues In Hotfix Release 91.1.0",
 "class": "topic-link section"
 },
 {
 "url": "known-issues-in-hotfix-release-91-1-0.html",
-"text": "Known Issues in Hotfix Release 91.1.0",
+"text": "Known Issues In Hotfix Release 91.1.0",
 "class": "topic-link section"
 }]
 },
@@ -94,18 +122,18 @@ var toc = [{
 ,
 "children": [
 {
-"url": "new-features-and-enhancements.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-in-release-91-0-0.html",
+"text": "New Features And Enhancements In Release 91.0.0",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-in-release-91-0-0.html",
+"text": "Fixed Issues In Release 91.0.0",
 "class": "topic-link section"
 },
 {
-"url": "known-issues.html",
-"text": "Known Issues",
+"url": "known-issues-in-release-91-0-0.html",
+"text": "Known Issues In Release 91.0.0",
 "class": "topic-link section"
 },
 {
@@ -121,8 +149,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "fixed-issues-331902.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-in-version-90-2-0.html",
+"text": "Fixed Issues In Version 90.2.0",
 "class": "topic-link section"
 }]
 },
@@ -138,40 +166,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-320826.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-in-hotfix-release-90-1-0.html",
+"text": "New Features and Enhancements In Hotfix Release 90.1.0",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-320827.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-in-hotfix-release-90-1-0.html",
+"text": "Fixed Issues In Hotfix Release 90.1.0",
 "class": "topic-link section"
 },
 {
-"url": "known-issues-320828.html",
-"text": "Known Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-release-notes-version-89-0-0.html",
-"text": "Netskope Release Notes Version 89.0.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-179821.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-179823.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-},
-{
-"url": "appendix--fixed-issue-134322.html",
-"text": "Appendix: Fixed Issue 134322",
+"url": "known-issues-in-hotfix-release-90-1-0.html",
+"text": "Known Issues In Hotfix Release 90.1.0",
 "class": "topic-link section"
 }]
 },
@@ -182,8 +188,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-316177.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-in-hotfix-release-88-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 88.1.0",
 "class": "topic-link section"
 },
 {
@@ -197,11 +203,279 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-316180.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-in-hotfix-release-88-1-0.html",
+"text": "Fixed Issues In Hotfix Release 88.1.0",
 "class": "topic-link section"
 }]
 },
+{
+"url": "netskope-release-notes-version-89-0-0.html",
+"text": "Netskope Release Notes Version 89.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-89-0-0.html",
+"text": "New Features And Enhancements In Release 89.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-89-0-0.html",
+"text": "Fixed Issues In Release 89.0.0",
+"class": "topic-link section"
+},
+{
+"url": "appendix--fixed-issue-134322.html",
+"text": "Appendix: Fixed Issue 134322",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "netskope-private-access--npa--release-notes.html",
+"text": "Netskope Private Access (NPA) Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-private-access-release-notes-version-1-4-6715.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6715",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-release-1-4-6715.html",
+"text": "Fixed Issues In Release 1.4.6715",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6620.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6620",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-release-1-4-6620.html",
+"text": "Fixed Issues In Release 1.4.6620",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6526.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6526",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-1-4-6526.html",
+"text": "New Features And Enhancements In Release 1.4.6526",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-1-4-6526.html",
+"text": "Fixed Issues In Release 1.4.6526",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-release-notes-version-1-4-6431.html",
+"text": "Netskope Private Access Release Notes Version 1.4.6431",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-1-4-6431.html",
+"text": "New Features and Enhancements In Release 1.4.6431",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-1-4-6431.html",
+"text": "Fixed Issues In Release 1.4.6431",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-1-4-6431.html",
+"text": "Known Issues In Release 1.4.6431",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html",
+"text": "Netskope Client Traffic Exploit Prevention System Threat Content Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-93-0-1-165.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 93.0.1.165",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-92-1-1-161.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 92.1.1.161",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-92-0-1-157.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 92.0.1.157",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-91-0-14-148.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.14.148",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-91-0-8-142.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.8.142",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-91-0-6-139.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.6.139",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-90-0-1-104.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 90.0.1.104",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-89-0-1-94.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 89.0.1.94",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-88-1-1-91.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 88.1.1.91",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-88-0-1-87.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 88.0.1.87",
+"class": "topic-link section"
+},
+{
+"url": "ctep-ips-threat-content-update-release-notes-87-0-1-78.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 87.0.1.78",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes.html",
+"text": "Netskope Cloud Exchange Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-2-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-2-0.html",
+"text": "New Features And Enhancements In Version 3.2.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-2-0.html",
+"text": "Fixed Issues In Version 3.2.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-5.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.5",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-5.html",
+"text": "New Features And Enhancements In Version 3.1.5",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-1-5.html",
+"text": "Fixed Issues In Version 3.1.5",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-3.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.3",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-3.html",
+"text": "New Features And Enhancements In Version 3.1.3",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-2.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.2",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-2.html",
+"text": "New Features And Enhancements In Version 3.1.2",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-0.html",
+"text": "New Features And Enhancements In Version 3.1.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-0-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-0-0.html",
+"text": "New Features And Enhancements In Version 3.0.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-2-0-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 2.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-2-0-0.html",
+"text": "New Features And Enhancements In Version 2.0.0",
+"class": "topic-link section"
+}]
+}]
+},
+{
+"url": "netskope-appliance-release-notes.html",
+"text": "Netskope Appliance Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "on-premises-appliance-release-notes.html",
+"text": "On-Premises Appliance Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
 {
 "url": "on-premises-appliance-release-notes-version-77-6-0.html",
 "text": "On-Premises Appliance Release Notes Version 77.6.0",
@@ -214,7 +488,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-85473.html",
+"url": "new-features-and-enhancements.html",
 "text": "New Features and Enhancements",
 "class": "topic-link section"
 },
@@ -224,12 +498,12 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "known-issues-85475.html",
+"url": "known-issues.html",
 "text": "Known Issues",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-85476.html",
+"url": "fixed-issues.html",
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
@@ -265,7 +539,14 @@ var toc = [{
 "text": "Fixed Issues for On-Premises Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
+}]
 },
+{
+"url": "virtual-appliance-release-notes.html",
+"text": "Virtual Appliance Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
 {
 "url": "virtual-appliance-release-notes-version-77-6-0.html",
 "text": "Virtual Appliance Release Notes Version 77.6.0",
@@ -339,9 +620,16 @@ var toc = [{
 "text": "Fixed Issues for Virtual Appliance Version 77.5.0",
 "class": "topic-link section"
 }]
+}]
 },
 {
 "url": "management-plane-appliance-release-notes.html",
+"text": "Management Plane Appliance Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "management-plane-appliance-release-notes-148569.html",
 "text": "Management Plane Appliance Release Notes",
 "class": "topic-link section reused-publication reused-publication"
 ,
@@ -366,125 +654,7 @@ var toc = [{
 "text": "Fixed Issues",
 "class": "topic-link section"
 }]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6715.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6715",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "fixed-issues-345695.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
 }]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6620.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6620",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "fixed-issues-335839.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6526.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6526",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-331259.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-331260.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-private-access-release-notes-version-1-4-6431.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6431",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-331410.html",
-"text": "New Features and Enhancements",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-323570.html",
-"text": "Fixed Issues",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-323671.html",
-"text": "Known Issues",
-"class": "topic-link section"
-}]
-},
-{
-"url": "client-traffic-exploit-prevention-intrusion-prevention-system-threat-content-release-notes.html",
-"text": "Client Traffic Exploit Prevention\/Intrusion Prevention System Threat Content Release Notes",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "ctep-ips-threat-content-update-release-notes-92-1-1-161.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 92.1.1.161",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-92-0-1-157.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 92.0.1.157",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-91-0-14-148.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.14.148",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-91-0-8-142.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.8.142",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-91-0-6-139.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 91.0.6.139",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-90-0-1-104.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 90.0.1.104",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-89-0-1-94.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 89.0.1.94",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-88-1-1-91.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 88.1.1.91",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-88-0-1-87.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 88.0.1.87",
-"class": "topic-link section"
-},
-{
-"url": "ctep-ips-threat-content-update-release-notes-87-0-1-78.html",
-"text": "CTEP\/IPS Threat Content Update Release Notes 87.0.1.78",
-"class": "topic-link section"
 }]
 }]
 },
@@ -847,8 +1017,48 @@ var toc = [{
 ,
 "children": [
 {
-"url": "to-create-inline-policies-based-on-various-criteria-and-constraints.html",
-"text": "To create inline policies based on various criteria and constraints",
+"url": "apply-policies-based-on-ad-users--groups--or-ou.html",
+"text": "Apply policies based on AD users, groups, or OU",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-based-on-the-source-of-traffic.html",
+"text": "Apply policies based on the source of traffic",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-based-on-the-source-of-traffic--trusted--or-untrusted-networks.html",
+"text": "Apply policies based on the source of traffic, trusted, or untrusted networks",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-based-on-the-source-of-traffic--forward--or-reverse-proxy.html",
+"text": "Apply policies based on the source of traffic, forward, or reverse proxy",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-based-on-the-application-instance.html",
+"text": "Apply policies based on the application instance",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-based-on-the-constraint-profile.html",
+"text": "Apply policies based on the constraint profile",
+"class": "topic-link section"
+},
+{
+"url": "apply-policies-to-enforce-step-up-authentication-as-required.html",
+"text": "Apply policies to enforce step up authentication as required",
+"class": "topic-link section"
+},
+{
+"url": "analyze-user-activity--such-as-uploads-or-posts--in-cloud-apps-that-create-or-shares-content.html",
+"text": "Analyze user activity, such as uploads or posts, in cloud apps that create or shares content",
+"class": "topic-link section"
+},
+{
+"url": "analyze-and-report-on-using-corporate-credentials-on-non-sanctioned-apps.html",
+"text": "Analyze and report on using corporate credentials on non-sanctioned apps",
 "class": "topic-link section"
 }]
 },
@@ -859,33 +1069,33 @@ var toc = [{
 ,
 "children": [
 {
-"url": "to-allow-access-to-a-sanctioned-instance-of-a-supported-corporate-app.html",
-"text": "To allow access to a sanctioned instance of a supported corporate app",
+"url": "allow-access-to-a-sanctioned-instance-of-a-supported-corporate-app.html",
+"text": "Allow access to a sanctioned instance of a supported corporate app",
 "class": "topic-link section"
 },
 {
-"url": "to-allow-access-to-a-sanctioned-application-based-on-app-tag.html",
-"text": "To allow access to a sanctioned application based on app tag",
+"url": "allow-access-to-a-sanctioned-application-based-on-app-tag.html",
+"text": "Allow access to a sanctioned application based on app tag",
 "class": "topic-link section"
 },
 {
-"url": "we-would-like-to-block-risky-activities-to-unsanctioned-non-it-purchased-apps.html",
-"text": "We would like to block risky activities to Unsanctioned\/non-IT purchased apps",
+"url": "block-risky-activities-to-unsanctioned-non-it-purchased-apps.html",
+"text": "Block risky activities to Unsanctioned\/non-IT purchased apps",
 "class": "topic-link section"
 },
 {
-"url": "we-would-like-to-block-risky-activities-to-low---poor-ccl-apps.html",
-"text": "We would like to block risky activities to Low \/ Poor CCL apps",
+"url": "block-risky-activities-to-low---poor-ccl-apps.html",
+"text": "Block risky activities to Low \/ Poor CCL apps",
 "class": "topic-link section"
 },
 {
-"url": "we-would-like-to-alert-block-upon-detection-of-password-protected-files.html",
-"text": "We would like to alert\/block upon detection of password protected files",
+"url": "alert-block-upon-detection-of-password-protected-files.html",
+"text": "Alert\/block upon detection of password protected files",
 "class": "topic-link section"
 },
 {
-"url": "we-would-like-to-coach-users-away-from-unsanctioned-applications-and-allow-justification-of-required-use.html",
-"text": "We would like to coach users away from unsanctioned applications and allow justification of required use",
+"url": "coach-users-away-from-unsanctioned-applications-and-allow-justification-of-required-use.html",
+"text": "Coach users away from unsanctioned applications and allow justification of required use",
 "class": "topic-link section"
 }]
 }]
@@ -1795,13 +2005,6 @@ var toc = [{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "publisher-monitoring.html",
-"text": "Publisher Monitoring",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -1885,6 +2088,16 @@ var toc = [{
 {
 "url": "troubleshooting-performance-and-connectivity-using-ping--traceroute--or-telnet.html",
 "text": "Troubleshooting Performance and Connectivity using Ping, Traceroute, or Telnet",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-why-npa-steered-websites-are-inaccessible.html",
+"text": "Troubleshooting Why NPA-steered Websites are Inaccessible",
+"class": "topic-link section"
+},
+{
+"url": "what-do-the-private-access-device-status-types-mean-.html",
+"text": "What Do the Private Access Device Status Types Mean?",
 "class": "topic-link section"
 }]
 },
@@ -2063,8 +2276,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "cloud-security-posture-management-for-netskope-public-cloud-security.html",
-"text": "Cloud Security Posture Management for Netskope Public Cloud Security",
+"url": "cloud-security-posture-management.html",
+"text": "Cloud Security Posture Management",
 "class": "topic-link section"
 ,
 "children": [
@@ -2072,120 +2285,105 @@ var toc = [{
 "url": "getting-started-with-cspm-for-public-cloud.html",
 "text": "Getting Started with CSPM for Public Cloud",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "security-posture-management-for-aws.html",
+"text": "Security Posture Management for AWS",
+"class": "topic-link section"
 },
 {
-"url": "continuous-security-assessment-for-aws.html",
-"text": "Continuous Security Assessment for AWS",
+"url": "security-posture-management-for-azure.html",
+"text": "Security Posture Management for Azure",
+"class": "topic-link section"
+},
+{
+"url": "security-posture-management-for-gcp.html",
+"text": "Security Posture Management for GCP",
+"class": "topic-link section"
+},
+{
+"url": "security-posture-management-regulatory-compliance-standards.html",
+"text": "Security Posture Management Regulatory Compliance Standards",
+"class": "topic-link section"
+}]
+},
+{
+"url": "enabling-security-posture-management-for-aws.html",
+"text": "Enabling Security Posture Management for AWS",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "cis-benchmarks-for-aws.html",
-"text": "CIS Benchmarks for AWS",
+"url": "step-1-2--configure-aws-accounts---services-for-csa.html",
+"text": "Step 1\/2: Configure AWS Accounts &amp; Services for CSA",
 "class": "topic-link section"
 },
 {
-"url": "payment-card-industry-data-security-standard.html",
-"text": "Payment Card Industry Data Security Standard",
+"url": "step-2-2--configure-aws-permissions-for-csa.html",
+"text": "Step 2\/2: Configure AWS Permissions for CSA",
 "class": "topic-link section"
+}]
 },
 {
-"url": "aws-best-practices.html",
-"text": "AWS Best Practices",
-"class": "topic-link section"
-},
-{
-"url": "nist-framework.html",
-"text": "NIST Framework",
-"class": "topic-link section"
-},
-{
-"url": "configure-amazon-web-services-for-continuous-security-assessment.html",
-"text": "Configure Amazon Web Services for Continuous Security Assessment",
+"url": "enabling-security-posture-management-for-azure.html",
+"text": "Enabling Security Posture Management for Azure",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "bulk-add-aws-accounts-to-netskope-for-csa.html",
-"text": "Bulk Add AWS accounts to Netskope for CSA",
+"url": "steps-to-configure-an-azure-ad-application-for-csa.html",
+"text": "Steps to configure an Azure AD Application for CSA",
 "class": "topic-link section"
-}]
+},
+{
+"url": "custom-role-permissions-for-azure-csa.html",
+"text": "Custom role permissions for Azure CSA",
+"class": "topic-link section"
+},
+{
+"url": "add-the-azure-subscription-to-the-netskope-tenant.html",
+"text": "Add the Azure Subscription to the Netskope tenant",
+"class": "topic-link section"
 }]
 },
 {
-"url": "continuous-security-assessment-for-azure.html",
-"text": "Continuous Security Assessment for Azure",
+"url": "enabling-security-posture-management-for-gcp.html",
+"text": "Enabling Security Posture Management for GCP",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "cis-benchmarks-for-azure.html",
-"text": "CIS Benchmarks for Azure",
+"url": "steps-to-configure-gcp-for-csa.html",
+"text": "Steps to configure GCP for CSA",
 "class": "topic-link section"
 },
 {
-"url": "payment-card-industry-data-security-standard-325426.html",
-"text": "Payment Card Industry Data Security Standard",
+"url": "custom-role-permissions-for-gcp-csa.html",
+"text": "Custom role permissions for GCP CSA",
 "class": "topic-link section"
-},
-{
-"url": "configure-an-azure-subscription-for-security-assessment.html",
-"text": "Configure an Azure Subscription for Security Assessment",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-an-azure-ad-application-for-csa.html",
-"text": "Configure an Azure AD Application for CSA",
-"class": "topic-link section"
-},
-{
-"url": "azure-permissions-for-csa.html",
-"text": "Azure Permissions for CSA",
-"class": "topic-link section"
-},
-{
-"url": "add-the-azure-subscription-in-netskope-api-enabled-protection.html",
-"text": "Add the Azure Subscription in Netskope API-enabled Protection",
-"class": "topic-link section"
-}]
 }]
 },
 {
-"url": "configure-google-cloud-platform-for-continuous-security-assessment.html",
-"text": "Configure Google Cloud Platform for Continuous Security Assessment",
+"url": "creating-security-assessment-policies-for-netskope-public-cloud-security.html",
+"text": "Creating Security Assessment Policies for Netskope Public Cloud Security",
 "class": "topic-link section"
-},
-{
-"url": "security-assessment-policies-for-netskope-public-cloud-security.html",
-"text": "Security Assessment Policies for Netskope Public Cloud Security",
-"class": "topic-link section"
-},
-{
-"url": "build-custom-rules-for-security-assessment.html",
-"text": "Build Custom Rules for Security Assessment",
-"class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
 "url": "custom-rules-using-domain-specific-language.html",
 "text": "Custom Rules using Domain Specific Language",
 "class": "topic-link section"
-}]
-},
-{
-"url": "view-compliance-alerts-for-public-cloud.html",
-"text": "View Compliance Alerts for Public Cloud",
-"class": "topic-link section"
-},
-{
-"url": "netskope-resource-categories-for-public-cloud-services.html",
-"text": "Netskope Resource Categories for Public Cloud Services",
-"class": "topic-link section"
 },
 {
 "url": "supported-iaas-entities-and-predefined-rules-for-cspm.html",
 "text": "Supported IaaS Entities and Predefined Rules for CSPM",
+"class": "topic-link section"
+}]
+},
+{
+"url": "viewing-cloud-security-posture-compliance-alerts.html",
+"text": "Viewing Cloud Security Posture Compliance Alerts",
 "class": "topic-link section"
 }]
 },
@@ -2251,8 +2449,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-the-azure-subscription-in-netskope-api-enabled-protection-325434.html",
-"text": "Add the Azure Subscription in Netskope API-enabled Protection",
+"url": "add-the-azure-subscription-to-the-netskope-tenant-325434.html",
+"text": "Add the Azure Subscription to the Netskope tenant",
 "class": "topic-link section"
 },
 {
@@ -2354,7 +2552,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-the-azure-subscription-in-netskope-api-enabled-protection-331915.html",
+"url": "add-the-azure-subscription-in-netskope-api-enabled-protection.html",
 "text": "Add the Azure Subscription in Netskope API-enabled Protection",
 "class": "topic-link section"
 },
@@ -4568,10 +4766,62 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-client-interoperability.html",
+"text": "Netskope Client Interoperability",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "exception-configuration-for-vpn-applications.html",
+"text": "Exception Configuration for VPN Applications",
+"class": "topic-link section"
+},
+{
+"url": "exceptions-for-anti-virus-applications.html",
+"text": "Exceptions for Anti Virus Applications",
+"class": "topic-link section"
+},
+{
+"url": "palo-alto-globalprotect.html",
+"text": "Palo Alto GlobalProtect",
+"class": "topic-link section"
+},
+{
+"url": "interop-with-cisco-anyconnect.html",
+"text": "Interop with Cisco AnyConnect",
+"class": "topic-link section"
+},
+{
+"url": "cisco-umbrella.html",
+"text": "Cisco Umbrella",
+"class": "topic-link section"
+},
+{
+"url": "mcafee-endpoint-security.html",
+"text": "McAfee Endpoint Security",
+"class": "topic-link section"
+},
+{
+"url": "symantec-endpoint-protection.html",
+"text": "Symantec Endpoint Protection",
+"class": "topic-link section"
+},
+{
+"url": "vmware-carbon-black.html",
+"text": "VMware Carbon Black",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-client-command-reference.html",
 "text": "Netskope Client Command Reference",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configure-custom-applications-164305.html",
+"text": "App Definitions ",
+"class": "topic-link section"
 },
 {
 "url": "steering-configuration.html",
@@ -4585,8 +4835,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "error-settings.html",
-"text": "Error Settings",
+"url": "certificate-pinned-applications.html",
+"text": "Certificate Pinned Applications",
+"class": "topic-link section"
+},
+{
+"url": "managing-error-settings.html",
+"text": "Managing Error Settings",
 "class": "topic-link section"
 },
 {
@@ -4594,11 +4849,6 @@ var toc = [{
 "text": "Dynamic Steering",
 "class": "topic-link section"
 }]
-},
-{
-"url": "configure-custom-applications-164305.html",
-"text": "App Definitions ",
-"class": "topic-link section"
 },
 {
 "url": "ipsec-129296.html",
@@ -4959,15 +5209,11 @@ var toc = [{
 "url": "about-cloud-exchange.html",
 "text": "About Cloud Exchange",
 "class": "topic-link section"
-},
+,
+"children": [
 {
 "url": "system-requirements.html",
 "text": "System Requirements",
-"class": "topic-link section"
-},
-{
-"url": "supported-3rd-party-plugins.html",
-"text": "Supported 3rd-party Plugins",
 "class": "topic-link section"
 },
 {
@@ -4976,35 +5222,46 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "cloud-exchange-module-descriptions.html",
+"text": "Cloud Exchange Module Descriptions",
+"class": "topic-link section"
+},
+{
+"url": "supported-3rd-party-plugins.html",
+"text": "Supported 3rd-party Plugins",
+"class": "topic-link section"
+}]
+},
+{
 "url": "install-cloud-exchange.html",
 "text": "Install Cloud Exchange",
 "class": "topic-link section"
-},
+,
+"children": [
 {
 "url": "migrating-from-ce-2-x-to-ce-3-x.html",
 "text": "Migrating from CE 2.x to CE 3.x",
 "class": "topic-link section"
 },
 {
-"url": "migrating-to-ce-3-1-5-from-3-x.html",
-"text": "Migrating to CE 3.1.5 from 3.x",
+"url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
+"text": "Migrating from CE 3.x to CE 3.1.5",
 "class": "topic-link section"
 },
 {
-"url": "get-started.html",
-"text": "Get Started",
+"url": "migrating-from-ce-3-1-5-to-newer-versions.html",
+"text": "Migrating from CE 3.1.5 to Newer Versions",
 "class": "topic-link section"
-,
-"children": [
+},
 {
-"url": "explore-the-dashboards.html",
-"text": "Explore the Dashboards",
+"url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-linux-host.html",
+"text": "Install Netskope Cloud Exchange on a Red Hat Enterprise Linux Host",
 "class": "topic-link section"
 }]
 },
 {
-"url": "log-shipper.html",
-"text": "Log Shipper",
+"url": "get-started-with-cloud-exchange.html",
+"text": "Get Started with Cloud Exchange",
 "class": "topic-link section"
 ,
 "children": [
@@ -5013,6 +5270,126 @@ var toc = [{
 "text": "Configure the Netskope Plugin for Log Shipper",
 "class": "topic-link section"
 },
+{
+"url": "configure-the-netskope-plugin-for-ticket-orchestrator.html",
+"text": "Configure the Netskope Plugin for Ticket Orchestrator",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-for-threat-exchange.html",
+"text": "Configure the Netskope Plugin for Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-for-risk-exchange.html",
+"text": "Configure the Netskope Plugin for Risk Exchange",
+"class": "topic-link section"
+},
+{
+"url": "explore-the-dashboards.html",
+"text": "Explore the Dashboards",
+"class": "topic-link section"
+},
+{
+"url": "cloud-exchange-setup-videos.html",
+"text": "Cloud Exchange Setup Videos",
+"class": "topic-link section"
+}]
+},
+{
+"url": "cloud-exchange-console.html",
+"text": "Cloud Exchange Console",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "help.html",
+"text": "Help",
+"class": "topic-link section"
+},
+{
+"url": "settings.html",
+"text": "Settings",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "general.html",
+"text": "General",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "logs.html",
+"text": "Logs",
+"class": "topic-link section"
+},
+{
+"url": "proxy.html",
+"text": "Proxy",
+"class": "topic-link section"
+},
+{
+"url": "tasks-cleanup.html",
+"text": "Tasks Cleanup",
+"class": "topic-link section"
+}]
+},
+{
+"url": "users-291062.html",
+"text": "Users",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "api-tokens.html",
+"text": "API Tokens",
+"class": "topic-link section"
+},
+{
+"url": "sso-configuration.html",
+"text": "SSO Configuration",
+"class": "topic-link section"
+}]
+},
+{
+"url": "plugins.html",
+"text": "Plugins",
+"class": "topic-link section"
+},
+{
+"url": "plugin-repository.html",
+"text": "Plugin Repository",
+"class": "topic-link section"
+},
+{
+"url": "netskope-tenants.html",
+"text": "Netskope Tenants",
+"class": "topic-link section"
+}]
+},
+{
+"url": "account-settings.html",
+"text": "Account Settings",
+"class": "topic-link section"
+},
+{
+"url": "logging.html",
+"text": "Logging",
+"class": "topic-link section"
+},
+{
+"url": "tasks.html",
+"text": "Tasks",
+"class": "topic-link section"
+}]
+},
+{
+"url": "log-shipper-module.html",
+"text": "Log Shipper Module",
+"class": "topic-link section"
+,
+"children": [
 {
 "url": "configure-3rd-party-log-shipper-plugins.html",
 "text": "Configure 3rd-party Log Shipper Plugins",
@@ -5087,16 +5464,11 @@ var toc = [{
 }]
 },
 {
-"url": "ticket-orchestrator.html",
-"text": "Ticket Orchestrator",
+"url": "ticket-orchestrator-module.html",
+"text": "Ticket Orchestrator Module",
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "configure-the-netskope-plugin-for-ticket-orchestrator.html",
-"text": "Configure the Netskope Plugin for Ticket Orchestrator",
-"class": "topic-link section"
-},
 {
 "url": "configure-3rd-party-ticket-orchestrator-plugins.html",
 "text": "Configure 3rd-party Ticket Orchestrator Plugins",
@@ -5130,6 +5502,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "list-alerts-and-use-filter-options.html",
+"text": "List Alerts and Use Filter Options",
+"class": "topic-link section"
+},
+{
 "url": "manage-ticket-orchestrator-business-rules.html",
 "text": "Manage Ticket Orchestrator Business Rules",
 "class": "topic-link section"
@@ -5140,27 +5517,17 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "list-alerts-and-use-filter-options.html",
-"text": "List Alerts and Use Filter Options",
-"class": "topic-link section"
-},
-{
 "url": "list-tickets-and-use-filter-options.html",
 "text": "List Tickets and Use Filter Options",
 "class": "topic-link section"
 }]
 },
 {
-"url": "threat-exchange.html",
-"text": "Threat Exchange",
+"url": "threat-exchange-module.html",
+"text": "Threat Exchange Module",
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "configure-the-netskope-plugin-for-threat-exchange.html",
-"text": "Configure the Netskope Plugin for Threat Exchange",
-"class": "topic-link section"
-},
 {
 "url": "configure-3rd-party-threat-exchange-plugins.html",
 "text": "Configure 3rd-party Threat Exchange Plugins",
@@ -5196,13 +5563,6 @@ var toc = [{
 "url": "mimecast-plugin-for-threat-exchange.html",
 "text": "Mimecast Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-sharing-for-netskope-and-mimecast.html",
-"text": "Configure Sharing for Netskope and Mimecast",
-"class": "topic-link section"
-}]
 },
 {
 "url": "proofpoint-plugin-for-threat-exchange.html",
@@ -5251,11 +5611,13 @@ var toc = [{
 "url": "manage-tags.html",
 "text": "Manage Tags",
 "class": "topic-link section"
-},
+,
+"children": [
 {
 "url": "select-and-modify-tags.html",
 "text": "Select and Modify Tags",
 "class": "topic-link section"
+}]
 },
 {
 "url": "netskope-threat-exchange-developers-guide.html",
@@ -5264,19 +5626,19 @@ var toc = [{
 }]
 },
 {
-"url": "risk-exchange.html",
-"text": "Risk Exchange",
+"url": "risk-exchange-module.html",
+"text": "Risk Exchange Module",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configure-the-netskope-plugin-for-risk-exchange.html",
-"text": "Configure the Netskope Plugin for Risk Exchange",
+"url": "configure-3rd-party-risk-exchange-plugins.html",
+"text": "Configure 3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
 },
 {
-"url": "configure-3rd-party-risk-exchange-plugins.html",
-"text": "Configure 3rd-party Risk Exchange Plugins",
+"url": "plugin-activity.html",
+"text": "Plugin Activity",
 "class": "topic-link section"
 },
 {
@@ -5303,133 +5665,19 @@ var toc = [{
 "url": "action-logs.html",
 "text": "Action Logs",
 "class": "topic-link section"
-},
-{
-"url": "plugin-activity.html",
-"text": "Plugin Activity",
-"class": "topic-link section"
 }]
-},
-{
-"url": "audit-logs.html",
-"text": "Audit Logs",
-"class": "topic-link section"
-},
-{
-"url": "notifications.html",
-"text": "Notifications",
-"class": "topic-link section"
-},
-{
-"url": "operations.html",
-"text": "Operations",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "reset-password.html",
-"text": "Reset Password",
-"class": "topic-link section"
-},
-{
-"url": "log-cleanup.html",
-"text": "Log Cleanup",
-"class": "topic-link section"
-},
-{
-"url": "update-plugin-configuration-checkpoint--last-run-time-.html",
-"text": "Update Plugin Configuration Checkpoint (Last Run time)",
-"class": "topic-link section"
-}]
-},
-{
-"url": "settings.html",
-"text": "Settings",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "general.html",
-"text": "General",
-"class": "topic-link section"
-},
-{
-"url": "proxy.html",
-"text": "Proxy",
-"class": "topic-link section"
-},
-{
-"url": "logs.html",
-"text": "Logs",
-"class": "topic-link section"
-},
-{
-"url": "api-tokens.html",
-"text": "API Tokens",
-"class": "topic-link section"
-},
-{
-"url": "users-291062.html",
-"text": "Users",
-"class": "topic-link section"
-},
-{
-"url": "plugins.html",
-"text": "Plugins",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-threat-exchange-plugin-old.html",
-"text": "Configure the Threat Exchange Plugin-OLD",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-ticket-orchestrator-plugin-old.html",
-"text": "Configure the Ticket Orchestrator Plugin-OLD",
-"class": "topic-link section"
-}]
-},
-{
-"url": "plugin-repository.html",
-"text": "Plugin Repository",
-"class": "topic-link section"
-},
-{
-"url": "netskope-tenants.html",
-"text": "Netskope Tenants",
-"class": "topic-link section"
-},
-{
-"url": "sso-configuration.html",
-"text": "SSO Configuration",
-"class": "topic-link section"
-}]
-},
-{
-"url": "account-settings.html",
-"text": "Account Settings",
-"class": "topic-link section"
-},
-{
-"url": "cloud-exchange-setup-videos.html",
-"text": "Cloud Exchange Setup Videos",
-"class": "topic-link section"
-},
-{
-"url": "help---api-docs.html",
-"text": "Help - API Docs",
-"class": "topic-link section"
 },
 {
 "url": "troubleshooting-tips-and-faqs.html",
 "text": "Troubleshooting Tips and FAQs",
 "class": "topic-link section"
-},
+,
+"children": [
 {
 "url": "generate-diagnostic-logs.html",
 "text": "Generate Diagnostic Logs",
 "class": "topic-link section"
+}]
 }]
 },
 {
@@ -6001,11 +6249,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-  {
-  "url": "scim-based-user-provisioning.html",
-  "text": "SCIM-Based User Provisioning",
-  "class": "topic-link section"
-  },
+{
+"url": "scim-based-user-provisioning.html",
+"text": "SCIM-Based User Provisioning",
+"class": "topic-link section"
+},
 {
 "url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
 "text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
@@ -6271,31 +6519,9 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "cisco-umbrella-with-the-netskope-client.html",
-"text": "Cisco Umbrella with the Netskope Client",
+"url": "interoperability-with-cisco-umbrella.html",
+"text": "Interoperability with Cisco Umbrella",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "create-an-umbrella-ip-bypass-list-in-netskope.html",
-"text": "Create an Umbrella IP Bypass List in Netskope",
-"class": "topic-link section"
-},
-{
-"url": "bypass-umbrella-processes-for-umbrella-dns-based-protection.html",
-"text": "Bypass Umbrella Processes for Umbrella DNS-based Protection",
-"class": "topic-link section"
-},
-{
-"url": "enable-the-perform-server-name-indication--sni--check-in-netskope.html",
-"text": "Enable the Perform Server Name Indication (SNI) Check in Netskope",
-"class": "topic-link section"
-},
-{
-"url": "faq.html",
-"text": "FAQ",
-"class": "topic-link section"
-}]
 }]
 },
 {
