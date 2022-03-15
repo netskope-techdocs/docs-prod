@@ -619,15 +619,33 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Effect. Possible values are 'Allow' and 'Deny'</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
             <td>list</td>
             <td>Policy action</td>
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
             <td>string</td>
-            <td>Effect. Possible values are 'Allow' and 'Deny'</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
@@ -637,9 +655,51 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
             <td>list</td>
-            <td>Condition for owner or ARN</td>
+            <td>Condition for statement</td>
           </tr>
           
           <tr>
@@ -5779,21 +5839,105 @@
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
-            <td>list</td>
-            <td>Policy action</td>
-          </tr>
-          
-          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
             <td>string</td>
             <td>Policy Effect. Can be 'Allow' or 'Deny'</td>
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
+            <td>list</td>
+            <td>Policy Actions</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
             <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
             <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
           </tr>
           
           <tr>
@@ -6033,31 +6177,79 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
             <td>list</td>
-            <td>Policy action</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
             <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
             <td>Principal</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
             <td>list</td>
-            <td>Policy action</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
             <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
             <td>Principal</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
             <td>list</td>
-            <td>Condition for owner or ARN</td>
+            <td>Condition for statement</td>
           </tr>
           
           <tr>
@@ -6166,39 +6358,21 @@
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
-            <td>list</td>
-            <td>Policy action</td>
-          </tr>
-          
-          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
             <td>string</td>
-            <td>Allow or Deny</td>
+            <td>Effect of the statement</td>
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
             <td>list</td>
-            <td>Policy action</td>
+            <td>Actions affected by the statement</td>
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
-            <td>list</td>
-            <td>Actions exempted by the statement</td>
-          </tr>
-          
-          <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
-            <td>list</td>
-            <td>Resources exempted by the statement</td>
-          </tr>
-          
-          <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
-            <td>list</td>
-            <td>Policy principal</td>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
           </tr>
           
           <tr>
@@ -6208,9 +6382,63 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
+            <td>list</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
             <td>list</td>
-            <td>Condition for owner or ARN</td>
+            <td>Condition for statement</td>
           </tr>
           
           <tr>
@@ -6453,31 +6681,79 @@
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
             <td>list</td>
-            <td>Policy action</td>
+            <td>Actions affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Principal</td>
             <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
             <td>Principal</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
             <td>list</td>
-            <td>Policy action</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
             <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
             <td>Principal</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
             <td>list</td>
-            <td>Condition for owner or ARN</td>
+            <td>Condition for statement</td>
           </tr>
           
           <tr>
@@ -11422,15 +11698,33 @@
           </tr>
           
           <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td>string</td>
+            <td>Allow or Deny</td>
+          </tr>
+          
+          <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Action</td>
             <td>list</td>
             <td>Policy Actions</td>
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Effect</td>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
             <td>string</td>
-            <td>Allow or Deny</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td>list</td>
+            <td>Resources affected by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Resource</td>
           </tr>
           
           <tr>
@@ -11440,15 +11734,69 @@
           </tr>
           
           <tr>
-            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Resource</td>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotAction</td>
             <td>list</td>
-            <td>Resouces affected by the statement</td>
+            <td>Actions exempted by the statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Action</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotResource</td>
+            <td>list</td>
+            <td>Resources exempted by the statement</td>
           </tr>
           
           <tr>
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
             <td>string</td>
             <td>Resource</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotPrincipal</td>
+            <td>list</td>
+            <td>Policy principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>value</td>
+            <td>string</td>
+            <td>Principal</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Conditions</td>
+            <td>list</td>
+            <td>Condition for statement</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Condition</td>
+            <td>string</td>
+            <td>Conditon type</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Key name</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>Value</td>
+            <td>list</td>
+            <td>Key Value</td>
           </tr>
           
           <tr>

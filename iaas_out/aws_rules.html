@@ -282,7 +282,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:AddPermission" ) or Action has ( "sns:AddPermission" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:AddPermission" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="9">
@@ -318,7 +318,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:ChangeMessageVisibility" ) or Action has ( "SQS:*" ) or Action has ( "sqs:ChangeMessageVisibility" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:ChangeMessageVisibility" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="12">
@@ -342,7 +342,7 @@ h1 {position: fixed; top: 75}
               S3<br>
             
             </td>
-            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action has ( "s3:Delete*" ) or Action has ("S3:Delete*") or Action has ("S3:*") or Action has ("s3:*") ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action with [ value like "(?i)s3:Delete" or value like "(?i)S3:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="14">
@@ -354,7 +354,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:DeleteMessage" ) or Action has ( "SQS:*" ) or Action has ( "sqs:DeleteMessage" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ (Action with [ value like "(?i)SQS:DeleteMessage" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="15">
@@ -366,7 +366,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:DeleteTopic" ) or Action has ( "sns:DeleteTopic" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:DeleteTopic" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="16">
@@ -402,7 +402,7 @@ h1 {position: fixed; top: 75}
               S3<br>
             
             </td>
-            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action has ( "s3:GetObject*" ) or Action has ( "S3:GetObject*" ) or Action has ( "s3:*" ) or Action has ( "S3:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action with [ value like "(?i)s3:GetObject" or value like "(?i)S3:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="19">
@@ -414,7 +414,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:GetQueueAttributes" ) or Action has ( "SQS:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:GetQueueAttributes" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="20">
@@ -426,7 +426,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:GetQueueUrl" ) or Action has ( "sqs:GetQueueUrl" ) or Action has ( "SQS:*" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:GetQueueUrl" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="21">
@@ -450,7 +450,7 @@ h1 {position: fixed; top: 75}
               S3<br>
             
             </td>
-            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action has ("s3:ListBucket*" ) or Action has ("S3:ListBucket*" ) or Action has ("s3:*" ) or Action has ("S3:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action with [ value like "(?i)s3:ListBucket" or value like "(?i)S3:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="23">
@@ -462,7 +462,7 @@ h1 {position: fixed; top: 75}
               S3<br>
             
             </td>
-            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action has ("s3:Put*" ) or Action has ("S3:Put*" ) or Action has ("s3:*" ) or Action has ("S3:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ (Action with [ value like "(?i)s3:Put" or value like "(?i)S3:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="24">
@@ -510,7 +510,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:Publish" ) or Action has ( "sns:Publish" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:Publish" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="28">
@@ -522,7 +522,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:PurgeQueue" ) or Action has ( "sqs:PurgeQueue" ) or Action has ( "SQS:*" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:PurgeQueue" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="29">
@@ -534,7 +534,7 @@ h1 {position: fixed; top: 75}
               S3<br>
             
             </td>
-            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action has ("s3:PutObject*" ) or Action has ("S3:PutObject*" ) or Action has ("s3:*" ) or Action has ("S3:*" )) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">S3Bucket should not have BucketPolicy with [ Statement with [ ( Action with [ value like "(?i)s3:PutObject" or value like "(?i)S3:\*" ]) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="30">
@@ -546,7 +546,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:Receive" ) or Action has ( "sns:Receive" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:Receive" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="31">
@@ -558,7 +558,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:ReceiveMessage" ) or Action has ( "sqs:ReceiveMessage" ) or Action has ( "SQS:*" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:ReceiveMessage" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="32">
@@ -570,7 +570,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:RemovePermission" ) or Action has ( "sns:RemovePermission" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:RemovePermission" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="33">
@@ -594,7 +594,7 @@ h1 {position: fixed; top: 75}
               SES<br>
             
             </td>
-            <td class="code">SESIdentity should not have Policy with [ Statement with [ Effect eq "Allow" and ( Action has ( "ses:SendEmail" ) or Action has ( "ses:SendRawEmail" ) )and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SESIdentity should not have Policy with [ Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)ses:SendEmail" or value like "(?i)ses:SendRawEmail" or value like "(?i)ses:\*" ] )and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="35">
@@ -606,7 +606,7 @@ h1 {position: fixed; top: 75}
               SQS<br>
             
             </td>
-            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action has ( "SQS:SendMessage" ) or Action has ( "sqs:SendMessage" ) or Action has ( "SQS:*" ) or Action has ( "sqs:*" ) ) and Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">SQSQueue should not have SQSPolicy with [ Statement with [ ( Action with [ value like "(?i)SQS:SendMessage" or value like "(?i)SQS:\*" ] ) and Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="36">
@@ -618,7 +618,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:SetTopicAttributes" ) or Action has ( "sns:SetTopicAttributes" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:SetTopicAttributes" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="37">
@@ -642,7 +642,7 @@ h1 {position: fixed; top: 75}
               SNS<br>
             
             </td>
-            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action has ( "SNS:Subscribe" ) or Action has ( "sns:Subscribe" ) or Action has ( "SNS:*" ) or Action has ( "sns:*" ) ) and Principal has ( "*" ) and Conditions len ( ) eq 0 ] </td>
+            <td class="code">SNSTopic should not have Policy . Statement with [ Effect eq "Allow" and ( Action with [ value like "(?i)SNS:Subscribe" or value like "(?i)SNS:\*" ] ) and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] </td>
           </tr>
           
           <tr num="39">
@@ -966,7 +966,7 @@ h1 {position: fixed; top: 75}
               Lambda<br>
             
             </td>
-            <td class="code">Lambda should have IAMRole . Policies . Inline with [ PolicyDocument . Statements with [ Effect eq "Allow" and Resource with [ value eq "*" ] and Action with [ value eq "logs:CreateLogGroup" ] and Action with [ value eq "logs:CreateLogStream" ] and Action with [ value eq "logs:PutLogEvents" ] ] ] or IAMRole . Policies . Managed with [ id like "AWSLambdaBasicExecutionRole" ] </td>
+            <td class="code">Lambda should have IAMRole . Policies . Inline with [ PolicyDocument . Statements with [ Effect eq "Allow" and Resource len ( ) gt 0 and Action with [ value eq "logs:CreateLogGroup" ] and Action with [ value eq "logs:CreateLogStream" ] and Action with [ value eq "logs:PutLogEvents" ] ] ] or IAMRole . Policies . Managed with [ Permissions . Statements with [ Effect eq "Allow" and Resource len ( ) gt 0 and Action with [ value eq "logs:CreateLogGroup" ] and Action with [ value eq "logs:CreateLogStream" ] and Action with [ value eq "logs:PutLogEvents" ] ] ] </td>
           </tr>
           
           <tr num="66">
@@ -2653,7 +2653,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="205">
@@ -4031,7 +4031,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*organizations\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*AcceptHandshake\)\s*||\s*\(\$\.eventName\s*=\s*AttachPolicy\)\s*||\s*\(\$\.eventName\s*=\s*CreateAccount\)\s*||\s*\(\$\.eventName\s*=\s*CreateOrganizationalUnit\)\s*||\s*\(\$\.eventName\s*=\s*CreatePolicy\)\s*||\s*\(\$\.eventName\s*=\s*DeclineHandshake\)\s*||\s*\(\$\.eventName\s*=\s*DeleteOrganization\)\s*||\s*\(\$\.eventName\s*=\s*DeleteOrganizationalUnit\)\s*||\s*\(\$\.eventName\s*=\s*DeletePolicy\)\s*||\s*\(\$\.eventName\s*=\s*DetachPolicy\)\s*||\s*\(\$\.eventName\s*=\s*DisablePolicyType\)\s*||\s*\(\$\.eventName\s*=\s*EnablePolicyType\)\s*||\s*\(\$\.eventName\s*=\s*InviteAccountToOrganization\)\s*||\s*\(\$\.eventName\s*=\s*LeaveOrganization\)\s*||\s*\(\$\.eventName\s*=\s*MoveAccount\)\s*||\s*\(\$\.eventName\s*=\s*RemoveAccountFromOrganization\)\s*||\s*\(\$\.eventName\s*=\s*UpdatePolicy\)\s*||\s*\(\$\.eventName\s*=\s*UpdateOrganizationalUnit\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
+            <td class="code">AWS should have atleast one CloudTrails with [ LogGroup . MetricFilters with [ FilterPattern like "\{\s*\(\$\.eventSource\s*=\s*organizations\.amazonaws\.com\)\s*\&\&\s*\(\(\$\.eventName\s*=\s*AcceptHandshake\)\s*\|\|\s*\(\$\.eventName\s*=\s*AttachPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateAccount\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreateOrganizationalUnit\)\s*\|\|\s*\(\$\.eventName\s*=\s*CreatePolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeclineHandshake\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteOrganization\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeleteOrganizationalUnit\)\s*\|\|\s*\(\$\.eventName\s*=\s*DeletePolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DetachPolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*DisablePolicyType\)\s*\|\|\s*\(\$\.eventName\s*=\s*EnablePolicyType\)\s*\|\|\s*\(\$\.eventName\s*=\s*InviteAccountToOrganization\)\s*\|\|\s*\(\$\.eventName\s*=\s*LeaveOrganization\)\s*\|\|\s*\(\$\.eventName\s*=\s*MoveAccount\)\s*\|\|\s*\(\$\.eventName\s*=\s*RemoveAccountFromOrganization\)\s*\|\|\s*\(\$\.eventName\s*=\s*UpdatePolicy\)\s*\|\|\s*\(\$\.eventName\s*=\s*UpdateOrganizationalUnit\)\)\s*\}" and Transformations with [ MetricAlarms with [ AlarmActions with [ SNSTopic . Subscriptions len () > 0 ] ] ] ] ] </td>
           </tr>
           
           <tr num="310">
@@ -4069,7 +4069,7 @@ h1 {position: fixed; top: 75}
               IAM<br>
             
             </td>
-            <td class="code">IAMUser where RootUser eq False should not have ( ( AccessKey with [ Active and LastUsedTime isEarlierThan ( -45, "days" ) ] ) or ( Password . Enabled and Password . LastUsedTime isEarlierThan ( -45, "days" ) ) ) </td>
+            <td class="code">IAMUser should not have ( RootUser eq False and ( ( AccessKey with [ Active and LastUsedTime isEarlierThan ( -45, "days" ) ] ) or ( Password . Enabled and Password . LastUsedTime isEarlierThan ( -45, "days" ) ) ) ) or ( RootUser eq False and ( ( AccessKey with [ Active and LastUsedTime eq 0 ] ) or ( Password . Enabled and Password . LastUsedTime eq 0 ) ) and CreationDate isEarlierThan ( -45, "days" ) ) </td>
           </tr>
           
           <tr num="313">
@@ -4406,7 +4406,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="340">
@@ -4783,7 +4783,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="370">
@@ -5136,7 +5136,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="398">
@@ -6624,7 +6624,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="515">
@@ -7521,7 +7521,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="586">
@@ -8078,7 +8078,7 @@ h1 {position: fixed; top: 75}
               CloudTrail<br>
             
             </td>
-            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal has ( "*" ) and Conditions len ( ) eq 0 ] ] </td>
+            <td class="code">CloudTrail should not have S3Bucket . ACL with [ ( Permission eq "WRITE" or Permission eq "WRITE_ACP" or Permission eq "READ" or Permission eq "READ_ACP" or Permission eq "FULL_CONTROL" ) and Grantee. URI eq "http://acs.amazonaws.com/groups/global/AllUsers" ] or S3Bucket . BucketPolicy with [ Statement with [ Effect eq "Allow" and Principal with [ value eq "*" ] and Conditions len ( ) eq 0 ] ] </td>
           </tr>
           
           <tr num="629">
