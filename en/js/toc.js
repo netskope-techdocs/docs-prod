@@ -1986,6 +1986,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "private-access-best-practices.html",
+"text": "Private Access Best Practices",
+"class": "topic-link section"
+},
+{
 "url": "private-apps-configuration-methods.html",
 "text": "Private Apps Configuration Methods",
 "class": "topic-link section"
@@ -2008,6 +2013,12 @@ var toc = [{
 }]
 },
 {
+"url": "private-app-management.html",
+"text": "Private App Management",
+"class": "topic-link section"
+,
+"children": [
+{
 "url": "create-a-private-app.html",
 "text": "Create a Private App",
 "class": "topic-link section"
@@ -2021,11 +2032,7 @@ var toc = [{
 "url": "steer-traffic-for-private-apps.html",
 "text": "Steer Traffic for Private Apps",
 "class": "topic-link section"
-},
-{
-"url": "add-users.html",
-"text": "Add Users",
-"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-real-time-protection-policy-for-private-access.html",
@@ -2053,16 +2060,6 @@ var toc = [{
 "text": "Use Client Re-authentication",
 "class": "topic-link section"
 }]
-},
-{
-"url": "view-events-and-alerts-for-private-apps.html",
-"text": "View Events and Alerts for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "private-access-faqs.html",
-"text": "Private Access FAQs",
-"class": "topic-link section"
 },
 {
 "url": "private-access-troubleshooting.html",
@@ -2102,6 +2099,11 @@ var toc = [{
 }]
 },
 {
+"url": "view-events-and-alerts-for-private-apps.html",
+"text": "View Events and Alerts for Private Apps",
+"class": "topic-link section"
+},
+{
 "url": "netskope-private-access-for-microsoft-active-directory-domain-services.html",
 "text": "Netskope Private Access for Microsoft Active Directory Domain Services",
 "class": "topic-link section"
@@ -2124,6 +2126,11 @@ var toc = [{
 {
 "url": "private-access-rest-apis.html",
 "text": "Private Access REST APIs",
+"class": "topic-link section"
+},
+{
+"url": "private-access-faqs.html",
+"text": "Private Access FAQs",
 "class": "topic-link section"
 }]
 },
@@ -4646,7 +4653,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "add-users-304824.html",
+"url": "add-users.html",
 "text": "Add Users",
 "class": "topic-link section"
 }]

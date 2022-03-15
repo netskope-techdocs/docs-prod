@@ -1445,6 +1445,10 @@
     <lastmod>2022-02-02</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/private-access-best-practices.html</loc>
+    <lastmod>2022-03-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
     <lastmod>2021-12-22</lastmod>
   </url>
@@ -1461,6 +1465,10 @@
     <lastmod>2021-10-29</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/private-app-management.html</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/create-a-private-app.html</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
@@ -1470,10 +1478,6 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/steer-traffic-for-private-apps.html</loc>
-    <lastmod>2021-10-12</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/add-users.html</loc>
     <lastmod>2021-10-12</lastmod>
   </url>
   <url>
@@ -1495,14 +1499,6 @@
   <url>
     <loc>https://docs.netskope.com/en/use-client-re-authentication.html</loc>
     <lastmod>2021-10-22</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/view-events-and-alerts-for-private-apps.html</loc>
-    <lastmod>2022-01-04</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/private-access-faqs.html</loc>
-    <lastmod>2021-11-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-troubleshooting.html</loc>
@@ -1533,6 +1529,10 @@
     <lastmod>2022-03-10</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/view-events-and-alerts-for-private-apps.html</loc>
+    <lastmod>2022-01-04</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-for-microsoft-active-directory-domain-services.html</loc>
     <lastmod>2022-03-04</lastmod>
   </url>
@@ -1551,6 +1551,10 @@
   <url>
     <loc>https://docs.netskope.com/en/private-access-rest-apis.html</loc>
     <lastmod>2022-01-07</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/private-access-faqs.html</loc>
+    <lastmod>2021-11-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-secure-web-gateway.html</loc>
@@ -3409,7 +3413,7 @@
     <lastmod>2021-10-18</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/add-users-304824.html</loc>
+    <loc>https://docs.netskope.com/en/add-users.html</loc>
     <lastmod>2021-05-18</lastmod>
   </url>
   <url>
