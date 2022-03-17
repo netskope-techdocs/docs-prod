@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-93-0-0.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-93-0-0.html</loc>
@@ -994,7 +994,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies.html</loc>
-    <lastmod>2022-03-14</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection-for-public-cloud.html</loc>
@@ -1146,7 +1146,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/policy-notification-templates.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention.html</loc>
@@ -1474,7 +1474,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-browser-access-for-private-apps.html</loc>
-    <lastmod>2022-03-10</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/steer-traffic-for-private-apps.html</loc>
@@ -1534,7 +1534,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-for-microsoft-active-directory-domain-services.html</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-03-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-for-smb-and-dfs-services.html</loc>
@@ -1574,7 +1574,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -3426,7 +3426,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-firewall-network-events-and-alerts.html</loc>
-    <lastmod>2022-01-04</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-firewall-advanced-analytics-events.html</loc>
@@ -3506,7 +3506,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-interoperability.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/exception-configuration-for-vpn-applications.html</loc>
@@ -3534,11 +3534,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/symantec-endpoint-protection.html</loc>
-    <lastmod>2022-03-11</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/vmware-carbon-black.html</loc>
-    <lastmod>2022-03-11</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-command-reference.html</loc>
@@ -3570,11 +3570,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
@@ -5098,7 +5098,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compromised-credentials.html</loc>
-    <lastmod>2022-03-04</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics.html</loc>
