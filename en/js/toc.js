@@ -232,14 +232,14 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access--npa--release-notes.html",
-"text": "Netskope Private Access (NPA) Release Notes",
+"url": "netskope-private-access-publisher-release-notes.html",
+"text": "Netskope Private Access Publisher Release Notes",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "netskope-private-access-release-notes-version-1-4-6715.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6715",
+"url": "netskope-private-access-publisher-release-notes-version-1-4-6715.html",
+"text": "Netskope Private Access Publisher Release Notes Version 1.4.6715",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -250,8 +250,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access-release-notes-version-1-4-6620.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6620",
+"url": "netskope-private-access-publisher-release-notes-version-1-4-6620.html",
+"text": "Netskope Private Access Publisher Release Notes Version 1.4.6620",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -262,8 +262,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access-release-notes-version-1-4-6526.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6526",
+"url": "netskope-private-access-publisher-release-notes-version-1-4-6526.html",
+"text": "Netskope Private Access Publisher Release Notes Version 1.4.6526",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -279,8 +279,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access-release-notes-version-1-4-6431.html",
-"text": "Netskope Private Access Release Notes Version 1.4.6431",
+"url": "netskope-private-access-publisher-release-notes-version-1-4-6431.html",
+"text": "Netskope Private Access Publisher Release Notes Version 1.4.6431",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
