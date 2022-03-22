@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-03-11</lastmod>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -169,28 +169,28 @@
     <lastmod>2021-09-10</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-private-access--npa--release-notes.html</loc>
-    <lastmod>2022-03-07</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes.html</loc>
+    <lastmod>2022-03-22</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-private-access-release-notes-version-1-4-6715.html</loc>
-    <lastmod>2022-03-02</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-1-4-6715.html</loc>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-1-4-6715.html</loc>
     <lastmod>2022-03-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-private-access-release-notes-version-1-4-6620.html</loc>
-    <lastmod>2022-01-24</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-1-4-6620.html</loc>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-1-4-6620.html</loc>
     <lastmod>2022-03-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-private-access-release-notes-version-1-4-6526.html</loc>
-    <lastmod>2022-03-07</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-1-4-6526.html</loc>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-1-4-6526.html</loc>
@@ -201,8 +201,8 @@
     <lastmod>2022-03-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-private-access-release-notes-version-1-4-6431.html</loc>
-    <lastmod>2021-12-06</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-1-4-6431.html</loc>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-1-4-6431.html</loc>
@@ -1254,7 +1254,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
-    <lastmod>2022-01-24</lastmod>
+    <lastmod>2022-03-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-threat-protection-3rd-party-integrations.html</loc>
@@ -1442,7 +1442,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2022-02-02</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-best-practices.html</loc>
@@ -1470,7 +1470,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-private-app.html</loc>
-    <lastmod>2022-03-10</lastmod>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-browser-access-for-private-apps.html</loc>
@@ -1482,7 +1482,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-private-access.html</loc>
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2022-03-17</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-a-policy-user-notification.html</loc>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-the-netskope-client-for-netskope-private-access.html</loc>
@@ -1550,7 +1554,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-rest-apis.html</loc>
-    <lastmod>2022-01-07</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-faqs.html</loc>
@@ -3482,7 +3486,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-microsoft-endpoint-manager.html</loc>
-    <lastmod>2021-12-29</lastmod>
+    <lastmod>2022-03-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-netskope-client-with-kandji.html</loc>
@@ -3874,7 +3878,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-started-with-cloud-exchange.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-22</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-log-shipper.html</loc>
@@ -3966,7 +3970,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/log-shipper-module.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-22</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-3rd-party-log-shipper-plugins.html</loc>
@@ -4026,7 +4030,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ticket-orchestrator-module.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-03-22</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-3rd-party-ticket-orchestrator-plugins.html</loc>
@@ -4102,7 +4106,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proofpoint-plugin-for-threat-exchange.html</loc>
-    <lastmod>2021-12-23</lastmod>
+    <lastmod>2022-03-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-configured-threat-exchange-plugins.html</loc>
@@ -4114,15 +4118,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-threat-exchange-business-rules-and-ioc-sharing.html</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-threat-exchange-business-rules.html</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-threat-exchange-ioc-sharing.html</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-03-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ioc-sharing-best-practices.html</loc>
@@ -5098,7 +5102,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/compromised-credentials.html</loc>
-    <lastmod>2022-03-17</lastmod>
+    <lastmod>2022-03-18</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/behavior-analytics.html</loc>

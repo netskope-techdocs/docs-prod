@@ -2038,6 +2038,13 @@ var toc = [{
 "url": "create-a-real-time-protection-policy-for-private-access.html",
 "text": "Create a Real-time Protection Policy for Private Access",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-policy-user-notification.html",
+"text": "Create a Policy User Notification",
+"class": "topic-link section"
+}]
 },
 {
 "url": "deploy-the-netskope-client-for-netskope-private-access.html",
