@@ -16,6 +16,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-93-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 93.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-93-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 93.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-93-1-0.html",
+"text": "Fixed Issues In Hotfix Release 93.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-93-0-0.html",
 "text": "Netskope Release Notes Version 93.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -1366,6 +1383,18 @@ var toc = [{
 "url": "inline-policies.html",
 "text": "Real-time Protection Policies",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "cookie-surrogate.html",
+"text": "Cookie Surrogate",
+"class": "topic-link section"
+},
+{
+"url": "file-type-detection.html",
+"text": "File Type Detection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "real-time-protection-for-public-cloud.html",
@@ -2016,23 +2045,6 @@ var toc = [{
 "url": "private-app-management.html",
 "text": "Private App Management",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-private-app.html",
-"text": "Create a Private App",
-"class": "topic-link section"
-},
-{
-"url": "configure-browser-access-for-private-apps.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-},
-{
-"url": "steer-traffic-for-private-apps.html",
-"text": "Steer Traffic for Private Apps",
-"class": "topic-link section"
-}]
 },
 {
 "url": "create-a-real-time-protection-policy-for-private-access.html",
@@ -2579,6 +2591,47 @@ var toc = [{
 {
 "url": "configure-google-cloud-storage-as-a-forensic-destination.html",
 "text": "Configure Google Cloud Storage as a Forensic Destination",
+"class": "topic-link section"
+}]
+},
+{
+"url": "user-and-entity-behavior-analytics-leveraging-public-cloud-audit-log.html",
+"text": "User and Entity Behavior Analytics leveraging Public Cloud Audit Log",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "getting-started-with-ueba-for-public-cloud.html",
+"text": "Getting Started with UEBA for Public Cloud",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "ueba-for-aws.html",
+"text": "UEBA for AWS",
+"class": "topic-link section"
+}]
+},
+{
+"url": "enabling-ueba-for-aws-cloudtrail.html",
+"text": "Enabling UEBA for AWS CloudTrail",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "step-1-2--configure-aws-accounts---services-for-ueba.html",
+"text": "Step 1\/2: Configure AWS Accounts &amp; Services for UEBA",
+"class": "topic-link section"
+},
+{
+"url": "step-2-2--configure-aws-permissions-for-ueba.html",
+"text": "Step 2\/2: Configure AWS Permissions for UEBA",
+"class": "topic-link section"
+}]
+},
+{
+"url": "troubleshooting-ueba-for-public-cloud.html",
+"text": "Troubleshooting UEBA for Public Cloud",
 "class": "topic-link section"
 }]
 },
@@ -5215,9 +5268,105 @@ var toc = [{
 ,
 "children": [
 {
-"url": "cloud-exchange-release-notes.html",
-"text": "Cloud Exchange Release Notes",
+"url": "netskope-cloud-exchange-release-notes-346104.html",
+"text": "Netskope Cloud Exchange Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-2-0-347987.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-2-0-347995.html",
+"text": "New Features And Enhancements In Version 3.2.0",
 "class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-2-0-347996.html",
+"text": "Fixed Issues In Version 3.2.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-5-347969.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.5",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-5-348475.html",
+"text": "New Features And Enhancements In Version 3.1.5",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-1-5-348476.html",
+"text": "Fixed Issues In Version 3.1.5",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-3-347946.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.3",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-3-347948.html",
+"text": "New Features And Enhancements In Version 3.1.3",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-2-347935.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.2",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-2-347937.html",
+"text": "New Features And Enhancements In Version 3.1.2",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-1-0-347919.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-1-0-347930.html",
+"text": "New Features And Enhancements In Version 3.1.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-0-0-347914.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-0-0-347917.html",
+"text": "New Features And Enhancements In Version 3.0.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-cloud-exchange-release-notes-version-2-0-0-347902.html",
+"text": "Netskope Cloud Exchange Release Notes Version 2.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-2-0-0-348062.html",
+"text": "New Features And Enhancements In Version 2.0.0",
+"class": "topic-link section"
+}]
+}]
 },
 {
 "url": "about-cloud-exchange.html",
@@ -7094,8 +7243,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "create-a-watchlist.html",
-"text": "Create a Watchlist",
+"url": "about-watchlists.html",
+"text": "About Watchlists",
 "class": "topic-link section"
 }]
 },
@@ -7176,6 +7325,16 @@ var toc = [{
 "url": "adding-custom-fields.html",
 "text": "Adding Custom Fields",
 "class": "topic-link section"
+},
+{
+"url": "bin-custom-dimension.html",
+"text": "Bin Custom Dimension",
+"class": "topic-link section"
+},
+{
+"url": "group-custom-dimension.html",
+"text": "Group Custom Dimension",
+"class": "topic-link section"
 }]
 },
 {
@@ -7192,6 +7351,36 @@ var toc = [{
 {
 "url": "visualization-types.html",
 "text": "Visualization Types",
+"class": "topic-link section"
+},
+{
+"url": "adding-dashboard-filters.html",
+"text": "Adding Dashboard Filters",
+"class": "topic-link section"
+},
+{
+"url": "default-filters-view.html",
+"text": "Default Filters View",
+"class": "topic-link section"
+},
+{
+"url": "cross-filtering-dashboards.html",
+"text": "Cross-filtering Dashboards",
+"class": "topic-link section"
+},
+{
+"url": "supported-and-unsupported-visualization-types.html",
+"text": "Supported and Unsupported Visualization Types",
+"class": "topic-link section"
+},
+{
+"url": "using-range-selection.html",
+"text": "Using Range Selection",
+"class": "topic-link section"
+},
+{
+"url": "using-cross-filters-with-standard-dashboard-filters.html",
+"text": "Using Cross-filters with Standard Dashboard Filters",
 "class": "topic-link section"
 }]
 }]

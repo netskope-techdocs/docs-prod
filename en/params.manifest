@@ -12,7 +12,7 @@
   <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62282ca49bd49.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c344991193.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c5ada456dc.png"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-62395a6b892505.41402059/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-6245e0f9b46ac3.38920914/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2022 Netskope </param>
@@ -21,8 +21,8 @@
   <param name="cookie.consent" select="0"/>
   <param name="privacypolicy" select="/privacy"/>
   <param name="privacypolicy" select="/privacy"/>
-  <param name="google.analytics" select="GTM-W56WJ8S"/>
-  <param name="google.analytics.type" select="tagmanager"/>
+  <param name="google.analytics" select=""/>
+  <param name="google.analytics.type" select="gtag"/>
   <param name="user.custom.script" select="0"/>
   <param name="layout.custom.script" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62282d4821a7e.js"/>
   <param name="create.sitemap" select="1"/>
@@ -93,10 +93,10 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-62395a6b892505.41402059/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-6245e0f9b46ac3.38920914/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-62395a6b892505.41402059/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-6245e0f9b46ac3.38920914/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-62395a6b892505.41402059/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-6245e0f9b46ac3.38920914/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
 </params>
