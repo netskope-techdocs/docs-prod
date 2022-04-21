@@ -386,6 +386,23 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+  {
+  "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
+  "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
+  "class": "topic-link section reused-publication reused-publication"
+  ,
+  "children": [
+  {
+  "url": "new-features-and-enhancements-in-version-3-3-0.html",
+  "text": "New Features And Enhancements In Version 3.3.0",
+  "class": "topic-link section"
+  },
+  {
+  "url": "fixed-issues-in-version-3-3-0.html",
+  "text": "Fixed Issues In Version 3.3.0",
+  "class": "topic-link section"
+  }]
+  },
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-2-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
@@ -5273,6 +5290,23 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+  {
+  "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
+  "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
+  "class": "topic-link section reused-publication reused-publication"
+  ,
+  "children": [
+  {
+  "url": "new-features-and-enhancements-in-version-3-3-0.html",
+  "text": "New Features And Enhancements In Version 3.3.0",
+  "class": "topic-link section"
+  },
+  {
+  "url": "fixed-issues-in-version-3-3-0.html",
+  "text": "Fixed Issues In Version 3.3.0",
+  "class": "topic-link section"
+  }]
+  },
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-2-0-347987.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
