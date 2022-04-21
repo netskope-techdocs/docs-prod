@@ -387,6 +387,12 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
 "url": "netskope-cloud-exchange-release-notes-version-3-2-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -5270,6 +5276,12 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-346104.html",
 "text": "Netskope Cloud Exchange Release Notes",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
