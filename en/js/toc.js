@@ -324,6 +324,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+  {
+  "url": "ctep-ips-threat-content-update-release-notes-93-1-1-180.html",
+  "text": "CTEP\/IPS Threat Content Update Release Notes 93.1.1.180",
+  "class": "topic-link section"
+  },
 {
 "url": "ctep-ips-threat-content-update-release-notes-93-0-1-165.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 93.0.1.165",
