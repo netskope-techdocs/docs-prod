@@ -16,6 +16,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-94-0-0.html",
+"text": "Netskope Release Notes Version 94.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-94-0-0.html",
+"text": "New Features and Enhancements In Release 94.0.0",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection---new-apps-support.html",
+"text": "Next Generation API Data Protection – New Apps Support",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-94-0-0.html",
+"text": "Fixed Issues In Release 94.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-94-0-0.html",
+"text": "Known Issues In Release 94.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-93-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 93.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -324,11 +351,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-  {
-  "url": "ctep-ips-threat-content-update-release-notes-93-1-1-180.html",
-  "text": "CTEP\/IPS Threat Content Update Release Notes 93.1.1.180",
-  "class": "topic-link section"
-  },
+{
+"url": "ctep-ips-threat-content-update-release-notes-93-1-1-180.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 93.1.1.180",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-93-0-1-165.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 93.0.1.165",
@@ -391,23 +418,23 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-  {
-  "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
-  "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
-  "class": "topic-link section reused-publication reused-publication"
-  ,
-  "children": [
-  {
-  "url": "new-features-and-enhancements-in-version-3-3-0.html",
-  "text": "New Features And Enhancements In Version 3.3.0",
-  "class": "topic-link section"
-  },
-  {
-  "url": "fixed-issues-in-version-3-3-0.html",
-  "text": "Fixed Issues In Version 3.3.0",
-  "class": "topic-link section"
-  }]
-  },
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-3-0.html",
+"text": "New Features And Enhancements In Version 3.3.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-3-0.html",
+"text": "Fixed Issues In Version 3.3.0",
+"class": "topic-link section"
+}]
+},
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-2-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
@@ -522,28 +549,28 @@ var toc = [{
 ,
 "children": [
 {
-"url": "overview.html",
-"text": "Overview",
+"url": "overview-for-on-premises-appliance-version-77-6-0.html",
+"text": "Overview for On-Premises Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-77-6-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "other-changes.html",
-"text": "Other changes",
+"url": "other-changes-for-on-premises-appliance-version-77-6-0.html",
+"text": "Other changes for On-Premises Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "known-issues.html",
-"text": "Known Issues",
+"url": "known-issues-for-on-premises-appliance-version-77-6-0.html",
+"text": "Known Issues for On-Premises Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-for-on-premises-appliance-version-77-6-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 77.6.0",
 "class": "topic-link section"
 }]
 },
@@ -593,33 +620,33 @@ var toc = [{
 ,
 "children": [
 {
-"url": "overview-85641.html",
-"text": "Overview",
+"url": "overview-for-virtual-appliance-version-77-6-0.html",
+"text": "Overview for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "requirements.html",
-"text": "Requirements",
+"url": "requirements-for-virtual-appliance-version-77-6-0.html",
+"text": "Requirements for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-85643.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-for-virtual-appliance-version-77-6-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "other-changes-213637.html",
-"text": "Other changes",
+"url": "other-changes-for-virtual-appliance-version-77-6-0.html",
+"text": "Other changes for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "known-issues-85645.html",
-"text": "Known Issues",
+"url": "known-issues-for-virtual-appliance-version-77-6-0.html",
+"text": "Known Issues for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-85646.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-for-virtual-appliance-version-77-6-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 77.6.0",
 "class": "topic-link section"
 }]
 },
@@ -668,29 +695,29 @@ var toc = [{
 ,
 "children": [
 {
-"url": "management-plane-appliance-release-notes-148569.html",
-"text": "Management Plane Appliance Release Notes",
+"url": "management-plane-appliance-release-notes-version-53-8-0.html",
+"text": "Management Plane Appliance Release Notes Version 53.8.0",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "overview-148593.html",
-"text": "Overview",
+"url": "overview-for-management-plane-appliance-version-53-8-0.html",
+"text": "Overview for Management Plane Appliance Version 53.8.0",
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-149241.html",
-"text": "New Features and Enhancements",
+"url": "new-features-and-enhancements-for-management-plane-appliance-version-53-8-0.html",
+"text": "New Features and Enhancements for Management Plane Appliance Version 53.8.0",
 "class": "topic-link section"
 },
 {
-"url": "known-issues-148594.html",
-"text": "Known Issues",
+"url": "known-issues-for-management-plane-appliance-version-53-8-0.html",
+"text": "Known Issues for Management Plane Appliance Version 53.8.0",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-148595.html",
-"text": "Fixed Issues",
+"url": "fixed-issues-for-management-plane-appliance-version-53-8-0.html",
+"text": "Fixed Issues for Management Plane Appliance Version 53.8.0",
 "class": "topic-link section"
 }]
 }]
@@ -722,6 +749,18 @@ var toc = [{
 {
 "url": "product-deployments.html",
 "text": "Product Deployments",
+"class": "topic-link section"
+}]
+},
+{
+"url": "secure-tenant-configuration-and-hardening.html",
+"text": "Secure Tenant Configuration and Hardening",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "platform-security.html",
+"text": "Platform Security",
 "class": "topic-link section"
 }]
 },
@@ -1254,7 +1293,7 @@ var toc = [{
 },
 {
 "url": "threat-scan-on-iaas-storage.html",
-"text": "Threat scan on IaaS storage",
+"text": "Threat scan on IaaS Storage",
 "class": "topic-link section"
 }]
 },
@@ -1424,6 +1463,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "real-time-protection-for-aws.html",
+"text": "Real-time Protection for AWS",
+"class": "topic-link section"
+},
 {
 "url": "supported-aws-entities-for-real-time-protection.html",
 "text": "Supported AWS Entities for Real-time Protection",
@@ -2472,6 +2516,11 @@ var toc = [{
 {
 "url": "setting-up-policies-to-scan-s3-buckets.html",
 "text": "Setting up Policies to scan S3 Buckets",
+"class": "topic-link section"
+},
+{
+"url": "what-triggers-a-scan-and-billing-of-aws-s3-.html",
+"text": "What Triggers a Scan and Billing of AWS S3?",
 "class": "topic-link section"
 }]
 },
@@ -4474,9 +4523,28 @@ var toc = [{
 ,
 "children": [
 {
-"url": "next-generation-api-data-protection-platform-faq.html",
-"text": "Next Generation API Data Protection Platform FAQ",
+"url": "next-generation-api-data-protection-for-citrix-sharefile.html",
+"text": "Next Generation API Data Protection for Citrix ShareFile",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-citrix-sharefile-for-the-next-generation-api-data-protection.html",
+"text": "Configure Citrix ShareFile for the Next Generation API Data Protection",
 "class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-github.html",
+"text": "Next Generation API Data Protection for GitHub",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-github-for-the-next-generation-api-data-protection.html",
+"text": "Configure GitHub for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
 },
 {
 "url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
@@ -4543,6 +4611,47 @@ var toc = [{
 "text": "Microsoft Office 365 OneDrive for Business Audit Events",
 "class": "topic-link section"
 }]
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-365-yammer.html",
+"text": "Next Generation API Data Protection for Microsoft 365 Yammer",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-365-yammer-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 Yammer for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-okta.html",
+"text": "Next Generation API Data Protection for Okta",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-okta-for-the-next-generation-api-data-protection.html",
+"text": "Configure Okta for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-workday.html",
+"text": "Next Generation API Data Protection for Workday",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-workday-for-the-next-generation-api-data-protection.html",
+"text": "Configure Workday for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-skope-it-events.html",
+"text": "Next Generation API Data Protection Skope IT Events",
+"class": "topic-link section"
 }]
 },
 {
@@ -4778,6 +4887,13 @@ var toc = [{
 "url": "netskope-client-overview-178472.html",
 "text": "Netskope Client Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "netskope-client-supported-os-and-platform.html",
+"text": "Netskope Client Supported OS and Platform",
+"class": "topic-link section"
+}]
 },
 {
 "url": "provisioning-users-for-netskope-client.html",
@@ -4798,46 +4914,48 @@ var toc = [{
 "url": "netskope-client-deployment-options.html",
 "text": "Netskope Client Deployment Options",
 "class": "topic-link section"
-},
+,
+"children": [
 {
-"url": "deploy-netskope-client-via-email-invite.html",
-"text": "Deploy Netskope Client via Email Invite",
+"url": "email-invite.html",
+"text": "Email Invite",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-jamf.html",
-"text": "Deploy Netskope Client with JAMF",
+"url": "jamf.html",
+"text": "JAMF",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-sccm.html",
-"text": "Deploy Netskope Client with SCCM",
+"url": "microsoft-endpoint-configuration-manager.html",
+"text": "Microsoft Endpoint Configuration Manager",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-workspace-one.html",
-"text": "Deploy Netskope Client with Workspace One",
+"url": "vmware-workspace-one.html",
+"text": "VMWare Workspace One",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-microsoft-group-policy-object--gpo-.html",
-"text": "Deploy Netskope Client with Microsoft Group Policy Object (GPO)",
+"url": "microsoft-group-policy-object--gpo-.html",
+"text": "Microsoft Group Policy Object (GPO)",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-microsoft-endpoint-manager.html",
-"text": "Deploy Netskope Client with Microsoft Endpoint Manager",
+"url": "microsoft-intune.html",
+"text": "Microsoft Intune",
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-with-kandji.html",
-"text": "Deploy Netskope Client with Kandji",
+"url": "kandji.html",
+"text": "Kandji",
 "class": "topic-link section"
 },
 {
 "url": "deploy-netskope-client-via-idp.html",
 "text": "Deploy Netskope Client via IdP",
 "class": "topic-link section"
+}]
 },
 {
 "url": "netskope-client-hardening.html",
@@ -4871,11 +4989,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "palo-alto-globalprotect.html",
-"text": "Palo Alto GlobalProtect",
-"class": "topic-link section"
-},
-{
 "url": "interop-with-cisco-anyconnect.html",
 "text": "Interop with Cisco AnyConnect",
 "class": "topic-link section"
@@ -4886,8 +4999,33 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "vmware-carbon-black.html",
+"text": "VMware Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "crowdstrike.html",
+"text": "CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "kaspersky-security-cloud.html",
+"text": "Kaspersky Security Cloud",
+"class": "topic-link section"
+},
+{
 "url": "mcafee-endpoint-security.html",
 "text": "McAfee Endpoint Security",
+"class": "topic-link section"
+},
+{
+"url": "openvpn-cloud.html",
+"text": "OpenVPN Cloud",
+"class": "topic-link section"
+},
+{
+"url": "palo-alto-globalprotect.html",
+"text": "Palo Alto GlobalProtect",
 "class": "topic-link section"
 },
 {
@@ -4896,8 +5034,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "vmware-carbon-black.html",
-"text": "VMware Carbon Black",
+"url": "trend-micro-maximum-security.html",
+"text": "Trend Micro Maximum Security",
 "class": "topic-link section"
 }]
 },
@@ -4919,7 +5057,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "exceptions-221607.html",
+"url": "exceptions-352649.html",
 "text": "Exceptions",
 "class": "topic-link section"
 },
@@ -5048,38 +5186,6 @@ var toc = [{
 "url": "adfs-auth-proxy.html",
 "text": "ADFS Auth Proxy",
 "class": "topic-link section"
-},
-{
-"url": "reverse-proxy-as-a-service-with-azure-ad.html",
-"text": "Reverse Proxy as a Service with Azure AD",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "reverse-proxy-as-a-service-overview.html",
-"text": "Reverse Proxy as a Service Overview",
-"class": "topic-link section"
-},
-{
-"url": "create-the-raas-app.html",
-"text": "Create the RaaS App",
-"class": "topic-link section"
-},
-{
-"url": "test-the-raas-app.html",
-"text": "Test the RaaS App",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-conditional-access.html",
-"text": "Configure the Conditional Access",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-conditional-access-policy.html",
-"text": "Validate the Conditional Access Policy",
-"class": "topic-link section"
-}]
 },
 {
 "url": "reverse-proxy-as-a-service-with-google-workspaces.html",
@@ -5290,124 +5396,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-cloud-exchange-release-notes-346104.html",
-"text": "Netskope Cloud Exchange Release Notes",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-  {
-  "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
-  "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
-  "class": "topic-link section reused-publication reused-publication"
-  ,
-  "children": [
-  {
-  "url": "new-features-and-enhancements-in-version-3-3-0.html",
-  "text": "New Features And Enhancements In Version 3.3.0",
-  "class": "topic-link section"
-  },
-  {
-  "url": "fixed-issues-in-version-3-3-0.html",
-  "text": "Fixed Issues In Version 3.3.0",
-  "class": "topic-link section"
-  }]
-  },
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-2-0-347987.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-2-0-347995.html",
-"text": "New Features And Enhancements In Version 3.2.0",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-in-version-3-2-0-347996.html",
-"text": "Fixed Issues In Version 3.2.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-1-5-347969.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.1.5",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-1-5-348475.html",
-"text": "New Features And Enhancements In Version 3.1.5",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-in-version-3-1-5-348476.html",
-"text": "Fixed Issues In Version 3.1.5",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-1-3-347946.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.1.3",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-1-3-347948.html",
-"text": "New Features And Enhancements In Version 3.1.3",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-1-2-347935.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.1.2",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-1-2-347937.html",
-"text": "New Features And Enhancements In Version 3.1.2",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-1-0-347919.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.1.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-1-0-347930.html",
-"text": "New Features And Enhancements In Version 3.1.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-3-0-0-347914.html",
-"text": "Netskope Cloud Exchange Release Notes Version 3.0.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-3-0-0-347917.html",
-"text": "New Features And Enhancements In Version 3.0.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-cloud-exchange-release-notes-version-2-0-0-347902.html",
-"text": "Netskope Cloud Exchange Release Notes Version 2.0.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-version-2-0-0-348062.html",
-"text": "New Features And Enhancements In Version 2.0.0",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "about-cloud-exchange.html",
 "text": "About Cloud Exchange",
 "class": "topic-link section"
@@ -5456,9 +5444,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-linux-host.html",
-"text": "Install Netskope Cloud Exchange on a Red Hat Enterprise Linux Host",
+"url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-8-x-linux-host.html",
+"text": "Install Netskope Cloud Exchange on a Red Hat Enterprise 8.x Linux Host",
 "class": "topic-link section"
+},
+{
+"url": "cloud-exchange-sso-with-azure-ad.html",
+"text": "Cloud Exchange SSO with Azure AD",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "cloud-exchange-sso-with-okta.html",
+"text": "Cloud Exchange SSO with Okta",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -6153,11 +6151,6 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-ipsec-with-cisco-meraki.html",
-"text": "Netskope IPSec with Cisco Meraki",
-"class": "topic-link section reused-publication reused-publication"
-},
-{
 "url": "netskope-ipsec-with-cisco-firepower.html",
 "text": "Netskope IPSec with Cisco Firepower",
 "class": "topic-link section reused-publication reused-publication"
@@ -6355,38 +6348,6 @@ var toc = [{
 {
 "url": "configure-workday.html",
 "text": "Configure Workday",
-"class": "topic-link section"
-}]
-},
-{
-"url": "reverse-proxy-as-a-service-with-azure-ad-120040.html",
-"text": "Reverse Proxy as a Service with Azure AD",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "reverse-proxy-as-a-service-overview-120096.html",
-"text": "Reverse Proxy as a Service Overview",
-"class": "topic-link section"
-},
-{
-"url": "create-the-raas-app-120081.html",
-"text": "Create the RaaS App",
-"class": "topic-link section"
-},
-{
-"url": "test-the-raas-app-120082.html",
-"text": "Test the RaaS App",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-conditional-access-120083.html",
-"text": "Configure the Conditional Access",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-conditional-access-policy-120084.html",
-"text": "Validate the Conditional Access Policy",
 "class": "topic-link section"
 }]
 },
@@ -6601,6 +6562,11 @@ var toc = [{
 "text": "Install and Test the Client",
 "class": "topic-link section"
 }]
+},
+{
+"url": "netskope-sso-with-okta.html",
+"text": "Netskope SSO with Okta",
+"class": "topic-link section"
 },
 {
 "url": "netskope-sso-with-azure-ad.html",
@@ -7374,6 +7340,11 @@ var toc = [{
 "url": "group-custom-dimension.html",
 "text": "Group Custom Dimension",
 "class": "topic-link section"
+},
+{
+"url": "advanced-analytics-data-retention.html",
+"text": "Advanced Analytics Data Retention",
+"class": "topic-link section"
 }]
 },
 {
@@ -7729,6 +7700,33 @@ var toc = [{
 "url": "acknowledge-compromised-credentials.html",
 "text": "Acknowledge Compromised Credentials",
 "class": "topic-link section"
+},
+{
+"url": "manage-app-instances-for-inline-enforcement.html",
+"text": "Manage App Instances for Inline Enforcement",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-an-app-instance.html",
+"text": "Add an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-an-app-instance.html",
+"text": "Update an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "list-app-instances.html",
+"text": "List App Instances",
+"class": "topic-link section"
+},
+{
+"url": "delete-an-app-instance.html",
+"text": "Delete an App Instance",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -7878,6 +7876,33 @@ var toc = [{
 {
 "url": "delete-retro-scan-jobs.html",
 "text": "Delete Retro Scan Jobs",
+"class": "topic-link section"
+}]
+},
+{
+"url": "manage-app-instances-for-inline-enforcement-354236.html",
+"text": "Manage App Instances for Inline Enforcement",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-an-app-instance-354237.html",
+"text": "Add an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-an-app-instance-354238.html",
+"text": "Update an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "list-app-instances-354239.html",
+"text": "List App Instances",
+"class": "topic-link section"
+},
+{
+"url": "delete-an-app-instance-354240.html",
+"text": "Delete an App Instance",
 "class": "topic-link section"
 }]
 },
@@ -8352,39 +8377,19 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-log-parser.html",
-"text": "Configure the Log Parser",
+"url": "configure-log-uploads-355003.html",
+"text": "Configure Log Uploads",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "upload-logs-using-sftp-144860.html",
-"text": "Upload Logs using SFTP",
-"class": "topic-link section"
-},
-{
-"url": "upload-logs-using-scp-158320.html",
-"text": "Upload Logs using SCP",
-"class": "topic-link section"
-},
-{
-"url": "upload-logs-using-ftps-158321.html",
-"text": "Upload Logs using FTPS",
+"url": "configure-syslog-on-the-oplp.html",
+"text": "Configure Syslog on the OPLP",
 "class": "topic-link section"
 },
 {
 "url": "upload-logs-to-the-netskope-tenant-using-https-144861.html",
 "text": "Upload Logs to the Netskope Tenant using HTTPS ",
-"class": "topic-link section"
-},
-{
-"url": "upload-logs-from-an-amazon-s3-bucket.html",
-"text": "Upload logs from an Amazon S3 bucket",
-"class": "topic-link section"
-},
-{
-"url": "configure-syslog-on-the-oplp.html",
-"text": "Configure Syslog on the OPLP",
 "class": "topic-link section"
 },
 {
@@ -8395,6 +8400,28 @@ var toc = [{
 {
 "url": "verify-the-log-parser-connection.html",
 "text": "Verify the Log Parser Connection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "upload-logs-using-sftp-144860.html",
+"text": "Upload Logs using SFTP",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "upload-logs-using-ftps-158321.html",
+"text": "Upload Logs using FTPS",
+"class": "topic-link section"
+},
+{
+"url": "upload-logs-using-scp-158320.html",
+"text": "Upload Logs using SCP",
+"class": "topic-link section"
+},
+{
+"url": "upload-logs-from-an-amazon-s3-bucket.html",
+"text": "Upload logs from an Amazon S3 bucket",
 "class": "topic-link section"
 },
 {
