@@ -5836,6 +5836,14 @@ var toc = [{
 "text": "Configure 3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
 },
+,
+"children": [
+{
+"url": "okta-plugin-for-risk-exchange.html",
+"text": "Okta Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
+}]
+},
 {
 "url": "plugin-activity.html",
 "text": "Plugin Activity",
