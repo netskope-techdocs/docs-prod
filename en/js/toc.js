@@ -756,13 +756,6 @@ var toc = [{
 "url": "secure-tenant-configuration-and-hardening.html",
 "text": "Secure Tenant Configuration and Hardening",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "platform-security.html",
-"text": "Platform Security",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-security-cloud-features.html",
@@ -5835,6 +5828,13 @@ var toc = [{
 "url": "configure-3rd-party-risk-exchange-plugins.html",
 "text": "Configure 3rd-party Risk Exchange Plugins",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "okta-plugin-for-risk-exchange.html",
+"text": "Okta Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
+}]
 },
 {
 "url": "plugin-activity.html",
