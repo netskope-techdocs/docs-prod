@@ -5834,6 +5834,11 @@ var toc = [{
 "url": "okta-plugin-for-risk-exchange.html",
 "text": "Okta Plugin for Risk Exchange",
 "class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "mimecast-plugin-for-risk-exchange.html",
+"text": "Mimecast Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -8607,23 +8612,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-48-x-to-later-versions.html",
-"text": "Upgrading VA 48.x to later versions",
+"url": "upgrading-va-to-93-0.html",
+"text": "Upgrading VA to 93.0",
 "class": "topic-link section"
 },
 {
-"url": "upgrading-va-42-14-0-to-46-x-and-later-is-not-supported.html",
-"text": "Upgrading VA 42.14.0 to 46.x and later is not supported",
-"class": "topic-link section"
-},
-{
-"url": "upgrading-va-42-14-0-to-44-x.html",
-"text": "Upgrading VA 42.14.0 to 44.x",
-"class": "topic-link section"
-},
-{
-"url": "upgrading-va-from-versions-older-than-42-14-0.html",
-"text": " Upgrading VA from versions older than 42.14.0",
+"url": "upgrading-va-from-versions-older-than-71-6.html",
+"text": " Upgrading VA from versions older than 71.6",
 "class": "topic-link section"
 },
 {
@@ -8636,6 +8631,11 @@ var toc = [{
 "text": "Schedule Auto-Upgrade for the Content and Threat Feed Packages",
 "class": "topic-link section"
 }]
+},
+{
+"url": "migrate-the-virtual-appliance-to-93-0.html",
+"text": "Migrate the Virtual Appliance to 93.0",
+"class": "topic-link section"
 },
 {
 "url": "restore-a-virtual-appliance-from-vmware-snapshot.html",
