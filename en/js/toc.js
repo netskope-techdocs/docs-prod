@@ -8612,13 +8612,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-to-93-0.html",
-"text": "Upgrading VA to 93.0",
+"url": "upgrading-va-to-77-x.html",
+"text": "Upgrading VA to 77.x",
 "class": "topic-link section"
 },
 {
-"url": "upgrading-va-from-versions-older-than-71-6.html",
-"text": " Upgrading VA from versions older than 71.6",
+"url": "upgrading-va-from-versions-older-than-66-x.html",
+"text": " Upgrading VA from versions older than 66.x",
 "class": "topic-link section"
 },
 {
@@ -8633,8 +8633,8 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-93-0.html",
-"text": "Migrate the Virtual Appliance to 93.0",
+"url": "migrate-the-virtual-appliance-to-77-6-0.html",
+"text": "Migrate the Virtual Appliance to 77.6.0",
 "class": "topic-link section"
 },
 {
