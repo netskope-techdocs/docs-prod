@@ -16,6 +16,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-94-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 94.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-94-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 94.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-94-1-0.html",
+"text": "Fixed Issues In Hotfix Release 94.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-94-0-0.html",
 "text": "Netskope Release Notes Version 94.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -4739,6 +4756,18 @@ var toc = [{
 }]
 },
 {
+"url": "security-posture-for-workday.html",
+"text": "Security Posture for Workday",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-workday-instance-for-security-posture.html",
+"text": "Configure Workday Instance for Security Posture",
+"class": "topic-link section"
+}]
+},
+{
 "url": "security-posture-policy-wizard.html",
 "text": "Security Posture Policy Wizard",
 "class": "topic-link section"
@@ -4767,6 +4796,16 @@ var toc = [{
 "text": "Create a Security Posture Profile",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configure-workday-instance-for-security-posture-357703.html",
+"text": "Configure Workday Instance for Security Posture",
+"class": "topic-link section"
+},
+{
+"url": "configure-workday-instance-for-security-posture-357704.html",
+"text": "Configure Workday Instance for Security Posture",
+"class": "topic-link section"
 },
 {
 "url": "security-posture-rule.html",
@@ -5247,6 +5286,11 @@ var toc = [{
 }]
 },
 {
+"url": "saml-reverse-proxy-global-settings.html",
+"text": "SAML Reverse Proxy Global Settings",
+"class": "topic-link section"
+},
+{
 "url": "saml-forward-proxy.html",
 "text": "SAML Forward Proxy",
 "class": "topic-link section"
@@ -5362,6 +5406,11 @@ var toc = [{
 {
 "url": "service-monitoring.html",
 "text": "Service Monitoring",
+"class": "topic-link section"
+},
+{
+"url": "addressing-ssl-error-while-accessing-aws-services-via-the-aws-cli-with-the-netskope-client-enabled.html",
+"text": "Addressing SSL Error while Accessing AWS Services via the AWS CLI with the Netskope Client Enabled",
 "class": "topic-link section"
 }]
 },
@@ -6690,11 +6739,6 @@ var toc = [{
 "url": "configure-the-netskope-plugin-with-sailpoint-identityiq.html",
 "text": "Configure the Netskope Plugin with SailPoint IdentityIQ",
 "class": "topic-link section"
-},
-{
-"url": "interoperability-with-cisco-umbrella.html",
-"text": "Interoperability with Cisco Umbrella",
-"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -8612,8 +8656,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-to-77-x.html",
-"text": "Upgrading VA to 77.x",
+"url": "upgrading-va-to-77-6-0.html",
+"text": "Upgrading VA to 77.6.0",
 "class": "topic-link section"
 },
 {
