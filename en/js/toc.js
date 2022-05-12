@@ -2121,6 +2121,13 @@ var toc = [{
 "url": "private-app-management.html",
 "text": "Private App Management",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-browser-access-for-private-apps.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+}]
 },
 {
 "url": "create-a-real-time-protection-policy-for-private-access.html",
