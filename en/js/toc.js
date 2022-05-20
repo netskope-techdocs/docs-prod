@@ -299,6 +299,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-94-0-0-6867.html",
+"text": "Netskope Private Access Publisher Release Notes Version 94.0.0.6867",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-publisher-release-94-0-0-6867.html",
+"text": "New Features And Enhancements In Publisher Release 94.0.0.6867",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-publisher-release-94-0-0-6867.html",
+"text": "Known Issues In Publisher Release 94.0.0.6867",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-1-4-6715.html",
 "text": "Netskope Private Access Publisher Release Notes Version 1.4.6715",
 "class": "topic-link section reused-publication reused-publication"
@@ -368,6 +385,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-94-1-1-190.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 94.1.1.190",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-93-1-1-180.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 93.1.1.180",
@@ -560,6 +582,38 @@ var toc = [{
 ,
 "children": [
 {
+"url": "on-premises-appliance-release-notes-version-93-0-0.html",
+"text": "On-Premises Appliance Release Notes Version 93.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-on-premises-appliance-version-93-0-0.html",
+"text": "Overview for On-Premises Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-93-0-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "other-changes-for-on-premises-appliance-version-93-0-0.html",
+"text": "Other changes for On-Premises Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-on-premises-appliance-version-93-0-0.html",
+"text": "Known Issues for On-Premises Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-on-premises-appliance-version-93-0-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 93.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "on-premises-appliance-release-notes-version-77-6-0.html",
 "text": "On-Premises Appliance Release Notes Version 77.6.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -630,6 +684,43 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "virtual-appliance-release-notes-version-93-0-0.html",
+"text": "Virtual Appliance Release Notes Version 93.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-virtual-appliance-version-93-0-0.html",
+"text": "Overview for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "requirements-for-virtual-appliance-version-93-0-0.html",
+"text": "Requirements for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-virtual-appliance-version-93-0-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "other-changes-for-virtual-appliance-version-93-0-0.html",
+"text": "Other changes for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-virtual-appliance-version-93-0-0.html",
+"text": "Known Issues for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-virtual-appliance-version-93-0-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 93.0.0",
+"class": "topic-link section"
+}]
+},
 {
 "url": "virtual-appliance-release-notes-version-77-6-0.html",
 "text": "Virtual Appliance Release Notes Version 77.6.0",
@@ -2441,18 +2532,18 @@ var toc = [{
 ,
 "children": [
 {
-"url": "steps-to-configure-an-azure-ad-application-for-csa.html",
-"text": "Steps to configure an Azure AD Application for CSA",
+"url": "step-1-3--configure-an-azure-ad-application-for-csa.html",
+"text": "Step 1\/3: Configure an Azure AD Application for CSA",
 "class": "topic-link section"
 },
 {
-"url": "custom-role-permissions-for-azure-csa.html",
-"text": "Custom role permissions for Azure CSA",
+"url": "step-2-3--assign-custom-role-permissions-for-azure-csa.html",
+"text": "Step 2\/3: Assign custom role permissions for Azure CSA",
 "class": "topic-link section"
 },
 {
-"url": "add-the-azure-subscription-to-the-netskope-tenant.html",
-"text": "Add the Azure Subscription to the Netskope tenant",
+"url": "step-3-3--add-the-azure-subscription-to-the-netskope-tenant-for-csa.html",
+"text": "Step 3\/3: Add the Azure Subscription to the Netskope tenant for CSA",
 "class": "topic-link section"
 }]
 },
@@ -2497,42 +2588,52 @@ var toc = [{
 }]
 },
 {
-"url": "storage-scan-for-netskope-public-cloud-security.html",
-"text": "Storage Scan for Netskope Public Cloud Security",
+"url": "data-protection-for-public-cloud.html",
+"text": "Data Protection for Public Cloud",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "getting-started-with-storage-scan-for-public-cloud.html",
-"text": "Getting Started with Storage Scan for Public Cloud",
+"url": "getting-started-with-data-protection-for-public-cloud.html",
+"text": "Getting Started with Data Protection for Public Cloud",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "data-protection-for-amazon-web-services-s3.html",
+"text": "Data Protection for Amazon Web Services S3",
 "class": "topic-link section"
 },
 {
-"url": "configure-amazon-web-services-s3-for-dlp-scanning-and-threat-protection.html",
-"text": "Configure Amazon Web Services S3 for DLP Scanning and Threat Protection",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "bulk-add-aws-accounts-to-netskope-for-dlp-scanning-and-threat-protection.html",
-"text": "Bulk Add AWS accounts to Netskope for DLP Scanning and Threat Protection",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "step-1-2--configure-aws-accounts---services-for-storage-scanning.html",
-"text": "Step 1\/2: Configure AWS Accounts &amp; Services for Storage Scanning",
+"url": "data-protection-for-azure-blob-storage.html",
+"text": "Data Protection for Azure Blob Storage",
 "class": "topic-link section"
 },
 {
-"url": "step-2-2--configure-aws-permissions-for-storage-scanning.html",
-"text": "Step 2\/2: Configure AWS Permissions for Storage Scanning",
+"url": "data-protection-for-google-cloud-storage.html",
+"text": "Data Protection for Google Cloud Storage",
 "class": "topic-link section"
 }]
 },
 {
-"url": "setting-up-policies-to-scan-s3-buckets.html",
-"text": "Setting up Policies to scan S3 Buckets",
+"url": "enabling-data-protection-for-aws-s3.html",
+"text": "Enabling Data Protection for AWS S3",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "step-1-2--configure-aws-accounts---services-for-data-protection.html",
+"text": "Step 1\/2: Configure AWS Accounts &amp; Services for Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "step-2-2--configure-aws-permissions-for-data-protection.html",
+"text": "Step 2\/2: Configure AWS Permissions for Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "additional-configurations-for-aws-data-protection.html",
+"text": "Additional configurations for AWS Data Protection",
 "class": "topic-link section"
 },
 {
@@ -2542,34 +2643,29 @@ var toc = [{
 }]
 },
 {
-"url": "configure-azure-blob-storage-for-dlp-scanning-and-threat-protection.html",
-"text": "Configure Azure Blob Storage for DLP Scanning and Threat Protection",
+"url": "enabling-data-protection-for-azure-blob-storage.html",
+"text": "Enabling Data Protection for Azure Blob Storage",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "register-microsoft-event-grid-in-azure.html",
-"text": "Register Microsoft Event Grid in Azure",
+"url": "step-1-4--register-microsoft-event-grid-in-azure-for-data-protection.html",
+"text": "Step 1\/4: Register Microsoft Event Grid in Azure for Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "configure-an-azure-ad-application-for-dlp-and-threat-protection.html",
-"text": "Configure an Azure AD Application for DLP and Threat Protection",
+"url": "step-2-4--configure-an-azure-ad-application-for-data-protection.html",
+"text": "Step 2\/4: Configure an Azure AD Application for Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "azure-permissions-for-storage-scanning.html",
-"text": "Azure Permissions for Storage Scanning",
+"url": "step-3-4--assign-azure-permissions-for-data-protection.html",
+"text": "Step 3\/4: Assign Azure Permissions for Data Protection",
 "class": "topic-link section"
 },
 {
-"url": "add-the-azure-subscription-to-the-netskope-tenant-325434.html",
-"text": "Add the Azure Subscription to the Netskope tenant",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-data-protection-policy.html",
-"text": "Create an API Data Protection Policy",
+"url": "step-4-4--add-the-azure-subscription-to-the-netskope-tenant-for-data-protection.html",
+"text": "Step 4\/4: Add the Azure Subscription to the Netskope tenant for Data Protection",
 "class": "topic-link section"
 },
 {
@@ -2579,35 +2675,41 @@ var toc = [{
 }]
 },
 {
-"url": "configure-google-cloud-storage-for-dlp-scanning-and-threat-protection.html",
-"text": "Configure Google Cloud Storage for DLP Scanning and Threat Protection",
+"url": "enabling-data-protection-for-google-cloud-storage.html",
+"text": "Enabling Data Protection for Google Cloud Storage",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configuring-a-google-organization-resource-for-storage-scan.html",
-"text": "Configuring a Google Organization resource for Storage Scan",
+"url": "enabling-data-protection-for-google-organization.html",
+"text": "Enabling Data Protection for Google Organization",
 "class": "topic-link section"
 },
 {
-"url": "configuring-a-google-folder-resource-for-storage-scan.html",
-"text": "Configuring a Google Folder resource for Storage Scan",
+"url": "enabling-data-protection-for-google-folder.html",
+"text": "Enabling Data Protection for Google Folder",
 "class": "topic-link section"
 },
 {
-"url": "configuring-a-google-project-resource-for-storage-scan.html",
-"text": "Configuring a Google Project resource for Storage Scan",
-"class": "topic-link section"
-},
-{
-"url": "setting-up-policies-to-scan-google-cloud-storage.html",
-"text": "Setting up Policies to scan Google Cloud Storage",
+"url": "enabling-data-protection-for-google-project.html",
+"text": "Enabling Data Protection for Google Project",
 "class": "topic-link section"
 }]
 },
 {
-"url": "storage-scan-policies-for-netskope-public-cloud-security.html",
-"text": "Storage Scan Policies for Netskope Public Cloud Security",
+"url": "creating-data-protection-policies-for-netskope-public-cloud-security.html",
+"text": "Creating Data Protection Policies for Netskope Public Cloud Security",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "creating-api-data-protection-policies-to-scan-s3-buckets.html",
+"text": "Creating API Data Protection Policies to scan S3 Buckets",
+"class": "topic-link section"
+},
+{
+"url": "creating-api-data-protection-policies-to-scan-google-cloud-storage.html",
+"text": "Creating API Data Protection Policies to scan Google Cloud Storage",
 "class": "topic-link section"
 },
 {
@@ -2616,14 +2718,25 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "supported-iaas-services-for-storage-scan.html",
-"text": "Supported IaaS Services for Storage Scan",
+"url": "supported-iaas-services-for-data-protection.html",
+"text": "Supported IaaS Services for Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "forensics-for-netskope-public-cloud-security.html",
-"text": "Forensics for Netskope Public Cloud Security",
+"url": "viewing-dlp-and-malware-alerts-for-public-cloud-storage.html",
+"text": "Viewing DLP and Malware Alerts for Public Cloud Storage",
+"class": "topic-link section"
+},
+{
+"url": "faqs-to-setup-data-protection-for-public-cloud.html",
+"text": "FAQs to setup Data Protection for Public Cloud",
+"class": "topic-link section"
+}]
+},
+{
+"url": "forensics-for-public-cloud.html",
+"text": "Forensics for Public Cloud",
 "class": "topic-link section"
 ,
 "children": [
@@ -2631,10 +2744,27 @@ var toc = [{
 "url": "getting-started-with-forensics-for-public-cloud.html",
 "text": "Getting Started with Forensics for Public Cloud",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "forensics-for-amazon-web-services-s3.html",
+"text": "Forensics for Amazon Web Services S3",
+"class": "topic-link section"
 },
 {
-"url": "configure-amazon-web-services-s3-as-a-forensic-destination.html",
-"text": "Configure Amazon Web Services S3 as a Forensic Destination",
+"url": "forensics-for-azure-blob-storage.html",
+"text": "Forensics for Azure Blob Storage",
+"class": "topic-link section"
+},
+{
+"url": "forensics-for-google-cloud-storage.html",
+"text": "Forensics for Google Cloud Storage",
+"class": "topic-link section"
+}]
+},
+{
+"url": "enabling-forensics-for-amazon-web-services-s3.html",
+"text": "Enabling Forensics for Amazon Web Services S3",
 "class": "topic-link section"
 ,
 "children": [
@@ -2650,24 +2780,24 @@ var toc = [{
 }]
 },
 {
-"url": "configure-azure-blob-storage-as-a-forensic-destination.html",
-"text": "Configure Azure Blob Storage as a Forensic Destination",
+"url": "enabling-forensics-for-azure-blob-storage.html",
+"text": "Enabling Forensics for Azure Blob Storage",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configure-an-azure-ad-application-for-forensics.html",
-"text": "Configure an Azure AD Application for Forensics",
+"url": "step-1-3--configure-an-azure-ad-application-for-forensics.html",
+"text": "Step 1\/3: Configure an Azure AD Application for Forensics",
 "class": "topic-link section"
 },
 {
-"url": "azure-permissions-for-forensic.html",
-"text": "Azure Permissions for Forensic",
+"url": "step-2-3--assign-azure-permissions-to-store-forensic-objects.html",
+"text": "Step 2\/3: Assign Azure permissions to store forensic objects",
 "class": "topic-link section"
 },
 {
-"url": "add-the-azure-subscription-in-netskope-api-enabled-protection.html",
-"text": "Add the Azure Subscription in Netskope API-enabled Protection",
+"url": "step-3-3--add-the-azure-subscription-to-the-netskope-tenant-for-forensics.html",
+"text": "Step 3\/3: Add the Azure Subscription to the Netskope tenant for Forensics",
 "class": "topic-link section"
 },
 {
@@ -2677,8 +2807,23 @@ var toc = [{
 }]
 },
 {
-"url": "configure-google-cloud-storage-as-a-forensic-destination.html",
-"text": "Configure Google Cloud Storage as a Forensic Destination",
+"url": "enabling-forensics-for-google-cloud-storage.html",
+"text": "Enabling Forensics for Google Cloud Storage",
+"class": "topic-link section"
+},
+{
+"url": "creating-a-forensic-profile-for-public-cloud-storage.html",
+"text": "Creating a Forensic Profile for Public Cloud Storage",
+"class": "topic-link section"
+},
+{
+"url": "viewing-forensic-alerts-for-public-cloud-storage.html",
+"text": "Viewing Forensic Alerts for Public Cloud Storage",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-forensics-setup-for-public-cloud.html",
+"text": "Troubleshooting Forensics Setup for Public Cloud",
 "class": "topic-link section"
 }]
 },
@@ -2718,10 +2863,26 @@ var toc = [{
 }]
 },
 {
-"url": "troubleshooting-ueba-for-public-cloud.html",
-"text": "Troubleshooting UEBA for Public Cloud",
+"url": "faqs-to-setup-ueba-for-public-cloud.html",
+"text": "FAQs to setup UEBA for Public Cloud",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-ueba-setup-for-public-cloud.html",
+"text": "Troubleshooting UEBA Setup for Public Cloud",
 "class": "topic-link section"
 }]
+},
+{
+"url": "netskope-public-cloud-security-dashboards.html",
+"text": "Netskope Public Cloud Security Dashboards",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "view-security-posture-compliance.html",
+"text": "View Security Posture Compliance",
+"class": "topic-link section"
 },
 {
 "url": "view-iaas-overview.html",
@@ -2732,6 +2893,7 @@ var toc = [{
 "url": "view-iaas-inventory.html",
 "text": "View IaaS Inventory",
 "class": "topic-link section"
+}]
 },
 {
 "url": "implementation-guide-to-set-up-aws-accounts-in-netskope.html",
@@ -2769,11 +2931,6 @@ var toc = [{
 "text": "AWS Setup FAQs",
 "class": "topic-link section"
 }]
-},
-{
-"url": "bulk-setup-of-multiple-azure-subscriptions-in-netskope-tenant.html",
-"text": "Bulk setup of multiple Azure subscriptions in Netskope tenant",
-"class": "topic-link section"
 },
 {
 "url": "migrate-existing-google-cloud-platform-instances.html",
@@ -2841,7 +2998,7 @@ var toc = [{
 }]
 },
 {
-"url": "create-an-api-data-protection-policy-118921.html",
+"url": "create-an-api-data-protection-policy.html",
 "text": "Create an API Data Protection Policy",
 "class": "topic-link section"
 ,
@@ -4835,7 +4992,7 @@ var toc = [{
 }]
 },
 {
-"url": "view-security-posture-compliance.html",
+"url": "view-security-posture-compliance-305075.html",
 "text": "View Security Posture Compliance",
 "class": "topic-link section"
 }]
@@ -4988,6 +5145,21 @@ var toc = [{
 {
 "url": "kandji.html",
 "text": "Kandji",
+"class": "topic-link section"
+},
+{
+"url": "xenmobile.html",
+"text": "XenMobile",
+"class": "topic-link section"
+},
+{
+"url": "mobileiron-core.html",
+"text": "MobileIron Core",
+"class": "topic-link section"
+},
+{
+"url": "mobileiron-cloud.html",
+"text": "MobileIron Cloud",
 "class": "topic-link section"
 },
 {
@@ -6127,33 +6299,6 @@ var toc = [{
 "url": "netskope-ipsec-with-fortinet-fortigate.html",
 "text": "Netskope IPSec with Fortinet FortiGate",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-fortigate.html",
-"text": "Configure FortiGate",
-"class": "topic-link section"
-},
-{
-"url": "create-a-policy-with-an-associated-vpn-interface.html",
-"text": "Create a Policy with an Associated VPN Interface",
-"class": "topic-link section"
-},
-{
-"url": "create-a-route-to-push-vpn-into-rib.html",
-"text": "Create a Route to Push VPN into RIB",
-"class": "topic-link section"
-},
-{
-"url": "create-a-policy-based-router-to-redirect-web-traffic-to-netskope.html",
-"text": "Create a Policy-Based Router to Redirect Web Traffic to Netskope",
-"class": "topic-link section"
-},
-{
-"url": "configure-netskope-ipsec.html",
-"text": "Configure Netskope IPSec",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-ipsec-with-silver-peak-edgeconnect.html",
@@ -6799,98 +6944,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "mobileiron-cloud.html",
-"text": "MobileIron Cloud",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-mobileiron-cloud-for-ios-vpn.html",
-"text": "Configure MobileIron Cloud for iOS VPN",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-certificates-in-mobileiron-cloud.html",
-"text": "Create Certificates in MobileIron Cloud",
-"class": "topic-link section"
-},
-{
-"url": "configure-an-on-demand-vpn.html",
-"text": "Configure an On-Demand VPN",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-per-app-vpn.html",
-"text": "Configure a Per-App VPN",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open-164907.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-mobileiron-cloud-for-android.html",
-"text": "Configure MobileIron Cloud for Android",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "device-classification-for-android-116095.html",
-"text": "Device Classification for Android",
-"class": "topic-link section"
-}]
-}]
-},
-{
-"url": "mobileiron-core.html",
-"text": "MobileIron Core",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-mobileiron-core-for-ios-vpn.html",
-"text": "Configure MobileIron Core for iOS VPN",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "upload-and-enroll-certificates.html",
-"text": "Upload and Enroll Certificates",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-on-demand-vpn-profile.html",
-"text": "Configure the On-Demand VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-per-app-vpn-profile.html",
-"text": "Configure the Per-App VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open-164908.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-mobileiron-core-for-android.html",
-"text": "Configure MobileIron Core for Android",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "device-classification-for-android-116096.html",
-"text": "Device Classification for Android",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "airwatch.html",
 "text": "Airwatch",
 "class": "topic-link section"
@@ -7015,28 +7068,6 @@ var toc = [{
 "text": "Device Classification for Android",
 "class": "topic-link section"
 }]
-}]
-},
-{
-"url": "xenmobile.html",
-"text": "XenMobile",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-xenmobile-for-ios-on-demand-vpn.html",
-"text": "Configure XenMobile for iOS On-Demand VPN",
-"class": "topic-link section"
-},
-{
-"url": "configure-xenmobile-for-ios-per-app-vpn.html",
-"text": "Configure XenMobile for iOS Per-App VPN",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open-164911.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
 }]
 }]
 }]
@@ -7728,6 +7759,33 @@ var toc = [{
 }]
 },
 {
+"url": "manage-app-instances-for-inline-enforcement.html",
+"text": "Manage App Instances for Inline Enforcement",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "add-an-app-instance.html",
+"text": "Add an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "update-an-app-instance.html",
+"text": "Update an App Instance",
+"class": "topic-link section"
+},
+{
+"url": "list-app-instances.html",
+"text": "List App Instances",
+"class": "topic-link section"
+},
+{
+"url": "delete-an-app-instance.html",
+"text": "Delete an App Instance",
+"class": "topic-link section"
+}]
+},
+{
 "url": "manage-quarantine-files.html",
 "text": "Manage Quarantine Files",
 "class": "topic-link section"
@@ -7756,33 +7814,6 @@ var toc = [{
 "url": "acknowledge-compromised-credentials.html",
 "text": "Acknowledge Compromised Credentials",
 "class": "topic-link section"
-},
-{
-"url": "manage-app-instances-for-inline-enforcement.html",
-"text": "Manage App Instances for Inline Enforcement",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "add-an-app-instance.html",
-"text": "Add an App Instance",
-"class": "topic-link section"
-},
-{
-"url": "update-an-app-instance.html",
-"text": "Update an App Instance",
-"class": "topic-link section"
-},
-{
-"url": "list-app-instances.html",
-"text": "List App Instances",
-"class": "topic-link section"
-},
-{
-"url": "delete-an-app-instance.html",
-"text": "Delete an App Instance",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -8150,6 +8181,13 @@ var toc = [{
 "url": "configure-the-appliance-in-explicit-proxy-mode-115994.html",
 "text": "Configure the Appliance in Explicit Proxy mode",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "enable-saml-authentication-on-dpop-appliance.html",
+"text": "Enable SAML Authentication on DPoP Appliance",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-certificates-115995.html",
@@ -8248,8 +8286,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-an-explicit-proxy.html",
-"text": "Configure an Explicit Proxy",
+"url": "configure-an-upstream-proxy.html",
+"text": "Configure an Upstream Proxy",
 "class": "topic-link section"
 },
 {
@@ -8503,8 +8541,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-an-explicit-proxy-144853.html",
-"text": "Configure an Explicit Proxy",
+"url": "configure-an-upstream-proxy-144853.html",
+"text": "Configure an Upstream Proxy",
 "class": "topic-link section"
 },
 {
@@ -8622,6 +8660,13 @@ var toc = [{
 "url": "configure-the-appliance-in-explicit-proxy-mode-144871.html",
 "text": "Configure the Appliance in Explicit Proxy mode",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "enable-saml-authentication-on-dpop-appliance-350190.html",
+"text": "Enable SAML Authentication on DPoP Appliance",
+"class": "topic-link section"
+}]
 },
 {
 "url": "configure-certificates-144872.html",
@@ -8663,13 +8708,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-to-77-6-0.html",
-"text": "Upgrading VA to 77.6.0",
+"url": "upgrading-va-to-93-0-0.html",
+"text": "Upgrading VA to 93.0.0",
 "class": "topic-link section"
 },
 {
-"url": "upgrading-va-from-versions-older-than-66-x.html",
-"text": " Upgrading VA from versions older than 66.x",
+"url": "upgrading-va-from-versions-older-than-71-x.html",
+"text": " Upgrading VA from versions older than 71.x",
 "class": "topic-link section"
 },
 {
@@ -8684,8 +8729,8 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-77-6-0.html",
-"text": "Migrate the Virtual Appliance to 77.6.0",
+"url": "migrate-the-virtual-appliance-to-93-0-0.html",
+"text": "Migrate the Virtual Appliance to 93.0.0",
 "class": "topic-link section"
 },
 {
