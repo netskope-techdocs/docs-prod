@@ -5986,6 +5986,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
+"url": "misp-plugin-for-threat-exchange.html",
+"text": "MISP Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "proofpoint-plugin-for-threat-exchange.html",
 "text": "Proofpoint Plugin for Threat Exchange",
 "class": "topic-link section"
