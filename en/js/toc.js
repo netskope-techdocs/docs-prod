@@ -6063,6 +6063,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+  {
+  "url": "beyondcorp-plugin-for-risk-exchange.html",
+  "text": "BeyondCorp Plugin for Risk Exchange",
+  "class": "topic-link section reused-publication reused-publication"
+  },
 {
 "url": "okta-plugin-for-risk-exchange.html",
 "text": "Okta Plugin for Risk Exchange",
