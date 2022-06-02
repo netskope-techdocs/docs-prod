@@ -16,6 +16,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-95-0-0.html",
+"text": "Netskope Release Notes Version 95.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-95-0-0.html",
+"text": "New Features and Enhancements In Release 95.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-95-0-0.html",
+"text": "Fixed Issues In Release 95.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-94-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 94.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -3680,26 +3697,9 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account.html",
-"text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-an-app-catalog.html",
-"text": "Create an App Catalog",
-"class": "topic-link section"
-},
-{
-"url": "add-global-administrator-to-the-site-collection-administrators.html",
-"text": "Add Global Administrator to the Site Collection Administrators",
-"class": "topic-link section"
-},
-{
 "url": "install-the-netskope-introspection-v2-app.html",
 "text": "Install the Netskope Introspection v2 App",
 "class": "topic-link section"
-}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-onedrive-app.html",
@@ -3989,26 +3989,9 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "add-the-netskope-introspection-v2-app-in-your-office-365-sharepoint-admin-account-326332.html",
-"text": "Add the Netskope Introspection v2 App in your Office 365 SharePoint Admin Account",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-an-app-catalog-326333.html",
-"text": "Create an App Catalog",
-"class": "topic-link section"
-},
-{
-"url": "add-global-administrator-to-the-site-collection-administrators-326334.html",
-"text": "Add Global Administrator to the Site Collection Administrators",
-"class": "topic-link section"
-},
-{
 "url": "install-the-netskope-introspection-v2-app-326335.html",
 "text": "Install the Netskope Introspection v2 App",
 "class": "topic-link section"
-}]
 },
 {
 "url": "configure-netskope-to-access-your-office-365-sharepoint-sites-app.html",
@@ -5248,6 +5231,21 @@ var toc = [{
 "url": "trend-micro-maximum-security.html",
 "text": "Trend Micro Maximum Security",
 "class": "topic-link section"
+},
+{
+"url": "sophos.html",
+"text": "Sophos",
+"class": "topic-link section"
+},
+{
+"url": "squid-proxy.html",
+"text": "Squid Proxy",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-always-on-vpn.html",
+"text": "Microsoft Always-On VPN",
+"class": "topic-link section"
 }]
 },
 {
@@ -5994,6 +5992,11 @@ var toc = [{
 "url": "proofpoint-plugin-for-threat-exchange.html",
 "text": "Proofpoint Plugin for Threat Exchange",
 "class": "topic-link section"
+},
+{
+"url": "sentinelone-plugin-for-threat-exchange.html",
+"text": "SentinelOne Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -6063,11 +6066,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-  {
-  "url": "beyondcorp-plugin-for-risk-exchange.html",
-  "text": "BeyondCorp Plugin for Risk Exchange",
-  "class": "topic-link section reused-publication reused-publication"
-  },
+{
+"url": "beyondcorp-plugin-for-risk-exchange.html",
+"text": "BeyondCorp Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
+},
 {
 "url": "okta-plugin-for-risk-exchange.html",
 "text": "Okta Plugin for Risk Exchange",
