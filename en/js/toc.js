@@ -316,6 +316,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-95-0-0-7066.html",
+"text": "Netskope Private Access Publisher Release Notes Version 95.0.0.7066",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-release-95-0-0-7066.html",
+"text": "Fixed Issues In Release 95.0.0.7066",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-94-0-0-6867.html",
 "text": "Netskope Private Access Publisher Release Notes Version 94.0.0.6867",
 "class": "topic-link section reused-publication reused-publication"
@@ -5642,8 +5654,8 @@ var toc = [{
 }]
 },
 {
-"url": "install-cloud-exchange.html",
-"text": "Install Cloud Exchange",
+"url": "install-cloud-exchange--non-amazon-ecs-deployment-.html",
+"text": "Install Cloud Exchange (non-Amazon ECS deployment)",
 "class": "topic-link section"
 ,
 "children": [
@@ -6080,6 +6092,38 @@ var toc = [{
 "url": "mimecast-plugin-for-risk-exchange.html",
 "text": "Mimecast Plugin for Risk Exchange",
 "class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "security-advisor-plugin-for-risk-exchange.html",
+"text": "Security Advisor Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-the-security-advisor-base-url-and-api-token.html",
+"text": "Get the Security Advisor Base URL and API Token",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-security-advisor-plugin.html",
+"text": "Configure the Security Advisor Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-actions-for-the-security-advisor-plugin.html",
+"text": "Configure Actions for the Security Advisor Plugin",
+"class": "topic-link section"
+},
+{
+"url": "score-calculation.html",
+"text": "Score Calculation",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-security-advisor-plugin.html",
+"text": "Validate the Security Advisor Plugin",
+"class": "topic-link section"
+}]
 }]
 },
 {

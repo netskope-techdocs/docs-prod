@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -226,7 +226,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes.html</loc>
-    <lastmod>2022-05-19</lastmod>
+    <lastmod>2022-06-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-95-0-0-7066.html</loc>
+    <lastmod>2022-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-release-95-0-0-7066.html</loc>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-94-0-0-6867.html</loc>
@@ -1274,7 +1282,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-category.html</loc>
-    <lastmod>2022-03-25</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/url-lists.html</loc>
@@ -1510,7 +1518,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/isolation-events-in-skope-it.html</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-best-practices.html</loc>
@@ -1726,7 +1734,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -1778,11 +1786,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-custom-categories.html</loc>
-    <lastmod>2021-02-12</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/category-definitions.html</loc>
-    <lastmod>2022-04-28</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-web-categories.html</loc>
@@ -2078,7 +2086,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/getting-started-with-ueba-for-public-cloud.html</loc>
-    <lastmod>2022-03-30</lastmod>
+    <lastmod>2022-06-05</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ueba-for-aws.html</loc>
@@ -3878,7 +3886,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
@@ -4118,7 +4126,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -4126,7 +4134,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/system-requirements.html</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-feature-lists.html</loc>
@@ -4138,11 +4146,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/install-cloud-exchange.html</loc>
-    <lastmod>2022-05-20</lastmod>
+    <loc>https://docs.netskope.com/en/install-cloud-exchange--non-amazon-ecs-deployment-.html</loc>
+    <lastmod>2022-06-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/migrating-from-ce-2-x-to-ce-3-x.html</loc>
@@ -4454,7 +4462,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-3rd-party-risk-exchange-plugins.html</loc>
-    <lastmod>2022-05-26</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/beyondcorp-plugin-for-risk-exchange.html</loc>
@@ -4467,6 +4475,30 @@
   <url>
     <loc>https://docs.netskope.com/en/mimecast-plugin-for-risk-exchange.html</loc>
     <lastmod>2022-05-24</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/security-advisor-plugin-for-risk-exchange.html</loc>
+    <lastmod>2022-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-the-security-advisor-base-url-and-api-token.html</loc>
+    <lastmod>2022-05-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-security-advisor-plugin.html</loc>
+    <lastmod>2022-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-actions-for-the-security-advisor-plugin.html</loc>
+    <lastmod>2022-05-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/score-calculation.html</loc>
+    <lastmod>2022-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/validate-the-security-advisor-plugin.html</loc>
+    <lastmod>2022-05-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/plugin-activity.html</loc>
@@ -5378,7 +5410,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/category-definitions-86220.html</loc>
-    <lastmod>2022-04-28</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/dynamic-classification.html</loc>
@@ -6538,7 +6570,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/reimagine-your-perimeter.html</loc>
-    <lastmod>2021-09-23</lastmod>
+    <lastmod>2022-06-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/translating-your-ciso-s-strategy-into-a-risk-focused-security-plan.html</loc>
