@@ -5675,6 +5675,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "install-netskope-cloud-exchange-with-aws-ecs-fargate.html",
+"text": "Install Netskope Cloud Exchange with AWS ECS Fargate",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-8-x-linux-host.html",
 "text": "Install Netskope Cloud Exchange on a Red Hat Enterprise 8.x Linux Host",
 "class": "topic-link section"
