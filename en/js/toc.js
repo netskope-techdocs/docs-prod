@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-95-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 95.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-95-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 95.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-95-1-0.html",
+"text": "Fixed Issues In Hotfix Release 95.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-95-1-0.html",
+"text": "Known Issues In Hotfix Release 95.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-95-0-0.html",
 "text": "Netskope Release Notes Version 95.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -415,6 +437,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-95-0-1-199.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 95.0.1.199",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-94-1-1-190.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 94.1.1.190",
 "class": "topic-link section"
@@ -486,6 +513,23 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-3-1.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.3.1",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-3-3-1.html",
+"text": "New Features And Enhancements In Version 3.3.1",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-3-3-1.html",
+"text": "Fixed Issues In Version 3.3.1",
+"class": "topic-link section"
+}]
+},
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
@@ -2247,6 +2291,13 @@ var toc = [{
 "url": "configure-browser-access-for-private-apps.html",
 "text": "Configure Browser Access for Private Apps",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-google-workspace-as-the-idp-for-browser-access-authentication.html",
+"text": "Configure Google Workspace as the IdP for Browser Access Authentication",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -5264,6 +5315,11 @@ var toc = [{
 "url": "netskope-client-command-reference.html",
 "text": "Netskope Client Command Reference",
 "class": "topic-link section"
+},
+{
+"url": "netskope-client-in-linux-operating-system.html",
+"text": "Netskope Client in Linux Operating System",
+"class": "topic-link section"
 }]
 },
 {
@@ -5655,7 +5711,7 @@ var toc = [{
 },
 {
 "url": "install-cloud-exchange--non-amazon-ecs-deployment-.html",
-"text": "Install Cloud Exchange (non-Amazon ECS deployment)",
+"text": "Install Cloud Exchange",
 "class": "topic-link section"
 ,
 "children": [
@@ -6102,33 +6158,6 @@ var toc = [{
 "url": "security-advisor-plugin-for-risk-exchange.html",
 "text": "Security Advisor Plugin for Risk Exchange",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-the-security-advisor-base-url-and-api-token.html",
-"text": "Get the Security Advisor Base URL and API Token",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-security-advisor-plugin.html",
-"text": "Configure the Security Advisor Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-actions-for-the-security-advisor-plugin.html",
-"text": "Configure Actions for the Security Advisor Plugin",
-"class": "topic-link section"
-},
-{
-"url": "score-calculation.html",
-"text": "Score Calculation",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-security-advisor-plugin.html",
-"text": "Validate the Security Advisor Plugin",
-"class": "topic-link section"
-}]
 }]
 },
 {
