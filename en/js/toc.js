@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-95-1-2.html",
+"text": "Netskope Release Notes Hotfix Version 95.1.2",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-95-1-2.html",
+"text": "New Features And Enhancements In Hotfix Release 95.1.2",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-95-1-2.html",
+"text": "Fixed Issues In Hotfix Release 95.1.2",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-95-1-2.html",
+"text": "Known Issues In Hotfix Release 95.1.2",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-95-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 95.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -2207,13 +2229,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "creating-a-real-time-protection-policy-for-ctep.html",
-"text": "Creating a Real-time Protection Policy for CTEP",
+"url": "about-ctep-settings.html",
+"text": "About CTEP Settings",
 "class": "topic-link section"
 },
 {
-"url": "about-ctep-settings.html",
-"text": "About CTEP Settings",
+"url": "creating-a-real-time-protection-policy-for-ctep.html",
+"text": "Creating a Real-time Protection Policy for CTEP",
 "class": "topic-link section"
 },
 {
@@ -5919,6 +5941,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "backup-cloud-exchange.html",
+"text": "Backup Cloud Exchange",
+"class": "topic-link section"
+},
+{
 "url": "plugin-repository.html",
 "text": "Plugin Repository",
 "class": "topic-link section"
@@ -5942,6 +5969,11 @@ var toc = [{
 {
 "url": "tasks.html",
 "text": "Tasks",
+"class": "topic-link section"
+},
+{
+"url": "backup-cloud-exchange-363778.html",
+"text": "Backup Cloud Exchange",
 "class": "topic-link section"
 }]
 },
