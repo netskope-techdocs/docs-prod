@@ -5832,6 +5832,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "backup-cloud-exchange.html",
+"text": "Backup Cloud Exchange",
+"class": "topic-link section"
+},
+{
 "url": "cloud-exchange-sso-with-azure-ad.html",
 "text": "Cloud Exchange SSO with Azure AD",
 "class": "topic-link section reused-publication reused-publication"
@@ -5941,11 +5946,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "backup-cloud-exchange.html",
-"text": "Backup Cloud Exchange",
-"class": "topic-link section"
-},
-{
 "url": "plugin-repository.html",
 "text": "Plugin Repository",
 "class": "topic-link section"
@@ -5969,11 +5969,6 @@ var toc = [{
 {
 "url": "tasks.html",
 "text": "Tasks",
-"class": "topic-link section"
-},
-{
-"url": "backup-cloud-exchange-363778.html",
-"text": "Backup Cloud Exchange",
 "class": "topic-link section"
 }]
 },
