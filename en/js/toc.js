@@ -459,6 +459,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-92-1-2-205.html",
+"text": "CTEP\/IPS Threat Content Update Release 92.1.2.205",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-95-1-1-202.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 95.1.1.202",
 "class": "topic-link section"
@@ -2229,13 +2234,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "about-ctep-settings.html",
-"text": "About CTEP Settings",
+"url": "creating-a-real-time-protection-policy-for-ctep.html",
+"text": "Creating a Real-time Protection Policy for CTEP",
 "class": "topic-link section"
 },
 {
-"url": "creating-a-real-time-protection-policy-for-ctep.html",
-"text": "Creating a Real-time Protection Policy for CTEP",
+"url": "about-ctep-settings.html",
+"text": "About CTEP Settings",
 "class": "topic-link section"
 },
 {
@@ -5417,6 +5422,18 @@ var toc = [{
 "url": "configure-custom-applications-164305.html",
 "text": "App Definitions ",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "certificate-pinned-applications.html",
+"text": "Certificate Pinned Applications",
+"class": "topic-link section"
+},
+{
+"url": "creating-a-custom-certificate-pinned-application.html",
+"text": "Creating a Custom Certificate Pinned Application",
+"class": "topic-link section"
+}]
 },
 {
 "url": "steering-configuration.html",
@@ -5427,11 +5444,6 @@ var toc = [{
 {
 "url": "exceptions-352649.html",
 "text": "Exceptions",
-"class": "topic-link section"
-},
-{
-"url": "certificate-pinned-applications.html",
-"text": "Certificate Pinned Applications",
 "class": "topic-link section"
 },
 {
@@ -8653,8 +8665,8 @@ var toc = [{
 }]
 },
 {
-"url": "login-to-the-appliance.html",
-"text": "Login to the Appliance",
+"url": "log-in-to-the-appliance.html",
+"text": "Log in to the Appliance",
 "class": "topic-link section"
 },
 {
