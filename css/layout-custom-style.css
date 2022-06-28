@@ -105,6 +105,15 @@ color: #00A9CE;
 font-family: inherit;
 }
 
+/* ADDED H7 FONT SIZE TO FIX BRIDGEHEAD TITLES APPEARING AS NORMAL SIZE TEXT WHEN CONREFFED*/
+h8, .h8{
+font-size: 14pt;
+font-weight: 500;
+line-height: 1.1;
+color: #00A9CE;
+font-family: inherit;
+}
+
 /* CONTROLS COLOR AND FONT SIZE OF PAGE TITLES THAT ARE NESTED IN SUBPUBS, LIKE H2S */
 #topic-content > section > .titlepage .title {
     margin: 0em 0 1em;
