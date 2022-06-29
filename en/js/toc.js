@@ -459,8 +459,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "ctep-ips-threat-content-update-release-92-1-2-205.html",
-"text": "CTEP\/IPS Threat Content Update Release 92.1.2.205",
+"url": "ctep-ips-threat-content-update-release-notes-95-1-2-205.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 95.1.2.205",
 "class": "topic-link section"
 },
 {
@@ -2233,11 +2233,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "creating-a-real-time-protection-policy-for-ctep.html",
-"text": "Creating a Real-time Protection Policy for CTEP",
-"class": "topic-link section"
-},
 {
 "url": "about-ctep-settings.html",
 "text": "About CTEP Settings",

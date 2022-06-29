@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-06-28</lastmod>
+    <lastmod>2022-06-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -329,8 +329,8 @@
     <lastmod>2022-06-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-92-1-2-205.html</loc>
-    <lastmod>2022-06-28</lastmod>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-95-1-2-205.html</loc>
+    <lastmod>2022-06-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-95-1-1-202.html</loc>
@@ -1626,11 +1626,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/client-traffic-exploit-prevention.html</loc>
-    <lastmod>2022-06-28</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/creating-a-real-time-protection-policy-for-ctep.html</loc>
-    <lastmod>2021-12-13</lastmod>
+    <lastmod>2022-06-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-ctep-settings.html</loc>
@@ -4246,7 +4242,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
-    <lastmod>2022-04-21</lastmod>
+    <lastmod>2022-06-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/system-requirements.html</loc>
@@ -4254,7 +4250,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-feature-lists.html</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-06-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-module-descriptions.html</loc>
@@ -4266,7 +4262,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-cloud-exchange--non-amazon-ecs-deployment-.html</loc>
-    <lastmod>2022-06-27</lastmod>
+    <lastmod>2022-06-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/migrating-from-ce-2-x-to-ce-3-x.html</loc>
@@ -4558,7 +4554,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-threat-exchange-ioc-sharing.html</loc>
-    <lastmod>2022-06-27</lastmod>
+    <lastmod>2022-06-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ioc-sharing-best-practices.html</loc>
