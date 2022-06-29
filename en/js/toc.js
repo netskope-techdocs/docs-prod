@@ -5423,11 +5423,6 @@ var toc = [{
 "url": "certificate-pinned-applications.html",
 "text": "Certificate Pinned Applications",
 "class": "topic-link section"
-},
-{
-"url": "creating-a-custom-certificate-pinned-application.html",
-"text": "Creating a Custom Certificate Pinned Application",
-"class": "topic-link section"
 }]
 },
 {
