@@ -16,6 +16,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-96-0-0.html",
+"text": "Netskope Release Notes Version 96.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-96-0-0.html",
+"text": "New Features And Enhancements In Release 96.0.0",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection---batch-ii-new-apps-support.html",
+"text": "Next Generation API Data Protection - Batch II New Apps Support",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-96-0-0.html",
+"text": "Fixed Issues In Release 96.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-96-0-0.html",
+"text": "Known Issues In Release 96.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-95-1-2.html",
 "text": "Netskope Release Notes Hotfix Version 95.1.2",
 "class": "topic-link section reused-publication reused-publication"
@@ -105,8 +132,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "next-generation-api-data-protection---new-apps-support.html",
-"text": "Next Generation API Data Protection – New Apps Support",
+"url": "next-generation-api-data-protection---batch-i-new-apps-support.html",
+"text": "Next Generation API Data Protection – Batch I New Apps Support",
 "class": "topic-link section"
 },
 {
@@ -2078,6 +2105,11 @@ var toc = [{
 "url": "supported-file-categories-and-file-types-307049.html",
 "text": "Supported File Categories and File Types",
 "class": "topic-link section"
+},
+{
+"url": "endpoint-data-loss-prevention.html",
+"text": "Endpoint Data Loss Prevention",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -2164,8 +2196,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "malicious-sites.html",
-"text": "Malicious Sites",
+"url": "about-malicious-sites.html",
+"text": "About Malicious Sites",
 "class": "topic-link section"
 }]
 },
@@ -4834,6 +4866,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "next-generation-api-data-protection-policy-actions-per-cloud-app.html",
+"text": "Next Generation API Data Protection Policy Actions per Cloud App",
+"class": "topic-link section"
+},
+{
 "url": "next-generation-api-data-protection-for-citrix-sharefile.html",
 "text": "Next Generation API Data Protection for Citrix ShareFile",
 "class": "topic-link section reused-publication reused-publication"
@@ -4924,6 +4961,42 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
+"text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-365-onedrive-gcc-high-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 OneDrive GCC High for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html",
+"text": "Next Generation API Data Protection for Microsoft 365 SharePoint GCC High",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-365-sharepoint-gcc-high-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 SharePoint GCC High for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-microsoft-365-teams-gcc-high.html",
+"text": "Next Generation API Data Protection for Microsoft 365 Teams GCC High",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-microsoft-365-teams-gcc-high-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 Teams GCC High for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
 "url": "next-generation-api-data-protection-for-microsoft-365-yammer.html",
 "text": "Next Generation API Data Protection for Microsoft 365 Yammer",
 "class": "topic-link section reused-publication reused-publication"
@@ -4956,6 +5029,30 @@ var toc = [{
 {
 "url": "configure-workday-for-the-next-generation-api-data-protection.html",
 "text": "Configure Workday for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-zendesk.html",
+"text": "Next Generation API Data Protection for Zendesk",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-zendesk-for-the-next-generation-api-data-protection.html",
+"text": "Configure Zendesk for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-zoom.html",
+"text": "Next Generation API Data Protection for Zoom",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-zoom-for-the-next-generation-api-data-protection.html",
+"text": "Configure Zoom for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
@@ -5423,6 +5520,11 @@ var toc = [{
 "url": "certificate-pinned-applications.html",
 "text": "Certificate Pinned Applications",
 "class": "topic-link section"
+},
+{
+"url": "creating-a-custom-certificate-pinned-application.html",
+"text": "Creating a Custom Certificate Pinned Application",
+"class": "topic-link section"
 }]
 },
 {
@@ -5676,6 +5778,11 @@ var toc = [{
 {
 "url": "device-classification-for-chrome.html",
 "text": "Device Classification for Chrome",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-linux.html",
+"text": "Device Classification for Linux",
 "class": "topic-link section"
 }]
 },
@@ -7410,8 +7517,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "malicious-sites-86211.html",
-"text": "Malicious Sites",
+"url": "about-malicious-sites-86211.html",
+"text": "About Malicious Sites",
 "class": "topic-link section"
 },
 {
@@ -7605,6 +7712,21 @@ var toc = [{
 {
 "url": "adding-custom-fields.html",
 "text": "Adding Custom Fields",
+"class": "topic-link section"
+},
+{
+"url": "using-period-over-period.html",
+"text": "Using Period over Period",
+"class": "topic-link section"
+},
+{
+"url": "using-pivot-ranks.html",
+"text": "Using Pivot Ranks",
+"class": "topic-link section"
+},
+{
+"url": "using-double-ranks.html",
+"text": "Using Double Ranks",
 "class": "topic-link section"
 },
 {
