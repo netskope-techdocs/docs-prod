@@ -167,6 +167,14 @@
       <h2 class="entity_category Security">Security</h2>
       <ul>
         
+        <li class="entity_key" data-entity-name="AccessApprovalSetting">
+          <span class="entity_name">AccessApprovalSetting</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="APIKey">
+          <span class="entity_name">APIKey</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="KMSKey">
           <span class="entity_name">KMSKey</span>
         </li>
@@ -8841,6 +8849,54 @@
             <td>Projects associated with Organization</td>
           </tr>
           
+          <tr>
+            <td>EssentialContacts</td>
+            <td>list</td>
+            <td>Essential Contact of Organization</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Name</td>
+            <td>string</td>
+            <td>Essential Contact name of Organization</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Email</td>
+            <td>string</td>
+            <td>The email address to send notifications to. This does not need to be a Google account.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>NotificationCategorySubscriptions</td>
+            <td>list</td>
+            <td>The categories of notifications that the contact will receive communications for</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>NotificationCategory</td>
+            <td>string</td>
+            <td>The notification categories that an essential contact can be subscribed to</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>LanguageTag</td>
+            <td>string</td>
+            <td>The preferred language for notifications, as a ISO 639-1 language code</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ValidationState</td>
+            <td>string</td>
+            <td>The validity of the contact. A contact is considered valid if it is the correct recipient for notifications for a particular resource (VALIDATION_STATE_UNSPECIFIED | VALID | INVALID)</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>ValidateTime</td>
+            <td>number</td>
+            <td>The last time the validationState was updated, either manually or automatically. A contact is considered stale if its validation state was updated more than 1 year ago</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="AccessPolicy">
@@ -9112,6 +9168,210 @@
             <td><span class="_TAB">&nbsp;</span><span class="_TAB">&nbsp;</span>RestrictedServices</td>
             <td>list</td>
             <td>Perimeter Type</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="APIKey">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>API Key ID, format 'projects/{project-id}/locations/global/keys/{api-key-id}'</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>API Key Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account ID</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>API Key Region Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>API Key Region ID</td>
+          </tr>
+          
+          <tr>
+            <td>CreationDate</td>
+            <td>number</td>
+            <td>Creation date/time in UNIX epoch</td>
+          </tr>
+          
+          <tr>
+            <td>UpdatedDate</td>
+            <td>number</td>
+            <td>Creation date/time in UNIX epoch</td>
+          </tr>
+          
+          <tr>
+            <td>APIRestrictions</td>
+            <td>list</td>
+            <td>A restriction for a specific service. Requests are allowed if they match any of these restrictions. If no restrictions are specified, all targets are allowed</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Service</td>
+            <td>string</td>
+            <td>The service for this restriction. It should be the canonical service name, for example - translate.googleapis.com. You can use gcloud services list to get a list of services that are enabled in the project</td>
+          </tr>
+          
+          <tr>
+            <td>ApplicationRestriction</td>
+            <td>string</td>
+            <td>An application restriction controls which websites, IP addresses, or applications can use your API key. You can set one application restriction per key</td>
+          </tr>
+          
+          <tr>
+            <td>BrowserKeyRestrictions</td>
+            <td>list</td>
+            <td>The HTTP referrers (websites) that are allowed to use the key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AllowedReferrer</td>
+            <td>string</td>
+            <td>A regular expressions for the referrer URLs that are allowed to make API calls with this key</td>
+          </tr>
+          
+          <tr>
+            <td>ServerKeyRestrictions</td>
+            <td>list</td>
+            <td>The IP addresses of callers that are allowed to use the key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AllowedIp</td>
+            <td>ip</td>
+            <td>A caller IP address that are allowed to make API calls with this key</td>
+          </tr>
+          
+          <tr>
+            <td>AndroidKeyRestrictions</td>
+            <td>list</td>
+            <td>The Android apps that are allowed to use the key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>Sha1Fingerprint</td>
+            <td>string</td>
+            <td>The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable - DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>PackageName</td>
+            <td>string</td>
+            <td>The package name of the application</td>
+          </tr>
+          
+          <tr>
+            <td>IosKeyRestrictions</td>
+            <td>list</td>
+            <td>The iOS apps that are allowed to use the key</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>AllowedBundleId</td>
+            <td>string</td>
+            <td>A bundle ID that are allowed when making API calls with this key</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="AccessApprovalSetting">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Access Approval Setting ID, format 'projects/{project-id}/accessApprovalSettings'</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Access Approval Setting Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountName</td>
+            <td>string</td>
+            <td>Account Name</td>
+          </tr>
+          
+          <tr>
+            <td>AccountId</td>
+            <td>string</td>
+            <td>Account ID</td>
+          </tr>
+          
+          <tr>
+            <td>RegionName</td>
+            <td>string</td>
+            <td>Access Approval Setting Region Name</td>
+          </tr>
+          
+          <tr>
+            <td>RegionId</td>
+            <td>string</td>
+            <td>Access Approval Setting Region ID</td>
+          </tr>
+          
+          <tr>
+            <td>Enabled</td>
+            <td>boolean</td>
+            <td>Is Access Approval Setting enabled in the project or not</td>
+          </tr>
+          
+          <tr>
+            <td>NotificationEmails</td>
+            <td>list</td>
+            <td>A list of email addresses to which notifications relating to approval requests should be sent. Notifications relating to a resource will be sent to all emails in the settings of ancestor resources of that resource. A maximum of 50 email addresses are allowed</td>
+          </tr>
+          
+          <tr>
+            <td>EnrolledServices</td>
+            <td>list</td>
+            <td>A list of Google Cloud Services for which the given resource has Access Approval enrolled. Access requests for the resource given by name against any of these services contained here will be required to have explicit approval. If name refers to an organization, enrollment can be done for individual services. If name refers to a folder or project, enrollment can only be done on an all or nothing basis.</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>CloudProduct</td>
+            <td>string</td>
+            <td>The product for which Access Approval will be enrolled</td>
+          </tr>
+          
+          <tr>
+            <td><span class="_TAB">&nbsp;</span>EnrollmentLevel</td>
+            <td>string</td>
+            <td>The enrollment level of the service (ENROLLMENT_LEVEL_UNSPECIFIED | BLOCK_ALL)</td>
           </tr>
           
         </table>
