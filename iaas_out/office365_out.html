@@ -113,6 +113,10 @@
           <span class="entity_name">AntiPhishPolicy</span>
         </li>
         
+        <li class="entity_key" data-entity-name="AtpPolicyForO365">
+          <span class="entity_name">AtpPolicyForO365</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="AuthorizationPolicy">
           <span class="entity_name">AuthorizationPolicy</span>
         </li>
@@ -147,6 +151,10 @@
         
         <li class="entity_key" data-entity-name="OAuth2PermissionGrant">
           <span class="entity_name">OAuth2PermissionGrant</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="QuarantinePolicy">
+          <span class="entity_name">QuarantinePolicy</span>
         </li>
         
         <li class="entity_key" data-entity-name="SafeAttachmentPolicy">
@@ -775,6 +783,12 @@
             <td>If true, guest group members will be able to access group content.</td>
           </tr>
           
+          <tr>
+            <td>BookingsEnabled</td>
+            <td>boolean</td>
+            <td>If true, the entire origanization will be able to use Microsoft Bookings.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="OwaMailboxPolicy">
@@ -1193,6 +1207,12 @@
             <td>displayStartASiteOption</td>
             <td>boolean</td>
             <td>If false, the site creation command will be hidden in SharePoint.</td>
+          </tr>
+          
+          <tr>
+            <td>excludedFileExtensionsForSyncClient</td>
+            <td>list</td>
+            <td>The list of excluded file extensions when syncing OneDrive files.</td>
           </tr>
           
         </table>
@@ -1719,6 +1739,39 @@
           
         </table>
       
+        <table class="entity_table" data-entity-name="AtpPolicyForO365">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>EnableATPForSPOTeamsODB</td>
+            <td>boolean</td>
+            <td>The EnableATPForSPOTeamsODB parameter enables or disables Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowClickThrough</td>
+            <td>boolean</td>
+            <td>The AllowClickThrough parameter specifies whether to allow users to click through to the original blocked URL in Safe Links protection for Office apps.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableSafeLinksForO365Clients</td>
+            <td>boolean</td>
+            <td>The EnableSafeLinksForO365Clients parameter enables or disables Safe Links for Office 365 apps.</td>
+          </tr>
+          
+          <tr>
+            <td>TrackClicks</td>
+            <td>boolean</td>
+            <td>The TrackClicks parameter specifies whether to track user clicks related to blocked URLs in Safe Links for Office 365 apps.</td>
+          </tr>
+          
+        </table>
+      
         <table class="entity_table" data-entity-name="SafeAttachmentPolicy">
           <tr>
             <th>Attribute</th>
@@ -1853,6 +1906,21 @@
             <td>allowExternalIdToUseEmailOtp</td>
             <td>string</td>
             <td>Determines whether email OTP is usable by external users for authentication. Possible values are: default, enabled, disabled, unknownFutureValue. Tenants in the default state who did not use public preview will automatically have email OTP enabled beginning in October 2021.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="QuarantinePolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the Quarantine policy, e.g. "DefaultFullAccessPolicy".</td>
           </tr>
           
         </table>
