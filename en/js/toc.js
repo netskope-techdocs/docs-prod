@@ -1619,11 +1619,6 @@ var toc = [{
 "url": "using-advanced-analytics.html",
 "text": "Using Advanced Analytics",
 "class": "topic-link section"
-},
-{
-"url": "using-cloud-exchange.html",
-"text": "Using Cloud Exchange",
-"class": "topic-link section"
 }]
 }]
 },
