@@ -5941,6 +5941,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "update-cloud-exchange-plugins.html",
+"text": "Update Cloud Exchange Plugins",
+"class": "topic-link section"
+},
+{
 "url": "cloud-exchange-sso-with-azure-ad.html",
 "text": "Cloud Exchange SSO with Azure AD",
 "class": "topic-link section reused-publication reused-publication"
