@@ -8,6 +8,8 @@ search.addWidget(
 		showReset: false,
 		autofocus: true,
 		placeholder: 'Search',
+		// searchimmediate is a boolean set according to the configuration for delayed algolia search.
+		searchAsYouType: searchimmediate
 	})
 );
 

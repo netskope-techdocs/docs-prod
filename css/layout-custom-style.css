@@ -9,6 +9,7 @@
 
 
 
+
 /* WHAT DOES THIS DO?, AFFECTS THE TOP NAV BAR LOGO AREA SPACING */
 
 @media (min-width:768px){
@@ -859,3 +860,4 @@ table tr:nth-child(even){
 .section-toc .section-toc-after {
 display:none;
 }*/
+

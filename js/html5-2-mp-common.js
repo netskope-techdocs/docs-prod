@@ -233,7 +233,12 @@ function displayAccordionTarget(id) {
     if (!id) {
         return false;
     }
-    var $accordion = $(id).closest('.accordion');
+    try {
+        var $accordion = $(id).closest('.accordion');
+    } catch (e) {
+        var safeId = decodeURI(id);
+        var $accordion = $(safeId).closest('.accordion');
+    }
     if ($accordion.length) {
         $accordion.find('.panel-heading').addClass('active');
         $accordion.find('.panel-body').addClass('in').css('height', 'auto');

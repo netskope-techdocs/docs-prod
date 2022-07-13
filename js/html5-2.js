@@ -134,10 +134,17 @@ $(document).on('toc.ready', function () {
     if(useanchorlinks){
         setAnchors();
     }
-    
+
     if (theme == '3' || theme == '3b') {
         $("aside ul.toc").attr({
             "data-spy": "affix", "data-offset-top": "157", "data-offset-bottom": "50"
+        });
+    }
+
+    /* Prevents double scroll bar behaviour if viewport width changes */
+    if (theme == '3c' || theme == '3d') {
+        $('.navbar-toggle').click(function() {
+            $('body').toggleClass('overflow-hidden');
         });
     }
     
@@ -145,7 +152,7 @@ $(document).on('toc.ready', function () {
     var glyphicon = "<span class='glyphicon'></span>"; 
     $('ul.nav-site-sidebar .swagger-topic').append(glyphicon);    
     
-            /*Collapse sections:*/
+    /*Collapse sections:*/
     $(".nav-site-sidebar a .glyphicon").click(function (e) {
         e.preventDefault();
         $(this).closest("li").toggleClass("opened");

@@ -584,12 +584,14 @@ h6:hover .header-link,
 }
 
 /* Centering images by css. Set in custom.classes */
-.image-center > * {
+.image-center > *, 
+.image-center > .material-placeholder > * {
     margin: 0 auto;
 }
 
 /* Right-aligned image */
-.image-right > * {
+.image-right > *, 
+.image-right > .material-placeholder > * {
     margin-right: 0px;
     margin-left: auto;
 }

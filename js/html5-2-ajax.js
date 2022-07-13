@@ -193,7 +193,12 @@ function loadContent(href, hash) {
         window.scrollTo(0, 0);
         
         if (typeof (id) !== "undefined") {
-            scrollToElement($('#' + id));
+            try {
+                scrollToElement($('#' + id));
+            } catch (e) {
+                var safeId = decodeURI(id);
+                scrollToElement($('#' + safeId));
+                }
         }
         //Adjust to make sure title is in viewport
         window.scrollBy(0, -80);

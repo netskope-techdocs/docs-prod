@@ -27,13 +27,12 @@
         }
     }
 
-    var notFoundTopicAppId = "not_found";
-
     function mapToHelpTopic(data, isrootindex) {
         var pathname = window.location.href;
         var pathonly = pathname.substring(0, pathname.lastIndexOf("/"));
         var helptopic = "";
         var notfoundtopic = "";
+        var notFoundTopicAppId = "not_found";
         
         $.urlParam = function (name) {
             var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
