@@ -234,7 +234,7 @@ div.feedback-panel{
 
 /* CONTROLS THE FONT STYLE FOR CODE STRINGS IF WE WANT TO MODIFY IT */
 
-code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:10pt;color:#000;white-space:nowrap;background-color:transparent;border-radius:4px}
+code,kbd,pre,samp{font-family:Monaco,Menlo,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:9pt;color:#000;white-space:nowrap;background-color:transparent;border-radius:4px}
 
 
 /* CONTROLS THE SPACING IN THE LOGO BLOCK IN THE TOC NAV PANEL */
@@ -860,4 +860,3 @@ table tr:nth-child(even){
 .section-toc .section-toc-after {
 display:none;
 }*/
-
