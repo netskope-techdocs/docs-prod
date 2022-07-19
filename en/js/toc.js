@@ -16,6 +16,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-96-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 96.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-96-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 96.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-96-1-0.html",
+"text": "Fixed Issues In Hotfix Release 96.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-96-0-0.html",
 "text": "Netskope Release Notes Version 96.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -497,6 +514,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-96-1-1-211.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 96.1.1.211",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-96-0-1-208.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 96.0.1.208",
@@ -2117,11 +2139,6 @@ var toc = [{
 "url": "supported-file-categories-and-file-types-307049.html",
 "text": "Supported File Categories and File Types",
 "class": "topic-link section"
-},
-{
-"url": "endpoint-data-loss-prevention.html",
-"text": "Endpoint Data Loss Prevention",
-"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -2658,8 +2675,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "about-sites.html",
-"text": "About Sites",
+"url": "about-websites.html",
+"text": "About Websites",
 "class": "topic-link section"
 },
 {
@@ -4874,7 +4891,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-platform.html",
 "text": "Next Generation API Data Protection Platform",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
 ,
 "children": [
 {
@@ -5246,7 +5263,7 @@ var toc = [{
 {
 "url": "netskope-cloud-firewall.html",
 "text": "Netskope Cloud Firewall",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
@@ -5922,7 +5939,7 @@ var toc = [{
 }]
 },
 {
-"url": "install-cloud-exchange--non-amazon-ecs-deployment-.html",
+"url": "install-cloud-exchange.html",
 "text": "Install Cloud Exchange",
 "class": "topic-link section"
 ,
@@ -6292,6 +6309,43 @@ var toc = [{
 "url": "sentinelone-plugin-for-threat-exchange.html",
 "text": "SentinelOne Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "servicenow-plugin-for-threat-exchange.html",
+"text": "ServiceNow Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "create-a-malware-detection-profile-for-servicenow.html",
+"text": "Create a Malware Detection Profile for ServiceNow",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-threat-protection-policy-for-servicenow.html",
+"text": "Create a Real-time Threat Protection Policy for ServiceNow",
+"class": "topic-link section"
+},
+{
+"url": "get-the-servicenow-user-id-and-password.html",
+"text": "Get the ServiceNow User ID and Password",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-servicenow-plugin.html",
+"text": "Configure a ServiceNow Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-servicenow.html",
+"text": "Configure Sharing for Netskope and ServiceNow",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-servicenow-plugin.html",
+"text": "Validate the ServiceNow Plugin",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -7567,8 +7621,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "about-sites-127014.html",
-"text": "About Sites",
+"url": "about-websites-127014.html",
+"text": "About Websites",
 "class": "topic-link section"
 },
 {
@@ -7622,8 +7676,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dynamic-classification.html",
-"text": "Dynamic Classification",
+"url": "dynamic-url-classification.html",
+"text": "Dynamic URL Classification",
 "class": "topic-link section"
 },
 {
