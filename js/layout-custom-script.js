@@ -6,7 +6,7 @@ $(document).ready(function() {
   var icon3 = "icon/Secure-Web-Gateway.png";
   var icon4 = "icon/Public-Cloud-Security.png";
   var icon5 = "icon/API-Protection.png";
-  var icon6 = "icon/Cloud-Firewall.png";
+  var icon6 = "icon/API-Protection.png";
   var icon7 = "icon/Cloud-Exchange.png";
   var icon8 = "icon/Advanced-Analytics.png";
 
