@@ -1552,16 +1552,6 @@ var toc = [{
 "url": "block-unmanaged-devices-from-malicious-files-uploaded-or-downloaded-from-our-sanctioned-apps.html",
 "text": "Block unmanaged devices from malicious files uploaded or downloaded from our sanctioned apps",
 "class": "topic-link section"
-},
-{
-"url": "block-unmanaged-devices-from-performing-sensitive-activities-from-our-sanctioned-apps.html",
-"text": "Block unmanaged devices from performing sensitive activities from our sanctioned apps",
-"class": "topic-link section"
-},
-{
-"url": "block-unmanaged-devices-from-downloading-sensitive-data-from-our-sanctioned-apps.html",
-"text": "Block unmanaged devices from downloading sensitive data from our sanctioned apps",
-"class": "topic-link section"
 }]
 }]
 },
