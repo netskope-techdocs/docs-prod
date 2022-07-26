@@ -515,6 +515,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-96-1-1-221.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 96.1.1.221",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-96-1-1-211.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 96.1.1.211",
 "class": "topic-link section"
@@ -2610,7 +2615,7 @@ var toc = [{
 "children": [
 {
 "url": "configure-the-appliance-in-dns-mode.html",
-"text": "Configure the appliance in DNS mode",
+"text": "Configure the Appliance in DNS Mode",
 "class": "topic-link section"
 },
 {
@@ -3517,92 +3522,6 @@ var toc = [{
 {
 "url": "dropbox-audit-events.html",
 "text": "Dropbox Audit Events",
-"class": "topic-link section"
-}]
-},
-{
-"url": "api-data-protection-for-egnyte.html",
-"text": "API Data Protection for Egnyte",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-egnyte-for-api-data-protection.html",
-"text": "Configure Egnyte for API Data Protection",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-data-protection-policy-118924.html",
-"text": "Create an API Data Protection Policy",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "application-118033.html",
-"text": "Application",
-"class": "topic-link section"
-},
-{
-"url": "users-118034.html",
-"text": "Users",
-"class": "topic-link section"
-},
-{
-"url": "content-118035.html",
-"text": "Content",
-"class": "topic-link section"
-},
-{
-"url": "dlp-118036.html",
-"text": "DLP",
-"class": "topic-link section"
-},
-{
-"url": "action-118037.html",
-"text": "Action",
-"class": "topic-link section"
-},
-{
-"url": "notification-118039.html",
-"text": "Notification",
-"class": "topic-link section"
-},
-{
-"url": "set-policy-118040.html",
-"text": "Set Policy",
-"class": "topic-link section"
-},
-{
-"url": "retroactive-scan-118041.html",
-"text": "Retroactive Scan",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-the-api-data-protection-dashboard-120514.html",
-"text": "View the API Data Protection Dashboard",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "files-page-118043.html",
-"text": "Files Page",
-"class": "topic-link section"
-},
-{
-"url": "internal-users-page-118044.html",
-"text": "Internal Users Page",
-"class": "topic-link section"
-}]
-},
-{
-"url": "deleted-deactivated-user-behavior-in-egnyte.html",
-"text": "Deleted\/Deactivated User Behavior in Egnyte",
-"class": "topic-link section"
-},
-{
-"url": "egnyte-audit-events.html",
-"text": "Egnyte Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -5215,16 +5134,6 @@ var toc = [{
 }]
 },
 {
-"url": "configure-workday-instance-for-security-posture-357703.html",
-"text": "Configure Workday Instance for Security Posture",
-"class": "topic-link section"
-},
-{
-"url": "configure-workday-instance-for-security-posture-357704.html",
-"text": "Configure Workday Instance for Security Posture",
-"class": "topic-link section"
-},
-{
 "url": "security-posture-rule.html",
 "text": "Security Posture Rule",
 "class": "topic-link section"
@@ -6405,6 +6314,38 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "azure-ad-plugin-for-risk-exchange.html",
+"text": "Azure AD Plugin for Risk Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "obtain-azure-ad-credentials.html",
+"text": "Obtain Azure AD Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-azure-ad-plugin-for-risk-exchange.html",
+"text": "Configure the Azure AD Plugin for Risk Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-business-rules-for-the-azure-ad-plugin.html",
+"text": "Configure Business Rules for the Azure AD Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-actions-for-the-azure-ad-plugin.html",
+"text": "Configure Actions for the Azure AD Plugin",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-azure-ad-plugin.html",
+"text": "Validate the Azure AD Plugin",
+"class": "topic-link section"
+}]
+},
 {
 "url": "beyondcorp-plugin-for-risk-exchange.html",
 "text": "BeyondCorp Plugin for Risk Exchange",
@@ -8455,7 +8396,7 @@ var toc = [{
 },
 {
 "url": "configure-a-login-banner.html",
-"text": "Configure a Login banner",
+"text": "Configure a Login Banner",
 "class": "topic-link section"
 }]
 },
@@ -8535,8 +8476,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "enable-forward-proxy-server.html",
-"text": "Enable forward proxy server",
+"url": "enable-a-forward-proxy-server.html",
+"text": "Enable a Forward Proxy Server",
 "class": "topic-link section"
 },
 {
@@ -8546,7 +8487,7 @@ var toc = [{
 },
 {
 "url": "configure-the-appliance-in-dns-mode-115993.html",
-"text": "Configure the appliance in DNS mode",
+"text": "Configure the Appliance in DNS Mode",
 "class": "topic-link section"
 },
 {
@@ -8637,12 +8578,12 @@ var toc = [{
 },
 {
 "url": "audit-events-generated-by-the-appliance-cli.html",
-"text": "Audit Events generated by the Appliance CLI",
+"text": "Audit Events Generated by the Appliance CLI",
 "class": "topic-link section"
 },
 {
 "url": "change-the-default-subnet.html",
-"text": "Change the default subnet",
+"text": "Change the Default Subnet",
 "class": "topic-link section"
 },
 {
@@ -8675,8 +8616,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-icap-in-netskope-s-tenant-ui.html",
-"text": "Configure ICAP in Netskope's tenant UI",
+"url": "configure-icap-in-the-netskope-ui.html",
+"text": "Configure ICAP in the Netskope UI",
 "class": "topic-link section"
 },
 {
@@ -8692,7 +8633,7 @@ var toc = [{
 },
 {
 "url": "export-or-import-configurations.html",
-"text": "Export or import configurations",
+"text": "Export or Import Configurations",
 "class": "topic-link section"
 ,
 "children": [
@@ -8720,7 +8661,7 @@ var toc = [{
 },
 {
 "url": "audit-events-generated-by-the-appliance-cli-116004.html",
-"text": "Audit Events generated by the Appliance CLI",
+"text": "Audit Events Generated by the Appliance CLI",
 "class": "topic-link section"
 },
 {
@@ -8778,7 +8719,7 @@ var toc = [{
 },
 {
 "url": "remove-an-appliance.html",
-"text": "Remove an appliance",
+"text": "Remove an Appliance",
 "class": "topic-link section"
 }]
 },
@@ -8821,7 +8762,7 @@ var toc = [{
 "children": [
 {
 "url": "find-the-ip-of-the-dns-server.html",
-"text": "Find the IP of the DNS server",
+"text": "Find the IP of the DNS Server",
 "class": "topic-link section"
 }]
 },
@@ -8833,7 +8774,7 @@ var toc = [{
 "children": [
 {
 "url": "configure-additional-interfaces-with-a-static-ip.html",
-"text": "Configure additional Interfaces with a static IP",
+"text": "Configure Additional Interfaces with a Static IP",
 "class": "topic-link section"
 }]
 },
@@ -8887,7 +8828,7 @@ var toc = [{
 },
 {
 "url": "upload-logs-from-an-amazon-s3-bucket.html",
-"text": "Upload logs from an Amazon S3 bucket",
+"text": "Upload Logs from an Amazon S3 Bucket",
 "class": "topic-link section"
 },
 {
@@ -8909,7 +8850,7 @@ var toc = [{
 "children": [
 {
 "url": "configure-a-login-banner-144852.html",
-"text": "Configure a Login banner",
+"text": "Configure a Login Banner",
 "class": "topic-link section"
 },
 {
@@ -8929,7 +8870,7 @@ var toc = [{
 },
 {
 "url": "change-the-default-subnet-144883.html",
-"text": "Change the default subnet",
+"text": "Change the Default Subnet",
 "class": "topic-link section"
 },
 {
@@ -8986,7 +8927,7 @@ var toc = [{
 },
 {
 "url": "audit-events-generated-by-the-appliance-cli-144882.html",
-"text": "Audit Events generated by the Appliance CLI",
+"text": "Audit Events Generated by the Appliance CLI",
 "class": "topic-link section"
 }]
 },
@@ -9014,8 +8955,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "enable-forward-proxy-server-144868.html",
-"text": "Enable forward proxy server",
+"url": "enable-a-forward-proxy-server-144868.html",
+"text": "Enable a Forward Proxy Server",
 "class": "topic-link section"
 },
 {
@@ -9025,7 +8966,7 @@ var toc = [{
 },
 {
 "url": "configure-the-appliance-in-dns-mode-144870.html",
-"text": "Configure the appliance in DNS mode",
+"text": "Configure the Appliance in DNS Mode",
 "class": "topic-link section"
 },
 {
@@ -9058,7 +8999,7 @@ var toc = [{
 },
 {
 "url": "export-or-import-configurations-144886.html",
-"text": "Export or import configurations",
+"text": "Export or Import Configurations",
 "class": "topic-link section"
 ,
 "children": [
@@ -9091,7 +9032,7 @@ var toc = [{
 },
 {
 "url": "upgrade-the-additional-appliance-packages.html",
-"text": "Upgrade the additional Appliance Packages",
+"text": "Upgrade the Additional Appliance Packages",
 "class": "topic-link section"
 },
 {
@@ -9101,13 +9042,13 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-93-0-0.html",
-"text": "Migrate the Virtual Appliance to 93.0.0",
+"url": "migrate-the-virtual-appliance-to-a-93-0-0.html",
+"text": "Migrate the Virtual Appliance to a 93.0.0",
 "class": "topic-link section"
 },
 {
-"url": "restore-a-virtual-appliance-from-vmware-snapshot.html",
-"text": "Restore a Virtual Appliance from VMware snapshot",
+"url": "restore-a-virtual-appliance-from-a-vmware-snapshot.html",
+"text": "Restore a Virtual Appliance from a VMware Snapshot",
 "class": "topic-link section"
 },
 {
@@ -9117,7 +9058,7 @@ var toc = [{
 },
 {
 "url": "remove-an-appliance-177438.html",
-"text": "Remove an appliance",
+"text": "Remove an Appliance",
 "class": "topic-link section"
 }]
 },
@@ -9177,7 +9118,7 @@ var toc = [{
 "children": [
 {
 "url": "configure-additional-interfaces-with-a-static-ip-147742.html",
-"text": "Configure additional Interfaces with a static IP",
+"text": "Configure Additional Interfaces with a Static IP",
 "class": "topic-link section"
 }]
 },
@@ -9203,7 +9144,7 @@ var toc = [{
 },
 {
 "url": "remove-an-appliance-177439.html",
-"text": "Remove an appliance",
+"text": "Remove an Appliance",
 "class": "topic-link section"
 }]
 },
