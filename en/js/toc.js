@@ -617,6 +617,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-exchange-release-notes-version-3-3-3.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.3.3",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "netskope-cloud-exchange-release-notes-version-3-3-1.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.1",
 "class": "topic-link section reused-publication reused-publication"
@@ -1776,6 +1781,11 @@ var toc = [{
 "url": "file-type-detection.html",
 "text": "File Type Detection",
 "class": "topic-link section"
+},
+{
+"url": "cloud-app-suite-membership.html",
+"text": "Cloud App Suite Membership",
+"class": "topic-link section"
 }]
 },
 {
@@ -2243,18 +2253,18 @@ var toc = [{
 ,
 "children": [
 {
-"url": "introduction-to-remote-browser-isolation.html",
-"text": "Introduction to Remote Browser Isolation",
+"url": "introduction-to-remote-browser-isolation--rbi-.html",
+"text": "Introduction to Remote Browser Isolation (RBI)",
 "class": "topic-link section"
 },
 {
-"url": "use-cases.html",
-"text": "Use Cases",
+"url": "rbi-use-cases.html",
+"text": "RBI Use Cases",
 "class": "topic-link section"
 },
 {
-"url": "prerequisites.html",
-"text": "Prerequisites",
+"url": "rbi-prerequisites.html",
+"text": "RBI Prerequisites",
 "class": "topic-link section"
 },
 {
@@ -3522,6 +3532,92 @@ var toc = [{
 {
 "url": "dropbox-audit-events.html",
 "text": "Dropbox Audit Events",
+"class": "topic-link section"
+}]
+},
+{
+"url": "api-data-protection-for-egnyte.html",
+"text": "API Data Protection for Egnyte",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-egnyte-for-api-data-protection.html",
+"text": "Configure Egnyte for API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-data-protection-policy-118924.html",
+"text": "Create an API Data Protection Policy",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "application-118033.html",
+"text": "Application",
+"class": "topic-link section"
+},
+{
+"url": "users-118034.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "content-118035.html",
+"text": "Content",
+"class": "topic-link section"
+},
+{
+"url": "dlp-118036.html",
+"text": "DLP",
+"class": "topic-link section"
+},
+{
+"url": "action-118037.html",
+"text": "Action",
+"class": "topic-link section"
+},
+{
+"url": "notification-118039.html",
+"text": "Notification",
+"class": "topic-link section"
+},
+{
+"url": "set-policy-118040.html",
+"text": "Set Policy",
+"class": "topic-link section"
+},
+{
+"url": "retroactive-scan-118041.html",
+"text": "Retroactive Scan",
+"class": "topic-link section"
+}]
+},
+{
+"url": "view-the-api-data-protection-dashboard-120514.html",
+"text": "View the API Data Protection Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "files-page-118043.html",
+"text": "Files Page",
+"class": "topic-link section"
+},
+{
+"url": "internal-users-page-118044.html",
+"text": "Internal Users Page",
+"class": "topic-link section"
+}]
+},
+{
+"url": "deleted-deactivated-user-behavior-in-egnyte.html",
+"text": "Deleted\/Deactivated User Behavior in Egnyte",
+"class": "topic-link section"
+},
+{
+"url": "egnyte-audit-events.html",
+"text": "Egnyte Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -5844,8 +5940,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "migrating-from-ce-2-x-to-ce-3-x.html",
-"text": "Migrating from CE 2.x to CE 3.x",
+"url": "migrating-from-ce-3-1-to-ce-3-3-3.html",
+"text": "Migrating from CE 3.1 to CE 3.3.3",
+"class": "topic-link section"
+},
+{
+"url": "migrating-from-ce-3-1-5-to-newer-versions.html",
+"text": "Migrating from CE 3.1.5 to Newer Versions",
 "class": "topic-link section"
 },
 {
@@ -5854,8 +5955,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "migrating-from-ce-3-1-5-to-newer-versions.html",
-"text": "Migrating from CE 3.1.5 to Newer Versions",
+"url": "migrating-from-ce-2-x-to-ce-3-x.html",
+"text": "Migrating from CE 2.x to CE 3.x",
 "class": "topic-link section"
 },
 {
@@ -6075,6 +6176,33 @@ var toc = [{
 "url": "rapid7-plugin-for-log-shipper.html",
 "text": "Rapid7 Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
+},
+{
+"url": "webtx-plugin-for-log-shipper.html",
+"text": "WebTx Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-event-streaming-information.html",
+"text": "Get Event Streaming Information",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-webtx-plugin.html",
+"text": "Configure the WebTx Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-supported-webtx-plugin.html",
+"text": "Configure a Supported WebTx Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-log-shipper-siem-mappings-for-the-webtx-plugin.html",
+"text": "Configure Log Shipper SIEM Mappings for the WebTx Plugin",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -7143,7 +7271,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "prerequisites-224343.html",
+"url": "prerequisites.html",
 "text": "Prerequisites",
 "class": "topic-link section"
 },
