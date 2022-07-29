@@ -5918,6 +5918,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "required-network-connectivity-for-3rd-party-plugins.html",
+"text": "Required Network Connectivity for 3rd-Party Plugins",
+"class": "topic-link section"
+},
+{
 "url": "cloud-exchange-feature-lists.html",
 "text": "Cloud Exchange Feature Lists",
 "class": "topic-link section"
@@ -5940,8 +5945,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "migrating-from-ce-3-1-to-ce-3-3-3.html",
-"text": "Migrating from CE 3.1 to CE 3.3.3",
+"url": "migrating-from-ce-3-1-or-newer-to-ce-3-3-3.html",
+"text": "Migrating from CE 3.1 or newer to CE 3.3.3",
 "class": "topic-link section"
 },
 {
