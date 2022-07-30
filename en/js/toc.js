@@ -6186,28 +6186,6 @@ var toc = [{
 "url": "webtx-plugin-for-log-shipper.html",
 "text": "WebTx Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "get-event-streaming-information.html",
-"text": "Get Event Streaming Information",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-webtx-plugin.html",
-"text": "Configure the WebTx Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-a-supported-webtx-plugin.html",
-"text": "Configure a Supported WebTx Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-log-shipper-siem-mappings-for-the-webtx-plugin.html",
-"text": "Configure Log Shipper SIEM Mappings for the WebTx Plugin",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -6466,33 +6444,6 @@ var toc = [{
 "url": "azure-ad-plugin-for-risk-exchange.html",
 "text": "Azure AD Plugin for Risk Exchange",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "obtain-azure-ad-credentials.html",
-"text": "Obtain Azure AD Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-azure-ad-plugin-for-risk-exchange.html",
-"text": "Configure the Azure AD Plugin for Risk Exchange",
-"class": "topic-link section"
-},
-{
-"url": "configure-business-rules-for-the-azure-ad-plugin.html",
-"text": "Configure Business Rules for the Azure AD Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-actions-for-the-azure-ad-plugin.html",
-"text": "Configure Actions for the Azure AD Plugin",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-azure-ad-plugin.html",
-"text": "Validate the Azure AD Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "beyondcorp-plugin-for-risk-exchange.html",
