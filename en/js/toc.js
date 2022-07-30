@@ -5950,11 +5950,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "migrating-from-ce-3-1-5-to-newer-versions.html",
-"text": "Migrating from CE 3.1.5 to Newer Versions",
-"class": "topic-link section"
-},
-{
 "url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
 "text": "Migrating from CE 3.x to CE 3.1.5",
 "class": "topic-link section"
