@@ -2450,63 +2450,15 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access.html",
-"text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-azure-ad-saml.html",
-"text": "Configure Azure AD SAML",
-"class": "topic-link section"
-},
-{
-"url": "configure-okta-saml.html",
-"text": "Configure Okta SAML",
-"class": "topic-link section"
-},
-{
-"url": "configure-browser-access-for-private-apps.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-}]
-},
-{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-publisher-auto-updates.html",
-"text": "Configure Publisher Auto-Updates",
-"class": "topic-link section"
-}]
 }]
 },
 {
 "url": "private-app-management.html",
 "text": "Private App Management",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-browser-access-for-private-apps-346711.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-google-workspace-as-the-idp-for-browser-access-authentication.html",
-"text": "Configure Google Workspace as the IdP for Browser Access Authentication",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-app-discovery-for-private-apps.html",
-"text": "Configure App Discovery for Private Apps",
-"class": "topic-link section"
-}]
 },
 {
 "url": "create-a-real-time-protection-policy-for-private-apps.html",
@@ -2588,28 +2540,6 @@ var toc = [{
 "url": "view-events-and-alerts-for-private-apps.html",
 "text": "View Events and Alerts for Private Apps",
 "class": "topic-link section"
-},
-{
-"url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access-377437.html",
-"text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-azure-ad-saml-377475.html",
-"text": "Configure Azure AD SAML",
-"class": "topic-link section"
-},
-{
-"url": "configure-okta-saml-377476.html",
-"text": "Configure Okta SAML",
-"class": "topic-link section"
-},
-{
-"url": "configure-browser-access-for-private-apps-2-378561.html",
-"text": "Configure Browser Access for Private Apps",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-private-access-for-microsoft-active-directory-domain-services.html",
