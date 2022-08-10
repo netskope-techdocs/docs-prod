@@ -10,6 +10,19 @@
   <div class="container">
     <div class="entity_keys">
       
+      <h2 class="entity_category Config">Config</h2>
+      <ul>
+        
+        <li class="entity_key" data-entity-name="EmailRelay">
+          <span class="entity_name">EmailRelay</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="UserProvisioningConfig">
+          <span class="entity_name">UserProvisioningConfig</span>
+        </li>
+        
+      </ul>
+      
       <h2 class="entity_category Identity">Identity</h2>
       <ul>
         
@@ -569,6 +582,39 @@
             <td>urlPattern</td>
             <td>string</td>
             <td>A URL pattern for the origin. The origin URL pattern must include the HTTPS protocol and a domain name, and may include a port. The wildcard character (*) is supported and must be in front of a second-level domain name. For example, https://*.example.com adds all subdomains of example.com to the allowlist. The origin URL pattern can be an IP address. However, an IP address and a domain that resolve to the same address are not the same origin and must be added to the CORS allowlist as separate entries.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="EmailRelay">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Host</td>
+            <td>string</td>
+            <td>Indicates the host name or IP address of your company's SMTP server.</td>
+          </tr>
+          
+          <tr>
+            <td>IsRequireAuth</td>
+            <td>boolean</td>
+            <td>Indicates whether (true) or not (false) authentication is required.  When setting this field to true, the TlsSetting must be set to  RequiredVerify. This field is available in API version 44.0 and later.</td>
+          </tr>
+          
+          <tr>
+            <td>TlsSetting</td>
+            <td>string</td>
+            <td>Specifies whether Salesforce uses TLS for SMTP sessions. Possible values include: Off, Preferred, Required, PreferredVerify, RequiredVerify.</td>
+          </tr>
+          
+          <tr>
+            <td>Username</td>
+            <td>string</td>
+            <td>Specifies the username for relay host STMP authentication. When  IsRequireAuth is set to true, this field is required. This field is  available in API version 44.0 and later.</td>
           </tr>
           
         </table>
@@ -1178,6 +1224,45 @@
             <td>isLoginWithSalesforceCredentialsDisabled</td>
             <td>boolean</td>
             <td>If true, users are redirected to third-party identity providers for authentication.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="UserProvisioningConfig">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>approvalRequired</td>
+            <td>string</td>
+            <td>Indicates whether approvals are required for provisioning users for  the associated connected app. If the value is null, no approval is  required. </td>
+          </tr>
+          
+          <tr>
+            <td>connectedApp</td>
+            <td>string</td>
+            <td>The ID of the connected app for which users are being provisioned.</td>
+          </tr>
+          
+          <tr>
+            <td>enabled</td>
+            <td>boolean</td>
+            <td>Indicates whether user provisioning is enabled for the associated  connected app (true) or not (false). Default setting is false.</td>
+          </tr>
+          
+          <tr>
+            <td>enabledOperations</td>
+            <td>string</td>
+            <td>Lists the operations, as comma-separated values, that create a user  provisioning request for the associated connected app.</td>
+          </tr>
+          
+          <tr>
+            <td>masterLabel</td>
+            <td>string</td>
+            <td>The master label for this object. This value is the internal label that  doesn't get translated</td>
           </tr>
           
         </table>

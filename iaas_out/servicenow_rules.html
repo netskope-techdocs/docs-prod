@@ -4,10 +4,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--
 <script src="jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="rules_styles.css">
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
 -->
 <style>
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -20,18 +20,19 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -46,6 +47,7 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+	content: '';
 	content: none;
 }
 table {
@@ -84,22 +86,24 @@ input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
 }
 
 img[alt="Netskope"] {display:block; margin:1.2rem;}
-.container {display: flex; flex-direction: row; padding: 1.5rem; position: fixed; top: 110;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
 ._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
-.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys {display:inline-block; margin:0.4rem; margin-top:0; padding-right:0.5rem}
 .rule_keys>.rule_category:first-child{margin-top:0;}
 .rule_keys ul {list-style: none;}
 .rule_keys li {cursor: pointer;}
 .rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
 
+.rule_keys {position: fixed; top:135; width: 350px}
 img {position: fixed; top: 0}
 h1 {position: fixed; top: 75}
 
-.rule_tables {flex:3 1 0px;display:inline-block; height: calc(100vh - 110px - 1.5rem); overflow: scroll;}
+.rule_tables {flex:3 1 0px;display:inline-block;}
 .rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
 .rule_tables table {table-layout: fixed; width:100%;}
 .rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
 .rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
 
 /* rule styles */
 .rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
@@ -162,9 +166,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        <!--
+        <!-- 
         -->
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -2113,7 +2117,7 @@ h1 {position: fixed; top: 75}
   <script>
 
   // Sort
-  const getCellValue = (tr, idx) => (idx === 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
   const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
       v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
       )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
@@ -2159,7 +2163,7 @@ h1 {position: fixed; top: 75}
       timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
     };
-  }
+  };
 
   // Nav Menu Show/Hide
   function hideRuleTables() {
@@ -2169,7 +2173,7 @@ h1 {position: fixed; top: 75}
 
   function showRuleTable(name) {
     // c) show this table
-    if (name === 'ALL') {
+    if (name == 'ALL') { 
         $('.rule_table').show()
     } else {
         $('.rule_table[data-profile-name="'+name+'"]').show()
@@ -2181,7 +2185,7 @@ h1 {position: fixed; top: 75}
     hideRuleTables()
     // b) find the table in '.rule_table' with the same 'profile-name' data attribute
     showRuleTable(profile_name)
-    if (name === "ALL") {
+    if (name == "ALL") { 
         $('.rule_key').addClass('active')
     } else {
         $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
@@ -2189,7 +2193,7 @@ h1 {position: fixed; top: 75}
   }
 
   function initListeners(){
-    // 1. iterate over each Rule list item
+    // 1. iterate over each Rule list item   
     $('.rule_key').each(function(i, obj) {
       var ruleKey = $(obj)
       var ruleName = ruleKey.data('profile-name')

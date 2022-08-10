@@ -17,6 +17,10 @@
           <span class="entity_name">SysProperties</span>
         </li>
         
+        <li class="entity_key" data-entity-name="SystemProperty">
+          <span class="entity_name">SystemProperty</span>
+        </li>
+        
       </ul>
       
     </div>
@@ -135,6 +139,63 @@
             <td>glide__login__no_blank_password</td>
             <td>boolean</td>
             <td>This property disallows local logins that do not supply a password.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SystemProperty">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>name</td>
+            <td>string</td>
+            <td>The property name.</td>
+          </tr>
+          
+          <tr>
+            <td>value</td>
+            <td>string</td>
+            <td>The property value.</td>
+          </tr>
+          
+          <tr>
+            <td>number_value</td>
+            <td>number</td>
+            <td>The value as a number representation. This value will be populated if the value  is of a numerical type. It can be utilized for writing DSL rules that numerical  expression evaluation (i.e. greater than).</td>
+          </tr>
+          
+          <tr>
+            <td>type</td>
+            <td>string</td>
+            <td>The data type of the property value.</td>
+          </tr>
+          
+          <tr>
+            <td>choices</td>
+            <td>string</td>
+            <td>Comma-separated values for a choice list.</td>
+          </tr>
+          
+          <tr>
+            <td>is_private</td>
+            <td>string</td>
+            <td>If this property is true, ServiceNow will exclude this property from being imported via update sets. Keeping system properties private prevents settings in one instance from overwriting values in another instance. For example, you may not want a system property in a development instance to use the same value as a production instance.</td>
+          </tr>
+          
+          <tr>
+            <td>write_roles</td>
+            <td>string</td>
+            <td>Defines the roles that have write access to this property.</td>
+          </tr>
+          
+          <tr>
+            <td>read_roles</td>
+            <td>string</td>
+            <td>Defines the roles that have read access to this property.</td>
           </tr>
           
         </table>

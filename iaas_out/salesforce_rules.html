@@ -4,10 +4,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--
 <script src="jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="rules_styles.css">
+<link rel="stylesheet" type="text/css" href="rules_styles.css"> 
 -->
 <style>
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -20,18 +20,19 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -46,6 +47,7 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+	content: '';
 	content: none;
 }
 table {
@@ -84,22 +86,24 @@ input { margin-left: 2px; margin-bottom: 5px; padding: 2px 3px; width: 300; }
 }
 
 img[alt="Netskope"] {display:block; margin:1.2rem;}
-.container {display: flex; flex-direction: row; padding: 1.5rem; position: fixed; top: 110;}
+.container {display: flex; flex-direction: row; padding: 1.5rem;}
 ._TAB{ display: inline-block; width: 0.4rem; height: 0.1rem; border-top: 0.5rem solid transparent; border-bottom: 0.5rem solid transparent; border-left: 0.5rem solid rgba(125,125,125,0.40); margin-left: 1.4rem; margin-right: 0.1rem;}
-.rule_keys {display:inline-block; margin:0.7rem; margin-top:0; padding-right:2.0rem}
+.rule_keys {display:inline-block; margin:0.4rem; margin-top:0; padding-right:0.5rem}
 .rule_keys>.rule_category:first-child{margin-top:0;}
 .rule_keys ul {list-style: none;}
 .rule_keys li {cursor: pointer;}
 .rule_keys li:hover {background-color: rgba(255,131,0,0.39); }
 
+.rule_keys {position: fixed; top:135; width: 350px}
 img {position: fixed; top: 0}
 h1 {position: fixed; top: 75}
 
-.rule_tables {flex:3 1 0px;display:inline-block; height: calc(100vh - 110px - 1.5rem); overflow: scroll;}
+.rule_tables {flex:3 1 0px;display:inline-block;}
 .rule_tables table, .rule_tables th, .rule_tables td { border: 1px solid rgba(150,150,100,0.5);  }
 .rule_tables table {table-layout: fixed; width:100%;}
 .rule_tables th {background-color: rgba(180,180,180,0.2); padding:0.2rem;}
 .rule_tables td {padding: 0.2rem;}
+.rule_tables {position: absolute; left: 400; top: 135}
 
 /* rule styles */
 .rule_category, .rule_name {display:inline-block;float:none; padding-right:0.2rem;}
@@ -162,9 +166,9 @@ h1 {position: fixed; top: 75}
             -->
         </ul>
         <br><br>
-        <!--
+        <!-- 
         -->
-        &#x1F50D;<input type="text" id="search" placeholder="Type to search">
+        &#x1F50D;<input type="text" id="search" placeholder="Type to search"> 
     </div>
     <div class="rule_tables">
       
@@ -798,6 +802,30 @@ Administrators should suspend group membership calculations only when performing
           
           <tr num="54">
             <!-- <td>54</td> -->
+            <td>Email Relays enforces use of TLS and requires verification</td>
+            <td>Ensure Email relays in the organization are authorized.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">EmailRelay should have IsRequireAuth eq True and TlsSetting eq "RequiredVerify"</td>
+          </tr>
+          
+          <tr num="55">
+            <!-- <td>55</td> -->
+            <td>Ensure Email Relay is setup within the organization</td>
+            <td>Ensures that an Email Relay is set up within the organization.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have EmailRelays len() gt 0</td>
+          </tr>
+          
+          <tr num="56">
+            <!-- <td>56</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -808,8 +836,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="55">
-            <!-- <td>55</td> -->
+          <tr num="57">
+            <!-- <td>57</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -820,8 +848,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="56">
-            <!-- <td>56</td> -->
+          <tr num="58">
+            <!-- <td>58</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -832,8 +860,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="57">
-            <!-- <td>57</td> -->
+          <tr num="59">
+            <!-- <td>59</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -844,430 +872,20 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="58">
-            <!-- <td>58</td> -->
-            <td>Enable Content Sniffing protection</td>
-            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
-          </tr>
-          
-          <tr num="59">
-            <!-- <td>59</td> -->
-            <td>Allow Lightning Login</td>
-            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
-          </tr>
-          
           <tr num="60">
             <!-- <td>60</td> -->
-            <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
-            <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+            <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+            <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
             <td>
             
+              CRM<br>
+            
             </td>
-            <td class="code">SessionSettings should have enableLightningLoginOnlyWithUserPerm eq true </td>
+            <td class="code">LightningExperienceSettings should have enableAuraCDNPref eq true </td>
           </tr>
           
           <tr num="61">
             <!-- <td>61</td> -->
-            <td>Enable secure and persistent browser caching</td>
-            <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
-            <td>
-            
-            </td>
-            <td class="code">MobileSettings should have enableS1EncryptedStoragePref2 eq true</td>
-          </tr>
-          
-          <tr num="62">
-            <!-- <td>62</td> -->
-            <td>Require read access to a record to see its name in lookup and system fields</td>
-            <td>Users must have read access to a record to see its name in lookup and system fields</td>
-            <td>
-            
-            </td>
-            <td class="code">SharingSettings should have enableRestrictAccessLookupRecords eq true</td>
-          </tr>
-          
-          <tr num="63">
-            <!-- <td>63</td> -->
-            <td>Enable SAML login for users</td>
-            <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
-            <td>
-            
-            </td>
-            <td class="code">SingleSignOnSettings should have enableSamlLogin eq true </td>
-          </tr>
-          
-          <tr num="64">
-            <!-- <td>64</td> -->
-            <td>Set guest user organization-wide defaults to Private</td>
-            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
-          </tr>
-          
-          <tr num="65">
-            <!-- <td>65</td> -->
-            <td>Enable SMS Identity</td>
-            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
-          </tr>
-          
-          <tr num="66">
-            <!-- <td>66</td> -->
-            <td>Ensure XSS protection is enabled</td>
-            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have enableXssProtection eq true</td>
-          </tr>
-          
-          <tr num="67">
-            <!-- <td>67</td> -->
-            <td>Enforce IP ranges for every request</td>
-            <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have enforceIpRangesEveryRequest eq true </td>
-          </tr>
-          
-          <tr num="68">
-            <!-- <td>68</td> -->
-            <td>Ensure that no certificates are expired</td>
-            <td>Ensure that no certificates have expired.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
-          </tr>
-          
-          <tr num="69">
-            <!-- <td>69</td> -->
-            <td>Ensure file upload and download security rules are configured</td>
-            <td>There is at least one file upload and download security rule configured for the organization</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
-          </tr>
-          
-          <tr num="70">
-            <!-- <td>70</td> -->
-            <td>Display a warning and force re-login after a period of inactivity</td>
-            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
-          </tr>
-          
-          <tr num="71">
-            <!-- <td>71</td> -->
-            <td>Assets should inherit parent object access rules</td>
-            <td>Assets should not have sharing enabled by default. Access to an asset should be inherited by its parent objects' sharing rules.</td>
-            <td>
-            
-            </td>
-            <td class="code">SharingSettings should have enableAssetSharing eq false</td>
-          </tr>
-          
-          <tr num="72">
-            <!-- <td>72</td> -->
-            <td>Lock user sessions to the login domain</td>
-            <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have lockSessionsToDomain eq true </td>
-          </tr>
-          
-          <tr num="73">
-            <!-- <td>73</td> -->
-            <td>Lock user sessions to the login IP address</td>
-            <td>Lock user sessions to the IP address from which the user logged in.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have lockSessionsToIp eq true </td>
-          </tr>
-          
-          <tr num="74">
-            <!-- <td>74</td> -->
-            <td>Limit the number of failed login attempts to 5 or less</td>
-            <td>After 5 failed login attempts, the user will be locked out.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
-          </tr>
-          
-          <tr num="75">
-            <!-- <td>75</td> -->
-            <td>Ensure IP restriction is configured</td>
-            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
-          </tr>
-          
-          <tr num="76">
-            <!-- <td>76</td> -->
-            <td>Enforce password complexity requirements</td>
-            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
-          </tr>
-          
-          <tr num="77">
-            <!-- <td>77</td> -->
-            <td>Set passwords to expire after 90 days</td>
-            <td>Ensure that user passwords expire after 90 days and must be changed.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
-          </tr>
-          
-          <tr num="78">
-            <!-- <td>78</td> -->
-            <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
-            <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
-          </tr>
-          
-          <tr num="79">
-            <!-- <td>79</td> -->
-            <td>Set password lockout interval to 30 minutes</td>
-            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
-          </tr>
-          
-          <tr num="80">
-            <!-- <td>80</td> -->
-            <td>Require a minimum 1 day password lifetime</td>
-            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
-          </tr>
-          
-          <tr num="81">
-            <!-- <td>81</td> -->
-            <td>Obscure secret answers for password resets</td>
-            <td>Hide answers to password reset security questions as the user types.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
-          </tr>
-          
-          <tr num="82">
-            <!-- <td>82</td> -->
-            <td>Password hint question should not contain the password</td>
-            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
-          </tr>
-          
-          <tr num="83">
-            <!-- <td>83</td> -->
-            <td>Prevent identity verification by email if SMS or Salesforce Authenticator configured</td>
-            <td>Prevent identity verification by email for users who have registered other verification methods, such as SMS or Salesforce Authenticator. If no other verification methods are configured, users are verified by email.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have canConfirmIdentityBySmsOnly eq true </td>
-          </tr>
-          
-          <tr num="84">
-            <!-- <td>84</td> -->
-            <td>Protect referrer URL</td>
-            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have referrerPolicy eq true</td>
-          </tr>
-          
-          <tr num="85">
-            <!-- <td>85</td> -->
-            <td>Logging is enabled for real time events</td>
-            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
-          </tr>
-          
-          <tr num="86">
-            <!-- <td>86</td> -->
-            <td>Warn users when they are redirected outside of Salesforce</td>
-            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have redirectionWarning eq true</td>
-          </tr>
-          
-          <tr num="87">
-            <!-- <td>87</td> -->
-            <td>Remote site settings are configured</td>
-            <td>Ensure that the organization has at least one active remote site setting.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
-          </tr>
-          
-          <tr num="88">
-            <!-- <td>88</td> -->
-            <td>Require email confirmations for email address changes</td>
-            <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have canConfirmEmailChangeInLightningCommunities eq true</td>
-          </tr>
-          
-          <tr num="89">
-            <!-- <td>89</td> -->
-            <td>Require HttpOnly attribute to restrict session ID cookie access</td>
-            <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have requireHttpOnly eq true</td>
-          </tr>
-          
-          <tr num="90">
-            <!-- <td>90</td> -->
-            <td>Require identify verification during two-factor authentication (2FA) registration</td>
-            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
-          </tr>
-          
-          <tr num="91">
-            <!-- <td>91</td> -->
-            <td>Require identify verification for email address changes</td>
-            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
-          </tr>
-          
-          <tr num="92">
-            <!-- <td>92</td> -->
-            <td>Time out user sessions after 15 minutes</td>
-            <td>Prompt users to log out or continue working after 15 minutes.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
-          </tr>
-          
-          <tr num="93">
-            <!-- <td>93</td> -->
-            <td>Enable single sign-on</td>
-            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
-            <td>
-            
-              CRM<br>
-            
-            </td>
-            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
-          </tr>
-          
-          <tr num="94">
-            <!-- <td>94</td> -->
-            <td>Use POST requests for cross-domain information exchange</td>
-            <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests.</td>
-            <td>
-            
-            </td>
-            <td class="code">SessionSettings should have enablePostForSessions eq true </td>
-          </tr>
-          
-          <tr num="95">
-            <!-- <td>95</td> -->
             <td>Ensure Content Security Policy protection for email templates is enabled</td>
             <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
             <td>
@@ -1278,8 +896,20 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSPOnEmail eq true</td>
           </tr>
           
-          <tr num="96">
-            <!-- <td>96</td> -->
+          <tr num="62">
+            <!-- <td>62</td> -->
+            <td>Enable Content Sniffing protection</td>
+            <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
+          </tr>
+          
+          <tr num="63">
+            <!-- <td>63</td> -->
             <td>Ensure Force re-login after Login-As-User is enabled</td>
             <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
             <td>
@@ -1290,16 +920,426 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have forceRelogin eq true</td>
           </tr>
           
-          <tr num="97">
-            <!-- <td>97</td> -->
-            <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
-            <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+          <tr num="64">
+            <!-- <td>64</td> -->
+            <td>Allow Lightning Login</td>
+            <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
             
               CRM<br>
             
             </td>
-            <td class="code">LightningExperienceSettings should have enableAuraCDNPref eq true </td>
+            <td class="code">SessionSettings should have enableLightningLogin eq true</td>
+          </tr>
+          
+          <tr num="65">
+            <!-- <td>65</td> -->
+            <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+            <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have enableLightningLoginOnlyWithUserPerm eq true </td>
+          </tr>
+          
+          <tr num="66">
+            <!-- <td>66</td> -->
+            <td>Enable secure and persistent browser caching</td>
+            <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
+            <td>
+            
+            </td>
+            <td class="code">MobileSettings should have enableS1EncryptedStoragePref2 eq true</td>
+          </tr>
+          
+          <tr num="67">
+            <!-- <td>67</td> -->
+            <td>Require read access to a record to see its name in lookup and system fields</td>
+            <td>Users must have read access to a record to see its name in lookup and system fields</td>
+            <td>
+            
+            </td>
+            <td class="code">SharingSettings should have enableRestrictAccessLookupRecords eq true</td>
+          </tr>
+          
+          <tr num="68">
+            <!-- <td>68</td> -->
+            <td>Enable SAML login for users</td>
+            <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+            <td>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have enableSamlLogin eq true </td>
+          </tr>
+          
+          <tr num="69">
+            <!-- <td>69</td> -->
+            <td>Set guest user organization-wide defaults to Private</td>
+            <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
+          </tr>
+          
+          <tr num="70">
+            <!-- <td>70</td> -->
+            <td>Enable SMS Identity</td>
+            <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
+          </tr>
+          
+          <tr num="71">
+            <!-- <td>71</td> -->
+            <td>Ensure XSS protection is enabled</td>
+            <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have enableXssProtection eq true</td>
+          </tr>
+          
+          <tr num="72">
+            <!-- <td>72</td> -->
+            <td>Enforce IP ranges for every request</td>
+            <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have enforceIpRangesEveryRequest eq true </td>
+          </tr>
+          
+          <tr num="73">
+            <!-- <td>73</td> -->
+            <td>Ensure that no certificates are expired</td>
+            <td>Ensure that no certificates have expired.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
+          </tr>
+          
+          <tr num="74">
+            <!-- <td>74</td> -->
+            <td>Ensure file upload and download security rules are configured</td>
+            <td>There is at least one file upload and download security rule configured for the organization</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
+          </tr>
+          
+          <tr num="75">
+            <!-- <td>75</td> -->
+            <td>Display a warning and force re-login after a period of inactivity</td>
+            <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
+          </tr>
+          
+          <tr num="76">
+            <!-- <td>76</td> -->
+            <td>Assets should inherit parent object access rules</td>
+            <td>Assets should not have sharing enabled by default. Access to an asset should be inherited by its parent objects' sharing rules.</td>
+            <td>
+            
+            </td>
+            <td class="code">SharingSettings should have enableAssetSharing eq false</td>
+          </tr>
+          
+          <tr num="77">
+            <!-- <td>77</td> -->
+            <td>Lock user sessions to the login domain</td>
+            <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have lockSessionsToDomain eq true </td>
+          </tr>
+          
+          <tr num="78">
+            <!-- <td>78</td> -->
+            <td>Lock user sessions to the login IP address</td>
+            <td>Lock user sessions to the IP address from which the user logged in.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have lockSessionsToIp eq true </td>
+          </tr>
+          
+          <tr num="79">
+            <!-- <td>79</td> -->
+            <td>Limit the number of failed login attempts to 5 or less</td>
+            <td>After 5 failed login attempts, the user will be locked out.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
+          </tr>
+          
+          <tr num="80">
+            <!-- <td>80</td> -->
+            <td>Ensure IP restriction is configured</td>
+            <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
+          </tr>
+          
+          <tr num="81">
+            <!-- <td>81</td> -->
+            <td>Enforce password complexity requirements</td>
+            <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
+          </tr>
+          
+          <tr num="82">
+            <!-- <td>82</td> -->
+            <td>Set passwords to expire after 90 days</td>
+            <td>Ensure that user passwords expire after 90 days and must be changed.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
+          </tr>
+          
+          <tr num="83">
+            <!-- <td>83</td> -->
+            <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
+            <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
+          </tr>
+          
+          <tr num="84">
+            <!-- <td>84</td> -->
+            <td>Set password lockout interval to 30 minutes</td>
+            <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
+          </tr>
+          
+          <tr num="85">
+            <!-- <td>85</td> -->
+            <td>Require a minimum 1 day password lifetime</td>
+            <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
+          </tr>
+          
+          <tr num="86">
+            <!-- <td>86</td> -->
+            <td>Obscure secret answers for password resets</td>
+            <td>Hide answers to password reset security questions as the user types.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
+          </tr>
+          
+          <tr num="87">
+            <!-- <td>87</td> -->
+            <td>Password hint question should not contain the password</td>
+            <td>Do not allow the answer to the password hint question to contain the password itself.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
+          </tr>
+          
+          <tr num="88">
+            <!-- <td>88</td> -->
+            <td>Prevent identity verification by email if SMS or Salesforce Authenticator configured</td>
+            <td>Prevent identity verification by email for users who have registered other verification methods, such as SMS or Salesforce Authenticator. If no other verification methods are configured, users are verified by email.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have canConfirmIdentityBySmsOnly eq true </td>
+          </tr>
+          
+          <tr num="89">
+            <!-- <td>89</td> -->
+            <td>Protect referrer URL</td>
+            <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have referrerPolicy eq true</td>
+          </tr>
+          
+          <tr num="90">
+            <!-- <td>90</td> -->
+            <td>Logging is enabled for real time events</td>
+            <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
+          </tr>
+          
+          <tr num="91">
+            <!-- <td>91</td> -->
+            <td>Warn users when they are redirected outside of Salesforce</td>
+            <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have redirectionWarning eq true</td>
+          </tr>
+          
+          <tr num="92">
+            <!-- <td>92</td> -->
+            <td>Remote site settings are configured</td>
+            <td>Ensure that the organization has at least one active remote site setting.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
+          </tr>
+          
+          <tr num="93">
+            <!-- <td>93</td> -->
+            <td>Require email confirmations for email address changes</td>
+            <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have canConfirmEmailChangeInLightningCommunities eq true</td>
+          </tr>
+          
+          <tr num="94">
+            <!-- <td>94</td> -->
+            <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+            <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have requireHttpOnly eq true</td>
+          </tr>
+          
+          <tr num="95">
+            <!-- <td>95</td> -->
+            <td>Require identify verification during two-factor authentication (2FA) registration</td>
+            <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
+          </tr>
+          
+          <tr num="96">
+            <!-- <td>96</td> -->
+            <td>Require identify verification for email address changes</td>
+            <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
+          </tr>
+          
+          <tr num="97">
+            <!-- <td>97</td> -->
+            <td>Time out user sessions after 15 minutes</td>
+            <td>Prompt users to log out or continue working after 15 minutes.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
+          </tr>
+          
+          <tr num="98">
+            <!-- <td>98</td> -->
+            <td>Enable single sign-on</td>
+            <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">SingleSignOnSettings should have isLoginWithSalesforceCredentialsDisabled eq true </td>
+          </tr>
+          
+          <tr num="99">
+            <!-- <td>99</td> -->
+            <td>Use POST requests for cross-domain information exchange</td>
+            <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests.</td>
+            <td>
+            
+            </td>
+            <td class="code">SessionSettings should have enablePostForSessions eq true </td>
+          </tr>
+          
+          <tr num="100">
+            <!-- <td>100</td> -->
+            <td>Ensure user provisioning for connected apps require approval</td>
+            <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes</td>
+            <td>
+            
+              CRM<br>
+            
+            </td>
+            <td class="code">UserProvisioningConfig should have approvalRequired neq "None"</td>
           </tr>
           
         </table>
@@ -1313,8 +1353,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="98">
-            <!-- <td>98</td> -->
+          <tr num="101">
+            <!-- <td>101</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -1325,8 +1365,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="99">
-            <!-- <td>99</td> -->
+          <tr num="102">
+            <!-- <td>102</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -1337,8 +1377,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="100">
-            <!-- <td>100</td> -->
+          <tr num="103">
+            <!-- <td>103</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -1349,8 +1389,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="101">
-            <!-- <td>101</td> -->
+          <tr num="104">
+            <!-- <td>104</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -1361,8 +1401,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="102">
-            <!-- <td>102</td> -->
+          <tr num="105">
+            <!-- <td>105</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -1373,8 +1413,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="103">
-            <!-- <td>103</td> -->
+          <tr num="106">
+            <!-- <td>106</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -1385,8 +1425,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="104">
-            <!-- <td>104</td> -->
+          <tr num="107">
+            <!-- <td>107</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -1397,8 +1437,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="105">
-            <!-- <td>105</td> -->
+          <tr num="108">
+            <!-- <td>108</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -1409,8 +1449,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="106">
-            <!-- <td>106</td> -->
+          <tr num="109">
+            <!-- <td>109</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -1421,8 +1461,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="107">
-            <!-- <td>107</td> -->
+          <tr num="110">
+            <!-- <td>110</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -1433,8 +1473,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="108">
-            <!-- <td>108</td> -->
+          <tr num="111">
+            <!-- <td>111</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -1445,8 +1485,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="109">
-            <!-- <td>109</td> -->
+          <tr num="112">
+            <!-- <td>112</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -1457,8 +1497,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="110">
-            <!-- <td>110</td> -->
+          <tr num="113">
+            <!-- <td>113</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -1469,8 +1509,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="111">
-            <!-- <td>111</td> -->
+          <tr num="114">
+            <!-- <td>114</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -1481,8 +1521,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="112">
-            <!-- <td>112</td> -->
+          <tr num="115">
+            <!-- <td>115</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -1493,8 +1533,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="113">
-            <!-- <td>113</td> -->
+          <tr num="116">
+            <!-- <td>116</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -1505,8 +1545,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="114">
-            <!-- <td>114</td> -->
+          <tr num="117">
+            <!-- <td>117</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -1517,8 +1557,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="115">
-            <!-- <td>115</td> -->
+          <tr num="118">
+            <!-- <td>118</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -1529,8 +1569,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="116">
-            <!-- <td>116</td> -->
+          <tr num="119">
+            <!-- <td>119</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -1541,8 +1581,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="117">
-            <!-- <td>117</td> -->
+          <tr num="120">
+            <!-- <td>120</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -1553,8 +1593,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="118">
-            <!-- <td>118</td> -->
+          <tr num="121">
+            <!-- <td>121</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -1565,8 +1605,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="119">
-            <!-- <td>119</td> -->
+          <tr num="122">
+            <!-- <td>122</td> -->
             <td>Password hint question should not contain the password</td>
             <td>Do not allow the answer to the password hint question to contain the password itself.</td>
             <td>
@@ -1577,8 +1617,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
           </tr>
           
-          <tr num="120">
-            <!-- <td>120</td> -->
+          <tr num="123">
+            <!-- <td>123</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -1589,8 +1629,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="121">
-            <!-- <td>121</td> -->
+          <tr num="124">
+            <!-- <td>124</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -1601,8 +1641,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="122">
-            <!-- <td>122</td> -->
+          <tr num="125">
+            <!-- <td>125</td> -->
             <td>Warn users when they are redirected outside of Salesforce</td>
             <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
             <td>
@@ -1613,8 +1653,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have redirectionWarning eq true</td>
           </tr>
           
-          <tr num="123">
-            <!-- <td>123</td> -->
+          <tr num="126">
+            <!-- <td>126</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -1625,8 +1665,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="124">
-            <!-- <td>124</td> -->
+          <tr num="127">
+            <!-- <td>127</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -1637,8 +1677,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="125">
-            <!-- <td>125</td> -->
+          <tr num="128">
+            <!-- <td>128</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -1649,8 +1689,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="126">
-            <!-- <td>126</td> -->
+          <tr num="129">
+            <!-- <td>129</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -1672,8 +1712,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="127">
-            <!-- <td>127</td> -->
+          <tr num="130">
+            <!-- <td>130</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -1684,8 +1724,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="128">
-            <!-- <td>128</td> -->
+          <tr num="131">
+            <!-- <td>131</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -1696,8 +1736,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="129">
-            <!-- <td>129</td> -->
+          <tr num="132">
+            <!-- <td>132</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -1708,8 +1748,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="130">
-            <!-- <td>130</td> -->
+          <tr num="133">
+            <!-- <td>133</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -1720,8 +1760,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="131">
-            <!-- <td>131</td> -->
+          <tr num="134">
+            <!-- <td>134</td> -->
             <td>Disable caching and autocomplete on login page</td>
             <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
             <td>
@@ -1732,8 +1772,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
           </tr>
           
-          <tr num="132">
-            <!-- <td>132</td> -->
+          <tr num="135">
+            <!-- <td>135</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -1744,8 +1784,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="133">
-            <!-- <td>133</td> -->
+          <tr num="136">
+            <!-- <td>136</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -1756,8 +1796,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="134">
-            <!-- <td>134</td> -->
+          <tr num="137">
+            <!-- <td>137</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -1768,8 +1808,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="135">
-            <!-- <td>135</td> -->
+          <tr num="138">
+            <!-- <td>138</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -1780,8 +1820,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="136">
-            <!-- <td>136</td> -->
+          <tr num="139">
+            <!-- <td>139</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -1792,8 +1832,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="137">
-            <!-- <td>137</td> -->
+          <tr num="140">
+            <!-- <td>140</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -1804,8 +1844,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="138">
-            <!-- <td>138</td> -->
+          <tr num="141">
+            <!-- <td>141</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -1816,8 +1856,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="139">
-            <!-- <td>139</td> -->
+          <tr num="142">
+            <!-- <td>142</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -1828,8 +1868,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="140">
-            <!-- <td>140</td> -->
+          <tr num="143">
+            <!-- <td>143</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -1840,8 +1880,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="141">
-            <!-- <td>141</td> -->
+          <tr num="144">
+            <!-- <td>144</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -1852,8 +1892,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="142">
-            <!-- <td>142</td> -->
+          <tr num="145">
+            <!-- <td>145</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -1864,8 +1904,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="143">
-            <!-- <td>143</td> -->
+          <tr num="146">
+            <!-- <td>146</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -1876,8 +1916,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="144">
-            <!-- <td>144</td> -->
+          <tr num="147">
+            <!-- <td>147</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -1888,8 +1928,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="145">
-            <!-- <td>145</td> -->
+          <tr num="148">
+            <!-- <td>148</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -1900,8 +1940,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="146">
-            <!-- <td>146</td> -->
+          <tr num="149">
+            <!-- <td>149</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -1912,8 +1952,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="147">
-            <!-- <td>147</td> -->
+          <tr num="150">
+            <!-- <td>150</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -1924,8 +1964,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="148">
-            <!-- <td>148</td> -->
+          <tr num="151">
+            <!-- <td>151</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -1936,8 +1976,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="149">
-            <!-- <td>149</td> -->
+          <tr num="152">
+            <!-- <td>152</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -1948,8 +1988,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="150">
-            <!-- <td>150</td> -->
+          <tr num="153">
+            <!-- <td>153</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -1960,8 +2000,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="151">
-            <!-- <td>151</td> -->
+          <tr num="154">
+            <!-- <td>154</td> -->
             <td>Obscure secret answers for password resets</td>
             <td>Hide answers to password reset security questions as the user types.</td>
             <td>
@@ -1972,8 +2012,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
           </tr>
           
-          <tr num="152">
-            <!-- <td>152</td> -->
+          <tr num="155">
+            <!-- <td>155</td> -->
             <td>Password hint question should not contain the password</td>
             <td>Do not allow the answer to the password hint question to contain the password itself.</td>
             <td>
@@ -1984,8 +2024,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
           </tr>
           
-          <tr num="153">
-            <!-- <td>153</td> -->
+          <tr num="156">
+            <!-- <td>156</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -1996,8 +2036,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="154">
-            <!-- <td>154</td> -->
+          <tr num="157">
+            <!-- <td>157</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -2008,8 +2048,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="155">
-            <!-- <td>155</td> -->
+          <tr num="158">
+            <!-- <td>158</td> -->
             <td>Warn users when they are redirected outside of Salesforce</td>
             <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
             <td>
@@ -2020,8 +2060,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have redirectionWarning eq true</td>
           </tr>
           
-          <tr num="156">
-            <!-- <td>156</td> -->
+          <tr num="159">
+            <!-- <td>159</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -2032,8 +2072,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="157">
-            <!-- <td>157</td> -->
+          <tr num="160">
+            <!-- <td>160</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -2044,8 +2084,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="158">
-            <!-- <td>158</td> -->
+          <tr num="161">
+            <!-- <td>161</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -2056,8 +2096,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="159">
-            <!-- <td>159</td> -->
+          <tr num="162">
+            <!-- <td>162</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -2068,8 +2108,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
           </tr>
           
-          <tr num="160">
-            <!-- <td>160</td> -->
+          <tr num="163">
+            <!-- <td>163</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -2091,8 +2131,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="161">
-            <!-- <td>161</td> -->
+          <tr num="164">
+            <!-- <td>164</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -2103,8 +2143,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="162">
-            <!-- <td>162</td> -->
+          <tr num="165">
+            <!-- <td>165</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -2115,8 +2155,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="163">
-            <!-- <td>163</td> -->
+          <tr num="166">
+            <!-- <td>166</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -2127,8 +2167,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="164">
-            <!-- <td>164</td> -->
+          <tr num="167">
+            <!-- <td>167</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -2139,8 +2179,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="165">
-            <!-- <td>165</td> -->
+          <tr num="168">
+            <!-- <td>168</td> -->
             <td>Disable caching and autocomplete on login page</td>
             <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
             <td>
@@ -2151,8 +2191,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
           </tr>
           
-          <tr num="166">
-            <!-- <td>166</td> -->
+          <tr num="169">
+            <!-- <td>169</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -2163,8 +2203,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="167">
-            <!-- <td>167</td> -->
+          <tr num="170">
+            <!-- <td>170</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -2175,8 +2215,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="168">
-            <!-- <td>168</td> -->
+          <tr num="171">
+            <!-- <td>171</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -2187,8 +2227,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="169">
-            <!-- <td>169</td> -->
+          <tr num="172">
+            <!-- <td>172</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -2199,8 +2239,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="170">
-            <!-- <td>170</td> -->
+          <tr num="173">
+            <!-- <td>173</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -2211,8 +2251,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="171">
-            <!-- <td>171</td> -->
+          <tr num="174">
+            <!-- <td>174</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -2223,8 +2263,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="172">
-            <!-- <td>172</td> -->
+          <tr num="175">
+            <!-- <td>175</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -2235,8 +2275,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="173">
-            <!-- <td>173</td> -->
+          <tr num="176">
+            <!-- <td>176</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -2247,8 +2287,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="174">
-            <!-- <td>174</td> -->
+          <tr num="177">
+            <!-- <td>177</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -2259,8 +2299,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="175">
-            <!-- <td>175</td> -->
+          <tr num="178">
+            <!-- <td>178</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -2271,8 +2311,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="176">
-            <!-- <td>176</td> -->
+          <tr num="179">
+            <!-- <td>179</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -2283,8 +2323,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="177">
-            <!-- <td>177</td> -->
+          <tr num="180">
+            <!-- <td>180</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -2295,8 +2335,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="178">
-            <!-- <td>178</td> -->
+          <tr num="181">
+            <!-- <td>181</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -2307,8 +2347,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="179">
-            <!-- <td>179</td> -->
+          <tr num="182">
+            <!-- <td>182</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -2319,8 +2359,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="180">
-            <!-- <td>180</td> -->
+          <tr num="183">
+            <!-- <td>183</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -2331,8 +2371,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="181">
-            <!-- <td>181</td> -->
+          <tr num="184">
+            <!-- <td>184</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -2343,8 +2383,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="182">
-            <!-- <td>182</td> -->
+          <tr num="185">
+            <!-- <td>185</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -2355,8 +2395,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="183">
-            <!-- <td>183</td> -->
+          <tr num="186">
+            <!-- <td>186</td> -->
             <td>Obscure secret answers for password resets</td>
             <td>Hide answers to password reset security questions as the user types.</td>
             <td>
@@ -2367,8 +2407,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
           </tr>
           
-          <tr num="184">
-            <!-- <td>184</td> -->
+          <tr num="187">
+            <!-- <td>187</td> -->
             <td>Password hint question should not contain the password</td>
             <td>Do not allow the answer to the password hint question to contain the password itself.</td>
             <td>
@@ -2379,8 +2419,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have questionRestriction eq "DoesNotContainPassword"</td>
           </tr>
           
-          <tr num="185">
-            <!-- <td>185</td> -->
+          <tr num="188">
+            <!-- <td>188</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -2391,8 +2431,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="186">
-            <!-- <td>186</td> -->
+          <tr num="189">
+            <!-- <td>189</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -2403,8 +2443,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="187">
-            <!-- <td>187</td> -->
+          <tr num="190">
+            <!-- <td>190</td> -->
             <td>Warn users when they are redirected outside of Salesforce</td>
             <td>Users see an alert when they click a link in a web tab that redirects them outside the saleforce.com domain.</td>
             <td>
@@ -2415,8 +2455,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have redirectionWarning eq true</td>
           </tr>
           
-          <tr num="188">
-            <!-- <td>188</td> -->
+          <tr num="191">
+            <!-- <td>191</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -2427,8 +2467,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="189">
-            <!-- <td>189</td> -->
+          <tr num="192">
+            <!-- <td>192</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -2439,8 +2479,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="190">
-            <!-- <td>190</td> -->
+          <tr num="193">
+            <!-- <td>193</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -2451,8 +2491,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="191">
-            <!-- <td>191</td> -->
+          <tr num="194">
+            <!-- <td>194</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -2474,8 +2514,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="192">
-            <!-- <td>192</td> -->
+          <tr num="195">
+            <!-- <td>195</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -2486,8 +2526,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="193">
-            <!-- <td>193</td> -->
+          <tr num="196">
+            <!-- <td>196</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -2498,8 +2538,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="194">
-            <!-- <td>194</td> -->
+          <tr num="197">
+            <!-- <td>197</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -2510,8 +2550,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="195">
-            <!-- <td>195</td> -->
+          <tr num="198">
+            <!-- <td>198</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -2522,8 +2562,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="196">
-            <!-- <td>196</td> -->
+          <tr num="199">
+            <!-- <td>199</td> -->
             <td>Disable caching and autocomplete on login page</td>
             <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
             <td>
@@ -2534,8 +2574,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
           </tr>
           
-          <tr num="197">
-            <!-- <td>197</td> -->
+          <tr num="200">
+            <!-- <td>200</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -2546,8 +2586,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="198">
-            <!-- <td>198</td> -->
+          <tr num="201">
+            <!-- <td>201</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -2558,8 +2598,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="199">
-            <!-- <td>199</td> -->
+          <tr num="202">
+            <!-- <td>202</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -2570,8 +2610,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="200">
-            <!-- <td>200</td> -->
+          <tr num="203">
+            <!-- <td>203</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -2582,8 +2622,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="201">
-            <!-- <td>201</td> -->
+          <tr num="204">
+            <!-- <td>204</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -2594,8 +2634,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="202">
-            <!-- <td>202</td> -->
+          <tr num="205">
+            <!-- <td>205</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -2606,8 +2646,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="203">
-            <!-- <td>203</td> -->
+          <tr num="206">
+            <!-- <td>206</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -2618,8 +2658,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="204">
-            <!-- <td>204</td> -->
+          <tr num="207">
+            <!-- <td>207</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -2630,8 +2670,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="205">
-            <!-- <td>205</td> -->
+          <tr num="208">
+            <!-- <td>208</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -2642,8 +2682,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="206">
-            <!-- <td>206</td> -->
+          <tr num="209">
+            <!-- <td>209</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -2654,8 +2694,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="207">
-            <!-- <td>207</td> -->
+          <tr num="210">
+            <!-- <td>210</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -2666,8 +2706,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="208">
-            <!-- <td>208</td> -->
+          <tr num="211">
+            <!-- <td>211</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -2678,8 +2718,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="209">
-            <!-- <td>209</td> -->
+          <tr num="212">
+            <!-- <td>212</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -2690,8 +2730,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="210">
-            <!-- <td>210</td> -->
+          <tr num="213">
+            <!-- <td>213</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -2702,8 +2742,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="211">
-            <!-- <td>211</td> -->
+          <tr num="214">
+            <!-- <td>214</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -2714,8 +2754,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="212">
-            <!-- <td>212</td> -->
+          <tr num="215">
+            <!-- <td>215</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -2726,8 +2766,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="213">
-            <!-- <td>213</td> -->
+          <tr num="216">
+            <!-- <td>216</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -2738,8 +2778,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="214">
-            <!-- <td>214</td> -->
+          <tr num="217">
+            <!-- <td>217</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -2750,8 +2790,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="215">
-            <!-- <td>215</td> -->
+          <tr num="218">
+            <!-- <td>218</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -2762,8 +2802,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="216">
-            <!-- <td>216</td> -->
+          <tr num="219">
+            <!-- <td>219</td> -->
             <td>Obscure secret answers for password resets</td>
             <td>Hide answers to password reset security questions as the user types.</td>
             <td>
@@ -2774,8 +2814,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
           </tr>
           
-          <tr num="217">
-            <!-- <td>217</td> -->
+          <tr num="220">
+            <!-- <td>220</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -2786,8 +2826,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="218">
-            <!-- <td>218</td> -->
+          <tr num="221">
+            <!-- <td>221</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -2798,8 +2838,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="219">
-            <!-- <td>219</td> -->
+          <tr num="222">
+            <!-- <td>222</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -2810,8 +2850,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
           </tr>
           
-          <tr num="220">
-            <!-- <td>220</td> -->
+          <tr num="223">
+            <!-- <td>223</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -2833,8 +2873,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="221">
-            <!-- <td>221</td> -->
+          <tr num="224">
+            <!-- <td>224</td> -->
             <td>Ensure admin login as any user is not enabled</td>
             <td>Ensure that Administrators Can Log in as Any User field is not enabled.</td>
             <td>
@@ -2845,8 +2885,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SecuritySettings should not have enableAdminLoginAsAnyUser eq true</td>
           </tr>
           
-          <tr num="222">
-            <!-- <td>222</td> -->
+          <tr num="225">
+            <!-- <td>225</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -2857,8 +2897,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="223">
-            <!-- <td>223</td> -->
+          <tr num="226">
+            <!-- <td>226</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -2869,8 +2909,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="224">
-            <!-- <td>224</td> -->
+          <tr num="227">
+            <!-- <td>227</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -2881,8 +2921,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="225">
-            <!-- <td>225</td> -->
+          <tr num="228">
+            <!-- <td>228</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -2893,8 +2933,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="226">
-            <!-- <td>226</td> -->
+          <tr num="229">
+            <!-- <td>229</td> -->
             <td>Disable caching and autocomplete on login page</td>
             <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
             <td>
@@ -2905,8 +2945,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCacheAndAutocomplete eq false</td>
           </tr>
           
-          <tr num="227">
-            <!-- <td>227</td> -->
+          <tr num="230">
+            <!-- <td>230</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -2917,8 +2957,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="228">
-            <!-- <td>228</td> -->
+          <tr num="231">
+            <!-- <td>231</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -2929,8 +2969,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="229">
-            <!-- <td>229</td> -->
+          <tr num="232">
+            <!-- <td>232</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -2941,8 +2981,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="230">
-            <!-- <td>230</td> -->
+          <tr num="233">
+            <!-- <td>233</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -2953,8 +2993,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="231">
-            <!-- <td>231</td> -->
+          <tr num="234">
+            <!-- <td>234</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -2965,8 +3005,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="232">
-            <!-- <td>232</td> -->
+          <tr num="235">
+            <!-- <td>235</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -2977,8 +3017,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="233">
-            <!-- <td>233</td> -->
+          <tr num="236">
+            <!-- <td>236</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -2989,8 +3029,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="234">
-            <!-- <td>234</td> -->
+          <tr num="237">
+            <!-- <td>237</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -3001,8 +3041,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="235">
-            <!-- <td>235</td> -->
+          <tr num="238">
+            <!-- <td>238</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -3013,8 +3053,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="236">
-            <!-- <td>236</td> -->
+          <tr num="239">
+            <!-- <td>239</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -3025,8 +3065,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="237">
-            <!-- <td>237</td> -->
+          <tr num="240">
+            <!-- <td>240</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -3037,8 +3077,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="238">
-            <!-- <td>238</td> -->
+          <tr num="241">
+            <!-- <td>241</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -3049,8 +3089,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="239">
-            <!-- <td>239</td> -->
+          <tr num="242">
+            <!-- <td>242</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -3061,8 +3101,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="240">
-            <!-- <td>240</td> -->
+          <tr num="243">
+            <!-- <td>243</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -3073,8 +3113,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="241">
-            <!-- <td>241</td> -->
+          <tr num="244">
+            <!-- <td>244</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -3085,8 +3125,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="242">
-            <!-- <td>242</td> -->
+          <tr num="245">
+            <!-- <td>245</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -3097,8 +3137,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="243">
-            <!-- <td>243</td> -->
+          <tr num="246">
+            <!-- <td>246</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -3109,8 +3149,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="244">
-            <!-- <td>244</td> -->
+          <tr num="247">
+            <!-- <td>247</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -3121,8 +3161,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="245">
-            <!-- <td>245</td> -->
+          <tr num="248">
+            <!-- <td>248</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -3133,8 +3173,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="246">
-            <!-- <td>246</td> -->
+          <tr num="249">
+            <!-- <td>249</td> -->
             <td>Obscure secret answers for password resets</td>
             <td>Hide answers to password reset security questions as the user types.</td>
             <td>
@@ -3145,8 +3185,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have obscureSecretAnswer eq true</td>
           </tr>
           
-          <tr num="247">
-            <!-- <td>247</td> -->
+          <tr num="250">
+            <!-- <td>250</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -3157,8 +3197,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="248">
-            <!-- <td>248</td> -->
+          <tr num="251">
+            <!-- <td>251</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -3169,8 +3209,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="249">
-            <!-- <td>249</td> -->
+          <tr num="252">
+            <!-- <td>252</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -3181,8 +3221,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="250">
-            <!-- <td>250</td> -->
+          <tr num="253">
+            <!-- <td>253</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -3193,8 +3233,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="251">
-            <!-- <td>251</td> -->
+          <tr num="254">
+            <!-- <td>254</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -3205,8 +3245,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
           </tr>
           
-          <tr num="252">
-            <!-- <td>252</td> -->
+          <tr num="255">
+            <!-- <td>255</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -3228,8 +3268,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="253">
-            <!-- <td>253</td> -->
+          <tr num="256">
+            <!-- <td>256</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -3240,8 +3280,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="254">
-            <!-- <td>254</td> -->
+          <tr num="257">
+            <!-- <td>257</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -3252,8 +3292,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="255">
-            <!-- <td>255</td> -->
+          <tr num="258">
+            <!-- <td>258</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -3264,8 +3304,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="256">
-            <!-- <td>256</td> -->
+          <tr num="259">
+            <!-- <td>259</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -3276,8 +3316,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="257">
-            <!-- <td>257</td> -->
+          <tr num="260">
+            <!-- <td>260</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -3288,8 +3328,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="258">
-            <!-- <td>258</td> -->
+          <tr num="261">
+            <!-- <td>261</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -3300,8 +3340,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="259">
-            <!-- <td>259</td> -->
+          <tr num="262">
+            <!-- <td>262</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -3312,8 +3352,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="260">
-            <!-- <td>260</td> -->
+          <tr num="263">
+            <!-- <td>263</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -3324,8 +3364,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="261">
-            <!-- <td>261</td> -->
+          <tr num="264">
+            <!-- <td>264</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -3336,8 +3376,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="262">
-            <!-- <td>262</td> -->
+          <tr num="265">
+            <!-- <td>265</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -3348,8 +3388,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="263">
-            <!-- <td>263</td> -->
+          <tr num="266">
+            <!-- <td>266</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -3360,8 +3400,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="264">
-            <!-- <td>264</td> -->
+          <tr num="267">
+            <!-- <td>267</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -3372,8 +3412,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="265">
-            <!-- <td>265</td> -->
+          <tr num="268">
+            <!-- <td>268</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -3384,8 +3424,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="266">
-            <!-- <td>266</td> -->
+          <tr num="269">
+            <!-- <td>269</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -3396,8 +3436,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="267">
-            <!-- <td>267</td> -->
+          <tr num="270">
+            <!-- <td>270</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -3408,8 +3448,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="268">
-            <!-- <td>268</td> -->
+          <tr num="271">
+            <!-- <td>271</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -3420,8 +3460,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="269">
-            <!-- <td>269</td> -->
+          <tr num="272">
+            <!-- <td>272</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -3432,8 +3472,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="270">
-            <!-- <td>270</td> -->
+          <tr num="273">
+            <!-- <td>273</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -3444,8 +3484,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="271">
-            <!-- <td>271</td> -->
+          <tr num="274">
+            <!-- <td>274</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -3456,8 +3496,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="272">
-            <!-- <td>272</td> -->
+          <tr num="275">
+            <!-- <td>275</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -3468,8 +3508,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="273">
-            <!-- <td>273</td> -->
+          <tr num="276">
+            <!-- <td>276</td> -->
             <td>Require a minimum 1 day password lifetime</td>
             <td>Requiring a minimum password lifetime ensures passwords can’t be changed more than one time during a 24-hour period.</td>
             <td>
@@ -3480,8 +3520,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have minimumPasswordLifetime eq true</td>
           </tr>
           
-          <tr num="274">
-            <!-- <td>274</td> -->
+          <tr num="277">
+            <!-- <td>277</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -3492,8 +3532,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="275">
-            <!-- <td>275</td> -->
+          <tr num="278">
+            <!-- <td>278</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -3504,8 +3544,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="276">
-            <!-- <td>276</td> -->
+          <tr num="279">
+            <!-- <td>279</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -3516,8 +3556,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="277">
-            <!-- <td>277</td> -->
+          <tr num="280">
+            <!-- <td>280</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -3528,8 +3568,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="278">
-            <!-- <td>278</td> -->
+          <tr num="281">
+            <!-- <td>281</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -3540,8 +3580,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="279">
-            <!-- <td>279</td> -->
+          <tr num="282">
+            <!-- <td>282</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -3563,8 +3603,8 @@ Administrators should suspend group membership calculations only when performing
             <th width="39%">Rule</th>
           </tr>
           
-          <tr num="280">
-            <!-- <td>280</td> -->
+          <tr num="283">
+            <!-- <td>283</td> -->
             <td>Ensure certificate keys expire within 1 year</td>
             <td>Ensure that all certificate keys expire within 1 year.</td>
             <td>
@@ -3575,8 +3615,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isEarlierThan(365, "days")</td>
           </tr>
           
-          <tr num="281">
-            <!-- <td>281</td> -->
+          <tr num="284">
+            <!-- <td>284</td> -->
             <td>Require a 4096-bit certificate key size</td>
             <td>The certificate key size determines how long the key can be used for. A certificate with 4096-bit keys lasts 2 years, and a certificate with 2048-bit keys lasts 1 year. </td>
             <td>
@@ -3587,8 +3627,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have keySize gte 4096 </td>
           </tr>
           
-          <tr num="282">
-            <!-- <td>282</td> -->
+          <tr num="285">
+            <!-- <td>285</td> -->
             <td>Configure CORS allowlist origins</td>
             <td>Ensure that there are origins configured in the CORS allowlist</td>
             <td>
@@ -3599,8 +3639,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have CorsAllowlistOrigins len() gt 0</td>
           </tr>
           
-          <tr num="283">
-            <!-- <td>283</td> -->
+          <tr num="286">
+            <!-- <td>286</td> -->
             <td>Ensure Cross-Site Request Forgery (CSRF) protection is enabled</td>
             <td>Cross-Site Request Forgery (CSRF) protection on GET and POST requests on non-setup pages should be enabled.</td>
             <td>
@@ -3611,8 +3651,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableCSRFOnGet eq true and enableCSRFOnPost eq true</td>
           </tr>
           
-          <tr num="284">
-            <!-- <td>284</td> -->
+          <tr num="287">
+            <!-- <td>287</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
             <td>
@@ -3623,8 +3663,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUserHeaderless eq true</td>
           </tr>
           
-          <tr num="285">
-            <!-- <td>285</td> -->
+          <tr num="288">
+            <!-- <td>288</td> -->
             <td>Enable clickjack protection for customer Visualforce pages with standard headers</td>
             <td>Clickjack protection for customer Visualforce pages with standard headers is enabled.</td>
             <td>
@@ -3635,8 +3675,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupUser eq true</td>
           </tr>
           
-          <tr num="286">
-            <!-- <td>286</td> -->
+          <tr num="289">
+            <!-- <td>289</td> -->
             <td>Enable clickjack protection for non-setup Salesforce pages</td>
             <td>Clickjack protection for non-setup Salesforce pages is enabled.</td>
             <td>
@@ -3647,8 +3687,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackNonsetupSFDC eq true</td>
           </tr>
           
-          <tr num="287">
-            <!-- <td>287</td> -->
+          <tr num="290">
+            <!-- <td>290</td> -->
             <td>Enable clickjack protection for setup Salesforce pages</td>
             <td>Clickjack protection for setup Salesforce pages is enabled.</td>
             <td>
@@ -3659,8 +3699,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableClickjackSetup eq true</td>
           </tr>
           
-          <tr num="288">
-            <!-- <td>288</td> -->
+          <tr num="291">
+            <!-- <td>291</td> -->
             <td>Enable Content Sniffing protection</td>
             <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
             <td>
@@ -3671,8 +3711,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableContentSniffingProtection eq true</td>
           </tr>
           
-          <tr num="289">
-            <!-- <td>289</td> -->
+          <tr num="292">
+            <!-- <td>292</td> -->
             <td>Allow Lightning Login</td>
             <td>Users can use Lightning Login (Salesforce Authenticator) to log in instead of a password.</td>
             <td>
@@ -3683,8 +3723,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableLightningLogin eq true</td>
           </tr>
           
-          <tr num="290">
-            <!-- <td>290</td> -->
+          <tr num="293">
+            <!-- <td>293</td> -->
             <td>Set guest user organization-wide defaults to Private</td>
             <td>Guest users have org-wide defaults set to Private. To share records with them, you must use guest user sharing rules.</td>
             <td>
@@ -3695,8 +3735,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SharingSettings should have enableSecureGuestAccess eq true or enableSecureGuestAccess eq false </td>
           </tr>
           
-          <tr num="291">
-            <!-- <td>291</td> -->
+          <tr num="294">
+            <!-- <td>294</td> -->
             <td>Enable SMS Identity</td>
             <td>Users can receive a one-time password in a text message (SMS) to verify their identity.</td>
             <td>
@@ -3707,8 +3747,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableSMSIdentity eq true</td>
           </tr>
           
-          <tr num="292">
-            <!-- <td>292</td> -->
+          <tr num="295">
+            <!-- <td>295</td> -->
             <td>Ensure XSS protection is enabled</td>
             <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
             <td>
@@ -3719,8 +3759,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have enableXssProtection eq true</td>
           </tr>
           
-          <tr num="293">
-            <!-- <td>293</td> -->
+          <tr num="296">
+            <!-- <td>296</td> -->
             <td>Ensure that no certificates are expired</td>
             <td>Ensure that no certificates have expired.</td>
             <td>
@@ -3731,8 +3771,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Certificate should have expirationDate isLaterThan(0, "days") </td>
           </tr>
           
-          <tr num="294">
-            <!-- <td>294</td> -->
+          <tr num="297">
+            <!-- <td>297</td> -->
             <td>Ensure file upload and download security rules are configured</td>
             <td>There is at least one file upload and download security rule configured for the organization</td>
             <td>
@@ -3743,8 +3783,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">FileUploadAndDownloadSecuritySettings should have dispositions len() gt 0 </td>
           </tr>
           
-          <tr num="295">
-            <!-- <td>295</td> -->
+          <tr num="298">
+            <!-- <td>298</td> -->
             <td>Display a warning and force re-login after a period of inactivity</td>
             <td>Force re-login upon session timeout and enable the session timeout warning popup.</td>
             <td>
@@ -3755,8 +3795,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have disableTimeoutWarning eq false and forceLogoutOnSessionTimeout eq true </td>
           </tr>
           
-          <tr num="296">
-            <!-- <td>296</td> -->
+          <tr num="299">
+            <!-- <td>299</td> -->
             <td>Limit the number of failed login attempts to 5 or less</td>
             <td>After 5 failed login attempts, the user will be locked out.</td>
             <td>
@@ -3767,8 +3807,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have maxLoginAttempts in ("ThreeAttempts", "FiveAttempts") </td>
           </tr>
           
-          <tr num="297">
-            <!-- <td>297</td> -->
+          <tr num="300">
+            <!-- <td>300</td> -->
             <td>Ensure IP restriction is configured</td>
             <td>At least one trusted IP address range is configured for the organization. Ensure IP restriction is turned on for user logins to minimize the risk of unauthorized access in case of compromised accounts.</td>
             <td>
@@ -3779,8 +3819,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have NetworkAccessIpRanges len() gt 0 </td>
           </tr>
           
-          <tr num="298">
-            <!-- <td>298</td> -->
+          <tr num="301">
+            <!-- <td>301</td> -->
             <td>Enforce password complexity requirements</td>
             <td>Require secure passwords that combine uppercase letters, lowercase letters, numbers, and symbols, and require a minimum of 8 characters. Set a maximum incorrect login attempt to between 3 and 5 times.</td>
             <td>
@@ -3791,8 +3831,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have complexity eq "UpperLowerCaseNumericSpecialCharacters" and maxLoginAttempts in ("ThreeAttempts","FiveAttempts") and minimumPasswordLength eq 8 </td>
           </tr>
           
-          <tr num="299">
-            <!-- <td>299</td> -->
+          <tr num="302">
+            <!-- <td>302</td> -->
             <td>Set passwords to expire after 90 days</td>
             <td>Ensure that user passwords expire after 90 days and must be changed.</td>
             <td>
@@ -3803,8 +3843,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have expiration eq "NinetyDays"</td>
           </tr>
           
-          <tr num="300">
-            <!-- <td>300</td> -->
+          <tr num="303">
+            <!-- <td>303</td> -->
             <td>Ensure that users cannot reuse any of their previous 5 passwords</td>
             <td>Save users' previous 5 passwords so that they must always reset a new, unique password.</td>
             <td>
@@ -3815,8 +3855,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have historyRestriction gte 5</td>
           </tr>
           
-          <tr num="301">
-            <!-- <td>301</td> -->
+          <tr num="304">
+            <!-- <td>304</td> -->
             <td>Set password lockout interval to 30 minutes</td>
             <td>Lock the user account for a specified amount of time after exceeding the allowed number of failed login attempts.</td>
             <td>
@@ -3827,8 +3867,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">PasswordPolicies should have lockoutInterval eq "ThirtyMinutes" </td>
           </tr>
           
-          <tr num="302">
-            <!-- <td>302</td> -->
+          <tr num="305">
+            <!-- <td>305</td> -->
             <td>Protect referrer URL</td>
             <td>Configure the referer header to display only salesforce.com, rather than displaying the entire URL.</td>
             <td>
@@ -3839,8 +3879,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have referrerPolicy eq true</td>
           </tr>
           
-          <tr num="303">
-            <!-- <td>303</td> -->
+          <tr num="306">
+            <!-- <td>306</td> -->
             <td>Logging is enabled for real time events</td>
             <td>Streaming is enabled for real time events, and at least 1 client is subscribed to the event stream.</td>
             <td>
@@ -3851,8 +3891,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">RealTimeEventSettings should have every RealTimeEvents with [ isEnabled eq true ] and (StreamingApiConcurrentClients . Remaining lt StreamingApiConcurrentClients . Max) </td>
           </tr>
           
-          <tr num="304">
-            <!-- <td>304</td> -->
+          <tr num="307">
+            <!-- <td>307</td> -->
             <td>Remote site settings are configured</td>
             <td>Ensure that the organization has at least one active remote site setting.</td>
             <td>
@@ -3863,8 +3903,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">Organization should have atleast one RemoteSiteSettings with [ isActive eq true and disableProtocolSecurity eq false ] </td>
           </tr>
           
-          <tr num="305">
-            <!-- <td>305</td> -->
+          <tr num="308">
+            <!-- <td>308</td> -->
             <td>Require identify verification during two-factor authentication (2FA) registration</td>
             <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
             <td>
@@ -3875,8 +3915,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnTwoFactorRegistrationEnabled eq true</td>
           </tr>
           
-          <tr num="306">
-            <!-- <td>306</td> -->
+          <tr num="309">
+            <!-- <td>309</td> -->
             <td>Require identify verification for email address changes</td>
             <td>Indicates if a user’s identity is confirmed when changing their email address, instead of requiring a re-login.</td>
             <td>
@@ -3887,8 +3927,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have identityConfirmationOnEmailChange eq true</td>
           </tr>
           
-          <tr num="307">
-            <!-- <td>307</td> -->
+          <tr num="310">
+            <!-- <td>310</td> -->
             <td>Time out user sessions after 15 minutes</td>
             <td>Prompt users to log out or continue working after 15 minutes.</td>
             <td>
@@ -3899,8 +3939,8 @@ Administrators should suspend group membership calculations only when performing
             <td class="code">SessionSettings should have sessionTimeout eq "FifteenMinutes"</td>
           </tr>
           
-          <tr num="308">
-            <!-- <td>308</td> -->
+          <tr num="311">
+            <!-- <td>311</td> -->
             <td>Enable single sign-on</td>
             <td>Ensure that single sign-on is enabled. Users are redirected to third-party identity providers for authentication.</td>
             <td>
@@ -3923,7 +3963,7 @@ Administrators should suspend group membership calculations only when performing
   <script>
 
   // Sort
-  const getCellValue = (tr, idx) => (idx === 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
+  const getCellValue = (tr, idx) => (idx == 0 ) ? tr.getAttribute("num") : ( tr.children[idx].innerText || tr.children[idx].textContent);
   const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
       v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
       )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
@@ -3969,7 +4009,7 @@ Administrators should suspend group membership calculations only when performing
       timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
     };
-  }
+  };
 
   // Nav Menu Show/Hide
   function hideRuleTables() {
@@ -3979,7 +4019,7 @@ Administrators should suspend group membership calculations only when performing
 
   function showRuleTable(name) {
     // c) show this table
-    if (name === 'ALL') {
+    if (name == 'ALL') { 
         $('.rule_table').show()
     } else {
         $('.rule_table[data-profile-name="'+name+'"]').show()
@@ -3991,7 +4031,7 @@ Administrators should suspend group membership calculations only when performing
     hideRuleTables()
     // b) find the table in '.rule_table' with the same 'profile-name' data attribute
     showRuleTable(profile_name)
-    if (name === "ALL") {
+    if (name == "ALL") { 
         $('.rule_key').addClass('active')
     } else {
         $('.rule_key[data-profile-name="'+profile_name+'"]').addClass('active')
@@ -3999,7 +4039,7 @@ Administrators should suspend group membership calculations only when performing
   }
 
   function initListeners(){
-    // 1. iterate over each Rule list item
+    // 1. iterate over each Rule list item   
     $('.rule_key').each(function(i, obj) {
       var ruleKey = $(obj)
       var ruleName = ruleKey.data('profile-name')

@@ -137,12 +137,20 @@
           <span class="entity_name">HostedContentFilterPolicy</span>
         </li>
         
+        <li class="entity_key" data-entity-name="HostedContentFilterRule">
+          <span class="entity_name">HostedContentFilterRule</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="HostedOutboundSpamFilterPolicy">
           <span class="entity_name">HostedOutboundSpamFilterPolicy</span>
         </li>
         
         <li class="entity_key" data-entity-name="MalwareFilterPolicy">
           <span class="entity_name">MalwareFilterPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="MalwareFilterRule">
+          <span class="entity_name">MalwareFilterRule</span>
         </li>
         
         <li class="entity_key" data-entity-name="NamedLocation">
@@ -157,8 +165,20 @@
           <span class="entity_name">QuarantinePolicy</span>
         </li>
         
+        <li class="entity_key" data-entity-name="RetentionPolicy">
+          <span class="entity_name">RetentionPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="RetentionPolicyTag">
+          <span class="entity_name">RetentionPolicyTag</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="SafeAttachmentPolicy">
           <span class="entity_name">SafeAttachmentPolicy</span>
+        </li>
+        
+        <li class="entity_key" data-entity-name="SafeLinksPolicy">
+          <span class="entity_name">SafeLinksPolicy</span>
         </li>
         
         <li class="entity_key" data-entity-name="SecureScore">
@@ -588,6 +608,90 @@
             <td>To get this value, use `nslookup -type=txt _dmarc.<domain>` and Ensure that a policy exists that starts with `v=DMARC1;`. Set this to "true" if the record is valid and existing.</td>
           </tr>
           
+          <tr>
+            <td>DomainName</td>
+            <td>string</td>
+            <td>SMTP domain for which the server sends and receives email.</td>
+          </tr>
+          
+          <tr>
+            <td>DomainType</td>
+            <td>string</td>
+            <td>Identifies the type of domain for which the Exchange server  sends and receives email.</td>
+          </tr>
+          
+          <tr>
+            <td>AddressBookEnabled</td>
+            <td>boolean</td>
+            <td>Value that indicates whether to enable recipient filtering for this accepted domain.</td>
+          </tr>
+          
+          <tr>
+            <td>AuthenticationType</td>
+            <td>string</td>
+            <td>Indicates how email addresses in the domain are authenticated.</td>
+          </tr>
+          
+          <tr>
+            <td>Default</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is the default  domain for the Exchange server.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableNego2Authentication</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain will use Negotiated2 authentication.</td>
+          </tr>
+          
+          <tr>
+            <td>InitialDomain</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is the initial  domain for new accounts.</td>
+          </tr>
+          
+          <tr>
+            <td>IsCoexistenceDomain</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is a coexistence domain.</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefaultFederatedDomain</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is the default domain  for federation requests.</td>
+          </tr>
+          
+          <tr>
+            <td>OutboundOnly</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is used for  outbound email only.</td>
+          </tr>
+          
+          <tr>
+            <td>PendingFederatedAccountNamespace</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is pending a federation  account request.</td>
+          </tr>
+          
+          <tr>
+            <td>PendingFederatedDomain</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is pending a  domain federation request.</td>
+          </tr>
+          
+          <tr>
+            <td>PendingRemoval</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is in the process  of being removed.</td>
+          </tr>
+          
+          <tr>
+            <td>PerimeterDuplicateDetected</td>
+            <td>boolean</td>
+            <td>Value that indicates whether the domain is duplicated.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="RoleAssignmentPolicy">
@@ -909,6 +1013,12 @@
           <tr>
             <td>id</td>
             <td>string</td>
+            <td>Unique ID of the MalwareFilterPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>Id</td>
+            <td>string</td>
             <td>ID of the MalwareFilterPolicy</td>
           </tr>
           
@@ -934,6 +1044,24 @@
             <td>InternalSenderAdminAddress</td>
             <td>string</td>
             <td>The email address of the admin who will receive notifications when an internal user is detected sending malware.</td>
+          </tr>
+          
+          <tr>
+            <td>ZapEnabled</td>
+            <td>boolean</td>
+            <td>If true, zero-hour auto purge (ZAP) is enabled for this anti-malware policy. ZAP will quarantine messages that contain malware attachments.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>The validity for the MalwareFilterPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>Action</td>
+            <td>string</td>
+            <td>This parameter describes what actions to take if a message contains malwares. Availavle options are DeleteMessage, DeleteAttachmentAndUseDefaultAlert, and DeleteAttachmentAndUseCustomAlert.</td>
           </tr>
           
         </table>
@@ -1213,6 +1341,12 @@
             <td>excludedFileExtensionsForSyncClient</td>
             <td>list</td>
             <td>The list of excluded file extensions when syncing OneDrive files.</td>
+          </tr>
+          
+          <tr>
+            <td>orphanedPersonalSitesRetentionPeriod</td>
+            <td>number</td>
+            <td>Specifies the number of days after a user's Active Directory account  is deleted that their OneDrive for Business content will be deleted.</td>
           </tr>
           
         </table>
@@ -1530,6 +1664,12 @@
             <td>Whether this InboundConnector is valid or not.</td>
           </tr>
           
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Name of the inbound connector</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="OutboundConnector">
@@ -1770,6 +1910,18 @@
             <td>The TrackClicks parameter specifies whether to track user clicks related to blocked URLs in Safe Links for Office 365 apps.</td>
           </tr>
           
+          <tr>
+            <td>EnableSafeDocs</td>
+            <td>boolean</td>
+            <td>The EnableSafeDocs parameter enables or disables Safe Documents for the entire organization.</td>
+          </tr>
+          
+          <tr>
+            <td>AllowSafeDocsOpen</td>
+            <td>boolean</td>
+            <td>The AllowSafeDocsOpen parameter allows or prevents users from leaving Protected View  (that is, opening the document) if the document has been identified as malicious.</td>
+          </tr>
+          
         </table>
       
         <table class="entity_table" data-entity-name="SafeAttachmentPolicy">
@@ -1807,9 +1959,27 @@
           </tr>
           
           <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Unique ID of the HostedContentFilterPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>Id</td>
+            <td>string</td>
+            <td>ID of the HostedContentFilterPolicy</td>
+          </tr>
+          
+          <tr>
             <td>Identity</td>
             <td>string</td>
             <td>The identifier for this policy.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name for the HostedContentFilterPolicy.</td>
           </tr>
           
           <tr>
@@ -1840,6 +2010,30 @@
             <td>HighConfidencePhishAction</td>
             <td>string</td>
             <td>The HighConfidencePhishAction parameter specifies the action to take on messages that are marked as high confidence phishing (not phishing). Phishing messages use fraudulent links or spoofed domains to get personal information. Valid values are: MoveToJmf: Deliver the message to the recipient's mailbox, and move the message to the Junk Email folder. The message is moved only if the junk email rule is enabled on the mailbox (it's enabled by default).  Redirect: Redirect the message to the recipients specified by the RedirectToRecipients parameter. Quarantine: Move the message to quarantine. By default, messages that are quarantined as high confidence phishing are available only to admins. Or, you can use the HighConfidencePhishQuarantineTag parameter to specify what end-users are allowed to do on quarantined messages.</td>
+          </tr>
+          
+          <tr>
+            <td>ZapEnabled</td>
+            <td>boolean</td>
+            <td>If true, zero-hour auto purge (ZAP) is enabled for this HostedContentFilterPolicy.</td>
+          </tr>
+          
+          <tr>
+            <td>PhishZapEnabled</td>
+            <td>boolean</td>
+            <td>The PhishZapEnabled parameter enables or disables zero-hour auto purge (ZAP) to detect phishing in already delivered messages in Exchange Online mailboxes.</td>
+          </tr>
+          
+          <tr>
+            <td>SpamZapEnabled</td>
+            <td>boolean</td>
+            <td>The SpamZapEnabled parameter enables or disables zero-hour auto purge (ZAP) to detect spam in already delivered messages in Exchange Online mailboxes. </td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>The validity for the HostedContentFilterPolicy.</td>
           </tr>
           
         </table>
@@ -1921,6 +2115,267 @@
             <td>Name</td>
             <td>string</td>
             <td>Name of the Quarantine policy, e.g. "DefaultFullAccessPolicy".</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="HostedContentFilterRule">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>The identifier for HostedContentFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name for the HostedContentFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>The validity for the HostedContentFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>HostedContentFilterPolicy</td>
+            <td>Reference to HostedContentFilterPolicy</td>
+            <td>The HostedContentFilterPolicy is associated with this HostedContentFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>If Enabled, the HostedContentFilterRule is in use.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="MalwareFilterRule">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>The identifier for MalwareFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>The name for the MalwareFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>The validity for the MalwareFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>MalwareFilterPolicy</td>
+            <td>Reference to MalwareFilterPolicy</td>
+            <td>The MalwareFilterPolicy is associated with this MalwareFilterRule.</td>
+          </tr>
+          
+          <tr>
+            <td>State</td>
+            <td>string</td>
+            <td>If Enabled, the MalwareFilterRule is in use.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="SafeLinksPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>Unique ID of the SafeLinksPolicy</td>
+          </tr>
+          
+          <tr>
+            <td>AllowClickThrough</td>
+            <td>boolean</td>
+            <td>The AllowClickThrough parameter specifies whether to allow users to click through to the original URL on warning pages.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableSafeLinksForEmail</td>
+            <td>boolean</td>
+            <td>The EnableSafeLinksForEmail parameter specifies whether to enable Safe Links protection for email messages.</td>
+          </tr>
+          
+          <tr>
+            <td>EnableSafeLinksForOffice</td>
+            <td>boolean</td>
+            <td>The EnableSafeLinksForOffice parameter specifies whether to enable Safe Links protection for Microsoft Office Apps.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RetentionPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for this retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefault</td>
+            <td>boolean</td>
+            <td>Whether the retention policy is the default retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefaultArbitrationMailbox</td>
+            <td>boolean</td>
+            <td>Whether default retention policy for arbitration mailboxes  in Exchange Online organization</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Unique name for the retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>Specifies the name, distinguished name (DN),  or GUID of the retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenChangedUTC</td>
+            <td>number</td>
+            <td>When the retention policy was last changed.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenCreatedUTC</td>
+            <td>number</td>
+            <td>When the retention policy was created.</td>
+          </tr>
+          
+          <tr>
+            <td>RetentionId</td>
+            <td>string</td>
+            <td>The identity of the retention policy to ensure  mailboxes moved from an on-premises Exchange  deployment to the cloud continue to have the  same retention policy applied to them.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>Whether the retention policy is valid.</td>
+          </tr>
+          
+          <tr>
+            <td>RetentionPolicyTagLinks</td>
+            <td>Reference to RetentionPolicyTag</td>
+            <td>Specifies the names of retention policy tags to  be associated with this policy.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="RetentionPolicyTag">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for this retention policy tag.</td>
+          </tr>
+          
+          <tr>
+            <td>RetentionEnabled</td>
+            <td>boolean</td>
+            <td>Specifies whether the tag is enabled. When set to  False, the tag is disabled, and no retention  action is taken on messages that have the tag applied.</td>
+          </tr>
+          
+          <tr>
+            <td>RetentionAction</td>
+            <td>string</td>
+            <td>Specifies the action for the retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>AgeLimitForRetention</td>
+            <td>number</td>
+            <td>Specifies the age at which retention is enforced  on an item. The age limit corresponds to the  number of days from the date the item was delivered,  or the date an item was created if it wasn't delivered.</td>
+          </tr>
+          
+          <tr>
+            <td>Type</td>
+            <td>string</td>
+            <td>Specifies the type of retention tag being created.</td>
+          </tr>
+          
+          <tr>
+            <td>IsPrimary</td>
+            <td>boolean</td>
+            <td>Specifies whether its primary retention policy tag.</td>
+          </tr>
+          
+          <tr>
+            <td>MessageClass</td>
+            <td>string</td>
+            <td>Specifies the message type to which the tag applies. If not specified, the default value is set to '*'.</td>
+          </tr>
+          
+          <tr>
+            <td>RetentionId</td>
+            <td>string</td>
+            <td>Specifies an alternate tag ID to ensure the retention  tag found on mailbox items tagged in one Exchange  organization matches the tag when the mailbox is moved  to another Exchange organization.</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Specifies the name of the retention policy tag.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenChangedUTC</td>
+            <td>number</td>
+            <td>Specifies when the retention policy tag was last changed.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenCreatedUTC</td>
+            <td>number</td>
+            <td>Specifies when the retention policy tag was created.</td>
+          </tr>
+          
+          <tr>
+            <td>IsValid</td>
+            <td>boolean</td>
+            <td>Specifies whether the retention policy tag is valid.</td>
           </tr>
           
         </table>
