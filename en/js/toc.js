@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-97-0-0.html",
+"text": "Netskope Release Notes Version 97.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-97-0-0.html",
+"text": "New Features And Enhancements In Release 97.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-97-0-0.html",
+"text": "Fixed Issues In Release 97.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-97-0-0.html",
+"text": "Known Issues In Release 97.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-96-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 96.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -2428,9 +2450,38 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access.html",
+"text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-azure-ad-saml.html",
+"text": "Configure Azure AD SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-okta-saml.html",
+"text": "Configure Okta SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-browser-access-for-private-apps.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+}]
+},
+{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-publisher-auto-updates.html",
+"text": "Configure Publisher Auto-Updates",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -2440,7 +2491,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-browser-access-for-private-apps.html",
+"url": "configure-browser-access-for-private-apps-346711.html",
 "text": "Configure Browser Access for Private Apps",
 "class": "topic-link section"
 ,
@@ -2450,17 +2501,27 @@ var toc = [{
 "text": "Configure Google Workspace as the IdP for Browser Access Authentication",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configure-app-discovery-for-private-apps.html",
+"text": "Configure App Discovery for Private Apps",
+"class": "topic-link section"
 }]
 },
 {
-"url": "create-a-real-time-protection-policy-for-private-access.html",
-"text": "Create a Real-time Protection Policy for Private Access",
+"url": "create-a-real-time-protection-policy-for-private-apps.html",
+"text": "Create a Real-time Protection Policy for Private Apps",
 "class": "topic-link section"
 ,
 "children": [
 {
 "url": "create-a-policy-user-notification.html",
 "text": "Create a Policy User Notification",
+"class": "topic-link section"
+},
+{
+"url": "create-a-dlp-policy-for-private-apps.html",
+"text": "Create a DLP Policy for Private Apps",
 "class": "topic-link section"
 }]
 },
@@ -2529,6 +2590,28 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access-377437.html",
+"text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-azure-ad-saml-377475.html",
+"text": "Configure Azure AD SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-okta-saml-377476.html",
+"text": "Configure Okta SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-browser-access-for-private-apps-2-378561.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-for-microsoft-active-directory-domain-services.html",
 "text": "Netskope Private Access for Microsoft Active Directory Domain Services",
 "class": "topic-link section"
@@ -2536,11 +2619,6 @@ var toc = [{
 {
 "url": "netskope-private-access-for-smb-and-dfs-services.html",
 "text": "Netskope Private Access for SMB and DFS Services",
-"class": "topic-link section"
-},
-{
-"url": "netskope-private-access-for-microsoft-active-directory-domain-join-and-new-user-logon.html",
-"text": "Netskope Private Access for Microsoft Active Directory Domain Join and New User Logon",
 "class": "topic-link section"
 },
 {
@@ -2605,40 +2683,6 @@ var toc = [{
 "url": "secure-forwarder.html",
 "text": "Secure Forwarder",
 "class": "topic-link section"
-},
-{
-"url": "dataplane-on-premises-appliance.html",
-"text": "Dataplane On-Premises Appliance",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-interface-for-dataplane-on-premises.html",
-"text": "Configure the Interface for Dataplane On-Premises",
-"class": "topic-link section"
-},
-{
-"url": "steer-traffic-through-the-appliance.html",
-"text": "Steer Traffic through the Appliance",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-appliance-in-dns-mode.html",
-"text": "Configure the Appliance in DNS Mode",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-appliance-in-explicit-proxy-mode.html",
-"text": "Configure the Appliance in Explicit Proxy mode",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-certificates.html",
-"text": "Configure Certificates",
-"class": "topic-link section"
-}]
 },
 {
 "url": "default-steering-configuration.html",
@@ -5398,7 +5442,29 @@ var toc = [{
 {
 "url": "microsoft-intune.html",
 "text": "Microsoft Intune",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "deploy-client-on-windows-using-intune.html",
+"text": "Deploy Client On Windows Using Intune",
 "class": "topic-link section"
+},
+{
+"url": "deploy-client-on-macos-using-intune.html",
+"text": "Deploy Client on macOS Using Intune",
+"class": "topic-link section"
+},
+{
+"url": "deploy-vpn-profiles-in-ios-devices-using-intune.html",
+"text": "Deploy VPN Profiles In iOS Devices Using Intune",
+"class": "topic-link section"
+},
+{
+"url": "deploy-client-on-android-using-intune.html",
+"text": "Deploy Client On Android Using Intune",
+"class": "topic-link section"
+}]
 },
 {
 "url": "kandji.html",
@@ -5939,6 +6005,68 @@ var toc = [{
 }]
 },
 {
+"url": "cloud-exchange-hardening.html",
+"text": "Cloud Exchange Hardening",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "system-specifications.html",
+"text": "System Specifications",
+"class": "topic-link section"
+},
+{
+"url": "host-hardening.html",
+"text": "Host Hardening",
+"class": "topic-link section"
+},
+{
+"url": "firewall-proxy-rules.html",
+"text": "Firewall\/Proxy Rules",
+"class": "topic-link section"
+},
+{
+"url": "netskope-ip-ranges.html",
+"text": "Netskope IP Ranges",
+"class": "topic-link section"
+},
+{
+"url": "cloud-exchange-ports.html",
+"text": "Cloud Exchange Ports",
+"class": "topic-link section"
+},
+{
+"url": "cloud-exchange-proxy.html",
+"text": "Cloud Exchange Proxy",
+"class": "topic-link section"
+},
+{
+"url": "cloud-exchange-users.html",
+"text": "Cloud Exchange Users",
+"class": "topic-link section"
+},
+{
+"url": "idp-support.html",
+"text": "IdP Support",
+"class": "topic-link section"
+},
+{
+"url": "managing-credentials.html",
+"text": "Managing Credentials",
+"class": "topic-link section"
+},
+{
+"url": "encrypting-logs.html",
+"text": "Encrypting Logs",
+"class": "topic-link section"
+},
+{
+"url": "table-of-acronyms.html",
+"text": "Table of Acronyms",
+"class": "topic-link section"
+}]
+},
+{
 "url": "install-cloud-exchange.html",
 "text": "Install Cloud Exchange",
 "class": "topic-link section"
@@ -6281,8 +6409,8 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
-"url": "digital-shadows-plugin-for-threat-exchange.html",
-"text": "Digital Shadows Plugin for Threat Exchange",
+"url": "digital-shadow-plugin-for-threat-exchange.html",
+"text": "Digital Shadow Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
 },
 {
@@ -7420,47 +7548,6 @@ var toc = [{
 "text": "Configure AirWatch for MacOS",
 "class": "topic-link section"
 }]
-},
-{
-"url": "intune.html",
-"text": "Intune",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-certificate-profiles-for-intune.html",
-"text": "Create Certificate Profiles for Intune",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-an-on-demand-vpn-profile.html",
-"text": "Create an On-Demand VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "create-a-per-app-vpn-profile.html",
-"text": "Create a Per-App VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open-164910.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-intune-for-android.html",
-"text": "Configure Intune for Android",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "device-classification-for-android-116097.html",
-"text": "Device Classification for Android",
-"class": "topic-link section"
-}]
-}]
 }]
 }]
 },
@@ -8565,7 +8652,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-interface-for-dataplane-on-premises-115990.html",
+"url": "configure-the-interface-for-dataplane-on-premises.html",
 "text": "Configure the Interface for Dataplane On-Premises",
 "class": "topic-link section"
 },
@@ -8575,17 +8662,17 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "steer-traffic-through-the-appliance-115992.html",
+"url": "steer-traffic-through-the-appliance.html",
 "text": "Steer Traffic through the Appliance",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-dns-mode-115993.html",
+"url": "configure-the-appliance-in-dns-mode.html",
 "text": "Configure the Appliance in DNS Mode",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-explicit-proxy-mode-115994.html",
+"url": "configure-the-appliance-in-explicit-proxy-mode.html",
 "text": "Configure the Appliance in Explicit Proxy mode",
 "class": "topic-link section"
 ,
@@ -8597,7 +8684,7 @@ var toc = [{
 }]
 },
 {
-"url": "configure-certificates-115995.html",
+"url": "configure-certificates.html",
 "text": "Configure Certificates",
 "class": "topic-link section"
 },
