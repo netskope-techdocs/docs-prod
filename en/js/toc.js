@@ -2175,11 +2175,22 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-threat-protection-3rd-party-integrations.html",
-"text": "Configure Threat Protection 3rd-Party Integrations",
+"url": "advanced-threat-protection-86194.html",
+"text": "Advanced Threat Protection",
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "advanced-heuristic-analysis.html",
+"text": "Advanced Heuristic Analysis",
+"class": "topic-link section"
+},
+{
+"url": "viewing-cloud-sandbox-analysis.html",
+"text": "Viewing Cloud Sandbox Analysis",
+"class": "topic-link section"
+}]
+},
 {
 "url": "endpoint-detection-and-response.html",
 "text": "Endpoint Detection and Response",
@@ -2198,31 +2209,13 @@ var toc = [{
 }]
 },
 {
-"url": "advanced-threat-protection-86194.html",
-"text": "Advanced Threat Protection",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "advanced-heuristic-analysis.html",
-"text": "Advanced Heuristic Analysis",
-"class": "topic-link section"
-},
-{
-"url": "viewing-cloud-sandbox-analysis.html",
-"text": "Viewing Cloud Sandbox Analysis",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "create-a-remediation-profile.html",
 "text": "Create a Remediation Profile",
 "class": "topic-link section"
 },
 {
-"url": "configure-threat-protection-for-api-data-protection.html",
-"text": "Configure Threat Protection for API Data Protection",
+"url": "creating-a-threat-protection-policy-for-api-data-protection.html",
+"text": "Creating a Threat Protection Policy for API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -2236,8 +2229,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-threat-protection-for-a-real-time-protection-policy.html",
-"text": "Configure Threat Protection for a Real-time Protection Policy",
+"url": "creating-a-threat-protection-policy-for-real-time-protection.html",
+"text": "Creating a Threat Protection Policy for Real-time Protection",
 "class": "topic-link section"
 },
 {
@@ -2613,6 +2606,40 @@ var toc = [{
 "url": "secure-forwarder.html",
 "text": "Secure Forwarder",
 "class": "topic-link section"
+},
+{
+"url": "dataplane-on-premises-appliance.html",
+"text": "Dataplane On-Premises Appliance",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-interface-for-dataplane-on-premises.html",
+"text": "Configure the Interface for Dataplane On-Premises",
+"class": "topic-link section"
+},
+{
+"url": "steer-traffic-through-the-appliance.html",
+"text": "Steer Traffic through the Appliance",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-the-appliance-in-dns-mode.html",
+"text": "Configure the Appliance in DNS Mode",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-appliance-in-explicit-proxy-mode.html",
+"text": "Configure the Appliance in Explicit Proxy mode",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configure-certificates.html",
+"text": "Configure Certificates",
+"class": "topic-link section"
+}]
 },
 {
 "url": "default-steering-configuration.html",
@@ -5454,6 +5481,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "azure-virtual-desktop.html",
+"text": "Azure Virtual Desktop",
+"class": "topic-link section"
+},
+{
 "url": "interop-with-cisco-anyconnect.html",
 "text": "Interop with Cisco AnyConnect",
 "class": "topic-link section"
@@ -5484,6 +5516,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "microsoft-always-on-vpn.html",
+"text": "Microsoft Always-On VPN",
+"class": "topic-link section"
+},
+{
 "url": "openvpn-cloud.html",
 "text": "OpenVPN Cloud",
 "class": "topic-link section"
@@ -5499,11 +5536,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "trend-micro-maximum-security.html",
-"text": "Trend Micro Maximum Security",
-"class": "topic-link section"
-},
-{
 "url": "sophos.html",
 "text": "Sophos",
 "class": "topic-link section"
@@ -5514,8 +5546,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "microsoft-always-on-vpn.html",
-"text": "Microsoft Always-On VPN",
+"url": "trend-micro-maximum-security.html",
+"text": "Trend Micro Maximum Security",
 "class": "topic-link section"
 }]
 },
@@ -8582,7 +8614,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-the-interface-for-dataplane-on-premises.html",
+"url": "configure-the-interface-for-dataplane-on-premises-115990.html",
 "text": "Configure the Interface for Dataplane On-Premises",
 "class": "topic-link section"
 },
@@ -8592,17 +8624,17 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "steer-traffic-through-the-appliance.html",
+"url": "steer-traffic-through-the-appliance-115992.html",
 "text": "Steer Traffic through the Appliance",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-dns-mode.html",
+"url": "configure-the-appliance-in-dns-mode-115993.html",
 "text": "Configure the Appliance in DNS Mode",
 "class": "topic-link section"
 },
 {
-"url": "configure-the-appliance-in-explicit-proxy-mode.html",
+"url": "configure-the-appliance-in-explicit-proxy-mode-115994.html",
 "text": "Configure the Appliance in Explicit Proxy mode",
 "class": "topic-link section"
 ,
@@ -8614,7 +8646,7 @@ var toc = [{
 }]
 },
 {
-"url": "configure-certificates.html",
+"url": "configure-certificates-115995.html",
 "text": "Configure Certificates",
 "class": "topic-link section"
 },
