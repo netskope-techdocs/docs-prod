@@ -426,14 +426,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-private-access-publisher-release-notes-version-97-0-0-0.html",
-"text": "Netskope Private Access Publisher Release Notes Version 97.0.0.0",
+"url": "netskope-private-access-publisher-release-notes-version-97-0-0-7294.html",
+"text": "Netskope Private Access Publisher Release Notes Version 97.0.0.7294",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-publisher-release-97-0-0.html",
-"text": "New Features And Enhancements In Publisher Release 97.0.0",
+"url": "new-features-and-enhancements-in-publisher-release-97-0-0-7294.html",
+"text": "New Features And Enhancements In Publisher Release 97.0.0.7294",
 "class": "topic-link section"
 }]
 },
