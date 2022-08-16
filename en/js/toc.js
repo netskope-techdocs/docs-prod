@@ -426,6 +426,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-97-0-0-0.html",
+"text": "Netskope Private Access Publisher Release Notes Version 97.0.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-publisher-release-97-0-0.html",
+"text": "New Features And Enhancements In Publisher Release 97.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-96-0-0-7170.html",
 "text": "Netskope Private Access Publisher Release Notes Version 96.0.0.7170",
 "class": "topic-link section reused-publication reused-publication"
@@ -536,6 +548,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-96-1-2-230.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 96.1.2.230",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-96-1-1-221.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 96.1.1.221",
