@@ -1,0 +1,239 @@
+.ntsp_table{
+    font-size: 12px !important;
+    width: 91.5% !important;
+    margin: auto !important;
+    margin-top: 12px !important;
+    margin-left: 40px !important;
+}
+.ntsp_table thead th{
+    color: #727272 !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: #f8f8f8 !important;
+}
+
+.ntsp_table tbody tr td div.tooltip{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    display: none;
+}
+
+.ntsp_table tbody tr td.rule{
+    cursor: default;
+}
+
+.ntsp_table tbody i.inverted.bordered.icon{
+    background-color: #344a60 !important;
+    border-radius: 4px !important;
+    width: 24px !important;
+    height: 24px !important;
+    padding: 3px !important;
+    /*display:none;*/
+}
+
+.ntsp_table tbody tr{
+    position: relative;
+}
+.ntsp_table tbody {
+    color: #242424 !important;
+}
+body .ut_margin_left_40{
+    margin-left: 40px !important;
+}
+body .ut_margin_top_32{
+    margin-top: 32px !important;
+}
+body .ut_margin_top_18{
+    margin-top: 18px !important;
+}
+body .ut_margin_bottom_0{
+    margin-bottom: 0 !important;
+}
+body .title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    color: #242424;
+}
+body .icon.input .prompt{
+    border-radius: 4px !important;
+    width: 260px !important;
+}
+body .icon.input .search.icon{
+    float: left !important;
+}
+
+.wide.rightInfo{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.wide.leftInfo{
+    padding-right: 0 !important;
+}
+.wide.leftInfo{
+    background-color: #f8f8f8;
+}
+.ngl_doc.ui.divided.grid{
+    min-height: 101.45vh;
+}
+.ntsp_logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    margin-left: 2em;
+    margin-right: 2em;
+    flex-direction: column;
+}
+.ntsp_logo img{
+    width: 14vw;
+    padding-right: 20px;
+    margin-bottom: 1rem;
+}
+
+.ntsp_logo .ui.avatar.image {
+    padding-right: 0;
+}
+.ntsp_logo .selection.dropdown{
+    pointer-events: none;
+}
+.ntsp_logo .selection.dropdown > .dropdown.icon{
+    display: none;
+}
+.ntsp_logo .ui.buttons {
+    margin-top: 16px;
+}
+
+.ntsp_logo .ui.buttons .button{
+    padding: 6px 16px !important;
+    line-height: 20px;
+    font-weight: normal;
+    background-color: white;
+    color: #1BB7DF;
+    border:1px solid #1BB7DF;
+}
+
+.ntsp_logo .ui.buttons .button.active{
+    background-color: #1BB7DF;
+    color: white;
+}
+
+.ngl_doc .ui.divider{
+    margin: 24px 0;
+}
+.ngl_doc .left.heading{
+    color: #242424;
+    line-height: 24px;
+    font-size: 16px;
+}
+.ngl_doc .rules{
+    display: flex;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    flex-direction: column;
+}
+.ngl_doc .rules .ui.search{
+    width: 100%;
+}
+.ngl_doc .rules .ui.left.icon.input{
+    width: 100%;
+}
+
+.ngl_doc .rules .ui.accordion .title{
+    padding: 0px !important;
+    color: inherit;
+    line-height: 20px;
+}
+
+.ngl_doc .ui.accordion, .ngl_doc .dropdown.icon~a{
+    color: #617487;
+}
+
+.ngl_doc .ui.accordion .accordion{
+    margin: 0px !important;
+}
+
+.ngl_doc .ui.accordion .title~.content{
+    padding-left: 30px !important;
+    cursor: pointer;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.ngl_doc .ui.accordion .title~.content:hover{
+
+}
+
+.ngl_doc .ui.accordion .title~.content a{
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+}
+.ngl_doc .ui.accordion .title~.content a:hover{
+    color: #1BB7DF;
+}
+.ngl_doc .ui.accordion .title~.content a.active, .ngl_doc .dropdown.icon~span.active, .ngl_doc .dropdown.icon~a.active{
+    color: #1BB7DF;
+}
+
+.ngl_doc .ui.accordion .title~.content > .links{
+    padding-top: 16px !important;
+}
+.ngl_doc .ui.accordion .title{
+    margin-top: 16px;
+}
+.ngl_doc .ui.accordion>.title{
+    padding-top: 20px !important;
+}
+.ngl_doc .accordion .title{
+    display:flex;
+}
+.ngl_doc div.ns_sticky {
+    position: sticky !important;
+    top: 0;
+}
+
+.ngl_doc .dropdown.icon:hover{
+    color:#1BB7DF;
+}
+.ngl_doc .dropdown.icon{
+    margin: auto !important;
+}
+.ngl_doc .dropdown.icon~span:hover, .ngl_doc .dropdown.icon~a:hover{
+    color:#1BB7DF;
+}
+.ngl_doc .dropdown.icon~span, .ngl_doc .dropdown.icon~a{
+    display: inline-block;
+    width: 100%;
+    padding-left: 7px;
+}
+.ngl_doc ._TAB {
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    border-top: 5px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid rgba(125,125,125,0.40);
+    margin-right: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+span.indentation {
+    width: 10px;
+}
+.ngl_doc tr > th, .ngl_doc tr > td {
+    padding-left: 20px !important;
+    padding-right: 4px !important;
+}
+.ngl_doc tr > th:last-child, .ngl_doc tr > td:last-child {
+    padding-right: 20px !important;
+}
+.ngl_doc .resourceType span.refLinks{
+    cursor: pointer;
+    color: #617487;
+}
