@@ -16,6 +16,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-97-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 97.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-platform-available---next-generation-security-posture-management.html",
+"text": "New Platform Available - Next-Generation Security Posture Management",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-in-hotfix-release-97-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 97.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-97-1-0.html",
+"text": "Fixed Issues In Hotfix Release 97.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-97-1-0.html",
+"text": "Known Issues In Hotfix Release 97.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-97-0-0.html",
 "text": "Netskope Release Notes Version 97.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -1911,6 +1938,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "dns-profile.html",
+"text": "DNS Profile",
+"class": "topic-link section"
+},
+{
 "url": "configure-the-kmip-forwarder.html",
 "text": "Configure the KMIP Forwarder",
 "class": "topic-link section"
@@ -1924,6 +1956,12 @@ var toc = [{
 ,
 "children": [
 {
+"url": "add-new-network-location-for-ssl-decryption.html",
+"text": "Add New Network Location for SSL Decryption",
+"class": "topic-link section"
+}]
+},
+{
 "url": "add-a-policy-for-ssl-decryption.html",
 "text": "Add a Policy for SSL Decryption",
 "class": "topic-link section"
@@ -1936,17 +1974,16 @@ var toc = [{
 }]
 },
 {
-"url": "add-new-network-location-for-ssl-decryption.html",
-"text": "Add New Network Location for SSL Decryption",
-"class": "topic-link section"
-}]
-},
-{
 "url": "profiles.html",
 "text": "Profiles",
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "dns-profile-381992.html",
+"text": "DNS Profile",
+"class": "topic-link section"
+},
 {
 "url": "http-header-profile.html",
 "text": "HTTP Header Profile",
@@ -2183,6 +2220,11 @@ var toc = [{
 "url": "supported-file-categories-and-file-types-307049.html",
 "text": "Supported File Categories and File Types",
 "class": "topic-link section"
+},
+{
+"url": "endpoint-data-loss-prevention.html",
+"text": "Endpoint Data Loss Prevention",
+"class": "topic-link section reused-publication reused-publication"
 }]
 },
 {
@@ -2273,6 +2315,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "creating-a-threat-protection-policy-for-patient-zero.html",
+"text": "Creating a Threat Protection Policy for Patient Zero",
+"class": "topic-link section"
+},
+{
 "url": "viewing-patient-zero-events.html",
 "text": "Viewing Patient Zero Events",
 "class": "topic-link section"
@@ -2302,6 +2349,11 @@ var toc = [{
 {
 "url": "create-a-real-time-protection-policy-for-isolation--targeted-rbi-.html",
 "text": "Create a Real-time Protection Policy for Isolation (Targeted RBI)",
+"class": "topic-link section"
+},
+{
+"url": "rbi-templates.html",
+"text": "RBI Templates",
 "class": "topic-link section"
 },
 {
@@ -5112,11 +5164,33 @@ var toc = [{
 "url": "next-generation-api-data-protection-skope-it-events.html",
 "text": "Next Generation API Data Protection Skope IT Events",
 "class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection-policy-wizard.html",
+"text": "Next Generation API Data Protection Policy Wizard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-next-generation-api-data-protection-policy.html",
+"text": "Create a Next Generation API Data Protection Policy",
+"class": "topic-link section"
+},
+{
+"url": "internal-domains.html",
+"text": "Internal Domains",
+"class": "topic-link section"
+},
+{
+"url": "activities-monitored-by-netskope.html",
+"text": "Activities Monitored by Netskope",
+"class": "topic-link section"
+}]
 }]
 },
 {
-"url": "netskope-saas-security-posture-management.html",
-"text": "Netskope SaaS Security Posture Management",
+"url": "saas-security-posture-management.html",
+"text": "SaaS Security Posture Management",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -5274,6 +5348,92 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-security-posture-management.html",
+"text": "Next Generation Security Posture Management",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "next-generation-security-posture-management-for-microsoft-365.html",
+"text": "Next Generation Security Posture Management for Microsoft 365",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-microsoft-365-instance-for-next-generation-security-posture-management.html",
+"text": "Configure Microsoft 365 Instance for Next Generation Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-security-posture-management-for-salesforce.html",
+"text": "Next Generation Security Posture Management for Salesforce",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-salesforce-instance-for-next-generation-security-posture-management.html",
+"text": "Configure Salesforce Instance for Next Generation Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-security-posture-management-policy-wizard.html",
+"text": "Next Generation Security Posture Management Policy Wizard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "next-generation-security-posture-policy.html",
+"text": "Next Generation Security Posture Policy",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-next-generation-security-posture-policy.html",
+"text": "Create a Next Generation Security Posture Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-security-posture-rule.html",
+"text": "Next Generation Security Posture Rule",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-next-generation-security-posture-rule.html",
+"text": "Create a Next Generation Security Posture Rule",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "custom-rules-using-netskope-governance-language.html",
+"text": "Custom Rules Using Netskope Governance Language",
+"class": "topic-link section"
+}]
+}]
+}]
+},
+{
+"url": "next-generation-security-posture-management-dashboard.html",
+"text": "Next Generation Security Posture Management Dashboard",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "view-security-posture-compliance-380220.html",
+"text": "View Security Posture Compliance",
+"class": "topic-link section"
+},
+{
+"url": "view-security-posture-inventory.html",
+"text": "View Security Posture Inventory",
+"class": "topic-link section"
+}]
+}]
+},
+{
 "url": "netskope-cloud-firewall.html",
 "text": "Netskope Cloud Firewall",
 "class": "topic-link section reused-publication reused-publication"
@@ -5327,8 +5487,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "exceptions-304825.html",
-"text": "Exceptions",
+"url": "configuring-cloud-firewall-steering-exceptions.html",
+"text": "Configuring Cloud Firewall Steering Exceptions",
 "class": "topic-link section"
 },
 {
@@ -5464,6 +5624,11 @@ var toc = [{
 "url": "deploy-netskope-client-via-idp.html",
 "text": "Deploy Netskope Client via IdP",
 "class": "topic-link section"
+},
+{
+"url": "netskope-client-for-windows.html",
+"text": "Netskope Client For Windows",
+"class": "topic-link section"
 }]
 },
 {
@@ -5503,6 +5668,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "blackberry-cylance.html",
+"text": "Blackberry Cylance",
+"class": "topic-link section"
+},
+{
 "url": "interop-with-cisco-anyconnect.html",
 "text": "Interop with Cisco AnyConnect",
 "class": "topic-link section"
@@ -5520,6 +5690,11 @@ var toc = [{
 {
 "url": "crowdstrike.html",
 "text": "CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "fortigate-vpn.html",
+"text": "FortiGate VPN",
 "class": "topic-link section"
 },
 {
@@ -5545,6 +5720,11 @@ var toc = [{
 {
 "url": "palo-alto-globalprotect.html",
 "text": "Palo Alto GlobalProtect",
+"class": "topic-link section"
+},
+{
+"url": "pulsesecure-vpn.html",
+"text": "PulseSecure VPN",
 "class": "topic-link section"
 },
 {
@@ -5574,8 +5754,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-client-in-linux-operating-system.html",
-"text": "Netskope Client in Linux Operating System",
+"url": "netskope-client-for-linux.html",
+"text": "Netskope Client For Linux",
 "class": "topic-link section"
 }]
 },
@@ -7824,6 +8004,13 @@ var toc = [{
 "url": "netskope-library.html",
 "text": "Netskope Library",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "industry-benchmarks-dashboard.html",
+"text": "Industry Benchmarks Dashboard",
+"class": "topic-link section"
+}]
 },
 {
 "url": "explore-page.html",
@@ -9514,4 +9701,9 @@ var toc = [{
 "class": "topic-link section original-topic original-topic"
 }]
 }]
+},
+{
+"url": "borderless-wan.html",
+"text": "Borderless WAN",
+"class": "topic-link section top-nav-link top-nav-link"
 }];
