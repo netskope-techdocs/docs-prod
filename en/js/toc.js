@@ -829,6 +829,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "on-premises-appliance-release-notes-version-96-0.html",
+"text": "On-Premises Appliance Release Notes Version 96.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-96-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 96.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "on-premises-appliance-release-notes-version-93-1-0.html",
 "text": "On-Premises Appliance Release Notes Version 93.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -958,6 +970,18 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "virtual-appliance-release-notes-version-96-0.html",
+"text": "Virtual Appliance Release Notes Version 96.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-for-virtual-appliance-version-96-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 96.0",
+"class": "topic-link section"
+}]
+},
 {
 "url": "virtual-appliance-release-notes-version-93-1-0.html",
 "text": "Virtual Appliance Release Notes Version 93.1.0",
@@ -3136,16 +3160,15 @@ var toc = [{
 ,
 "children": [
 {
-"url": "getting-started-with-ueba-for-public-cloud.html",
-"text": "Getting Started with UEBA for Public Cloud",
+"url": "ueba-for-amazon-web-services.html",
+"text": "UEBA for Amazon Web Services",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "ueba-for-aws.html",
-"text": "UEBA for AWS",
+"url": "getting-started-with-ueba-for-aws.html",
+"text": "Getting Started with UEBA for AWS",
 "class": "topic-link section"
-}]
 },
 {
 "url": "enabling-ueba-for-aws-cloudtrail.html",
@@ -3170,14 +3193,15 @@ var toc = [{
 }]
 },
 {
-"url": "faqs-to-setup-ueba-for-public-cloud.html",
-"text": "FAQs to setup UEBA for Public Cloud",
+"url": "faqs-to-setup-ueba-for-aws.html",
+"text": "FAQs to setup UEBA for AWS",
 "class": "topic-link section"
 },
 {
-"url": "troubleshooting-ueba-setup-for-public-cloud.html",
-"text": "Troubleshooting UEBA Setup for Public Cloud",
+"url": "troubleshooting-ueba-setup-for-aws.html",
+"text": "Troubleshooting UEBA Setup for AWS",
 "class": "topic-link section"
+}]
 }]
 },
 {
