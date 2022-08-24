@@ -2466,6 +2466,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "allow-users-to-disable-private-apps-access-on-the-netskope-client.html",
+"text": "Allow Users to Disable Private Apps Access on the Netskope Client",
+"class": "topic-link section"
+},
+{
 "url": "configure-client-pre-logon-connectivity.html",
 "text": "Configure Client Pre-logon Connectivity",
 "class": "topic-link section"
