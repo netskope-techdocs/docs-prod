@@ -1865,57 +1865,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "encryption.html",
-"text": "Encryption",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "structured-data-security.html",
-"text": "Structured Data Security",
-"class": "topic-link section"
-},
-{
-"url": "file-level-encryption.html",
-"text": "File-Level Encryption",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-encryption-for-real-time-protection-detection.html",
-"text": "Configure Encryption for Real-time Protection Detection",
-"class": "topic-link section"
-},
-{
-"url": "configure-encryption-for-api-data-protection-detection.html",
-"text": "Configure Encryption for API Data Protection Detection",
-"class": "topic-link section"
-}]
-},
-{
-"url": "kmip.html",
-"text": "KMIP",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "install-a-virtual-appliance.html",
-"text": "Install a Virtual Appliance",
-"class": "topic-link section"
-},
-{
-"url": "dns-profile.html",
-"text": "DNS Profile",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-kmip-forwarder.html",
-"text": "Configure the KMIP Forwarder",
-"class": "topic-link section"
-}]
-}]
-},
-{
 "url": "ssl-decryption.html",
 "text": "SSL Decryption",
 "class": "topic-link section"
@@ -1946,7 +1895,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "dns-profile-381992.html",
+"url": "dns-profile.html",
 "text": "DNS Profile",
 "class": "topic-link section"
 },
@@ -2497,11 +2446,6 @@ var toc = [{
 {
 "url": "create-a-policy-user-notification.html",
 "text": "Create a Policy User Notification",
-"class": "topic-link section"
-},
-{
-"url": "create-a-dlp-policy-for-private-apps.html",
-"text": "Create a DLP Policy for Private Apps",
 "class": "topic-link section"
 }]
 },
@@ -9063,7 +9007,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "install-a-virtual-appliance-144836.html",
+"url": "install-a-virtual-appliance.html",
 "text": "Install a Virtual Appliance",
 "class": "topic-link section"
 },
