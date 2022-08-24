@@ -1101,40 +1101,6 @@ var toc = [{
 "class": "topic-link section"
 }]
 }]
-},
-{
-"url": "management-plane-appliance-release-notes.html",
-"text": "Management Plane Appliance Release Notes",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "management-plane-appliance-release-notes-version-53-8-0.html",
-"text": "Management Plane Appliance Release Notes Version 53.8.0",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "overview-for-management-plane-appliance-version-53-8-0.html",
-"text": "Overview for Management Plane Appliance Version 53.8.0",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-for-management-plane-appliance-version-53-8-0.html",
-"text": "New Features and Enhancements for Management Plane Appliance Version 53.8.0",
-"class": "topic-link section"
-},
-{
-"url": "known-issues-for-management-plane-appliance-version-53-8-0.html",
-"text": "Known Issues for Management Plane Appliance Version 53.8.0",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-for-management-plane-appliance-version-53-8-0.html",
-"text": "Fixed Issues for Management Plane Appliance Version 53.8.0",
-"class": "topic-link section"
-}]
-}]
 }]
 }]
 },
@@ -2556,6 +2522,16 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-client-pre-logon-connectivity.html",
+"text": "Configure Client Pre-logon Connectivity",
+"class": "topic-link section"
+},
+{
+"url": "windows-autopilot-with-private-access-pre-logon.html",
+"text": "Windows Autopilot with Private Access Pre-logon",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "use-client-re-authentication.html",
 "text": "Use Client Re-authentication",
 "class": "topic-link section"
@@ -3136,16 +3112,15 @@ var toc = [{
 ,
 "children": [
 {
-"url": "getting-started-with-ueba-for-public-cloud.html",
-"text": "Getting Started with UEBA for Public Cloud",
+"url": "ueba-for-amazon-web-services.html",
+"text": "UEBA for Amazon Web Services",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "ueba-for-aws.html",
-"text": "UEBA for AWS",
+"url": "getting-started-with-ueba-for-aws.html",
+"text": "Getting Started with UEBA for AWS",
 "class": "topic-link section"
-}]
 },
 {
 "url": "enabling-ueba-for-aws-cloudtrail.html",
@@ -3170,14 +3145,20 @@ var toc = [{
 }]
 },
 {
-"url": "faqs-to-setup-ueba-for-public-cloud.html",
-"text": "FAQs to setup UEBA for Public Cloud",
+"url": "faqs-to-setup-ueba-for-aws.html",
+"text": "FAQs to setup UEBA for AWS",
 "class": "topic-link section"
 },
 {
-"url": "troubleshooting-ueba-setup-for-public-cloud.html",
-"text": "Troubleshooting UEBA Setup for Public Cloud",
+"url": "troubleshooting-ueba-setup-for-aws.html",
+"text": "Troubleshooting UEBA Setup for AWS",
 "class": "topic-link section"
+},
+{
+"url": "additional-cost-to-customer.html",
+"text": "Additional Cost to Customer",
+"class": "topic-link section"
+}]
 }]
 },
 {
