@@ -11080,6 +11080,10 @@
      content: url(https://docs.netskope.com/css/image/corporate-logo.png) !important;
 }
 
+.swagger-ui .float-right {
+    display: none !important;
+}
+
 .swagger-ui .topbar a {
      color: #fff;
      flex: 1;
