@@ -5088,6 +5088,16 @@ var toc = [{
 "url": "configure-zoom-for-the-next-generation-api-data-protection.html",
 "text": "Configure Zoom for the Next Generation API Data Protection",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-zoom.html",
+"text": "Permissions Required for Zoom",
+"class": "topic-link section"
+},
+{
+"url": "remove-the-netskope-casb-api-app-from-the-zoom-account.html",
+"text": "Remove the Netskope CASB API App from the Zoom Account",
+"class": "topic-link section"
 }]
 },
 {
@@ -5199,7 +5209,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "permissions-required-for-zoom.html",
+"url": "permissions-required-for-zoom-319756.html",
 "text": "Permissions Required for Zoom",
 "class": "topic-link section"
 },
@@ -7701,6 +7711,55 @@ var toc = [{
 "url": "change-access-for-an-admin-account.html",
 "text": "Change Access for an Admin Account",
 "class": "topic-link section"
+},
+{
+"url": "managing-administrators-for-rbac-v2.html",
+"text": "Managing Administrators for RBAC V2",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "manage-administrators.html",
+"text": "Manage Administrators",
+"class": "topic-link section"
+},
+{
+"url": "create-policy-groups.html",
+"text": "Create Policy Groups",
+"class": "topic-link section"
+},
+{
+"url": "create-roles.html",
+"text": "Create Roles",
+"class": "topic-link section"
+},
+{
+"url": "create-admins-and-assign-to-roles.html",
+"text": "Create Admins and Assign to Roles",
+"class": "topic-link section"
+},
+{
+"url": "admins-settings-page.html",
+"text": "Admins Settings Page",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "set-log-in-attempts-353477.html",
+"text": "Set Log In Attempts",
+"class": "topic-link section"
+},
+{
+"url": "set-idle-timeout-353478.html",
+"text": "Set Idle Timeout",
+"class": "topic-link section"
+},
+{
+"url": "set-password-expiration-353479.html",
+"text": "Set Password Expiration",
+"class": "topic-link section"
+}]
+}]
 }]
 },
 {
@@ -8022,6 +8081,18 @@ var toc = [{
 "url": "advanced-analytics-data-retention.html",
 "text": "Advanced Analytics Data Retention",
 "class": "topic-link section"
+},
+{
+"url": "advanced-analytics-transaction-events.html",
+"text": "Advanced Analytics Transaction Events",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "advanced-analytics-transaction-event-fields.html",
+"text": "Advanced Analytics Transaction Event Fields",
+"class": "topic-link section"
+}]
 }]
 },
 {
