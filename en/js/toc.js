@@ -2436,6 +2436,20 @@ var toc = [{
 "url": "private-app-management.html",
 "text": "Private App Management",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-browser-access-for-private-apps.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-google-workspace-as-the-idp-for-browser-access-authentication.html",
+"text": "Configure Google Workspace as the IdP for Browser Access Authentication",
+"class": "topic-link section"
+}]
+}]
 },
 {
 "url": "create-a-real-time-protection-policy-for-private-apps.html",
