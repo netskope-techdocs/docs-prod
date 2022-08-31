@@ -6438,6 +6438,11 @@ var toc = [{
 "url": "configure-log-shipper-siem-mappings.html",
 "text": "Configure Log Shipper SIEM Mappings",
 "class": "topic-link section"
+},
+{
+"url": "log-shipper-syslog-mapping.html",
+"text": "Log Shipper Syslog Mapping",
+"class": "topic-link section"
 }]
 },
 {
