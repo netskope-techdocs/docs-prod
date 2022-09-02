@@ -7596,8 +7596,8 @@ var toc = [{
 }]
 },
 {
-"url": "security.html",
-"text": "Security",
+"url": "device-classification-385371.html",
+"text": "Device Classification",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -7605,7 +7605,14 @@ var toc = [{
 "url": "device-classification-with-tanium-for-windows.html",
 "text": "Device Classification with Tanium for Windows",
 "class": "topic-link section"
+}]
 },
+{
+"url": "security.html",
+"text": "Security",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
 {
 "url": "integrate-netskope-apis-with-exabeam-incident-responder.html",
 "text": "Integrate Netskope APIs with Exabeam Incident Responder",
