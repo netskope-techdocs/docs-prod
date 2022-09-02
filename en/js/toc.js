@@ -2565,6 +2565,28 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access.html",
+"text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-azure-ad-saml.html",
+"text": "Configure Azure AD SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-okta-saml.html",
+"text": "Configure Okta SAML",
+"class": "topic-link section"
+},
+{
+"url": "configure-browser-access-for-private-apps-378561.html",
+"text": "Configure Browser Access for Private Apps",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-for-smb-and-dfs-services.html",
 "text": "Netskope Private Access for SMB and DFS Services",
 "class": "topic-link section"

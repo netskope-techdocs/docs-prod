@@ -1873,6 +1873,22 @@
     <lastmod>2022-07-25</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access.html</loc>
+    <lastmod>2022-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-azure-ad-saml.html</loc>
+    <lastmod>2022-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-okta-saml.html</loc>
+    <lastmod>2022-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-browser-access-for-private-apps-378561.html</loc>
+    <lastmod>2022-08-30</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-for-smb-and-dfs-services.html</loc>
     <lastmod>2022-01-26</lastmod>
   </url>
