@@ -16,6 +16,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-97-1-3.html",
+"text": "Netskope Release Notes Hotfix Version 97.1.3",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-97-1-3.html",
+"text": "New Features And Enhancements In Hotfix Release 97.1.3",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-97-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -575,6 +587,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-97-1-1-240.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 97.1.1.240",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-96-1-2-230.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 96.1.2.230",
@@ -5753,6 +5770,11 @@ var toc = [{
 }]
 },
 {
+"url": "borderless-wan.html",
+"text": "Borderless WAN",
+"class": "topic-link section"
+},
+{
 "url": "ipsec-129296.html",
 "text": "IPSec",
 "class": "topic-link section"
@@ -6598,8 +6620,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-a-servicenow-plugin.html",
-"text": "Configure a ServiceNow Plugin",
+"url": "configure-the-servicenow-plugin.html",
+"text": "Configure the ServiceNow Plugin",
 "class": "topic-link section"
 },
 {
@@ -6610,6 +6632,65 @@ var toc = [{
 {
 "url": "validate-the-servicenow-plugin.html",
 "text": "Validate the ServiceNow Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "stix-taxii-plugin-for-threat-exchange.html",
+"text": "STIX\/TAXII Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "get-your-stix-taxii-discovery-url.html",
+"text": "Get your STIX\/TAXII Discovery URL",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-stix-taxii-plugin.html",
+"text": "Configure the STIX\/TAXII Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-sharing-for-netskope-and-stix-taxii.html",
+"text": "Configure Sharing for Netskope and STIX\/TAXII",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-stix-taxii-plugin.html",
+"text": "Validate the STIX\/TAXII Plugin",
+"class": "topic-link section"
+}]
+},
+{
+"url": "api-source-plugin-for-threat-exchange.html",
+"text": "API Source Plugin for Threat Exchange",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-the-api-source-plugin.html",
+"text": "Configure the API Source Plugin",
+"class": "topic-link section"
+},
+{
+"url": "create-an-api-token.html",
+"text": "Create an API Token",
+"class": "topic-link section"
+},
+{
+"url": "share-the-iocs-from-an-api-source-to-a-netskope-tenant.html",
+"text": "Share the IoCs from an API Source to a Netskope Tenant",
+"class": "topic-link section"
+},
+{
+"url": "api-documentation.html",
+"text": "API Documentation",
+"class": "topic-link section"
+},
+{
+"url": "examples-of-using-the-api-to-post-and-patch-iocs.html",
+"text": "Examples of using the API to POST and PATCH IoCs",
 "class": "topic-link section"
 }]
 }]
@@ -7520,6 +7601,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "device-classification-with-tanium-for-windows.html",
+"text": "Device Classification with Tanium for Windows",
+"class": "topic-link section"
+},
 {
 "url": "integrate-netskope-apis-with-exabeam-incident-responder.html",
 "text": "Integrate Netskope APIs with Exabeam Incident Responder",
@@ -9721,9 +9807,4 @@ var toc = [{
 "class": "topic-link section original-topic original-topic"
 }]
 }]
-},
-{
-"url": "borderless-wan.html",
-"text": "Borderless WAN",
-"class": "topic-link section top-nav-link top-nav-link"
 }];
