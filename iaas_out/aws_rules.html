@@ -2787,14 +2787,14 @@ h1 {position: fixed; top: 75}
           
           <tr num="206">
             <!-- <td>206</td> -->
-            <td>The VPC default security group should not allow inbound and outbound traffic</td>
-            <td>This control checks that the default security group of a VPC does not allow inbound or outbound traffic</td>
+            <td>Ensure the default security group of every VPC restricts all traffic</td>
+            <td>A VPC comes with a default security group whose initial settings deny all inbound traffic, allow all outbound traffic, and allow all traffic between instances assigned to the security group. If you don't specify a security group when you launch an instance, the instance is automatically assigned to this default security group. Security groups provide stateful filtering of ingress/egress network traffic to AWS resources. It is recommended that the default security group restrict all traffic. The default VPC in every region should have it's default security group updated to comply. Any newly created VPCs will automatically contain a default security group that will need remediation to comply with this recommendation.</td>
             <td>
             
               EC2<br>
             
             </td>
-            <td class="code">SecurityGroup where Name eq "default" should have InboundRules len () eq 0 and OutboundRules len () eq 0 </td>
+            <td class="code">SecurityGroup where Name eq "default" should have InboundRules len ( ) eq 0 and OutboundRules len ( ) eq 0 </td>
           </tr>
           
           <tr num="207">
@@ -6065,14 +6065,14 @@ h1 {position: fixed; top: 75}
           
           <tr num="467">
             <!-- <td>467</td> -->
-            <td>The VPC default security group should not allow inbound and outbound traffic</td>
-            <td>This control checks that the default security group of a VPC does not allow inbound or outbound traffic</td>
+            <td>Ensure the default security group of every VPC restricts all traffic</td>
+            <td>A VPC comes with a default security group whose initial settings deny all inbound traffic, allow all outbound traffic, and allow all traffic between instances assigned to the security group. If you don't specify a security group when you launch an instance, the instance is automatically assigned to this default security group. Security groups provide stateful filtering of ingress/egress network traffic to AWS resources. It is recommended that the default security group restrict all traffic. The default VPC in every region should have it's default security group updated to comply. Any newly created VPCs will automatically contain a default security group that will need remediation to comply with this recommendation.</td>
             <td>
             
               EC2<br>
             
             </td>
-            <td class="code">SecurityGroup where Name eq "default" should have InboundRules len () eq 0 and OutboundRules len () eq 0 </td>
+            <td class="code">SecurityGroup where Name eq "default" should have InboundRules len ( ) eq 0 and OutboundRules len ( ) eq 0 </td>
           </tr>
           
           <tr num="468">

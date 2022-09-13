@@ -153,6 +153,10 @@
           <span class="entity_name">MalwareFilterRule</span>
         </li>
         
+        <li class="entity_key" data-entity-name="MobileDeviceMailboxPolicy">
+          <span class="entity_name">MobileDeviceMailboxPolicy</span>
+        </li>
+        
         <li class="entity_key" data-entity-name="NamedLocation">
           <span class="entity_name">NamedLocation</span>
         </li>
@@ -2376,6 +2380,93 @@
             <td>IsValid</td>
             <td>boolean</td>
             <td>Specifies whether the retention policy tag is valid.</td>
+          </tr>
+          
+        </table>
+      
+        <table class="entity_table" data-entity-name="MobileDeviceMailboxPolicy">
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>id</td>
+            <td>string</td>
+            <td>The unique identifier for this retention policy.</td>
+          </tr>
+          
+          <tr>
+            <td>IsDefault</td>
+            <td>boolean</td>
+            <td>Whether this is the default mobile device mailbox policy</td>
+          </tr>
+          
+          <tr>
+            <td>AllowNonProvisionableDevices</td>
+            <td>boolean</td>
+            <td>Whether mobile device mailbox policy allows non provisionable devices</td>
+          </tr>
+          
+          <tr>
+            <td>Name</td>
+            <td>string</td>
+            <td>Unique name for the mobile device mailbox policy</td>
+          </tr>
+          
+          <tr>
+            <td>Identity</td>
+            <td>string</td>
+            <td>Specifies the name, distinguished name (DN),  or GUID of the mobile device mailbox policy.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenChangedUTC</td>
+            <td>number</td>
+            <td>When the mobile device mailbox policy was last changed.</td>
+          </tr>
+          
+          <tr>
+            <td>WhenCreatedUTC</td>
+            <td>number</td>
+            <td>When the mobile device mailbox policy was created.</td>
+          </tr>
+          
+          <tr>
+            <td>AlphanumericPasswordRequired</td>
+            <td>boolean</td>
+            <td>Whether mobile device mailbox policy requires alpha-numeric password.</td>
+          </tr>
+          
+          <tr>
+            <td>DeviceEncryptionEnabled</td>
+            <td>boolean</td>
+            <td>Whether the mobile device mailbox policy requires encryption.</td>
+          </tr>
+          
+          <tr>
+            <td>PasswordEnabled</td>
+            <td>boolean</td>
+            <td>Whether the mobile device mailbox policy has password enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>PasswordRecoveryEnabled</td>
+            <td>boolean</td>
+            <td>Whether the mobile device mailbox policy has password recovery enabled.</td>
+          </tr>
+          
+          <tr>
+            <td>MaxInactivityTimeLock</td>
+            <td>string</td>
+            <td>Specifies the maximum amount of time (in minutes) allowed after the device  is idle that will cause the device to become PIN or password locked</td>
+          </tr>
+          
+          <tr>
+            <td>PasswordHistory</td>
+            <td>number</td>
+            <td>Specifies the number of unique new passwords that need to be created on the mobile  device before an old password can be reused.</td>
           </tr>
           
         </table>
