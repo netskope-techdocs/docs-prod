@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-98-0-0.html",
+"text": "Netskope Release Notes Version 98.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-98-0-0.html",
+"text": "New Features And Enhancements In Release 98.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-98-0-0.html",
+"text": "Fixed Issues In Release 98.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-98-0-0.html",
+"text": "Known Issues In Release 98.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-97-1-3.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.3",
 "class": "topic-link section reused-publication reused-publication"
@@ -699,6 +721,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-3-4-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 3.4.0",
+"class": "topic-link section reused-publication reused-publication"
+},
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-3-3.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.3",
@@ -2502,13 +2529,13 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-client-pre-logon-connectivity.html",
-"text": "Configure Client Pre-logon Connectivity",
+"url": "configure-client-prelogon-connectivity.html",
+"text": "Configure Client Prelogon Connectivity",
 "class": "topic-link section"
 },
 {
-"url": "windows-autopilot-with-private-access-pre-logon.html",
-"text": "Windows Autopilot with Private Access Pre-logon",
+"url": "windows-autopilot-with-private-access-prelogon.html",
+"text": "Windows Autopilot with Private Access Prelogon",
 "class": "topic-link section reused-publication reused-publication"
 },
 {
@@ -2555,8 +2582,8 @@ var toc = [{
 }]
 },
 {
-"url": "view-events-and-alerts-for-private-apps.html",
-"text": "View Events and Alerts for Private Apps",
+"url": "view-private-apps-and-network-events-in-skope-it.html",
+"text": "View Private Apps and Network Events in Skope IT",
 "class": "topic-link section"
 },
 {
@@ -3235,18 +3262,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "api-migration.html",
-"text": "API Migration",
-"class": "topic-link section"
-},
-{
 "url": "api-data-protection-use-cases.html",
 "text": "API Data Protection Use Cases",
-"class": "topic-link section"
-},
-{
-"url": "api-data-protection-for-risk-insights.html",
-"text": "API Data Protection for Risk Insights",
 "class": "topic-link section"
 },
 {
@@ -4436,11 +4453,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dlp-187773.html",
-"text": "DLP",
-"class": "topic-link section"
-},
-{
 "url": "microsoft-office-365-teams-dashboard.html",
 "text": "Microsoft Office 365 Teams Dashboard",
 "class": "topic-link section"
@@ -4982,72 +4994,6 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-office-365-onedrive.html",
-"text": "Next Generation API Data Protection for Microsoft Office 365 OneDrive",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-microsoft-office-365-onedrive-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft Office 365 OneDrive for the Next Generation API Data Protection",
-"class": "topic-link section"
-},
-{
-"url": "delete-or-downgrade-the-global-administrator-account-320218.html",
-"text": "Delete or Downgrade the Global Administrator Account",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-data-protection-policy-320219.html",
-"text": "Create an API Data Protection Policy",
-"class": "topic-link section"
-},
-{
-"url": "retroactive-scan-320220.html",
-"text": "Retroactive Scan",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "retroactive-ongoing-processing-for-apps-320221.html",
-"text": "Retroactive Ongoing Processing for Apps",
-"class": "topic-link section"
-},
-{
-"url": "purpose-of-retroactive-ongoing-processing-320222.html",
-"text": "Purpose of Retroactive Ongoing Processing",
-"class": "topic-link section"
-}]
-},
-{
-"url": "view-the-api-data-protection-dashboard-320223.html",
-"text": "View the API Data Protection Dashboard",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "microsoft-office-365-onedrive-files-and-users-page-320224.html",
-"text": "Microsoft Office 365 OneDrive Files and Users Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-files-page-320225.html",
-"text": "Microsoft Office 365 OneDrive Files Page",
-"class": "topic-link section"
-},
-{
-"url": "microsoft-office-365-onedrive-users-page-320226.html",
-"text": "Microsoft Office 365 OneDrive Users Page",
-"class": "topic-link section"
-}]
-},
-{
-"url": "microsoft-office-365-onedrive-for-business-audit-events-320227.html",
-"text": "Microsoft Office 365 OneDrive for Business Audit Events",
-"class": "topic-link section"
-}]
-},
-{
 "url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
 "text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
 "class": "topic-link section reused-publication reused-publication"
@@ -5128,28 +5074,6 @@ var toc = [{
 {
 "url": "configure-zendesk-for-the-next-generation-api-data-protection.html",
 "text": "Configure Zendesk for the Next Generation API Data Protection",
-"class": "topic-link section"
-}]
-},
-{
-"url": "next-generation-api-data-protection-for-zoom.html",
-"text": "Next Generation API Data Protection for Zoom",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "configure-zoom-for-the-next-generation-api-data-protection.html",
-"text": "Configure Zoom for the Next Generation API Data Protection",
-"class": "topic-link section"
-},
-{
-"url": "permissions-required-for-zoom.html",
-"text": "Permissions Required for Zoom",
-"class": "topic-link section"
-},
-{
-"url": "remove-the-netskope-casb-api-app-from-the-zoom-account.html",
-"text": "Remove the Netskope CASB API App from the Zoom Account",
 "class": "topic-link section"
 }]
 },
@@ -5262,7 +5186,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "permissions-required-for-zoom-319756.html",
+"url": "permissions-required-for-zoom.html",
 "text": "Permissions Required for Zoom",
 "class": "topic-link section"
 },
@@ -6230,8 +6154,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "migrating-from-ce-3-1-or-newer-to-ce-3-3-3.html",
-"text": "Migrating from CE 3.1 or newer to CE 3.3.3",
+"url": "migrating-from-ce-3-1-or-newer-to-ce-3-4-0.html",
+"text": "Migrating from CE 3.1 or newer to CE 3.4.0",
 "class": "topic-link section"
 },
 {
@@ -6736,6 +6660,11 @@ var toc = [{
 {
 "url": "configure-threat-exchange-business-rules.html",
 "text": "Configure Threat Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "view-threat-exchange-business-rules.html",
+"text": "View Threat Exchange Business Rules",
 "class": "topic-link section"
 },
 {
@@ -8132,6 +8061,11 @@ var toc = [{
 {
 "url": "industry-benchmarks-dashboard.html",
 "text": "Industry Benchmarks Dashboard",
+"class": "topic-link section"
+},
+{
+"url": "sharing-netskope-advanced-analytics-dashboards.html",
+"text": "Sharing Netskope Advanced Analytics Dashboards",
 "class": "topic-link section"
 }]
 },
