@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-98-0-0.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-98-0-0.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-98-0-0.html</loc>
@@ -26,7 +26,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-release-98-0-0.html</loc>
-    <lastmod>2022-09-14</lastmod>
+    <lastmod>2022-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-release-notes-hotfix-version-97-1-5.html</loc>
+    <lastmod>2022-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-hotfix-release-97-1-5.html</loc>
+    <lastmod>2022-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-hotfix-version-97-1-3.html</loc>
@@ -54,7 +62,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-hotfix-release-97-1-0.html</loc>
-    <lastmod>2022-08-22</lastmod>
+    <lastmod>2022-09-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-97-0-0.html</loc>
@@ -350,7 +358,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes.html</loc>
-    <lastmod>2022-08-16</lastmod>
+    <lastmod>2022-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-98-0-0-7378.html</loc>
+    <lastmod>2022-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-publisher-release-98-0-0-7378.html</loc>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-97-0-0-7294.html</loc>
@@ -2162,7 +2178,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-2-4--configure-an-azure-ad-application-for-data-protection.html</loc>
-    <lastmod>2022-07-25</lastmod>
+    <lastmod>2022-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-3-4--assign-azure-permissions-for-data-protection.html</loc>
@@ -2170,7 +2186,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-4-4--add-the-azure-subscription-to-the-netskope-tenant-for-data-protection.html</loc>
-    <lastmod>2022-05-12</lastmod>
+    <lastmod>2022-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/what-triggers-a-scan-and-billing-of-azure-blob-storage-.html</loc>
@@ -3714,7 +3730,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-workday-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2022-08-22</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-zendesk.html</loc>
@@ -3882,7 +3898,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-next-generation-security-posture-policy.html</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-security-posture-rule.html</loc>
@@ -3902,7 +3918,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-compliance-380220.html</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-inventory.html</loc>
@@ -3974,7 +3990,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -4154,7 +4170,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-for-linux.html</loc>
-    <lastmod>2022-08-19</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-custom-applications-164305.html</loc>
@@ -5922,7 +5938,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-library.html</loc>
-    <lastmod>2022-09-09</lastmod>
+    <lastmod>2022-09-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/industry-benchmarks-dashboard.html</loc>

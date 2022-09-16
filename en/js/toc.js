@@ -38,6 +38,18 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-release-notes-hotfix-version-97-1-5.html",
+"text": "Netskope Release Notes Hotfix Version 97.1.5",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-97-1-5.html",
+"text": "Fixed Issues In Hotfix Release 97.1.5",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-97-1-3.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.3",
 "class": "topic-link section reused-publication reused-publication"
@@ -486,6 +498,18 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "netskope-private-access-publisher-release-notes-version-98-0-0-7378.html",
+"text": "Netskope Private Access Publisher Release Notes Version 98.0.0.7378",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-publisher-release-98-0-0-7378.html",
+"text": "New Features And Enhancements In Publisher Release 98.0.0.7378",
+"class": "topic-link section"
+}]
+},
 {
 "url": "netskope-private-access-publisher-release-notes-version-97-0-0-7294.html",
 "text": "Netskope Private Access Publisher Release Notes Version 97.0.0.7294",
@@ -2972,7 +2996,7 @@ var toc = [{
 },
 {
 "url": "step-4-4--add-the-azure-subscription-to-the-netskope-tenant-for-data-protection.html",
-"text": "Step 4\/4: Add the Azure Subscription to the Netskope tenant for Data Protection",
+"text": "Step 4\/4: Add the Azure Subscription to the Netskope Tenant for Data Protection",
 "class": "topic-link section"
 },
 {
