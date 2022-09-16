@@ -87,6 +87,11 @@
                         
                         <div class="links">
 
+                            <a tableName="Netskope-Cross-Application-Security-Checks">Netskope-Cross-Application-Security-Checks</a>
+                        </div>
+                        
+                        <div class="links">
+
                             <a tableName="Other-Salesforce-Rules">Other Salesforce Rules</a>
                         </div>
                         
@@ -156,6 +161,17 @@
                 <td class="rule"><span>salesforce sessionsettings should-have allowuserauthenticationbycertificate = true
 
 </span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure all disabled users in AzureAD are also inactive in Salesforce</td>
+                <td>Ensure every user account disabled in AzureAD is also inactive in Salesforce. The purpose of the rule is to identify a potential security issue due to a user, that is inactive in AzureAD, remains active in Salesforce. User accounts are identified through the user&#39;s email address. Note: This rule will trigger results only when the Salesforce and AzureAD accounts are on-boarded on the Netskope tenant and a Netskope policy, with this rule attached to it, is applied for all instances which is the default behavior.</td>
+                <td>(Salesforce)user, (Azure AD)user</td>
+                <td class="rule"><span>Not applicable</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -6434,6 +6450,33 @@ Administrators should suspend group membership calculations only when performing
                 <td class="rule"><span>salesforce sessionsettings should-have enablepostforsessions = true
 
 </span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table Netskope-Cross-Application-Security-Checks">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Ensure all disabled users in AzureAD are also inactive in Salesforce</td>
+                <td>Ensure every user account disabled in AzureAD is also inactive in Salesforce. The purpose of the rule is to identify a potential security issue due to a user, that is inactive in AzureAD, remains active in Salesforce. User accounts are identified through the user&#39;s email address. Note: This rule will trigger results only when the Salesforce and AzureAD accounts are on-boarded on the Netskope tenant and a Netskope policy, with this rule attached to it, is applied for all instances which is the default behavior.</td>
+                <td>(Salesforce)user, (Azure AD)user</td>
+                <td class="rule"><span>Not applicable</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
