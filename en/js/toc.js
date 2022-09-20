@@ -634,6 +634,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-97-1-1-246.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 97.1.1.246",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-97-1-1-240.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 97.1.1.240",
 "class": "topic-link section"
@@ -2067,11 +2072,6 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
-{
-"url": "data-loss-prevention-104893.html",
-"text": "Data Loss Prevention",
-"class": "topic-link section"
-},
 {
 "url": "dlp-profiles.html",
 "text": "DLP Profiles",
@@ -5102,6 +5102,28 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-for-zoom.html",
+"text": "Next Generation API Data Protection for Zoom",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-zoom-for-the-next-generation-api-data-protection.html",
+"text": "Configure Zoom for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-zoom.html",
+"text": "Permissions Required for Zoom",
+"class": "topic-link section"
+},
+{
+"url": "remove-the-netskope-casb-api-app-from-the-zoom-account.html",
+"text": "Remove the Netskope CASB API App from the Zoom Account",
+"class": "topic-link section"
+}]
+},
+{
 "url": "next-generation-api-data-protection-skope-it-events.html",
 "text": "Next Generation API Data Protection Skope IT Events",
 "class": "topic-link section"
@@ -5210,7 +5232,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "permissions-required-for-zoom.html",
+"url": "permissions-required-for-zoom-319756.html",
 "text": "Permissions Required for Zoom",
 "class": "topic-link section"
 },
