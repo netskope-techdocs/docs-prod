@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-98-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 98.1.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-98-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 98.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-98-1-0.html",
+"text": "Fixed Issues In Hotfix Release 98.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-98-1-0.html",
+"text": "Known Issues In Hotfix Release 98.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-98-0-0.html",
 "text": "Netskope Release Notes Version 98.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -1968,6 +1990,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "app-instance-profile.html",
+"text": "App Instance Profile",
+"class": "topic-link section"
+},
+{
 "url": "dns-profile.html",
 "text": "DNS Profile",
 "class": "topic-link section"
@@ -2474,11 +2501,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "private-access-best-practices.html",
-"text": "Private Access Best Practices",
-"class": "topic-link section"
-},
-{
 "url": "private-apps-configuration-methods.html",
 "text": "Private Apps Configuration Methods",
 "class": "topic-link section"
@@ -2650,6 +2672,11 @@ var toc = [{
 {
 "url": "private-access-rest-apis.html",
 "text": "Private Access REST APIs",
+"class": "topic-link section"
+},
+{
+"url": "private-access-best-practices.html",
+"text": "Private Access Best Practices",
 "class": "topic-link section"
 },
 {
@@ -5124,11 +5151,6 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-skope-it-events.html",
-"text": "Next Generation API Data Protection Skope IT Events",
-"class": "topic-link section"
-},
-{
 "url": "next-generation-api-data-protection-policy-wizard.html",
 "text": "Next Generation API Data Protection Policy Wizard",
 "class": "topic-link section"
@@ -5149,6 +5171,11 @@ var toc = [{
 "text": "Activities Monitored by Netskope",
 "class": "topic-link section"
 }]
+},
+{
+"url": "next-generation-api-data-protection-skope-it-events.html",
+"text": "Next Generation API Data Protection Skope IT Events",
+"class": "topic-link section"
 }]
 },
 {
@@ -5479,16 +5506,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client-overview-178472.html",
+"url": "netskope-client-overview-390410.html",
 "text": "Netskope Client Overview",
 "class": "topic-link section"
-,
-"children": [
+},
 {
 "url": "netskope-client-supported-os-and-platform.html",
 "text": "Netskope Client Supported OS and Platform",
 "class": "topic-link section"
-}]
 },
 {
 "url": "provisioning-users-for-netskope-client.html",
@@ -5506,19 +5531,56 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "client-profiles.html",
+"text": "Client Profiles",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "users-390334.html",
+"text": "Users",
+"class": "topic-link section"
+},
+{
+"url": "devices.html",
+"text": "Devices",
+"class": "topic-link section"
+},
+{
+"url": "groups.html",
+"text": "Groups",
+"class": "topic-link section"
+},
+{
+"url": "saml-client-profile.html",
+"text": "SAML Client Profile",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-client-deployment-options.html",
 "text": "Netskope Client Deployment Options",
 "class": "topic-link section"
 ,
 "children": [
 {
+"url": "netskope-client-for-windows.html",
+"text": "Netskope Client For Windows",
+"class": "topic-link section"
+},
+{
+"url": "netskope-client-for-linux.html",
+"text": "Netskope Client For Linux",
+"class": "topic-link section"
+},
+{
 "url": "email-invite.html",
 "text": "Email Invite",
 "class": "topic-link section"
 },
 {
-"url": "jamf.html",
-"text": "JAMF",
+"url": "deploy-netskope-client-via-idp.html",
+"text": "Deploy Netskope Client via IdP",
 "class": "topic-link section"
 },
 {
@@ -5564,6 +5626,11 @@ var toc = [{
 }]
 },
 {
+"url": "jamf.html",
+"text": "JAMF",
+"class": "topic-link section"
+},
+{
 "url": "kandji.html",
 "text": "Kandji",
 "class": "topic-link section"
@@ -5584,19 +5651,14 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "deploy-netskope-client-via-idp.html",
-"text": "Deploy Netskope Client via IdP",
-"class": "topic-link section"
-},
-{
-"url": "netskope-client-for-windows.html",
-"text": "Netskope Client For Windows",
+"url": "azure-virtual-desktop.html",
+"text": "Azure Virtual Desktop",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-client-hardening.html",
-"text": "Netskope Client Hardening",
+"url": "netskope-client-command-reference.html",
+"text": "Netskope Client Command Reference",
 "class": "topic-link section"
 },
 {
@@ -5616,23 +5678,14 @@ var toc = [{
 ,
 "children": [
 {
+"url": "vpn-applications.html",
+"text": "VPN Applications",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
 "url": "exception-configuration-for-vpn-applications.html",
 "text": "Exception Configuration for VPN Applications",
-"class": "topic-link section"
-},
-{
-"url": "exceptions-for-anti-virus-applications.html",
-"text": "Exceptions for Anti Virus Applications",
-"class": "topic-link section"
-},
-{
-"url": "azure-virtual-desktop.html",
-"text": "Azure Virtual Desktop",
-"class": "topic-link section"
-},
-{
-"url": "blackberry-cylance.html",
-"text": "Blackberry Cylance",
 "class": "topic-link section"
 },
 {
@@ -5641,33 +5694,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "cisco-umbrella.html",
-"text": "Cisco Umbrella",
-"class": "topic-link section"
-},
-{
-"url": "vmware-carbon-black.html",
-"text": "VMware Carbon Black",
-"class": "topic-link section"
-},
-{
-"url": "crowdstrike.html",
-"text": "CrowdStrike",
-"class": "topic-link section"
-},
-{
 "url": "fortigate-vpn.html",
 "text": "FortiGate VPN",
-"class": "topic-link section"
-},
-{
-"url": "kaspersky-security-cloud.html",
-"text": "Kaspersky Security Cloud",
-"class": "topic-link section"
-},
-{
-"url": "mcafee-endpoint-security.html",
-"text": "McAfee Endpoint Security",
 "class": "topic-link section"
 },
 {
@@ -5689,10 +5717,42 @@ var toc = [{
 "url": "pulsesecure-vpn.html",
 "text": "PulseSecure VPN",
 "class": "topic-link section"
+}]
 },
 {
-"url": "symantec-endpoint-protection.html",
-"text": "Symantec Endpoint Protection",
+"url": "antivirus-applications.html",
+"text": "Antivirus Applications",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "exceptions-for-anti-virus-applications.html",
+"text": "Exceptions for Anti Virus Applications",
+"class": "topic-link section"
+},
+{
+"url": "blackberry-cylance.html",
+"text": "Blackberry Cylance",
+"class": "topic-link section"
+},
+{
+"url": "vmware-carbon-black.html",
+"text": "VMware Carbon Black",
+"class": "topic-link section"
+},
+{
+"url": "crowdstrike.html",
+"text": "CrowdStrike",
+"class": "topic-link section"
+},
+{
+"url": "kaspersky-security-cloud.html",
+"text": "Kaspersky Security Cloud",
+"class": "topic-link section"
+},
+{
+"url": "mcafee-endpoint-security.html",
+"text": "McAfee Endpoint Security",
 "class": "topic-link section"
 },
 {
@@ -5701,8 +5761,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "squid-proxy.html",
-"text": "Squid Proxy",
+"url": "symantec-endpoint-protection.html",
+"text": "Symantec Endpoint Protection",
 "class": "topic-link section"
 },
 {
@@ -5712,13 +5772,21 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-client-command-reference.html",
-"text": "Netskope Client Command Reference",
+"url": "explicit-proxies.html",
+"text": "Explicit Proxies",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "squid-proxy.html",
+"text": "Squid Proxy",
 "class": "topic-link section"
+}]
+}]
 },
 {
-"url": "netskope-client-for-linux.html",
-"text": "Netskope Client For Linux",
+"url": "netskope-client-hardening.html",
+"text": "Netskope Client Hardening",
 "class": "topic-link section"
 }]
 },
@@ -5753,6 +5821,11 @@ var toc = [{
 {
 "url": "managing-error-settings.html",
 "text": "Managing Error Settings",
+"class": "topic-link section"
+},
+{
+"url": "configuring-the-steering-preferences.html",
+"text": "Configuring the Steering Preferences",
 "class": "topic-link section"
 },
 {
@@ -6009,11 +6082,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "devices.html",
-"text": "Devices",
-"class": "topic-link section"
-},
-{
 "url": "multi-factor-authentication.html",
 "text": "Multi-Factor Authentication",
 "class": "topic-link section"
@@ -6022,28 +6090,6 @@ var toc = [{
 "url": "application-feature-support.html",
 "text": "Application Feature Support",
 "class": "topic-link section"
-},
-{
-"url": "client-profiles.html",
-"text": "Client Profiles",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "users-226848.html",
-"text": "Users",
-"class": "topic-link section"
-},
-{
-"url": "groups.html",
-"text": "Groups",
-"class": "topic-link section"
-},
-{
-"url": "saml-client-profile.html",
-"text": "SAML Client Profile",
-"class": "topic-link section"
-}]
 },
 {
 "url": "enforcement.html",
