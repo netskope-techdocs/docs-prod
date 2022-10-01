@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-hotfix-release-98-1-0.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-hotfix-release-98-1-0.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-hotfix-release-98-1-0.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-98-0-0.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-98-0-0.html</loc>
-    <lastmod>2022-09-22</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-98-0-0.html</loc>
@@ -1382,7 +1382,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies.html</loc>
-    <lastmod>2022-09-21</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cookie-surrogate.html</loc>
@@ -1658,7 +1658,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-crowdstrike.html</loc>
-    <lastmod>2022-08-30</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-remediation-profile.html</loc>
@@ -1722,7 +1722,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-isolation--targeted-rbi-.html</loc>
-    <lastmod>2022-09-24</lastmod>
+    <lastmod>2022-09-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-templates.html</loc>
@@ -2286,7 +2286,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-2-2--configure-aws-permissions-for-forensic.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/enabling-forensics-for-azure-blob-storage.html</loc>
@@ -2426,7 +2426,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-box.html</loc>
@@ -3686,7 +3686,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-policy-actions-per-cloud-app.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-citrix-sharefile.html</loc>
@@ -3762,15 +3762,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-zoom.html</loc>
-    <lastmod>2022-09-20</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-zoom-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2022-08-25</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/permissions-required-for-zoom.html</loc>
-    <lastmod>2022-08-25</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/remove-the-netskope-casb-api-app-from-the-zoom-account.html</loc>
@@ -3778,11 +3778,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-policy-wizard.html</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-next-generation-api-data-protection-policy.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-domains.html</loc>
@@ -3790,7 +3790,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/activities-monitored-by-netskope.html</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-skope-it-events.html</loc>
@@ -3798,7 +3798,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/saas-security-posture-management.html</loc>
-    <lastmod>2022-08-22</lastmod>
+    <lastmod>2022-10-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-for-github.html</loc>
@@ -4134,7 +4134,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/azure-virtual-desktop.html</loc>
-    <lastmod>2022-08-11</lastmod>
+    <lastmod>2022-09-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-command-reference.html</loc>
@@ -4242,7 +4242,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/certificate-pinned-applications.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-09-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-a-custom-certificate-pinned-application.html</loc>
@@ -4598,11 +4598,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/backup-cloud-exchange.html</loc>
-    <lastmod>2022-08-15</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/update-cloud-exchange-plugins.html</loc>
-    <lastmod>2022-07-08</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-sso-with-azure-ad.html</loc>
@@ -4990,7 +4990,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/risk-exchange-module.html</loc>
-    <lastmod>2022-07-29</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-3rd-party-risk-exchange-plugins.html</loc>
@@ -5746,11 +5746,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-administrators.html</loc>
-    <lastmod>2022-04-25</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-roles-for-restricted-administrators.html</loc>
-    <lastmod>2021-11-23</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/assign-roles-to-restricted-administrators.html</loc>
@@ -5986,11 +5986,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-library.html</loc>
-    <lastmod>2022-09-20</lastmod>
+    <lastmod>2022-09-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/industry-benchmarks-dashboard.html</loc>
-    <lastmod>2022-09-14</lastmod>
+    <lastmod>2022-09-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sharing-netskope-advanced-analytics-dashboards.html</loc>
@@ -6066,7 +6066,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-transaction-event-fields.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-09-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-reports--dashboards-.html</loc>
