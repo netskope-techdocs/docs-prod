@@ -3298,6 +3298,45 @@ var toc = [{
 "text": "Additional Cost to Customer",
 "class": "topic-link section"
 }]
+},
+{
+"url": "ueba-for-google-cloud-platform.html",
+"text": "UEBA for Google Cloud Platform",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "getting-started-with-ueba-for-gcp.html",
+"text": "Getting Started with UEBA for GCP",
+"class": "topic-link section"
+},
+{
+"url": "configure-google-cloud-platform-for-cloud-logging.html",
+"text": "Configure Google Cloud Platform for Cloud Logging",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "enabling-log-ingestion-at-organization-level.html",
+"text": "Enabling Log Ingestion at Organization Level",
+"class": "topic-link section"
+},
+{
+"url": "enabling-log-ingestion-at-folder-level.html",
+"text": "Enabling Log Ingestion at Folder Level",
+"class": "topic-link section"
+},
+{
+"url": "enabling-log-ingestion-at-project-level.html",
+"text": "Enabling Log Ingestion at Project Level",
+"class": "topic-link section"
+},
+{
+"url": "configure-google-cloud-platform-on-netskope-ui.html",
+"text": "Configure Google Cloud Platform on Netskope UI",
+"class": "topic-link section"
+}]
+}]
 }]
 },
 {
@@ -5705,8 +5744,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "mobileiron-cloud.html",
-"text": "MobileIron Cloud",
+"url": "mobileiron-cloudmobileiron-cloud.html",
+"text": "MobileIron CloudMobileIron Cloud",
 "class": "topic-link section"
 },
 {
