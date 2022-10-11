@@ -5744,8 +5744,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "mobileiron-cloudmobileiron-cloud.html",
-"text": "MobileIron CloudMobileIron Cloud",
+"url": "mobileiron-cloud.html",
+"text": "MobileIron Cloud",
 "class": "topic-link section"
 },
 {
