@@ -656,6 +656,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-98-0-0-257.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 98.0.0.257",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-97-1-1-246.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 97.1.1.246",
 "class": "topic-link section"
@@ -772,6 +777,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "netskope-cloud-exchange-release-notes-version-4-0-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 4.0.0",
+"class": "topic-link section reused-publication reused-publication"
+},
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-4-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.4.0",
@@ -1952,6 +1962,18 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "best-practices-for-real-time-protection-policies.html",
+"text": "Best Practices for Real-time Protection Policies",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "best-practices-for-utility-policies.html",
+"text": "Best Practices for Utility Policies",
+"class": "topic-link section"
+}]
+},
 {
 "url": "inline-policies.html",
 "text": "Real-time Protection Policies",
@@ -5844,6 +5866,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "cynet-360-xdr.html",
+"text": "Cynet 360 XDR",
+"class": "topic-link section"
+},
+{
 "url": "kaspersky-security-cloud.html",
 "text": "Kaspersky Security Cloud",
 "class": "topic-link section"
@@ -5866,6 +5893,11 @@ var toc = [{
 {
 "url": "trend-micro-maximum-security.html",
 "text": "Trend Micro Maximum Security",
+"class": "topic-link section"
+},
+{
+"url": "windows-defender-firewall.html",
+"text": "Windows Defender Firewall",
 "class": "topic-link section"
 }]
 },
@@ -6279,63 +6311,6 @@ var toc = [{
 "url": "cloud-exchange-hardening.html",
 "text": "Cloud Exchange Hardening",
 "class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "system-specifications.html",
-"text": "System Specifications",
-"class": "topic-link section"
-},
-{
-"url": "host-hardening.html",
-"text": "Host Hardening",
-"class": "topic-link section"
-},
-{
-"url": "firewall-proxy-rules.html",
-"text": "Firewall\/Proxy Rules",
-"class": "topic-link section"
-},
-{
-"url": "netskope-ip-ranges.html",
-"text": "Netskope IP Ranges",
-"class": "topic-link section"
-},
-{
-"url": "cloud-exchange-ports.html",
-"text": "Cloud Exchange Ports",
-"class": "topic-link section"
-},
-{
-"url": "cloud-exchange-proxy.html",
-"text": "Cloud Exchange Proxy",
-"class": "topic-link section"
-},
-{
-"url": "cloud-exchange-users.html",
-"text": "Cloud Exchange Users",
-"class": "topic-link section"
-},
-{
-"url": "idp-support.html",
-"text": "IdP Support",
-"class": "topic-link section"
-},
-{
-"url": "managing-credentials.html",
-"text": "Managing Credentials",
-"class": "topic-link section"
-},
-{
-"url": "encrypting-logs.html",
-"text": "Encrypting Logs",
-"class": "topic-link section"
-},
-{
-"url": "table-of-acronyms.html",
-"text": "Table of Acronyms",
-"class": "topic-link section"
-}]
 },
 {
 "url": "install-cloud-exchange.html",
@@ -6411,8 +6386,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-the-netskope-plugin-for-risk-exchange.html",
-"text": "Configure the Netskope Plugin for Risk Exchange",
+"url": "configure-the-netskope-plugin-for-user-risk-exchange.html",
+"text": "Configure the Netskope Plugin for User Risk Exchange",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-netskope-plugin-for-application-risk-exchange.html",
+"text": "Configure the Netskope Plugin for Application Risk Exchange",
+"class": "topic-link section"
+},
+{
+"url": "using-beta-plugins.html",
+"text": "Using Beta Plugins",
 "class": "topic-link section"
 },
 {
@@ -6853,6 +6838,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "map-a-threat-exchange-business-rule-to-a-target.html",
+"text": "Map a Threat Exchange Business Rule to a Target",
+"class": "topic-link section"
+},
+{
 "url": "view-threat-exchange-business-rules.html",
 "text": "View Threat Exchange Business Rules",
 "class": "topic-link section"
@@ -6870,6 +6860,33 @@ var toc = [{
 {
 "url": "list-iocs-and-use-filter-options.html",
 "text": "List IoCs and Use Filter Options",
+"class": "topic-link section"
+}]
+},
+{
+"url": "configure-your-netskope-tenant-for-cloud-threat-exchange-file-hash-sharing.html",
+"text": "Configure your Netskope Tenant for Cloud Threat Exchange File Hash Sharing",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-file-profile-in-your-netskope-tenant-for-file-hashes.html",
+"text": "Create a File Profile in your Netskope Tenant for File Hashes",
+"class": "topic-link section"
+},
+{
+"url": "configure-threat-exchange-sharing-with-your-netskope-tenant.html",
+"text": "Configure Threat Exchange Sharing with your Netskope Tenant",
+"class": "topic-link section"
+},
+{
+"url": "create-a-malware-detection-profile-in-your-netskope-tenant-to-use-threat-exchange-file-hash-es-.html",
+"text": "Create a Malware Detection Profile in Your Netskope Tenant to use Threat Exchange File Hash(es)",
+"class": "topic-link section"
+},
+{
+"url": "create-a-real-time-protection-policy-for-threat-exchange-file-hashes.html",
+"text": "Create a Real-time Protection Policy for Threat Exchange File Hashes",
 "class": "topic-link section"
 }]
 },
@@ -6898,8 +6915,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-3rd-party-risk-exchange-plugins.html",
-"text": "Configure 3rd-party Risk Exchange Plugins",
+"url": "user-risk-exchange-workflow.html",
+"text": "User Risk Exchange Workflow",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-3rd-party-user-risk-exchange-plugins.html",
+"text": "Configure 3rd-party User Risk Exchange Plugins",
 "class": "topic-link section"
 ,
 "children": [
@@ -6935,13 +6958,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "manage-risk-exchange-business-rules.html",
-"text": "Manage Risk Exchange Business Rules",
+"url": "manage-user-risk-exchange-business-rules.html",
+"text": "Manage User Risk Exchange Business Rules",
 "class": "topic-link section"
 },
 {
-"url": "manage-configured-risk-exchange-actions.html",
-"text": "Manage Configured Risk Exchange Actions",
+"url": "view-application-risk-exchange-business-rules.html",
+"text": "View Application Risk Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "manage-configured-user-risk-exchange-actions.html",
+"text": "Manage Configured User Risk Exchange Actions",
 "class": "topic-link section"
 },
 {
@@ -6958,6 +6986,59 @@ var toc = [{
 "url": "action-logs.html",
 "text": "Action Logs",
 "class": "topic-link section"
+}]
+},
+{
+"url": "application-risk-exchange-workflow.html",
+"text": "Application Risk Exchange Workflow",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "view-application-risk-exchange-configured-plugins.html",
+"text": "View Application Risk Exchange Configured Plugins",
+"class": "topic-link section"
+},
+{
+"url": "perform-actions-on-application-risk-exchange-configured-plugins.html",
+"text": "Perform Actions on Application Risk Exchange Configured Plugins",
+"class": "topic-link section"
+},
+{
+"url": "view-application-risk-exchange-business-rules-394902.html",
+"text": "View Application Risk Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "create-application-risk-exchange-business-rules.html",
+"text": "Create Application Risk Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "perform-actions-on-application-risk-exchange-business-rules.html",
+"text": "Perform Actions on Application Risk Exchange Business Rules",
+"class": "topic-link section"
+},
+{
+"url": "map-an-application-risk-exchange-business-rule-to-a-target.html",
+"text": "Map an Application Risk Exchange Business Rule to a Target",
+"class": "topic-link section"
+},
+{
+"url": "manage-application-risk-exchange-configured-sharing.html",
+"text": "Manage Application Risk Exchange Configured Sharing",
+"class": "topic-link section"
+},
+{
+"url": "list-applications-and-use-filter-options.html",
+"text": "List Applications and Use Filter Options",
+"class": "topic-link section"
+},
+{
+"url": "delete-risk-exchange-applications.html",
+"text": "Delete Risk Exchange Applications",
+"class": "topic-link section"
+}]
 }]
 },
 {
