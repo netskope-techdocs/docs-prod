@@ -1430,19 +1430,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/best-practices-for-real-time-protection-policies.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/best-practices-for-threat-protection-policies.html</loc>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/best-practices-for-utility-policies.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies.html</loc>
-    <lastmod>2022-09-30</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cookie-surrogate.html</loc>
@@ -1458,7 +1462,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection-for-public-cloud.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection-for-aws.html</loc>
@@ -1478,7 +1482,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rule-based-policies.html</loc>
-    <lastmod>2022-09-09</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ml-based-policies.html</loc>
@@ -1782,15 +1786,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-real-time-protection-policy-for-isolation--targeted-rbi-.html</loc>
-    <lastmod>2022-09-27</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-templates.html</loc>
-    <lastmod>2022-09-22</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-category-definitions.html</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2022-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/isolation-in-an-end-user-s-browser.html</loc>
@@ -1878,11 +1882,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2022-10-19</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -1921,8 +1925,12 @@
     <lastmod>2022-04-01</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/create-a-dlp-policy-for-private-apps.html</loc>
+    <lastmod>2022-10-28</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/deploy-the-netskope-client-for-netskope-private-access.html</loc>
-    <lastmod>2022-04-22</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-the-client-for-private-access.html</loc>
@@ -1938,7 +1946,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-client-prelogon-connectivity.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/windows-autopilot-with-private-access-prelogon.html</loc>
@@ -2038,7 +2046,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -4114,7 +4122,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2022-09-16</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -4154,7 +4162,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-for-windows.html</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-for-linux.html</loc>
@@ -4202,7 +4210,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/jamf.html</loc>
-    <lastmod>2022-08-22</lastmod>
+    <lastmod>2022-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/kandji.html</loc>
@@ -4370,11 +4378,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
@@ -4553,8 +4561,8 @@
     <lastmod>2021-09-29</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/application-feature-support.html</loc>
-    <lastmod>2022-07-26</lastmod>
+    <loc>https://docs.netskope.com/en/header-insertion.html</loc>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/enforcement.html</loc>
@@ -5074,7 +5082,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/risk-exchange-module.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/user-risk-exchange-workflow.html</loc>
@@ -5230,7 +5238,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-smtp-proxy.html</loc>
-    <lastmod>2022-10-17</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-smtp-proxy-with-microsoft-o365-exchange.html</loc>
@@ -5247,6 +5255,10 @@
   <url>
     <loc>https://docs.netskope.com/en/send-traffic-from-netskope-back-to-gmail.html</loc>
     <lastmod>2021-12-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-netskope-smtp-proxy-with-a-custom-msa.html</loc>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-real-time-protection-policies-for-email-outbound.html</loc>
@@ -5870,7 +5882,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/administration.html</loc>
-    <lastmod>2022-08-26</lastmod>
+    <lastmod>2022-10-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/managing-administrators.html</loc>
@@ -6026,7 +6038,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skope-it.html</loc>
-    <lastmod>2022-10-03</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/skope-it-pages.html</loc>
@@ -6054,11 +6066,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-alerts.html</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-application-events.html</loc>
     <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/about-endpoint-events.html</loc>
+    <lastmod>2022-10-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-page-events-112502.html</loc>
@@ -6198,7 +6214,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-transaction-event-fields.html</loc>
-    <lastmod>2022-10-12</lastmod>
+    <lastmod>2022-10-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-reports--dashboards-.html</loc>
@@ -6330,7 +6346,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/network-steering.html</loc>
-    <lastmod>2022-04-06</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/client-steering.html</loc>
@@ -6382,7 +6398,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-platform-rest-apis.html</loc>
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-alerts-data.html</loc>
@@ -6489,8 +6505,8 @@
     <lastmod>2021-10-20</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/public-cloud-api-endpoints.html</loc>
-    <lastmod>2022-02-28</lastmod>
+    <loc>https://docs.netskope.com/en/public-cloud-api-endpoints-for-rest-api-v1.html</loc>
+    <lastmod>2022-10-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-prep-info-to-create-an-aws-role.html</loc>
@@ -6934,7 +6950,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance.html</loc>
-    <lastmod>2022-04-27</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-overview.html</loc>
@@ -6965,6 +6981,10 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/log-in-to-the-appliance.html</loc>
+    <lastmod>2022-07-21</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/configure-the-interfaces.html</loc>
     <lastmod>2022-07-21</lastmod>
   </url>
@@ -6973,8 +6993,8 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/log-in-to-the-appliance.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-virtual-appliance.html</loc>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-log-uploads-355003.html</loc>
@@ -7217,8 +7237,8 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-secure-forwarder.html</loc>
-    <lastmod>2019-02-05</lastmod>
+    <loc>https://docs.netskope.com/en/configure-the-virtual-appliance-105154.html</loc>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-interfaces-147741.html</loc>

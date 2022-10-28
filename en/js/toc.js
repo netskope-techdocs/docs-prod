@@ -1969,6 +1969,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "best-practices-for-threat-protection-policies.html",
+"text": "Best Practices for Threat Protection Policies",
+"class": "topic-link section"
+},
+{
 "url": "best-practices-for-utility-policies.html",
 "text": "Best Practices for Utility Policies",
 "class": "topic-link section"
@@ -2631,6 +2636,11 @@ var toc = [{
 {
 "url": "create-a-policy-user-notification.html",
 "text": "Create a Policy User Notification",
+"class": "topic-link section"
+},
+{
+"url": "create-a-dlp-policy-for-private-apps.html",
+"text": "Create a DLP Policy for Private Apps",
 "class": "topic-link section"
 }]
 },
@@ -6217,8 +6227,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "application-feature-support.html",
-"text": "Application Feature Support",
+"url": "header-insertion.html",
+"text": "Header Insertion",
 "class": "topic-link section"
 },
 {
@@ -7149,6 +7159,11 @@ var toc = [{
 "text": "Send traffic from Netskope back to Gmail",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configure-netskope-smtp-proxy-with-a-custom-msa.html",
+"text": "Configure Netskope SMTP Proxy with a Custom MSA",
+"class": "topic-link section"
 },
 {
 "url": "configure-real-time-protection-policies-for-email-outbound.html",
@@ -8247,6 +8262,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "about-endpoint-events.html",
+"text": "About Endpoint Events",
+"class": "topic-link section"
+},
+{
 "url": "about-page-events-112502.html",
 "text": "About Page Events",
 "class": "topic-link section"
@@ -8677,7 +8697,7 @@ var toc = [{
 },
 {
 "url": "netskope-platform-rest-apis.html",
-"text": "Netskope Platform API Endpoints",
+"text": "Netskope Platform API Endpoints for REST API v1",
 "class": "topic-link section"
 ,
 "children": [
@@ -8817,8 +8837,8 @@ var toc = [{
 }]
 },
 {
-"url": "public-cloud-api-endpoints.html",
-"text": "Public Cloud API Endpoints",
+"url": "public-cloud-api-endpoints-for-rest-api-v1.html",
+"text": "Public Cloud API Endpoints for REST API v1",
 "class": "topic-link section"
 ,
 "children": [
@@ -9454,6 +9474,11 @@ var toc = [{
 }]
 },
 {
+"url": "log-in-to-the-appliance.html",
+"text": "Log in to the Appliance",
+"class": "topic-link section"
+},
+{
 "url": "configure-the-interfaces.html",
 "text": "Configure the Interfaces",
 "class": "topic-link section"
@@ -9466,8 +9491,8 @@ var toc = [{
 }]
 },
 {
-"url": "log-in-to-the-appliance.html",
-"text": "Log in to the Appliance",
+"url": "configure-the-virtual-appliance.html",
+"text": "Configure the Virtual Appliance",
 "class": "topic-link section"
 },
 {
@@ -9793,8 +9818,8 @@ var toc = [{
 }]
 },
 {
-"url": "configure-the-secure-forwarder.html",
-"text": "Configure the Secure Forwarder",
+"url": "configure-the-virtual-appliance-105154.html",
+"text": "Configure the Virtual Appliance",
 "class": "topic-link section"
 },
 {
