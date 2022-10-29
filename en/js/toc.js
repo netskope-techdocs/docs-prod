@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-99-0-0.html",
+"text": "Netskope Release Notes Version 99.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-99-0-0.html",
+"text": "New Features And Enhancements In Release 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-99-0-0.html",
+"text": "Fixed Issues In Release 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-99-0-0.html",
+"text": "Known Issues In Release 99.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-98-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 98.1.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -9496,6 +9518,16 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "configure-the-system-dns-and-certificates.html",
+"text": "Configure the System, DNS, and Certificates",
+"class": "topic-link section"
+},
+{
+"url": "virtual-appliance-configuration-scenarios.html",
+"text": "Virtual Appliance Configuration Scenarios",
+"class": "topic-link section"
+},
+{
 "url": "configure-log-uploads-355003.html",
 "text": "Configure Log Uploads",
 "class": "topic-link section"
@@ -9835,18 +9867,13 @@ var toc = [{
 }]
 },
 {
-"url": "configure-the-system-dns-and-certificates.html",
+"url": "configure-the-system-dns-and-certificates-147747.html",
 "text": "Configure the System, DNS, and Certificates",
 "class": "topic-link section"
 },
 {
 "url": "configure-tcp-connection-parameters-212662.html",
 "text": "Configure TCP Connection Parameters",
-"class": "topic-link section"
-},
-{
-"url": "secure-forwarder-configuration-scenarios.html",
-"text": "Secure Forwarder Configuration Scenarios",
 "class": "topic-link section"
 },
 {

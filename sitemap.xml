@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-10-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -10,7 +10,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
+    <lastmod>2022-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-release-notes-version-99-0-0.html</loc>
     <lastmod>2022-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-99-0-0.html</loc>
+    <lastmod>2022-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-release-99-0-0.html</loc>
+    <lastmod>2022-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-in-release-99-0-0.html</loc>
+    <lastmod>2022-10-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-hotfix-version-98-1-0.html</loc>
@@ -1490,7 +1506,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/time-based-policies.html</loc>
-    <lastmod>2020-10-14</lastmod>
+    <lastmod>2022-10-29</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ssl-decryption.html</loc>
@@ -1590,7 +1606,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/policy-notification-templates.html</loc>
-    <lastmod>2022-09-12</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/data-loss-prevention.html</loc>
@@ -4674,7 +4690,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-started-with-cloud-exchange.html</loc>
-    <lastmod>2022-10-19</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-log-shipper.html</loc>
@@ -4742,7 +4758,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-tokens.html</loc>
-    <lastmod>2022-10-19</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sso-configuration.html</loc>
@@ -4758,7 +4774,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-tenants.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/account-settings.html</loc>
@@ -6997,6 +7013,14 @@
     <lastmod>2022-10-28</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/configure-the-system-dns-and-certificates.html</loc>
+    <lastmod>2022-07-21</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/virtual-appliance-configuration-scenarios.html</loc>
+    <lastmod>2022-10-28</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/configure-log-uploads-355003.html</loc>
     <lastmod>2018-01-05</lastmod>
   </url>
@@ -7206,7 +7230,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/secure-forwarder-105150.html</loc>
-    <lastmod>2021-12-15</lastmod>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/secure-forwarder-105151.html</loc>
@@ -7249,16 +7273,12 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-the-system-dns-and-certificates.html</loc>
+    <loc>https://docs.netskope.com/en/configure-the-system-dns-and-certificates-147747.html</loc>
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-tcp-connection-parameters-212662.html</loc>
     <lastmod>2020-06-19</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/secure-forwarder-configuration-scenarios.html</loc>
-    <lastmod>2020-01-17</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-dlp-exact-match-hash-from-secure-forwarder.html</loc>
