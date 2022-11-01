@@ -14,15 +14,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-99-0-0.html</loc>
-    <lastmod>2022-10-21</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-99-0-0.html</loc>
-    <lastmod>2022-10-28</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-99-0-0.html</loc>
-    <lastmod>2022-10-29</lastmod>
+    <lastmod>2022-11-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-release-99-0-0.html</loc>
@@ -1462,7 +1462,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/inline-policies.html</loc>
-    <lastmod>2022-10-26</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cookie-surrogate.html</loc>
@@ -1506,7 +1506,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/time-based-policies.html</loc>
-    <lastmod>2022-10-29</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ssl-decryption.html</loc>
@@ -1822,7 +1822,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-best-practices-and-known-limitations.html</loc>
-    <lastmod>2022-09-14</lastmod>
+    <lastmod>2022-11-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/client-traffic-exploit-prevention.html</loc>
@@ -1939,10 +1939,6 @@
   <url>
     <loc>https://docs.netskope.com/en/create-a-policy-user-notification.html</loc>
     <lastmod>2022-04-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-dlp-policy-for-private-apps.html</loc>
-    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-the-netskope-client-for-netskope-private-access.html</loc>
@@ -4138,7 +4134,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2022-10-26</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -4266,7 +4262,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/vpn-applications.html</loc>
-    <lastmod>2022-09-26</lastmod>
+    <lastmod>2022-10-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/exception-configuration-for-vpn-applications.html</loc>
@@ -4275,6 +4271,10 @@
   <url>
     <loc>https://docs.netskope.com/en/interop-with-cisco-anyconnect.html</loc>
     <lastmod>2022-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/cisco-umbrella.html</loc>
+    <lastmod>2022-10-19</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fortigate-vpn.html</loc>

@@ -2659,11 +2659,6 @@ var toc = [{
 "url": "create-a-policy-user-notification.html",
 "text": "Create a Policy User Notification",
 "class": "topic-link section"
-},
-{
-"url": "create-a-dlp-policy-for-private-apps.html",
-"text": "Create a DLP Policy for Private Apps",
-"class": "topic-link section"
 }]
 },
 {
@@ -5843,6 +5838,11 @@ var toc = [{
 {
 "url": "interop-with-cisco-anyconnect.html",
 "text": "Interop with Cisco AnyConnect",
+"class": "topic-link section"
+},
+{
+"url": "cisco-umbrella.html",
+"text": "Cisco Umbrella",
 "class": "topic-link section"
 },
 {
