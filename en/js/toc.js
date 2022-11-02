@@ -8059,6 +8059,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "create-a-netskope-support-admin.html",
+"text": "Create a Netskope Support Admin",
+"class": "topic-link section"
+},
+{
 "url": "set-log-in-attempts.html",
 "text": "Set Log In Attempts",
 "class": "topic-link section"

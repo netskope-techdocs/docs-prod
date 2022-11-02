@@ -1822,7 +1822,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-best-practices-and-known-limitations.html</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/client-traffic-exploit-prevention.html</loc>
@@ -2066,7 +2066,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxy-chaining.html</loc>
@@ -4402,7 +4402,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-217835.html</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2022-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-over-ipsec-and-gre-tunnels.html</loc>
@@ -5898,7 +5898,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/administration.html</loc>
-    <lastmod>2022-10-27</lastmod>
+    <lastmod>2022-11-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/managing-administrators.html</loc>
@@ -5919,6 +5919,10 @@
   <url>
     <loc>https://docs.netskope.com/en/configure-single-sign-on-for-the-netskope-ui.html</loc>
     <lastmod>2022-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/create-a-netskope-support-admin.html</loc>
+    <lastmod>2022-10-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-log-in-attempts.html</loc>
