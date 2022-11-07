@@ -543,6 +543,30 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-99-0-0.html",
+"text": "Netskope Private Access Publisher Release Notes Version 99.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-publisher-release-99-0-0-7505.html",
+"text": "New Features And Enhancements In Publisher Release 99.0.0.7505",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-private-access-publisher-release-notes-version-98-1-0-7432.html",
+"text": "Netskope Private Access Publisher Release Notes Version 98.1.0.7432",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-release-98-1-0-7432.html",
+"text": "Fixed Issues In Release 98.1.0.7432",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-98-0-0-7378.html",
 "text": "Netskope Private Access Publisher Release Notes Version 98.0.0.7378",
 "class": "topic-link section reused-publication reused-publication"
@@ -5411,8 +5435,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "uninstall-the-netskope-app-from-the-zoom-account.html",
-"text": "Uninstall the Netskope App from the Zoom Account",
+"url": "-optional--uninstall-the-netskope-app-from-the-zoom-account.html",
+"text": "(Optional) Uninstall the Netskope App from the Zoom Account",
 "class": "topic-link section"
 }]
 },
@@ -5737,8 +5761,30 @@ var toc = [{
 },
 {
 "url": "vmware-workspace-one.html",
-"text": "VMWare Workspace One",
+"text": "VMware Workspace ONE",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "deploying-client-on-windows-using-vmware-workspace-one.html",
+"text": "Deploying Client on Windows Using VMware Workspace ONE",
 "class": "topic-link section"
+},
+{
+"url": "deploying-client-on-macos-using-vmware-workspace-one.html",
+"text": "Deploying Client on macOS Using VMware Workspace ONE",
+"class": "topic-link section"
+},
+{
+"url": "deploying-client-on-ios-vpn-using-vmware-workspace-one.html",
+"text": "Deploying Client on iOS VPN Using VMware Workspace ONE",
+"class": "topic-link section"
+},
+{
+"url": "deploying-client-on-android-using-vmware-workspace-one.html",
+"text": "Deploying Client on Android Using VMware Workspace ONE",
+"class": "topic-link section"
+}]
 },
 {
 "url": "microsoft-group-policy-object--gpo-.html",
@@ -5836,13 +5882,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "interop-with-cisco-anyconnect.html",
-"text": "Interop with Cisco AnyConnect",
-"class": "topic-link section"
-},
-{
-"url": "cisco-umbrella.html",
-"text": "Cisco Umbrella",
+"url": "cisco-anyconnect.html",
+"text": "Cisco AnyConnect",
 "class": "topic-link section"
 },
 {
@@ -5942,6 +5983,11 @@ var toc = [{
 {
 "url": "squid-proxy.html",
 "text": "Squid Proxy",
+"class": "topic-link section"
+},
+{
+"url": "cisco-umbrella.html",
+"text": "Cisco Umbrella",
 "class": "topic-link section"
 }]
 }]
@@ -6246,6 +6292,11 @@ var toc = [{
 {
 "url": "multi-factor-authentication.html",
 "text": "Multi-Factor Authentication",
+"class": "topic-link section"
+},
+{
+"url": "application-feature-support.html",
+"text": "Application Feature Support",
 "class": "topic-link section"
 },
 {
@@ -7926,99 +7977,6 @@ var toc = [{
 "text": "Add Custom User Attributes",
 "class": "topic-link section"
 }]
-},
-{
-"url": "mobile-device-management.html",
-"text": "Mobile Device Management",
-"class": "topic-link section reused-publication reused-publication"
-,
-"children": [
-{
-"url": "airwatch.html",
-"text": "Airwatch",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-airwatch-for-ios-vpn.html",
-"text": "Configure AirWatch for iOS VPN",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "create-a-certificate-authority-using-scep.html",
-"text": "Create a Certificate Authority using SCEP",
-"class": "topic-link section"
-},
-{
-"url": "create-a-certificate-template.html",
-"text": "Create a Certificate Template",
-"class": "topic-link section"
-},
-{
-"url": "upload-certificates-to-netskope.html",
-"text": "Upload Certificates to Netskope",
-"class": "topic-link section"
-},
-{
-"url": "download-netskope-certificates.html",
-"text": "Download Netskope Certificates",
-"class": "topic-link section"
-},
-{
-"url": "create-an-ios-on-demand-vpn-profile.html",
-"text": "Create an iOS On-Demand VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "create-an-ios-per-app-vpn-profile.html",
-"text": "Create an iOS Per-App VPN Profile",
-"class": "topic-link section"
-},
-{
-"url": "configure-managed-apps-for-per-app-vpn.html",
-"text": "Configure Managed Apps for Per-App VPN",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open-164909.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-airwatch-for-android.html",
-"text": "Configure AirWatch for Android",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-the-netskope-app-using-the-airwatch-sdk.html",
-"text": "Configure the Netskope App using the AirWatch SDK",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-app-as-an-internal-app.html",
-"text": "Configure the Netskope App as an Internal App",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-netskope-app-with-airwatch-for-android-for-work-managed-configurations.html",
-"text": "Configure the Netskope App with AirWatch for Android for Work Managed Configurations",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-android-116094.html",
-"text": "Device Classification for Android",
-"class": "topic-link section"
-}]
-},
-{
-"url": "configure-airwatch-for-macos.html",
-"text": "Configure AirWatch for MacOS",
-"class": "topic-link section"
-}]
-}]
 }]
 },
 {
@@ -8180,6 +8138,13 @@ var toc = [{
 "url": "dlp-86207.html",
 "text": "DLP",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "downloading-dlp-incident-files.html",
+"text": "Downloading DLP Incident Files",
+"class": "topic-link section"
+}]
 },
 {
 "url": "compromised-credentials.html",
