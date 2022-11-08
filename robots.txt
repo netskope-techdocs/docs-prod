@@ -1,4 +1,11 @@
+
+# Algolia-Crawler-Verif: CCA0D0FF921E036E
+
 User-agent: *
+
+Allow: /
+Sitemap: https://docs.netskope.com/sitemap.xml
+
 Disallow: /css
 Disallow: /js
 Disallow: /en/js
