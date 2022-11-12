@@ -8686,6 +8686,13 @@ var toc = [{
 "url": "rest-api-v2-overview-312207.html",
 "text": "REST API v2 Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "using-the-rest-api-v2-dataexport-iterator-endpoints.html",
+"text": "Using the REST API v2 dataexport Iterator Endpoints",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-platform-rest-apis.html",
