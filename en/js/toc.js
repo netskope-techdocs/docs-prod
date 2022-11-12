@@ -6401,11 +6401,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "migrating-from-ce-3-1-or-newer-to-ce-3-4-0.html",
-"text": "Migrating from CE 3.1 or newer to CE 3.4.0",
-"class": "topic-link section"
-},
+  {
+  "url": "migrating-from-ce-3-1-or-newer-to-the-latest-version-of-cloud-exchange.html",
+  "text": "Migrating from CE 3.1 or newer to the Latest Version of Cloud Exchange",
+  "class": "topic-link section"
+  },
 {
 "url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
 "text": "Migrating from CE 3.x to CE 3.1.5",
