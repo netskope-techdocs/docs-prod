@@ -543,8 +543,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-private-access-publisher-release-notes-version-99-0-0.html",
-"text": "Netskope Private Access Publisher Release Notes Version 99.0.0",
+"url": "netskope-private-access-publisher-release-notes-version-99-0-0-7505.html",
+"text": "Netskope Private Access Publisher Release Notes Version 99.0.0.7505",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
@@ -5213,6 +5213,11 @@ var toc = [{
 "url": "configure-github-for-the-next-generation-api-data-protection.html",
 "text": "Configure GitHub for the Next Generation API Data Protection",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-github.html",
+"text": "Permissions Required for GitHub",
+"class": "topic-link section"
 }]
 },
 {
@@ -5367,7 +5372,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "permissions-required-for-github.html",
+"url": "permissions-required-for-github-319757.html",
 "text": "Permissions Required for GitHub",
 "class": "topic-link section"
 }]
@@ -6401,11 +6406,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-  {
-  "url": "migrating-from-ce-3-1-or-newer-to-the-latest-version-of-cloud-exchange.html",
-  "text": "Migrating from CE 3.1 or newer to the Latest Version of Cloud Exchange",
-  "class": "topic-link section"
-  },
+{
+"url": "migrating-from-ce-3-1-or-newer-to-the-latest-version-of-cloud-exchange.html",
+"text": "Migrating from CE 3.1 or newer to the Latest Version of Cloud Exchange",
+"class": "topic-link section"
+},
 {
 "url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
 "text": "Migrating from CE 3.x to CE 3.1.5",
