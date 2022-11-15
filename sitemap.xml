@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2022-11-07</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-99-0-0.html</loc>
-    <lastmod>2022-10-31</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-99-0-0.html</loc>
@@ -498,11 +498,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-99-0-0-264.html</loc>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-98-0-0-257.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-97-1-1-246.html</loc>
@@ -1698,7 +1702,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-fingerprint-rules.html</loc>
-    <lastmod>2022-02-07</lastmod>
+    <lastmod>2022-11-14</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrate-with-3rd-party-apps.html</loc>
@@ -1890,7 +1894,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/forensics.html</loc>
-    <lastmod>2022-11-10</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-api-data-protection-for-forensics.html</loc>
@@ -3826,7 +3830,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-github-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2022-11-14</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/permissions-required-for-github.html</loc>
@@ -4658,7 +4662,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -5237,12 +5241,8 @@
     <lastmod>2022-10-14</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/troubleshooting-tips-and-faqs.html</loc>
-    <lastmod>2022-10-19</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/generate-diagnostic-logs.html</loc>
-    <lastmod>2022-06-22</lastmod>
+    <loc>https://docs.netskope.com/en/cloud-exchange-troubleshooting.html</loc>
+    <lastmod>2022-11-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/information-rights-management.html</loc>

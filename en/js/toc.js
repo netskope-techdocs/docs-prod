@@ -702,6 +702,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ctep-ips-threat-content-update-release-notes-99-0-0-264.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 99.0.0.264",
+"class": "topic-link section"
+},
+{
 "url": "ctep-ips-threat-content-update-release-notes-98-0-0-257.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 98.0.0.257",
 "class": "topic-link section"
@@ -7130,16 +7135,9 @@ var toc = [{
 }]
 },
 {
-"url": "troubleshooting-tips-and-faqs.html",
-"text": "Troubleshooting Tips and FAQs",
+"url": "cloud-exchange-troubleshooting.html",
+"text": "Cloud Exchange Troubleshooting",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "generate-diagnostic-logs.html",
-"text": "Generate Diagnostic Logs",
-"class": "topic-link section"
-}]
 }]
 },
 {
