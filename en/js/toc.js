@@ -6610,6 +6610,11 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
+"url": "aws-security-lake-plugin-for-log-shipper.html",
+"text": "AWS Security Lake Plugin for Log Shipper",
+"class": "topic-link section reused-publication reused-publication"
+},
+{
 "url": "azure-sentinel-plugin-for-log-shipper.html",
 "text": "Azure Sentinel Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
