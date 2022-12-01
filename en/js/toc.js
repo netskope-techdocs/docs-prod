@@ -16,6 +16,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-note-version-100-0-0.html",
+"text": "Netskope Release Note Version 100.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-100-0-0.html",
+"text": "New Features And Enhancements In Release 100.0.0",
+"class": "topic-link section"
+},
+{
+"url": "next-generation-api-data-protection---batch-iii-new-apps-support.html",
+"text": "Next Generation API Data Protection - Batch III New Apps Support",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-100-0-0.html",
+"text": "Fixed Issues In Release 100.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-100-0-0.html",
+"text": "Known Issues In Release 100.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-99-0-0.html",
 "text": "Netskope Release Notes Version 99.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -985,6 +1012,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "on-premises-appliance-release-notes-version-99-0-0.html",
+"text": "On-Premises Appliance Release Notes Version 99.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-on-premises-appliance-version-99-0-0.html",
+"text": "Overview for On-Premises Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-99-0-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-on-premises-appliance-version-99-0-0.html",
+"text": "Known Issues for On-Premises Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-on-premises-appliance-version-99-0-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 99.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "on-premises-appliance-release-notes-version-96-0-0.html",
 "text": "On-Premises Appliance Release Notes Version 96.0.0",
 "class": "topic-link section reused-publication reused-publication"
@@ -1141,6 +1195,38 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
+{
+"url": "virtual-appliance-release-notes-version-99-0-0.html",
+"text": "Virtual Appliance Release Notes Version 99.0.0",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "overview-for-virtual-appliance-version-99-0-0.html",
+"text": "Overview for Virtual Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "requirements-for-virtual-appliance-version-99-0-0.html",
+"text": "Requirements for Virtual Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-virtual-appliance-version-99-0-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-virtual-appliance-version-99-0-0.html",
+"text": "Known Issues for Virtual Appliance Version 99.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-virtual-appliance-version-99-0-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 99.0.0",
+"class": "topic-link section"
+}]
+},
 {
 "url": "virtual-appliance-release-notes-version-96-0-0.html",
 "text": "Virtual Appliance Release Notes Version 96.0.0",
@@ -2514,13 +2600,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "rbi-supported-browsers.html",
+"text": "RBI Supported Browsers",
+"class": "topic-link section"
+},
+{
 "url": "isolation-events-in-skope-it.html",
 "text": "Isolation Events in Skope IT",
 "class": "topic-link section"
 },
 {
-"url": "rbi-best-practices-and-known-limitations.html",
-"text": "RBI Best Practices and Known Limitations",
+"url": "rbi-best-practices.html",
+"text": "RBI Best Practices",
 "class": "topic-link section"
 }]
 },
@@ -2649,6 +2740,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "publisher-support-policy.html",
+"text": "Publisher Support Policy",
+"class": "topic-link section"
+},
+{
 "url": "deploy-a-publisher.html",
 "text": "Deploy a Publisher",
 "class": "topic-link section"
@@ -2657,6 +2753,13 @@ var toc = [{
 "url": "manage-a-publisher.html",
 "text": "Manage a Publisher",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "centos-based-publisher-support-end-of-life.html",
+"text": "CentOS-based Publisher Support End of Life",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -5197,6 +5300,40 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "next-generation-api-data-protection-for-atlassian-confluence.html",
+"text": "Next Generation API Data Protection for Atlassian Confluence",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-atlassian-confluence-for-the-next-generation-api-data-protection.html",
+"text": "Configure Atlassian Confluence for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-atlassian-confluence.html",
+"text": "Permissions Required for Atlassian Confluence",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-api-data-protection-for-atlassian-jira-cloud.html",
+"text": "Next Generation API Data Protection for Atlassian Jira Cloud",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "configure-atlassian-jira-cloud-for-the-next-generation-api-data-protection.html",
+"text": "Configure Atlassian Jira Cloud for the Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-atlassian-jira-cloud.html",
+"text": "Permissions Required for Atlassian Jira Cloud",
+"class": "topic-link section"
+}]
+},
+{
 "url": "next-generation-api-data-protection-for-citrix-sharefile.html",
 "text": "Next Generation API Data Protection for Citrix ShareFile",
 "class": "topic-link section reused-publication reused-publication"
@@ -5519,62 +5656,62 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-security-posture-management.html",
-"text": "Next Generation Security Posture Management",
+"url": "next-generation-saas-security-posture-management.html",
+"text": "Next Generation SaaS Security Posture Management",
 "class": "topic-link section reused-publication reused-publication"
 ,
 "children": [
 {
-"url": "next-generation-security-posture-management-for-microsoft-365.html",
-"text": "Next Generation Security Posture Management for Microsoft 365",
+"url": "next-generation-saas-security-posture-management-for-microsoft-365.html",
+"text": "Next Generation SaaS Security Posture Management for Microsoft 365",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-instance-for-next-generation-security-posture-management.html",
-"text": "Configure Microsoft 365 Instance for Next Generation Security Posture Management",
+"url": "configure-microsoft-365-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure Microsoft 365 Instance for Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-security-posture-management-for-salesforce.html",
-"text": "Next Generation Security Posture Management for Salesforce",
+"url": "next-generation-saas-security-posture-management-for-salesforce.html",
+"text": "Next Generation SaaS Security Posture Management for Salesforce",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "configure-salesforce-instance-for-next-generation-security-posture-management.html",
-"text": "Configure Salesforce Instance for Next Generation Security Posture Management",
+"url": "configure-salesforce-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure Salesforce Instance for Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-security-posture-management-policy-wizard.html",
-"text": "Next Generation Security Posture Management Policy Wizard",
+"url": "next-generation-saas-security-posture-management-policy-wizard.html",
+"text": "Next Generation SaaS Security Posture Management Policy Wizard",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "next-generation-security-posture-policy.html",
-"text": "Next Generation Security Posture Policy",
+"url": "next-generation-saas-security-posture-policy.html",
+"text": "Next Generation SaaS Security Posture Policy",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-next-generation-security-posture-policy.html",
-"text": "Create a Next Generation Security Posture Policy",
+"url": "create-a-next-generation-saas-security-posture-policy.html",
+"text": "Create a Next Generation SaaS Security Posture Policy",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-security-posture-rule.html",
-"text": "Next Generation Security Posture Rule",
+"url": "next-generation-saas-security-posture-rule.html",
+"text": "Next Generation SaaS Security Posture Rule",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-next-generation-security-posture-rule.html",
-"text": "Create a Next Generation Security Posture Rule",
+"url": "create-a-next-generation-saas-security-posture-rule.html",
+"text": "Create a Next Generation SaaS Security Posture Rule",
 "class": "topic-link section"
 ,
 "children": [
@@ -5587,8 +5724,8 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-security-posture-management-dashboard.html",
-"text": "Next Generation Security Posture Management Dashboard",
+"url": "next-generation-saas-security-posture-management-dashboard.html",
+"text": "Next Generation SaaS Security Posture Management Dashboard",
 "class": "topic-link section"
 ,
 "children": [
@@ -5750,6 +5887,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-client-for-macos.html",
+"text": "Netskope Client for macOS",
+"class": "topic-link section"
+},
+{
 "url": "netskope-client-for-linux.html",
 "text": "Netskope Client For Linux",
 "class": "topic-link section"
@@ -5856,6 +5998,16 @@ var toc = [{
 {
 "url": "azure-virtual-desktop.html",
 "text": "Azure Virtual Desktop",
+"class": "topic-link section"
+},
+{
+"url": "amazon-workspaces.html",
+"text": "Amazon WorkSpaces",
+"class": "topic-link section"
+},
+{
+"url": "citrix-virtual-apps-and-desktop.html",
+"text": "Citrix Virtual Apps and Desktop",
 "class": "topic-link section"
 }]
 },
@@ -6658,12 +6810,12 @@ var toc = [{
 "url": "rapid7-plugin-for-log-shipper.html",
 "text": "Rapid7 Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
+}]
 },
 {
 "url": "webtx-plugin-for-log-shipper.html",
 "text": "WebTx Plugin for Log Shipper",
 "class": "topic-link section reused-publication reused-publication"
-}]
 },
 {
 "url": "update-configured-log-shipper-plugins.html",
@@ -8143,8 +8295,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dlp-86207.html",
-"text": "DLP",
+"url": "about-dlp.html",
+"text": "About DLP",
 "class": "topic-link section"
 ,
 "children": [
