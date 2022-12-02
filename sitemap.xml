@@ -729,26 +729,6 @@
     <lastmod>2022-11-29</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-99-0-0.html</loc>
-    <lastmod>2022-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/overview-for-on-premises-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-11-29</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-on-premises-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/known-issues-for-on-premises-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/fixed-issues-for-on-premises-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-96-0-0.html</loc>
     <lastmod>2022-10-05</lastmod>
   </url>
@@ -863,30 +843,6 @@
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes.html</loc>
     <lastmod>2022-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-99-0-0.html</loc>
-    <lastmod>2022-11-30</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/overview-for-virtual-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-11-29</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/requirements-for-virtual-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-virtual-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/known-issues-for-virtual-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/fixed-issues-for-virtual-appliance-version-99-0-0.html</loc>
-    <lastmod>2022-12-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-96-0-0.html</loc>
@@ -1990,7 +1946,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2022-12-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-apps-configuration-methods.html</loc>
@@ -2011,10 +1967,6 @@
   <url>
     <loc>https://docs.netskope.com/en/manage-a-publisher.html</loc>
     <lastmod>2021-10-29</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/centos-based-publisher-support-end-of-life.html</loc>
-    <lastmod>2022-11-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-app-management.html</loc>
