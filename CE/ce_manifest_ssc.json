@@ -1,0 +1,28 @@
+{
+  "name": "Netskope CE",
+  "description": "Netskope Cloud Exchange App Risk Exchange SSC plugin pushes Netskope CCI data", 
+  "long_description": "Netskope Cloud Exchange App Risk Exchange SSC plugin pushes Netskope CCI data as tuned by the Netskope admin into the private application listing in SSC. Scores vary on a scale from 100 (good) to 0 (terrible)."
+  "url": "https://docs.netskope.com/en/security-scorecard-for-risk-exchange",
+  "homepage": "<https://docs.netskope.com/en/netskope-cloud-exchange.html",
+  "developer": "https://www.netskope.com/products/cloud-exchange",
+  "logo_url": "https://www.netskope.com/wp-content/themes/netskope/images/v3/logo.svg",
+  "namespace": "netskope_ce-are",
+  "signals": [
+    {
+      "id": "netskope_ce-are.cci",
+      "name": "Netskope Security Cloud Confidence Index Data",
+      "severity": "info",
+      "factor": "application_security",
+      "short_description": "This is a Netksope finding that shows the application's risk to corporate data and privacy.",
+      "long_description": "The Netskope Cloud Confidence Index™ (CCI) is a database of more than 54,000 cloud apps that Netskope has evaluated based on 48+ objective criteria adapted from Cloud Security Alliance Guidance. These criteria measure apps enterprise-readiness, taking into consideration an apps security, audit-ability, and business continuity and are delivered as a score for each application. Learn more here https://docs.netskope.com/en/cloud-confidence-index.html",
+      "recommendation": "Netskope recommends carefully assessing the need to use any application with a CCI score below 60 or a CCL below Medium",
+      "sent_by": "netskope-cloud-exchange",
+      "references": [
+        {
+          "link": "https://docs.netskope.com/en/cloud-confidence-index.html",
+          "text": "Learn more about Cloud Confidence Index"
+        }
+      ]
+    }
+  ]
+}
