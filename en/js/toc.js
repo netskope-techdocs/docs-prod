@@ -8419,6 +8419,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "about-pins.html",
+"text": "About Pins",
+"class": "topic-link section"
+},
+{
 "url": "about-applications.html",
 "text": "About Applications",
 "class": "topic-link section"
