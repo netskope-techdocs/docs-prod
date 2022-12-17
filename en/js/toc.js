@@ -27,6 +27,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "advanced-analytics-scheduled-folder.html",
+"text": "Advanced Analytics Scheduled Folder",
+"class": "topic-link section"
+},
+{
 "url": "advanced-analytics-incidents.html",
 "text": "Advanced Analytics Incidents",
 "class": "topic-link section"
@@ -44,6 +49,18 @@ var toc = [{
 {
 "url": "known-issues-in-release-100-0-0.html",
 "text": "Known Issues In Release 100.0.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-release-notes-hotfix-version-99-0-8.html",
+"text": "Netskope Release Notes Hotfix Version 99.0.8",
+"class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-99-0-8.html",
+"text": "Fixed Issues In Hotfix Release 99.0.8",
 "class": "topic-link section"
 }]
 },
@@ -6938,9 +6955,31 @@ var toc = [{
 "class": "topic-link section reused-publication reused-publication"
 },
 {
-"url": "microsoft-defender-plugin-for-threat-exchange.html",
-"text": "Microsoft Defender Plugin for Threat Exchange",
+"url": "microsoft-defender-for-endpoint-plugin-for-threat-exchange.html",
+"text": "Microsoft Defender for Endpoint Plugin for Threat Exchange",
 "class": "topic-link section reused-publication reused-publication"
+,
+"children": [
+{
+"url": "create-an-application-and-get-your-tenant-id--application-id--and-client-secret.html",
+"text": "Create an Application and get your Tenant ID, Application ID, and Client Secret",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-microsoft-defender-for-endpoint-plugin.html",
+"text": "Configure the Microsoft Defender for Endpoint Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configuring-threat-exchange-sharing-for-microsoft-defender-for-endpoint.html",
+"text": "Configuring Threat Exchange Sharing for Microsoft Defender for Endpoint",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-microsoft-defender-for-endpoint-plugin.html",
+"text": "Validate the Microsoft Defender for Endpoint Plugin",
+"class": "topic-link section"
+}]
 },
 {
 "url": "mimecast-plugin-for-threat-exchange.html",
@@ -8512,6 +8551,11 @@ var toc = [{
 {
 "url": "sharing-netskope-advanced-analytics-dashboards.html",
 "text": "Sharing Netskope Advanced Analytics Dashboards",
+"class": "topic-link section"
+},
+{
+"url": "scheduling-advanced-analytics-dashboards.html",
+"text": "Scheduling Advanced Analytics Dashboards",
 "class": "topic-link section"
 }]
 },
