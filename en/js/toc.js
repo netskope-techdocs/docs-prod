@@ -1,7 +1,7 @@
 var toc = [{
 "url": "netskope-release-notes.html",
 "text": "Netskope Release Notes",
-"class": "topic-link section top-nav-link portal-category reused-publication top-nav-link portal-category; reused-publication"
+"class": "topic-link section top-nav-link portal-category; reused-publication"
 ,
 "children": [
 {
@@ -12,13 +12,13 @@ var toc = [{
 {
 "url": "netskope-cloud-release-notes.html",
 "text": "Netskope Cloud Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "netskope-release-note-version-100-0-0.html",
 "text": "Netskope Release Note Version 100.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -55,7 +55,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-99-0-8.html",
 "text": "Netskope Release Notes Hotfix Version 99.0.8",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -67,7 +67,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-99-0-0.html",
 "text": "Netskope Release Notes Version 99.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -89,7 +89,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-98-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 98.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -111,7 +111,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-98-0-0.html",
 "text": "Netskope Release Notes Version 98.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -133,7 +133,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-97-1-5.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.5",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -145,7 +145,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-97-1-3.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.3",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -157,7 +157,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-97-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 97.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -184,7 +184,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-97-0-0.html",
 "text": "Netskope Release Notes Version 97.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -206,7 +206,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-96-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 96.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -223,7 +223,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-96-0-0.html",
 "text": "Netskope Release Notes Version 96.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -250,7 +250,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-95-1-2.html",
 "text": "Netskope Release Notes Hotfix Version 95.1.2",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -272,7 +272,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-95-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 95.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -294,7 +294,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-95-0-0.html",
 "text": "Netskope Release Notes Version 95.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -311,7 +311,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-94-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 94.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -328,7 +328,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-94-0-0.html",
 "text": "Netskope Release Notes Version 94.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -355,7 +355,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-93-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 93.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -372,7 +372,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-93-0-0.html",
 "text": "Netskope Release Notes Version 93.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -394,7 +394,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-hotfix-version-92-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 92.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -416,7 +416,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-92-0-0.html",
 "text": "Netskope Release Notes Version 92.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -438,7 +438,7 @@ var toc = [{
 {
 "url": "netskope-hotfix-release-notes-version-91-2-0.html",
 "text": "Netskope Hotfix Release Notes Version 91.2.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -450,7 +450,7 @@ var toc = [{
 {
 "url": "netskope-hotfix-release-notes-version-91-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 91.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -472,7 +472,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-91-0-0.html",
 "text": "Netskope Release Notes Version 91.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -499,7 +499,7 @@ var toc = [{
 {
 "url": "netskope-golden-client-release-notes-version-90-2-0.html",
 "text": "Netskope Golden Client Release Notes Version 90.2.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -511,7 +511,7 @@ var toc = [{
 {
 "url": "netskope-hotfix-release-notes-version-90-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 90.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -538,7 +538,7 @@ var toc = [{
 {
 "url": "netskope-hotfix-release-notes-version-88-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 88.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -565,7 +565,7 @@ var toc = [{
 {
 "url": "netskope-release-notes-version-89-0-0.html",
 "text": "Netskope Release Notes Version 89.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -588,13 +588,13 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes.html",
 "text": "Netskope Private Access Publisher Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "netskope-private-access-publisher-release-notes-version-99-0-0-7505.html",
 "text": "Netskope Private Access Publisher Release Notes Version 99.0.0.7505",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -606,7 +606,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-98-1-0-7432.html",
 "text": "Netskope Private Access Publisher Release Notes Version 98.1.0.7432",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -618,7 +618,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-98-0-0-7378.html",
 "text": "Netskope Private Access Publisher Release Notes Version 98.0.0.7378",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -630,7 +630,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-97-0-0-7294.html",
 "text": "Netskope Private Access Publisher Release Notes Version 97.0.0.7294",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -642,7 +642,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-96-0-0-7170.html",
 "text": "Netskope Private Access Publisher Release Notes Version 96.0.0.7170",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -654,7 +654,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-95-0-0-7066.html",
 "text": "Netskope Private Access Publisher Release Notes Version 95.0.0.7066",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -666,7 +666,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-94-0-0-6867.html",
 "text": "Netskope Private Access Publisher Release Notes Version 94.0.0.6867",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -683,7 +683,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-1-4-6715.html",
 "text": "Netskope Private Access Publisher Release Notes Version 1.4.6715",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -695,7 +695,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-1-4-6620.html",
 "text": "Netskope Private Access Publisher Release Notes Version 1.4.6620",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -707,7 +707,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-1-4-6526.html",
 "text": "Netskope Private Access Publisher Release Notes Version 1.4.6526",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -724,7 +724,7 @@ var toc = [{
 {
 "url": "netskope-private-access-publisher-release-notes-version-1-4-6431.html",
 "text": "Netskope Private Access Publisher Release Notes Version 1.4.6431",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -747,7 +747,7 @@ var toc = [{
 {
 "url": "netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html",
 "text": "Netskope Client Traffic Exploit Prevention System Threat Content Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -879,28 +879,28 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes.html",
 "text": "Netskope Cloud Exchange Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "netskope-cloud-exchange-release-notes-version-4-0-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 4.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-4-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.4.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-3-3.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.3",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-3-1.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.1",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -917,7 +917,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-3-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.3.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -934,7 +934,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-2-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.2.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -951,7 +951,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-1-5.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.1.5",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -968,7 +968,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-1-3.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.1.3",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -980,7 +980,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-1-2.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.1.2",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -992,7 +992,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-1-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1004,7 +1004,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-3-0-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 3.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1016,7 +1016,7 @@ var toc = [{
 {
 "url": "netskope-cloud-exchange-release-notes-version-2-0-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 2.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1029,19 +1029,19 @@ var toc = [{
 {
 "url": "netskope-appliance-release-notes.html",
 "text": "Netskope Appliance Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "on-premises-appliance-release-notes.html",
 "text": "On-Premises Appliance Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "on-premises-appliance-release-notes-version-99-0-0.html",
 "text": "On-Premises Appliance Release Notes Version 99.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1068,7 +1068,7 @@ var toc = [{
 {
 "url": "on-premises-appliance-release-notes-version-96-0-0.html",
 "text": "On-Premises Appliance Release Notes Version 96.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1095,7 +1095,7 @@ var toc = [{
 {
 "url": "on-premises-appliance-release-notes-version-93-1-0.html",
 "text": "On-Premises Appliance Release Notes Version 93.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1122,7 +1122,7 @@ var toc = [{
 {
 "url": "on-premises-appliance-release-notes-version-93-0-0.html",
 "text": "On-Premises Appliance Release Notes Version 93.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1154,7 +1154,7 @@ var toc = [{
 {
 "url": "on-premises-appliance-release-notes-version-77-6-0.html",
 "text": "On-Premises Appliance Release Notes Version 77.6.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1186,7 +1186,7 @@ var toc = [{
 {
 "url": "on-premises-appliance-release-notes-version-77-5-0.html",
 "text": "On-Premises Appliance Release Notes Version 77.5.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1219,13 +1219,13 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes.html",
 "text": "Virtual Appliance Release Notes",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "virtual-appliance-release-notes-version-99-0-0.html",
 "text": "Virtual Appliance Release Notes Version 99.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1257,7 +1257,7 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes-version-96-0-0.html",
 "text": "Virtual Appliance Release Notes Version 96.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1289,7 +1289,7 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes-version-93-1-0.html",
 "text": "Virtual Appliance Release Notes Version 93.1.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1321,7 +1321,7 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes-version-93-0-0.html",
 "text": "Virtual Appliance Release Notes Version 93.0.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1358,7 +1358,7 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes-version-77-6-0.html",
 "text": "Virtual Appliance Release Notes Version 77.6.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1395,7 +1395,7 @@ var toc = [{
 {
 "url": "virtual-appliance-release-notes-version-77-5-0.html",
 "text": "Virtual Appliance Release Notes Version 77.5.0",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1435,18 +1435,18 @@ var toc = [{
 {
 "url": "getting-started.html",
 "text": "Getting Started",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section top-nav-link"
 ,
 "children": [
 {
 "url": "about-the-admin-console.html",
 "text": "About the Admin Console",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "deployment-options.html",
 "text": "Deployment Options",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 ,
 "children": [
 {
@@ -1463,7 +1463,7 @@ var toc = [{
 {
 "url": "secure-tenant-configuration-and-hardening.html",
 "text": "Secure Tenant Configuration and Hardening",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-security-cloud-features.html",
@@ -1510,7 +1510,7 @@ var toc = [{
 {
 "url": "microlearning-video-library.html",
 "text": "Microlearning Video Library",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 ,
 "children": [
 {
@@ -1537,13 +1537,13 @@ var toc = [{
 {
 "url": "netskope-success-resource-center.html",
 "text": "Netskope Success Resource Center",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "vendor-risk-assessment.html",
 "text": "Vendor Risk Assessment",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1565,7 +1565,7 @@ var toc = [{
 {
 "url": "observe-cloud-app-activities--oplp--and-risk-insights.html",
 "text": "Observe Cloud App Activities (OPLP) and Risk Insights",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1597,13 +1597,13 @@ var toc = [{
 {
 "url": "casb-api-protection.html",
 "text": "CASB API Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "understanding-api-protection.html",
 "text": "Understanding API Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1635,7 +1635,7 @@ var toc = [{
 {
 "url": "api--observe-for-managed-app-activities-.html",
 "text": "API (Observe for Managed App Activities)",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1677,7 +1677,7 @@ var toc = [{
 {
 "url": "api--monitor-for-managed-app-activities-.html",
 "text": "API (Monitor for Managed App Activities)",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1719,7 +1719,7 @@ var toc = [{
 {
 "url": "api--protection-for-managed-app-activities-.html",
 "text": "API (Protection for Managed App Activities)",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1741,7 +1741,7 @@ var toc = [{
 {
 "url": "dlp---protect-state-for-managed-app-activities.html",
 "text": "DLP – Protect state for Managed App Activities",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1773,7 +1773,7 @@ var toc = [{
 {
 "url": "threat-protection---protect-state-for-managed-app-activities.html",
 "text": "Threat Protection – Protect state for Managed App Activities",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1786,13 +1786,13 @@ var toc = [{
 {
 "url": "cloud-inline-protection.html",
 "text": "Cloud Inline Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "inline-monitoring-for-cloud-apps.html",
 "text": "Inline monitoring for Cloud apps",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1844,7 +1844,7 @@ var toc = [{
 {
 "url": "inline-protection-of-cloud-apps.html",
 "text": "Inline protection of Cloud apps",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1882,13 +1882,13 @@ var toc = [{
 {
 "url": "unmanaged-device-protection.html",
 "text": "Unmanaged Device Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "monitor---unmanaged-device-protection.html",
 "text": "Monitor – Unmanaged Device Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1915,7 +1915,7 @@ var toc = [{
 {
 "url": "protect---unmanaged-device-protection.html",
 "text": "Protect – Unmanaged Device Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1928,13 +1928,13 @@ var toc = [{
 {
 "url": "iaas.html",
 "text": "IaaS",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "iaas---monitor.html",
 "text": "IaaS - Monitor",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -1991,7 +1991,7 @@ var toc = [{
 {
 "url": "iaas---protect.html",
 "text": "IaaS - Protect",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2024,13 +2024,13 @@ var toc = [{
 {
 "url": "swg-web-traffic.html",
 "text": "SWG Web traffic",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "ngswg-basic-policies.html",
 "text": "NGSWG Basic Policies",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2063,7 +2063,7 @@ var toc = [{
 {
 "url": "advanced-threat-protection.html",
 "text": "Advanced Threat Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2117,13 +2117,13 @@ var toc = [{
 {
 "url": "data-security.html",
 "text": "Data Security",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section top-nav-link"
 ,
 "children": [
 {
 "url": "real-time-protection.html",
 "text": "Real-time Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2168,7 +2168,7 @@ var toc = [{
 {
 "url": "real-time-protection-for-public-cloud.html",
 "text": "Real-time Protection for Public Cloud",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2190,7 +2190,7 @@ var toc = [{
 {
 "url": "behavior-analytics-policies.html",
 "text": "Behavior Analytics Policies",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2346,7 +2346,7 @@ var toc = [{
 {
 "url": "data-loss-prevention.html",
 "text": "Data Loss Prevention",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2484,13 +2484,13 @@ var toc = [{
 {
 "url": "endpoint-data-loss-prevention.html",
 "text": "Endpoint Data Loss Prevention",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
 "url": "threat-protection.html",
 "text": "Threat Protection",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2588,7 +2588,7 @@ var toc = [{
 {
 "url": "remote-browser-isolation.html",
 "text": "Remote Browser Isolation",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2645,7 +2645,7 @@ var toc = [{
 {
 "url": "client-traffic-exploit-prevention.html",
 "text": "Client Traffic Exploit Prevention",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2662,7 +2662,7 @@ var toc = [{
 {
 "url": "risk-insights.html",
 "text": "Risk Insights",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2713,7 +2713,7 @@ var toc = [{
 {
 "url": "forensics.html",
 "text": "Forensics",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2735,7 +2735,7 @@ var toc = [{
 {
 "url": "transaction-events.html",
 "text": "Transaction Events",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2752,7 +2752,7 @@ var toc = [{
 {
 "url": "netskope-private-access.html",
 "text": "Netskope Private Access",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -2837,7 +2837,7 @@ var toc = [{
 {
 "url": "windows-autopilot-with-private-access-prelogon.html",
 "text": "Windows Autopilot with Private Access Prelogon",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "use-client-re-authentication.html",
@@ -2848,7 +2848,7 @@ var toc = [{
 {
 "url": "private-access-troubleshooting.html",
 "text": "Private Access Troubleshooting",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2895,7 +2895,7 @@ var toc = [{
 {
 "url": "apache-guacamole-with-azure-ad-or-okta-saml-for-netskope-private-access.html",
 "text": "Apache Guacamole with Azure AD or Okta SAML for Netskope Private Access",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -2943,7 +2943,7 @@ var toc = [{
 {
 "url": "netskope-secure-web-gateway.html",
 "text": "Netskope Secure Web Gateway",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -3085,7 +3085,7 @@ var toc = [{
 {
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -3603,9 +3603,14 @@ var toc = [{
 {
 "url": "api-data-protection.html",
 "text": "API Data Protection",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
+{
+"url": "api-migration.html",
+"text": "API Migration",
+"class": "topic-link section"
+},
 {
 "url": "api-data-protection-use-cases.html",
 "text": "API Data Protection Use Cases",
@@ -3624,7 +3629,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-box.html",
 "text": "API Data Protection for Box",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -3636,7 +3641,7 @@ var toc = [{
 {
 "url": "authorize-netskope-introspection-app-on-box-enterprise.html",
 "text": "Authorize Netskope Introspection App on Box Enterprise",
-"class": "topic-link section internal internal"
+"class": "topic-link section internal"
 },
 {
 "url": "enable-box-event-stream.html",
@@ -3646,7 +3651,7 @@ var toc = [{
 {
 "url": "configure-box-instance-in-netskope-ui.html",
 "text": "Configure Box Instance in Netskope UI",
-"class": "topic-link section internal internal"
+"class": "topic-link section internal"
 }]
 },
 {
@@ -3754,7 +3759,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-cisco-webex-teams.html",
 "text": "API Data Protection for Cisco Webex Teams",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -3850,7 +3855,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-dropbox.html",
 "text": "API Data Protection for Dropbox",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -3953,7 +3958,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-egnyte.html",
 "text": "API Data Protection for Egnyte",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4039,7 +4044,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-github.html",
 "text": "API Data Protection for GitHub",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4120,7 +4125,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-gmail.html",
 "text": "API Data Protection for Gmail",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4206,7 +4211,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-google-drive.html",
 "text": "API Data Protection for Google Drive",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4312,7 +4317,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-microsoft-office-365-onedrive.html",
 "text": "API Data Protection for Microsoft Office 365 OneDrive",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4494,7 +4499,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-microsoft-office-365-outlook.html",
 "text": "API Data Protection for Microsoft Office 365 Outlook",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4604,7 +4609,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-microsoft-office-365-sharepoint.html",
 "text": "API Data Protection for Microsoft Office 365 SharePoint",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4769,7 +4774,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-microsoft-office-365-teams.html",
 "text": "API Data Protection for Microsoft Office 365 Teams",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4833,7 +4838,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-salesforce.html",
 "text": "API Data Protection for Salesforce",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -4941,7 +4946,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-servicenow.html",
 "text": "API Data Protection for ServiceNow",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5012,7 +5017,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-slack-for-enterprise.html",
 "text": "API Data Protection for Slack for Enterprise",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5108,7 +5113,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-slack-for-teams.html",
 "text": "API Data Protection for Slack for Teams",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5199,7 +5204,7 @@ var toc = [{
 {
 "url": "api-data-protection-for-workplace-by-facebook.html",
 "text": "API Data Protection for Workplace by Facebook",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5306,7 +5311,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-platform.html",
 "text": "Next Generation API Data Protection Platform",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -5317,7 +5322,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-atlassian-confluence.html",
 "text": "Next Generation API Data Protection for Atlassian Confluence",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5334,7 +5339,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-atlassian-jira-cloud.html",
 "text": "Next Generation API Data Protection for Atlassian Jira Cloud",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5351,7 +5356,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-citrix-sharefile.html",
 "text": "Next Generation API Data Protection for Citrix ShareFile",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5363,7 +5368,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-github.html",
 "text": "Next Generation API Data Protection for GitHub",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5380,7 +5385,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
 "text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5392,7 +5397,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html",
 "text": "Next Generation API Data Protection for Microsoft 365 SharePoint GCC High",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5404,7 +5409,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-microsoft-365-teams-gcc-high.html",
 "text": "Next Generation API Data Protection for Microsoft 365 Teams GCC High",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5416,7 +5421,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-microsoft-365-yammer.html",
 "text": "Next Generation API Data Protection for Microsoft 365 Yammer",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5428,7 +5433,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-okta.html",
 "text": "Next Generation API Data Protection for Okta",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5440,7 +5445,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-workday.html",
 "text": "Next Generation API Data Protection for Workday",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5452,7 +5457,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-zendesk.html",
 "text": "Next Generation API Data Protection for Zendesk",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5464,7 +5469,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-for-zoom.html",
 "text": "Next Generation API Data Protection for Zoom",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5514,7 +5519,7 @@ var toc = [{
 {
 "url": "saas-security-posture-management.html",
 "text": "SaaS Security Posture Management",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5673,7 +5678,7 @@ var toc = [{
 {
 "url": "next-generation-saas-security-posture-management.html",
 "text": "Next Generation SaaS Security Posture Management",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5759,7 +5764,7 @@ var toc = [{
 {
 "url": "netskope-cloud-firewall.html",
 "text": "Netskope Cloud Firewall",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5829,13 +5834,13 @@ var toc = [{
 {
 "url": "traffic-steering.html",
 "text": "Traffic Steering",
-"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
 "url": "netskope-client.html",
 "text": "Netskope Client",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5929,7 +5934,7 @@ var toc = [{
 {
 "url": "vmware-workspace-one.html",
 "text": "VMware Workspace ONE",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -5961,7 +5966,7 @@ var toc = [{
 {
 "url": "microsoft-intune.html",
 "text": "Microsoft Intune",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6050,7 +6055,7 @@ var toc = [{
 {
 "url": "vpn-applications.html",
 "text": "VPN Applications",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6092,7 +6097,7 @@ var toc = [{
 {
 "url": "antivirus-applications.html",
 "text": "Antivirus Applications",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6154,7 +6159,7 @@ var toc = [{
 {
 "url": "explicit-proxies.html",
 "text": "Explicit Proxies",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6252,7 +6257,7 @@ var toc = [{
 {
 "url": "proxies.html",
 "text": "Proxies",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6337,7 +6342,7 @@ var toc = [{
 {
 "url": "reverse-proxy-as-a-service-with-google-workspaces.html",
 "text": "Reverse Proxy as a Service with Google Workspaces",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6364,7 +6369,7 @@ var toc = [{
 {
 "url": "saml-reverse-proxy-with-okta.html",
 "text": "SAML Reverse Proxy with Okta",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6421,7 +6426,7 @@ var toc = [{
 {
 "url": "device-management.html",
 "text": "Device Management",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6526,13 +6531,13 @@ var toc = [{
 {
 "url": "integrations.html",
 "text": "Integrations",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section top-nav-link"
 ,
 "children": [
 {
 "url": "netskope-cloud-exchange.html",
 "text": "Netskope Cloud Exchange",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -6570,7 +6575,7 @@ var toc = [{
 {
 "url": "cloud-exchange-hardening.html",
 "text": "Cloud Exchange Hardening",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "install-cloud-exchange.html",
@@ -6596,7 +6601,7 @@ var toc = [{
 {
 "url": "install-netskope-cloud-exchange-with-aws-ecs-fargate.html",
 "text": "Install Netskope Cloud Exchange with AWS ECS Fargate",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-8-x-linux-host.html",
@@ -6616,12 +6621,12 @@ var toc = [{
 {
 "url": "cloud-exchange-sso-with-azure-ad.html",
 "text": "Cloud Exchange SSO with Azure AD",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "cloud-exchange-sso-with-okta.html",
 "text": "Cloud Exchange SSO with Okta",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
@@ -6774,63 +6779,63 @@ var toc = [{
 {
 "url": "aws-s3-plugin-for-log-shipper.html",
 "text": "AWS S3 Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "aws-security-lake-plugin-for-log-shipper.html",
 "text": "AWS Security Lake Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "azure-sentinel-plugin-for-log-shipper.html",
 "text": "Azure Sentinel Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "azure-storage-plugin-for-log-shipper.html",
 "text": "Azure Storage Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "microsoft-defender-for-cloud-apps-plugin-for-log-shipper.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "chronicle-plugin-for-log-shipper.html",
 "text": "Chronicle Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "google-cloud-storage-plugin-for-log-shipper.html",
 "text": "Google Cloud Storage Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "google-cloud-scc-plugin-for-log-shipper.html",
 "text": "Google Cloud SCC Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "elastic-plugin-for-log-shipper.html",
 "text": "Elastic Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "qradar-plugin-for-log-shipper.html",
 "text": "QRadar Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "rapid7-plugin-for-log-shipper.html",
 "text": "Rapid7 Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
 "url": "webtx-plugin-for-log-shipper.html",
 "text": "WebTx Plugin for Log Shipper",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "update-configured-log-shipper-plugins.html",
@@ -6868,22 +6873,22 @@ var toc = [{
 {
 "url": "servicenow-plugin-for-ticket-orchestrator.html",
 "text": "ServiceNow Plugin for Ticket Orchestrator",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "jira-plugin-for-ticket-orchestrator.html",
 "text": "Jira Plugin for Ticket Orchestrator",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "microsoft-teams-plugin-for-ticket-orchestrator.html",
 "text": "Microsoft Teams Plugin for Ticket Orchestrator",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "slack-notifier-plugin-for-ticket-orchestrator.html",
 "text": "Slack Notifier Plugin for Ticket Orchestrator",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
@@ -6927,42 +6932,42 @@ var toc = [{
 {
 "url": "carbon-black-plugin-for-threat-exchange.html",
 "text": "Carbon Black Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "crowdstrike-plugin-for-threat-exchange.html",
 "text": "CrowdStrike Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "digital-shadow-plugin-for-threat-exchange.html",
 "text": "Digital Shadow Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "mandiant-plugin-for-threat-exchange.html",
 "text": "Mandiant Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "threatconnect-plugin-for-threat-exchange.html",
 "text": "ThreatConnect Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "github-plugin-for-threat-exchange.html",
 "text": "GitHub Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "microsoft-defender-for-cloud-apps-plugin-for-threat-exchange.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "microsoft-defender-for-endpoint-plugin-for-threat-exchange.html",
 "text": "Microsoft Defender for Endpoint Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -6989,12 +6994,12 @@ var toc = [{
 {
 "url": "mimecast-plugin-for-threat-exchange.html",
 "text": "Mimecast Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "misp-plugin-for-threat-exchange.html",
 "text": "MISP Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "proofpoint-plugin-for-threat-exchange.html",
@@ -7004,12 +7009,12 @@ var toc = [{
 {
 "url": "sentinelone-plugin-for-threat-exchange.html",
 "text": "SentinelOne Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "servicenow-plugin-for-threat-exchange.html",
 "text": "ServiceNow Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7046,7 +7051,7 @@ var toc = [{
 {
 "url": "stix-taxii-plugin-for-threat-exchange.html",
 "text": "STIX\/TAXII Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7073,7 +7078,7 @@ var toc = [{
 {
 "url": "api-source-plugin-for-threat-exchange.html",
 "text": "API Source Plugin for Threat Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7192,7 +7197,7 @@ var toc = [{
 {
 "url": "netskope-threat-exchange-developers-guide.html",
 "text": "Netskope Threat Exchange Developers Guide",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
@@ -7216,32 +7221,32 @@ var toc = [{
 {
 "url": "azure-ad-plugin-for-risk-exchange.html",
 "text": "Azure AD Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "beyondcorp-plugin-for-risk-exchange.html",
 "text": "BeyondCorp Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "crowdstrike-plugin-for-risk-exchange.html",
 "text": "Crowdstrike Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "okta-plugin-for-risk-exchange.html",
 "text": "Okta Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "mimecast-plugin-for-risk-exchange.html",
 "text": "Mimecast Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "security-advisor-plugin-for-risk-exchange.html",
 "text": "Security Advisor Plugin for Risk Exchange",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
@@ -7342,13 +7347,13 @@ var toc = [{
 {
 "url": "information-rights-management.html",
 "text": "Information Rights Management",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "integrate-netskope-with-microsoft-information-protect.html",
 "text": "Integrate Netskope with Microsoft Information Protect",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7375,7 +7380,7 @@ var toc = [{
 {
 "url": "integrate-netskope-with-vera.html",
 "text": "Integrate Netskope with Vera",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7408,7 +7413,7 @@ var toc = [{
 {
 "url": "netskope-smtp-proxy.html",
 "text": "Netskope SMTP Proxy",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7474,23 +7479,23 @@ var toc = [{
 {
 "url": "ipsec-and-gre.html",
 "text": "IPSec and GRE",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "netskope-ipsec-with-cisco-ios.html",
 "text": "Netskope IPSec with Cisco IOS",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-ipsec-with-juniper-srx.html",
 "text": "Netskope IPSec with Juniper SRX",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-ipsec-with-amazon-web-services.html",
 "text": "Netskope IPSec with Amazon Web Services",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7507,7 +7512,7 @@ var toc = [{
 {
 "url": "netskope-ipsec-with-velocloud-orchestrator.html",
 "text": "Netskope IPSec with VeloCloud Orchestrator",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7519,7 +7524,7 @@ var toc = [{
 {
 "url": "netskope-ipsec-with-versa-director.html",
 "text": "Netskope IPSec with Versa Director",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "configure-netskope-ipsec-with-viptela-vedge.html",
@@ -7529,12 +7534,12 @@ var toc = [{
 {
 "url": "netskope-ipsec-with-fortinet-fortigate.html",
 "text": "Netskope IPSec with Fortinet FortiGate",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-ipsec-with-silver-peak-edgeconnect.html",
 "text": "Netskope IPSec with Silver Peak EdgeConnect",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7590,12 +7595,12 @@ var toc = [{
 {
 "url": "netskope-ipsec-with-cisco-firepower.html",
 "text": "Netskope IPSec with Cisco Firepower",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html",
 "text": "Netskope Forward Proxy over IPSec\/GRE with Azure AD SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7642,7 +7647,7 @@ var toc = [{
 {
 "url": "netskope-gre-with-cisco-ios.html",
 "text": "Netskope GRE with Cisco IOS",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7654,12 +7659,12 @@ var toc = [{
 {
 "url": "netskope-gre-with-juniper-srx.html",
 "text": "Netskope GRE with Juniper SRX",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-gre-with-palo-alto-networks-ngfw.html",
 "text": "Netskope GRE with Palo Alto Networks NGFW",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7681,19 +7686,19 @@ var toc = [{
 {
 "url": "netskope-gre-with-fortinet-fortigate.html",
 "text": "Netskope GRE with Fortinet FortiGate",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 }]
 },
 {
 "url": "saml-proxy.html",
 "text": "SAML Proxy",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
 "url": "reverse-proxy-with-okta.html",
 "text": "Reverse Proxy with Okta",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7725,7 +7730,7 @@ var toc = [{
 {
 "url": "reverse-proxy-as-a-service-with-google-workspaces-309517.html",
 "text": "Reverse Proxy as a Service with Google Workspaces",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7752,7 +7757,7 @@ var toc = [{
 {
 "url": "reverse-proxy-for-okta-and-g-suite-with-acs-url.html",
 "text": "Reverse Proxy for Okta and G Suite with ACS URL",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7774,7 +7779,7 @@ var toc = [{
 {
 "url": "reverse-proxy-for-workday-and-okta-with-acs-url.html",
 "text": "Reverse Proxy for Workday and Okta with ACS URL",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7796,7 +7801,7 @@ var toc = [{
 {
 "url": "forward-proxy-with-adfs.html",
 "text": "Forward Proxy with ADFS",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7823,7 +7828,7 @@ var toc = [{
 {
 "url": "netskope-explicit-proxy-for-chromebooks-with-google-saml-forward-proxy.html",
 "text": "Netskope Explicit Proxy for Chromebooks with Google SAML Forward Proxy",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7851,7 +7856,7 @@ var toc = [{
 {
 "url": "provisioning-and-authentication.html",
 "text": "Provisioning and Authentication",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7862,7 +7867,7 @@ var toc = [{
 {
 "url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
 "text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7919,7 +7924,7 @@ var toc = [{
 {
 "url": "netskope-client-idp-mode-with-azure-scim-and-azure-ad-or-adfs-saml-auth.html",
 "text": "Netskope Client IdP Mode with Azure SCIM and Azure AD or ADFS SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -7986,7 +7991,7 @@ var toc = [{
 {
 "url": "netskope-client-idp-mode-with-google-saml-auth.html",
 "text": "Netskope Client IdP Mode with Google SAML Auth",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8013,7 +8018,7 @@ var toc = [{
 {
 "url": "netskope-sso-with-azure-ad.html",
 "text": "Netskope SSO with Azure AD",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8040,7 +8045,7 @@ var toc = [{
 {
 "url": "netskope-sso-with-adfs.html",
 "text": "Netskope SSO with ADFS",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8077,7 +8082,7 @@ var toc = [{
 {
 "url": "user-provisioning-with-secure-ldap-and-jumpcloud.html",
 "text": "User Provisioning with Secure LDAP and JumpCloud",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8115,7 +8120,7 @@ var toc = [{
 {
 "url": "device-classification-385371.html",
 "text": "Device Classification",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8127,7 +8132,7 @@ var toc = [{
 {
 "url": "security.html",
 "text": "Security",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8144,7 +8149,7 @@ var toc = [{
 {
 "url": "netskope-adapters.html",
 "text": "Netskope Adapters",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8189,13 +8194,13 @@ var toc = [{
 {
 "url": "admin-console.html",
 "text": "Admin Console",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section top-nav-link"
 ,
 "children": [
 {
 "url": "administration.html",
 "text": "Administration",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8256,7 +8261,7 @@ var toc = [{
 {
 "url": "managing-administrators-for-rbac-v2.html",
 "text": "Managing Administrators for RBAC V2",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8306,7 +8311,7 @@ var toc = [{
 {
 "url": "netskope-ui-and-dashboard.html",
 "text": "Netskope UI and Dashboard",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8328,7 +8333,7 @@ var toc = [{
 {
 "url": "incidents.html",
 "text": "Incidents",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8414,7 +8419,7 @@ var toc = [{
 {
 "url": "skope-it.html",
 "text": "Skope IT",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8539,7 +8544,7 @@ var toc = [{
 {
 "url": "advanced-analytics.html",
 "text": "Advanced Analytics",
-"class": "topic-link section portal-category reused-publication portal-category; reused-publication"
+"class": "topic-link section portal-category; reused-publication"
 ,
 "children": [
 {
@@ -8726,7 +8731,7 @@ var toc = [{
 {
 "url": "reports.html",
 "text": "Reports",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8839,7 +8844,7 @@ var toc = [{
 {
 "url": "digital-experience-management.html",
 "text": "Digital Experience Management",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8866,7 +8871,7 @@ var toc = [{
 {
 "url": "cloud-confidence-index.html",
 "text": "Cloud Confidence Index",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8903,7 +8908,7 @@ var toc = [{
 {
 "url": "rest-api.html",
 "text": "REST API",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -9277,13 +9282,13 @@ var toc = [{
 {
 "url": "appliances.html",
 "text": "Appliances",
-"class": "topic-link section top-nav-link top-nav-link"
+"class": "topic-link section top-nav-link"
 ,
 "children": [
 {
 "url": "on-premises-appliance.html",
 "text": "On-Premises Appliance",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -9661,7 +9666,7 @@ var toc = [{
 {
 "url": "virtual-appliance.html",
 "text": "Virtual Appliance",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -10015,7 +10020,7 @@ var toc = [{
 {
 "url": "secure-forwarder-105150.html",
 "text": "Secure Forwarder",
-"class": "topic-link section reused-publication reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -10102,7 +10107,7 @@ var toc = [{
 {
 "url": "videos.html",
 "text": "Videos",
-"class": "topic-link section top-nav-link reused-publication top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -10114,87 +10119,87 @@ var toc = [{
 {
 "url": "reimagine-your-perimeter.html",
 "text": "Reimagine Your Perimeter",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "translating-your-ciso-s-strategy-into-a-risk-focused-security-plan.html",
 "text": "Translating your CISO's Strategy into a Risk Focused Security Plan",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "advanced-analytics-318933.html",
 "text": "Advanced Analytics",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-dlp-best-practices-and-netskope-ml-ai-update.html",
 "text": "Netskope DLP Best Practices and Netskope ML\/AI Update",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "using-sase-to-secure-the-public-cloud.html",
 "text": "Using SASE to Secure the Public Cloud",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "securing-microsoft-teams-with-netskope.html",
 "text": "Securing Microsoft Teams with Netskope",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "deploying-the-netskope-for-splunk-app.html",
 "text": "Deploying the Netskope for Splunk App",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "using-netskope-ml-ai-to-identify-sensitive-information-and-threats.html",
 "text": "Using Netskope ML\/AI to Identify Sensitive Information and Threats",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-cloud-and-threat-report.html",
 "text": "Netskope Cloud and Threat Report",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-and-okta.html",
 "text": "Netskope and Okta",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "defending-against-insider-threats-with-netskope.html",
 "text": "Defending Against Insider Threats with Netskope",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "threat-research-and-prevention.html",
 "text": "Threat Research and Prevention",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-for-private-access.html",
 "text": "Netskope for Private Access",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "protecting-sensitive-data-in-a-cloud-first-world.html",
 "text": "Protecting Sensitive Data in a Cloud-first World",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "a-unified-security-solution-for-all-your-web-traffic-with-netskope-for-web.html",
 "text": "A Unified Security Solution for All Your Web Traffic with Netskope for Web",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-dlp---protecting-ip-in-the-cloud.html",
 "text": "Netskope DLP - Protecting IP in the Cloud",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "enhance-your-security-posture-with-netskope-threat-intelligence.html",
 "text": "Enhance Your Security Posture with Netskope Threat Intelligence",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 }]
 },
 {
@@ -10211,32 +10216,32 @@ var toc = [{
 {
 "url": "real-time-user-coaching.html",
 "text": "Real-time User Coaching",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-reverse-proxy-as-a-service-with-azure-active-directory--ad-.html",
 "text": "Netskope Reverse Proxy as a Service with Azure Active Directory (AD)",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-reverse-proxy-with-salesforce.html",
 "text": "Netskope Reverse Proxy with SalesForce",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "okta-and-netskope-scim-provisioning.html",
 "text": "Okta and Netskope SCIM Provisioning",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-ipsec-steering---part-1---initial-setup.html",
 "text": "Netskope IPSec Steering - Part 1 - Initial Setup",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-ipsec-steering---part-2---create-a-sample-policy.html",
 "text": "Netskope IPSec Steering - Part 2 - Create a Sample Policy",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-ipsec-steering---part-3---enable-forward-proxy-for-saml-authentication.html",
@@ -10246,57 +10251,57 @@ var toc = [{
 {
 "url": "ping-and-netskope-role-based-access-control.html",
 "text": "Ping and Netskope Role-Based Access Control",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "configuring-netskope-with-sailpoint.html",
 "text": "Configuring Netskope with SailPoint",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-splunk-integration.html",
 "text": "Netskope Splunk Integration",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-auth-proxy-with-okta-and-o365.html",
 "text": "Netskope Auth Proxy with Okta and O365",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-client-deployment-with-email-invitation.html",
 "text": "Netskope Client Deployment with Email Invitation",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-directory-importer-via-email--formerly-ad-importer-.html",
 "text": "Netskope Directory Importer via Email (Formerly AD Importer)",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "configuring-okta-scim-with-netskope-scim.html",
 "text": "Configuring Okta SCIM with Netskope SCIM",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-client-install-for-macos-with-airwatch.html",
 "text": "Netskope Client Install for MacOS with Airwatch",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-client-deployment-with-jamf---upn-and-multi-user-modes.html",
 "text": "Netskope Client Deployment with JAMF - UPN and Multi-User Modes",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-client-deployment-with-jamf---email-mode.html",
 "text": "Netskope Client Deployment with JAMF - Email Mode",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 },
 {
 "url": "netskope-client-deployment-with-jamf---non-ad-joined-mac-os-devices.html",
 "text": "Netskope Client Deployment with JAMF - Non-AD Joined Mac OS Devices",
-"class": "topic-link section original-topic original-topic"
+"class": "topic-link section original-topic"
 }]
 }]
 }];

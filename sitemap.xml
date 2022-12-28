@@ -1050,7 +1050,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deployment-options.html</loc>
-    <lastmod>2022-02-18</lastmod>
+    <lastmod>2022-12-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/top-use-cases-at-a-glance.html</loc>
@@ -2633,6 +2633,10 @@
     <lastmod>2022-07-19</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/api-migration.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/api-data-protection-use-cases.html</loc>
     <lastmod>2020-03-02</lastmod>
   </url>
@@ -4086,7 +4090,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-servicenow-instance-for-security-posture.html</loc>
-    <lastmod>2022-11-05</lastmod>
+    <lastmod>2022-12-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-for-zoom.html</loc>
@@ -4094,7 +4098,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-zoom-instance-for-security-posture.html</loc>
-    <lastmod>2022-07-25</lastmod>
+    <lastmod>2022-12-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/permissions-required-for-zoom-319756.html</loc>
@@ -4922,11 +4926,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/users-291062.html</loc>
-    <lastmod>2022-08-30</lastmod>
+    <lastmod>2022-12-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-tokens.html</loc>
-    <lastmod>2022-10-28</lastmod>
+    <lastmod>2022-12-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sso-configuration.html</loc>
