@@ -33,7 +33,7 @@ Netskope recommends leveraging existing clients for SIEM integration where possi
         {
         }
     ],
-    "wait_time": 5</pre></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="idm46137985271280"><div class="titlepage"><div><div class="title"><h6 class="title">Rate Limits</h6></div></div></div><p>Netskope supports 4 requests per second per iterator endpoint. Using the response headers to manage rate limits to avoid 429 error messages is recommended.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>RateLimit-Limit: Rate limits are applied by endpoint, and this value provides the number allowed per second</p></li><li class="listitem"><p>RateLimit-Remaining: The amount of queries supported before the interval resets before generating a 429 error message.</p></li><li class="listitem"><p>RateLimit-Rest: The time before the rate limits are reset, this value is in seconds.</p></li></ul></div><pre class="programlisting">HTTP/1.1 200 OK
+    "wait_time": 5</pre></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="idm46137985271280"><div class="titlepage"><div><div class="title"><h6 class="title">Rate Limits</h6></div></div></div><p>Netskope supports 4 requests per second per iterator endpoint. Using the response headers to manage rate limits to avoid 429 error messages is recommended.</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>RateLimit-Limit: Rate limits are applied by endpoint, and this value provides the number allowed per second</p></li><li class="listitem"><p>RateLimit-Remaining: The amount of queries supported before the interval resets before generating a 429 error message.</p></li><li class="listitem"><p>RateLimit-Reset: The time before the rate limits are reset, this value is in seconds.</p></li></ul></div><pre class="programlisting">HTTP/1.1 200 OK
 ....
 RateLimit-Limit: 4
 RateLimit-Remaining: 1
@@ -50,7 +50,7 @@ RateLimit-Limit: 4
 }</pre></section><section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="idm46137985269744"><div class="titlepage"><div><div class="title"><h6 class="title">Example</h6></div></div></div><p>Example of workflow using the iterator endpoint starting with the oldest record Netskope has.</p><div class="procedure"><ol class="procedure" type="1"><li class="step"><p>Craft your query using the <code class="literal">operation=head</code>, and index value.</p><pre class="programlisting">https://<span class="emphasis"><em>&lt;tenant&gt;</em></span>/api/v2/events/dataexport/events/alert?operation=head&amp;index=demo</pre></li><li class="step"><p>Review the <code class="literal">wait_time</code> attribute in the JSON response.</p><pre class="programlisting">"wait_time": 5</pre></li><li class="step"><p>Request the next page of data from the endpoint.</p><pre class="programlisting">https://<span class="emphasis"><em>&lt;tenant&gt;</em></span>/api/v2/events/dataexport/events/alert?operation=next&amp;index=demo</pre></li><li class="step"><p>Repeat steps 2 and 3.</p></li></ol></div></section></section><div class="footer-content"><div class="section-toc section-toc-after"><div class="section-toc-title">In this section<span class="section-toc-title-delimiter">: </span></div></div><div class="glossary-definitions"></div></div><footer></footer></div></article><aside class="section-nav-container"><ul class="section-nav nav"><li><a href="#UUID-65753a69-a220-4d68-484f-e10a27da9190">Using the REST API v2 dataexport Iterator Endpoints</a></li><li><a href="#idm46137985284448">How Do Iterator Endpoints Function</a></li><li><a href="#idm46137985284320">Iterator Query Structure</a></li><li><a href="#idm46137985282720">Supported Iterator Operations</a></li><li><a href="#idm46137985279936">Iterator Index</a></li><li><a href="#idm46137985272864">Page Size</a></li><li><a href="#idm46137985271920">Wait Time</a></li><li><a href="#idm46137985271280">Rate Limits</a></li><li><a href="#idm46137985269744">Example</a></li></ul></aside><article id="search-result-wrapper"><div class="search-container" style="display: none;"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></article><div class="feedback-panel"><div id="email-feedback" class="no-voting toggle-feedback"><p><a href="mailto:techpubs@netskope.com?subject=Feedback%20for%20help%20topic%20%22Using%20the%20REST%20API%20v2%20dataexport%20Iterator%20Endpoints%22&amp;body=%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09_______________________%0A%09%09%09%09%0A%09%09%09Please%20add%20your%20feedback%20above%20for%20topic%20%22Using%20the%20REST%20API%20v2%20dataexport%20Iterator%20Endpoints%22%20in%20the%20publication%20%22Netskope%20Help%22."><i aria-hidden="true" class="fa fa-pencil-square-o feedbackicon"></i>Would you like to provide feedback? Just click here to suggest edits.</a></p></div></div></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="rest-api-v2-overview-312207.html#UUID-4252b7cc-ae1a-3d13-0c94-b2289bcd60e4_section-idm232153268464921">Prev</a></li><li class="next"><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="using-the-rest-api-v2-dataexport-iterator-endpoints.html#idm46137985284448">Next</a></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2022 Netskope </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">November 12, 2022</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date"></span></div></div></footer></div></div></div></div><script type="text/javascript">
 var theme = '2';
 
-			
+
 			window.versionsfile = '';
 
 
@@ -58,19 +58,19 @@ var theme = '2';
 			window.store = {};
 			window.portalLanguage = 'en';
 			window.enterKey = 'select';
-			
-			
+
+
 				var fuse_threshold = 0.3;
-			
+
 					var local_csh = false;
-				
+
 					var anchoroption = true;
 				var instantsearch_minlength = 1;
-						
+
 			var useanchorlinks = false;
-			
+
 				useanchorlinks = true;
-				
+
 				var clicktocopy = 'Click to copy link';
 				var linkcopied =  'Copied!';</script><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js" type="text/javascript"></script><script src="../js/html5-2.js" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/rwd-table.min.js" type="text/javascript"></script><script src="../js/responsive-tables.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/anchorlinks.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="../js/jquery.paligocode.js" type="text/javascript"></script><script src="../js/layout-custom-script.js" type="text/javascript"></script><script type="text/javascript" src="../js/cookie-consent.js"></script><script type="text/javascript">
 				$(document).ready(function () {
