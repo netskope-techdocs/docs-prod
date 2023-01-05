@@ -6968,28 +6968,6 @@ var toc = [{
 "url": "microsoft-defender-for-endpoint-plugin-for-threat-exchange.html",
 "text": "Microsoft Defender for Endpoint Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "create-an-application-and-get-your-tenant-id--application-id--and-client-secret.html",
-"text": "Create an Application and get your Tenant ID, Application ID, and Client Secret",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-microsoft-defender-for-endpoint-plugin.html",
-"text": "Configure the Microsoft Defender for Endpoint Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configuring-threat-exchange-sharing-for-microsoft-defender-for-endpoint.html",
-"text": "Configuring Threat Exchange Sharing for Microsoft Defender for Endpoint",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-microsoft-defender-for-endpoint-plugin.html",
-"text": "Validate the Microsoft Defender for Endpoint Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "mimecast-plugin-for-threat-exchange.html",
