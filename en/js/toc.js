@@ -1430,6 +1430,30 @@ var toc = [{
 }]
 }]
 }]
+},
+{
+"url": "netskope-iot-security-release-notes.html",
+"text": "Netskope IoT Security Release Notes",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "netskope-iot-security-release-notes---january--2023.html",
+"text": "Netskope IoT Security Release Notes - January, 2023",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements---january.html",
+"text": "New Features And Enhancements - January",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues---january.html",
+"text": "Fixed Issues - January",
+"class": "topic-link section"
+}]
+}]
 }]
 },
 {
@@ -3601,9 +3625,63 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-iot-security.html",
+"text": "Netskope IoT Security",
+"class": "topic-link section portal-category; reused-publication"
+,
+"children": [
+{
+"url": "introduction-to-netskope-iot-security.html",
+"text": "Introduction to Netskope IoT Security",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "what-is-netskope-iot-security.html",
+"text": "What is Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "architecture-of-netskope-iot-security.html",
+"text": "Architecture of Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "use-cases-of-netskope-iot-security.html",
+"text": "Use cases of Netskope IoT Security",
+"class": "topic-link section"
+}]
+},
+{
+"url": "getting-started-with-netskope-iot-security.html",
+"text": "Getting started with Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "executive-dashboard-in-netskope-iot-security.html",
+"text": "Executive Dashboard in Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "investigate-netskope-iot-security.html",
+"text": "Investigate Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "protect-netskope-iot-security.html",
+"text": "Protect Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "manage-netskope-iot-security.html",
+"text": "Manage Netskope IoT Security",
+"class": "topic-link section"
+}]
+},
+{
 "url": "api-data-protection.html",
 "text": "API Data Protection",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section reused-publication"
 ,
 "children": [
 {
@@ -8209,6 +8287,11 @@ var toc = [{
 {
 "url": "create-a-netskope-support-admin.html",
 "text": "Create a Netskope Support Admin",
+"class": "topic-link section"
+},
+{
+"url": "privacy-notice.html",
+"text": "Privacy Notice",
 "class": "topic-link section"
 },
 {
