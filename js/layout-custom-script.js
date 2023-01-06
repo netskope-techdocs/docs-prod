@@ -5,7 +5,7 @@ $(document).ready(function() {
   var icon2 = "icon/Private-Access.png";
   var icon3 = "icon/Secure-Web-Gateway.png";
   var icon4 = "icon/Public-Cloud-Security.png";
-  var icon5 = "icon/API-Protection.png";
+  var icon5 = "icon/IoT-Security.png";
   var icon6 = "icon/API-Protection.png";
   var icon7 = "icon/Cloud-Exchange.png";
   var icon8 = "icon/Advanced-Analytics.png";
@@ -40,9 +40,8 @@ var scripts = document.getElementsByTagName( "script" );
     }
 
 
-/* document.getElementsByClassName("section-toc-title")[0].firstChild.nodeValue = "Related Articles"; */
+/*document.getElementsByClassName("section-toc-title")[0].firstChild.nodeValue = "Related Articles";*/
 });
-
 $(document).ready(function () {
     setWelcomeText();
     $(document).ajaxComplete(function () {
