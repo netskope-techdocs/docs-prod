@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Resource Type</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha512-w+rY1+DOo63621/y/1p3520iQnQ2p9on1sJ9/aSKh1M79aa7/Fibd34MnJjLpuEgDxKg/vQLAP887SDXUhcVxg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="dom.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha512-RgOCmhg9TZLNsMn33HnOg2++rNE1KVKJNmRvm36/PgHQumnQ/TCEGn5IHDnZU7DhFE1X9vhOzsH4XDpN3hDhLg==" crossorigin="anonymous"></script>
+    <script src="https://semantic-ui.com/javascript/library/tablesort.js" integrity="sha512-lVeO88bta+CM1eV2gVGyeaGlDlMkuyC4x2HIxsRfJ1AWhtC5jmO3tydE1+NrYM0CgeW4tSgrV53/dGDxIhDqIA==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="ui divided grid ngl_doc">
+        
+        <div class="six wide mobile six wide tablet five wide computer column four wide large screen three wide widescreen leftInfo">
+            
+            <div class="ntsp_logo">
+                <img src="logo.svg" alt="Netskope" />
+                
+                <div class="ui fluid selection dropdown">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Select Friend</div>
+                    <div class="menu">
+                      <div class="item" data-value="github">
+                        <img class="ui mini avatar image" src="github.png">
+                        Github
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="ui divider"></div>
+            
+            <div class="rules">
+                
+                <div class="left heading">Resource Type</div>
+                
+
+
+                
+                
+                    <div class="ui accordion">
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            <a tableName="Account">Account</a>
+                        </div>
+                        <div class="content">
+                        
+
+
+
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Organization">Organization</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Repositories">Repositories</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="Repository" class="links" >Repository</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Apps">Apps</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="App" class="links" >App</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="ten wide mobile ten wide tablet eleven wide computer column twelve wide large screen thirteen wide widescreen rightInfo resourceType">
+            <h1 class="ut_margin_left_40 ut_margin_top_32 ut_margin_bottom_0 main title"></h1>
+            <div class="ui divider"></div>
+            
+            
+            
+            
+            <table class="ui table ntsp_table Account">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table App">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>webhook_events</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Subscribe to webhook events upon app installation</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>created_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Created time of the App in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>repository_selection</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository access selection</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>read_permissions</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Read permissions granted upon app installation</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>app_slug</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>App URL-friendly name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>updated_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Updated time of the App in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>write_permissions</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Write permissions granted upon app installation</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>installation_id</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Installation ID</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>app_id</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>App ID</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>app_name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>App name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table AppSuite">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table Apps">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table NskpInstance">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table Organization">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>has_inactive_admin_users</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization has inactive admin users</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>has_inactive_users</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization has inactive users</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>has_2fa_disable_users</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization has users with 2FA disabled</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>default_repository_permission</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Default permission level members have for organization repositories. * read - can pull, but not push to or administer this repository. * write - can pull and push, but not administer this repository. * admin - can pull, push, and administer this repository. * none - no permissions granted by default. Default: read</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Organization name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>public_gists_count</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Number of Public Gists for an organization</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>two_factor_requirement_enabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization requires 2FA for all users</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table Repositories">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table Repository">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>full_name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository full name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>created_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository&#39;s creation time in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>pushed_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The last time a commit was pushed to a repository, in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>private</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether a repository is private or not</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>is_security_policy_enabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Returns true if this repository has a security policy.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>branch_protection_enabled_for_all_branches</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether branch protection is enabled for all branches</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>branch_protection_rule_bypass_admin_user</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether any branch protection rule bypasses an admin user</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>secret_scanning_enabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether secret scanning is enabled</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>fork_count</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The number of forks of this repository</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>has_outside_collaborators</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Returns true if this repository has external collaborators.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>default_branch</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The Repository&#39;s default branch</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>has_gitignore_file</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Whether the default branch has a .gitignore file.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>has_codeowners_file</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Whether the default branch has a CODEOWNERS file.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>has_license_file</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Whether the default branch has a LICENSE file.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>protection_rule</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Branch protection rule</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>required_approving_review_count</td>
+    <td>number</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Number of approving reviews required to update matching branches.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>requires_approving_reviews</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Are approving reviews required to update matching branches.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>requires_status_checks</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Are status checks required to update matching branches.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>dismisses_stale_reviews</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Will new commits pushed to matching branches dismiss pull request review approvals.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_force_pushes</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow force pushing to the branch</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_deletions</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow branch deletions</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>name</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Branch name</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                
+                
+            </table>
+            
+            
+            
+        </div>
+        
+    </div>
+    
+    
+    <script>
+        function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+            }
+
+            $(document).ready(function () {
+                $(".sortable.table").tablesort();
+
+                $("td.rule").hover(
+                    function () {
+                        $(this).find("div.tooltip").css({"display":"inline-block"});
+                        $(this).addClass("current");
+                    },
+                    function () {
+                        $(this).find("div.tooltip").css({"display":"none"});
+                        $(this).removeClass("current");
+                    });
+
+                $("td.rule div.tooltip").click(
+                    function () {
+                        copyToClipboard("td.rule.current span");
+                    }
+                );
+
+                $(".ntsp_logo .ui.dropdown")
+                    .dropdown("set selected", "github");
+
+                $(".ntsp_logo .ui.buttons .button")
+                    .click(
+                        function () {
+                            $(".ntsp_logo .ui.buttons .button").removeClass("active");
+                            $(this).addClass("active");
+                        }
+                    );
+
+                $('.ui.accordion').accordion({
+                    exclusive: false,
+                    active: 1
+                });
+
+                $("a").click(
+                    function(){
+                        $("a").each(function(){
+                            $(this).removeClass("active");
+                        });
+                        $(this).addClass("active");
+                        $(".ntsp_table.table").css("display","none");
+
+                        $("."+$(this).attr("tableName")).css("display","table");
+                        $(".main.title").text("Resource Type - " + $(this)[0].innerText);
+                    }
+                );
+                
+                $(".accordion .title").first().trigger("click");
+                
+                $('.ngl_doc .ui.accordion .dropdown.icon~a').click(function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+                
+                $(".accordion .title>a").first().trigger("click");
+                
+                $(".resourceType td:first-child").css("display", "flex");
+                
+                $(".resourceType table").each(
+                    function(){
+                        if($(this).find("tbody").length < 1){
+                            
+                            $(this).append(`
+                            <tr style="line-height:50px">
+                                <td colspan="4" style="text-align:center">There are no attributes for this resource type.</td>
+                            </tr>
+                            `);
+                        }
+                    }
+                );
+
+                
+                $(".ngl_doc .resourceType span.refLinks").click(function () {
+                    var refName = $(this).attr("refName");
+
+                    var refLink = $(".ui.accordion").find(`[tableName='${refName}']`).first();
+
+                    refLink.parents().each(function () {
+                        if($(this).hasClass("ui") && $(this).hasClass("accordion")){
+                            return false;
+                        }
+                        if (!$(this).hasClass("active") && !$(this).hasClass("title")) {
+                            $(this).addClass("active");
+                        }
+                        $(this).removeClass("hidden");
+                    }
+                    );
+                    refLink.parents().prev().each(function () {
+                        if($(this).hasClass("left") && $(this).hasClass("heading")){
+                            return false;
+                        }
+                        if (!$(this).hasClass("active")) {
+                            $(this).addClass("active");
+                        }
+                        $(this).removeClass("hidden");
+                    }
+                    );
+                    refLink.removeClass("hidden");
+                    refLink.siblings().removeClass("hidden");
+                    refLink.trigger("click");
+                });
+            });
+    </script>
+</body>
+
+</html>
+
+
+
+

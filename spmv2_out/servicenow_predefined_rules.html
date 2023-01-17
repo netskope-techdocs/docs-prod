@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Predefined Rules</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha512-w+rY1+DOo63621/y/1p3520iQnQ2p9on1sJ9/aSKh1M79aa7/Fibd34MnJjLpuEgDxKg/vQLAP887SDXUhcVxg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="predefined_rules.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha512-RgOCmhg9TZLNsMn33HnOg2++rNE1KVKJNmRvm36/PgHQumnQ/TCEGn5IHDnZU7DhFE1X9vhOzsH4XDpN3hDhLg==" crossorigin="anonymous"></script>
+    <script src="https://semantic-ui.com/javascript/library/tablesort.js" integrity="sha512-lVeO88bta+CM1eV2gVGyeaGlDlMkuyC4x2HIxsRfJ1AWhtC5jmO3tydE1+NrYM0CgeW4tSgrV53/dGDxIhDqIA==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="ui divided grid ngl_doc">
+    
+    <div class="six wide mobile six wide tablet five wide computer column four wide large screen three wide widescreen leftInfo">
+        
+        <div class="ntsp_logo">
+            <img src="logo.svg" alt="Netskope" />
+            
+            <div class="ui fluid selection dropdown">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Friend</div>
+                <div class="menu">
+                    <div class="item" data-value="aws">
+                        <img class="ui mini avatar image" src="servicenow.png">
+                        Servicenow
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="ui divider"></div>
+        
+        <div class="rules">
+            
+            <div class="left heading">Predefined Rules</div>
+            
+            <div class="ui accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a tableName="servicenow">Servicenow Predefined Rules</a>
+                </div>
+                <div class="content">
+
+                        
+                        
+                        <div class="links">
+
+                            <a tableName="AICPA-SOC-TSC-2017">AICPA-SOC-TSC-2017</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="BPR-SERVICENOW">BPR-SERVICENOW</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="CSA-CCM-4-0">CSA-CCM-4.0</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="GDPR-2016-679">GDPR-2016-679</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="HIPAA-1996">HIPAA-1996</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="ISO-27002-2013">ISO-27002-2013</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="NIST-800-53-4">NIST-800-53-4</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="NIST-CSF-1-1">NIST-CSF-1.1</a>
+                        </div>
+                        
+                        <div class="links">
+
+                            <a tableName="PCI-DSS-3-2-1">PCI-DSS-3.2.1</a>
+                        </div>
+                        
+                        
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ten wide mobile ten wide tablet eleven wide computer column twelve wide large screen thirteen wide widescreen rightInfo">
+        <h1 class="ut_margin_left_40 ut_margin_top_32 ut_margin_bottom_0 main title"></h1>
+        <div class="ui divider"></div>
+        <div class="ui search ut_margin_left_40 ut_margin_top_18">
+            <div class="ui left icon input">
+                <input class="prompt" type="text" placeholder="Search">
+                <i class="search icon"></i>
+            </div>
+        </div>
+        <table class="ui table sortable ntsp_table servicenow">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        
+        <table class="ui table sortable ntsp_table AICPA-SOC-TSC-2017">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table BPR-SERVICENOW">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table CSA-CCM-4-0">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table GDPR-2016-679">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table HIPAA-1996">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table ISO-27002-2013">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Administrators must explicitly elevate privileges before taking administrative actions</td>
+                <td>Administrators must explicitly elevate privileges before taking administrative actions.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.strict_elevate_privilege&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table NIST-800-53-4">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Users flagged to require a password reset have to do so before making API calls</td>
+                <td>Users flagged to require a password reset with the &#39;password_needs_reset&#39; flag have to do so before making API calls.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.api.user.reset_password.mandatory&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table NIST-CSF-1-1">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <table class="ui table sortable ntsp_table PCI-DSS-3-2-1">
+            <thead>
+            <tr class="fixed header">
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>RESOURCE TYPE</th>
+                <th>RULE</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            
+            <tr class="top aligned">
+                <td>Enable antivirus scanning</td>
+                <td>Enable antivirus scanning.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.snap.enable_scan&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CSRF token validation</td>
+                <td>CSRF token validation usage is enabled to identify and validate incoming requests. This token is used to prevent cross-site request forgery attacks.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.security.use_csrf_token&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that mobile devices using the Now Mobile app are encrypted</td>
+                <td>The ServiceNow mobile app will check that device encryption is enabled. If encryption is not enabled, the user won&#39;t be allowed to log via their mobile device.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.device_encryption_enabled&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block JavaScript from being included in HTML embedded using [code] tags</td>
+                <td>JavaScript is not allowed in HTML embedded within [code] tags.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.security.codetag.allow_script&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Guest session timeout is less than or equal to 30 minutes</td>
+                <td>Guest session timeout is less than or equal to 30 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.guest.session_timeout&#34; and s.number_value &lt;= 30}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>Block jailbroken or rooted devices from accessing the ServiceNow instance using the Now Mobile app.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.sg.allow_rooted_jailbroken_device&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require a password for local logins</td>
+                <td>Local logins require a password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.login.no_blank_password&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Multi-factor authentication (MFA) is enabled</td>
+                <td>Multi-factor authentication (MFA) is enabled.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.authenticate.multifactor&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce password policies when users change their password</td>
+                <td>Password policies are enforced when a user changes their password.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.enable.password_policy&#34; and s.value = &#34;true&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable CAPTCHA validation during password resets</td>
+                <td>Password resets should require a CAPTCHA. However, this can be disabled for automation tests if required.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.captcha.ignore&#34; and s.value = &#34;false&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Password reset security answers have a minimum length of 4</td>
+                <td>Password reset security answers have a minimum length of 4.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;password_reset.qa.ans_min_len&#34; and s.number_value &gt;= 4}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require SSO credentials for the main ServiceNow login page</td>
+                <td>Require SSO credentials even for the main ServiceNow login page. The property &#39;glide.authenticate.failed_requirement_redirect&#39; also has to be valid for proper redirects.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s1 with-attribute {s1.name = &#34;glide.authentication.external.disable_local_login&#34; and s1.value  = &#34;true&#34;} and any SystemProperty as s2 with-attribute{s2.name = &#34;glide.authenticate.failed_requirement_redirect&#34; and s2.value != &#34;&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Session timeout is less than or equal to 90 minutes</td>
+                <td>Session timeout is less than or equal to 90 minutes. Values exceeding 1440 minutes will be treated as one day.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.ui.session_timeout&#34; and s.number_value &lt;= 90}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Unauthorized session timeout is less than or equal to 5 minutes</td>
+                <td>Unauthorized session timeout is less than or equal to 5 minutes.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;glide.unauthorized.session_timeout&#34; and s.number_value &lt;= 5}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce translated HTML sanitization</td>
+                <td>Sanitization behavior of translated_html fields on a global_level for field assignments is enforced.</td>
+                <td>sysproperties, systemproperty</td>
+                <td class="rule"><span>servicenow SysProperties should-have any SystemProperty as s with-attribute {s.name = &#34;com.glide.security.check_unsanitized_html&#34; and s.value = &#34;enforce&#34;}</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        
+    </div>
+</div>
+
+
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    };
+    function removeRow(searchText) {
+        $("table.active tr").not(".fixed.header").each(
+            function () {
+                var tableRowText = $(this)[0].innerText.toLowerCase();
+                console.log(tableRowText)
+                console.log(searchText);
+                if(tableRowText.indexOf(searchText) != -1){
+                    $(this).css({"display": "table-row"});
+                }
+                else{
+                    $(this).css({"display": "none"});
+                }
+            });
+    };
+
+    $(document).ready(function () {
+        $(".sortable.table").tablesort();
+
+        $("td.rule").hover(
+            function () {
+                $(this).find("div.tooltip").attr("data-tooltip", "Click to copy");
+                $(this).find("div.tooltip").css({ "display": "inline-block" });
+                $(this).addClass("current");
+            },
+            function () {
+                $(this).find("div.tooltip").css({ "display": "none" });
+                $(this).removeClass("current");
+            });
+
+        $("td.rule div.tooltip").click(
+            function () {
+                $(this).attr("data-tooltip", "Copied");
+                copyToClipboard("td.rule.current span");
+            }
+        );
+
+        $(".ntsp_logo .ui.dropdown")
+            .dropdown("set selected", "aws");
+
+        $(".ntsp_logo .ui.buttons .button")
+            .click(
+                function () {
+                    $(".ntsp_logo .ui.buttons .button").removeClass("active");
+                    $(this).addClass("active");
+                }
+            );
+
+        $('.ui.accordion').accordion({
+            exclusive: false,
+            active: 1
+        });
+
+        $("a").click(
+            function () {
+                $("a").each(function () {
+                    $(this).removeClass("active");
+                });
+                $(this).addClass("active");
+                $(".ntsp_table.table").css("display", "none");
+                $(".ntsp_table.table").removeClass("active");
+
+                $("." + $(this).attr("tableName")).css("display", "table");
+                $("." + $(this).attr("tableName")).addClass("active");
+                $(".main.title").text("Predefined Rules - " + $(this)[0].innerText);
+                removeRow($(".input > .prompt")[0].value.toLowerCase());
+            }
+        );
+        
+        $(".accordion .title").first().trigger("click");
+        
+        $('.ngl_doc .ui.accordion .dropdown.icon~a').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+        $(".accordion .title>a").first().trigger("click");
+
+        
+        $(".input > .prompt").keyup(function () {
+            removeRow($(this)[0].value.toLowerCase());
+        });
+    });
+</script>
+</body>
+
+</html>

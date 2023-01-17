@@ -87,7 +87,7 @@
                         
                         <div class="links">
 
-                            <a tableName="PCI-DSS-3-0">PCI-DSS-3.0</a>
+                            <a tableName="PCI-DSS-3-2-1">PCI-DSS-3.2.1</a>
                         </div>
                         
                         
@@ -211,43 +211,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -257,41 +223,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -301,17 +236,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -321,17 +247,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -341,36 +258,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -392,13 +283,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile device management policies are required for email profiles</td>
                 <td>Configure your mobile device management policies to require the policy to manage the email profile of the user. If you do not require this, users will be able to setup and configure email accounts without the protections of the mobile device management policy, leading to potential breaches of accounts and data.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.managedemailprofilerequired = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have managedemailprofilerequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -408,17 +294,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -428,33 +305,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -464,25 +316,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -492,37 +327,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -532,37 +339,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -715,43 +495,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -761,41 +507,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -805,17 +520,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -825,17 +531,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -845,36 +542,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -896,13 +567,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile device management policies are required for email profiles</td>
                 <td>Configure your mobile device management policies to require the policy to manage the email profile of the user. If you do not require this, users will be able to setup and configure email accounts without the protections of the mobile device management policy, leading to potential breaches of accounts and data.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.managedemailprofilerequired = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have managedemailprofilerequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -912,17 +578,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -932,33 +589,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -968,25 +600,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -996,37 +611,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1036,37 +623,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1078,6 +638,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -1206,43 +778,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1252,41 +790,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1296,17 +803,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1316,17 +814,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1336,36 +825,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1387,13 +850,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile device management policies are required for email profiles</td>
                 <td>Configure your mobile device management policies to require the policy to manage the email profile of the user. If you do not require this, users will be able to setup and configure email accounts without the protections of the mobile device management policy, leading to potential breaches of accounts and data.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.managedemailprofilerequired = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have managedemailprofilerequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1403,17 +861,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1423,33 +872,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1459,25 +883,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1487,37 +894,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1527,37 +906,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1685,43 +1037,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1731,41 +1049,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1775,17 +1062,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1795,17 +1073,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1815,36 +1084,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1866,13 +1109,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile device management policies are required for email profiles</td>
                 <td>Configure your mobile device management policies to require the policy to manage the email profile of the user. If you do not require this, users will be able to setup and configure email accounts without the protections of the mobile device management policy, leading to potential breaches of accounts and data.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.managedemailprofilerequired = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have managedemailprofilerequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1882,17 +1120,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1902,25 +1131,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1930,37 +1142,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -1970,37 +1154,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2012,6 +1169,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -2140,43 +1309,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2186,41 +1321,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2230,17 +1334,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2250,17 +1345,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2270,36 +1356,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2321,17 +1381,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2341,33 +1392,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2377,25 +1403,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2405,37 +1414,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2447,6 +1428,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -2575,43 +1568,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2621,41 +1580,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2665,17 +1593,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2685,17 +1604,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2705,36 +1615,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2756,17 +1640,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2776,33 +1651,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2812,25 +1662,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2840,37 +1673,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2880,37 +1685,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -2922,6 +1700,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -3050,43 +1840,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3096,41 +1852,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3140,17 +1865,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3160,17 +1876,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3180,36 +1887,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3231,17 +1912,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3251,25 +1923,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3279,37 +1934,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3321,6 +1948,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -3449,43 +2088,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3495,41 +2100,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3539,17 +2113,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3559,17 +2124,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3579,36 +2135,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3630,17 +2160,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3650,33 +2171,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3686,25 +2182,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3714,37 +2193,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3756,6 +2207,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -3884,43 +2347,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3930,41 +2359,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3974,17 +2372,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -3994,17 +2383,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4014,36 +2394,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4065,17 +2419,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4085,33 +2430,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device passwords never expire</td>
                 <td>Ensure that user passwords on mobile devices never expire.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d4.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d5.passwordexpirationdays = -1
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordexpirationdays = -1
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordexpirationdays = -1 or passcodeexpirationdays = -1</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4121,25 +2441,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4149,37 +2452,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4189,37 +2464,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4231,6 +2479,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -4254,7 +2514,7 @@
             </tbody>
         </table>
         
-        <table class="ui table sortable ntsp_table PCI-DSS-3-0">
+        <table class="ui table sortable ntsp_table PCI-DSS-3-2-1">
             <thead>
             <tr class="fixed header">
                 <th>NAME</th>
@@ -4359,43 +2619,9 @@
             <tr class="top aligned">
                 <td>Mobile devices passwords should be at least 6 characters</td>
                 <td>Require your users to use a complex password with a minimum password length of at least six characters to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d2.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d3 with-attribute {
-      d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-      d3.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d4 with-attribute {
-        d4.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-        d4.passwordminimumlength = 6
-  } and
-  any deviceconfiguration as d5 with-attribute {
-          d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-          d5.passwordminimumlength = 6 and
-          d5.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d6 with-attribute {
-          d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-          d6.passwordminimumlength = 6 and
-          d6.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d7 with-attribute {
-          d7.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-          d7.passwordminimumlength = 6 and
-          d7.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d8 with-attribute {
-          d8.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-          d8.passwordminimumlength = 6
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  passwordminimumlength = 6 or passcodeminimumlength = 6</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4405,41 +2631,10 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Type = Alphanumeric)</td>
                 <td>Require your users to use a complex password with a at least two character sets (letters and numbers, for example) to unlock their mobile devices</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d1.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d3.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d6.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d7.passwordrequiredtype = &#34;alphanumeric&#34;
-  } and
-  any deviceconfiguration as d8 with-attribute {
-    d8.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d8.passwordrequiredtype = &#34;alphanumeric&#34;
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordrequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;] or
+    passcoderequiredtype in [ &#34;alphanumeric&#34; , &#34;atLeastAlphanumeric&#34;]</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4449,17 +2644,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device encryption is enabled</td>
                 <td>Require your users to use encryption on their mobile devices to prevent unauthorized access to mobile data.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.storagerequiredeviceencryption = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d2.storagerequiredeviceencryption = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have storagerequiredeviceencryption = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4469,17 +2655,8 @@
             <tr class="top aligned">
                 <td>Ensure that users cannot connect from jailbroken or rooted devices</td>
                 <td>Do not allow your users to use to connect with mobile devices that have been jailbroken or rooted. These devices have had basic protections disabled to run software that is often malicious and could very easily lead to an account or data breach.</td>
-                <td>devicemanagement, devicecompliancepolicy</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any devicecompliancepolicy as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosCompliancePolicy&#34; and
-    d1.securityblockjailbrokendevices = true
-  } and
-  any devicecompliancepolicy as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidCompliancePolicy&#34; and
-    d2.securityblockjailbrokendevices = true
-  }
-</span>
+                <td>devicecompliancepolicy</td>
+                <td class="rule"><span>azuread devicecompliancepolicy should-have securityblockjailbrokendevices = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4489,36 +2666,10 @@
             <tr class="top aligned">
                 <td>Lock mobile devices after a period of inactivity</td>
                 <td>Users should be required to configure their mobile devices to lock after a period of inactivity to prevent unauthorized access.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordminutesofinactivitybeforescreentimeout = 5 and
-    d3.passwordrequirewhenresumefromidlestate = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordminutesofinactivitybeforescreentimeout = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d5.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d5.passcodeminutesofinactivitybeforelock = 0
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d6.passcodeminutesofinactivitybeforescreentimeout = 5 and
-    d6.passcodeminutesofinactivitybeforelock = 0
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+  ( passwordminutesofinactivitybeforescreentimeout = 5 and passwordminutesofinactivitybeforelock = 0 ) or 
+  ( passcodeminutesofinactivitybeforescreentimeout = 5 and passcodeminutesofinactivitybeforelock = 0 )</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4540,17 +2691,8 @@
             <tr class="top aligned">
                 <td>Ensure that mobile devices require complex passwords (Simple Passwords = Blocked)</td>
                 <td>Require your users to use a complex password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodeblocksimple = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d2.passcodeblocksimple = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passcodeblocksimple = true or passwordblocksimple = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4560,25 +2702,8 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices require the use of a password</td>
                 <td>Require your users to use a password to unlock their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordrequired = true
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d2.passcoderequired = true
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordrequired = true
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordrequired = true
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have passwordrequired = true or passcoderequired = true</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4588,37 +2713,9 @@
             <tr class="top aligned">
                 <td>Ensure that mobile device password reuse is prohibited</td>
                 <td>Do not allow your users to reuse the same password on their mobile devices.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
- any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d1.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d3.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d4.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.macOSGeneralDeviceConfiguration&#34; and
-    d5.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d6.passwordpreviouspasswordblockcount = 5
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d7.passwordpreviouspasswordblockcount = 5
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have 
+    passwordpreviouspasswordblockcount = 5 or passcodepreviouspasscodeblockcount = 5</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4628,37 +2725,10 @@
             <tr class="top aligned">
                 <td>Ensure mobile devices are set to wipe on multiple sign-in failures</td>
                 <td>Require mobile devices to wipe on multiple sign-in failures to prevent brute force compromise. Devices without this protection are vulnerable to being accessed physically by attackers who can then steal account credentials, data, or install malware on the device.</td>
-                <td>devicemanagement, deviceconfiguration</td>
-                <td class="rule"><span>azuread devicemanagement should-have
-  any deviceconfiguration as d1 with-attribute {
-    d1.odatatype = &#34;#microsoft.graph.iosGeneralDeviceConfiguration&#34; and
-    d1.passcodesigninfailurecountbeforewipe &lt;= 10
-  } and
-  any deviceconfiguration as d2 with-attribute {
-    d2.odatatype = &#34;#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration&#34; and
-    d2.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d3 with-attribute {
-    d3.odatatype = &#34;#microsoft.graph.windows10GeneralConfiguration&#34; and
-    d3.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d4 with-attribute {
-    d4.odatatype = &#34;#microsoft.graph.windows81GeneralConfiguration&#34; and
-    d4.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d5 with-attribute {
-    d5.odatatype = &#34;#microsoft.graph.androidGeneralDeviceConfiguration&#34; and
-    d5.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d6 with-attribute {
-    d6.odatatype = &#34;#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration&#34; and
-    d6.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  } and
-  any deviceconfiguration as d7 with-attribute {
-    d7.odatatype = &#34;#microsoft.graph.aospDeviceOwnerDeviceConfiguration&#34; and
-    d7.passwordsigninfailurecountbeforefactoryreset &lt;= 10
-  }
-</span>
+                <td>deviceconfiguration</td>
+                <td class="rule"><span>azuread deviceconfiguration should-have
+    passcodesigninfailurecountbeforewipe = 10 or
+    passwordsigninfailurecountbeforefactoryreset = 10</span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
                     </div>
@@ -4670,6 +2740,18 @@
                 <td>OAuth 2.0 permission grants enable a third-party connected app to access data based on the permissions granted.  Do not grant third-party apps the ability to modify app role assignments.  This would enable the third-party app to give users or apps access to resources that they should not have access to.</td>
                 <td>oauth2permissiongrant</td>
                 <td class="rule"><span>azuread oauth2permissiongrant should-not-have textmatch(scope, &#34;AppRoleAssignment.ReadWrite.All&#34;) = true
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure that between two and four global admins are designated</td>
+                <td>Ensure that between two and four global admins are designated.</td>
+                <td>account</td>
+                <td class="rule"><span>azuread account should-have globaladminusercount &gt;= 2 and globaladminusercount &lt;=4 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>

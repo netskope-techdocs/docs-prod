@@ -92,12 +92,7 @@
                         
                         <div class="links">
 
-                            <a tableName="Other-Salesforce-Rules">Other Salesforce Rules</a>
-                        </div>
-                        
-                        <div class="links">
-
-                            <a tableName="PCI-DSS-3-0">PCI-DSS-3.0</a>
+                            <a tableName="PCI-DSS-3-2-1">PCI-DSS-3.2.1</a>
                         </div>
                         
                         
@@ -222,7 +217,7 @@
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -451,6 +446,32 @@ Administrators should suspend group membership calculations only when performing
                 <td>Sharing rule calculations automatically add or remove necessary access when changes are made to entities such as groups, roles and terrritories.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have defersharingrules = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -1032,6 +1053,19 @@ Administrators should suspend group membership calculations only when performing
                 </td>
             </tr>
             
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
             
             </tbody>
         </table>
@@ -1048,6 +1082,45 @@ Administrators should suspend group membership calculations only when performing
             </thead>
             <tbody>
             
+            
+            <tr class="top aligned">
+                <td>Enable admin login as any user</td>
+                <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableadminloginasanyuser = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to use a physical U2F-compatible key for multifactor authentication</td>
+                <td>If enabled, users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableu2f = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to authenticate by certificate</td>
+                <td>Users are allowed to authenticate with a PEM-encoded X.509 digital certificate. Certificate-base authentication complies with FedRAMP High Authenticator Assurance Level (AAL) 3 digital identity requirements and personal identification verification cards. Your org can also use certificate authority-signed (CA) certificates with certificate-based authentication.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have allowuserauthenticationbycertificate = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
             
             <tr class="top aligned">
                 <td>Ensure certificate keys expire within 1 year</td>
@@ -1093,7 +1166,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -1143,6 +1216,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable community user visibility</td>
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
@@ -1161,6 +1247,35 @@ Administrators should suspend group membership calculations only when performing
 When &#39;Enable user switching&#39; is disabled, the Switcher is also disabled and your org doesn&#39;t appear in Switchers on other orgs.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have hasuserswitching = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -1276,6 +1391,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -1328,11 +1469,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -1354,10 +1533,36 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -1397,6 +1602,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -1629,6 +1847,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require identify verification during two-factor authentication (2FA) registration</td>
                 <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
                 <td>sessionsettings</td>
@@ -1685,6 +1929,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablepostforsessions = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -1792,7 +2049,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -2030,6 +2287,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -2082,11 +2365,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -2564,6 +2885,19 @@ Administrators should suspend group membership calculations only when performing
                 </td>
             </tr>
             
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
             
             </tbody>
         </table>
@@ -2579,6 +2913,45 @@ Administrators should suspend group membership calculations only when performing
             </thead>
             <tbody>
             
+            
+            <tr class="top aligned">
+                <td>Enable admin login as any user</td>
+                <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableadminloginasanyuser = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to use a physical U2F-compatible key for multifactor authentication</td>
+                <td>If enabled, users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableu2f = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to authenticate by certificate</td>
+                <td>Users are allowed to authenticate with a PEM-encoded X.509 digital certificate. Certificate-base authentication complies with FedRAMP High Authenticator Assurance Level (AAL) 3 digital identity requirements and personal identification verification cards. Your org can also use certificate authority-signed (CA) certificates with certificate-based authentication.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have allowuserauthenticationbycertificate = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
             
             <tr class="top aligned">
                 <td>Ensure certificate keys expire within 1 year</td>
@@ -2624,7 +2997,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -2674,6 +3047,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable community user visibility</td>
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
@@ -2692,6 +3078,35 @@ Administrators should suspend group membership calculations only when performing
 When &#39;Enable user switching&#39; is disabled, the Switcher is also disabled and your org doesn&#39;t appear in Switchers on other orgs.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have hasuserswitching = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -2807,6 +3222,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -2859,11 +3300,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -2885,10 +3364,36 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -3186,6 +3691,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require identify verification during two-factor authentication (2FA) registration</td>
                 <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
                 <td>sessionsettings</td>
@@ -3237,6 +3768,19 @@ Administrators should suspend group membership calculations only when performing
                 </td>
             </tr>
             
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
             
             </tbody>
         </table>
@@ -3252,6 +3796,45 @@ Administrators should suspend group membership calculations only when performing
             </thead>
             <tbody>
             
+            
+            <tr class="top aligned">
+                <td>Enable admin login as any user</td>
+                <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableadminloginasanyuser = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to use a physical U2F-compatible key for multifactor authentication</td>
+                <td>If enabled, users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableu2f = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to authenticate by certificate</td>
+                <td>Users are allowed to authenticate with a PEM-encoded X.509 digital certificate. Certificate-base authentication complies with FedRAMP High Authenticator Assurance Level (AAL) 3 digital identity requirements and personal identification verification cards. Your org can also use certificate authority-signed (CA) certificates with certificate-based authentication.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have allowuserauthenticationbycertificate = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
             
             <tr class="top aligned">
                 <td>Ensure certificate keys expire within 1 year</td>
@@ -3297,7 +3880,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -3347,6 +3930,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable caching and autocomplete on login page</td>
                 <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
                 <td>sessionsettings</td>
@@ -3378,6 +3974,35 @@ Administrators should suspend group membership calculations only when performing
 When &#39;Enable user switching&#39; is disabled, the Switcher is also disabled and your org doesn&#39;t appear in Switchers on other orgs.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have hasuserswitching = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -3493,6 +4118,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -3545,11 +4196,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -3571,10 +4260,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable secure and persistent browser caching</td>
+                <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
+                <td>mobilesettings</td>
+                <td class="rule"><span>salesforce mobilesettings should-have enables1encryptedstoragepref2 = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -3614,6 +4342,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -3876,6 +4617,32 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that the organization has at least one active remote site setting.</td>
                 <td>remotesitesettings, remotesitesetting</td>
                 <td class="rule"><span>salesforce remotesitesettings should-have any remotesitesetting as r with-attribute { r.isactive = true and r.disableprotocolsecurity = false }
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -3949,6 +4716,19 @@ Administrators should suspend group membership calculations only when performing
                 </td>
             </tr>
             
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
             
             </tbody>
         </table>
@@ -4009,7 +4789,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -4059,6 +4839,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable caching and autocomplete on login page</td>
                 <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
                 <td>sessionsettings</td>
@@ -4076,6 +4869,35 @@ Administrators should suspend group membership calculations only when performing
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablecommunityuservisibility = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4178,6 +5000,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -4230,10 +5078,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable secure and persistent browser caching</td>
+                <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
+                <td>mobilesettings</td>
+                <td class="rule"><span>salesforce mobilesettings should-have enables1encryptedstoragepref2 = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4273,6 +5160,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4535,6 +5435,32 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that the organization has at least one active remote site setting.</td>
                 <td>remotesitesettings, remotesitesetting</td>
                 <td class="rule"><span>salesforce remotesitesettings should-have any remotesitesetting as r with-attribute { r.isactive = true and r.disableprotocolsecurity = false }
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4612,6 +5538,45 @@ Administrators should suspend group membership calculations only when performing
             
             
             <tr class="top aligned">
+                <td>Enable admin login as any user</td>
+                <td>If true, the Administrators Can Log in as Any User field is enabled. </td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableadminloginasanyuser = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to use a physical U2F-compatible key for multifactor authentication</td>
+                <td>If enabled, users can use a physical U2F-compatible security key for multi-factor authentication (MFA) and identity verification.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableu2f = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Allow users to authenticate by certificate</td>
+                <td>Users are allowed to authenticate with a PEM-encoded X.509 digital certificate. Certificate-base authentication complies with FedRAMP High Authenticator Assurance Level (AAL) 3 digital identity requirements and personal identification verification cards. Your org can also use certificate authority-signed (CA) certificates with certificate-based authentication.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have allowuserauthenticationbycertificate = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Ensure certificate keys expire within 1 year</td>
                 <td>Ensure that all certificate keys expire within 1 year.</td>
                 <td>certificate</td>
@@ -4655,7 +5620,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -4705,6 +5670,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable caching and autocomplete on login page</td>
                 <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
                 <td>sessionsettings</td>
@@ -4736,6 +5714,35 @@ Administrators should suspend group membership calculations only when performing
 When &#39;Enable user switching&#39; is disabled, the Switcher is also disabled and your org doesn&#39;t appear in Switchers on other orgs.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have hasuserswitching = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4851,6 +5858,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -4903,11 +5936,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -4929,10 +6000,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable secure and persistent browser caching</td>
+                <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
+                <td>mobilesettings</td>
+                <td class="rule"><span>salesforce mobilesettings should-have enables1encryptedstoragepref2 = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -4972,6 +6082,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5037,6 +6160,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have locksessionstodomain = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Lock user sessions to the login IP address</td>
+                <td>Lock user sessions to the IP address from which the user logged in.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have locksessionstoip = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5178,6 +6314,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Time out user sessions after 15 minutes</td>
                 <td>Prompt users to log out or continue working after 15 minutes.</td>
                 <td>sessionsettings</td>
@@ -5208,6 +6357,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Indicates whether cross-domain session information is exchanged using a POST request instead of a GET request, such as when a user is using a Visualforce page. In this context, POST requests are more secure than GET requests.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablepostforsessions = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure user provisioning for connected apps require approval</td>
+                <td>Ensures that user provisioning requests for connected apps in Salesforce are configured to require approval for certain processes.</td>
+                <td>userprovisioningconfig</td>
+                <td class="rule"><span>salesforce userprovisioningconfig should-have approvalrequired != &#34;None&#34;
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5276,7 +6438,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -5326,6 +6488,19 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable caching and autocomplete on login page</td>
                 <td>Do not allow the user’s browser to store usernames and auto-fill the User Name field on the login page.</td>
                 <td>sessionsettings</td>
@@ -5343,6 +6518,35 @@ Administrators should suspend group membership calculations only when performing
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablecommunityuservisibility = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5458,6 +6662,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -5510,11 +6740,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -5536,10 +6804,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable secure and persistent browser caching</td>
+                <td>Indicates whether the Salesforce mobile web uses secure and persistent browser caching (true) or not (false).</td>
+                <td>mobilesettings</td>
+                <td class="rule"><span>salesforce mobilesettings should-have enables1encryptedstoragepref2 = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5579,6 +6886,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5631,6 +6951,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Assets should not have sharing enabled by default. Access to an asset should be inherited by its parent objects&#39; sharing rules.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enableassetsharing = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Lock user sessions to the login domain</td>
+                <td>Indicates whether the current UI session for a user is associated with a specific domain. This check helps prevent unauthorized use of the session ID in another domain.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have locksessionstodomain = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5789,6 +7122,32 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that the organization has at least one active remote site setting.</td>
                 <td>remotesitesettings, remotesitesetting</td>
                 <td class="rule"><span>salesforce remotesitesettings should-have any remotesitesetting as r with-attribute { r.isactive = true and r.disableprotocolsecurity = false }
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -5922,7 +7281,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -5972,10 +7331,52 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable community user visibility</td>
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablecommunityuservisibility = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -6078,6 +7479,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -6130,11 +7557,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -6156,10 +7621,36 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -6199,6 +7690,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -6405,6 +7909,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require identify verification during two-factor authentication (2FA) registration</td>
                 <td>Indicates if users are required to confirm their identities when adding a verification method such as Salesforce Authenticator for multi-factor authentication (MFA), instead of requiring a re-login.</td>
                 <td>sessionsettings</td>
@@ -6487,61 +8017,7 @@ Administrators should suspend group membership calculations only when performing
             </tbody>
         </table>
         
-        <table class="ui table sortable ntsp_table Other-Salesforce-Rules">
-            <thead>
-            <tr class="fixed header">
-                <th>NAME</th>
-                <th>DESCRIPTION</th>
-                <th>RESOURCE TYPE</th>
-                <th>RULE</th>
-            </tr>
-            </thead>
-            <tbody>
-            
-            
-            <tr class="top aligned">
-                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
-                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
-                <td>lightningexperiencesettings</td>
-                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
-
-</span>
-                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
-                        <i class="bordered large copy icon inverted"></i>
-                    </div>
-                </td>
-            </tr>
-            
-            <tr class="top aligned">
-                <td>Ensure Content Security Policy protection for email templates is enabled</td>
-                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
-                <td>sessionsettings</td>
-                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
-
-</span>
-                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
-                        <i class="bordered large copy icon inverted"></i>
-                    </div>
-                </td>
-            </tr>
-            
-            <tr class="top aligned">
-                <td>Ensure Force re-login after Login-As-User is enabled</td>
-                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
-                <td>sessionsettings</td>
-                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
-</span>
-                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
-                        <i class="bordered large copy icon inverted"></i>
-                    </div>
-                </td>
-            </tr>
-            
-            
-            </tbody>
-        </table>
-        
-        <table class="ui table sortable ntsp_table PCI-DSS-3-0">
+        <table class="ui table sortable ntsp_table PCI-DSS-3-2-1">
             <thead>
             <tr class="fixed header">
                 <th>NAME</th>
@@ -6597,7 +8073,7 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that no connected apps are assigned the &#39;Full access&#39; (full) OAuth scope. This scope allows access to all data accessible by the logged-in user and encompasses all other scopes.</td>
                 <td>connectedapp</td>
                 <td class="rule"><span>salesforce connectedapp should-not-have oauthconfig with-attribute {
-	scopes with-any-element [ scope = &#34;full&#34; ]
+	scopes with-any-element [ scope = &#34;Full&#34; ]
 }
 
 </span>
@@ -6647,10 +8123,52 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Disable audit fields and updating of the record owner field for records owned by inactive users</td>
+                <td>Do not allow users to update the record owner field and disable audit fields for records with inactive owners.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have enableauditfieldsinactiveowner = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Disable community user visibility</td>
                 <td>Disabling community user visibility helps to keep user information confidential between users in the same site.</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablecommunityuservisibility = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow Cross-Origin Resource Sharing (CORS) for OAuth Endpoints</td>
+                <td>Do not allow cross-origin Resource sharing (CORS) for these OAuth endpoints:
+/services/oauth2/token
+/services/oauth2/revoke
+/services/oauth2/introspect</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enableoauthcorspolicy = false
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Do not allow users to grant login access to Support</td>
+                <td>Do not allow users to grant login access to Support. When this setting is disabled, only administators can grant login access.</td>
+                <td>securitysettings</td>
+                <td class="rule"><span>salesforce securitysettings should-have canusersgrantloginaccess = false
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -6753,6 +8271,32 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Email Relays enforces use of TLS and requires verification</td>
+                <td>Ensure Email relays in the organization are authorized.</td>
+                <td>emailrelay</td>
+                <td class="rule"><span>salesforce emailrelay should-have isrequireauth = true and tlssetting = &#34;RequieredVerify&#34;
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Email Relay is setup within the organization</td>
+                <td>Ensures that an Email Relay is set up within the organization.</td>
+                <td>emailrelays, emailrelay</td>
+                <td class="rule"><span>salesforce emailrelays should-have emailrelay exists
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable clickjack protection for customer Visualforce pages with headers turned off</td>
                 <td>Clickjack protection for customer Visualforce pages with standard headers turned off is enabled.</td>
                 <td>sessionsettings</td>
@@ -6805,11 +8349,49 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Ensure Content Delivery Network for lightning component framework is enabled</td>
+                <td>DDoS attacks can be prevented by enabling Content Delivery Network(CDN) for the lightning component framework.</td>
+                <td>lightningexperiencesettings</td>
+                <td class="rule"><span>salesforce lightningexperiencesettings should-have enableauracdnpref = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Content Security Policy protection for email templates is enabled</td>
+                <td>Cross site scripting and other injection attacks can be prevented by enabling a Content Security Policy.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablecsponemail = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Enable Content Sniffing protection</td>
                 <td>Prevent the browser from inferring the MIME type from the document content and from executing malicious files (JavaScript, Stylesheet) as dynamic content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablecontentsniffingprotection = true
 
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Ensure Force re-login after Login-As-User is enabled</td>
+                <td>Prompt the admin who is logged in as another user to login again after logging out as the user.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have forcerelogin = true
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
                         <i class="bordered large copy icon inverted"></i>
@@ -6831,10 +8413,36 @@ Administrators should suspend group membership calculations only when performing
             </tr>
             
             <tr class="top aligned">
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator</td>
+                <td>Only users with the Lightning Login User permission can log in with Salesforce Authenticator instead of a password.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enablelightningloginonlywithuserperm = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
                 <td>Require read access to a record to see its name in lookup and system fields</td>
                 <td>Users must have read access to a record to see its name in lookup and system fields</td>
                 <td>sharingsettings</td>
                 <td class="rule"><span>salesforce sharingsettings should-have enablerestrictaccesslookuprecords = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enable SAML login for users</td>
+                <td>With SAML login enabled, users can SSO into Salesforce from providers via SAML. SAML implements a secure method of passing user authentications and authorizations between the identity provider and service providers.</td>
+                <td>singlesignonsettings</td>
+                <td class="rule"><span>salesforce singlesignonsettings should-have enablesamllogin = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -6874,6 +8482,19 @@ Administrators should suspend group membership calculations only when performing
                 <td>Enable protection against reflected cross-site scripting attacks. If a reflected cross-site scripting attack is detected and XSS protection is enabled, the browser shows a blank page with no content.</td>
                 <td>sessionsettings</td>
                 <td class="rule"><span>salesforce sessionsettings should-have enablexssprotection = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Enforce IP ranges for every request</td>
+                <td>Enforce the IP addresses in Login IP Ranges when a user accesses Salesforce (on every page request), including access from a client app.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have enforceiprangeseveryrequest = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
@@ -7058,6 +8679,32 @@ Administrators should suspend group membership calculations only when performing
                 <td>Ensure that the organization has at least one active remote site setting.</td>
                 <td>remotesitesettings, remotesitesetting</td>
                 <td class="rule"><span>salesforce remotesitesettings should-have any remotesitesetting as r with-attribute { r.isactive = true and r.disableprotocolsecurity = false }
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require email confirmations for email address changes</td>
+                <td>When users change their email address, they receive an email at the new address with a link. After they click the link, their new email address takes effect. </td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have canconfirmemailchangeinlightningcommunities = true
+
+</span>
+                    <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
+                        <i class="bordered large copy icon inverted"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr class="top aligned">
+                <td>Require HttpOnly attribute to restrict session ID cookie access</td>
+                <td>Restricts session ID cookie access. A cookie with the HttpOnly attribute is not accessible via non-HTTP methods, such as calls from JavaScript.</td>
+                <td>sessionsettings</td>
+                <td class="rule"><span>salesforce sessionsettings should-have requirehttponly = true
 
 </span>
                     <div class="tooltip" data-tooltip="Click to copy" data-inverted="">
