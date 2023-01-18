@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-100-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 100.1.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-100-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 100.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-100-1-0.html",
+"text": "Fixed Issues In Hotfix Release 100.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-100-1-0.html",
+"text": "Known Issues In Hotfix Release 100.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-note-version-100-0-0.html",
 "text": "Netskope Release Note Version 100.0.0",
 "class": "topic-link section reused-publication"
@@ -161,8 +183,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "new-platform-available---next-generation-security-posture-management.html",
-"text": "New Platform Available - Next-Generation Security Posture Management",
+"url": "new-platform-available---next-generation-saas-security-posture-management.html",
+"text": "New Platform Available - Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
 },
 {
@@ -750,6 +772,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "ctep-ips-threat-content-update-release-notes-100-0-0-283.html",
+"text": "CTEP\/IPS Threat Content Update Release Notes 100.0.0.283",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-99-0-1-277.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 99.0.1.277",
@@ -3656,6 +3683,23 @@ var toc = [{
 "url": "getting-started-with-netskope-iot-security.html",
 "text": "Getting started with Netskope IoT Security",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "deploy-netskope-iot-security-virtual-appliance-on-vmware-vsphere.html",
+"text": "Deploy Netskope IoT Security virtual appliance on VMware vSphere",
+"class": "topic-link section"
+},
+{
+"url": "deploy-netskope-iot-security-virtual-appliance-on-vmware-esxi.html",
+"text": "Deploy Netskope IoT Security virtual appliance on VMware ESXi",
+"class": "topic-link section"
+},
+{
+"url": "deploy-netskope-iot-security-physical-appliance.html",
+"text": "Deploy Netskope IoT Security physical appliance",
+"class": "topic-link section"
+}]
 },
 {
 "url": "executive-dashboard-in-netskope-iot-security.html",
@@ -3675,6 +3719,11 @@ var toc = [{
 {
 "url": "manage-netskope-iot-security.html",
 "text": "Manage Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "netskope-asset-inventory.html",
+"text": "Netskope asset inventory",
 "class": "topic-link section"
 }]
 },
@@ -5760,6 +5809,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "next-generation-saas-security-posture-management-for-github.html",
+"text": "Next Generation SaaS Security Posture Management for GitHub",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-github-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure GitHub Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
 "url": "next-generation-saas-security-posture-management-for-microsoft-365.html",
 "text": "Next Generation SaaS Security Posture Management for Microsoft 365",
 "class": "topic-link section"
@@ -5780,6 +5841,42 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-next-generation-saas-security-posture-management.html",
 "text": "Configure Salesforce Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-saas-security-posture-management-for-servicenow.html",
+"text": "Next Generation SaaS Security Posture Management for ServiceNow",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-servicenow-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure ServiceNow Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-saas-security-posture-management-for-workday.html",
+"text": "Next Generation SaaS Security Posture Management for Workday",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-workday-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure Workday Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "next-generation-saas-security-posture-management-for-zoom.html",
+"text": "Next Generation SaaS Security Posture Management for Zoom",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "configure-zoom-instance-for-next-generation-saas-security-posture-management.html",
+"text": "Configure Zoom Instance for Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
 }]
 },
@@ -6689,6 +6786,11 @@ var toc = [{
 {
 "url": "backup-cloud-exchange.html",
 "text": "Backup Cloud Exchange",
+"class": "topic-link section"
+},
+{
+"url": "backup-mongodb-data.html",
+"text": "Backup MongoDB Data",
 "class": "topic-link section"
 },
 {
@@ -8366,6 +8468,11 @@ var toc = [{
 "text": "Set Password Expiration",
 "class": "topic-link section"
 }]
+},
+{
+"url": "rbac-best-practices.html",
+"text": "RBAC Best Practices",
+"class": "topic-link section"
 }]
 }]
 },
