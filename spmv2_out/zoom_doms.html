@@ -193,10 +193,26 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>show_timestamp</td>
+        <span class="_TAB">&nbsp;</span>local_recording</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Add a timestamp to the recording.</td>
+    <td>Allow hosts and participants to record the meeting to a local file.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>record_gallery_view</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Record the gallery view with a shared screen.</td>
 </tr>
 
 
@@ -225,10 +241,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>save_chat_text</td>
+        <span class="_TAB">&nbsp;</span>record_speaker_view</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Save the chat text from the meeting.</td>
+    <td>Record the active speaker with a shared screen.</td>
 </tr>
 
 
@@ -241,10 +257,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>host_delete_cloud_recording</td>
+        <span class="_TAB">&nbsp;</span>show_timestamp</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>If the value of this field is set to `true`, hosts will be able to delete the recordings. If this option is set to `false`, the recordings cannot be deleted by the host, and only the admin can delete them.</td>
+    <td>Add a timestamp to the recording.</td>
 </tr>
 
 
@@ -261,22 +277,6 @@
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
     <td>If the value of this field is set to `true`, meeting hosts cannot view their meetings&#39; cloud recordings.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>local_recording</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow hosts and participants to record the meeting to a local file.</td>
 </tr>
 
 
@@ -321,38 +321,6 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>cloud_recording_download</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Downloading cloud recordings is enabled.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>record_gallery_view</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Record the gallery view with a shared screen.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
         <span class="_TAB">&nbsp;</span>auto_recording</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
@@ -373,6 +341,38 @@
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
     <td>Show a disclaimer to participants before a recording starts.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>save_chat_text</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Save the chat text from the meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>host_delete_cloud_recording</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>If the value of this field is set to `true`, hosts will be able to delete the recordings. If this option is set to `false`, the recordings cannot be deleted by the host, and only the admin can delete them.</td>
 </tr>
 
 
@@ -417,10 +417,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>record_speaker_view</td>
+        <span class="_TAB">&nbsp;</span>cloud_recording_download</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Record the active speaker with a shared screen.</td>
+    <td>Downloading cloud recordings is enabled.</td>
 </tr>
 
 
@@ -513,70 +513,6 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>participant_video</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Start meetings with the participant video on.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>require_password_for_instant_meetings</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Require a password for instant meetings.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>use_pmi_for_scheduled_meetings</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Use the Personal Meeting ID (PMI) when scheduling a meeting.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>personal_meeting</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Whether Personal Meeting IDs are enabled or not. If true, users receive a unique dedicated 9-11 digit number which can be used as the user&#39;s personal meeting room.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
         <span class="_TAB">&nbsp;</span>not_store_meeting_topic</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
@@ -593,26 +529,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>host_video</td>
+        <span class="_TAB">&nbsp;</span>participant_video</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Start meetings with the host video on.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>require_password_for_pmi_meetings</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Require a password for a meeting held using a Personal Meeting ID (PMI).</td>
+    <td>Start meetings with the participant video on.</td>
 </tr>
 
 
@@ -657,6 +577,86 @@
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>personal_meeting</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Whether Personal Meeting IDs are enabled or not. If true, users receive a unique dedicated 9-11 digit number which can be used as the user&#39;s personal meeting room.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>host_video</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Start meetings with the host video on.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>require_password_for_instant_meetings</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Require a password for instant meetings.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>require_password_for_pmi_meetings</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Require a password for a meeting held using a Personal Meeting ID (PMI).</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>use_pmi_for_scheduled_meetings</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Use the Personal Meeting ID (PMI) when scheduling a meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>use_pmi_for_instant_meetings</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
@@ -689,10 +689,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>feedback</td>
+        <span class="_TAB">&nbsp;</span>closed_caption</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Add a \&#34;Feedback\&#34; tab to the Windows Settings or Mac Preferences dialog. This enables users to provide feedback to Zoom at the end of the meeting.</td>
+    <td>Allow a host to type closed captions. Enable a host to assign a participant or use a third party device to add closed captions.</td>
 </tr>
 
 
@@ -721,10 +721,42 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>allow_live_streaming</td>
+        <span class="_TAB">&nbsp;</span>annotation</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Allow live streaming of meetings.</td>
+    <td>Allow participants to use annotation tools to add information while sharing their screen.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>far_end_camera_control</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow another user to take control of your camera during a meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>show_a_join_from_your_browser_link</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Whether to allow participants to join a meeting directly from their browser and bypass the Zoom application download process. This is useful for participants who cannot download, install, or run applications. Note that the meeting experience from the browser is limited.</td>
 </tr>
 
 
@@ -753,10 +785,74 @@
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>auto_answer</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Enable users to see and add contacts to the \&#34;auto-answer group\&#34; in the chat contact list. Any call from members of this group will automatically be answered.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>private_chat</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow a meeting participant to send a private message to another participant.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>co_host</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
     <td>Allow the host to add co-hosts.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>use_html_format_email</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Use HTML formatted email for the Outlook plugin.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>breakout_room</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow the host to split meeting participants into separate, smaller rooms.</td>
 </tr>
 
 
@@ -785,6 +881,230 @@
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>alert_guest_join</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Identify guest participants in a meeting or webinar.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>request_permission_to_unmute_participants</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Indicates whether the &#34;Request permission to unmute participants&#34; option has been enabled for the account or not.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>virtual_background</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow users to replace their background with any selected image.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>p2p_connetion</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow users to directly connect to one another in a 2-person meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>feedback</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Add a \&#34;Feedback\&#34; tab to the Windows Settings or Mac Preferences dialog. This enables users to provide feedback to Zoom at the end of the meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>show_meeting_control_toolbar</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Always show the meeting controls during a meeting.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_live_streaming</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow live streaming of meetings.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>watermark</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Add a watermark when viewing a shared screen.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>who_can_share_screen</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Indicates who can share their screen or content during meetings.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>chat</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow meeting participants to send a message that is visible to all participants.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>whiteboard</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow participants to share a whiteboard that includes annotation tools.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_participants_to_rename</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>If the value of this field is set to `true`, meeting participants and webinar panelists are allowed to rename themselves during a meeting or a webinar.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>e2e_encryption</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>By default, Zoom requires encryption for all data between the Zoom cloud, Zoom client, and Zoom Room. If this setting is set to `true`, encryption will also be enabled for third-party endpoints (SIP/H.323) as well.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_show_zoom_windows</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Show the Zoom desktop application when sharing screens.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>file_transfer</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
@@ -801,11 +1121,99 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>alert_guest_join</td>
+        <span class="_TAB">&nbsp;</span>who_can_share_screen_when_someone_is_sharing</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Indicates who is allowed to start sharing their screen when someone else in the meeting is sharing their screen.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>meeting_reactions</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Identify guest participants in a meeting or webinar.</td>
+    <td>Enable or disable meeting reactions.</td>
 </tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>auto_saving_chat</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Automatically save all in-meeting chats so that the host does not need to manually save the chat transcript after the meeting starts.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>virtual_background_settings</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Settings to manage virtual background.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_videos</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow use of videos for virtual backgrounds.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>allow_upload_custom</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Allow users to upload custom backgrounds.</td>
+</tr>
+
+
+
+</tbody>
+
 
 
 
@@ -927,10 +1335,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>private_chat</td>
+        <span class="_TAB">&nbsp;</span>polling</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>Allow a meeting participant to send a private message to another participant.</td>
+    <td>Allow hosts to add polls/quizzes before or during a meeting</td>
 </tr>
 
 
@@ -953,414 +1361,6 @@
 
 </tbody>
 
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>who_can_share_screen</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Indicates who can share their screen or content during meetings.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>request_permission_to_unmute_participants</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Indicates whether the &#34;Request permission to unmute participants&#34; option has been enabled for the account or not.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>virtual_background</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow users to replace their background with any selected image.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>meeting_reactions</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Enable or disable meeting reactions.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>use_html_format_email</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Use HTML formatted email for the Outlook plugin.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>breakout_room</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow the host to split meeting participants into separate, smaller rooms.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>far_end_camera_control</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow another user to take control of your camera during a meeting.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>show_a_join_from_your_browser_link</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Whether to allow participants to join a meeting directly from their browser and bypass the Zoom application download process. This is useful for participants who cannot download, install, or run applications. Note that the meeting experience from the browser is limited.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>auto_answer</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Enable users to see and add contacts to the \&#34;auto-answer group\&#34; in the chat contact list. Any call from members of this group will automatically be answered.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>allow_participants_to_rename</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>If the value of this field is set to `true`, meeting participants and webinar panelists are allowed to rename themselves during a meeting or a webinar.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>e2e_encryption</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>By default, Zoom requires encryption for all data between the Zoom cloud, Zoom client, and Zoom Room. If this setting is set to `true`, encryption will also be enabled for third-party endpoints (SIP/H.323) as well.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>who_can_share_screen_when_someone_is_sharing</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Indicates who is allowed to start sharing their screen when someone else in the meeting is sharing their screen.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>whiteboard</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow participants to share a whiteboard that includes annotation tools.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>virtual_background_settings</td>
-    <td>object</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Settings to manage virtual background.</td>
-</tr>
-
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>allow_videos</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow use of videos for virtual backgrounds.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>allow_upload_custom</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow users to upload custom backgrounds.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>p2p_connetion</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow users to directly connect to one another in a 2-person meeting.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>watermark</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Add a watermark when viewing a shared screen.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>polling</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow hosts to add polls/quizzes before or during a meeting</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>show_meeting_control_toolbar</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Always show the meeting controls during a meeting.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>allow_show_zoom_windows</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Show the Zoom desktop application when sharing screens.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>chat</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow meeting participants to send a message that is visible to all participants.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>annotation</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow participants to use annotation tools to add information while sharing their screen.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>auto_saving_chat</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Automatically save all in-meeting chats so that the host does not need to manually save the chat transcript after the meeting starts.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>closed_caption</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Allow a host to type closed captions. Enable a host to assign a participant or use a third party device to add closed captions.</td>
-</tr>
-
-
-
-</tbody>
-
 
 
 
@@ -1376,6 +1376,22 @@
                     
 
 
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>cancel_meeting_reminder</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Notify the host and participants when a meeting is cancelled.</td>
+</tr>
+
+
+
+</tbody>
 
 <tbody>
 <tr class="top aligned">
@@ -1435,22 +1451,6 @@
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
     <td>Notify the host when a cloud recording of a meeting is available.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>cancel_meeting_reminder</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Notify the host and participants when a meeting is cancelled.</td>
 </tr>
 
 
@@ -1527,44 +1527,6 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>waiting_room_settings</td>
-    <td>object</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Specify the settings to be applied if the Waiting Room feature is enabled.</td>
-</tr>
-
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>participants_to_place_in_waiting_room</td>
-    <td>number</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Specify who should be admitted to the waiting room. The value of this field can be one of the following: 0: All attendees. 1: Users who are not in your account. 2: Users who are not in your account and are not part of the specified whitelisted domains.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
         <span class="_TAB">&nbsp;</span>waiting_room</td>
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
@@ -1621,24 +1583,6 @@
 
 
 
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>length</td>
-    <td>number</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>The minimum length that the meeting/webinar password needs to have.</td>
-</tr>
-
-
-
-</tbody>
 
 <tbody>
 <tr class="top aligned">
@@ -1766,6 +1710,62 @@
 
 </tbody>
 
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>length</td>
+    <td>number</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The minimum length that the meeting/webinar password needs to have.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>waiting_room_settings</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Specify the settings to be applied if the Waiting Room feature is enabled.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>participants_to_place_in_waiting_room</td>
+    <td>number</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Specify who should be admitted to the waiting room. The value of this field can be one of the following: 0: All attendees. 1: Users who are not in your account. 2: Users who are not in your account and are not part of the specified whitelisted domains.</td>
+</tr>
+
+
+
+</tbody>
+
 
 
 
@@ -1826,6 +1826,42 @@
                 
                 <tbody>
                     <tr class="top aligned">
+                        <td>hide_billing_info</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Hide billing information from administrators.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>admin_change_user_info</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Only account administrators can change a user&#39;s information.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>user_modifiable_info_by_admin</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>List of user attributes that can only be modified by an administrator. This field will only show up when admin_change_user_info is `true`. The possible values are &#34;name&#34;, &#34;profile_picture&#34;, &#34;sign_in_email&#34; and &#34;host_key&#34;.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
                         <td>password_requirement</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
@@ -1834,38 +1870,6 @@
                     
 
 
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>have_special_character</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>If set to `true`, the password must have at least 1 special character (!, @, #, etc.).</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>weak_enhance_detection</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>If set to `true`, users will be informed if the provided password is weak.</td>
-</tr>
-
-
-
-</tbody>
 
 <tbody>
 <tr class="top aligned">
@@ -1899,6 +1903,38 @@
 
 </tbody>
 
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>have_special_character</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>If set to `true`, the password must have at least 1 special character (!, @, #, etc.).</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>weak_enhance_detection</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>If set to `true`, users will be informed if the provided password is weak.</td>
+</tr>
+
+
+
+</tbody>
+
 
 
 
@@ -1910,42 +1946,6 @@
                         <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
                         <td>Allow importing of photos from the photo library on the user&#39;s device.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>hide_billing_info</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Hide billing information from administrators.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>admin_change_user_info</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Only account administrators can change a user&#39;s information.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>user_modifiable_info_by_admin</td>
-                        <td>list&lt;string&gt;</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>List of user attributes that can only be modified by an administrator. This field will only show up when admin_change_user_info is `true`. The possible values are &#34;name&#34;, &#34;profile_picture&#34;, &#34;sign_in_email&#34; and &#34;host_key&#34;.</td>
                     </tr>
                     
 

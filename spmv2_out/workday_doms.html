@@ -55,55 +55,6 @@
     <div class="accordion">
         <div class="title">
             <i class="dropdown icon"></i>
-            <a tableName="Integrations">Integrations</a>
-        </div>
-        <div class="content">
-        
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-
-<a tableName="IntegrationSystemUser" class="links" >IntegrationSystemUser</a>
-
-
-
-<a tableName="LaunchedIntegrationEvent" class="links" >LaunchedIntegrationEvent</a>
-
-
-
-<a tableName="IntegrationEvent" class="links" >IntegrationEvent</a>
-
-
-
-<a tableName="IntegrationSystem" class="links" >IntegrationSystem</a>
-
-
-
-
-
-
-
-        </div>
-    </div>
-    
-
-    
-    <div class="accordion">
-        <div class="title">
-            <i class="dropdown icon"></i>
             <a tableName="HumanResources">HumanResources</a>
         </div>
         <div class="content">
@@ -126,6 +77,55 @@
 
 
 <a tableName="UserBasedSecurityGroup" class="links" >UserBasedSecurityGroup</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Integrations">Integrations</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+<a tableName="LaunchedIntegrationEvent" class="links" >LaunchedIntegrationEvent</a>
+
+
+
+<a tableName="IntegrationEvent" class="links" >IntegrationEvent</a>
+
+
+
+<a tableName="IntegrationSystem" class="links" >IntegrationSystem</a>
+
+
+
+<a tableName="IntegrationSystemUser" class="links" >IntegrationSystemUser</a>
 
 
 
@@ -223,18 +223,6 @@
                     </tr>
                 </thead>
                 
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Process_Description</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying the Summary of the Integration Event. </td>
-                    </tr>
-                    
-
-
-                </tbody>
                 
                 <tbody>
                     <tr class="top aligned">
@@ -416,6 +404,18 @@
 
                 </tbody>
                 
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Process_Description</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Text attribute identifying the Summary of the Integration Event. </td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
                 
                 
             </table>
@@ -451,10 +451,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>type</td>
+        <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>ID text string.</td>
 </tr>
 
 
@@ -467,10 +467,10 @@
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>text</td>
+        <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>ID type.</td>
 </tr>
 
 
@@ -526,54 +526,6 @@
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>Integration_System_Reference</td>
-                        <td>object</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Unique identifier for an Integration System reference</td>
-                    </tr>
-                    
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>text</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>type</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
                         <td>User_Name</td>
                         <td>string</td>
                         <td><span class="refLinks" refName=""></span></td>
@@ -618,6 +570,54 @@ If the field is true, the integration system user will not be able to sign in to
 If the field is false, the integration system user will be able to sign in from both the UI and through web services.</td>
                     </tr>
                     
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Integration_System_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Unique identifier for an Integration System reference</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>ID text string.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>ID type.</td>
+</tr>
+
+
+
+</tbody>
+
+
 
 
                 </tbody>
@@ -984,30 +984,6 @@ If the field is false, the integration system user will be able to sign in from 
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>User_Name</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying User Name.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Password</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying Password.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
                         <td>Account_Disabled</td>
                         <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
@@ -1084,6 +1060,30 @@ If the field is false, the integration system user will be able to sign in from 
                         <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
                         <td>True when the user is exempt from One-Time Passcode Authentication, False otherwise.  Set this element to true if you want the user to be exempt from one-time passcode authentication.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>User_Name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Text attribute identifying User Name.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Password</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Text attribute identifying Password.</td>
                     </tr>
                     
 
