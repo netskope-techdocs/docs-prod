@@ -3720,6 +3720,13 @@ var toc = [{
 "url": "manage-netskope-iot-security.html",
 "text": "Manage Netskope IoT Security",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "device-attribute-reclassification.html",
+"text": "Device attribute reclassification",
+"class": "topic-link section"
+}]
 },
 {
 "url": "netskope-asset-inventory.html",
@@ -6379,8 +6386,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "creating-a-steering-configuration.html",
+"text": "Creating a Steering Configuration",
+"class": "topic-link section"
+},
+{
 "url": "exceptions-352649.html",
 "text": "Exceptions",
+"class": "topic-link section"
+},
+{
+"url": "adding-steering-exceptions-for-macos-upgrade.html",
+"text": "Adding Steering Exceptions for macOS Upgrade",
 "class": "topic-link section"
 },
 {
@@ -6396,6 +6413,11 @@ var toc = [{
 {
 "url": "dynamic-steering.html",
 "text": "Dynamic Steering",
+"class": "topic-link section"
+},
+{
+"url": "downloading-steering-configurations.html",
+"text": "Downloading Steering Configurations",
 "class": "topic-link section"
 }]
 },
