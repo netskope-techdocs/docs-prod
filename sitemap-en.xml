@@ -1062,11 +1062,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes.html</loc>
-    <lastmod>2023-01-06</lastmod>
+    <lastmod>2023-02-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes---february--2023.html</loc>
+    <lastmod>2023-01-31</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-february-23.html</loc>
+    <lastmod>2023-01-31</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-february-23.html</loc>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes---january--2023.html</loc>
-    <lastmod>2023-01-06</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements---january.html</loc>
@@ -3302,7 +3314,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-multi-geo-support.html</loc>
-    <lastmod>2022-07-05</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/support-microsoft-azure-rms-encryption.html</loc>
@@ -3390,15 +3402,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-onedrive-for-business-audit-events.html</loc>
-    <lastmod>2020-04-04</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-outlook.html</loc>
-    <lastmod>2021-11-08</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-outlook-for-api-data-protection.html</loc>
-    <lastmod>2022-02-07</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/azure-web-app-permissions-for-microsoft-office-365-outlook.html</loc>
@@ -3494,7 +3506,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-netskope-to-access-your-office-365-sharepoint-sites-app.html</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/delete-or-downgrade-the-global-administrator-account-326337.html</loc>
@@ -3522,7 +3534,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-multi-geo-support-326342.html</loc>
-    <lastmod>2022-07-05</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-domain-limitations-326343.html</loc>
@@ -3594,7 +3606,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-office-365-sharepoint-sites-audit-events.html</loc>
-    <lastmod>2020-04-04</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-microsoft-office-365-teams.html</loc>
@@ -3730,7 +3742,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-servicenow-for-api-data-protection.html</loc>
-    <lastmod>2023-01-11</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118935.html</loc>
@@ -4390,7 +4402,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/traffic-steering.html</loc>
-    <lastmod>2023-01-23</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client.html</loc>
@@ -4673,12 +4685,16 @@
     <lastmod>2023-01-23</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/adding-steered-items.html</loc>
+    <lastmod>2023-01-31</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/exceptions-352649.html</loc>
     <lastmod>2023-01-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/adding-steering-exceptions-for-macos-upgrade.html</loc>
-    <lastmod>2023-01-23</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/managing-error-settings.html</loc>
@@ -4694,7 +4710,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/downloading-steering-configurations.html</loc>
-    <lastmod>2023-01-27</lastmod>
+    <lastmod>2023-01-31</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/borderless-wan.html</loc>
@@ -6498,7 +6514,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/group-custom-dimension.html</loc>
-    <lastmod>2022-03-31</lastmod>
+    <lastmod>2023-02-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-data-retention.html</loc>
@@ -6982,7 +6998,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-of-netskope-on-premises-appliance.html</loc>
-    <lastmod>2022-10-19</lastmod>
+    <lastmod>2023-01-30</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/physical-setup.html</loc>

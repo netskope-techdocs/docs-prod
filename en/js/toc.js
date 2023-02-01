@@ -1465,6 +1465,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-iot-security-release-notes---february--2023.html",
+"text": "Netskope IoT Security Release Notes - February, 2023",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-february-23.html",
+"text": "New Features and Enhancements in February'23",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-february-23.html",
+"text": "Fixed Issues in February'23",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-iot-security-release-notes---january--2023.html",
 "text": "Netskope IoT Security Release Notes - January, 2023",
 "class": "topic-link section reused-publication"
@@ -6388,6 +6405,11 @@ var toc = [{
 {
 "url": "creating-a-steering-configuration.html",
 "text": "Creating a Steering Configuration",
+"class": "topic-link section"
+},
+{
+"url": "adding-steered-items.html",
+"text": "Adding Steered Items",
 "class": "topic-link section"
 },
 {
