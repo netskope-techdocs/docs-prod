@@ -10187,16 +10187,16 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "upgrading-va-to-93-0-0.html",
-"text": "Upgrading VA to 93.0.0",
-"class": "topic-link section"
-},
-{
-"url": "upgrading-va-from-versions-older-than-71-x.html",
-"text": " Upgrading VA from versions older than 71.x",
-"class": "topic-link section"
-},
+  {
+  "url": "upgrading-va-to-99-x.html",
+  "text": "Upgrading VA to 99.x",
+  "class": "topic-link section"
+  },
+  {
+  "url": "upgrading-va-from-versions-older-than-93-x.html",
+  "text": " Upgrading VA from versions older than 93.x",
+  "class": "topic-link section"
+  },
 {
 "url": "upgrade-the-additional-appliance-packages.html",
 "text": "Upgrade the Additional Appliance Packages",
@@ -10209,8 +10209,8 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-a-93-0-0.html",
-"text": "Migrate the Virtual Appliance to a 93.0.0",
+"url": "migrate-the-virtual-appliance-to-a-99-x.html",
+"text": "Migrate the Virtual Appliance to a 99.x",
 "class": "topic-link section"
 },
 {
