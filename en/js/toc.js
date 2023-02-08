@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-note-version-101-0-0.html",
+"text": "Netskope Release Note Version 101.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-101-0-0.html",
+"text": "New Features And Enhancements In Release 101.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-101-0-0.html",
+"text": "Fixed Issues In Release 101.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-101-0-0.html",
+"text": "Known Issues In Release 101.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-100-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 100.1.0",
 "class": "topic-link section reused-publication"
@@ -2711,14 +2733,14 @@ var toc = [{
 }]
 },
 {
-"url": "client-traffic-exploit-prevention.html",
-"text": "Client Traffic Exploit Prevention",
+"url": "intrusion-prevention-system.html",
+"text": "Intrusion Prevention System",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "about-ctep-settings.html",
-"text": "About CTEP Settings",
+"url": "about-ips-settings.html",
+"text": "About IPS Settings",
 "class": "topic-link section"
 },
 {
@@ -3698,23 +3720,23 @@ var toc = [{
 },
 {
 "url": "getting-started-with-netskope-iot-security.html",
-"text": "Getting started with Netskope IoT Security",
+"text": "Getting Started with Netskope IoT Security",
 "class": "topic-link section"
 ,
 "children": [
 {
 "url": "deploy-netskope-iot-security-virtual-appliance-on-vmware-vsphere.html",
-"text": "Deploy Netskope IoT Security virtual appliance on VMware vSphere",
+"text": "Deploy Netskope IoT Security Virtual Appliance on VMware vSphere",
 "class": "topic-link section"
 },
 {
 "url": "deploy-netskope-iot-security-virtual-appliance-on-vmware-esxi.html",
-"text": "Deploy Netskope IoT Security virtual appliance on VMware ESXi",
+"text": "Deploy Netskope IoT Security Virtual Appliance on VMware ESXi",
 "class": "topic-link section"
 },
 {
 "url": "deploy-netskope-iot-security-physical-appliance.html",
-"text": "Deploy Netskope IoT Security physical appliance",
+"text": "Deploy Netskope IoT Security Physical Appliance",
 "class": "topic-link section"
 }]
 },
@@ -3740,14 +3762,44 @@ var toc = [{
 ,
 "children": [
 {
+"url": "openvas-scans.html",
+"text": "OpenVAS Scans",
+"class": "topic-link section"
+},
+{
+"url": "netskope-assets.html",
+"text": "Netskope Assets",
+"class": "topic-link section"
+},
+{
+"url": "sites-and-regions.html",
+"text": "Sites and Regions",
+"class": "topic-link section"
+},
+{
+"url": "tags-and-groups.html",
+"text": "Tags and Groups",
+"class": "topic-link section"
+},
+{
+"url": "integrations.html",
+"text": "Integrations",
+"class": "topic-link section"
+},
+{
+"url": "configurations.html",
+"text": "Configurations",
+"class": "topic-link section"
+},
+{
 "url": "device-attribute-reclassification.html",
-"text": "Device attribute reclassification",
+"text": "Device Attribute Reclassification",
 "class": "topic-link section"
 }]
 },
 {
 "url": "netskope-asset-inventory.html",
-"text": "Netskope asset inventory",
+"text": "Netskope Asset Inventory",
 "class": "topic-link section"
 }]
 },
@@ -4754,6 +4806,11 @@ var toc = [{
 {
 "url": "deleted-suspended-user-behavior-in-microsoft-office-365-outlook.html",
 "text": "Deleted\/Suspended User Behavior in Microsoft Office 365 Outlook",
+"class": "topic-link section"
+},
+{
+"url": "microsoft-office-365-outlook-audit-events.html",
+"text": "Microsoft Office 365 Outlook Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -6006,6 +6063,11 @@ var toc = [{
 "url": "add-users.html",
 "text": "Add Users",
 "class": "topic-link section"
+},
+{
+"url": "cloud-firewall-applications.html",
+"text": "Cloud Firewall Applications",
+"class": "topic-link section"
 }]
 },
 {
@@ -6433,8 +6495,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dynamic-steering.html",
-"text": "Dynamic Steering",
+"url": "enabling-dynamic-steering.html",
+"text": "Enabling Dynamic Steering",
 "class": "topic-link section"
 },
 {
@@ -6745,10 +6807,15 @@ var toc = [{
 "url": "locating-your-netskope-newedge-data-center.html",
 "text": "Locating Your Netskope NewEdge Data Center",
 "class": "topic-link section"
+},
+{
+"url": "security-cloud-platform-configuration.html",
+"text": "Security Cloud Platform Configuration",
+"class": "topic-link section"
 }]
 },
 {
-"url": "integrations.html",
+"url": "integrations-317805.html",
 "text": "Integrations",
 "class": "topic-link section top-nav-link"
 ,
@@ -6820,7 +6887,7 @@ var toc = [{
 {
 "url": "install-netskope-cloud-exchange-with-aws-ecs-fargate.html",
 "text": "Install Netskope Cloud Exchange with AWS ECS Fargate",
-"class": "topic-link section reused-publication"
+"class": "topic-link section"
 },
 {
 "url": "install-netskope-cloud-exchange-on-a-red-hat-enterprise-8-x-linux-host.html",
@@ -8001,6 +8068,11 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-reverse-proxy-for-servicenow-with-azure-ad-idp.html",
+"text": "Netskope Reverse Proxy for ServiceNow with Azure AD IdP",
+"class": "topic-link section"
+},
+{
 "url": "forward-proxy-with-adfs.html",
 "text": "Forward Proxy with ADFS",
 "class": "topic-link section reused-publication"
@@ -8909,6 +8981,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "table-chart-options.html",
+"text": "Table Chart Options",
+"class": "topic-link section"
+},
+{
 "url": "adding-dashboard-filters.html",
 "text": "Adding Dashboard Filters",
 "class": "topic-link section"
@@ -8936,6 +9013,16 @@ var toc = [{
 {
 "url": "using-cross-filters-with-standard-dashboard-filters.html",
 "text": "Using Cross-filters with Standard Dashboard Filters",
+"class": "topic-link section"
+},
+{
+"url": "forecasting-in-visualizations.html",
+"text": "Forecasting in Visualizations",
+"class": "topic-link section"
+},
+{
+"url": "using-google-maps-in-visualizations.html",
+"text": "Using Google Maps in Visualizations",
 "class": "topic-link section"
 }]
 }]
@@ -10187,16 +10274,16 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-  {
-  "url": "upgrading-va-to-99-x.html",
-  "text": "Upgrading VA to 99.x",
-  "class": "topic-link section"
-  },
-  {
-  "url": "upgrading-va-from-versions-older-than-93-x.html",
-  "text": " Upgrading VA from versions older than 93.x",
-  "class": "topic-link section"
-  },
+{
+"url": "upgrading-va-to-99-x.html",
+"text": "Upgrading VA to 99.x",
+"class": "topic-link section"
+},
+{
+"url": "upgrading-va-from-versions-older-than-93-x.html",
+"text": "Upgrading VA from versions older than 93.x",
+"class": "topic-link section"
+},
 {
 "url": "upgrade-the-additional-appliance-packages.html",
 "text": "Upgrade the Additional Appliance Packages",
