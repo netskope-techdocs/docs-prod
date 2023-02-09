@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-101-0-0.html</loc>
-    <lastmod>2023-02-08</lastmod>
+    <lastmod>2023-02-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-101-0-0.html</loc>
@@ -566,7 +566,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2023-01-17</lastmod>
+    <lastmod>2023-02-08</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-1-298.html</loc>
+    <lastmod>2023-02-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-0-283.html</loc>
@@ -1974,7 +1978,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-templates.html</loc>
-    <lastmod>2023-01-17</lastmod>
+    <lastmod>2023-02-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-category-definitions.html</loc>
@@ -2070,7 +2074,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
@@ -3910,7 +3914,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-slack-for-team-for-api-data-protection.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-an-api-data-protection-policy-118937.html</loc>
@@ -4346,7 +4350,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-workday-instance-for-next-generation-saas-security-posture-management.html</loc>
-    <lastmod>2022-11-18</lastmod>
+    <lastmod>2023-02-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-for-zoom.html</loc>
