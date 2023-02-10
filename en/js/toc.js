@@ -6068,11 +6068,6 @@ var toc = [{
 "url": "add-users.html",
 "text": "Add Users",
 "class": "topic-link section"
-},
-{
-"url": "cloud-firewall-applications.html",
-"text": "Cloud Firewall Applications",
-"class": "topic-link section"
 }]
 },
 {

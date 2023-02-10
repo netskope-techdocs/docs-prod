@@ -4398,7 +4398,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-firewall.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-02-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-a-gre-tunnel.html</loc>
@@ -4431,10 +4431,6 @@
   <url>
     <loc>https://docs.netskope.com/en/add-users.html</loc>
     <lastmod>2021-05-18</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/cloud-firewall-applications.html</loc>
-    <lastmod>2023-02-07</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ssl-decryption-303280.html</loc>
@@ -4946,7 +4942,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/certificates.html</loc>
-    <lastmod>2021-09-29</lastmod>
+    <lastmod>2023-02-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/multi-factor-authentication.html</loc>
