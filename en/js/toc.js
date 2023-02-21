@@ -937,6 +937,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-exchange-release-notes-version-4-1-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 4.1.0",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "netskope-cloud-exchange-release-notes-version-4-0-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 4.0.0",
 "class": "topic-link section reused-publication"
@@ -3348,6 +3353,11 @@ var toc = [{
 "url": "what-triggers-a-scan-and-billing-of-aws-s3-.html",
 "text": "What Triggers a Scan and Billing of AWS S3?",
 "class": "topic-link section"
+},
+{
+"url": "troubleshooting-aws-storage-scan-instance-setup-error.html",
+"text": "Troubleshooting AWS Storage Scan Instance Setup Error",
+"class": "topic-link section"
 }]
 },
 {
@@ -3799,6 +3809,11 @@ var toc = [{
 {
 "url": "device-attribute-reclassification.html",
 "text": "Device Attribute Reclassification",
+"class": "topic-link section"
+},
+{
+"url": "reporting.html",
+"text": "Reporting",
 "class": "topic-link section"
 }]
 },
@@ -6475,8 +6490,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "exceptions-352649.html",
-"text": "Exceptions",
+"url": "adding-exceptions.html",
+"text": "Adding Exceptions",
 "class": "topic-link section"
 },
 {
@@ -6869,6 +6884,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "migrating-from-beta-4-x-to-the-latest-version.html",
+"text": "Migrating from Beta 4.x to the Latest Version",
+"class": "topic-link section"
+},
 {
 "url": "migrating-from-ce-3-1-or-newer-to-the-latest-version-of-cloud-exchange.html",
 "text": "Migrating from CE 3.1 or newer to the Latest Version of Cloud Exchange",
@@ -7488,33 +7508,33 @@ var toc = [{
 ,
 "children": [
 {
-"url": "azure-ad-plugin-for-risk-exchange.html",
-"text": "Azure AD Plugin for Risk Exchange",
+"url": "azure-ad-plugin-for-user-risk-exchange.html",
+"text": "Azure AD Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "beyondcorp-plugin-for-risk-exchange.html",
-"text": "BeyondCorp Plugin for Risk Exchange",
+"url": "beyondcorp-plugin-for-user-risk-exchange.html",
+"text": "BeyondCorp Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "crowdstrike-plugin-for-risk-exchange.html",
-"text": "Crowdstrike Plugin for Risk Exchange",
+"url": "crowdstrike-plugin-for-user-risk-exchange.html",
+"text": "Crowdstrike Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "okta-plugin-for-risk-exchange.html",
-"text": "Okta Plugin for Risk Exchange",
+"url": "okta-plugin-for-user-risk-exchange.html",
+"text": "Okta Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "mimecast-plugin-for-risk-exchange.html",
-"text": "Mimecast Plugin for Risk Exchange",
+"url": "mimecast-plugin-for-user-risk-exchange.html",
+"text": "Mimecast Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "security-advisor-plugin-for-risk-exchange.html",
-"text": "Security Advisor Plugin for Risk Exchange",
+"url": "security-advisor-plugin-for-user-risk-exchange.html",
+"text": "Security Advisor Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
 }]
 },
@@ -8842,6 +8862,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "app-instance-overview-dashboard.html",
+"text": "App Instance Overview Dashboard",
+"class": "topic-link section"
+},
 {
 "url": "industry-benchmarks-dashboard.html",
 "text": "Industry Benchmarks Dashboard",
