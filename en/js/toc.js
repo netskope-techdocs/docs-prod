@@ -16,6 +16,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-101-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 101.1.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-101-1-0.html",
+"text": "Fixed Issues In Hotfix Release 101.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-101-1-0.html",
+"text": "Known Issues In Hotfix Release 101.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-note-version-101-0-0.html",
 "text": "Netskope Release Note Version 101.0.0",
 "class": "topic-link section reused-publication"
@@ -794,6 +811,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "ips-threat-content-update-release-notes-101-0-0-306.html",
+"text": "IPS Threat Content Update Release Notes 101.0.0.306",
+"class": "topic-link section"
+},
 {
 "url": "ctep-ips-threat-content-update-release-notes-100-0-1-298.html",
 "text": "CTEP\/IPS Threat Content Update Release Notes 100.0.1.298",
@@ -3120,16 +3142,6 @@ var toc = [{
 "text": "Configure Certificates",
 "class": "topic-link section"
 }]
-},
-{
-"url": "default-steering-configuration.html",
-"text": "Default Steering Configuration",
-"class": "topic-link section"
-},
-{
-"url": "exceptions.html",
-"text": "Exceptions",
-"class": "topic-link section"
 }]
 },
 {
@@ -5436,8 +5448,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-workplace-by-facebook-for-api-data-protection.html",
-"text": "Configure Workplace by Facebook for API Data Protection",
+"url": "configure-workplace-from-meta-for-api-data-protection.html",
+"text": "Configure Workplace from Meta for API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -5494,39 +5506,39 @@ var toc = [{
 ,
 "children": [
 {
-"url": "workplace-by-facebook-summary-page.html",
-"text": "Workplace by Facebook Summary Page",
+"url": "-workplace-from-meta--summary-page.html",
+"text": "\"Workplace from Meta\" Summary Page",
 "class": "topic-link section"
 },
 {
-"url": "workplace-by-facebook-posts-with-violations-page.html",
-"text": "Workplace by Facebook Posts with Violations Page",
+"url": "-workplace-from-meta--posts-with-violations-page.html",
+"text": "\"Workplace from Meta\" Posts with Violations Page",
 "class": "topic-link section"
 },
 {
-"url": "workplace-by-facebook-messages-with-violations-page.html",
-"text": "Workplace by Facebook Messages with Violations Page",
+"url": "-workplace-from-meta--messages-with-violations-page.html",
+"text": "\"Workplace from Meta\" Messages with Violations Page",
 "class": "topic-link section"
 },
 {
-"url": "workplace-by-facebook-users-page.html",
-"text": "Workplace by Facebook Users Page",
+"url": "-workplace-from-meta--users-page.html",
+"text": "\"Workplace from Meta\" Users Page",
 "class": "topic-link section"
 },
 {
-"url": "workplace-by-facebook-groups-page.html",
-"text": "Workplace by Facebook Groups Page",
+"url": "-workplace-from-meta--groups-page.html",
+"text": "\"Workplace from Meta\" Groups Page",
 "class": "topic-link section"
 }]
 },
 {
-"url": "deactivated-user-behavior-in-workplace-by-facebook.html",
-"text": "Deactivated User Behavior in Workplace by Facebook",
+"url": "deactivated-user-behavior-in-workplace-from-meta.html",
+"text": "Deactivated User Behavior in Workplace from Meta",
 "class": "topic-link section"
 },
 {
-"url": "workplace-by-facebook-audit-events.html",
-"text": "Workplace by Facebook Audit Events",
+"url": "workplace-from-meta-audit-events.html",
+"text": "Workplace from Meta Audit Events",
 "class": "topic-link section"
 }]
 },
@@ -8862,11 +8874,6 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "app-instance-overview-dashboard.html",
-"text": "App Instance Overview Dashboard",
-"class": "topic-link section"
-},
 {
 "url": "industry-benchmarks-dashboard.html",
 "text": "Industry Benchmarks Dashboard",
