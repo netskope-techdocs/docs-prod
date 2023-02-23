@@ -1552,6 +1552,25 @@ var toc = [{
 "class": "topic-link section"
 }]
 }]
+},
+{
+"url": "netskope-digital-experience-management-release-notes.html",
+"text": "Netskope Digital Experience Management Release Notes",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "netskope-digital-experience-management-release-notes-for-february-2023.html",
+"text": "Netskope Digital Experience Management Release Notes for February 2023",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "netskope-digital-experience-management-release-notes-for-february-20--2023.html",
+"text": "Netskope Digital Experience Management Release Notes for February 20, 2023",
+"class": "topic-link section"
+}]
+}]
 }]
 },
 {
@@ -6492,6 +6511,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "editing-the-default-steering-configuration.html",
+"text": "Editing the Default Steering Configuration",
+"class": "topic-link section"
+},
+{
 "url": "creating-a-steering-configuration.html",
 "text": "Creating a Steering Configuration",
 "class": "topic-link section"
@@ -7592,6 +7616,23 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "configure-3rd-party-application-risk-exchange-plugins.html",
+"text": "Configure 3rd-party Application Risk Exchange Plugins",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "bitsight-thirdpartytrust-plugin-for-application-risk-exchange.html",
+"text": "BitSight ThirdPartyTrust Plugin for Application Risk Exchange",
+"class": "topic-link section reused-publication"
+},
+{
+"url": "servicenow-plugin-for-application-risk-exchange.html",
+"text": "ServiceNow Plugin for Application Risk Exchange",
+"class": "topic-link section reused-publication"
+}]
+},
 {
 "url": "view-application-risk-exchange-configured-plugins.html",
 "text": "View Application Risk Exchange Configured Plugins",
