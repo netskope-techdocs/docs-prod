@@ -1519,6 +1519,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-iot-security-release-notes---march--2023.html",
+"text": "Netskope IoT Security Release Notes - March, 2023",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-march-23.html",
+"text": "Fixed Issues in March'23",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-in-march-23.html",
+"text": "New Features And Enhancements in March'23",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-iot-security-release-notes---february--2023.html",
 "text": "Netskope IoT Security Release Notes - February, 2023",
 "class": "topic-link section reused-publication"
@@ -1542,13 +1559,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "new-features-and-enhancements---january.html",
-"text": "New Features And Enhancements - January",
+"url": "new-features-and-enhancements-in-january-23.html",
+"text": "New Features And Enhancements in January'23",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues---january.html",
-"text": "Fixed Issues - January",
+"url": "fixed-issues-in-january-23.html",
+"text": "Fixed Issues in January'23",
 "class": "topic-link section"
 }]
 }]
@@ -7564,6 +7581,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "proofpoint-plugin-for-user-risk-exchange.html",
+"text": "Proofpoint Plugin for User Risk Exchange",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "mimecast-plugin-for-user-risk-exchange.html",
 "text": "Mimecast Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
@@ -10111,6 +10133,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "create-a-dlp-exact-match-hash-from-a-virtual-appliance.html",
+"text": "Create a DLP Exact Match Hash from a Virtual Appliance",
+"class": "topic-link section"
+},
+{
 "url": "configure-log-uploads-355003.html",
 "text": "Configure Log Uploads",
 "class": "topic-link section"
@@ -10457,11 +10484,6 @@ var toc = [{
 {
 "url": "configure-tcp-connection-parameters-212662.html",
 "text": "Configure TCP Connection Parameters",
-"class": "topic-link section"
-},
-{
-"url": "create-a-dlp-exact-match-hash-from-secure-forwarder.html",
-"text": "Create a DLP Exact Match Hash from Secure Forwarder",
 "class": "topic-link section"
 },
 {
