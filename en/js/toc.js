@@ -806,8 +806,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html",
-"text": "Netskope Client Traffic Exploit Prevention System Threat Content Release Notes",
+"url": "netskope-intrusion-prevention-system-threat-content-release-notes.html",
+"text": "Netskope Intrusion Prevention System Threat Content Release Notes",
 "class": "topic-link section reused-publication"
 ,
 "children": [
@@ -2320,6 +2320,11 @@ var toc = [{
 {
 "url": "cloud-app-suite-membership.html",
 "text": "Cloud App Suite Membership",
+"class": "topic-link section"
+},
+{
+"url": "api-enriched-real-time-controls-for-slack-enterprise.html",
+"text": "API-enriched Real-time Controls for Slack Enterprise",
 "class": "topic-link section"
 }]
 },
@@ -7033,11 +7038,6 @@ var toc = [{
 "url": "explore-the-dashboards.html",
 "text": "Explore the Dashboards",
 "class": "topic-link section"
-},
-{
-"url": "cloud-exchange-setup-videos.html",
-"text": "Cloud Exchange Setup Videos",
-"class": "topic-link section"
 }]
 },
 {
@@ -7293,6 +7293,28 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "aws-guardduty-plugin-for-threat-exchange.html",
+"text": "AWS GuardDuty Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "get-your-aws-guardduty-credentials.html",
+"text": "Get your AWS GuardDuty Credentials",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-aws-guardduty-plugin-for-threat-exchange.html",
+"text": "Configure the AWS GuardDuty Plugin for Threat Exchange",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-aws-guardduty-plugin.html",
+"text": "Validate the AWS GuardDuty Plugin",
+"class": "topic-link section"
+}]
+},
 {
 "url": "carbon-black-plugin-for-threat-exchange.html",
 "text": "Carbon Black Plugin for Threat Exchange",
@@ -8455,8 +8477,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "prerequisites.html",
-"text": "Prerequisites",
+"url": "jumpcloud-ldap-prerequisites.html",
+"text": "JumpCloud LDAP Prerequisites",
 "class": "topic-link section"
 },
 {

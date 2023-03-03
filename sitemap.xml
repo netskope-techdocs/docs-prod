@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-02-28</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-101-0-0.html</loc>
-    <lastmod>2023-02-27</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-101-0-0.html</loc>
@@ -577,8 +577,8 @@
     <lastmod>2022-03-07</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-client-traffic-exploit-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2023-02-21</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-intrusion-prevention-system-threat-content-release-notes.html</loc>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-101-0-0-306.html</loc>
@@ -1606,7 +1606,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/http-header-policies.html</loc>
-    <lastmod>2022-02-24</lastmod>
+    <lastmod>2023-03-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/filtering-traffic-to-high-risk-countries.html</loc>
@@ -1662,7 +1662,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection.html</loc>
-    <lastmod>2022-10-27</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/best-practices-for-real-time-protection-policies.html</loc>
@@ -1691,6 +1691,10 @@
   <url>
     <loc>https://docs.netskope.com/en/cloud-app-suite-membership.html</loc>
     <lastmod>2022-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/api-enriched-real-time-controls-for-slack-enterprise.html</loc>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/real-time-protection-for-public-cloud.html</loc>
@@ -1734,7 +1738,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/add-a-policy-for-ssl-decryption.html</loc>
-    <lastmod>2022-09-22</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/app-suite-details.html</loc>
@@ -1930,7 +1934,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
-    <lastmod>2022-08-18</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-threat-protection-86194.html</loc>
@@ -2022,7 +2026,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-templates.html</loc>
-    <lastmod>2023-02-09</lastmod>
+    <lastmod>2023-03-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-category-definitions.html</loc>
@@ -2034,7 +2038,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-supported-browsers.html</loc>
-    <lastmod>2022-11-30</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/isolation-events-in-skope-it.html</loc>
@@ -2122,7 +2126,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/publisher-management.html</loc>
@@ -2162,7 +2166,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-the-netskope-client-for-netskope-private-access.html</loc>
-    <lastmod>2023-02-20</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-the-client-for-private-access.html</loc>
@@ -2174,7 +2178,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/allow-users-to-disable-private-apps-access-on-the-netskope-client.html</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-client-prelogon-connectivity.html</loc>
@@ -2266,7 +2270,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-netskope-secure-web-gateway.html</loc>
-    <lastmod>2022-11-17</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/choose-a-traffic-steering-method.html</loc>
@@ -4134,7 +4138,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-citrix-sharefile.html</loc>
-    <lastmod>2023-02-27</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-citrix-sharefile-for-the-next-generation-api-data-protection.html</loc>
@@ -4142,7 +4146,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-github.html</loc>
-    <lastmod>2022-12-06</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-github-for-the-next-generation-api-data-protection.html</loc>
@@ -4178,7 +4182,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-yammer.html</loc>
-    <lastmod>2022-10-17</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-365-yammer-for-the-next-generation-api-data-protection.html</loc>
@@ -4210,7 +4214,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-zoom.html</loc>
-    <lastmod>2022-09-30</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-zoom-for-the-next-generation-api-data-protection.html</loc>
@@ -4574,7 +4578,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploying-client-on-windows-using-vmware-workspace-one.html</loc>
-    <lastmod>2022-10-06</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploying-client-on-macos-using-vmware-workspace-one.html</loc>
@@ -4770,7 +4774,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/steering-configuration.html</loc>
-    <lastmod>2023-02-23</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/editing-the-default-steering-configuration.html</loc>
@@ -4778,7 +4782,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-a-steering-configuration.html</loc>
-    <lastmod>2023-02-23</lastmod>
+    <lastmod>2023-03-02</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/adding-steered-items.html</loc>
@@ -5046,7 +5050,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2023-02-28</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -5070,7 +5074,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
-    <lastmod>2023-02-28</lastmod>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-hardening.html</loc>
@@ -5155,10 +5159,6 @@
   <url>
     <loc>https://docs.netskope.com/en/explore-the-dashboards.html</loc>
     <lastmod>2023-02-13</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/cloud-exchange-setup-videos.html</loc>
-    <lastmod>2023-02-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-console.html</loc>
@@ -5349,6 +5349,22 @@
     <lastmod>2023-01-19</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/aws-guardduty-plugin-for-threat-exchange.html</loc>
+    <lastmod>2023-03-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/get-your-aws-guardduty-credentials.html</loc>
+    <lastmod>2023-03-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/configure-the-aws-guardduty-plugin-for-threat-exchange.html</loc>
+    <lastmod>2023-03-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/validate-the-aws-guardduty-plugin.html</loc>
+    <lastmod>2023-03-01</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/carbon-black-plugin-for-threat-exchange.html</loc>
     <lastmod>2022-09-23</lastmod>
   </url>
@@ -5370,7 +5386,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/github-plugin-for-threat-exchange.html</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2023-03-01</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/microsoft-defender-for-cloud-apps-plugin-for-threat-exchange.html</loc>
@@ -6213,8 +6229,8 @@
     <lastmod>2021-09-30</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/prerequisites.html</loc>
-    <lastmod>2020-10-26</lastmod>
+    <loc>https://docs.netskope.com/en/jumpcloud-ldap-prerequisites.html</loc>
+    <lastmod>2023-03-03</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-ldap-binding-user-in-jumpcloud.html</loc>
