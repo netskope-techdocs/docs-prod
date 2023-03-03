@@ -67,37 +67,6 @@
     <div class="accordion">
         <div class="title">
             <i class="dropdown icon"></i>
-            <a tableName="Repositories">Repositories</a>
-        </div>
-        <div class="content">
-        
-
-
-
-
-    
-
-
-
-
-
-
-<a tableName="Repository" class="links" >Repository</a>
-
-
-
-
-
-
-
-        </div>
-    </div>
-    
-
-    
-    <div class="accordion">
-        <div class="title">
-            <i class="dropdown icon"></i>
             <a tableName="Apps">Apps</a>
         </div>
         <div class="content">
@@ -114,6 +83,37 @@
 
 
 <a tableName="App" class="links" >App</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Repositories">Repositories</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="Repository" class="links" >Repository</a>
 
 
 
@@ -199,6 +199,54 @@
                 
                 <tbody>
                     <tr class="top aligned">
+                        <td>updated_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Updated time of the App in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>repository_selection</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository access selection</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>read_permissions</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Read permissions granted upon app installation</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>write_permissions</td>
+                        <td>list&lt;string&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Write permissions granted upon app installation</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
                         <td>app_id</td>
                         <td>number</td>
                         <td><span class="refLinks" refName=""></span></td>
@@ -263,54 +311,6 @@
                         <td>string</td>
                         <td><span class="refLinks" refName=""></span></td>
                         <td>App URL-friendly name</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>updated_at</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Updated time of the App in Unix Timestamp format</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>repository_selection</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Repository access selection</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>read_permissions</td>
-                        <td>list&lt;string&gt;</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Read permissions granted upon app installation</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>write_permissions</td>
-                        <td>list&lt;string&gt;</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Write permissions granted upon app installation</td>
                     </tr>
                     
 
@@ -382,6 +382,30 @@
                 
                 <tbody>
                     <tr class="top aligned">
+                        <td>two_factor_requirement_enabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization requires 2FA for all users</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>has_inactive_admin_users</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether the organization has inactive admin users</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
                         <td>has_inactive_users</td>
                         <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
@@ -440,30 +464,6 @@
 
                 </tbody>
                 
-                <tbody>
-                    <tr class="top aligned">
-                        <td>two_factor_requirement_enabled</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Whether the organization requires 2FA for all users</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>has_inactive_admin_users</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Whether the organization has inactive admin users</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
                 
                 
             </table>
@@ -499,10 +499,10 @@
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>pushed_at</td>
-                        <td>number</td>
+                        <td>full_name</td>
+                        <td>string</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>The last time a commit was pushed to a repository, in Unix Timestamp format</td>
+                        <td>Repository full name</td>
                     </tr>
                     
 
@@ -523,106 +523,10 @@
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>fork_count</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>The number of forks of this repository</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>branch_protection_rule_bypass_admin_user</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Whether any branch protection rule bypasses an admin user</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>is_security_policy_enabled</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Returns true if this repository has a security policy.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
                         <td>has_outside_collaborators</td>
                         <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
                         <td>Returns true if this repository has external collaborators.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>name</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Repository name</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>full_name</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Repository full name</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>created_at</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Repository&#39;s creation time in Unix Timestamp format</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>private</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Whether a repository is private or not</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>branch_protection_enabled_for_all_branches</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Whether branch protection is enabled for all branches</td>
                     </tr>
                     
 
@@ -654,6 +558,42 @@
 
 
 
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>requires_status_checks</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Are status checks required to update matching branches.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>dismisses_stale_reviews</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Will new commits pushed to matching branches dismiss pull request review approvals.</td>
+</tr>
+
+
+
+</tbody>
 
 <tbody>
 <tr class="top aligned">
@@ -721,42 +661,6 @@
     <td>boolean</td>
     <td><span class="refLinks" refName=""></span></td>
     <td>Are approving reviews required to update matching branches.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>requires_status_checks</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Are status checks required to update matching branches.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>dismisses_stale_reviews</td>
-    <td>boolean</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>Will new commits pushed to matching branches dismiss pull request review approvals.</td>
 </tr>
 
 
@@ -833,6 +737,102 @@
 </tbody>
 
 
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>is_security_policy_enabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Returns true if this repository has a security policy.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository name</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>created_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Repository&#39;s creation time in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>pushed_at</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The last time a commit was pushed to a repository, in Unix Timestamp format</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>private</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether a repository is private or not</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>branch_protection_enabled_for_all_branches</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether branch protection is enabled for all branches</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>branch_protection_rule_bypass_admin_user</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Whether any branch protection rule bypasses an admin user</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>fork_count</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The number of forks of this repository</td>
+                    </tr>
+                    
 
 
                 </tbody>
