@@ -1588,6 +1588,18 @@ var toc = [{
 "class": "topic-link section"
 }]
 }]
+},
+{
+"url": "netskope-advanced-analytics-release-notes.html",
+"text": "Netskope Advanced Analytics Release Notes",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-for-march-3--2023.html",
+"text": "New Features And Enhancements for March 3, 2023",
+"class": "topic-link section"
+}]
 }]
 },
 {
