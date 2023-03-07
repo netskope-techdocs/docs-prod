@@ -7050,6 +7050,11 @@ var toc = [{
 "url": "explore-the-dashboards.html",
 "text": "Explore the Dashboards",
 "class": "topic-link section"
+},
+{
+"url": "cloud-exchange-setup-videos.html",
+"text": "Cloud Exchange Setup Videos",
+"class": "topic-link section"
 }]
 },
 {
