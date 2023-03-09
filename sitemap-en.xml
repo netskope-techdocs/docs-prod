@@ -18,11 +18,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-platform-general-availability---next-generation-saas-security-posture-management.html</loc>
-    <lastmod>2023-03-07</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-102-0-0.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-102-0-0.html</loc>
@@ -2158,7 +2158,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/transaction-event-fields.html</loc>
-    <lastmod>2023-02-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
@@ -4234,7 +4234,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-okta-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2022-04-21</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-workday.html</loc>
@@ -4406,7 +4406,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-for-github.html</loc>
@@ -4562,7 +4562,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2023-02-20</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -5130,7 +5130,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-started-with-cloud-exchange.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-log-shipper.html</loc>
@@ -5198,7 +5198,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-tokens.html</loc>
-    <lastmod>2022-12-28</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sso-configuration.html</loc>
@@ -5214,7 +5214,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-tenants.html</loc>
-    <lastmod>2023-02-23</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/account-settings.html</loc>
@@ -5778,7 +5778,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec-and-gre.html</loc>
-    <lastmod>2022-12-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-ipsec-with-cisco-ios.html</loc>
@@ -5863,6 +5863,10 @@
   <url>
     <loc>https://docs.netskope.com/en/netskope-ipsec-with-cisco-firepower.html</loc>
     <lastmod>2022-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-ipsec-with-cisco-meraki-mx.html</loc>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html</loc>
