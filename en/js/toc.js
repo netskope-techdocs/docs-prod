@@ -16,6 +16,33 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-102-0-0.html",
+"text": "Netskope Release Notes Version 102.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-platform-general-availability---next-generation-saas-security-posture-management.html",
+"text": "New Platform General Availability - Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-in-release-102-0-0.html",
+"text": "New Features And Enhancements In Release 102.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-102-0-0.html",
+"text": "Fixed Issues In Release 102.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-102-0-0.html",
+"text": "Known Issues In Release 102.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-101-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 101.1.0",
 "class": "topic-link section reused-publication"
@@ -597,6 +624,28 @@ var toc = [{
 }]
 },
 {
+"url": "netskope-release-notes-version-89-0-0.html",
+"text": "Netskope Release Notes Version 89.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-89-0-0.html",
+"text": "New Features And Enhancements In Release 89.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-89-0-0.html",
+"text": "Fixed Issues In Release 89.0.0",
+"class": "topic-link section"
+},
+{
+"url": "appendix--fixed-issue-134322.html",
+"text": "Appendix: Fixed Issue 134322",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-hotfix-release-notes-version-88-1-0.html",
 "text": "Netskope Hotfix Release Notes Version 88.1.0",
 "class": "topic-link section reused-publication"
@@ -620,28 +669,6 @@ var toc = [{
 {
 "url": "fixed-issues-in-hotfix-release-88-1-0.html",
 "text": "Fixed Issues In Hotfix Release 88.1.0",
-"class": "topic-link section"
-}]
-},
-{
-"url": "netskope-release-notes-version-89-0-0.html",
-"text": "Netskope Release Notes Version 89.0.0",
-"class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "new-features-and-enhancements-in-release-89-0-0.html",
-"text": "New Features And Enhancements In Release 89.0.0",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-in-release-89-0-0.html",
-"text": "Fixed Issues In Release 89.0.0",
-"class": "topic-link section"
-},
-{
-"url": "appendix--fixed-issue-134322.html",
-"text": "Appendix: Fixed Issue 134322",
 "class": "topic-link section"
 }]
 }]
@@ -811,6 +838,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "ips-threat-content-update-release-notes-101-0-1-314.html",
+"text": "IPS Threat Content Update Release Notes 101.0.1.314",
+"class": "topic-link section"
+},
 {
 "url": "ips-threat-content-update-release-notes-101-0-0-306.html",
 "text": "IPS Threat Content Update Release Notes 101.0.0.306",
@@ -1525,13 +1557,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "fixed-issues-in-march-23.html",
-"text": "Fixed Issues in March'23",
+"url": "new-features-and-enhancements-in-march-23.html",
+"text": "New Features And Enhancements in March'23",
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-in-march-23.html",
-"text": "New Features And Enhancements in March'23",
+"url": "fixed-issues-in-march-23.html",
+"text": "Fixed Issues in March'23",
 "class": "topic-link section"
 }]
 },
@@ -2789,6 +2821,11 @@ var toc = [{
 {
 "url": "rbi-templates.html",
 "text": "RBI Templates",
+"class": "topic-link section"
+},
+{
+"url": "clipboard-in-rbi.html",
+"text": "Clipboard in RBI",
 "class": "topic-link section"
 },
 {
@@ -5608,8 +5645,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "next-generation-api-data-protection-policy-actions-per-cloud-app.html",
-"text": "Next Generation API Data Protection Policy Actions per Cloud App",
+"url": "next-generation-api-data-protection-feature-matrix-per-cloud-app.html",
+"text": "Next Generation API Data Protection Feature Matrix per Cloud App",
 "class": "topic-link section"
 },
 {
@@ -5676,26 +5713,26 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
-"text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
+"url": "next-generation-api-data-protection-for-microsoft-365-onedrive.html",
+"text": "Next Generation API Data Protection for Microsoft 365 OneDrive",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-onedrive-gcc-high-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 OneDrive GCC High for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-onedrive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 OneDrive for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html",
-"text": "Next Generation API Data Protection for Microsoft 365 SharePoint GCC High",
+"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint.html",
+"text": "Next Generation API Data Protection for Microsoft 365 SharePoint",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-sharepoint-gcc-high-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 SharePoint GCC High for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-sharepoint-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 SharePoint for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
@@ -5793,6 +5830,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "next-generation-api-data-protection-retroactive-scan.html",
+"text": "Next Generation API Data Protection Retroactive Scan",
+"class": "topic-link section"
+},
+{
 "url": "internal-domains.html",
 "text": "Internal Domains",
 "class": "topic-link section"
@@ -5802,6 +5844,11 @@ var toc = [{
 "text": "Activities Monitored by Netskope",
 "class": "topic-link section"
 }]
+},
+{
+"url": "next-generation-api-data-protection-inventory.html",
+"text": "Next Generation API Data Protection Inventory",
+"class": "topic-link section"
 },
 {
 "url": "next-generation-api-data-protection-skope-it-events.html",
@@ -6091,6 +6138,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "view-security-posture-overview.html",
+"text": "View Security Posture Overview",
+"class": "topic-link section"
+},
+{
 "url": "view-security-posture-compliance-380220.html",
 "text": "View Security Posture Compliance",
 "class": "topic-link section"
@@ -6253,6 +6305,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "netskope-client-for-ios.html",
+"text": "Netskope Client for iOS",
+"class": "topic-link section"
+},
+{
 "url": "netskope-client-for-linux.html",
 "text": "Netskope Client For Linux",
 "class": "topic-link section"
@@ -6279,23 +6336,23 @@ var toc = [{
 ,
 "children": [
 {
-"url": "deploying-client-on-windows-using-vmware-workspace-one.html",
-"text": "Deploying Client on Windows Using VMware Workspace ONE",
+"url": "deploy-client-on-windows-using-vmware-workspace-one.html",
+"text": "Deploy Client on Windows Using VMware Workspace ONE",
 "class": "topic-link section"
 },
 {
-"url": "deploying-client-on-macos-using-vmware-workspace-one.html",
-"text": "Deploying Client on macOS Using VMware Workspace ONE",
+"url": "deploy-client-on-macos-using-vmware-workspace-one.html",
+"text": "Deploy Client on macOS Using VMware Workspace ONE",
 "class": "topic-link section"
 },
 {
-"url": "deploying-client-on-ios-vpn-using-vmware-workspace-one.html",
-"text": "Deploying Client on iOS VPN Using VMware Workspace ONE",
+"url": "deploy-client-on-ios-using-vmware-workspace-one.html",
+"text": "Deploy Client on iOS Using VMware Workspace ONE",
 "class": "topic-link section"
 },
 {
-"url": "deploying-client-on-android-using-vmware-workspace-one.html",
-"text": "Deploying Client on Android Using VMware Workspace ONE",
+"url": "deploy-client-on-android-using-vmware-workspace-one.html",
+"text": "Deploy Client on Android Using VMware Workspace ONE",
 "class": "topic-link section"
 }]
 },
@@ -6334,6 +6391,16 @@ var toc = [{
 {
 "url": "jamf.html",
 "text": "JAMF",
+"class": "topic-link section"
+},
+{
+"url": "jamf-pro.html",
+"text": "Jamf Pro",
+"class": "topic-link section"
+},
+{
+"url": "jamf-school.html",
+"text": "Jamf School",
 "class": "topic-link section"
 },
 {
@@ -6518,6 +6585,16 @@ var toc = [{
 {
 "url": "netskope-client-hardening.html",
 "text": "Netskope Client Hardening",
+"class": "topic-link section"
+},
+{
+"url": "addressing-ssl-error-while-accessing-aws-services-via-the-aws-cli-with-the-netskope-client-enabled.html",
+"text": "Addressing SSL Error while Accessing AWS Services via the AWS CLI with the Netskope Client Enabled",
+"class": "topic-link section"
+},
+{
+"url": "ios-vpn-fail-open.html",
+"text": "iOS VPN Fail Open",
 "class": "topic-link section"
 }]
 },
@@ -6787,100 +6864,6 @@ var toc = [{
 "text": "Forward Proxy Authentication",
 "class": "topic-link section"
 }]
-}]
-},
-{
-"url": "device-management.html",
-"text": "Device Management",
-"class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "device-classification.html",
-"text": "Device Classification",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "device-classification-for-windows.html",
-"text": "Device Classification for Windows",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-mac.html",
-"text": "Device Classification for Mac",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-ios.html",
-"text": "Device Classification for iOS",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-android.html",
-"text": "Device Classification for Android",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-chrome.html",
-"text": "Device Classification for Chrome",
-"class": "topic-link section"
-},
-{
-"url": "device-classification-for-linux.html",
-"text": "Device Classification for Linux",
-"class": "topic-link section"
-}]
-},
-{
-"url": "certificates.html",
-"text": "Certificates",
-"class": "topic-link section"
-},
-{
-"url": "multi-factor-authentication.html",
-"text": "Multi-Factor Authentication",
-"class": "topic-link section"
-},
-{
-"url": "application-feature-support.html",
-"text": "Application Feature Support",
-"class": "topic-link section"
-},
-{
-"url": "header-insertion.html",
-"text": "Header Insertion",
-"class": "topic-link section"
-},
-{
-"url": "enforcement.html",
-"text": "Enforcement",
-"class": "topic-link section"
-},
-{
-"url": "cdpp-for-appliance.html",
-"text": "CDPP for Appliance",
-"class": "topic-link section"
-},
-{
-"url": "ios-vpn-fail-open.html",
-"text": "iOS VPN Fail Open",
-"class": "topic-link section"
-},
-{
-"url": "ip-allowlisting.html",
-"text": "IP Allowlisting",
-"class": "topic-link section"
-},
-{
-"url": "service-monitoring.html",
-"text": "Service Monitoring",
-"class": "topic-link section"
-},
-{
-"url": "addressing-ssl-error-while-accessing-aws-services-via-the-aws-cli-with-the-netskope-client-enabled.html",
-"text": "Addressing SSL Error while Accessing AWS Services via the AWS CLI with the Netskope Client Enabled",
-"class": "topic-link section"
 }]
 },
 {
@@ -8202,8 +8185,13 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-reverse-proxy-for-servicenow-with-azure-ad-idp.html",
-"text": "Netskope Reverse Proxy for ServiceNow with Azure AD IdP",
+"url": "reverse-proxy-for-servicenow-with-azure-ad-sso.html",
+"text": "Reverse Proxy for ServiceNow with Azure AD SSO",
+"class": "topic-link section"
+},
+{
+"url": "reverse-proxy-for-atlassian-with-azure-ad-sso.html",
+"text": "Reverse Proxy for Atlassian with Azure AD SSO",
 "class": "topic-link section"
 },
 {
@@ -8526,7 +8514,7 @@ var toc = [{
 }]
 },
 {
-"url": "device-classification-385371.html",
+"url": "device-classification.html",
 "text": "Device Classification",
 "class": "topic-link section reused-publication"
 ,
@@ -8615,7 +8603,8 @@ var toc = [{
 "url": "managing-administrators.html",
 "text": "Managing Administrators",
 "class": "topic-link section"
-},
+,
+"children": [
 {
 "url": "create-administrators.html",
 "text": "Create Administrators",
@@ -8632,44 +8621,15 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-single-sign-on-for-the-netskope-ui.html",
-"text": "Configure Single Sign On for the Netskope UI",
-"class": "topic-link section"
-},
-{
 "url": "create-a-netskope-support-admin.html",
 "text": "Create a Netskope Support Admin",
 "class": "topic-link section"
 },
 {
-"url": "privacy-notice.html",
-"text": "Privacy Notice",
+"url": "admin-account-domains.html",
+"text": "Admin Account Domains",
 "class": "topic-link section"
-},
-{
-"url": "set-log-in-attempts.html",
-"text": "Set Log In Attempts",
-"class": "topic-link section"
-},
-{
-"url": "set-idle-timeout.html",
-"text": "Set Idle Timeout",
-"class": "topic-link section"
-},
-{
-"url": "set-password-expiration.html",
-"text": "Set Password Expiration",
-"class": "topic-link section"
-},
-{
-"url": "disallow-concurrent-logins-by-an-admin.html",
-"text": "Disallow Concurrent Logins by an Admin",
-"class": "topic-link section"
-},
-{
-"url": "change-access-for-an-admin-account.html",
-"text": "Change Access for an Admin Account",
-"class": "topic-link section"
+}]
 },
 {
 "url": "managing-administrators-for-rbac-v2.html",
@@ -8704,17 +8664,17 @@ var toc = [{
 ,
 "children": [
 {
-"url": "set-log-in-attempts-353477.html",
+"url": "set-log-in-attempts.html",
 "text": "Set Log In Attempts",
 "class": "topic-link section"
 },
 {
-"url": "set-idle-timeout-353478.html",
+"url": "set-idle-timeout.html",
 "text": "Set Idle Timeout",
 "class": "topic-link section"
 },
 {
-"url": "set-password-expiration-353479.html",
+"url": "set-password-expiration.html",
 "text": "Set Password Expiration",
 "class": "topic-link section"
 }]
@@ -8724,6 +8684,113 @@ var toc = [{
 "text": "RBAC Best Practices",
 "class": "topic-link section"
 }]
+},
+{
+"url": "configure-single-sign-on-for-the-netskope-ui.html",
+"text": "Configure Single Sign On for the Netskope UI",
+"class": "topic-link section"
+},
+{
+"url": "enforcement.html",
+"text": "Enforcement",
+"class": "topic-link section"
+},
+{
+"url": "multi-factor-authentication.html",
+"text": "Multi-Factor Authentication",
+"class": "topic-link section"
+},
+{
+"url": "application-feature-support.html",
+"text": "Application Feature Support",
+"class": "topic-link section"
+},
+{
+"url": "header-insertion.html",
+"text": "Header Insertion",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-430812.html",
+"text": "Device Classification",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "device-classification-for-windows.html",
+"text": "Device Classification for Windows",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-mac.html",
+"text": "Device Classification for Mac",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-ios.html",
+"text": "Device Classification for iOS",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-android.html",
+"text": "Device Classification for Android",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-chrome.html",
+"text": "Device Classification for Chrome",
+"class": "topic-link section"
+},
+{
+"url": "device-classification-for-linux.html",
+"text": "Device Classification for Linux",
+"class": "topic-link section"
+}]
+},
+{
+"url": "certificates.html",
+"text": "Certificates",
+"class": "topic-link section"
+},
+{
+"url": "ip-allowlisting.html",
+"text": "IP Allowlisting",
+"class": "topic-link section"
+},
+{
+"url": "privacy-notice.html",
+"text": "Privacy Notice",
+"class": "topic-link section"
+},
+{
+"url": "service-monitoring.html",
+"text": "Service Monitoring",
+"class": "topic-link section"
+},
+{
+"url": "set-log-in-attempts-85093.html",
+"text": "Set Log In Attempts",
+"class": "topic-link section"
+},
+{
+"url": "set-idle-timeout-179029.html",
+"text": "Set Idle Timeout",
+"class": "topic-link section"
+},
+{
+"url": "set-password-expiration-179030.html",
+"text": "Set Password Expiration",
+"class": "topic-link section"
+},
+{
+"url": "disallow-concurrent-logins-by-an-admin.html",
+"text": "Disallow Concurrent Logins by an Admin",
+"class": "topic-link section"
+},
+{
+"url": "change-access-for-an-admin-account.html",
+"text": "Change Access for an Admin Account",
+"class": "topic-link section"
 }]
 },
 {
@@ -10093,6 +10160,11 @@ var toc = [{
 {
 "url": "remove-an-appliance.html",
 "text": "Remove an Appliance",
+"class": "topic-link section"
+},
+{
+"url": "cdpp-for-appliance.html",
+"text": "CDPP for Appliance",
 "class": "topic-link section"
 }]
 },
