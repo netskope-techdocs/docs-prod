@@ -3055,6 +3055,11 @@ var toc = [{
 "url": "use-client-re-authentication.html",
 "text": "Use Client Re-authentication",
 "class": "topic-link section"
+},
+{
+"url": "cgnat-address-support-for-local-dns-resolution.html",
+"text": "CGNAT Address Support for Local DNS Resolution",
+"class": "topic-link section"
 }]
 },
 {

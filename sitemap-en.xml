@@ -2162,7 +2162,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/publisher-management.html</loc>
@@ -2227,6 +2227,10 @@
   <url>
     <loc>https://docs.netskope.com/en/use-client-re-authentication.html</loc>
     <lastmod>2023-03-07</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/cgnat-address-support-for-local-dns-resolution.html</loc>
+    <lastmod>2023-03-08</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-troubleshooting.html</loc>
