@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-03-07</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-102-0-0.html</loc>
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-102-0-0.html</loc>
@@ -50,11 +50,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-101-0-0.html</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-101-0-0.html</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-release-101-0-0.html</loc>
@@ -490,7 +490,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes.html</loc>
-    <lastmod>2022-11-07</lastmod>
+    <lastmod>2023-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-101-0-0-7619.html</loc>
+    <lastmod>2023-03-10</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-publisher-release-101-0-0-7619.html</loc>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-99-0-0-7505.html</loc>
@@ -1962,11 +1970,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/endpoint-data-loss-prevention.html</loc>
-    <lastmod>2022-10-14</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-threat-protection-86194.html</loc>
@@ -5866,7 +5874,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-ipsec-with-cisco-meraki-mx.html</loc>
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-forward-proxy-over-ipsec-gre-with-azure-ad-saml-auth.html</loc>
