@@ -5730,26 +5730,26 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-onedrive.html",
-"text": "Next Generation API Data Protection for Microsoft 365 OneDrive",
+"url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
+"text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-onedrive-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 OneDrive for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-onedrive-gcc-high-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 OneDrive GCC High for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint.html",
-"text": "Next Generation API Data Protection for Microsoft 365 SharePoint",
+"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html",
+"text": "Next Generation API Data Protection for Microsoft 365 SharePoint GCC High",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-sharepoint-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 SharePoint for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-sharepoint-gcc-high-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 SharePoint GCC High for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
@@ -6395,8 +6395,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "deploy-vpn-profiles-in-ios-devices-using-intune.html",
-"text": "Deploy VPN Profiles In iOS Devices Using Intune",
+"url": "deploy-client-on-ios-using-intune.html",
+"text": "Deploy Client on iOS Using Intune",
 "class": "topic-link section"
 },
 {
