@@ -55,7 +55,7 @@
     <div class="accordion">
         <div class="title">
             <i class="dropdown icon"></i>
-            <a tableName="HumanResources">HumanResources</a>
+            <a tableName="Drive">Drive</a>
         </div>
         <div class="content">
         
@@ -65,18 +65,12 @@
 
     
 
-    
 
 
 
 
 
-
-<a tableName="UserBasedSecurityGroup" class="links" >UserBasedSecurityGroup</a>
-
-
-
-<a tableName="WorkdayAccount" class="links" >WorkdayAccount</a>
+<a tableName="TenantSetupGroupShareConfigurations" class="links" >TenantSetupGroupShareConfigurations</a>
 
 
 
@@ -101,31 +95,25 @@
 
 
     
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="IntegrationSystemUsers">IntegrationSystemUsers</a>
+        </div>
+        <div class="content">
+        
+
+
+
 
     
 
-    
-
-    
 
 
-
-
-
-
-<a tableName="IntegrationSystem" class="links" >IntegrationSystem</a>
 
 
 
 <a tableName="IntegrationSystemUser" class="links" >IntegrationSystemUser</a>
-
-
-
-<a tableName="LaunchedIntegrationEvent" class="links" >LaunchedIntegrationEvent</a>
-
-
-
-<a tableName="IntegrationEvent" class="links" >IntegrationEvent</a>
 
 
 
@@ -136,6 +124,153 @@
         </div>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="HumanResources">HumanResources</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="UserBasedSecurityGroupAssignments">UserBasedSecurityGroupAssignments</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="UserBasedSecurityGroupAssignment" class="links" >UserBasedSecurityGroupAssignment</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="Organizations">Organizations</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="Organization" class="links" >Organization</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+    <div class="accordion">
+        <div class="title">
+            <i class="dropdown icon"></i>
+            <a tableName="UserBasedSecurityGroups">UserBasedSecurityGroups</a>
+        </div>
+        <div class="content">
+        
+
+
+
+
+    
+
+
+
+
+
+
+<a tableName="UserBasedSecurityGroup" class="links" >UserBasedSecurityGroup</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<a tableName="WorkdayAccount" class="links" >WorkdayAccount</a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+
+
 
 
 
@@ -197,6 +332,21 @@
             
             
             
+            <table class="ui table ntsp_table Drive">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
             <table class="ui table ntsp_table HumanResources">
                 
                 <thead>
@@ -207,306 +357,6 @@
                         <th class="seven wide">DESCRIPTION</th>
                     </tr>
                 </thead>
-                
-            </table>
-            
-            
-            
-            <table class="ui table ntsp_table IntegrationEvent">
-                
-                <thead>
-                    <tr>
-                        <th class="three wide">ATTRIBUTE</th>
-                        <th class="three wide">TYPE</th>
-                        <th class="three wide">REFERS TO</th>
-                        <th class="seven wide">DESCRIPTION</th>
-                    </tr>
-                </thead>
-                
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_Event_Reference</td>
-                        <td>object</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Reference element representing a unique instance of Integration System. </td>
-                    </tr>
-                    
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>text</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>type</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Process_Description</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying the Summary of the Integration Event. </td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Initiated_DateTime</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>A date/time representing the moment the Integration Event was  Initiated (e.g. Launched). </td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_Response_Message</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying the most recent message associated with  the Integration Event. </td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Completed_DateTime</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>A date/time representing the moment that the Integration Event  completed. </td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_Event_Member_Reference</td>
-                        <td>object</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>A unique reference for each member of this Integration Event.  This can be a valid instance for any subclass of Integratable  (e.g. Employee, Organization, etc.). Note that the references  listed here will replace those already persisted on the  Integration Event. </td>
-                    </tr>
-                    
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>text</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>type</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Initiated_By_System_Account_Reference</td>
-                        <td>object</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>System Account Reference for the User that Initiated the  process. </td>
-                    </tr>
-                    
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>text</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>type</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-                </tbody>
-                
-                
-                
-            </table>
-            
-            
-            
-            <table class="ui table ntsp_table IntegrationSystem">
-                
-                <thead>
-                    <tr>
-                        <th class="three wide">ATTRIBUTE</th>
-                        <th class="three wide">TYPE</th>
-                        <th class="three wide">REFERS TO</th>
-                        <th class="seven wide">DESCRIPTION</th>
-                    </tr>
-                </thead>
-                
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_System_Reference</td>
-                        <td>object</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Unique identifier for an Integration System reference </td>
-                    </tr>
-                    
-
-
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>text</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
-</tr>
-
-
-
-</tbody>
-
-<tbody>
-<tr class="top aligned">
-    <td>
-        
-        <span class="indentation"></span>
-        
-        <span class="_TAB">&nbsp;</span>type</td>
-    <td>string</td>
-    <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
-</tr>
-
-
-
-</tbody>
-
-
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_System_ID</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Integration system ID.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Integration_System_Name</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Integration system name.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                
                 
             </table>
             
@@ -526,10 +376,10 @@
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>Session_Timeout_Minutes</td>
-                        <td>number</td>
+                        <td>Require_New_Password_At_Next_Sign_In</td>
+                        <td>boolean</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>The amount of time after which an unused session will expire. Session Timeout Minutes defaults to the value configured in the Password Rules unless set to a non-zero value.</td>
+                        <td>The user will be required to change their password upon initial sign on</td>
                     </tr>
                     
 
@@ -544,6 +394,18 @@
                         <td>This field allows restricting integration system user accounts from signing in to Workday in the user interface (UI). Integration system accounts should only be used for web service integrations.
 If the field is true, the integration system user will not be able to sign in to the UI, but will still be able to make web service requests.
 If the field is false, the integration system user will be able to sign in from both the UI and through web services.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Web_Service_Security_Configuration_Data</td>
+                        <td>list&lt;object&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A valid instance of Web Service Security Configuration</td>
                     </tr>
                     
 
@@ -567,10 +429,27 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
 
 
@@ -583,10 +462,33 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
 </tr>
 
 
@@ -622,7 +524,46 @@ If the field is false, the integration system user will be able to sign in from 
 
                 </tbody>
                 
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Session_Timeout_Minutes</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The amount of time after which an unused session will expire. Session Timeout Minutes defaults to the value configured in the Password Rules unless set to a non-zero value.</td>
+                    </tr>
+                    
+
+
+                </tbody>
                 
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Generate_Random_Password</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The system should generate a random password for the user</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table IntegrationSystemUsers">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
                 
             </table>
             
@@ -643,7 +584,22 @@ If the field is false, the integration system user will be able to sign in from 
             
             
             
-            <table class="ui table ntsp_table LaunchedIntegrationEvent">
+            <table class="ui table ntsp_table NskpInstance">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table Organization">
                 
                 <thead>
                     <tr>
@@ -657,10 +613,10 @@ If the field is false, the integration system user will be able to sign in from 
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>Integration_Event_Reference</td>
+                        <td>External_URL_Reference</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>Integration_Event_Reference ID</td>
+                        <td>Non-Workday URL link for more Organizational information</td>
                     </tr>
                     
 
@@ -669,13 +625,46 @@ If the field is false, the integration system user will be able to sign in from 
 <tbody>
 <tr class="top aligned">
     <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
         
         <span class="indentation"></span>
         
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
 
 
@@ -688,11 +677,18 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>The unique identifier type</td>
 </tr>
+
+
+
+</tbody>
+
 
 
 
@@ -705,10 +701,10 @@ If the field is false, the integration system user will be able to sign in from 
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>Integration_System_Reference</td>
+                        <td>External_IDs_Data</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>Integration_System_Reference ID</td>
+                        <td>Contains external system name and its corresponding ID that can be used to match data between systems during an integration</td>
                     </tr>
                     
 
@@ -717,14 +713,54 @@ If the field is false, the integration system user will be able to sign in from 
 <tbody>
 <tr class="top aligned">
     <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>System_ID</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Integration system identifier, part of a two part key (including the text value of the ID element) that uniquely identify integratable object</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
         
         <span class="indentation"></span>
         
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
+
+
+
+</tbody>
+
 
 
 
@@ -736,10 +772,10 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
-        <span class="_TAB">&nbsp;</span>type</td>
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
 </tr>
 
 
@@ -753,46 +789,10 @@ If the field is false, the integration system user will be able to sign in from 
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>Integration_Service_Endpoint</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Document ID (Entry ID) from Repository Document</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Document_ID</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Document ID (Entry ID) from Repository Document</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Sent_On</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Sent On</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>System_User_Reference</td>
+                        <td>Organization_Reference</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>System_User_Reference ID</td>
+                        <td>A unique identifier to reference an Organization. (Not the business based Organization ID.)</td>
                     </tr>
                     
 
@@ -801,13 +801,30 @@ If the field is false, the integration system user will be able to sign in from 
 <tbody>
 <tr class="top aligned">
     <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
         
         <span class="indentation"></span>
         
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
 
 
@@ -820,11 +837,2458 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>The unique identifier type</td>
 </tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Name</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The name of the Organization that appears on pages and reports. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Description</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A long description of the Organization</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Last_Updated_DateTime</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Date/Time for the last update</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Inactive_Date</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Date the Organization was made Inactive</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Manager_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Unique identifier for the manager for the organization</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Leadership_Reference</td>
+                        <td>list&lt;object&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Manager(s) of this organization. If there is a position restriction with an overlap, both are returned</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Roles_Data</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Contains information about an Organization Role and incumbent worker(s).</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Role_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>A unique identifier for the organization role</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Worker_Reference</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>A unique identifier that can be used to reference a worker(s) that fills the organization role</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Reference_ID</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Integration Reference ID used for integration purposes; This is also the Organization ID</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Organization_Code</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Text attribute identifying Organization Code. A new effective-dated organization name is automatically created if value for this field is different as of specified effective date.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Organization_Owner_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A unique identifier for the worker that owns the Organization</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Include_Manager_in_Name</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Boolean choice to include the Manager/Leader Name in the Organization Name display.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Include_Organization_Code_in_Name</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Boolean attribute identifying whether to include the Organization Code within the name (Display ID within Workday). A new effective-dated organization name is automatically created if value for this field is different as of specified effective date</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Organization_Type_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A unique identifier for the type of organization</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Hierarchy_Data</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Contains the top-level organization, the immediate superior organization, and all immediate subordinate organization references</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Included_Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference information for all included Organizations. Will only appear for Hierarchical Organizations that include other organizations as members</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Included_In_Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference information for Organizations that include this Organization in their Organization hierarchy</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Top-Level_Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference information for the top-level node</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Superior_Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference information for immediately superior Organization to the current Organization. Will only appear for Hierarchical Organizations</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Subordinate_Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference information for all Organizations immediately subordinate to the current Organization. Will only appear for Hierarchical Organizations</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Availibility_Date</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Date the Organization is available for use</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Inactive</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Inactive indicator for the Organization</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Organization_Subtype_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A unique identifier for the subtype of the organization</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Organization_Visibility_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>A unique identifier for the scope of visibility for the Organization</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Supervisory_Data</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>For Organizations of type Supervisory, contains staffing model and restrictions, location and other organizational assignments</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Staffing_Restrictions_Data</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>For Supervisory Organizations, contain staffing restrictions</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Job_Family_Reference</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference(s) to the job families that a worker being hired/contracted using this opening can use</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Job_Profile_Restriction_Summary_Data</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference(s) (and additional data) to the job profiles that a worker being hired/contracted using this opening can use</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Location_Reference</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference(s) to the location that a worker being hired/contracted using this opening can use</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Position_Worker_Type_Reference</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference(s) to the position worker types that the position is restricted by (e.g., Regular, Contractor, Temporary)</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Worker_Type_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference to the worker type that a worker being hired/contracted using this opening can use</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Time_Type_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Reference to the time type that a worker being hired/contracted using this opening can use</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Availability_Date</td>
+    <td>number</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Date the opening is available</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Earliest_Hire_Date</td>
+    <td>number</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Earliest date that a worker can be hired/contracted into this opening</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Staffing_Model</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The staffing model used for the organization</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Available_For_Hire</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Returns a true if this is able to be filled by a worker</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Hiring_Freeze</td>
+    <td>boolean</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Boolean attribute identifying whether a Hiring Freeze is currently in affect</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Location_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Unique identifier for the primary Location for the organization</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Organization_Assignments_Data</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contain information for Staffing related Organizations; minimally for Company, Cost Center and Region</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Organization_Type_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>A unique identifier for the type of organization</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Organization_Reference</td>
+    <td>object</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>A unique identifier for the organization</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
 
 
 
@@ -841,7 +3305,7 @@ If the field is false, the integration system user will be able to sign in from 
             
             
             
-            <table class="ui table ntsp_table NskpInstance">
+            <table class="ui table ntsp_table Organizations">
                 
                 <thead>
                     <tr>
@@ -851,6 +3315,136 @@ If the field is false, the integration system user will be able to sign in from 
                         <th class="seven wide">DESCRIPTION</th>
                     </tr>
                 </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table TenantSetupGroupShareConfigurations">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Only_Admins_Can_Group_Share</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Represents whether or not Only Admins Can Group Share</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Group_Share_Configuration_Data</td>
+                        <td>list&lt;object&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>References newly created or existing data for a Group Share Configuration</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Tenant_Setup_for_Group_Share_Configuration_Reference</td>
+                        <td>object</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>References the Tenant Setup</td>
+                    </tr>
+                    
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>text</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier text</td>
+</tr>
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>type</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+                </tbody>
+                
+                
                 
             </table>
             
@@ -870,10 +3464,10 @@ If the field is false, the integration system user will be able to sign in from 
                 
                 <tbody>
                     <tr class="top aligned">
-                        <td>UserBased_Security_Group_Reference</td>
+                        <td>User-Based_Security_Group_Reference</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>User-Based Security Group Reference ID and Workday ID </td>
+                        <td>User-Based Security Group Reference ID and Workday ID</td>
                     </tr>
                     
 
@@ -885,10 +3479,27 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
 
 
@@ -901,10 +3512,33 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
 </tr>
 
 
@@ -919,9 +3553,39 @@ If the field is false, the integration system user will be able to sign in from 
                 <tbody>
                     <tr class="top aligned">
                         <td>Workday_Account_Reference</td>
+                        <td>list&lt;object&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Workday Accounts that are members of the User-Based Security Group</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table UserBasedSecurityGroupAssignment">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Workday_Account_Reference</td>
                         <td>object</td>
                         <td><span class="refLinks" refName=""></span></td>
-                        <td>Workday Accounts that are members of the User-Based Security Group </td>
+                        <td>Unique identifier for a System User reference</td>
                     </tr>
                     
 
@@ -933,10 +3597,27 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="_TAB">&nbsp;</span>ID</td>
+    <td>list&lt;object&gt;</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Contains a unique identifier for an instance of an object.</td>
+</tr>
+
+
+
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>text</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID text string.</td>
+    <td>The unique identifier text</td>
 </tr>
 
 
@@ -949,10 +3630,33 @@ If the field is false, the integration system user will be able to sign in from 
         
         <span class="indentation"></span>
         
+        <span class="indentation"></span>
+        
         <span class="_TAB">&nbsp;</span>type</td>
     <td>string</td>
     <td><span class="refLinks" refName=""></span></td>
-    <td>ID type.</td>
+    <td>The unique identifier type</td>
+</tr>
+
+
+
+</tbody>
+
+
+
+
+</tbody>
+
+<tbody>
+<tr class="top aligned">
+    <td>
+        
+        <span class="indentation"></span>
+        
+        <span class="_TAB">&nbsp;</span>Descriptor</td>
+    <td>string</td>
+    <td><span class="refLinks" refName=""></span></td>
+    <td>Display information used to describe an instance of an object. This &#39;optional&#39; information is for outbound descriptive purposes only and is not processed on inbound Workday Web Services requests.</td>
 </tr>
 
 
@@ -964,7 +3668,49 @@ If the field is false, the integration system user will be able to sign in from 
 
                 </tbody>
                 
+                <tbody>
+                    <tr class="top aligned">
+                        <td>User-Based_Security_Group_Reference</td>
+                        <td>list&lt;object&gt;</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Unique Identifier for a User-Based Security Group</td>
+                    </tr>
+                    
+
+
+                </tbody>
                 
+                
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table UserBasedSecurityGroupAssignments">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
+                
+            </table>
+            
+            
+            
+            <table class="ui table ntsp_table UserBasedSecurityGroups">
+                
+                <thead>
+                    <tr>
+                        <th class="three wide">ATTRIBUTE</th>
+                        <th class="three wide">TYPE</th>
+                        <th class="three wide">REFERS TO</th>
+                        <th class="seven wide">DESCRIPTION</th>
+                    </tr>
+                </thead>
                 
             </table>
             
@@ -981,6 +3727,42 @@ If the field is false, the integration system user will be able to sign in from 
                     </tr>
                 </thead>
                 
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Password</td>
+                        <td>string</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Text attribute identifying Password.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Account_Disabled</td>
+                        <td>boolean</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>Boolean attribute identifying whether Workday Account is disabled.</td>
+                    </tr>
+                    
+
+
+                </tbody>
+                
+                <tbody>
+                    <tr class="top aligned">
+                        <td>Account_Expiration_Date</td>
+                        <td>number</td>
+                        <td><span class="refLinks" refName=""></span></td>
+                        <td>The user will be prevented from signing on to the system after this date (epoch Time).</td>
+                    </tr>
+                    
+
+
+                </tbody>
                 
                 <tbody>
                     <tr class="top aligned">
@@ -1048,42 +3830,6 @@ If the field is false, the integration system user will be able to sign in from 
                         <td>string</td>
                         <td><span class="refLinks" refName=""></span></td>
                         <td>Text attribute identifying User Name.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Password</td>
-                        <td>string</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Text attribute identifying Password.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Account_Disabled</td>
-                        <td>boolean</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>Boolean attribute identifying whether Workday Account is disabled.</td>
-                    </tr>
-                    
-
-
-                </tbody>
-                
-                <tbody>
-                    <tr class="top aligned">
-                        <td>Account_Expiration_Date</td>
-                        <td>number</td>
-                        <td><span class="refLinks" refName=""></span></td>
-                        <td>The user will be prevented from signing on to the system after this date (epoch Time).</td>
                     </tr>
                     
 
