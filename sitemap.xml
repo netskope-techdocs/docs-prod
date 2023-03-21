@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-03-10</lastmod>
+    <lastmod>2023-03-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-102-0-0.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-102-0-0.html</loc>
@@ -490,7 +490,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes.html</loc>
-    <lastmod>2023-03-10</lastmod>
+    <lastmod>2023-03-21</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-102-0-0-0.html</loc>
+    <lastmod>2023-03-17</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-release-102-0-0-0.html</loc>
+    <lastmod>2023-03-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-publisher-release-notes-version-101-0-0-7619.html</loc>
@@ -2170,7 +2178,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access.html</loc>
-    <lastmod>2023-03-13</lastmod>
+    <lastmod>2023-03-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/publisher-management.html</loc>
@@ -2194,7 +2202,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-browser-access-for-private-apps.html</loc>
-    <lastmod>2022-12-28</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-google-workspace-as-the-idp-for-browser-access-authentication.html</loc>
@@ -2226,7 +2234,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-client-prelogon-connectivity.html</loc>
-    <lastmod>2023-03-15</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/windows-autopilot-with-private-access-prelogon.html</loc>
@@ -2250,7 +2258,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/general-troubleshooting-methods.html</loc>
-    <lastmod>2023-02-07</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/troubleshooting-performance-and-connectivity-using-tcping-and-psping.html</loc>
@@ -2290,7 +2298,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-browser-access-for-private-apps-378561.html</loc>
-    <lastmod>2022-12-28</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-private-access-for-smb-and-dfs-services.html</loc>
@@ -2342,7 +2350,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxy-chaining.html</loc>
-    <lastmod>2021-02-09</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/secure-forwarder.html</loc>
@@ -4878,7 +4886,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/managing-error-settings.html</loc>
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configuring-the-steering-preferences.html</loc>
@@ -4910,11 +4918,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy-over-ipsec-and-gre-tunnels.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxy-chaining-236707.html</loc>
-    <lastmod>2021-02-09</lastmod>
+    <lastmod>2023-03-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxies.html</loc>
@@ -5090,7 +5098,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-cloud-exchange.html</loc>
-    <lastmod>2023-02-22</lastmod>
+    <lastmod>2023-03-20</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/migrating-from-beta-4-x-to-the-latest-version.html</loc>
