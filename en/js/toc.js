@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-102-1-0.html",
+"text": "Netskope Release Notes Hotfix Version 102.1.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-102-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 102.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-102-1-0.html",
+"text": "Fixed Issues In Hotfix Release 102.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-102-1-0.html",
+"text": "Known Issues In Hotfix Release 102.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-102-0-0.html",
 "text": "Netskope Release Notes Version 102.0.0",
 "class": "topic-link section reused-publication"
@@ -686,6 +708,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "new-features-and-enhancements-in-publisher-release-version-102-0-0-0.html",
+"text": "New Features And Enhancements In Publisher Release Version 102.0.0.0",
+"class": "topic-link section"
+},
+{
 "url": "fixed-issues-in-release-102-0-0-0.html",
 "text": "Fixed Issues In Release 102.0.0.0",
 "class": "topic-link section"
@@ -862,6 +889,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "ips-threat-content-update-release-notes-102-0-0-324.html",
+"text": "IPS Threat Content Update Release Notes 102.0.0.324",
+"class": "topic-link section"
+},
 {
 "url": "ips-threat-content-update-release-notes-101-0-1-314.html",
 "text": "IPS Threat Content Update Release Notes 101.0.1.314",
@@ -3198,31 +3230,6 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
-{
-"url": "netskope-client-overview.html",
-"text": "Netskope Client Overview",
-"class": "topic-link section"
-},
-{
-"url": "ipsec.html",
-"text": "IPSec",
-"class": "topic-link section"
-},
-{
-"url": "gre.html",
-"text": "GRE",
-"class": "topic-link section"
-},
-{
-"url": "explicit-proxy.html",
-"text": "Explicit Proxy",
-"class": "topic-link section"
-},
-{
-"url": "proxy-chaining.html",
-"text": "Proxy Chaining",
-"class": "topic-link section"
-},
 {
 "url": "secure-forwarder.html",
 "text": "Secure Forwarder",
@@ -6266,7 +6273,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-client-overview-390410.html",
+"url": "netskope-client-overview.html",
 "text": "Netskope Client Overview",
 "class": "topic-link section"
 },
@@ -6702,7 +6709,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "ipsec-129296.html",
+"url": "ipsec.html",
 "text": "IPSec",
 "class": "topic-link section"
 },
@@ -6712,7 +6719,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "explicit-proxy-217835.html",
+"url": "explicit-proxy.html",
 "text": "Explicit Proxy",
 "class": "topic-link section"
 },
@@ -6722,7 +6729,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "proxy-chaining-236707.html",
+"url": "proxy-chaining.html",
 "text": "Proxy Chaining",
 "class": "topic-link section"
 },
