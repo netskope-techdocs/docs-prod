@@ -5749,26 +5749,26 @@ var toc = [{
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html",
-"text": "Next Generation API Data Protection for Microsoft 365 OneDrive GCC High",
+"url": "next-generation-api-data-protection-for-microsoft-365-onedrive.html",
+"text": "Next Generation API Data Protection for Microsoft 365 OneDrive",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-onedrive-gcc-high-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 OneDrive GCC High for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-onedrive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 OneDrive for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
 {
-"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html",
-"text": "Next Generation API Data Protection for Microsoft 365 SharePoint GCC High",
+"url": "next-generation-api-data-protection-for-microsoft-365-sharepoint.html",
+"text": "Next Generation API Data Protection for Microsoft 365 SharePoint",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "configure-microsoft-365-sharepoint-gcc-high-for-the-next-generation-api-data-protection.html",
-"text": "Configure Microsoft 365 SharePoint GCC High for the Next Generation API Data Protection",
+"url": "configure-microsoft-365-sharepoint-for-the-next-generation-api-data-protection.html",
+"text": "Configure Microsoft 365 SharePoint for the Next Generation API Data Protection",
 "class": "topic-link section"
 }]
 },
@@ -6712,11 +6712,25 @@ var toc = [{
 "url": "ipsec.html",
 "text": "IPSec",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "user-identity-methods-for-ipsec-and-gre-tunnels.html",
+"text": "User Identity Methods for IPSec and GRE Tunnels",
+"class": "topic-link section"
+}]
 },
 {
 "url": "gre-127075.html",
 "text": "GRE",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "user-identity-methods-for-ipsec-and-gre-tunnels-432170.html",
+"text": "User Identity Methods for IPSec and GRE Tunnels",
+"class": "topic-link section"
+}]
 },
 {
 "url": "explicit-proxy.html",

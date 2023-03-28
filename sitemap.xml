@@ -2282,7 +2282,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/general-troubleshooting-methods.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/troubleshooting-performance-and-connectivity-using-tcping-and-psping.html</loc>
@@ -2342,7 +2342,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-faqs.html</loc>
-    <lastmod>2023-03-22</lastmod>
+    <lastmod>2023-03-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-secure-web-gateway.html</loc>
@@ -2906,7 +2906,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-policy-actions-per-cloud-app.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection-for-box.html</loc>
@@ -4170,7 +4170,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-feature-matrix-per-cloud-app.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-atlassian-confluence.html</loc>
@@ -4182,7 +4182,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/permissions-required-for-atlassian-confluence.html</loc>
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2023-03-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-atlassian-jira-cloud.html</loc>
@@ -4217,20 +4217,20 @@
     <lastmod>2022-12-14</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-onedrive-gcc-high.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-onedrive.html</loc>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-365-onedrive-gcc-high-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://docs.netskope.com/en/configure-microsoft-365-onedrive-for-the-next-generation-api-data-protection.html</loc>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-sharepoint-gcc-high.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-sharepoint.html</loc>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-365-sharepoint-gcc-high-for-the-next-generation-api-data-protection.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <loc>https://docs.netskope.com/en/configure-microsoft-365-sharepoint-for-the-next-generation-api-data-protection.html</loc>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-for-microsoft-365-teams-gcc-high.html</loc>
@@ -4290,15 +4290,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-policy-wizard.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-next-generation-api-data-protection-policy.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-retroactive-scan.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/internal-domains.html</loc>
@@ -4306,7 +4306,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/activities-monitored-by-netskope.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-inventory.html</loc>
@@ -4570,7 +4570,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/traffic-steering.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client.html</loc>
@@ -4594,7 +4594,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-network-configuration.html</loc>
-    <lastmod>2023-02-10</lastmod>
+    <lastmod>2023-03-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/client-profiles.html</loc>
@@ -4774,7 +4774,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/palo-alto-globalprotect.html</loc>
-    <lastmod>2022-10-06</lastmod>
+    <lastmod>2023-03-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/pulsesecure-vpn.html</loc>
@@ -4913,7 +4913,15 @@
     <lastmod>2023-03-23</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels.html</loc>
+    <lastmod>2023-03-23</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/gre-127075.html</loc>
+    <lastmod>2023-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels-432170.html</loc>
     <lastmod>2023-03-23</lastmod>
   </url>
   <url>
@@ -5062,7 +5070,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-cloud-platform-configuration.html</loc>
-    <lastmod>2023-03-22</lastmod>
+    <lastmod>2023-03-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/integrations-317805.html</loc>
@@ -5150,7 +5158,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/get-started-with-cloud-exchange.html</loc>
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-log-shipper.html</loc>
@@ -5218,7 +5226,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-tokens.html</loc>
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sso-configuration.html</loc>
@@ -5234,7 +5242,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-tenants.html</loc>
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/account-settings.html</loc>
@@ -6458,7 +6466,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/certificates.html</loc>
-    <lastmod>2023-03-07</lastmod>
+    <lastmod>2023-03-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ip-allowlisting.html</loc>
