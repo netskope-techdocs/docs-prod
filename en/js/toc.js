@@ -1607,6 +1607,23 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-iot-security-release-notes---april--2023.html",
+"text": "Netskope IoT Security Release Notes - April, 2023",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-april-23.html",
+"text": "New Features and Enhancements in April'23",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-april-23.html",
+"text": "Fixed Issues in April'23",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-iot-security-release-notes---march--2023.html",
 "text": "Netskope IoT Security Release Notes - March, 2023",
 "class": "topic-link section reused-publication"
@@ -1673,6 +1690,18 @@ var toc = [{
 {
 "url": "netskope-digital-experience-management-release-notes-for-february-20--2023.html",
 "text": "Netskope Digital Experience Management Release Notes for February 20, 2023",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-digital-experience-management-release-notes-for-march-2023.html",
+"text": "Netskope Digital Experience Management Release Notes for March 2023",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "netskope-digital-experience-management-release-notes-for-march-31--2023.html",
+"text": "Netskope Digital Experience Management Release Notes for March 31, 2023",
 "class": "topic-link section"
 }]
 }]
@@ -2748,6 +2777,11 @@ var toc = [{
 "url": "endpoint-data-loss-prevention.html",
 "text": "Endpoint Data Loss Prevention",
 "class": "topic-link section reused-publication"
+},
+{
+"url": "advanced-file-scanning--beta-.html",
+"text": "Advanced File Scanning (Beta)",
+"class": "topic-link section"
 }]
 },
 {
