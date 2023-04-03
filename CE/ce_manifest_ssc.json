@@ -16,7 +16,7 @@
     "signals": [
       {
         "id": "netskope_ce_are.cci",
-        "name": "Netskope Security Cloud Confidence Index Data",
+        "name": "Netskope Security Cloud Confidence Index",
         "severity": "info",
         "factor": "application_security",
         "sent_by": "4733b2f0-8d1a-11ed-b8a1-a51f26c052f2",
