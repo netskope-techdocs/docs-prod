@@ -7245,13 +7245,18 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "chronicle-plugin-for-log-shipper.html",
+"text": "Chronicle Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "microsoft-defender-for-cloud-apps-plugin-for-log-shipper.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
-"url": "chronicle-plugin-for-log-shipper.html",
-"text": "Chronicle Plugin for Log Shipper",
+"url": "elastic-plugin-for-log-shipper.html",
+"text": "Elastic Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
@@ -7265,11 +7270,6 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "elastic-plugin-for-log-shipper.html",
-"text": "Elastic Plugin for Log Shipper",
-"class": "topic-link section reused-publication"
-},
-{
 "url": "qradar-plugin-for-log-shipper.html",
 "text": "QRadar Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
@@ -7277,6 +7277,11 @@ var toc = [{
 {
 "url": "rapid7-plugin-for-log-shipper.html",
 "text": "Rapid7 Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
+"url": "secureworks-plugin-for-log-shipper.html",
+"text": "Secureworks Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 }]
 },
