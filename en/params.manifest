@@ -12,7 +12,7 @@
   <param name="custom.css.source" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/62d0ae4fab647.css"/>
   <param name="portal.logo.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c344991193.png"/>
   <param name="portal.background.filename" select="/var/www/ccms/usr/netskope/xsl/custom/assets/layout-317285/618c5ada456dc.png"/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-642b943658a6d1.02052259/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/netskope/production-642df75285dab5.49146027/317801-Knowledge_Portal_Publication-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Netskope"/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2023 Netskope </param>
@@ -100,11 +100,11 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-642b943658a6d1.02052259/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/netskope/production-642df75285dab5.49146027/317801-Knowledge_Portal_Publication-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-642b943658a6d1.02052259/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/netskope/production-642df75285dab5.49146027/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-642b943658a6d1.02052259/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/netskope/production-642df75285dab5.49146027/317801-Knowledge_Portal_Publication-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
   <param name="choose.startpage.by.role" select="0"/>
 </params>

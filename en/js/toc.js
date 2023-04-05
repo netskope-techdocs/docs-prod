@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-103-0-0.html",
+"text": "Netskope Release Notes Version 103.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-103-0-0.html",
+"text": "New Features And Enhancements In Release 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-103-0-0.html",
+"text": "Fixed Issues In Release 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-103-0-0.html",
+"text": "Known Issues In Release 103.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-102-1-0.html",
 "text": "Netskope Release Notes Hotfix Version 102.1.0",
 "class": "topic-link section reused-publication"
@@ -1749,6 +1771,78 @@ var toc = [{
 {
 "url": "product-deployments.html",
 "text": "Product Deployments",
+"class": "topic-link section"
+}]
+},
+{
+"url": "quick-start.html",
+"text": "Quick Start",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "access-the-admin-console.html",
+"text": "Access the Admin Console",
+"class": "topic-link section"
+},
+{
+"url": "create-local-administrators.html",
+"text": "Create Local Administrators",
+"class": "topic-link section"
+},
+{
+"url": "integrate-an-identity-provider--idp-.html",
+"text": "Integrate an Identity Provider (IdP)",
+"class": "topic-link section"
+},
+{
+"url": "check-firewall-policy.html",
+"text": "Check Firewall Policy",
+"class": "topic-link section"
+},
+{
+"url": "bypass-netskope-from-your-vpn.html",
+"text": "Bypass Netskope from your VPN",
+"class": "topic-link section"
+},
+{
+"url": "configure-a-steering-profile.html",
+"text": "Configure a Steering Profile",
+"class": "topic-link section"
+},
+{
+"url": "add-bypasses-in-netskope.html",
+"text": "Add Bypasses in Netskope",
+"class": "topic-link section"
+},
+{
+"url": "configure-netskope-client-settings.html",
+"text": "Configure Netskope Client Settings",
+"class": "topic-link section"
+},
+{
+"url": "deploy-the-netskope-client.html",
+"text": "Deploy the Netskope Client",
+"class": "topic-link section"
+},
+{
+"url": "allowlist-the-netskope-client.html",
+"text": "Allowlist the Netskope Client",
+"class": "topic-link section"
+},
+{
+"url": "validate-traffic-steering.html",
+"text": "Validate Traffic Steering",
+"class": "topic-link section"
+},
+{
+"url": "create-and-validate-a-security-policy.html",
+"text": "Create and Validate a Security Policy",
+"class": "topic-link section"
+},
+{
+"url": "next-steps.html",
+"text": "Next Steps",
 "class": "topic-link section"
 }]
 },
@@ -6283,6 +6377,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "bandwidth-control.html",
+"text": "Bandwidth Control",
+"class": "topic-link section"
+},
+{
 "url": "configuring-cloud-firewall-steering-exceptions.html",
 "text": "Configuring Cloud Firewall Steering Exceptions",
 "class": "topic-link section"
@@ -6754,17 +6853,37 @@ var toc = [{
 ,
 "children": [
 {
+"url": "creating-an-ipsec-site.html",
+"text": "Creating an IPSec Site",
+"class": "topic-link section"
+},
+{
+"url": "importing-ipsec-sites-from-a-csv-file.html",
+"text": "Importing IPSec Sites from a CSV File",
+"class": "topic-link section"
+},
+{
 "url": "user-identity-methods-for-ipsec-and-gre-tunnels.html",
 "text": "User Identity Methods for IPSec and GRE Tunnels",
 "class": "topic-link section"
 }]
 },
 {
-"url": "gre-127075.html",
+"url": "gre.html",
 "text": "GRE",
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "creating-a-gre-site.html",
+"text": "Creating a GRE Site",
+"class": "topic-link section"
+},
+{
+"url": "importing-gre-sites-from-a-csv-file.html",
+"text": "Importing GRE Sites from a CSV File",
+"class": "topic-link section"
+},
 {
 "url": "user-identity-methods-for-ipsec-and-gre-tunnels-432170.html",
 "text": "User Identity Methods for IPSec and GRE Tunnels",
@@ -7288,6 +7407,28 @@ var toc = [{
 "url": "secureworks-plugin-for-log-shipper.html",
 "text": "Secureworks Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
+},
+{
+"url": "syslog-plugin-for-log-shipper.html",
+"text": "Syslog Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "configure-the-syslog-for-ce-plugin.html",
+"text": "Configure the Syslog for CE Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-syslog-plugin.html",
+"text": "Configure the Syslog Plugin",
+"class": "topic-link section"
+},
+{
+"url": "configure-log-shipper-siem-mappings.html",
+"text": "Configure Log Shipper SIEM Mappings",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -7306,7 +7447,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-log-shipper-siem-mappings.html",
+"url": "configure-log-shipper-siem-mappings-320569.html",
 "text": "Configure Log Shipper SIEM Mappings",
 "class": "topic-link section"
 },
@@ -8511,33 +8652,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "netskope-sso-with-azure-ad.html",
-"text": "Netskope SSO with Azure AD",
-"class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "configure-an-enterprise-application-in-microsoft-azure-active-directory-using-saml.html",
-"text": "Configure an Enterprise Application in Microsoft Azure Active Directory using SAML",
-"class": "topic-link section"
-},
-{
-"url": "configure-sso-settings-in-the-netskope-ui.html",
-"text": "Configure SSO Settings in the Netskope UI",
-"class": "topic-link section"
-},
-{
-"url": "add-azure-active-directory-users-to-the-defined-application-and-assign-roles.html",
-"text": "Add Azure Active Directory Users to the Defined Application and Assign Roles",
-"class": "topic-link section"
-},
-{
-"url": "define-custom-roles-for-azure-active-directory-enterprise-application.html",
-"text": "Define Custom Roles for Azure Active Directory Enterprise Application",
-"class": "topic-link section"
-}]
-},
-{
 "url": "netskope-sso-with-adfs.html",
 "text": "Netskope SSO with ADFS",
 "class": "topic-link section reused-publication"
@@ -9159,6 +9273,23 @@ var toc = [{
 }]
 },
 {
+"url": "advanced-analytics-overview-page.html",
+"text": "Advanced Analytics Overview Page",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "advanced-analytics-tagging-and-filtering.html",
+"text": "Advanced Analytics Tagging and Filtering",
+"class": "topic-link section"
+},
+{
+"url": "advanced-analytics-customize-dashboards-with-the-widget-library.html",
+"text": "Advanced Analytics Customize Dashboards with the Widget Library",
+"class": "topic-link section"
+}]
+},
+{
 "url": "explore-page.html",
 "text": "Explore Page",
 "class": "topic-link section"
@@ -9270,6 +9401,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "advanced-analytics-favorites-folder.html",
+"text": "Advanced Analytics Favorites Folder",
+"class": "topic-link section"
+},
 {
 "url": "creating-visualizations-and-graphs.html",
 "text": "Creating Visualizations and Graphs",
@@ -9524,6 +9660,11 @@ var toc = [{
 {
 "url": "using-the-rest-api-v2-dataexport-iterator-endpoints.html",
 "text": "Using the REST API v2 dataexport Iterator Endpoints",
+"class": "topic-link section"
+},
+{
+"url": "using-the-rest-api-v2-uci-impact-endpoints.html",
+"text": "Using the REST API v2 UCI Impact Endpoints",
 "class": "topic-link section"
 }]
 },
