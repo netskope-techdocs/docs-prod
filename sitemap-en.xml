@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-103-0-0.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-103-0-0.html</loc>
@@ -2738,7 +2738,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/enabling-forensics-for-amazon-web-services-s3.html</loc>
-    <lastmod>2023-02-24</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/step-1-2--configure-aws-accounts---services-for-forensic.html</loc>
@@ -3054,11 +3054,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy.html</loc>
@@ -3138,11 +3138,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117841.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117843.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117844.html</loc>
@@ -3206,11 +3206,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117886.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117888.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117889.html</loc>
@@ -3282,11 +3282,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118037.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118039.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-118040.html</loc>
@@ -3342,11 +3342,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-119542.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-119543.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-119544.html</loc>
@@ -3406,11 +3406,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118131.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118132.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-118133.html</loc>
@@ -3474,11 +3474,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117908.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117910.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117911.html</loc>
@@ -3610,11 +3610,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117717.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117718.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117719.html</loc>
@@ -3702,11 +3702,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117984.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117986.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117987.html</loc>
@@ -3826,11 +3826,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118084.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118086.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-118087.html</loc>
@@ -3946,11 +3946,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117864.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117866.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117867.html</loc>
@@ -4018,11 +4018,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117930.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117932.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117933.html</loc>
@@ -4078,11 +4078,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118109.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118111.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-118112.html</loc>
@@ -4146,11 +4146,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117817.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117819.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117820.html</loc>
@@ -4218,11 +4218,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117952.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117954.html</loc>
-    <lastmod>2022-06-09</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/set-policy-117955.html</loc>
@@ -4658,7 +4658,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/bandwidth-control.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configuring-cloud-firewall-steering-exceptions.html</loc>
@@ -5282,7 +5282,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-log-shipper.html</loc>
-    <lastmod>2023-02-13</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-the-netskope-plugin-for-ticket-orchestrator.html</loc>
