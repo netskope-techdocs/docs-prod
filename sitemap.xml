@@ -5026,7 +5026,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels.html</loc>
-    <lastmod>2023-03-23</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
@@ -5042,7 +5042,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels-432170.html</loc>
-    <lastmod>2023-03-23</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/explicit-proxy.html</loc>
@@ -6470,7 +6470,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/administration.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-04-07</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/managing-administrators.html</loc>
@@ -6491,6 +6491,10 @@
   <url>
     <loc>https://docs.netskope.com/en/create-a-netskope-support-admin.html</loc>
     <lastmod>2023-02-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/multi-factor-authentication-for-netskope-admins.html</loc>
+    <lastmod>2023-04-07</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/admin-account-domains.html</loc>
@@ -6818,11 +6822,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-overview-page.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-tagging-and-filtering.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-analytics-customize-dashboards-with-the-widget-library.html</loc>
@@ -7450,7 +7454,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upload-logs-using-sftp.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upload-logs-using-ftps.html</loc>
@@ -7750,7 +7754,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upload-logs-using-sftp-144860.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upload-logs-using-ftps-158321.html</loc>
