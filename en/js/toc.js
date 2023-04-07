@@ -5814,6 +5814,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "apps-supported-in-classic-and-next-generation-api-data-protection.html",
+"text": "Apps Supported in Classic and Next Generation API Data Protection",
+"class": "topic-link section"
+},
+{
 "url": "next-generation-api-data-protection-feature-matrix-per-cloud-app.html",
 "text": "Next Generation API Data Protection Feature Matrix per Cloud App",
 "class": "topic-link section"
