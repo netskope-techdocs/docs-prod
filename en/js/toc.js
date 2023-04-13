@@ -724,19 +724,31 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-103-0-0-7843.html",
+"text": "Netskope Private Access Publisher Release Notes Version 103.0.0.7843",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-publisher-release-version-103-0-0-7843.html",
+"text": "Fixed Issues In Publisher Release Version 103.0.0.7843",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-102-0-0-0.html",
 "text": "Netskope Private Access Publisher Release Notes Version 102.0.0.0",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-publisher-release-version-102-0-0-0.html",
-"text": "New Features And Enhancements In Publisher Release Version 102.0.0.0",
+"url": "new-features-and-enhancements-in-publisher-release-version-102-0-0-7784.html",
+"text": "New Features And Enhancements In Publisher Release Version 102.0.0.7784",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-in-release-102-0-0-0.html",
-"text": "Fixed Issues In Release 102.0.0.0",
+"url": "fixed-issues-in-release-102-0-0-7784.html",
+"text": "Fixed Issues In Release 102.0.0.7784",
 "class": "topic-link section"
 }]
 },
@@ -1742,6 +1754,11 @@ var toc = [{
 {
 "url": "new-features-and-enhancements-march-30--2023.html",
 "text": "New Features and Enhancements March 30, 2023",
+"class": "topic-link section"
+},
+{
+"url": "netskope-library-dashboard-updates-april-12--2023.html",
+"text": "Netskope Library Dashboard Updates April 12, 2023",
 "class": "topic-link section"
 }]
 }]
@@ -7678,6 +7695,11 @@ var toc = [{
 "text": "Validate the STIX\/TAXII Plugin",
 "class": "topic-link section"
 }]
+},
+{
+"url": "trend-micro-vision-one-plugin-for-threat-exchange.html",
+"text": "Trend Micro Vision One Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
 },
 {
 "url": "api-source-plugin-for-threat-exchange.html",
