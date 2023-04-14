@@ -7434,23 +7434,6 @@ var toc = [{
 "url": "syslog-plugin-for-log-shipper.html",
 "text": "Syslog Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "configure-the-syslog-for-ce-plugin.html",
-"text": "Configure the Syslog for CE Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-syslog-plugin.html",
-"text": "Configure the Syslog Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-log-shipper-siem-mappings.html",
-"text": "Configure Log Shipper SIEM Mappings",
-"class": "topic-link section"
-}]
 }]
 },
 {
@@ -7469,7 +7452,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-log-shipper-siem-mappings-320569.html",
+"url": "configure-log-shipper-siem-mappings.html",
 "text": "Configure Log Shipper SIEM Mappings",
 "class": "topic-link section"
 },
