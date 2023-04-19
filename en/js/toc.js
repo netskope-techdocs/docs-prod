@@ -6213,6 +6213,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "sspmv1-to-next-generation-sspm-migration-guide.html",
+"text": "SSPMv1 to Next Generation SSPM Migration Guide",
+"class": "topic-link section"
+},
+{
 "url": "next-generation-saas-security-posture-management-for-github.html",
 "text": "Next Generation SaaS Security Posture Management for GitHub",
 "class": "topic-link section"
