@@ -1760,6 +1760,11 @@ var toc = [{
 "url": "netskope-library-dashboard-updates-april-12--2023.html",
 "text": "Netskope Library Dashboard Updates April 12, 2023",
 "class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-april-20--2023.html",
+"text": "New Features and Enhancements April 20, 2023",
+"class": "topic-link section"
 }]
 }]
 },
@@ -7439,12 +7444,12 @@ var toc = [{
 "url": "syslog-plugin-for-log-shipper.html",
 "text": "Syslog Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
-}]
 },
 {
 "url": "webtx-plugin-for-log-shipper.html",
 "text": "WebTx Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
+}]
 },
 {
 "url": "update-configured-log-shipper-plugins.html",
