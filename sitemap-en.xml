@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-04-21</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
-    <lastmod>2022-10-20</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-103-0-0.html</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-103-0-0.html</loc>
@@ -658,19 +658,23 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-intrusion-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2023-03-21</lastmod>
+    <lastmod>2023-04-25</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-103-0-0-336.html</loc>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-102-0-0-324.html</loc>
-    <lastmod>2023-03-21</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-101-0-1-314.html</loc>
-    <lastmod>2023-03-07</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-101-0-0-306.html</loc>
-    <lastmod>2023-02-21</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-1-298.html</loc>
@@ -678,7 +682,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-0-283.html</loc>
-    <lastmod>2023-01-17</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-99-0-1-277.html</loc>
@@ -1966,7 +1970,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/quarantine-profile.html</loc>
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/legal-hold-profile.html</loc>
@@ -2330,7 +2334,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-a-publisher.html</loc>
-    <lastmod>2023-03-30</lastmod>
+    <lastmod>2023-04-21</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/manage-a-publisher.html</loc>
@@ -3006,7 +3010,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-data-protection.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/api-migration.html</loc>
@@ -3070,7 +3074,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification.html</loc>
@@ -3154,7 +3158,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117841.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117843.html</loc>
@@ -3222,7 +3226,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117886.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117888.html</loc>
@@ -3298,7 +3302,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118037.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118039.html</loc>
@@ -3358,7 +3362,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-119542.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-119543.html</loc>
@@ -3422,7 +3426,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118131.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118132.html</loc>
@@ -3490,7 +3494,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117908.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117910.html</loc>
@@ -3626,7 +3630,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117717.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117718.html</loc>
@@ -3718,7 +3722,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117984.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117986.html</loc>
@@ -3766,7 +3770,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-microsoft-office-365-sharepoint-sites-for-api-data-protection.html</loc>
-    <lastmod>2022-11-16</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/remove-the-netskope-introspection-v1-app-326331.html</loc>
@@ -3842,7 +3846,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118084.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118086.html</loc>
@@ -3934,7 +3938,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-salesforce-for-api-data-protection.html</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-compliance-report-for-salesforce.html</loc>
@@ -3962,7 +3966,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117864.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117866.html</loc>
@@ -4034,7 +4038,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117930.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117932.html</loc>
@@ -4094,7 +4098,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-118109.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-118111.html</loc>
@@ -4162,7 +4166,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117817.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117819.html</loc>
@@ -4234,7 +4238,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/action-117952.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/notification-117954.html</loc>
@@ -4430,11 +4434,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-inventory.html</loc>
-    <lastmod>2023-03-16</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-skope-it-events.html</loc>
-    <lastmod>2022-07-27</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/saas-security-posture-management.html</loc>
@@ -4630,7 +4634,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-overview.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-compliance-380220.html</loc>
@@ -4638,7 +4642,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/view-security-posture-inventory.html</loc>
-    <lastmod>2023-03-21</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-firewall.html</loc>
@@ -5038,7 +5042,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2023-04-20</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-an-ipsec-site.html</loc>
@@ -6450,7 +6454,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-adapters.html</loc>
-    <lastmod>2023-03-06</lastmod>
+    <lastmod>2023-04-24</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-and-configure-the-netskope-adapters.html</loc>
