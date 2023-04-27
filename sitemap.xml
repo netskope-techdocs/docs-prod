@@ -6262,7 +6262,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-and-authentication.html</loc>
-    <lastmod>2022-04-20</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/scim-based-user-provisioning.html</loc>
@@ -6379,6 +6379,10 @@
   <url>
     <loc>https://docs.netskope.com/en/install-and-test-the-client.html</loc>
     <lastmod>2022-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-sso-with-azure-ad.html</loc>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-sso-with-okta.html</loc>
