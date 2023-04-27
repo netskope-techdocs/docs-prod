@@ -6414,8 +6414,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "bandwidth-control.html",
-"text": "Bandwidth Control",
+"url": "bandwidth-control--beta-.html",
+"text": "Bandwidth Control (Beta)",
 "class": "topic-link section"
 },
 {
@@ -6890,6 +6890,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ipsec-129296.html",
+"text": "IPSec",
+"class": "topic-link section"
+},
+{
 "url": "creating-an-ipsec-site.html",
 "text": "Creating an IPSec Site",
 "class": "topic-link section"
@@ -6911,6 +6916,11 @@ var toc = [{
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "gre-127075.html",
+"text": "GRE",
+"class": "topic-link section"
+},
 {
 "url": "creating-a-gre-site.html",
 "text": "Creating a GRE Site",
@@ -10414,11 +10424,6 @@ var toc = [{
 {
 "url": "install-software-using-scp-push-commands.html",
 "text": "Install Software using SCP Push Commands",
-"class": "topic-link section"
-},
-{
-"url": "rollback-software.html",
-"text": "Rollback Software",
 "class": "topic-link section"
 }]
 },

@@ -6,7 +6,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
@@ -898,7 +898,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes.html</loc>
-    <lastmod>2022-11-29</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-99-0-0.html</loc>
@@ -1034,7 +1034,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes.html</loc>
-    <lastmod>2022-11-30</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-99-0-0.html</loc>
@@ -4510,7 +4510,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-workday-instance-for-security-posture.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/security-posture-policy-wizard.html</loc>
@@ -4590,11 +4590,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-for-workday.html</loc>
-    <lastmod>2023-01-17</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-workday-instance-for-next-generation-saas-security-posture-management.html</loc>
-    <lastmod>2023-04-17</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-for-zoom.html</loc>
@@ -4626,7 +4626,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/custom-rules-using-netskope-governance-language.html</loc>
-    <lastmod>2023-01-19</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-dashboard.html</loc>
@@ -4685,8 +4685,8 @@
     <lastmod>2021-11-18</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/bandwidth-control.html</loc>
-    <lastmod>2023-04-06</lastmod>
+    <loc>https://docs.netskope.com/en/bandwidth-control--beta-.html</loc>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configuring-cloud-firewall-steering-exceptions.html</loc>
@@ -4702,7 +4702,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/traffic-steering.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-04-25</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client.html</loc>
@@ -5042,15 +5042,19 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipsec.html</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ipsec-129296.html</loc>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-an-ipsec-site.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/importing-ipsec-sites-from-a-csv-file.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels.html</loc>
@@ -5058,15 +5062,19 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/gre.html</loc>
-    <lastmod>2023-04-20</lastmod>
+    <lastmod>2023-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/gre-127075.html</loc>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-a-gre-site.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/importing-gre-sites-from-a-csv-file.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/user-identity-methods-for-ipsec-and-gre-tunnels-432170.html</loc>
@@ -6454,7 +6462,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-adapters.html</loc>
-    <lastmod>2023-04-24</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-and-configure-the-netskope-adapters.html</loc>
@@ -7410,11 +7418,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance.html</loc>
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-of-netskope-on-premises-appliance.html</loc>
-    <lastmod>2023-01-30</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/physical-setup.html</loc>
@@ -7570,7 +7578,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-snmp.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-radius-authentication.html</loc>
@@ -7662,7 +7670,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upgrade-the-appliance-software.html</loc>
-    <lastmod>2018-09-04</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/download-and-install-software.html</loc>
@@ -7674,10 +7682,6 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-software-using-scp-push-commands.html</loc>
-    <lastmod>2022-07-21</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/rollback-software.html</loc>
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
@@ -7694,11 +7698,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance.html</loc>
-    <lastmod>2023-02-24</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-overview.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-a-virtual-appliance.html</loc>
@@ -7834,7 +7838,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-snmp-144875.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-radius-authentication-144876.html</loc>
@@ -7926,7 +7930,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upgrade-the-virtual-appliance.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2023-04-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upgrading-va-to-99-x.html</loc>
@@ -8018,7 +8022,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/oplp-alerts-and-event-descriptions.html</loc>
-    <lastmod>2022-04-07</lastmod>
+    <lastmod>2023-04-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/videos.html</loc>
