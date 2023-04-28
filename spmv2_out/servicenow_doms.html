@@ -43,7 +43,7 @@
                     <div class="ui accordion">
                         <div class="title">
                             <i class="dropdown icon"></i>
-                            <a tableName="Account">Account</a>
+                            <a data-tableName="Account">Account</a>
                         </div>
                         <div class="content">
                         
@@ -55,7 +55,7 @@
     <div class="accordion">
         <div class="title">
             <i class="dropdown icon"></i>
-            <a tableName="SysProperties">SysProperties</a>
+            <a data-tableName="SysProperties">SysProperties</a>
         </div>
         <div class="content">
         
@@ -70,7 +70,7 @@
 
 
 
-<a tableName="SystemProperty" class="links" >SystemProperty</a>
+<a data-tableName="SystemProperty" class="links" >SystemProperty</a>
 
 
 
@@ -341,7 +341,7 @@
                         $(this).addClass("active");
                         $(".ntsp_table.table").css("display","none");
 
-                        $("."+$(this).attr("tableName")).css("display","table");
+                        $("."+$(this).attr("data-tableName")).css("display","table");
                         $(".main.title").text("Resource Type - " + $(this)[0].innerText);
                     }
                 );
@@ -374,7 +374,7 @@
                 $(".ngl_doc .resourceType span.refLinks").click(function () {
                     var refName = $(this).attr("refName");
 
-                    var refLink = $(".ui.accordion").find(`[tableName='${refName}']`).first();
+                    var refLink = $(".ui.accordion").find(`[data-tableName='${refName}']`).first();
 
                     refLink.parents().each(function () {
                         if($(this).hasClass("ui") && $(this).hasClass("accordion")){
