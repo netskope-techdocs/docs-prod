@@ -1646,6 +1646,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-iot-security-release-notes---may-2023.html",
+"text": "Netskope IoT Security Release Notes - May,2023",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-may-23.html",
+"text": "New Features and Enhancements in May'23",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-iot-security-release-notes---april--2023.html",
 "text": "Netskope IoT Security Release Notes - April, 2023",
 "class": "topic-link section reused-publication"
@@ -10766,13 +10778,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-to-99-x.html",
-"text": "Upgrading VA to 99.x",
+"url": "upgrading-va-to-99-0-0.html",
+"text": "Upgrading VA to 99.0.0",
 "class": "topic-link section"
 },
 {
-"url": "upgrading-va-from-versions-older-than-93-x.html",
-"text": "Upgrading VA from versions older than 93.x",
+"url": "upgrading-va-from-versions-older-than-93-1-0.html",
+"text": "Upgrading VA from versions older than 93.1.0",
 "class": "topic-link section"
 },
 {
@@ -10787,8 +10799,8 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-a-99-x.html",
-"text": "Migrate the Virtual Appliance to a 99.x",
+"url": "migrate-the-virtual-appliance-to-a-99-0-0.html",
+"text": "Migrate the Virtual Appliance to a 99.0.0",
 "class": "topic-link section"
 },
 {
