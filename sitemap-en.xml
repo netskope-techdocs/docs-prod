@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-103-0-0.html</loc>
-    <lastmod>2023-04-05</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/known-issues-in-release-103-0-0.html</loc>
@@ -1194,7 +1194,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes.html</loc>
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes---may-2023.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-may-23.html</loc>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-iot-security-release-notes---april--2023.html</loc>
@@ -2218,7 +2226,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/rbi-templates.html</loc>
-    <lastmod>2023-03-02</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/clipboard-in-rbi.html</loc>
@@ -5218,7 +5226,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ipv6-traffic-steering.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/locating-your-netskope-newedge-data-center.html</loc>
@@ -5606,7 +5614,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sentinelone-plugin-for-threat-exchange.html</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/servicenow-plugin-for-threat-exchange.html</loc>
@@ -7422,7 +7430,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance.html</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-of-netskope-on-premises-appliance.html</loc>
@@ -7674,7 +7682,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upgrade-the-appliance-software.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/download-and-install-software.html</loc>
@@ -7702,7 +7710,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance.html</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-overview.html</loc>
@@ -7934,14 +7942,14 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/upgrade-the-virtual-appliance.html</loc>
-    <lastmod>2023-04-26</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/upgrading-va-to-99-x.html</loc>
-    <lastmod>2022-07-21</lastmod>
+    <loc>https://docs.netskope.com/en/upgrading-va-to-99-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/upgrading-va-from-versions-older-than-93-x.html</loc>
+    <loc>https://docs.netskope.com/en/upgrading-va-from-versions-older-than-93-1-0.html</loc>
     <lastmod>2023-02-03</lastmod>
   </url>
   <url>
@@ -7953,7 +7961,7 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/migrate-the-virtual-appliance-to-a-99-x.html</loc>
+    <loc>https://docs.netskope.com/en/migrate-the-virtual-appliance-to-a-99-0-0.html</loc>
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
@@ -8026,7 +8034,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/oplp-alerts-and-event-descriptions.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <lastmod>2023-04-28</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/videos.html</loc>
