@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-104-0-0.html",
+"text": "Netskope Release Notes Version 104.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-104-0-0.html",
+"text": "New Features And Enhancements In Release 104.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-104-0-0.html",
+"text": "Fixed Issues In Release 104.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-104-0-0.html",
+"text": "Known Issues In Release 104.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-103-0-0.html",
 "text": "Netskope Release Notes Version 103.0.0",
 "class": "topic-link section reused-publication"
@@ -6361,8 +6383,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "view-security-posture-compliance-380220.html",
-"text": "View Security Posture Compliance",
+"url": "view-security-posture-findings.html",
+"text": "View Security Posture Findings",
 "class": "topic-link section"
 },
 {
