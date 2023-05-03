@@ -7596,23 +7596,6 @@ var toc = [{
 "url": "aws-guardduty-plugin-for-threat-exchange.html",
 "text": "AWS GuardDuty Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "get-your-aws-guardduty-credentials.html",
-"text": "Get your AWS GuardDuty Credentials",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-aws-guardduty-plugin-for-threat-exchange.html",
-"text": "Configure the AWS GuardDuty Plugin for Threat Exchange",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-aws-guardduty-plugin.html",
-"text": "Validate the AWS GuardDuty Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "carbon-black-plugin-for-threat-exchange.html",
@@ -7678,65 +7661,11 @@ var toc = [{
 "url": "servicenow-plugin-for-threat-exchange.html",
 "text": "ServiceNow Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "create-a-malware-detection-profile-for-servicenow.html",
-"text": "Create a Malware Detection Profile for ServiceNow",
-"class": "topic-link section"
-},
-{
-"url": "create-a-real-time-threat-protection-policy-for-servicenow.html",
-"text": "Create a Real-time Threat Protection Policy for ServiceNow",
-"class": "topic-link section"
-},
-{
-"url": "get-the-servicenow-user-id-and-password.html",
-"text": "Get the ServiceNow User ID and Password",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-servicenow-plugin.html",
-"text": "Configure the ServiceNow Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-servicenow.html",
-"text": "Configure Sharing for Netskope and ServiceNow",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-servicenow-plugin.html",
-"text": "Validate the ServiceNow Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "stix-taxii-plugin-for-threat-exchange.html",
 "text": "STIX\/TAXII Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "get-your-stix-taxii-discovery-url.html",
-"text": "Get your STIX\/TAXII Discovery URL",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-stix-taxii-plugin.html",
-"text": "Configure the STIX\/TAXII Plugin",
-"class": "topic-link section"
-},
-{
-"url": "configure-sharing-for-netskope-and-stix-taxii.html",
-"text": "Configure Sharing for Netskope and STIX\/TAXII",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-stix-taxii-plugin.html",
-"text": "Validate the STIX\/TAXII Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "trend-micro-vision-one-plugin-for-threat-exchange.html",
@@ -7747,33 +7676,6 @@ var toc = [{
 "url": "api-source-plugin-for-threat-exchange.html",
 "text": "API Source Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "configure-the-api-source-plugin.html",
-"text": "Configure the API Source Plugin",
-"class": "topic-link section"
-},
-{
-"url": "create-an-api-token.html",
-"text": "Create an API Token",
-"class": "topic-link section"
-},
-{
-"url": "share-the-iocs-from-an-api-source-to-a-netskope-tenant.html",
-"text": "Share the IoCs from an API Source to a Netskope Tenant",
-"class": "topic-link section"
-},
-{
-"url": "api-documentation.html",
-"text": "API Documentation",
-"class": "topic-link section"
-},
-{
-"url": "examples-of-using-the-api-to-post-and-patch-iocs.html",
-"text": "Examples of using the API to POST and PATCH IoCs",
-"class": "topic-link section"
-}]
 }]
 },
 {
