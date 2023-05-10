@@ -746,6 +746,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-104-0-0-7933.html",
+"text": "Netskope Private Access Publisher Release Notes Version 104.0.0.7933",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-publisher-release-version-104-0-0-7933.html",
+"text": "Fixed Issues In Publisher Release Version 104.0.0.7933",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-103-0-0-7843.html",
 "text": "Netskope Private Access Publisher Release Notes Version 103.0.0.7843",
 "class": "topic-link section reused-publication"
@@ -758,8 +770,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-private-access-publisher-release-notes-version-102-0-0-0.html",
-"text": "Netskope Private Access Publisher Release Notes Version 102.0.0.0",
+"url": "netskope-private-access-publisher-release-notes-version-102-0-0-7784.html",
+"text": "Netskope Private Access Publisher Release Notes Version 102.0.0.7784",
 "class": "topic-link section reused-publication"
 ,
 "children": [
@@ -2974,13 +2986,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "configure-carbon-black.html",
-"text": "Configure Carbon Black",
+"url": "integrating-carbon-black-for-edr.html",
+"text": "Integrating Carbon Black for EDR",
 "class": "topic-link section"
 },
 {
-"url": "configure-crowdstrike.html",
-"text": "Configure CrowdStrike",
+"url": "integrating-crowdstrike-for-edr.html",
+"text": "Integrating CrowdStrike for EDR",
 "class": "topic-link section"
 }]
 },
@@ -7249,6 +7261,11 @@ var toc = [{
 {
 "url": "install-netskope-cloud-exchange-with-aws-ecs-fargate.html",
 "text": "Install Netskope Cloud Exchange with AWS ECS Fargate",
+"class": "topic-link section"
+},
+{
+"url": "install-netskope-cloud-exchange-using-helm-chart-on-k8s-openshift.html",
+"text": "Install Netskope Cloud Exchange using Helm Chart on K8s\/OpenShift",
 "class": "topic-link section"
 },
 {
