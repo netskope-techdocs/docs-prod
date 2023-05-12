@@ -926,26 +926,34 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/overview-for-on-premises-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-on-premises-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-for-on-premises-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-on-premises-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eoa-for-the-netskope-on-premises-hardware-appliance.html</loc>
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/overview-for-on-premises-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-28</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-on-premises-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/known-issues-for-on-premises-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-28</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/fixed-issues-for-on-premises-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-28</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function.html</loc>
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
@@ -1086,30 +1094,34 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-103-0-0-338.html</loc>
-    <lastmod>2023-05-11</lastmod>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/overview-for-virtual-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <loc>https://docs.netskope.com/en/overview-for-virtual-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/requirements-for-virtual-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-05-11</lastmod>
+    <loc>https://docs.netskope.com/en/requirements-for-virtual-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-virtual-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-05-09</lastmod>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-virtual-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/known-issues-for-virtual-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-28</lastmod>
+    <loc>https://docs.netskope.com/en/known-issues-for-virtual-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/fixed-issues-for-virtual-appliance-version-103-0-0.html</loc>
-    <lastmod>2023-04-28</lastmod>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-virtual-appliance-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-12</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99-439952.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function-440223.html</loc>
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
@@ -7725,7 +7737,7 @@
     <lastmod>2021-09-29</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/eoa-for-the-netskope-on-premises-hardware-appliance.html</loc>
+    <loc>https://docs.netskope.com/en/eoa-for-the-netskope-on-premises-hardware-appliance-440152.html</loc>
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
@@ -7733,7 +7745,7 @@
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function.html</loc>
+    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function-440153.html</loc>
     <lastmod>2023-05-11</lastmod>
   </url>
   <url>
