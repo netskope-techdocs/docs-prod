@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-05-09</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -925,6 +925,30 @@
     <lastmod>2023-04-27</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/overview-for-on-premises-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-on-premises-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-05-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-for-on-premises-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-on-premises-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance-release-notes-version-99-0-0.html</loc>
     <lastmod>2022-12-09</lastmod>
   </url>
@@ -1059,6 +1083,34 @@
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes.html</loc>
     <lastmod>2023-04-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-103-0-0-338.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/overview-for-virtual-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/requirements-for-virtual-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-virtual-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-05-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/known-issues-for-virtual-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-for-virtual-appliance-version-103-0-0.html</loc>
+    <lastmod>2023-04-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99-439952.html</loc>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-release-notes-version-99-0-0.html</loc>
@@ -1974,7 +2026,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/dns-profile.html</loc>
-    <lastmod>2022-09-12</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/http-header-profile.html</loc>
@@ -2150,7 +2202,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/endpoint-data-loss-prevention.html</loc>
-    <lastmod>2023-05-09</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-file-scanning--beta-.html</loc>
@@ -2158,7 +2210,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threat-protection.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/advanced-threat-protection-86194.html</loc>
@@ -2171,6 +2223,10 @@
   <url>
     <loc>https://docs.netskope.com/en/viewing-cloud-sandbox-analysis.html</loc>
     <lastmod>2022-05-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/integrating-palo-alto-networks-wildfire-for-cloud-sandbox.html</loc>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/endpoint-detection-and-response.html</loc>
@@ -2422,7 +2478,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cgnat-address-support-for-local-dns-resolution.html</loc>
-    <lastmod>2023-05-04</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-troubleshooting.html</loc>
@@ -2494,7 +2550,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/private-access-faqs.html</loc>
-    <lastmod>2023-04-12</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-secure-web-gateway.html</loc>
@@ -4450,7 +4506,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/create-a-next-generation-api-data-protection-policy.html</loc>
-    <lastmod>2023-03-28</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-api-data-protection-retroactive-scan.html</loc>
@@ -4586,7 +4642,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/sspmv1-to-next-generation-sspm-migration-guide.html</loc>
-    <lastmod>2023-05-05</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management-for-github.html</loc>
@@ -4678,7 +4734,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-firewall.html</loc>
-    <lastmod>2023-04-04</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/configure-a-gre-tunnel.html</loc>
@@ -4733,6 +4789,10 @@
     <lastmod>2021-12-10</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/dns-security.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/traffic-steering.html</loc>
     <lastmod>2023-04-25</lastmod>
   </url>
@@ -4746,7 +4806,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2023-03-15</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -4754,7 +4814,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-configuration.html</loc>
-    <lastmod>2023-05-02</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-network-configuration.html</loc>
@@ -4842,7 +4902,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-client-on-windows-using-intune.html</loc>
-    <lastmod>2023-01-05</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/deploy-client-on-macos-using-intune.html</loc>
@@ -5010,7 +5070,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/addressing-ssl-error-while-accessing-aws-services-via-the-aws-cli-with-the-netskope-client-enabled.html</loc>
-    <lastmod>2022-10-17</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ios-vpn-fail-open.html</loc>
@@ -5062,7 +5122,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/enabling-dynamic-steering.html</loc>
-    <lastmod>2023-05-08</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/downloading-steering-configurations.html</loc>
@@ -6226,7 +6286,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-and-authentication.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/scim-based-user-provisioning.html</loc>
@@ -6346,7 +6406,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-sso-with-azure-ad.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-sso-with-okta.html</loc>
@@ -7386,7 +7446,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/on-premises-appliance.html</loc>
-    <lastmod>2023-04-28</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/overview-of-netskope-on-premises-appliance.html</loc>
@@ -7665,16 +7725,28 @@
     <lastmod>2021-09-29</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/eoa-for-the-netskope-on-premises-hardware-appliance.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99-438639.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/virtual-appliance.html</loc>
-    <lastmod>2023-04-28</lastmod>
+    <lastmod>2023-05-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/virtual-appliance-overview.html</loc>
-    <lastmod>2023-04-27</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-a-virtual-appliance.html</loc>
-    <lastmod>2022-07-26</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-the-virtual-appliance-on-vmware-esx-6-5-or-later.html</loc>
@@ -7901,11 +7973,11 @@
     <lastmod>2023-05-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/upgrading-va-to-99-0-0.html</loc>
+    <loc>https://docs.netskope.com/en/upgrading-va-to-103-0-0-338.html</loc>
     <lastmod>2023-04-28</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/upgrading-va-from-versions-older-than-93-1-0.html</loc>
+    <loc>https://docs.netskope.com/en/upgrading-va-from-versions-older-than-96-0-0.html</loc>
     <lastmod>2023-02-03</lastmod>
   </url>
   <url>
@@ -7917,7 +7989,7 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/migrate-the-virtual-appliance-to-a-99-0-0.html</loc>
+    <loc>https://docs.netskope.com/en/migrate-the-virtual-appliance-to-a-103-0-0-338.html</loc>
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
@@ -7933,6 +8005,14 @@
     <lastmod>2022-07-21</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/eol-eos-for-dpop-r99-438638.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/eol-for-the-secure-forwarder-steering-function-440154.html</loc>
+    <lastmod>2023-05-11</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/secure-forwarder-105150.html</loc>
     <lastmod>2023-02-24</lastmod>
   </url>
@@ -7946,7 +8026,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-a-virtual-appliance-126732.html</loc>
-    <lastmod>2022-07-26</lastmod>
+    <lastmod>2023-05-11</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/install-the-virtual-appliance-on-vmware-esx-6-5-or-later-126993.html</loc>

@@ -1281,6 +1281,38 @@ var toc = [{
 ,
 "children": [
 {
+"url": "on-premises-appliance-release-notes-version-103-0-0-338.html",
+"text": "On-Premises Appliance Release Notes Version 103.0.0.338",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "overview-for-on-premises-appliance-version-103-0-0.html",
+"text": "Overview for On-Premises Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-on-premises-appliance-version-103-0-0.html",
+"text": "New Features and Enhancements for On-Premises Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-on-premises-appliance-version-103-0-0.html",
+"text": "Known Issues for On-Premises Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-on-premises-appliance-version-103-0-0.html",
+"text": "Fixed Issues for On-Premises Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "eol-eos-for-dpop-r99.html",
+"text": "EOL\/EOS for DPoP r99",
+"class": "topic-link section"
+}]
+},
+{
 "url": "on-premises-appliance-release-notes-version-99-0-0.html",
 "text": "On-Premises Appliance Release Notes Version 99.0.0",
 "class": "topic-link section reused-publication"
@@ -1464,6 +1496,43 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "virtual-appliance-release-notes-version-103-0-0-338.html",
+"text": "Virtual Appliance Release Notes Version 103.0.0.338",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "overview-for-virtual-appliance-version-103-0-0.html",
+"text": "Overview for Virtual Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "requirements-for-virtual-appliance-version-103-0-0.html",
+"text": "Requirements for Virtual Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-virtual-appliance-version-103-0-0.html",
+"text": "New Features and Enhancements for Virtual Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-for-virtual-appliance-version-103-0-0.html",
+"text": "Known Issues for Virtual Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-for-virtual-appliance-version-103-0-0.html",
+"text": "Fixed Issues for Virtual Appliance Version 103.0.0",
+"class": "topic-link section"
+},
+{
+"url": "eol-eos-for-dpop-r99-439952.html",
+"text": "EOL\/EOS for DPoP r99",
+"class": "topic-link section"
+}]
+},
 {
 "url": "virtual-appliance-release-notes-version-99-0-0.html",
 "text": "Virtual Appliance Release Notes Version 99.0.0",
@@ -2976,6 +3045,11 @@ var toc = [{
 {
 "url": "viewing-cloud-sandbox-analysis.html",
 "text": "Viewing Cloud Sandbox Analysis",
+"class": "topic-link section"
+},
+{
+"url": "integrating-palo-alto-networks-wildfire-for-cloud-sandbox.html",
+"text": "Integrating Palo Alto Networks WildFire for Cloud Sandbox",
 "class": "topic-link section"
 }]
 },
@@ -6478,6 +6552,11 @@ var toc = [{
 "url": "cloud-firewall-advanced-analytics-events.html",
 "text": "Cloud Firewall Advanced Analytics Events",
 "class": "topic-link section"
+},
+{
+"url": "dns-security.html",
+"text": "DNS Security",
+"class": "topic-link section"
 }]
 }]
 },
@@ -8637,7 +8716,7 @@ var toc = [{
 {
 "url": "netskope-sso-with-azure-ad.html",
 "text": "Netskope SSO with Azure AD",
-"class": "topic-link section"
+"class": "topic-link section reused-publication"
 },
 {
 "url": "netskope-sso-with-okta.html",
@@ -10399,6 +10478,21 @@ var toc = [{
 "url": "cdpp-for-appliance.html",
 "text": "CDPP for Appliance",
 "class": "topic-link section"
+},
+{
+"url": "eoa-for-the-netskope-on-premises-hardware-appliance.html",
+"text": "EOA for the Netskope On-Premises Hardware Appliance",
+"class": "topic-link section"
+},
+{
+"url": "eol-eos-for-dpop-r99-438639.html",
+"text": "EOL\/EOS for DPoP r99",
+"class": "topic-link section"
+},
+{
+"url": "eol-for-the-secure-forwarder-steering-function.html",
+"text": "EOL for the Secure Forwarder Steering Function",
+"class": "topic-link section"
 }]
 },
 {
@@ -10719,13 +10813,13 @@ var toc = [{
 ,
 "children": [
 {
-"url": "upgrading-va-to-99-0-0.html",
-"text": "Upgrading VA to 99.0.0",
+"url": "upgrading-va-to-103-0-0-338.html",
+"text": "Upgrading VA to 103.0.0.338",
 "class": "topic-link section"
 },
 {
-"url": "upgrading-va-from-versions-older-than-93-1-0.html",
-"text": "Upgrading VA from versions older than 93.1.0",
+"url": "upgrading-va-from-versions-older-than-96-0-0.html",
+"text": "Upgrading VA from versions older than 96.0.0",
 "class": "topic-link section"
 },
 {
@@ -10740,8 +10834,8 @@ var toc = [{
 }]
 },
 {
-"url": "migrate-the-virtual-appliance-to-a-99-0-0.html",
-"text": "Migrate the Virtual Appliance to a 99.0.0",
+"url": "migrate-the-virtual-appliance-to-a-103-0-0-338.html",
+"text": "Migrate the Virtual Appliance to a 103.0.0.338",
 "class": "topic-link section"
 },
 {
@@ -10757,6 +10851,16 @@ var toc = [{
 {
 "url": "remove-an-appliance-177438.html",
 "text": "Remove an Appliance",
+"class": "topic-link section"
+},
+{
+"url": "eol-eos-for-dpop-r99-438638.html",
+"text": "EOL\/EOS for DPoP r99",
+"class": "topic-link section"
+},
+{
+"url": "eol-for-the-secure-forwarder-steering-function-440154.html",
+"text": "EOL for the Secure Forwarder Steering Function",
 "class": "topic-link section"
 }]
 },
