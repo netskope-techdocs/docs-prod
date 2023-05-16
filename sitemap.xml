@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-05-10</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -682,7 +682,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-intrusion-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-05-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-104-0-0-346.html</loc>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-103-0-0-336.html</loc>
@@ -690,15 +694,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-102-0-0-324.html</loc>
-    <lastmod>2023-05-15</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-101-0-1-314.html</loc>
-    <lastmod>2023-05-15</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-101-0-0-306.html</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-1-298.html</loc>
@@ -706,7 +710,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-100-0-0-283.html</loc>
-    <lastmod>2023-04-25</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-99-0-1-277.html</loc>
@@ -714,11 +718,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-99-0-0-264.html</loc>
-    <lastmod>2022-11-15</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-98-0-0-257.html</loc>
-    <lastmod>2022-11-15</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-97-1-1-246.html</loc>
@@ -742,7 +746,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-96-0-1-208.html</loc>
-    <lastmod>2022-07-13</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ctep-ips-threat-content-update-release-notes-95-1-2-205.html</loc>
@@ -3138,7 +3142,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/authorize-netskope-introspection-app-on-box-enterprise.html</loc>
-    <lastmod>2020-05-19</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/enable-box-event-stream.html</loc>
@@ -4930,7 +4934,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/jamf.html</loc>
-    <lastmod>2023-05-15</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/jamf-pro.html</loc>
@@ -5198,7 +5202,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/proxies.html</loc>
-    <lastmod>2022-05-05</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/auth-integration.html</loc>
@@ -6634,15 +6638,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-windows.html</loc>
-    <lastmod>2022-08-23</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-mac.html</loc>
-    <lastmod>2022-09-13</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-ios.html</loc>
-    <lastmod>2022-03-22</lastmod>
+    <lastmod>2023-05-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-android.html</loc>
