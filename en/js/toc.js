@@ -1906,7 +1906,7 @@ var toc = [{
 {
 "url": "getting-started.html",
 "text": "Getting Started",
-"class": "topic-link section top-nav-link"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -2660,7 +2660,7 @@ var toc = [{
 {
 "url": "data-security.html",
 "text": "Data Security",
-"class": "topic-link section top-nav-link"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -7278,9 +7278,9 @@ var toc = [{
 }]
 },
 {
-"url": "integrations-317805.html",
+"url": "integrations-439794.html",
 "text": "Integrations",
-"class": "topic-link section top-nav-link"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -8890,7 +8890,7 @@ var toc = [{
 {
 "url": "admin-console.html",
 "text": "Admin Console",
-"class": "topic-link section top-nav-link"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
@@ -10114,7 +10114,7 @@ var toc = [{
 {
 "url": "appliances.html",
 "text": "Appliances",
-"class": "topic-link section top-nav-link"
+"class": "topic-link section top-nav-link; reused-publication"
 ,
 "children": [
 {
