@@ -1905,6 +1905,11 @@ var toc = [{
 "url": "new-features-and-enhancements-april-20--2023.html",
 "text": "New Features and Enhancements April 20, 2023",
 "class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-may-18--2023.html",
+"text": "New Features and Enhancements May 18, 2023",
+"class": "topic-link section"
 }]
 }]
 },
@@ -7301,8 +7306,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "system-requirements.html",
-"text": "System Requirements",
+"url": "cloud-exchange-system-requirements.html",
+"text": "Cloud Exchange System Requirements",
 "class": "topic-link section"
 },
 {
@@ -7474,8 +7479,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "proxy.html",
-"text": "Proxy",
+"url": "cloud-exchange-proxy.html",
+"text": "Cloud Exchange Proxy",
 "class": "topic-link section"
 },
 {
@@ -7485,8 +7490,8 @@ var toc = [{
 }]
 },
 {
-"url": "users-291062.html",
-"text": "Users",
+"url": "cloud-exchange-users.html",
+"text": "Cloud Exchange Users",
 "class": "topic-link section"
 ,
 "children": [
@@ -7665,8 +7670,8 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "slack-notifier-plugin-for-ticket-orchestrator.html",
-"text": "Slack Notifier Plugin for Ticket Orchestrator",
+"url": "notifier-plugin-for-ticket-orchestrator.html",
+"text": "Notifier Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication"
 }]
 },
