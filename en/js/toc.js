@@ -1125,6 +1125,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-cloud-exchange-release-notes-version-4-2-0.html",
+"text": "Netskope Cloud Exchange Release Notes Version 4.2.0",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "netskope-cloud-exchange-release-notes-version-4-1-0.html",
 "text": "Netskope Cloud Exchange Release Notes Version 4.1.0",
 "class": "topic-link section reused-publication"
@@ -7401,6 +7406,11 @@ var toc = [{
 "url": "cloud-exchange-sso-with-okta.html",
 "text": "Cloud Exchange SSO with Okta",
 "class": "topic-link section reused-publication"
+},
+{
+"url": "sso-access-for-netskope-support.html",
+"text": "SSO Access for Netskope Support",
+"class": "topic-link section"
 }]
 },
 {
@@ -7486,6 +7496,11 @@ var toc = [{
 {
 "url": "tasks-cleanup.html",
 "text": "Tasks Cleanup",
+"class": "topic-link section"
+},
+{
+"url": "secrets-manager.html",
+"text": "Secrets Manager",
 "class": "topic-link section"
 }]
 },
@@ -7658,6 +7673,13 @@ var toc = [{
 "url": "servicenow-plugin-for-ticket-orchestrator.html",
 "text": "ServiceNow Plugin for Ticket Orchestrator",
 "class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "assigning-roles-to-users.html",
+"text": "Assigning Roles to Users",
+"class": "topic-link section"
+}]
 },
 {
 "url": "jira-plugin-for-ticket-orchestrator.html",
@@ -7886,9 +7908,21 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-threat-exchange-developers-guide.html",
-"text": "Netskope Threat Exchange Developers Guide",
+"url": "threat-exchange-custom-plugin-developers-guide.html",
+"text": "Threat Exchange Custom Plugin Developers Guide",
 "class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "plugin-packaging.html",
+"text": "Plugin Packaging",
+"class": "topic-link section"
+},
+{
+"url": "deploy-the-plugin.html",
+"text": "Deploy the Plugin",
+"class": "topic-link section"
+}]
 }]
 },
 {
