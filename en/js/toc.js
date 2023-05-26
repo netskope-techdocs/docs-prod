@@ -7348,14 +7348,14 @@ var toc = [{
 ,
 "children": [
 {
-"url": "migrating-from-beta-4-x-to-the-latest-version.html",
-"text": "Migrating from Beta 4.x to the Latest Version",
-"class": "topic-link section"
+  "url": "upgrading-to-the-latest-version-of-cloud-exchange.html",
+  "text": "Upgrading to the Latest Version of Cloud Exchange",
+  "class": "topic-link section"
 },
 {
-"url": "migrating-from-ce-3-1-or-newer-to-the-latest-version-of-cloud-exchange.html",
-"text": "Migrating from CE 3.1 or newer to the Latest Version of Cloud Exchange",
-"class": "topic-link section"
+  "url": "migrating-from-beta-4-x-to-the-latest-version.html",
+  "text": "Migrating from Beta 4.x to the Latest Version",
+  "class": "topic-link section"
 },
 {
 "url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
