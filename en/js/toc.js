@@ -16,6 +16,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-note-hotfix-version-104-0-12.html",
+"text": "Netskope Release Note Hotfix Version 104.0.12",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-104-0-12.html",
+"text": "Fixed Issues In Hotfix Release 104.0.12",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-104-0-0.html",
 "text": "Netskope Release Notes Version 104.0.0",
 "class": "topic-link section reused-publication"
@@ -958,6 +970,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "ips-threat-content-update-release-notes-104-0-1-358.html",
+"text": "IPS Threat Content Update Release Notes 104.0.1.358",
+"class": "topic-link section"
+},
+{
 "url": "ips-threat-content-update-release-notes-104-0-0-346.html",
 "text": "IPS Threat Content Update Release Notes 104.0.0.346",
 "class": "topic-link section"
@@ -1774,82 +1791,99 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-iot-security-release-notes---may-2023.html",
-"text": "Netskope IoT Security Release Notes - May,2023",
+"url": "netskope-iot-security-release-notes-version-23-05.html",
+"text": "Netskope IoT Security Release Notes Version 23.05",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-may-23.html",
-"text": "New Features and Enhancements in May'23",
+"url": "new-features-and-enhancements-in-version-23-05.html",
+"text": "New Features and Enhancements in Version 23.05",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-version-23-05.html",
+"text": "Fixed Issues in Version 23.05",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-iot-security-release-notes---april--2023.html",
-"text": "Netskope IoT Security Release Notes - April, 2023",
+"url": "netskope-iot-security-release-notes-in-version-23-04.html",
+"text": "Netskope IoT Security Release Notes in Version 23.04",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-april-23.html",
-"text": "New Features and Enhancements in April'23",
-"class": "topic-link section"
-},
-{
-"url": "fixed-issues-in-april-23.html",
-"text": "Fixed Issues in April'23",
+"url": "new-features-and-enhancements-in-version-23-04.html",
+"text": "New Features and Enhancements in Version 23.04",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-iot-security-release-notes---march--2023.html",
-"text": "Netskope IoT Security Release Notes - March, 2023",
+"url": "netskope-iot-security-release-notes-in-version-23-03.html",
+"text": "Netskope IoT Security Release Notes in Version 23.03",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-march-23.html",
-"text": "New Features And Enhancements in March'23",
+"url": "new-features-and-enhancements-in-version-23-03.html",
+"text": "New Features and Enhancements in Version 23.03",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-in-march-23.html",
-"text": "Fixed Issues in March'23",
+"url": "fixed-issues-in-version-23-03.html",
+"text": "Fixed Issues in Version 23.03",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-iot-security-release-notes---february--2023.html",
-"text": "Netskope IoT Security Release Notes - February, 2023",
+"url": "netskope-iot-security-release-notes-in-version-23-02.html",
+"text": "Netskope IoT Security Release Notes in Version 23.02",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-february-23.html",
-"text": "New Features and Enhancements in February'23",
+"url": "new-features-and-enhancements-in-version-23-02.html",
+"text": "New Features And Enhancements in Version 23.02",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-in-february-23.html",
-"text": "Fixed Issues in February'23",
+"url": "fixed-issues-in-version-23-02.html",
+"text": "Fixed Issues in version 23.02",
 "class": "topic-link section"
 }]
 },
 {
-"url": "netskope-iot-security-release-notes---january--2023.html",
-"text": "Netskope IoT Security Release Notes - January, 2023",
+"url": "netskope-iot-security-release-notes-in-version-23-01.html",
+"text": "Netskope IoT Security Release Notes in Version 23.01",
 "class": "topic-link section reused-publication"
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-in-january-23.html",
-"text": "New Features And Enhancements in January'23",
+"url": "new-features-and-enhancements-in-version-23-01.html",
+"text": "New Features and Enhancements in Version 23.01",
 "class": "topic-link section"
 },
 {
-"url": "fixed-issues-in-january-23.html",
-"text": "Fixed Issues in January'23",
+"url": "fixed-issues-in-version-23-01.html",
+"text": "Fixed Issues in Version 23.01",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-iot-security-release-notes-in-2022.html",
+"text": "Netskope IoT Security Release Notes in 2022",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-2022.html",
+"text": "New Features And Enhancements in 2022",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-2022.html",
+"text": "Fixed Issues in 2022",
 "class": "topic-link section"
 }]
 }]
@@ -7106,6 +7140,13 @@ var toc = [{
 "url": "proxy-chaining.html",
 "text": "Proxy Chaining",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "adding-the-proxy-ip-address-to-the-proxy-chaining-allowlist.html",
+"text": "Adding the Proxy IP Address to the Proxy Chaining Allowlist",
+"class": "topic-link section"
+}]
 },
 {
 "url": "proxies.html",
@@ -7348,14 +7389,14 @@ var toc = [{
 ,
 "children": [
 {
-  "url": "upgrading-to-the-latest-version-of-cloud-exchange.html",
-  "text": "Upgrading to the Latest Version of Cloud Exchange",
-  "class": "topic-link section"
+"url": "upgrading-to-the-latest-version-of-cloud-exchange.html",
+"text": "Upgrading to the Latest Version of Cloud Exchange",
+"class": "topic-link section"
 },
 {
-  "url": "migrating-from-beta-4-x-to-the-latest-version.html",
-  "text": "Migrating from Beta 4.x to the Latest Version",
-  "class": "topic-link section"
+"url": "migrating-from-beta-4-x-to-the-latest-version.html",
+"text": "Migrating from Beta 4.x to the Latest Version",
+"class": "topic-link section"
 },
 {
 "url": "migrating-from-ce-3-x-to-ce-3-1-5.html",
