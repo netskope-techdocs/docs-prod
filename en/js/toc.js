@@ -16,8 +16,30 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-release-note-hotfix-version-104-0-12.html",
-"text": "Netskope Release Note Hotfix Version 104.0.12",
+"url": "netskope-release-notes-version-105-0-0.html",
+"text": "Netskope Release Notes Version 105.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-105-0-0.html",
+"text": "New Features And Enhancements In Release 105.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-105-0-0.html",
+"text": "Fixed Issues In Release 105.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-105-0-0.html",
+"text": "Known Issues In Release 105.0.0",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-release-note-version-104-0-12.html",
+"text": "Netskope Release Note Version 104.0.12",
 "class": "topic-link section reused-publication"
 ,
 "children": [
@@ -1791,8 +1813,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-iot-security-release-notes-version-23-05.html",
-"text": "Netskope IoT Security Release Notes Version 23.05",
+"url": "netskope-iot-security-release-notes-in-version-23-05.html",
+"text": "Netskope IoT Security Release Notes in Version 23.05",
 "class": "topic-link section reused-publication"
 ,
 "children": [
@@ -6015,6 +6037,11 @@ var toc = [{
 {
 "url": "file-sharing-exposure.html",
 "text": "File Sharing Exposure",
+"class": "topic-link section"
+},
+{
+"url": "improved-reporting-on-malware-files-in-api-data-protection.html",
+"text": "Improved Reporting on Malware Files in API Data Protection",
 "class": "topic-link section"
 }]
 },
