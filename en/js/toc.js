@@ -8022,6 +8022,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "crowdstrike-falcon-identity-protection-plugin-for-user-risk-exchange.html",
+"text": "CrowdStrike Falcon Identity Protection Plugin for User Risk Exchange",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "crowdstrike-plugin-for-user-risk-exchange.html",
 "text": "Crowdstrike Plugin for User Risk Exchange",
 "class": "topic-link section reused-publication"
