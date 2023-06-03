@@ -7634,8 +7634,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "aws-s3-plugin-for-log-shipper.html",
-"text": "AWS S3 Plugin for Log Shipper",
+"url": "aws-s3-webtx-plugin-for-log-shipper.html",
+"text": "AWS S3 WebTX Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
