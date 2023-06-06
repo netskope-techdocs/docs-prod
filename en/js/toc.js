@@ -7639,6 +7639,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "aws-s3-events--alerts-plugin-for-log-shipper.html",
+"text": "AWS S3 Events, Alerts Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "aws-security-lake-plugin-for-log-shipper.html",
 "text": "AWS Security Lake Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
