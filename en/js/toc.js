@@ -38,8 +38,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-release-note-version-104-0-12.html",
-"text": "Netskope Release Note Version 104.0.12",
+"url": "netskope-release-note-version-hotfix-104-0-12.html",
+"text": "Netskope Release Note Version Hotfix 104.0.12",
 "class": "topic-link section reused-publication"
 ,
 "children": [
@@ -3625,7 +3625,7 @@ var toc = [{
 },
 {
 "url": "configure-the-appliance-in-explicit-proxy-mode.html",
-"text": "Configure the Appliance in Explicit Proxy mode",
+"text": "Configure the Appliance in Explicit Proxy Mode",
 "class": "topic-link section"
 }]
 },
@@ -3654,8 +3654,8 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "web-configuration.html",
-"text": "Web Configuration",
+"url": "security-cloud-platform-configuration.html",
+"text": "Security Cloud Platform Configuration",
 "class": "topic-link section"
 },
 {
@@ -7353,11 +7353,6 @@ var toc = [{
 "url": "locating-your-netskope-newedge-data-center.html",
 "text": "Locating Your Netskope NewEdge Data Center",
 "class": "topic-link section"
-},
-{
-"url": "security-cloud-platform-configuration.html",
-"text": "Security Cloud Platform Configuration",
-"class": "topic-link section"
 }]
 },
 {
@@ -7635,7 +7630,7 @@ var toc = [{
 "children": [
 {
 "url": "aws-s3-webtx-plugin-for-log-shipper.html",
-"text": "AWS S3 WebTX Plugin for Log Shipper",
+"text": "AWS S3 WebTx Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
@@ -9411,11 +9406,6 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "dynamic-url-classification.html",
-"text": "Dynamic URL Classification",
-"class": "topic-link section"
-},
-{
 "url": "skope-it-query-language.html",
 "text": "Skope IT Query Language",
 "class": "topic-link section"
@@ -10386,7 +10376,7 @@ var toc = [{
 },
 {
 "url": "configure-the-appliance-in-explicit-proxy-mode-115994.html",
-"text": "Configure the Appliance in Explicit Proxy mode",
+"text": "Configure the Appliance in Explicit Proxy Mode",
 "class": "topic-link section"
 ,
 "children": [
@@ -10900,7 +10890,7 @@ var toc = [{
 },
 {
 "url": "configure-the-appliance-in-explicit-proxy-mode-144871.html",
-"text": "Configure the Appliance in Explicit Proxy mode",
+"text": "Configure the Appliance in Explicit Proxy Mode",
 "class": "topic-link section"
 ,
 "children": [
