@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2023-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -10,7 +10,15 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-release-notes.html</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2023-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-release-notes-hotfix-version-105-0-3.html</loc>
+    <lastmod>2023-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/fixed-issues-in-hotfix-release-105-0-3.html</loc>
+    <lastmod>2023-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes-version-105-0-0.html</loc>
@@ -29,8 +37,8 @@
     <lastmod>2023-06-02</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/netskope-release-note-version-hotfix-104-0-12.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-release-note-hotfix-version-104-0-12.html</loc>
+    <lastmod>2023-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-hotfix-release-104-0-12.html</loc>

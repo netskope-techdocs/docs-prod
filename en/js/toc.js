@@ -16,6 +16,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-hotfix-version-105-0-3.html",
+"text": "Netskope Release Notes Hotfix Version 105.0.3",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "fixed-issues-in-hotfix-release-105-0-3.html",
+"text": "Fixed Issues In Hotfix Release 105.0.3",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-version-105-0-0.html",
 "text": "Netskope Release Notes Version 105.0.0",
 "class": "topic-link section reused-publication"
@@ -38,8 +50,8 @@ var toc = [{
 }]
 },
 {
-"url": "netskope-release-note-version-hotfix-104-0-12.html",
-"text": "Netskope Release Note Version Hotfix 104.0.12",
+"url": "netskope-release-note-hotfix-version-104-0-12.html",
+"text": "Netskope Release Note Hotfix Version 104.0.12",
 "class": "topic-link section reused-publication"
 ,
 "children": [
