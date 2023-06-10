@@ -1398,15 +1398,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes.html</loc>
-    <lastmod>2023-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes-for-february-2023.html</loc>
-    <lastmod>2023-03-31</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes-for-february-20--2023.html</loc>
-    <lastmod>2023-02-23</lastmod>
+    <lastmod>2023-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes-for-march-2023.html</loc>
@@ -1417,28 +1409,36 @@
     <lastmod>2023-06-08</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes-for-february-2023.html</loc>
+    <lastmod>2023-03-31</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/netskope-digital-experience-management-release-notes-for-february-20--2023.html</loc>
+    <lastmod>2023-02-23</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/netskope-advanced-analytics-release-notes.html</loc>
+    <lastmod>2023-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-may-18--2023.html</loc>
     <lastmod>2023-05-19</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-march-3--2023.html</loc>
-    <lastmod>2023-03-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-march-30--2023.html</loc>
-    <lastmod>2023-04-04</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/netskope-library-dashboard-updates-april-12--2023.html</loc>
-    <lastmod>2023-04-13</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-april-20--2023.html</loc>
     <lastmod>2023-04-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/new-features-and-enhancements-may-18--2023.html</loc>
-    <lastmod>2023-05-19</lastmod>
+    <loc>https://docs.netskope.com/en/netskope-library-dashboard-updates-april-12--2023.html</loc>
+    <lastmod>2023-04-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-march-30--2023.html</loc>
+    <lastmod>2023-04-04</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-for-march-3--2023.html</loc>
+    <lastmod>2023-03-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/getting-started.html</loc>
@@ -2558,11 +2558,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/the-npa-troubleshooter-tool.html</loc>
-    <lastmod>2023-05-17</lastmod>
+    <lastmod>2023-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/general-troubleshooting-methods.html</loc>
-    <lastmod>2023-06-01</lastmod>
+    <lastmod>2023-06-09</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/troubleshooting-performance-and-connectivity-using-tcping-and-psping.html</loc>
@@ -5613,8 +5613,8 @@
     <lastmod>2023-06-08</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/azure-sentinel-plugin-for-log-shipper.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <loc>https://docs.netskope.com/en/microsoft-azure-sentinel-plugin-for-log-shipper.html</loc>
+    <lastmod>2023-06-10</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/azure-storage-plugin-for-log-shipper.html</loc>

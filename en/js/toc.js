@@ -1929,18 +1929,6 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-digital-experience-management-release-notes-for-february-2023.html",
-"text": "Netskope Digital Experience Management Release Notes for February 2023",
-"class": "topic-link section"
-,
-"children": [
-{
-"url": "netskope-digital-experience-management-release-notes-for-february-20--2023.html",
-"text": "Netskope Digital Experience Management Release Notes for February 20, 2023",
-"class": "topic-link section"
-}]
-},
-{
 "url": "netskope-digital-experience-management-release-notes-for-march-2023.html",
 "text": "Netskope Digital Experience Management Release Notes for March 2023",
 "class": "topic-link section"
@@ -1949,6 +1937,18 @@ var toc = [{
 {
 "url": "netskope-digital-experience-management-release-notes-for-march-31--2023.html",
 "text": "Netskope Digital Experience Management Release Notes for March 31, 2023",
+"class": "topic-link section"
+}]
+},
+{
+"url": "netskope-digital-experience-management-release-notes-for-february-2023.html",
+"text": "Netskope Digital Experience Management Release Notes for February 2023",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "netskope-digital-experience-management-release-notes-for-february-20--2023.html",
+"text": "Netskope Digital Experience Management Release Notes for February 20, 2023",
 "class": "topic-link section"
 }]
 }]
@@ -1960,18 +1960,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "new-features-and-enhancements-for-march-3--2023.html",
-"text": "New Features And Enhancements for March 3, 2023",
-"class": "topic-link section"
-},
-{
-"url": "new-features-and-enhancements-march-30--2023.html",
-"text": "New Features and Enhancements March 30, 2023",
-"class": "topic-link section"
-},
-{
-"url": "netskope-library-dashboard-updates-april-12--2023.html",
-"text": "Netskope Library Dashboard Updates April 12, 2023",
+"url": "new-features-and-enhancements-may-18--2023.html",
+"text": "New Features and Enhancements May 18, 2023",
 "class": "topic-link section"
 },
 {
@@ -1980,8 +1970,18 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "new-features-and-enhancements-may-18--2023.html",
-"text": "New Features and Enhancements May 18, 2023",
+"url": "netskope-library-dashboard-updates-april-12--2023.html",
+"text": "Netskope Library Dashboard Updates April 12, 2023",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-march-30--2023.html",
+"text": "New Features and Enhancements March 30, 2023",
+"class": "topic-link section"
+},
+{
+"url": "new-features-and-enhancements-for-march-3--2023.html",
+"text": "New Features And Enhancements for March 3, 2023",
 "class": "topic-link section"
 }]
 }]
@@ -7656,8 +7656,8 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "azure-sentinel-plugin-for-log-shipper.html",
-"text": "Azure Sentinel Plugin for Log Shipper",
+"url": "microsoft-azure-sentinel-plugin-for-log-shipper.html",
+"text": "Microsoft Azure Sentinel Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
