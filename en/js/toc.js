@@ -7661,6 +7661,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "microsoft-azure-monitor-plugin-for-log-shipper.html",
+"text": "Microsoft Azure Monitor Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "azure-storage-plugin-for-log-shipper.html",
 "text": "Azure Storage Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
