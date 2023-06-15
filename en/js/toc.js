@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-note-hotfix-version-105-1-0.html",
+"text": "Netskope Release Note Hotfix Version 105.1.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-hotfix-release-105-1-0.html",
+"text": "New Features And Enhancements In Hotfix Release 105.1.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-hotfix-release-105-1-0.html",
+"text": "Fixed Issues In Hotfix Release 105.1.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-hotfix-release-105-1-0.html",
+"text": "Known Issues In Hotfix Release 105.1.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-notes-hotfix-version-105-0-3.html",
 "text": "Netskope Release Notes Hotfix Version 105.0.3",
 "class": "topic-link section reused-publication"
@@ -3800,6 +3822,41 @@ var toc = [{
 ,
 "children": [
 {
+"url": "security-posture-policy.html",
+"text": "Security Posture Policy",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-policy.html",
+"text": "Create a Security Posture Policy",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-profile.html",
+"text": "Security Posture Profile",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-profile.html",
+"text": "Create a Security Posture Profile",
+"class": "topic-link section"
+}]
+},
+{
+"url": "security-posture-rule.html",
+"text": "Security Posture Rule",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "create-a-security-posture-rule.html",
+"text": "Create a Security Posture Rule",
+"class": "topic-link section"
+},
+{
 "url": "custom-rules-using-domain-specific-language.html",
 "text": "Custom Rules using Domain Specific Language",
 "class": "topic-link section"
@@ -3809,10 +3866,11 @@ var toc = [{
 "text": "Supported IaaS Entities and Predefined Rules for CSPM",
 "class": "topic-link section"
 }]
+}]
 },
 {
-"url": "viewing-cloud-security-posture-compliance-alerts.html",
-"text": "Viewing Cloud Security Posture Compliance Alerts",
+"url": "view-security-posture-compliance.html",
+"text": "View Security Posture Compliance",
 "class": "topic-link section"
 }]
 },
@@ -4163,7 +4221,7 @@ var toc = [{
 ,
 "children": [
 {
-"url": "view-security-posture-compliance.html",
+"url": "view-security-posture-compliance-450413.html",
 "text": "View Security Posture Compliance",
 "class": "topic-link section"
 },
@@ -4337,6 +4395,40 @@ var toc = [{
 "url": "netskope-asset-inventory.html",
 "text": "Netskope Asset Inventory",
 "class": "topic-link section"
+},
+{
+"url": "user-management-in-netskope-iot-security.html",
+"text": "User Management in Netskope IoT Security",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "access-control-in-netskope-iot-security.html",
+"text": "Access Control in Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "user-management.html",
+"text": "User Management",
+"class": "topic-link section"
+}]
+},
+{
+"url": "discover-operational-technology-in-netskope-iot-security.html",
+"text": "Discover Operational Technology in Netskope IoT Security",
+"class": "topic-link section"
+,
+"children": [
+{
+"url": "ot-device-discovery.html",
+"text": "OT Device Discovery",
+"class": "topic-link section"
+},
+{
+"url": "ot-device-activities.html",
+"text": "OT Device Activities",
+"class": "topic-link section"
+}]
 }]
 },
 {
@@ -6137,6 +6229,18 @@ var toc = [{
 }]
 },
 {
+"url": "next-generation-api-data-protection-for-google-drive.html",
+"text": "Next Generation API Data Protection for Google Drive",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "configure-google-drive-for-the-next-generation-api-data-protection.html",
+"text": "Configure Google Drive for the Next Generation API Data Protection",
+"class": "topic-link section"
+}]
+},
+{
 "url": "next-generation-api-data-protection-for-microsoft-365-onedrive.html",
 "text": "Next Generation API Data Protection for Microsoft 365 OneDrive",
 "class": "topic-link section reused-publication"
@@ -6296,11 +6400,6 @@ var toc = [{
 "url": "configure-github-instance-for-security-posture.html",
 "text": "Configure GitHub Instance for Security Posture",
 "class": "topic-link section"
-},
-{
-"url": "permissions-required-for-github-319757.html",
-"text": "Permissions Required for GitHub",
-"class": "topic-link section"
 }]
 },
 {
@@ -6313,11 +6412,6 @@ var toc = [{
 "url": "configure-microsoft-365-instance-for-security-posture.html",
 "text": "Configure Microsoft 365 Instance for Security Posture",
 "class": "topic-link section"
-},
-{
-"url": "permissions-required-for-microsoft-365.html",
-"text": "Permissions Required for Microsoft 365",
-"class": "topic-link section"
 }]
 },
 {
@@ -6329,11 +6423,6 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-security-posture.html",
 "text": "Configure Salesforce Instance for Security Posture",
-"class": "topic-link section"
-},
-{
-"url": "permissions-required-for-salesforce.html",
-"text": "Permissions Required for Salesforce",
 "class": "topic-link section"
 }]
 },
@@ -6359,16 +6448,6 @@ var toc = [{
 "url": "configure-zoom-instance-for-security-posture.html",
 "text": "Configure Zoom Instance for Security Posture",
 "class": "topic-link section"
-},
-{
-"url": "permissions-required-for-zoom-319756.html",
-"text": "Permissions Required for Zoom",
-"class": "topic-link section"
-},
-{
-"url": "-optional--uninstall-the-netskope-app-from-the-zoom-account.html",
-"text": "(Optional) Uninstall the Netskope App from the Zoom Account",
-"class": "topic-link section"
 }]
 },
 {
@@ -6390,37 +6469,37 @@ var toc = [{
 ,
 "children": [
 {
-"url": "security-posture-policy.html",
+"url": "security-posture-policy-305068.html",
 "text": "Security Posture Policy",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-security-posture-policy.html",
+"url": "create-a-security-posture-policy-305069.html",
 "text": "Create a Security Posture Policy",
 "class": "topic-link section"
 }]
 },
 {
-"url": "security-posture-profile.html",
+"url": "security-posture-profile-305070.html",
 "text": "Security Posture Profile",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-security-posture-profile.html",
+"url": "create-a-security-posture-profile-305071.html",
 "text": "Create a Security Posture Profile",
 "class": "topic-link section"
 }]
 },
 {
-"url": "security-posture-rule.html",
+"url": "security-posture-rule-305072.html",
 "text": "Security Posture Rule",
 "class": "topic-link section"
 ,
 "children": [
 {
-"url": "create-a-security-posture-rule.html",
+"url": "create-a-security-posture-rule-305073.html",
 "text": "Create a Security Posture Rule",
 "class": "topic-link section"
 ,
@@ -6460,6 +6539,11 @@ var toc = [{
 "url": "configure-github-instance-for-next-generation-saas-security-posture-management.html",
 "text": "Configure GitHub Instance for Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-github-450414.html",
+"text": "Permissions Required for GitHub",
+"class": "topic-link section"
 }]
 },
 {
@@ -6472,6 +6556,11 @@ var toc = [{
 "url": "configure-microsoft-365-instance-for-next-generation-saas-security-posture-management.html",
 "text": "Configure Microsoft 365 Instance for Next Generation SaaS Security Posture Management",
 "class": "topic-link section"
+},
+{
+"url": "permissions-required-for-microsoft-365.html",
+"text": "Permissions Required for Microsoft 365",
+"class": "topic-link section"
 }]
 },
 {
@@ -6483,6 +6572,11 @@ var toc = [{
 {
 "url": "configure-salesforce-instance-for-next-generation-saas-security-posture-management.html",
 "text": "Configure Salesforce Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-salesforce.html",
+"text": "Permissions Required for Salesforce",
 "class": "topic-link section"
 }]
 },
@@ -6519,6 +6613,16 @@ var toc = [{
 {
 "url": "configure-zoom-instance-for-next-generation-saas-security-posture-management.html",
 "text": "Configure Zoom Instance for Next Generation SaaS Security Posture Management",
+"class": "topic-link section"
+},
+{
+"url": "permissions-required-for-zoom-450417.html",
+"text": "Permissions Required for Zoom",
+"class": "topic-link section"
+},
+{
+"url": "-optional--uninstall-the-netskope-app-from-the-zoom-account.html",
+"text": "(Optional) Uninstall the Netskope App from the Zoom Account",
 "class": "topic-link section"
 }]
 },
@@ -6616,7 +6720,7 @@ var toc = [{
 },
 {
 "url": "configure-custom-applications.html",
-"text": "App Definition",
+"text": "Creating a Firewall App Definition",
 "class": "topic-link section"
 },
 {
@@ -7038,11 +7142,21 @@ var toc = [{
 }]
 },
 {
-"url": "configure-custom-applications-164305.html",
+"url": "app-definitions.html",
 "text": "App Definitions ",
 "class": "topic-link section"
 ,
 "children": [
+{
+"url": "creating-a-cloud-app-definition.html",
+"text": "Creating a Cloud App Definition",
+"class": "topic-link section"
+},
+{
+"url": "configure-custom-applications-449298.html",
+"text": "Creating a Firewall App Definition",
+"class": "topic-link section"
+},
 {
 "url": "certificate-pinned-applications.html",
 "text": "Certificate Pinned Applications",
@@ -7671,18 +7785,18 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "azure-storage-plugin-for-log-shipper.html",
-"text": "Azure Storage Plugin for Log Shipper",
-"class": "topic-link section reused-publication"
-},
-{
-"url": "chronicle-plugin-for-log-shipper.html",
-"text": "Chronicle Plugin for Log Shipper",
+"url": "microsoft-azure-storage-plugin-for-log-shipper.html",
+"text": "Microsoft Azure Storage Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
 "url": "microsoft-defender-for-cloud-apps-plugin-for-log-shipper.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
+"url": "chronicle-plugin-for-log-shipper.html",
+"text": "Chronicle Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
 },
 {
@@ -8725,58 +8839,6 @@ var toc = [{
 "url": "netskope-client-idp-mode-with-okta-scim-and-saml-auth.html",
 "text": "Netskope Client IdP Mode with Okta SCIM and SAML Auth",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "configure-netskope-oauth-token-for-okta-scim-integration.html",
-"text": "Configure Netskope OAuth Token for Okta SCIM Integration",
-"class": "topic-link section"
-},
-{
-"url": "configure-okta-scim-integration-to-onboard-users-to-netskope.html",
-"text": "Configure Okta SCIM Integration to Onboard Users to Netskope",
-"class": "topic-link section"
-},
-{
-"url": "get-netskope-saml-settings-228899.html",
-"text": "Get Netskope SAML Settings",
-"class": "topic-link section"
-},
-{
-"url": "configure-okta-idp-for-netskope-saml---forward-proxy.html",
-"text": "Configure Okta IdP for Netskope SAML – Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "add-an-okta-idp-account-in-netskope-saml---forward-proxy.html",
-"text": "Add an Okta IdP Account in Netskope SAML – Forward Proxy",
-"class": "topic-link section"
-},
-{
-"url": "enable-authentication-and-configure-domain-bypass-settings.html",
-"text": "Enable Authentication and Configure Domain Bypass Settings",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
-"class": "topic-link section"
-},
-{
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac.html",
-"text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
-"class": "topic-link section"
-},
-{
-"url": "test-website-access-and-check-skope-it-events.html",
-"text": "Test Website Access and Check Skope IT Events",
-"class": "topic-link section"
-},
-{
-"url": "okta-scim-and-saml-auth-troubleshooting.html",
-"text": "Okta SCIM and SAML Auth Troubleshooting",
-"class": "topic-link section"
-}]
 },
 {
 "url": "netskope-client-idp-mode-with-azure-scim-and-azure-ad-or-adfs-saml-auth.html",
@@ -8820,22 +8882,22 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "enable-authentication-and-configure-domain-bypass-settings-232225.html",
+"url": "enable-authentication-and-configure-domain-bypass-settings.html",
 "text": "Enable Authentication and Configure Domain Bypass Settings",
 "class": "topic-link section"
 },
 {
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows-232226.html",
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-windows.html",
 "text": "Install the Netskope Client in IdP Mode and Enroll Users For Windows",
 "class": "topic-link section"
 },
 {
-"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac-232865.html",
+"url": "install-the-netskope-client-in-idp-mode-and-enroll-users-for-mac.html",
 "text": "Install the Netskope Client in IdP Mode and Enroll Users For Mac",
 "class": "topic-link section"
 },
 {
-"url": "test-website-access-and-check-skope-it-events-232227.html",
+"url": "test-website-access-and-check-skope-it-events.html",
 "text": "Test Website Access and Check Skope IT Events",
 "class": "topic-link section"
 },
