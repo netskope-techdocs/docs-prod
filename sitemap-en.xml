@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-06-15</lastmod>
+    <lastmod>2023-06-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -1434,7 +1434,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-advanced-analytics-release-notes.html</loc>
-    <lastmod>2023-06-09</lastmod>
+    <lastmod>2023-06-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/new-features-and-enhancements-june-15--2023.html</loc>
+    <lastmod>2023-06-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-may-18--2023.html</loc>
@@ -4978,7 +4982,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/devices.html</loc>
-    <lastmod>2023-05-23</lastmod>
+    <lastmod>2023-06-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/groups.html</loc>
@@ -5254,7 +5258,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/creating-a-steering-configuration.html</loc>
-    <lastmod>2023-03-02</lastmod>
+    <lastmod>2023-06-15</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/adding-steered-items.html</loc>
@@ -6798,7 +6802,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/certificates.html</loc>
-    <lastmod>2023-06-14</lastmod>
+    <lastmod>2023-06-16</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ip-allowlisting.html</loc>
