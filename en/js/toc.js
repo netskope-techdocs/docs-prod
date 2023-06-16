@@ -1982,6 +1982,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "new-features-and-enhancements-june-15--2023.html",
+"text": "New Features and Enhancements June 15, 2023",
+"class": "topic-link section"
+},
+{
 "url": "new-features-and-enhancements-may-18--2023.html",
 "text": "New Features and Enhancements May 18, 2023",
 "class": "topic-link section"
