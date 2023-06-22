@@ -814,6 +814,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-private-access-publisher-release-notes-version-105-0-0.html",
+"text": "Netskope Private Access Publisher Release Notes Version 105.0.0",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "netskope-private-access-publisher-release-notes-version-104-0-0-7933.html",
 "text": "Netskope Private Access Publisher Release Notes Version 104.0.0.7933",
 "class": "topic-link section reused-publication"
@@ -1025,6 +1030,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 ,
 "children": [
+{
+"url": "ips-threat-content-update-release-notes-23-124-205.html",
+"text": "IPS Threat Content Update Release Notes 23.124.205",
+"class": "topic-link section"
+},
 {
 "url": "ips-threat-content-update-release-notes-104-0-1-358.html",
 "text": "IPS Threat Content Update Release Notes 104.0.1.358",
@@ -3460,13 +3470,6 @@ var toc = [{
 "url": "configure-browser-access-for-private-apps.html",
 "text": "Configure Browser Access for Private Apps",
 "class": "topic-link section"
-,
-"children": [
-{
-"url": "configure-google-workspace-as-the-idp-for-browser-access-authentication.html",
-"text": "Configure Google Workspace as the IdP for Browser Access Authentication",
-"class": "topic-link section"
-}]
 }]
 },
 {
