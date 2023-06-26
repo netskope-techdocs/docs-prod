@@ -814,8 +814,8 @@ var toc = [{
 ,
 "children": [
 {
-"url": "netskope-private-access-publisher-release-notes-version-105-0-0.html",
-"text": "Netskope Private Access Publisher Release Notes Version 105.0.0",
+"url": "netskope-private-access-publisher-release-notes-version-105-0-0-8080.html",
+"text": "Netskope Private Access Publisher Release Notes Version 105.0.0.8080",
 "class": "topic-link section reused-publication"
 },
 {
@@ -8589,7 +8589,7 @@ var toc = [{
 },
 {
 "url": "enable-authentication-and-configure-sso-domain-bypass-settings.html",
-"text": "Enable Authentication and configure SSO Domain Bypass settings",
+"text": "Enable Authentication and Configure SSO Domain Bypass Settings",
 "class": "topic-link section"
 },
 {
