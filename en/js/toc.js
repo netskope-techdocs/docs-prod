@@ -7983,6 +7983,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "microsoft-office-365-endpoints-plugin-for-threat-exchange.html",
+"text": "Microsoft Office 365 Endpoints Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "microsoft-defender-for-cloud-apps-plugin-for-threat-exchange.html",
 "text": "Microsoft Defender for Cloud Apps Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
@@ -8123,18 +8128,6 @@ var toc = [{
 "url": "threat-exchange-custom-plugin-developers-guide.html",
 "text": "Threat Exchange Custom Plugin Developers Guide",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "plugin-packaging.html",
-"text": "Plugin Packaging",
-"class": "topic-link section"
-},
-{
-"url": "deploy-the-plugin.html",
-"text": "Deploy the Plugin",
-"class": "topic-link section"
-}]
 }]
 },
 {
