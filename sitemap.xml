@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.netskope.com/en/netskope-release-notes.html</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/release-notes-subscription.html</loc>
@@ -734,7 +734,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-intrusion-prevention-system-threat-content-release-notes.html</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-23-125-17.html</loc>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/ips-threat-content-update-release-notes-23-124-205.html</loc>
@@ -4962,7 +4966,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-supported-os-and-platform.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/provisioning-users-for-netskope-client.html</loc>
@@ -4970,7 +4974,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-configuration.html</loc>
-    <lastmod>2023-05-23</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-client-network-configuration.html</loc>
@@ -5086,7 +5090,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/kandji.html</loc>
-    <lastmod>2022-12-21</lastmod>
+    <lastmod>2023-06-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/xenmobile.html</loc>
@@ -5106,7 +5110,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/amazon-workspaces.html</loc>
-    <lastmod>2022-12-01</lastmod>
+    <lastmod>2023-06-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/citrix-virtual-apps-and-desktop.html</loc>
@@ -5490,7 +5494,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/netskope-cloud-exchange.html</loc>
-    <lastmod>2023-06-14</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/about-cloud-exchange.html</loc>
@@ -5514,7 +5518,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/supported-3rd-party-plugins.html</loc>
-    <lastmod>2023-06-07</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-hardening.html</loc>
@@ -5610,7 +5614,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-setup-videos.html</loc>
-    <lastmod>2023-06-23</lastmod>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/cloud-exchange-console.html</loc>
@@ -5857,6 +5861,10 @@
     <lastmod>2023-05-06</lastmod>
   </url>
   <url>
+    <loc>https://docs.netskope.com/en/microsoft-office-365-endpoints-plugin-for-threat-exchange.html</loc>
+    <lastmod>2023-06-26</lastmod>
+  </url>
+  <url>
     <loc>https://docs.netskope.com/en/microsoft-defender-for-cloud-apps-plugin-for-threat-exchange.html</loc>
     <lastmod>2023-05-06</lastmod>
   </url>
@@ -5882,7 +5890,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/servicenow-plugin-for-threat-exchange.html</loc>
-    <lastmod>2023-05-06</lastmod>
+    <lastmod>2023-06-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.netskope.com/en/skyhigh-plugin-for-threat-exchange.html</loc>
+    <lastmod>2023-06-27</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/stix-taxii-plugin-for-threat-exchange.html</loc>
@@ -5963,14 +5975,6 @@
   <url>
     <loc>https://docs.netskope.com/en/threat-exchange-custom-plugin-developers-guide.html</loc>
     <lastmod>2023-05-24</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/plugin-packaging.html</loc>
-    <lastmod>2023-05-23</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/deploy-the-plugin.html</loc>
-    <lastmod>2023-05-23</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/risk-exchange-module.html</loc>
@@ -6782,11 +6786,11 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-windows.html</loc>
-    <lastmod>2023-05-16</lastmod>
+    <lastmod>2023-06-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-mac.html</loc>
-    <lastmod>2023-05-16</lastmod>
+    <lastmod>2023-06-26</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/device-classification-for-ios.html</loc>
