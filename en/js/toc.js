@@ -8023,6 +8023,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "skyhigh-plugin-for-threat-exchange.html",
+"text": "Skyhigh Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "stix-taxii-plugin-for-threat-exchange.html",
 "text": "STIX\/TAXII Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
