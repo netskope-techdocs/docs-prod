@@ -6732,7 +6732,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-custom-applications.html",
+"url": "creating-a-firewall-app-definition.html",
 "text": "Creating a Firewall App Definition",
 "class": "topic-link section"
 },
@@ -7166,7 +7166,7 @@ var toc = [{
 "class": "topic-link section"
 },
 {
-"url": "configure-custom-applications-449298.html",
+"url": "creating-a-firewall-app-definition-449298.html",
 "text": "Creating a Firewall App Definition",
 "class": "topic-link section"
 },
@@ -8011,6 +8011,38 @@ var toc = [{
 "url": "misp-plugin-for-threat-exchange.html",
 "text": "MISP Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
+},
+{
+"url": "palo-alto-networks-panorama-plugin-for-threat-exchange.html",
+"text": "Palo Alto Networks Panorama Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "get-your-panorama-base-url-and-api-key.html",
+"text": "Get your Panorama Base URL and API Key",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-palo-alto-networks-panorama-plugin.html",
+"text": "Configure the Palo Alto Networks Panorama Plugin",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-palo-alto-networks-panorama-plugin.html",
+"text": "Validate the Palo Alto Networks Panorama Plugin",
+"class": "topic-link section"
+},
+{
+"url": "troubleshooting-panorama.html",
+"text": "Troubleshooting Panorama",
+"class": "topic-link section"
+},
+{
+"url": "limitation-with-panorama.html",
+"text": "Limitation with Panorama",
+"class": "topic-link section"
+}]
 },
 {
 "url": "proofpoint-plugin-for-threat-exchange.html",
