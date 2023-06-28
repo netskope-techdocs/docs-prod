@@ -8016,33 +8016,6 @@ var toc = [{
 "url": "palo-alto-networks-panorama-plugin-for-threat-exchange.html",
 "text": "Palo Alto Networks Panorama Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "get-your-panorama-base-url-and-api-key.html",
-"text": "Get your Panorama Base URL and API Key",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-palo-alto-networks-panorama-plugin.html",
-"text": "Configure the Palo Alto Networks Panorama Plugin",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-palo-alto-networks-panorama-plugin.html",
-"text": "Validate the Palo Alto Networks Panorama Plugin",
-"class": "topic-link section"
-},
-{
-"url": "troubleshooting-panorama.html",
-"text": "Troubleshooting Panorama",
-"class": "topic-link section"
-},
-{
-"url": "limitation-with-panorama.html",
-"text": "Limitation with Panorama",
-"class": "topic-link section"
-}]
 },
 {
 "url": "proofpoint-plugin-for-threat-exchange.html",
