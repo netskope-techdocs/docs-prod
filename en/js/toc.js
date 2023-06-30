@@ -1,7 +1,7 @@
 var toc = [{
 "url": "netskope-release-notes.html",
 "text": "Netskope Release Notes",
-"class": "topic-link section top-nav-link portal-category; reused-publication"
+"class": "topic-link section top-nav-link portal-category reused-publication"
 ,
 "children": [
 {
@@ -1862,6 +1862,18 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-iot-security-release-notes-in-version-23-06.html",
+"text": "Netskope IoT Security Release Notes in Version 23.06",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-version-23-06.html",
+"text": "New Features and Enhancements in Version 23.06",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-iot-security-release-notes-in-version-23-05.html",
 "text": "Netskope IoT Security Release Notes in Version 23.05",
 "class": "topic-link section reused-publication"
@@ -1997,6 +2009,11 @@ var toc = [{
 ,
 "children": [
 {
+"url": "new-features-and-enhancements-june-30--2023.html",
+"text": "New Features and Enhancements June 30, 2023",
+"class": "topic-link section"
+},
+{
 "url": "new-features-and-enhancements-june-15--2023.html",
 "text": "New Features and Enhancements June 15, 2023",
 "class": "topic-link section"
@@ -2031,7 +2048,7 @@ var toc = [{
 {
 "url": "getting-started.html",
 "text": "Getting Started",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
@@ -2785,7 +2802,7 @@ var toc = [{
 {
 "url": "data-security.html",
 "text": "Data Security",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
@@ -3440,7 +3457,7 @@ var toc = [{
 {
 "url": "netskope-private-access.html",
 "text": "Netskope Private Access",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -3629,7 +3646,7 @@ var toc = [{
 {
 "url": "netskope-secure-web-gateway.html",
 "text": "Netskope Secure Web Gateway",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -3736,7 +3753,7 @@ var toc = [{
 {
 "url": "netskope-public-cloud-security.html",
 "text": "Netskope Public Cloud Security",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -4295,7 +4312,7 @@ var toc = [{
 {
 "url": "netskope-iot-security.html",
 "text": "Netskope IoT Security",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -4345,6 +4362,11 @@ var toc = [{
 {
 "url": "executive-dashboard-in-netskope-iot-security.html",
 "text": "Executive Dashboard in Netskope IoT Security",
+"class": "topic-link section"
+},
+{
+"url": "netskope-asset-inventory.html",
+"text": "Netskope Asset Inventory",
 "class": "topic-link section"
 },
 {
@@ -4403,11 +4425,6 @@ var toc = [{
 "text": "Reporting",
 "class": "topic-link section"
 }]
-},
-{
-"url": "netskope-asset-inventory.html",
-"text": "Netskope Asset Inventory",
-"class": "topic-link section"
 },
 {
 "url": "user-management-in-netskope-iot-security.html",
@@ -6165,7 +6182,7 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-platform.html",
 "text": "Next Generation API Data Protection Platform",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -6176,6 +6193,11 @@ var toc = [{
 {
 "url": "next-generation-api-data-protection-feature-matrix-per-cloud-app.html",
 "text": "Next Generation API Data Protection Feature Matrix per Cloud App",
+"class": "topic-link section"
+},
+{
+"url": "api-rate-limits-on-next-generation-api-data-protection.html",
+"text": "API Rate Limits on Next Generation API Data Protection",
 "class": "topic-link section"
 },
 {
@@ -6783,7 +6805,7 @@ var toc = [{
 {
 "url": "traffic-steering.html",
 "text": "Traffic Steering",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
@@ -7497,13 +7519,13 @@ var toc = [{
 {
 "url": "integrations-439794.html",
 "text": "Integrations",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
 "url": "netskope-cloud-exchange.html",
 "text": "Netskope Cloud Exchange",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -9107,7 +9129,7 @@ var toc = [{
 {
 "url": "admin-console.html",
 "text": "Admin Console",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
@@ -9546,7 +9568,7 @@ var toc = [{
 {
 "url": "advanced-analytics.html",
 "text": "Advanced Analytics",
-"class": "topic-link section portal-category; reused-publication"
+"class": "topic-link section portal-category reused-publication"
 ,
 "children": [
 {
@@ -10326,7 +10348,7 @@ var toc = [{
 {
 "url": "appliances.html",
 "text": "Appliances",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
@@ -11176,7 +11198,7 @@ var toc = [{
 {
 "url": "videos.html",
 "text": "Videos",
-"class": "topic-link section top-nav-link; reused-publication"
+"class": "topic-link section top-nav-link reused-publication"
 ,
 "children": [
 {
