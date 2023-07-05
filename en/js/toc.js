@@ -7865,6 +7865,11 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
+"url": "syslog-and-webtx-plugins-with-splunk-for-log-shipper.html",
+"text": "Syslog and WebTx Plugins with Splunk for Log Shipper",
+"class": "topic-link section reused-publication"
+},
+{
 "url": "syslog-plugin-for-log-shipper.html",
 "text": "Syslog Plugin for Log Shipper",
 "class": "topic-link section reused-publication"
