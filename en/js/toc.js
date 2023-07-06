@@ -8122,23 +8122,6 @@ var toc = [{
 "url": "threatq-plugin-for-threat-exchange.html",
 "text": "ThreatQ Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
-,
-"children": [
-{
-"url": "get-your-threatq-client-id-and-client-secret.html",
-"text": "Get your ThreatQ Client ID and Client Secret",
-"class": "topic-link section"
-},
-{
-"url": "configure-the-threatq-plugin.html",
-"text": "Configure the ThreatQ Plugin",
-"class": "topic-link section"
-},
-{
-"url": "validate-the-threatq-plugin.html",
-"text": "Validate the ThreatQ Plugin",
-"class": "topic-link section"
-}]
 },
 {
 "url": "trend-micro-vision-one-plugin-for-threat-exchange.html",
