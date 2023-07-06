@@ -8065,8 +8065,8 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "sophos-plugin-for-threat-exchang.html",
-"text": "Sophos Plugin for Threat Exchang",
+"url": "sophos-plugin-for-threat-exchange.html",
+"text": "Sophos Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
 },
 {
