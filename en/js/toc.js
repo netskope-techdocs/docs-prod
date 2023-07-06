@@ -16,6 +16,28 @@ var toc = [{
 ,
 "children": [
 {
+"url": "netskope-release-notes-version-106-0-0.html",
+"text": "Netskope Release Notes Version 106.0.0",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "new-features-and-enhancements-in-release-106-0-0.html",
+"text": "New Features And Enhancements In Release 106.0.0",
+"class": "topic-link section"
+},
+{
+"url": "fixed-issues-in-release-106-0-0.html",
+"text": "Fixed Issues In Release 106.0.0",
+"class": "topic-link section"
+},
+{
+"url": "known-issues-in-release-106-0-0.html",
+"text": "Known Issues In Release 106.0.0",
+"class": "topic-link section"
+}]
+},
+{
 "url": "netskope-release-note-hotfix-version-105-1-0.html",
 "text": "Netskope Release Note Hotfix Version 105.1.0",
 "class": "topic-link section reused-publication"
@@ -3345,6 +3367,11 @@ var toc = [{
 "url": "rbi-best-practices.html",
 "text": "RBI Best Practices",
 "class": "topic-link section"
+},
+{
+"url": "extended-rbi.html",
+"text": "Extended RBI",
+"class": "topic-link section"
 }]
 },
 {
@@ -5208,6 +5235,11 @@ var toc = [{
 "class": "topic-link section"
 },
 {
+"url": "deprecation-notice-for-onedrive-as-a-forensic-destination.html",
+"text": "Deprecation Notice for OneDrive as a Forensic Destination",
+"class": "topic-link section"
+},
+{
 "url": "delete-or-downgrade-the-global-administrator-account.html",
 "text": "Delete or Downgrade the Global Administrator Account",
 "class": "topic-link section"
@@ -6417,6 +6449,11 @@ var toc = [{
 "url": "next-generation-api-data-protection-skope-it-events.html",
 "text": "Next Generation API Data Protection Skope IT Events",
 "class": "topic-link section"
+},
+{
+"url": "delete-an-instance.html",
+"text": "Delete an Instance",
+"class": "topic-link section"
 }]
 },
 {
@@ -6709,6 +6746,13 @@ var toc = [{
 "url": "view-security-posture-overview.html",
 "text": "View Security Posture Overview",
 "class": "topic-link section"
+,
+"children": [
+{
+"url": "spm-risk-levels.html",
+"text": "SPM Risk Levels",
+"class": "topic-link section"
+}]
 },
 {
 "url": "view-security-posture-findings.html",
@@ -8000,18 +8044,13 @@ var toc = [{
 "class": "topic-link section reused-publication"
 },
 {
-"url": "mandiant-plugin-for-threat-exchange.html",
-"text": "Mandiant Plugin for Threat Exchange",
-"class": "topic-link section reused-publication"
-},
-{
-"url": "threatconnect-plugin-for-threat-exchange.html",
-"text": "ThreatConnect Plugin for Threat Exchange",
-"class": "topic-link section reused-publication"
-},
-{
 "url": "github-plugin-for-threat-exchange.html",
 "text": "GitHub Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+},
+{
+"url": "mandiant-plugin-for-threat-exchange.html",
+"text": "Mandiant Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
 },
 {
@@ -8073,6 +8112,33 @@ var toc = [{
 "url": "stix-taxii-plugin-for-threat-exchange.html",
 "text": "STIX\/TAXII Plugin for Threat Exchange",
 "class": "topic-link section reused-publication"
+},
+{
+"url": "threatconnect-plugin-for-threat-exchange.html",
+"text": "ThreatConnect Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+},
+{
+"url": "threatq-plugin-for-threat-exchange.html",
+"text": "ThreatQ Plugin for Threat Exchange",
+"class": "topic-link section reused-publication"
+,
+"children": [
+{
+"url": "get-your-threatq-client-id-and-client-secret.html",
+"text": "Get your ThreatQ Client ID and Client Secret",
+"class": "topic-link section"
+},
+{
+"url": "configure-the-threatq-plugin.html",
+"text": "Configure the ThreatQ Plugin",
+"class": "topic-link section"
+},
+{
+"url": "validate-the-threatq-plugin.html",
+"text": "Validate the ThreatQ Plugin",
+"class": "topic-link section"
+}]
 },
 {
 "url": "trend-micro-vision-one-plugin-for-threat-exchange.html",
