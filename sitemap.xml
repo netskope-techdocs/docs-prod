@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/new-features-and-enhancements-in-release-106-0-0.html</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-07</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/fixed-issues-in-release-106-0-0.html</loc>
@@ -4733,94 +4733,6 @@
     <lastmod>2023-06-21</lastmod>
   </url>
   <url>
-    <loc>https://docs.netskope.com/en/saas-security-posture-management.html</loc>
-    <lastmod>2023-06-14</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-github.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-github-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-14</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-microsoft-365.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-microsoft-365-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-14</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-salesforce.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-salesforce-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-14</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-servicenow.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-servicenow-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-zoom.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-zoom-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-14</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-for-workday.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-workday-instance-for-security-posture.html</loc>
-    <lastmod>2023-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-policy-wizard.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-policy-305068.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-security-posture-policy-305069.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-profile-305070.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-security-posture-profile-305071.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/security-posture-rule-305072.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/create-a-security-posture-rule-305073.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/custom-rules-using-domain-specific-language-305074.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/view-security-posture-compliance-305075.html</loc>
-    <lastmod>2023-05-08</lastmod>
-  </url>
-  <url>
     <loc>https://docs.netskope.com/en/next-generation-saas-security-posture-management.html</loc>
     <lastmod>2023-06-26</lastmod>
   </url>
@@ -5962,18 +5874,6 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/threatq-plugin-for-threat-exchange.html</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/get-your-threatq-client-id-and-client-secret.html</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/configure-the-threatq-plugin.html</loc>
-    <lastmod>2023-07-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.netskope.com/en/validate-the-threatq-plugin.html</loc>
     <lastmod>2023-07-06</lastmod>
   </url>
   <url>
@@ -7402,7 +7302,7 @@
   </url>
   <url>
     <loc>https://docs.netskope.com/en/using-the-rest-api-v2-dataexport-iterator-endpoints.html</loc>
-    <lastmod>2023-06-15</lastmod>
+    <lastmod>2023-07-06</lastmod>
   </url>
   <url>
     <loc>https://docs.netskope.com/en/using-the-rest-api-v2-uci-impact-endpoints.html</loc>
